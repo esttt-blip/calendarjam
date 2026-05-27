@@ -1,0 +1,48 @@
+name: Process replies
+
+on:
+  schedule:
+    # Every 5 minutes. GitHub may skip runs under heavy load — that's fine,
+    # replies just wait up to the next slot.
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Don't pile up replies if a run is slow
+concurrency:
+  group: replies
+  cancel-in-progress: false
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Process replies
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+        run: python reply_handler.py
+
+      - name: Commit state changes
+        run: |
+          git config user.name "calendarjam-bot"
+          git config user.email "calendarjam@users.noreply.github.com"
+          git add pending_events.json synced_events.json processed_replies.json 2>/dev/null || true
+          if ! git diff --staged --quiet; then
+            git commit -m "replies: process inbox"
+            git push
+          fi

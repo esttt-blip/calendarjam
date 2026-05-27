@@ -1,0 +1,42 @@
+{
+  "look_ahead_days": 365,
+  "google": {
+    "enabled": true,
+    "calendar": true,
+    "gmail": true
+  },
+  "ics_feeds": [
+    {
+      "name": "VIVA ⚽",
+      "url": "http://ical-cdn.teamsnap.com/team_schedule/7e95501a-75ae-4127-9088-b204b6de084d.ics",
+      "enabled": true
+    },
+    {
+      "name": "Ignite ⚾",
+      "url": "http://ical-cdn.teamsnap.com/team_schedule/71c3d61a-3a65-4092-a226-677d8d1aaad1.ics",
+      "enabled": true
+    },
+    {
+      "name": "Swanson 📚",
+      "url": "https://swanson.apsva.us/?post_type=tribe_events&ical=1&eventDisplay=list",
+      "enabled": true,
+      "filter_keywords": ["holiday", "break", "early release", "last day of school", "sol", "retake"],
+      "exclude_keywords": ["elementary", "summer school"],
+      "lookback_days": 2
+    }
+  ],
+  "browser_sources": [
+    {
+      "name": "Karma Yoga 🧘",
+      "url": "https://app.karma.yoga/bookings",
+      "enabled": true
+    }
+  ],
+  "_more_ics_ideas": [
+    "Eventbrite: account > settings > export calendar link",
+    "Meetup: profile > calendar > subscribe",
+    "School/district: usually at district-site.com/calendar.ics",
+    "Sports leagues: most provide an ICS subscribe link",
+    "Outlook/Exchange: File > Save Calendar or ICS export URL"
+  ]
+}
