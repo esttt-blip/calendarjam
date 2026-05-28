@@ -61,40 +61,54 @@ def save_json(path: Path, data) -> None:
 # ─────────────────────────── reply parsing ───────────────────────────
 
 
-_CMD_RE = re.compile(
-    r"\b(yes|no|dismiss|keep|add)\b\s+([0-9,\s\-]+|all)",
+_STRICT_CMD_RE = re.compile(
+    # verb followed by numbers (with optional separators: comma, space, dash, "and", "or")
+    r"\b(yes|no|dismiss|keep|add|skip|drop|ignore|remove)\b\s+"
+    r"(all|(?:\d+(?:\s*(?:,|-|and|or|\s)\s*\d+)*))",
     re.IGNORECASE,
 )
 
+# Natural language sentiment keywords (whole words)
+_NEG_KEYWORDS = re.compile(
+    r"\b(no|not|skip|drop|ignore|dismiss|delete|remove|already|done|nope|cancel|trash|nah)\b",
+    re.IGNORECASE,
+)
+_POS_KEYWORDS = re.compile(
+    r"\b(yes|yeah|yep|yup|add|create|schedule|please|want|sure)\b",
+    re.IGNORECASE,
+)
+_ALL_KEYWORD = re.compile(r"\ball\b", re.IGNORECASE)
+_NUM_RE = re.compile(r"\b(\d+)\b")
 
-def parse_reply(body: str, n_items: int) -> dict:
-    """Extract commands from reply text.
 
-    Returns {'yes': [1,3], 'no': [2]} — 1-indexed.
-    Stops at the first quoted-text marker so we don't reparse the original email.
-    """
-    # Cut off at common quote markers
+def _strip_quoted(body: str) -> str:
+    """Cut off quoted email content (everything after the first quote marker)."""
     cutoffs = ["\n>", "\n-----Original", "\nOn ", "\nFrom: ", "\n________"]
     for c in cutoffs:
         i = body.find(c)
         if i > 0:
-            body = body[:i]
-            break
+            return body[:i]
+    return body
 
-    result = {"yes": [], "no": []}
 
-    for match in _CMD_RE.finditer(body):
+def _parse_strict(body: str, n_items: int) -> dict:
+    """Match exact 'yes 1, 3' / 'no 2' / 'skip 1' patterns."""
+    result: dict = {"yes": [], "no": []}
+
+    yes_verbs = {"yes", "add", "keep"}
+
+    for match in _STRICT_CMD_RE.finditer(body):
         verb = match.group(1).lower()
         nums_raw = match.group(2).strip()
 
-        bucket = "yes" if verb in ("yes", "add", "keep") else "no"
+        bucket = "yes" if verb in yes_verbs else "no"
 
         if nums_raw == "all":
             result[bucket] = list(range(1, n_items + 1))
             continue
 
-        # Parse "1, 3" or "1-3" or "1 2 3"
-        for chunk in re.split(r"[,\s]+", nums_raw):
+        for chunk in re.split(r"[,\s]+|and|or", nums_raw, flags=re.IGNORECASE):
+            chunk = chunk.strip()
             if not chunk:
                 continue
             if "-" in chunk:
@@ -109,7 +123,62 @@ def parse_reply(body: str, n_items: int) -> dict:
                 except ValueError:
                     pass
 
-    # Dedup, cap to valid range
+    return result
+
+
+def _parse_natural(body: str, n_items: int) -> dict:
+    """Best-effort fallback — scan each sentence for numbers + sentiment.
+
+    Per sentence: if numbers mentioned AND only positive (or only negative)
+    sentiment keywords present, classify the numbers accordingly. If both
+    or neither, skip (ambiguous).
+    """
+    result: dict = {"yes": [], "no": []}
+
+    # Split into sentences/lines. Period, !, ?, newline are sentence breaks.
+    sentences = re.split(r"[.!?\n]+", body)
+
+    for sentence in sentences:
+        s = sentence.strip()
+        if not s:
+            continue
+
+        nums = [int(m) for m in _NUM_RE.findall(s)]
+        has_all = bool(_ALL_KEYWORD.search(s))
+
+        is_neg = bool(_NEG_KEYWORDS.search(s))
+        is_pos = bool(_POS_KEYWORDS.search(s))
+
+        # Need clear sentiment, otherwise skip
+        if is_neg == is_pos:
+            continue
+
+        bucket = "no" if is_neg else "yes"
+
+        if has_all and not nums:
+            result[bucket] = list(range(1, n_items + 1))
+            continue
+
+        result[bucket].extend(n for n in nums if 1 <= n <= n_items)
+
+    return result
+
+
+def parse_reply(body: str, n_items: int) -> dict:
+    """Extract commands from reply text.
+
+    Returns {'yes': [1,3], 'no': [2]} — 1-indexed.
+    Tries strict pattern first, falls back to natural-language scan.
+    """
+    body = _strip_quoted(body)
+
+    result = _parse_strict(body, n_items)
+
+    # If strict found nothing, try natural language
+    if not result["yes"] and not result["no"]:
+        result = _parse_natural(body, n_items)
+
+    # Dedup + clamp
     for bucket in result:
         result[bucket] = sorted({n for n in result[bucket] if 1 <= n <= n_items})
 
