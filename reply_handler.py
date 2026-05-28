@@ -180,33 +180,71 @@ def fetch_replies(target_message_id: str | None) -> list[dict]:
     return replies
 
 
-def send_ack(commands: dict, dismissed_titles: list[str], acknowledged_titles: list[str]) -> None:
+def send_ack(dismissed_titles: list[str], acknowledged_titles: list[str]) -> None:
+    """Send a confirmation that the reply was processed successfully."""
     gmail_address = os.getenv("GMAIL_ADDRESS")
     app_password = os.getenv("GMAIL_APP_PASSWORD")
     if not gmail_address or not app_password:
         return
 
-    lines = ["calendarjam reply processed:"]
+    lines = ["✓ calendarjam reply processed.\n"]
     if dismissed_titles:
-        lines.append("\nDismissed:")
+        lines.append("Dismissed:")
         lines += [f"  • {t}" for t in dismissed_titles]
+        lines.append("")
     if acknowledged_titles:
-        lines.append("\nMarked yes (auto-add coming in v2 — add manually for now):")
+        lines.append("Marked yes (auto-add coming in v2 — add manually for now):")
         lines += [f"  • {t}" for t in acknowledged_titles]
 
-    body = "\n".join(lines)
-    msg = MIMEText(body, "plain")
+    msg = MIMEText("\n".join(lines), "plain")
     msg["Subject"] = "📅 calendarjam — reply processed"
     msg["From"] = f"calendarjam <{gmail_address}>"
     msg["To"] = gmail_address
+    _send(msg)
 
+
+def send_didnt_understand(body_snippet: str, pending_titles: list[str]) -> None:
+    """Tell the user we got their reply but couldn't parse a command."""
+    gmail_address = os.getenv("GMAIL_ADDRESS")
+    app_password = os.getenv("GMAIL_APP_PASSWORD")
+    if not gmail_address or not app_password:
+        return
+
+    item_list = "\n".join(f"  {i+1}. {t}" for i, t in enumerate(pending_titles))
+
+    body = f"""Hi — I got your reply but couldn't find a yes/no command in it.
+
+Your reply started with:
+  "{body_snippet[:120]}…"
+
+Please reply with one of:
+  yes 1, 3    → add items 1 and 3 to your calendar
+  no 2        → dismiss item 2
+  yes all     → add everything
+  no all      → dismiss everything
+
+Pending items right now:
+{item_list}
+
+(I left everything in the queue — reply again with the format above.)
+"""
+    msg = MIMEText(body, "plain")
+    msg["Subject"] = "📅 calendarjam — didn't understand your reply"
+    msg["From"] = f"calendarjam <{gmail_address}>"
+    msg["To"] = gmail_address
+    _send(msg)
+
+
+def _send(msg) -> None:
+    gmail_address = os.getenv("GMAIL_ADDRESS")
+    app_password = os.getenv("GMAIL_APP_PASSWORD")
     try:
         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
             server.login(gmail_address, app_password)
             server.send_message(msg)
-        print("  ✓ ack email sent")
+        print(f"  ✓ sent: {msg['Subject']}")
     except Exception as e:
-        print(f"  ✗ ack email failed: {e}")
+        print(f"  ✗ send failed: {e}")
 
 
 # ─────────────────────────── main ───────────────────────────
@@ -239,9 +277,13 @@ def main():
     all_dismissed_indices: set = set()
     all_acknowledged_indices: set = set()
 
+    unparseable: list[dict] = []
+
     for reply in new_replies:
         cmds = parse_reply(reply["body"], n_items)
         print(f"  reply: {cmds}")
+        if not cmds["yes"] and not cmds["no"]:
+            unparseable.append(reply)
         all_dismissed_indices.update(cmds["no"])
         all_acknowledged_indices.update(cmds["yes"])
         processed_reply_ids.add(reply["message_id"])
@@ -265,20 +307,30 @@ def main():
         if 1 <= i <= len(pending)
     ]
 
-    # Persist state
+    # Persist state — note we save processed_reply_ids even for unparseable replies
+    # so we don't spam the user with the same "didn't understand" email.
     save_json(SYNCED_FILE, sorted(synced_ids))
     save_json(PENDING_FILE, pending)
     save_json(PROCESSED_REPLIES_FILE, sorted(processed_reply_ids))
 
-    # Confirmation email
+    # Confirmation email for successful actions
     if dismissed_titles or acknowledged_titles:
-        send_ack(
-            {"dismissed": len(dismissed_titles), "acknowledged": len(acknowledged_titles)},
-            dismissed_titles,
-            acknowledged_titles,
-        )
+        send_ack(dismissed_titles, acknowledged_titles)
 
-    print(f"\nDone. {len(dismissed_titles)} dismissed, {len(acknowledged_titles)} acknowledged.")
+    # "Didn't understand" email for failed parses (only if no successful actions)
+    if unparseable and not (dismissed_titles or acknowledged_titles):
+        first = unparseable[0]
+        # Trim the body to just the user's actual text (before quoted email)
+        body = first["body"]
+        for cutoff in ["\n>", "\n-----Original", "\nOn ", "\nFrom: ", "\n________"]:
+            i = body.find(cutoff)
+            if i > 0:
+                body = body[:i]
+                break
+        snippet = body.strip()
+        send_didnt_understand(snippet, [p.get("title", "Untitled") for p in pending])
+
+    print(f"\nDone. {len(dismissed_titles)} dismissed, {len(acknowledged_titles)} acknowledged, {len(unparseable)} unparseable.")
 
 
 if __name__ == "__main__":
