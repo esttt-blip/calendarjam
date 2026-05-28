@@ -2,9 +2,8 @@ name: Process replies
 
 on:
   schedule:
-    # Every 5 minutes. GitHub may skip runs under heavy load — that's fine,
-    # replies just wait up to the next slot.
-    - cron: "*/5 * * * *"
+    # Every 5 minutes, offset by 2 to avoid top-of-5-minute peaks.
+    - cron: "2-57/5 * * * *"
   workflow_dispatch:
 
 permissions:
