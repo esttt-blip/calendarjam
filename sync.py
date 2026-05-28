@@ -318,37 +318,77 @@ def write_to_calendar(w: CalendarWrite) -> dict | None:
 # ─────────────────────────── summary email ───────────────────────────
 
 
-def format_added_row(w: CalendarWrite) -> str:
+def _fmt_when(iso: str) -> str:
     try:
-        dt = datetime.fromisoformat(w.start_iso.replace("Z", "+00:00"))
-        when = dt.strftime("%a %b %-d, %-I:%M %p")
+        dt = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+        return dt.strftime("%a %b %-d  ·  %-I:%M %p")
     except Exception:
-        when = w.start_iso[:10]
+        return iso[:10]
+
+
+def _source_chip(source: str) -> str:
+    palette = {
+        "VIVA ⚽": "#2ecc71",
+        "Ignite ⚾": "#e74c3c",
+        "Swanson 📚": "#3498db",
+        "Gmail": "#f39c12",
+        "Gmail invite": "#f39c12",
+        "Karma Yoga 🧘": "#9b59b6",
+    }
+    color = palette.get(source, "#888")
     return (
-        f'<li style="margin:4px 0;color:#444;font-size:14px">'
-        f'<span style="color:#1a1a2e;font-weight:600">{w.summary}</span>'
-        f' &mdash; <span style="color:#666">{when}</span>'
-        f'</li>'
+        f'<span style="display:inline-block;background:{color};color:#fff;'
+        f'font-size:10px;padding:2px 7px;border-radius:10px;font-weight:600;'
+        f'letter-spacing:0.3px;text-transform:uppercase">{source}</span>'
     )
 
 
-def format_review_item(idx: int, item: dict) -> str:
-    title = item.get("title", "Untitled")
-    sender = item.get("from", "").split("<")[0].strip() or "—"
-    desc = (item.get("description") or "")[:200]
+def format_added_row(w: CalendarWrite) -> str:
+    """A row in the 'Added (no action)' section."""
     return f"""
 <tr>
-  <td style="padding:14px 0;border-bottom:1px solid #eee;vertical-align:top">
-    <div style="display:flex;align-items:flex-start">
-      <div style="background:#1a1a2e;color:#fff;border-radius:50%;width:24px;height:24px;
-                  display:inline-block;text-align:center;line-height:24px;font-weight:700;
-                  font-size:13px;margin-right:12px;flex-shrink:0">{idx}</div>
-      <div style="flex:1">
-        <div style="color:#1a1a2e;font-weight:600;font-size:15px">{title}</div>
+  <td style="padding:8px 0;border-bottom:1px solid #f0f0f0">
+    <table width="100%" cellpadding="0" cellspacing="0"><tr>
+      <td width="24" style="vertical-align:top;padding-top:2px">
+        <span style="color:#2ecc71;font-size:16px;font-weight:700">✓</span>
+      </td>
+      <td>
+        {_source_chip(w.source_name)}
+        <div style="color:#1a1a2e;font-weight:600;font-size:14px;margin-top:4px">{w.summary}</div>
+        <div style="color:#888;font-size:12px;margin-top:2px">{_fmt_when(w.start_iso)}</div>
+      </td>
+    </tr></table>
+  </td>
+</tr>"""
+
+
+def format_review_item(idx: int, item: dict) -> str:
+    """A row in the 'Needs decision' section — numbered for reply matching."""
+    title = item.get("title", "Untitled")
+    sender = item.get("from", "").split("<")[0].strip() or "—"
+    desc = (item.get("description") or "")[:160].replace("\n", " ").replace("\r", " ").strip()
+
+    return f"""
+<tr>
+  <td style="padding:14px 0;border-bottom:1px solid #eee">
+    <table width="100%" cellpadding="0" cellspacing="0"><tr>
+      <td width="36" style="vertical-align:top;padding-top:2px">
+        <span style="display:inline-block;background:#ff6b35;color:#fff;
+                     border-radius:50%;width:28px;height:28px;line-height:28px;
+                     text-align:center;font-weight:700;font-size:14px">{idx}</span>
+      </td>
+      <td>
+        <div style="color:#1a1a2e;font-weight:600;font-size:15px;line-height:1.3">{title}</div>
         <div style="color:#888;font-size:12px;margin-top:2px">from {sender}</div>
         <div style="color:#555;font-size:13px;margin-top:6px;line-height:1.45">{desc}…</div>
-      </div>
-    </div>
+        <div style="margin-top:10px">
+          <span style="background:#f0f0f0;color:#666;padding:3px 8px;border-radius:4px;
+                       font-family:monospace;font-size:12px">reply: yes {idx}</span>
+          <span style="margin-left:6px;background:#f0f0f0;color:#666;padding:3px 8px;
+                       border-radius:4px;font-family:monospace;font-size:12px">no {idx}</span>
+        </div>
+      </td>
+    </tr></table>
   </td>
 </tr>"""
 
@@ -370,64 +410,86 @@ def send_summary_email(
     today = datetime.now().strftime("%A, %B %-d")
     n_added = len(added)
     n_pending = len(pending)
-    subject_parts = []
-    if n_added:
-        subject_parts.append(f"{n_added} added")
+
+    # Subject reflects what kind of attention this email needs
     if n_pending:
-        subject_parts.append(f"{n_pending} to review")
-    subject = f"📅 calendarjam — {', '.join(subject_parts)}"
+        subject = f"📅 calendarjam — {n_pending} need{'s' if n_pending == 1 else ''} your decision"
+    else:
+        subject = f"📅 calendarjam — {n_added} added, all set"
 
-    added_html = ""
-    if added:
-        added_html = f"""
-        <tr><td style="padding:16px 28px 4px 28px">
-          <div style="color:#666;font-size:12px;text-transform:uppercase;letter-spacing:1px;
-                      font-weight:600;margin-bottom:8px">Added to calendar</div>
-          <ul style="margin:0;padding:0 0 0 18px">
-            {"".join(format_added_row(w) for w in added[:20])}
-            {"<li style='color:#888;font-size:13px'>…and " + str(len(added) - 20) + " more</li>" if len(added) > 20 else ""}
-          </ul>
-        </td></tr>"""
-
-    pending_html = ""
-    instructions_html = ""
+    # ── Section 1: action required (top, can't miss it) ──
+    pending_section = ""
     if pending:
         rows = "".join(format_review_item(i + 1, p) for i, p in enumerate(pending))
-        pending_html = f"""
-        <tr><td style="padding:24px 28px 4px 28px">
-          <div style="color:#666;font-size:12px;text-transform:uppercase;letter-spacing:1px;
-                      font-weight:600;margin-bottom:8px">Need your call</div>
+        pending_section = f"""
+        <tr><td style="padding:24px 28px 8px 28px">
+          <table width="100%" cellpadding="0" cellspacing="0">
+            <tr><td>
+              <span style="background:#ff6b35;color:#fff;font-size:11px;font-weight:700;
+                           padding:4px 10px;border-radius:4px;letter-spacing:0.5px;
+                           text-transform:uppercase">Action required</span>
+              <span style="color:#666;font-size:13px;margin-left:8px">
+                {n_pending} item{"s" if n_pending != 1 else ""} need{"" if n_pending != 1 else "s"} a yes/no
+              </span>
+            </td></tr>
+          </table>
+        </td></tr>
+        <tr><td style="padding:8px 28px 0 28px">
           <table width="100%" cellpadding="0" cellspacing="0">{rows}</table>
-        </td></tr>"""
-        instructions_html = """
-        <tr><td style="padding:16px 28px 24px 28px">
-          <div style="background:#f5f5f5;border-radius:8px;padding:14px 16px;
-                      color:#444;font-size:13px;line-height:1.5">
-            <strong style="color:#1a1a2e">Reply to this email</strong> with:<br>
-            <code style="background:#fff;padding:2px 6px;border-radius:4px;color:#1a1a2e">yes 1, 3</code>
-            to add those items, or
-            <code style="background:#fff;padding:2px 6px;border-radius:4px;color:#1a1a2e">no 2</code>
-            to dismiss. Use <code style="background:#fff;padding:2px 6px;border-radius:4px;color:#1a1a2e">yes all</code>
-            to add everything.
+        </td></tr>
+        <tr><td style="padding:18px 28px 8px 28px">
+          <div style="background:#fff5ee;border:1px solid #ffd0b5;border-radius:8px;
+                      padding:14px 16px;color:#5a3a1a;font-size:13px;line-height:1.55">
+            <div style="font-weight:700;margin-bottom:6px">How to reply</div>
+            Reply to this email with one or more lines like:<br>
+            &nbsp;&nbsp;<code style="font-size:13px">yes 1, 3</code>  → add items 1 and 3<br>
+            &nbsp;&nbsp;<code style="font-size:13px">no 2</code>       → dismiss item 2<br>
+            &nbsp;&nbsp;<code style="font-size:13px">yes all</code>    → add everything<br>
+            &nbsp;&nbsp;<code style="font-size:13px">no all</code>     → dismiss everything
           </div>
+        </td></tr>"""
+
+    # ── Section 2: confirmation of auto-adds (just FYI) ──
+    added_section = ""
+    if added:
+        added_rows = "".join(format_added_row(w) for w in added[:20])
+        overflow = (
+            f'<tr><td style="padding:8px 0;color:#999;font-size:12px;font-style:italic">'
+            f'…and {len(added) - 20} more</td></tr>'
+            if len(added) > 20 else ""
+        )
+        added_section = f"""
+        <tr><td style="padding:28px 28px 8px 28px">
+          <span style="background:#e8f7ee;color:#1a7a3c;font-size:11px;font-weight:700;
+                       padding:4px 10px;border-radius:4px;letter-spacing:0.5px;
+                       text-transform:uppercase">Done — no action</span>
+          <span style="color:#666;font-size:13px;margin-left:8px">
+            {n_added} added to your calendar
+          </span>
+        </td></tr>
+        <tr><td style="padding:12px 28px 24px 28px">
+          <table width="100%" cellpadding="0" cellspacing="0">{added_rows}{overflow}</table>
         </td></tr>"""
 
     html_body = f"""<!DOCTYPE html>
 <html><head><meta name="viewport" content="width=device-width,initial-scale=1"></head>
 <body style="margin:0;padding:0;background:#f5f5f5;
              font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
-  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f5f5f5;padding:32px 16px">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f5f5f5;padding:24px 12px">
     <tr><td align="center">
       <table width="100%" cellpadding="0" cellspacing="0"
-             style="max-width:560px;background:#fff;border-radius:12px;
-                    overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.08)">
-        <tr><td style="background:#1a1a2e;padding:20px 28px">
-          <p style="margin:0;color:#fff;font-size:22px;font-weight:700">📅 calendarjam</p>
-          <p style="margin:4px 0 0 0;color:#aaa;font-size:13px">{today}</p>
+             style="max-width:580px;background:#fff;border-radius:12px;
+                    overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.08)">
+        <tr><td style="background:#1a1a2e;padding:18px 28px">
+          <p style="margin:0;color:#fff;font-size:20px;font-weight:700">📅 calendarjam</p>
+          <p style="margin:3px 0 0 0;color:#aaa;font-size:12px">{today}</p>
         </td></tr>
-        {added_html}
-        {pending_html}
-        {instructions_html}
+        {pending_section}
+        {added_section}
+        <tr><td style="padding:14px 28px;background:#fafafa;color:#999;
+                       font-size:11px;text-align:center">
+          Daily sync runs at 6am ET · Replies process within 5 min
+        </td></tr>
       </table>
     </td></tr>
   </table>
