@@ -397,14 +397,15 @@ def send_summary_email(
     added: list[CalendarWrite],
     pending: list[dict],
 ) -> str | None:
-    """Send the daily summary. Returns the Message-ID for reply matching."""
+    """Send the daily summary. Returns the Message-ID for reply matching.
+
+    Always sends an email — even on quiet days — so the user has a daily
+    heartbeat confirming the sync ran.
+    """
     gmail_address = os.getenv("GMAIL_ADDRESS")
     app_password = os.getenv("GMAIL_APP_PASSWORD")
     if not gmail_address or not app_password:
         print("  [Email] skipped — credentials not set")
-        return None
-    if not added and not pending:
-        print("  [Email] nothing new — skipping")
         return None
 
     today = datetime.now().strftime("%A, %B %-d")
@@ -414,8 +415,10 @@ def send_summary_email(
     # Subject reflects what kind of attention this email needs
     if n_pending:
         subject = f"📅 calendarjam — {n_pending} need{'s' if n_pending == 1 else ''} your decision"
-    else:
+    elif n_added:
         subject = f"📅 calendarjam — {n_added} added, all set"
+    else:
+        subject = "📅 calendarjam — all clear, nothing new"
 
     # ── Section 1: action required (top, can't miss it) ──
     pending_section = ""
@@ -446,6 +449,20 @@ def send_summary_email(
             &nbsp;&nbsp;<code style="font-size:13px">no 2</code>       → dismiss item 2<br>
             &nbsp;&nbsp;<code style="font-size:13px">yes all</code>    → add everything<br>
             &nbsp;&nbsp;<code style="font-size:13px">no all</code>     → dismiss everything
+          </div>
+        </td></tr>"""
+
+    # ── Empty state: heartbeat email so you know sync ran ──
+    empty_section = ""
+    if not pending and not added:
+        empty_section = """
+        <tr><td style="padding:40px 28px;text-align:center">
+          <div style="font-size:36px;line-height:1">✓</div>
+          <div style="color:#1a7a3c;font-weight:700;font-size:16px;margin-top:8px">
+            All clear
+          </div>
+          <div style="color:#666;font-size:14px;margin-top:6px;line-height:1.5">
+            Sync ran. No new events, nothing needs your attention.
           </div>
         </td></tr>"""
 
@@ -486,6 +503,7 @@ def send_summary_email(
         </td></tr>
         {pending_section}
         {added_section}
+        {empty_section}
         <tr><td style="padding:14px 28px;background:#fafafa;color:#999;
                        font-size:11px;text-align:center">
           Daily sync runs at 6am ET · Replies process within 5 min
