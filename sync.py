@@ -28,6 +28,7 @@ from pathlib import Path
 import requests
 from icalendar import Calendar
 
+from briefing import build_briefing
 from calendar_api import create_event
 from classify import CalendarWrite, classify
 
@@ -456,15 +457,21 @@ def send_summary_email(
     empty_section = ""
     if not pending and not added:
         empty_section = """
-        <tr><td style="padding:40px 28px;text-align:center">
-          <div style="font-size:36px;line-height:1">✓</div>
-          <div style="color:#1a7a3c;font-weight:700;font-size:16px;margin-top:8px">
-            All clear
-          </div>
-          <div style="color:#666;font-size:14px;margin-top:6px;line-height:1.5">
-            Sync ran. No new events, nothing needs your attention.
+        <tr><td style="padding:24px 28px 4px 28px;text-align:center">
+          <div style="font-size:28px;line-height:1">✓</div>
+          <div style="color:#1a7a3c;font-weight:700;font-size:14px;margin-top:4px">
+            All clear · nothing new today
           </div>
         </td></tr>"""
+
+    # ── Section 3: today's briefing (weather + events + linked emails) ──
+    briefing_section = ""
+    try:
+        briefing_html, briefing_count = build_briefing(gmail_address, app_password)
+        if briefing_count:
+            briefing_section = briefing_html
+    except Exception as e:
+        print(f"  [briefing] failed: {e}", file=sys.stderr)
 
     # ── Section 2: confirmation of auto-adds (just FYI) ──
     added_section = ""
@@ -504,6 +511,7 @@ def send_summary_email(
         {pending_section}
         {added_section}
         {empty_section}
+        {briefing_section}
         <tr><td style="padding:14px 28px;background:#fafafa;color:#999;
                        font-size:11px;text-align:center">
           Daily sync runs at 6am ET · Replies process within 5 min
