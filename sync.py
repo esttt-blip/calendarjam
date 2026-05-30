@@ -240,8 +240,9 @@ def fetch_gmail_events(now: datetime, cutoff: datetime, synced_ids: set) -> list
             subject = decode_subject(str(msg.get("Subject", "")))
             subject_lower = subject.lower()
 
-            # Skip our own summary emails (feedback loop prevention)
-            if "calendarjam" in subject_lower and ("ready to review" in subject_lower or "added" in subject_lower):
+            # Skip our own emails (feedback loop prevention) — anything we sent
+            # has "calendarjam" in the subject, including replies/acks/previews.
+            if "calendarjam" in subject_lower:
                 continue
 
             is_event_like = any(kw in subject_lower for kw in EVENT_SUBJECTS)
