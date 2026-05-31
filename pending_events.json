@@ -1,14 +1,1 @@
-[
-  {
-    "id": "e8a580d157d42ee3a571d82531195e4b",
-    "source": "Gmail",
-    "title": "New Passkey added to Luma",
-    "start": null,
-    "end": null,
-    "location": "",
-    "description": "New Passkey added to Luma\r\nYou can now use this Passkey to sign in to your Luma account.\r\nPlatform:\r\nMobile Chrome on iOS\r\nAuthenticator:\r\nGoogle Password Manager\r\nLocation:\r\nArlington, US (173.73.185.184)\r\nTime:\r\nSat, May 30, 2026, 10:08 PM EDT\r\nYou can manage your Passkeys on the settings page: https://luma.com/settings.\r\nDon\u2019t recognize this email and think someone may be impersonating you? Reply to this email to let us know.\r\n\r\nSent using luma.com",
-    "uid": "162898",
-    "needs_review": true,
-    "from": "Luma <support@luma.com>"
-  }
-]
+[]
