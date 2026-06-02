@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "id": "ca1f288acbfe1d41bf09d8c308b3103e",
+    "source": "Gmail",
+    "title": "Security Alert: Signon from New Device",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "Dear Esther Scott, Your Workday Account was just signed in to from a new Mac OS X device. You're getting this email to make sure it was you. Time: 6/2/26, 1:03 PM Device: Chrome on Mac OS X Tenant: draftkings If you don't recognize this action, immediately notify your company's Workday administrator and follow your organization's policies to reset your password. This email box is not monitored. Please do not reply to this message. This email was intended for esther.evelyn@gmail.com DraftKings \u00b7 222 Berkeley St., Boston, MA 02116",
+    "uid": "162922",
+    "needs_review": true,
+    "from": "draftkings@myworkday.com"
+  },
+  {
+    "id": "14035606b7bdb2684c1ffc90b2bca5a1",
+    "source": "Gmail",
+    "title": "Fw: [EXTERNAL] Congratulations Esther  Scott! Robyn PAGLUICA has just\r\n forwarded you tickets",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "________________________________\r\nFrom: ticketoffice@redsox.com <ticketoffice@redsox.com>\r\nSent: Tuesday, June 2, 2026 3:53 PM\r\nTo: Esther Scott <es.scott@draftkings.com>\r\nSubject: [EXTERNAL] Congratulations Esther Scott! Robyn PAGLUICA has just forwarded you tickets\r\n\r\nYou don't often get email from ticketoffice@redsox.com. Learn why this is important<https://aka.ms/LearnAboutSenderIdentification>\r\n[RedSox]        [Boston Red Sox] <https://mlb.tickets.com/?orgid=36209&agency=RSXM_MYTIXX>\r\n\r\nYou have received forwarded tickets.\r\n\r\n<https://mlb.tickets.com/?orgid=36209&agency=RSXM_MYTIXX>\r\n\r\nReturn Tickets to Sender<https://mlb.tickets.com/?orgid=36209&agency=RSXM_MYTIXX>\r\n\r\nAccess your tickets in\r\n\r\n[Ballpark]<https://www.mlb.com/apps/ballpark>\r\n[MLB]<https://www.mlb.com/apps/ballpark>\r\n\r\nRobyn PAGLUICA has sent you forwarded tickets.\r\n\r\nYour tickets can be accessed via MLB Ballpark App. For more information on downloading the app and how to use it, checkout our Digital Ticketing Guide<https://www.mlb.com/redsox/tickets/mobile>.\r\n\r\nThe following is the summary of tickets forwarded to you:\r\n\r\nOrioles at Red Sox\r\nWednesday 06/03/26at6:45PM\r\n\r\n\r\nSection\\Box\r\n\r\nRow\r\n\r\nSeat\r\n\r\nType: $50 Loaded Value\r\n\r\nR.F. BOX 93\r\n\r\nNN\r\n\r\n20\r\n\r\n[https://akamai-tickets.akamaized.net/images/primarysales/mtm/redsox_big_ad.png]<https://spothero.app.link/ts1p2NqSe1?kind=destination&id=722&$3p=a_hasoffers&$affiliate_json=http%3A%2F%2Ftracking.spothero.com%2Faff_c%3Foffer_id%3D1%26aff_id%3D1400%26source",
+    "uid": "162924",
+    "needs_review": true,
+    "from": "Esther Scott <es.scott@draftkings.com>"
+  }
+]
