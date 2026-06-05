@@ -28,6 +28,7 @@ from pathlib import Path
 import requests
 from icalendar import Calendar
 
+import activity
 from briefing import build_briefing
 from calendar_api import create_event
 from classify import CalendarWrite, classify
@@ -311,6 +312,7 @@ def write_to_calendar(w: CalendarWrite) -> dict | None:
             transparency=w.transparency,
         )
         print(f"  ✓ [{w.source_name}] {w.summary}  ({w.start_iso[:16]})")
+        activity.append("added", w.summary, w.source_name, when=w.start_iso[:16])
         return result
     except Exception as e:
         print(f"  ✗ [{w.source_name}] {w.summary} — failed: {e}", file=sys.stderr)
@@ -395,6 +397,63 @@ def format_review_item(idx: int, item: dict) -> str:
 </tr>"""
 
 
+def _format_activity_section() -> str:
+    """Render last-5-days activity grouped by day."""
+    entries = activity.recent(days=5)
+    if not entries:
+        return ""
+
+    # Group by date (local ET)
+    from collections import defaultdict
+    by_day: dict[str, list[dict]] = defaultdict(list)
+    for e in entries:
+        try:
+            dt = datetime.fromisoformat(e["ts"])
+            day = dt.astimezone().strftime("%a %b %-d")
+        except Exception:
+            day = "—"
+        by_day[day].append(e)
+
+    action_icons = {
+        "added": ("✓", "#2ecc71"),
+        "dismissed": ("✗", "#888"),
+        "acked": ("✓", "#2ecc71"),
+        "skipped": ("✗", "#888"),
+    }
+
+    day_html = []
+    for day, items in by_day.items():
+        rows = []
+        for it in items:
+            icon, color = action_icons.get(it["action"], ("·", "#888"))
+            title = it.get("title", "")[:70]
+            source = it.get("source", "")
+            source_str = f' <span style="color:#aaa;font-size:11px">· {source}</span>' if source else ""
+            rows.append(
+                f'<div style="padding:3px 0;font-size:13px;color:#555">'
+                f'<span style="color:{color};font-weight:700;margin-right:6px">{icon}</span>'
+                f'{title}{source_str}'
+                f'</div>'
+            )
+        day_html.append(
+            f'<div style="margin-bottom:10px">'
+            f'<div style="color:#888;font-size:11px;font-weight:700;letter-spacing:0.5px;'
+            f'text-transform:uppercase;margin-bottom:4px">{day}</div>'
+            f'{"".join(rows)}'
+            f'</div>'
+        )
+
+    return f"""
+    <tr><td style="padding:20px 28px 8px 28px">
+      <span style="background:#f5f5f5;color:#666;font-size:11px;font-weight:700;
+                   padding:4px 10px;border-radius:4px;letter-spacing:0.5px;
+                   text-transform:uppercase">Recent activity</span>
+    </td></tr>
+    <tr><td style="padding:12px 28px 16px 28px">
+      {"".join(day_html)}
+    </td></tr>"""
+
+
 def send_summary_email(
     added: list[CalendarWrite],
     pending: list[dict],
@@ -402,10 +461,13 @@ def send_summary_email(
     """Send the daily summary. Returns the Message-ID for reply matching.
 
     Always sends an email — even on quiet days — so the user has a daily
-    heartbeat confirming the sync ran.
+    heartbeat confirming the sync ran. Email is now intentionally minimal:
+    counts + 'Open app' button + today's briefing + recent activity. Actual
+    item-by-item review happens in the Streamlit app.
     """
     gmail_address = os.getenv("GMAIL_ADDRESS")
     app_password = os.getenv("GMAIL_APP_PASSWORD")
+    app_url = os.getenv("APP_URL", "https://share.streamlit.io")
     if not gmail_address or not app_password:
         print("  [Email] skipped — credentials not set")
         return None
@@ -414,58 +476,52 @@ def send_summary_email(
     n_added = len(added)
     n_pending = len(pending)
 
-    # Subject reflects what kind of attention this email needs
+    # Subject is now status-driven and stays short
     if n_pending:
-        subject = f"📅 calendarjam — {n_pending} need{'s' if n_pending == 1 else ''} your decision"
+        subject = f"📅 calendarjam — {n_pending} pending"
     elif n_added:
-        subject = f"📅 calendarjam — {n_added} added, all set"
+        subject = f"📅 calendarjam — {n_added} added today"
     else:
-        subject = "📅 calendarjam — all clear, nothing new"
+        subject = "📅 calendarjam — all clear"
 
-    # ── Section 1: action required (top, can't miss it) ──
-    pending_section = ""
-    if pending:
-        rows = "".join(format_review_item(i + 1, p) for i, p in enumerate(pending))
-        pending_section = f"""
-        <tr><td style="padding:24px 28px 8px 28px">
-          <table width="100%" cellpadding="0" cellspacing="0">
-            <tr><td>
-              <span style="background:#ff6b35;color:#fff;font-size:11px;font-weight:700;
-                           padding:4px 10px;border-radius:4px;letter-spacing:0.5px;
-                           text-transform:uppercase">Action required</span>
-              <span style="color:#666;font-size:13px;margin-left:8px">
-                {n_pending} item{"s" if n_pending != 1 else ""} need{"" if n_pending != 1 else "s"} a yes/no
-              </span>
-            </td></tr>
-          </table>
-        </td></tr>
-        <tr><td style="padding:8px 28px 0 28px">
-          <table width="100%" cellpadding="0" cellspacing="0">{rows}</table>
-        </td></tr>
-        <tr><td style="padding:18px 28px 8px 28px">
-          <div style="background:#fff5ee;border:1px solid #ffd0b5;border-radius:8px;
-                      padding:14px 16px;color:#5a3a1a;font-size:13px;line-height:1.55">
-            <div style="font-weight:700;margin-bottom:6px">How to reply</div>
-            Reply to this email with one or more lines like:<br>
-            &nbsp;&nbsp;<code style="font-size:13px">yes 1, 3</code>  → add items 1 and 3<br>
-            &nbsp;&nbsp;<code style="font-size:13px">no 2</code>       → dismiss item 2<br>
-            &nbsp;&nbsp;<code style="font-size:13px">yes all</code>    → add everything<br>
-            &nbsp;&nbsp;<code style="font-size:13px">no all</code>     → dismiss everything
+    # ── Status banner: pending/added counts in a glanceable header ──
+    if n_pending and n_added:
+        status_label = f"{n_added} added · {n_pending} need your review"
+        status_color = "#ff6b35"
+    elif n_pending:
+        status_label = f"{n_pending} item{'s' if n_pending != 1 else ''} need your review"
+        status_color = "#ff6b35"
+    elif n_added:
+        status_label = f"{n_added} added to your calendar"
+        status_color = "#2ecc71"
+    else:
+        status_label = "All clear · nothing new today"
+        status_color = "#2ecc71"
+
+    status_section = f"""
+    <tr><td style="padding:22px 28px 8px 28px;text-align:center">
+      <div style="display:inline-block;background:{status_color}15;color:{status_color};
+                  padding:6px 14px;border-radius:20px;font-size:13px;font-weight:700">
+        ✓ Sync ran · {status_label}
+      </div>
+    </td></tr>"""
+
+    # ── Open app button: primary action, big and obvious ──
+    cta_section = ""
+    if n_pending:
+        cta_section = f"""
+        <tr><td style="padding:12px 28px 4px 28px;text-align:center">
+          <a href="{app_url}" style="display:inline-block;background:#1a1a2e;color:#fff;
+                                      text-decoration:none;padding:14px 32px;border-radius:8px;
+                                      font-size:15px;font-weight:700;letter-spacing:0.3px">
+            Open calendarjam &rarr;
+          </a>
+          <div style="color:#888;font-size:12px;margin-top:8px">
+            Tap to review your {n_pending} pending item{'s' if n_pending != 1 else ''}
           </div>
         </td></tr>"""
 
-    # ── Empty state: heartbeat email so you know sync ran ──
-    empty_section = ""
-    if not pending and not added:
-        empty_section = """
-        <tr><td style="padding:24px 28px 4px 28px;text-align:center">
-          <div style="font-size:28px;line-height:1">✓</div>
-          <div style="color:#1a7a3c;font-weight:700;font-size:14px;margin-top:4px">
-            All clear · nothing new today
-          </div>
-        </td></tr>"""
-
-    # ── Section 3: today's briefing (weather + events + linked emails) ──
+    # ── Today's briefing (weather + calendar + linked emails) ──
     briefing_section = ""
     try:
         briefing_html, briefing_count = build_briefing(gmail_address, app_password)
@@ -474,27 +530,8 @@ def send_summary_email(
     except Exception as e:
         print(f"  [briefing] failed: {e}", file=sys.stderr)
 
-    # ── Section 2: confirmation of auto-adds (just FYI) ──
-    added_section = ""
-    if added:
-        added_rows = "".join(format_added_row(w) for w in added[:20])
-        overflow = (
-            f'<tr><td style="padding:8px 0;color:#999;font-size:12px;font-style:italic">'
-            f'…and {len(added) - 20} more</td></tr>'
-            if len(added) > 20 else ""
-        )
-        added_section = f"""
-        <tr><td style="padding:28px 28px 8px 28px">
-          <span style="background:#e8f7ee;color:#1a7a3c;font-size:11px;font-weight:700;
-                       padding:4px 10px;border-radius:4px;letter-spacing:0.5px;
-                       text-transform:uppercase">Done — no action</span>
-          <span style="color:#666;font-size:13px;margin-left:8px">
-            {n_added} added to your calendar
-          </span>
-        </td></tr>
-        <tr><td style="padding:12px 28px 24px 28px">
-          <table width="100%" cellpadding="0" cellspacing="0">{added_rows}{overflow}</table>
-        </td></tr>"""
+    # ── Recent activity: last 5 days of decisions/adds for context ──
+    activity_section = _format_activity_section()
 
     html_body = f"""<!DOCTYPE html>
 <html><head><meta name="viewport" content="width=device-width,initial-scale=1"></head>
@@ -509,13 +546,13 @@ def send_summary_email(
           <p style="margin:0;color:#fff;font-size:20px;font-weight:700">📅 calendarjam</p>
           <p style="margin:3px 0 0 0;color:#aaa;font-size:12px">{today}</p>
         </td></tr>
-        {pending_section}
-        {added_section}
-        {empty_section}
+        {status_section}
+        {cta_section}
         {briefing_section}
+        {activity_section}
         <tr><td style="padding:14px 28px;background:#fafafa;color:#999;
                        font-size:11px;text-align:center">
-          Daily sync runs at 6am ET · Replies process within 5 min
+          Daily sync runs at 6:15 AM ET · <a href="{app_url}" style="color:#999">Review in app</a>
         </td></tr>
       </table>
     </td></tr>

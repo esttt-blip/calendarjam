@@ -1,8 +1,9 @@
 """Minimal Streamlit review app for calendarjam.
 
 Reads pending_events.json + synced_events.json from the GitHub repo via the
-Contents API. When the user taps a button, updates both files and commits
-back to the repo. Daily sync continues to add new pending items.
+Contents API. When the user taps a button, updates both files plus the
+activity log and commits back to the repo. Daily sync continues to add new
+pending items.
 
 Deploy on Streamlit Cloud (private app). Secrets needed:
   - GITHUB_TOKEN: PAT with Contents:Write on esttt-blip/calendarjam
@@ -13,7 +14,7 @@ from __future__ import annotations
 
 import base64
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 
 import requests
 import streamlit as st
@@ -54,6 +55,38 @@ def write_file(path: str, content_obj, sha: str, message: str) -> None:
     }
     r = requests.put(f"{API_BASE}/{path}", headers=HEADERS, json=body, timeout=15)
     r.raise_for_status()
+
+
+def create_file(path: str, content_obj, message: str) -> None:
+    """Create a new file (no sha — for first-time creation)."""
+    body = {
+        "message": message,
+        "content": base64.b64encode(json.dumps(content_obj, indent=2).encode()).decode(),
+        "branch": BRANCH,
+    }
+    r = requests.put(f"{API_BASE}/{path}", headers=HEADERS, json=body, timeout=15)
+    r.raise_for_status()
+
+
+def log_activity(action: str, title: str, source: str = "") -> None:
+    """Append a row to activity_log.json. Creates the file if missing."""
+    entry = {
+        "ts": datetime.now(timezone.utc).isoformat(),
+        "action": action,
+        "title": title[:120],
+        "source": source,
+    }
+    try:
+        log, log_sha = fetch_file("activity_log.json")
+        log.append(entry)
+        log = log[-500:]  # trim
+        write_file("activity_log.json", log, log_sha, f"app: log {action}")
+    except requests.HTTPError as e:
+        if e.response is not None and e.response.status_code == 404:
+            create_file("activity_log.json", [entry], "app: init activity log")
+        else:
+            # Don't block the user action if logging fails
+            st.warning(f"(activity log write failed: {e})")
 
 
 # ─────────────────────────── page ───────────────────────────
@@ -104,15 +137,14 @@ for idx, item in enumerate(pending):
 
         with col1:
             if st.button("✓ Got it", key=f"yes_{idx}", use_container_width=True, type="primary"):
-                # Mark as synced (user confirmed they handled it)
                 if item["id"] not in synced:
                     synced.append(item["id"])
                     synced.sort()
                 new_pending = [p for p in pending if p["id"] != item["id"]]
                 write_file("synced_events.json", synced, synced_sha, f"app: got it — {title[:50]}")
-                # Re-fetch sha for pending after first write to avoid stale-sha errors
                 _, pending_sha = fetch_file("pending_events.json")
                 write_file("pending_events.json", new_pending, pending_sha, f"app: clear pending — {title[:50]}")
+                log_activity("acked", title, source)
                 st.success(f"✓ Marked done: {title[:60]}")
                 st.rerun()
 
@@ -125,6 +157,7 @@ for idx, item in enumerate(pending):
                 write_file("synced_events.json", synced, synced_sha, f"app: skip — {title[:50]}")
                 _, pending_sha = fetch_file("pending_events.json")
                 write_file("pending_events.json", new_pending, pending_sha, f"app: drop — {title[:50]}")
+                log_activity("dismissed", title, source)
                 st.info(f"Skipped: {title[:60]}")
                 st.rerun()
 
