@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-08T14:42:16.671817-04:00",
-  "generated_label": "Mon Jun 8, 2:42 PM",
+  "generated_at": "2026-06-08T15:39:41.327026-04:00",
+  "generated_label": "Mon Jun 8, 3:39 PM",
   "weather": {
-    "high_f": 81,
+    "high_f": 80,
     "low_f": 68,
     "precip_pct": 0,
     "emoji": "\u2601\ufe0f",
@@ -13,7 +13,7 @@
       "date": "2026-06-08",
       "label": "Today \u00b7 Mon Jun 8",
       "weather": {
-        "high_f": 81,
+        "high_f": 80,
         "low_f": 68,
         "precip_pct": 0,
         "weather_code": 3,
