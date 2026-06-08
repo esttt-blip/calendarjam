@@ -27,6 +27,11 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      # Keep the Streamlit app awake — a plain GET counts as traffic, so the
+      # app stays warm and loads instantly when Esther taps the email button.
+      - name: Keep app warm
+        run: curl -s -o /dev/null -m 20 "https://calendarjam-ees.streamlit.app/" || true
+
       - name: Process replies
         env:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
