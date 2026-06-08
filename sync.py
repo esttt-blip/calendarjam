@@ -755,6 +755,15 @@ def main():
             "pending_ids": [p["id"] for p in pending],
         })
 
+    # Build the command-station snapshot for the web app
+    print("Building dashboard snapshot...")
+    try:
+        import dashboard
+        snap = dashboard.build_snapshot()
+        print(f"  ✓ dashboard: {snap['counts']}")
+    except Exception as e:
+        print(f"  ✗ dashboard build failed: {e}", file=sys.stderr)
+
     print(f"\nDone. {len(successful_writes)} added to calendar, {len(pending)} awaiting review.")
 
 

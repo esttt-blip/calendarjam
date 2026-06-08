@@ -1,0 +1,123 @@
+{
+  "generated_at": "2026-06-08T06:28:58.240395-04:00",
+  "generated_label": "Mon Jun 8, 6:28 AM",
+  "weather": {
+    "high_f": 84,
+    "low_f": 68,
+    "precip_pct": 0,
+    "emoji": "\ud83c\udf24",
+    "label": "Mostly clear"
+  },
+  "today": [
+    {
+      "time": "8:00 AM",
+      "title": "HVAC Maintenance",
+      "location": "",
+      "description": "",
+      "outdoor": false,
+      "is_drive": false,
+      "sort": "2026-06-08T08:00:00-04:00"
+    },
+    {
+      "time": "10:00 AM",
+      "title": "Change lint filter",
+      "location": "",
+      "description": "",
+      "outdoor": false,
+      "is_drive": false,
+      "sort": "2026-06-08T10:00:00-04:00"
+    },
+    {
+      "time": "7:00 PM",
+      "title": "VIVA \u26bd Practice at Ossian",
+      "location": "7990 Heritage Dr, Annandale, VA 22003",
+      "description": "Arrival Time: 7:00 PM",
+      "outdoor": true,
+      "is_drive": false,
+      "sort": "2026-06-08T19:00:00-04:00"
+    }
+  ],
+  "today_with_drives": [
+    {
+      "time": "8:00 AM",
+      "title": "HVAC Maintenance",
+      "location": "",
+      "description": "",
+      "outdoor": false,
+      "is_drive": false,
+      "sort": "2026-06-08T08:00:00-04:00"
+    },
+    {
+      "time": "10:00 AM",
+      "title": "Change lint filter",
+      "location": "",
+      "description": "",
+      "outdoor": false,
+      "is_drive": false,
+      "sort": "2026-06-08T10:00:00-04:00"
+    },
+    {
+      "time": "7:00 PM",
+      "title": "VIVA \u26bd Practice at Ossian",
+      "location": "7990 Heritage Dr, Annandale, VA 22003",
+      "description": "Arrival Time: 7:00 PM",
+      "outdoor": true,
+      "is_drive": false,
+      "sort": "2026-06-08T19:00:00-04:00"
+    }
+  ],
+  "week_ahead": {
+    "collisions": [
+      {
+        "day": "Tue Jun 9",
+        "a": "Ignite \u26be Practice",
+        "a_time": "5:30 PM",
+        "b": "VIVA \u26bd Practice at Ossian",
+        "b_time": "5:30 PM"
+      }
+    ],
+    "tight": [],
+    "weather": [],
+    "horizon": {
+      "birthdays": [
+        {
+          "title": "KJ Birthday",
+          "day": "Thu Jun 11",
+          "days_out": 3
+        },
+        {
+          "title": "Dad's Birthday",
+          "day": "Mon Jun 15",
+          "days_out": 7
+        },
+        {
+          "title": "Avani\u2019s Birthday",
+          "day": "Thu Jun 25",
+          "days_out": 17
+        },
+        {
+          "title": "Brandee Birthday",
+          "day": "Mon Jun 29",
+          "days_out": 21
+        }
+      ],
+      "holidays": [
+        {
+          "title": "Juneteenth",
+          "day": "Fri Jun 19",
+          "days_out": 11
+        },
+        {
+          "title": "Father's Day",
+          "day": "Sun Jun 21",
+          "days_out": 13
+        }
+      ]
+    }
+  },
+  "counts": {
+    "events_today": 3,
+    "conflicts_week": 1,
+    "added_week": 10
+  }
+}
