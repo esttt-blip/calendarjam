@@ -218,6 +218,72 @@ def parse_ics_bytes(data: bytes, source: str, msg_id: str, now: datetime, cutoff
     return events
 
 
+# Targeted keyword set for the All Mail safety-net search. Deliberately
+# narrow + appointment-specific (not "reminder/confirmed/visit" which flood
+# from newsletters). Excludes promotions/social buckets and sent mail.
+# Single words only (Gmail {} = OR); no embedded quotes (breaks IMAP).
+_ALLMAIL_KEYWORDS = (
+    "appointment reschedule rescheduled consultation evaluation "
+    "booking reservation"
+)
+_ALLMAIL_QUERY = f'"newer_than:7d {{{_ALLMAIL_KEYWORDS}}} -category:promotions -category:social -in:sent"'
+
+
+def _process_message(msg, seq: str, now, cutoff, synced_ids, seen_msgids, events) -> None:
+    """Parse one email message and append any surfaced events. Dedups by Message-ID."""
+    gmid = (str(msg.get("Message-ID", "")) or seq).strip()
+    if gmid in seen_msgids:
+        return
+    seen_msgids.add(gmid)
+
+    subject = decode_subject(str(msg.get("Subject", "")))
+    subject_lower = subject.lower()
+
+    # Skip our own emails (feedback loop prevention)
+    if "calendarjam" in subject_lower:
+        return
+
+    is_event_like = any(kw in subject_lower for kw in EVENT_SUBJECTS)
+    msg_has_ics = False
+    plain_body: str | None = None
+    html_body: str | None = None
+
+    for part in msg.walk():
+        mime = part.get_content_type()
+        filename = part.get_filename() or ""
+        if mime == "text/calendar" or filename.lower().endswith(".ics"):
+            payload = part.get_payload(decode=True)
+            if payload:
+                events.extend(parse_ics_bytes(payload, "Gmail invite", gmid, now, cutoff, synced_ids))
+                msg_has_ics = True
+        elif mime == "text/plain" and plain_body is None:
+            plain_body = (part.get_payload(decode=True) or b"").decode("utf-8", errors="ignore")
+        elif mime == "text/html" and html_body is None:
+            raw_html = (part.get_payload(decode=True) or b"").decode("utf-8", errors="ignore")
+            html_body = strip_html(raw_html)
+
+    if msg_has_ics:
+        return
+
+    body = (plain_body or html_body or "").strip()
+    if not (is_event_like or has_appointment_signal(body)) or not body:
+        return
+
+    eid = stable_id("gmail-email", gmid)
+    if eid in synced_ids:
+        return
+    events.append({
+        "id": eid,
+        "source": "Gmail",
+        "title": subject or "Untitled email",
+        "start": None, "end": None, "location": "",
+        "description": body[:1500],
+        "uid": gmid,
+        "needs_review": True,
+        "from": str(msg.get("From", "")),
+    })
+
+
 def fetch_gmail_events(now: datetime, cutoff: datetime, synced_ids: set) -> list[dict]:
     gmail_address = os.getenv("GMAIL_ADDRESS")
     app_password = os.getenv("GMAIL_APP_PASSWORD")
@@ -225,70 +291,37 @@ def fetch_gmail_events(now: datetime, cutoff: datetime, synced_ids: set) -> list
         print("  [Gmail] skipped — credentials not set", file=sys.stderr)
         return []
 
-    events = []
+    events: list[dict] = []
+    seen_msgids: set[str] = set()
+    since = (datetime.now() - timedelta(days=7)).strftime("%d-%b-%Y")
+
     try:
         mail = imaplib.IMAP4_SSL("imap.gmail.com", 993)
         mail.login(gmail_address, app_password)
+
+        # Pass 1 — full inbox scan (keyword + body date/time signal).
         mail.select("inbox")
+        _, ids = mail.search(None, f'(SINCE "{since}")')
+        inbox_ids = ids[0].split() if ids and ids[0] else []
+        for seq in inbox_ids:
+            _, data = mail.fetch(seq, "(RFC822)")
+            if data and data[0]:
+                _process_message(email.message_from_bytes(data[0][1]), seq.decode(),
+                                 now, cutoff, synced_ids, seen_msgids, events)
 
-        since = (datetime.now() - timedelta(days=7)).strftime("%d-%b-%Y")
-        _, msg_ids = mail.search(None, f'(SINCE "{since}")')
-
-        for msg_id in msg_ids[0].split():
-            _, data = mail.fetch(msg_id, "(RFC822)")
-            raw = data[0][1]
-            msg = email.message_from_bytes(raw)
-
-            subject = decode_subject(str(msg.get("Subject", "")))
-            subject_lower = subject.lower()
-
-            # Skip our own emails (feedback loop prevention) — anything we sent
-            # has "calendarjam" in the subject, including replies/acks/previews.
-            if "calendarjam" in subject_lower:
-                continue
-
-            is_event_like = any(kw in subject_lower for kw in EVENT_SUBJECTS)
-            msg_has_ics = False
-            plain_body: str | None = None
-            html_body: str | None = None
-
-            for part in msg.walk():
-                mime = part.get_content_type()
-                filename = part.get_filename() or ""
-
-                if mime == "text/calendar" or filename.lower().endswith(".ics"):
-                    payload = part.get_payload(decode=True)
-                    if payload:
-                        parsed = parse_ics_bytes(
-                            payload, "Gmail invite",
-                            msg_id.decode(), now, cutoff, synced_ids,
-                        )
-                        events.extend(parsed)
-                        msg_has_ics = True
-                elif mime == "text/plain" and plain_body is None:
-                    plain_body = (part.get_payload(decode=True) or b"").decode("utf-8", errors="ignore")
-                elif mime == "text/html" and html_body is None:
-                    raw_html = (part.get_payload(decode=True) or b"").decode("utf-8", errors="ignore")
-                    html_body = strip_html(raw_html)
-
-            if not msg_has_ics:
-                body = (plain_body or html_body or "").strip()
-                should_surface = is_event_like or has_appointment_signal(body)
-                if should_surface and body:
-                    eid = stable_id("gmail-email", msg_id.decode())
-                    if eid not in synced_ids:
-                        events.append({
-                            "id": eid,
-                            "source": "Gmail",
-                            "title": subject or "Untitled email",
-                            "start": None,
-                            "end": None,
-                            "location": "",
-                            "description": body[:1500],
-                            "uid": msg_id.decode(),
-                            "needs_review": True,
-                            "from": str(msg.get("From", "")),
-                        })
+        # Pass 2 — All Mail, keyword-filtered, to catch archived/filtered
+        # appointment emails that never hit the inbox (e.g. vet/daycare reminders).
+        try:
+            mail.select('"[Gmail]/All Mail"', readonly=True)
+            _, ids2 = mail.search(None, "X-GM-RAW", _ALLMAIL_QUERY)
+            allmail_ids = ids2[0].split() if ids2 and ids2[0] else []
+            for seq in allmail_ids[-400:]:  # cap to bound runtime
+                _, data = mail.fetch(seq, "(RFC822)")
+                if data and data[0]:
+                    _process_message(email.message_from_bytes(data[0][1]), seq.decode(),
+                                     now, cutoff, synced_ids, seen_msgids, events)
+        except Exception as e:
+            print(f"  [Gmail] All Mail scan skipped: {e}", file=sys.stderr)
 
         mail.logout()
     except Exception as e:
