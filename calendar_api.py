@@ -51,14 +51,27 @@ def create_event(
     transparency: str = "opaque",
     calendar_id: str = "primary",
     timezone: str = "America/New_York",
+    all_day: bool = False,
 ) -> dict:
-    """Create a calendar event. Returns the created event resource."""
-    body = {
-        "summary": summary,
-        "start": {"dateTime": start_iso, "timeZone": timezone},
-        "end": {"dateTime": end_iso, "timeZone": timezone},
-        "transparency": transparency,
-    }
+    """Create a calendar event. Returns the created event resource.
+
+    For all-day events, pass all_day=True with date-only strings
+    (YYYY-MM-DD); end date is exclusive per the Google Calendar API.
+    """
+    if all_day:
+        body = {
+            "summary": summary,
+            "start": {"date": start_iso},
+            "end": {"date": end_iso},
+            "transparency": transparency,
+        }
+    else:
+        body = {
+            "summary": summary,
+            "start": {"dateTime": start_iso, "timeZone": timezone},
+            "end": {"dateTime": end_iso, "timeZone": timezone},
+            "transparency": transparency,
+        }
     if location:
         body["location"] = location
     if description:

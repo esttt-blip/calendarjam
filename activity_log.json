@@ -88,5 +88,33 @@
     "title": "\ud83d\udc3e Milo Evaluation \u2014 Giving Tree Pet Resort",
     "source": "Gmail (manual)",
     "when": "2026-06-08T11:00"
+  },
+  {
+    "ts": "2026-06-08T14:05:39.113105+00:00",
+    "action": "added",
+    "title": "\ud83d\uded2 Walmart delivery",
+    "source": "Delivery",
+    "when": "2026-06-02T19:00:00"
+  },
+  {
+    "ts": "2026-06-08T14:05:39.446558+00:00",
+    "action": "added",
+    "title": "\ud83d\uded2 Walmart delivery",
+    "source": "Delivery",
+    "when": "2026-06-06T11:00:00"
+  },
+  {
+    "ts": "2026-06-08T14:05:40.034074+00:00",
+    "action": "added",
+    "title": "\ud83d\uded2 Walmart delivery",
+    "source": "Delivery",
+    "when": "2026-06-08T19:00:00"
+  },
+  {
+    "ts": "2026-06-08T14:05:40.541981+00:00",
+    "action": "added",
+    "title": "\ud83c\udf71 MightyMeals delivery",
+    "source": "Delivery",
+    "when": "2026-06-10"
   }
 ]

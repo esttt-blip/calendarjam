@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-08T06:28:58.240395-04:00",
-  "generated_label": "Mon Jun 8, 6:28 AM",
+  "generated_at": "2026-06-08T10:24:15.101606-04:00",
+  "generated_label": "Mon Jun 8, 10:24 AM",
   "weather": {
-    "high_f": 84,
+    "high_f": 81,
     "low_f": 68,
     "precip_pct": 0,
-    "emoji": "\ud83c\udf24",
-    "label": "Mostly clear"
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
   },
   "today": [
     {
@@ -28,11 +28,29 @@
       "sort": "2026-06-08T10:00:00-04:00"
     },
     {
+      "time": "11:00 AM",
+      "title": "\ud83d\udc3e Milo Evaluation / Consultation \u2014 Giving Tree K9 Club",
+      "location": "Giving Tree K9 Club, 130 W Jefferson St, Falls Church, VA 22046",
+      "description": "Milo daycare evaluation/consultation. Giving Tree K9 Club - Falls Church \u00b7 571-799-8100 \u26a0\ufe0f Booking email said RESTON \u2014 confirm location befo",
+      "outdoor": false,
+      "is_drive": false,
+      "sort": "2026-06-08T11:00:00-04:00"
+    },
+    {
       "time": "7:00 PM",
       "title": "VIVA \u26bd Practice at Ossian",
       "location": "7990 Heritage Dr, Annandale, VA 22003",
       "description": "Arrival Time: 7:00 PM",
       "outdoor": true,
+      "is_drive": false,
+      "sort": "2026-06-08T19:00:00-04:00"
+    },
+    {
+      "time": "7:00 PM",
+      "title": "\ud83d\uded2 Walmart delivery",
+      "location": "",
+      "description": "Walmart delivery window (auto-added from order email).",
+      "outdoor": false,
       "is_drive": false,
       "sort": "2026-06-08T19:00:00-04:00"
     }
@@ -57,6 +75,24 @@
       "sort": "2026-06-08T10:00:00-04:00"
     },
     {
+      "time": "10:40 AM",
+      "title": "\ud83d\ude97 Drive to Giving Tree K9 Club (Milo eval)",
+      "location": "130 W Jefferson St, Falls Church, VA 22046",
+      "description": "~12 min drive from home for Milo's 11 AM eval.",
+      "outdoor": false,
+      "is_drive": true,
+      "sort": "2026-06-08T10:40:00-04:00"
+    },
+    {
+      "time": "11:00 AM",
+      "title": "\ud83d\udc3e Milo Evaluation / Consultation \u2014 Giving Tree K9 Club",
+      "location": "Giving Tree K9 Club, 130 W Jefferson St, Falls Church, VA 22046",
+      "description": "Milo daycare evaluation/consultation. Giving Tree K9 Club - Falls Church \u00b7 571-799-8100 \u26a0\ufe0f Booking email said RESTON \u2014 confirm location befo",
+      "outdoor": false,
+      "is_drive": false,
+      "sort": "2026-06-08T11:00:00-04:00"
+    },
+    {
       "time": "7:00 PM",
       "title": "VIVA \u26bd Practice at Ossian",
       "location": "7990 Heritage Dr, Annandale, VA 22003",
@@ -64,10 +100,26 @@
       "outdoor": true,
       "is_drive": false,
       "sort": "2026-06-08T19:00:00-04:00"
+    },
+    {
+      "time": "7:00 PM",
+      "title": "\ud83d\uded2 Walmart delivery",
+      "location": "",
+      "description": "Walmart delivery window (auto-added from order email).",
+      "outdoor": false,
+      "is_drive": false,
+      "sort": "2026-06-08T19:00:00-04:00"
     }
   ],
   "week_ahead": {
     "collisions": [
+      {
+        "day": "Mon Jun 8",
+        "a": "VIVA \u26bd Practice at Ossian",
+        "a_time": "7:00 PM",
+        "b": "\ud83d\uded2 Walmart delivery",
+        "b_time": "7:00 PM"
+      },
       {
         "day": "Tue Jun 9",
         "a": "Ignite \u26be Practice",
@@ -116,8 +168,8 @@
     }
   },
   "counts": {
-    "events_today": 3,
-    "conflicts_week": 1,
-    "added_week": 10
+    "events_today": 5,
+    "conflicts_week": 2,
+    "added_week": 14
   }
 }

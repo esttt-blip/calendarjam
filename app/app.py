@@ -101,8 +101,6 @@ weather = (dash or {}).get("weather") or {}
 hdr_left, hdr_right = st.columns([3, 2])
 with hdr_left:
     st.markdown("## 📅 calendarjam")
-    if dash and dash.get("generated_label"):
-        st.caption(f"Updated {dash['generated_label']}")
 with hdr_right:
     if weather:
         st.markdown(
@@ -112,6 +110,20 @@ with hdr_right:
             f"{weather.get('precip_pct',0)}% rain</span></div>",
             unsafe_allow_html=True,
         )
+
+# ─────────────────────────── last-synced banner ───────────────────────────
+
+now_label = datetime.now().astimezone().strftime("%-I:%M %p")
+if dash and dash.get("generated_label"):
+    st.markdown(
+        f"<div style='background:#f0f4ff;border-radius:8px;padding:8px 12px;"
+        f"font-size:12px;color:#445;margin-bottom:12px'>"
+        f"🔄 <b>Last synced:</b> {dash['generated_label']} &nbsp;·&nbsp; "
+        f"<span style='color:#889'>page opened {now_label}</span></div>",
+        unsafe_allow_html=True,
+    )
+else:
+    st.warning("No dashboard snapshot yet — the next 6:15 AM sync will populate this.", icon="⏳")
 
 # ─────────────────────────── metrics row ───────────────────────────
 

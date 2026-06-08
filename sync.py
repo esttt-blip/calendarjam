@@ -29,6 +29,7 @@ import requests
 from icalendar import Calendar
 
 import activity
+import deliveries as deliveries_mod
 import lookahead
 from briefing import build_briefing
 from calendar_api import create_event
@@ -229,8 +230,9 @@ _ALLMAIL_KEYWORDS = (
 _ALLMAIL_QUERY = f'"newer_than:7d {{{_ALLMAIL_KEYWORDS}}} -category:promotions -category:social -in:sent"'
 
 
-def _process_message(msg, seq: str, now, cutoff, synced_ids, seen_msgids, events) -> None:
-    """Parse one email message and append any surfaced events. Dedups by Message-ID."""
+def _process_message(msg, seq: str, now, cutoff, synced_ids, seen_msgids, events, deliveries) -> None:
+    """Parse one email message and append surfaced events / detected deliveries.
+    Dedups by Message-ID."""
     gmid = (str(msg.get("Message-ID", "")) or seq).strip()
     if gmid in seen_msgids:
         return
@@ -238,6 +240,7 @@ def _process_message(msg, seq: str, now, cutoff, synced_ids, seen_msgids, events
 
     subject = decode_subject(str(msg.get("Subject", "")))
     subject_lower = subject.lower()
+    from_addr = str(msg.get("From", ""))
 
     # Skip our own emails (feedback loop prevention)
     if "calendarjam" in subject_lower:
@@ -266,6 +269,17 @@ def _process_message(msg, seq: str, now, cutoff, synced_ids, seen_msgids, events
         return
 
     body = (plain_body or html_body or "").strip()
+
+    # Delivery detection — MightyMeals / Walmart → auto-add to calendar,
+    # don't surface for review.
+    deliv = deliveries_mod.detect(from_addr, subject, body)
+    if deliv:
+        did = stable_id("delivery", deliv["dedup"])
+        if did not in synced_ids:
+            deliv["_id"] = did
+            deliveries.append(deliv)
+        return
+
     if not (is_event_like or has_appointment_signal(body)) or not body:
         return
 
@@ -284,14 +298,21 @@ def _process_message(msg, seq: str, now, cutoff, synced_ids, seen_msgids, events
     })
 
 
-def fetch_gmail_events(now: datetime, cutoff: datetime, synced_ids: set) -> list[dict]:
+# Walmart/MightyMeals sometimes land in Promotions, so the delivery pass uses
+# its own query that does NOT exclude promotions.
+_DELIVERY_QUERY = '"newer_than:10d (from:walmart OR from:mightymeals) (delivery OR arrives OR order)"'
+
+
+def fetch_gmail_events(now: datetime, cutoff: datetime, synced_ids: set) -> tuple[list[dict], list[dict]]:
+    """Return (review_events, deliveries)."""
     gmail_address = os.getenv("GMAIL_ADDRESS")
     app_password = os.getenv("GMAIL_APP_PASSWORD")
     if not gmail_address or not app_password:
         print("  [Gmail] skipped — credentials not set", file=sys.stderr)
-        return []
+        return [], []
 
     events: list[dict] = []
+    deliveries: list[dict] = []
     seen_msgids: set[str] = set()
     since = (datetime.now() - timedelta(days=7)).strftime("%d-%b-%Y")
 
@@ -307,10 +328,9 @@ def fetch_gmail_events(now: datetime, cutoff: datetime, synced_ids: set) -> list
             _, data = mail.fetch(seq, "(RFC822)")
             if data and data[0]:
                 _process_message(email.message_from_bytes(data[0][1]), seq.decode(),
-                                 now, cutoff, synced_ids, seen_msgids, events)
+                                 now, cutoff, synced_ids, seen_msgids, events, deliveries)
 
-        # Pass 2 — All Mail, keyword-filtered, to catch archived/filtered
-        # appointment emails that never hit the inbox (e.g. vet/daycare reminders).
+        # Pass 2 — All Mail, keyword-filtered, for archived appointment emails.
         try:
             mail.select('"[Gmail]/All Mail"', readonly=True)
             _, ids2 = mail.search(None, "X-GM-RAW", _ALLMAIL_QUERY)
@@ -319,15 +339,28 @@ def fetch_gmail_events(now: datetime, cutoff: datetime, synced_ids: set) -> list
                 _, data = mail.fetch(seq, "(RFC822)")
                 if data and data[0]:
                     _process_message(email.message_from_bytes(data[0][1]), seq.decode(),
-                                     now, cutoff, synced_ids, seen_msgids, events)
+                                     now, cutoff, synced_ids, seen_msgids, events, deliveries)
         except Exception as e:
             print(f"  [Gmail] All Mail scan skipped: {e}", file=sys.stderr)
+
+        # Pass 3 — delivery senders (Walmart / MightyMeals), incl. promotions.
+        try:
+            mail.select('"[Gmail]/All Mail"', readonly=True)
+            _, ids3 = mail.search(None, "X-GM-RAW", _DELIVERY_QUERY)
+            deliv_ids = ids3[0].split() if ids3 and ids3[0] else []
+            for seq in deliv_ids[-60:]:
+                _, data = mail.fetch(seq, "(RFC822)")
+                if data and data[0]:
+                    _process_message(email.message_from_bytes(data[0][1]), seq.decode(),
+                                     now, cutoff, synced_ids, seen_msgids, events, deliveries)
+        except Exception as e:
+            print(f"  [Gmail] delivery scan skipped: {e}", file=sys.stderr)
 
         mail.logout()
     except Exception as e:
         print(f"  [Gmail] error: {e}", file=sys.stderr)
 
-    return events
+    return events, deliveries
 
 
 # ─────────────────────────── calendar writes ───────────────────────────
@@ -740,9 +773,32 @@ def main():
         all_new.extend(fetched)
 
     print("Scanning Gmail...")
-    gmail_events = fetch_gmail_events(now, cutoff, synced_ids)
-    print(f"  {len(gmail_events)} new")
+    gmail_events, gmail_deliveries = fetch_gmail_events(now, cutoff, synced_ids)
+    print(f"  {len(gmail_events)} new, {len(gmail_deliveries)} delivery(ies)")
     all_new.extend(gmail_events)
+
+    # Auto-add detected deliveries (MightyMeals all-day, Walmart timed window).
+    # Only future-or-today deliveries — past ones are just clutter.
+    import zoneinfo as _zi
+    today_et = datetime.now(_zi.ZoneInfo("America/New_York")).date()
+    for d in gmail_deliveries:
+        try:
+            if datetime.fromisoformat(d["start"][:10]).date() < today_et:
+                synced_ids.add(d["_id"])  # mark seen so we don't re-evaluate
+                continue
+            create_event(
+                summary=d["title"],
+                start_iso=d["start"],
+                end_iso=d["end"],
+                description=d.get("description", ""),
+                transparency="transparent",
+                all_day=(d["kind"] == "allday"),
+            )
+            synced_ids.add(d["_id"])
+            activity.append("added", d["title"], "Delivery", when=d["start"])
+            print(f"  ✓ [Delivery] {d['title']} ({d['start']})")
+        except Exception as e:
+            print(f"  ✗ [Delivery] {d['title']} failed: {e}", file=sys.stderr)
 
     # Classify each event
     auto_writes: list[CalendarWrite] = []
