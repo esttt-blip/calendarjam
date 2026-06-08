@@ -23,15 +23,14 @@
       "filter_keywords": ["holiday", "break", "early release", "last day of school", "sol", "retake"],
       "exclude_keywords": ["elementary", "summer school"],
       "lookback_days": 2
-    }
-  ],
-  "browser_sources": [
+    },
     {
       "name": "Karma Yoga 🧘",
-      "url": "https://app.karma.yoga/bookings",
+      "url": "https://app.karma.yoga/api/org/public/student-calendar/eyJ2ZXJzaW9uIjoxLCJvcmdhbml6YXRpb25JZCI6Im9yZ183dnNmUUFJNHc0ZF8iLCJwcm9maWxlSWQiOiJvdXBfSTllcFRKTlZ5dG9Cd054YSJ9.ymwLub8_iZxqr7O6GJmoLgr_MZ56fkD94oEAC0ZNWs4.ics",
       "enabled": true
     }
   ],
+  "browser_sources_DEPRECATED": [],
   "_more_ics_ideas": [
     "Eventbrite: account > settings > export calendar link",
     "Meetup: profile > calendar > subscribe",

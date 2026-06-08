@@ -144,7 +144,7 @@ def classify(event: dict) -> tuple[Literal["auto", "review", "skip"], CalendarWr
     if source == "Swanson 📚":
         return ("auto", transform_swanson(event))
 
-    if source in ("VIVA ⚽", "Ignite ⚾", "Gmail invite"):
+    if source in ("VIVA ⚽", "Ignite ⚾", "Gmail invite", "Karma Yoga 🧘"):
         return ("auto", transform_ics_generic(event))
 
     # Default: surface for review
