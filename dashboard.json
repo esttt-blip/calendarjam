@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-08T10:24:15.101606-04:00",
-  "generated_label": "Mon Jun 8, 10:24 AM",
+  "generated_at": "2026-06-08T10:34:05.187853-04:00",
+  "generated_label": "Mon Jun 8, 10:34 AM",
   "weather": {
     "high_f": 81,
     "low_f": 68,
@@ -8,168 +8,408 @@
     "emoji": "\u2601\ufe0f",
     "label": "Overcast"
   },
-  "today": [
+  "week": [
     {
-      "time": "8:00 AM",
-      "title": "HVAC Maintenance",
-      "location": "",
-      "description": "",
-      "outdoor": false,
-      "is_drive": false,
-      "sort": "2026-06-08T08:00:00-04:00"
-    },
-    {
-      "time": "10:00 AM",
-      "title": "Change lint filter",
-      "location": "",
-      "description": "",
-      "outdoor": false,
-      "is_drive": false,
-      "sort": "2026-06-08T10:00:00-04:00"
-    },
-    {
-      "time": "11:00 AM",
-      "title": "\ud83d\udc3e Milo Evaluation / Consultation \u2014 Giving Tree K9 Club",
-      "location": "Giving Tree K9 Club, 130 W Jefferson St, Falls Church, VA 22046",
-      "description": "Milo daycare evaluation/consultation. Giving Tree K9 Club - Falls Church \u00b7 571-799-8100 \u26a0\ufe0f Booking email said RESTON \u2014 confirm location befo",
-      "outdoor": false,
-      "is_drive": false,
-      "sort": "2026-06-08T11:00:00-04:00"
-    },
-    {
-      "time": "7:00 PM",
-      "title": "VIVA \u26bd Practice at Ossian",
-      "location": "7990 Heritage Dr, Annandale, VA 22003",
-      "description": "Arrival Time: 7:00 PM",
-      "outdoor": true,
-      "is_drive": false,
-      "sort": "2026-06-08T19:00:00-04:00"
-    },
-    {
-      "time": "7:00 PM",
-      "title": "\ud83d\uded2 Walmart delivery",
-      "location": "",
-      "description": "Walmart delivery window (auto-added from order email).",
-      "outdoor": false,
-      "is_drive": false,
-      "sort": "2026-06-08T19:00:00-04:00"
-    }
-  ],
-  "today_with_drives": [
-    {
-      "time": "8:00 AM",
-      "title": "HVAC Maintenance",
-      "location": "",
-      "description": "",
-      "outdoor": false,
-      "is_drive": false,
-      "sort": "2026-06-08T08:00:00-04:00"
-    },
-    {
-      "time": "10:00 AM",
-      "title": "Change lint filter",
-      "location": "",
-      "description": "",
-      "outdoor": false,
-      "is_drive": false,
-      "sort": "2026-06-08T10:00:00-04:00"
-    },
-    {
-      "time": "10:40 AM",
-      "title": "\ud83d\ude97 Drive to Giving Tree K9 Club (Milo eval)",
-      "location": "130 W Jefferson St, Falls Church, VA 22046",
-      "description": "~12 min drive from home for Milo's 11 AM eval.",
-      "outdoor": false,
-      "is_drive": true,
-      "sort": "2026-06-08T10:40:00-04:00"
-    },
-    {
-      "time": "11:00 AM",
-      "title": "\ud83d\udc3e Milo Evaluation / Consultation \u2014 Giving Tree K9 Club",
-      "location": "Giving Tree K9 Club, 130 W Jefferson St, Falls Church, VA 22046",
-      "description": "Milo daycare evaluation/consultation. Giving Tree K9 Club - Falls Church \u00b7 571-799-8100 \u26a0\ufe0f Booking email said RESTON \u2014 confirm location befo",
-      "outdoor": false,
-      "is_drive": false,
-      "sort": "2026-06-08T11:00:00-04:00"
-    },
-    {
-      "time": "7:00 PM",
-      "title": "VIVA \u26bd Practice at Ossian",
-      "location": "7990 Heritage Dr, Annandale, VA 22003",
-      "description": "Arrival Time: 7:00 PM",
-      "outdoor": true,
-      "is_drive": false,
-      "sort": "2026-06-08T19:00:00-04:00"
-    },
-    {
-      "time": "7:00 PM",
-      "title": "\ud83d\uded2 Walmart delivery",
-      "location": "",
-      "description": "Walmart delivery window (auto-added from order email).",
-      "outdoor": false,
-      "is_drive": false,
-      "sort": "2026-06-08T19:00:00-04:00"
-    }
-  ],
-  "week_ahead": {
-    "collisions": [
-      {
-        "day": "Mon Jun 8",
-        "a": "VIVA \u26bd Practice at Ossian",
-        "a_time": "7:00 PM",
-        "b": "\ud83d\uded2 Walmart delivery",
-        "b_time": "7:00 PM"
+      "date": "2026-06-08",
+      "label": "Today \u00b7 Mon Jun 8",
+      "weather": {
+        "high_f": 81,
+        "low_f": 68,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
-      {
-        "day": "Tue Jun 9",
-        "a": "Ignite \u26be Practice",
-        "a_time": "5:30 PM",
-        "b": "VIVA \u26bd Practice at Ossian",
-        "b_time": "5:30 PM"
-      }
-    ],
-    "tight": [],
-    "weather": [],
-    "horizon": {
-      "birthdays": [
+      "events": [
         {
-          "title": "KJ Birthday",
-          "day": "Thu Jun 11",
-          "days_out": 3
+          "time": "8:00 am",
+          "title": "HVAC Maintenance",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-08T08:00:00-04:00"
         },
         {
-          "title": "Dad's Birthday",
-          "day": "Mon Jun 15",
-          "days_out": 7
+          "time": "10:00 am",
+          "title": "Change lint filter",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-08T10:00:00-04:00"
         },
         {
-          "title": "Avani\u2019s Birthday",
-          "day": "Thu Jun 25",
-          "days_out": 17
+          "time": "10:40 am",
+          "title": "\ud83d\ude97 Drive to Giving Tree K9 Club (Milo eval)",
+          "location": "130 W Jefferson St, Falls Church, VA 22046",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-08T10:40:00-04:00"
         },
         {
-          "title": "Brandee Birthday",
-          "day": "Mon Jun 29",
-          "days_out": 21
+          "time": "11:00 am",
+          "title": "\ud83d\udc3e Milo Evaluation / Consultation \u2014 Giving Tree K9 Club",
+          "location": "Giving Tree K9 Club, 130 W Jefferson St, Falls Church, VA 22046",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-08T11:00:00-04:00"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "VIVA \u26bd Practice at Ossian",
+          "location": "7990 Heritage Dr, Annandale, VA 22003",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-08T19:00:00-04:00"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "\ud83d\uded2 Walmart delivery",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-08T19:00:00-04:00"
         }
       ],
-      "holidays": [
+      "conflicts": [
         {
-          "title": "Juneteenth",
-          "day": "Fri Jun 19",
-          "days_out": 11
-        },
-        {
-          "title": "Father's Day",
-          "day": "Sun Jun 21",
-          "days_out": 13
+          "a": "VIVA \u26bd Practice at Ossian",
+          "a_time": "7:00 pm",
+          "b": "\ud83d\uded2 Walmart delivery",
+          "b_time": "7:00 pm"
         }
       ]
+    },
+    {
+      "date": "2026-06-09",
+      "label": "Tomorrow \u00b7 Tue Jun 9",
+      "weather": {
+        "high_f": 88,
+        "low_f": 59,
+        "precip_pct": 3,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
+      "events": [
+        {
+          "time": "3:00 pm",
+          "title": "\ud83d\ude97 Drive to ENT (1005 N Glebe Rd)",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-09T15:00:00-04:00"
+        },
+        {
+          "time": "3:15 pm",
+          "title": "ENT",
+          "location": "1005 N Glebe Rd, Arlington, VA 22201, USA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-09T15:15:00-04:00"
+        },
+        {
+          "time": "5:00 pm",
+          "title": "\ud83d\ude97 Drive to Ossian Hall (VIVA Practice)",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-09T17:00:00-04:00"
+        },
+        {
+          "time": "5:15 pm",
+          "title": "\ud83d\ude97 Drive to Bluemont Park (Ignite Practice)",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-09T17:15:00-04:00"
+        },
+        {
+          "time": "5:30 pm",
+          "title": "Ignite \u26be Practice",
+          "location": "601 N Manchester St, Arlington, VA 22203 (Side Fields / Main Field if open)",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-09T17:30:00-04:00"
+        },
+        {
+          "time": "5:30 pm",
+          "title": "VIVA \u26bd Practice at Ossian",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-09T17:30:00-04:00"
+        },
+        {
+          "time": "8:00 pm",
+          "title": "German Class",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-09T20:00:00-04:00"
+        }
+      ],
+      "conflicts": [
+        {
+          "a": "Ignite \u26be Practice",
+          "a_time": "5:30 pm",
+          "b": "VIVA \u26bd Practice at Ossian",
+          "b_time": "5:30 pm"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-10",
+      "label": "Wednesday \u00b7 Jun 10",
+      "weather": {
+        "high_f": 90,
+        "low_f": 69,
+        "precip_pct": 38,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
+      "events": [
+        {
+          "time": "all day",
+          "title": "\ud83c\udf71 MightyMeals delivery",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-06-10T00:00"
+        },
+        {
+          "time": "5:15 pm",
+          "title": "\ud83d\ude97 Drive to Mason District Park (VIVA Academy Night)",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-10T17:15:00-04:00"
+        },
+        {
+          "time": "5:45 pm",
+          "title": "VIVA \u26bd Academy Night Practice \u2014 Purple Uniform",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-10T17:45:00-04:00"
+        },
+        {
+          "time": "6:45 pm",
+          "title": "VIVA 2014B NCSL Yellow - End of the Year Party!!",
+          "location": "6621 Columbia Pike, Annandale, VA  22003",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-10T18:45:31-04:00"
+        },
+        {
+          "time": "7:30 pm",
+          "title": "Taylor Dinner",
+          "location": "Minetta Tavern DC, 1287 4th St NE, Washington, DC 20002, USA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-10T19:30:00-04:00"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "date": "2026-06-11",
+      "label": "Thursday \u00b7 Jun 11",
+      "weather": {
+        "high_f": 100,
+        "low_f": 70,
+        "precip_pct": 32,
+        "weather_code": 80,
+        "emoji": "\ud83c\udf26",
+        "label": "Showers"
+      },
+      "events": [
+        {
+          "time": "all day",
+          "title": "KJ Birthday",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-06-11T00:00"
+        },
+        {
+          "time": "6:00 pm",
+          "title": "Ignite \u26be Hitting Sessions",
+          "location": "5130 Wilson Blvd, Arlington, VA 22205",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-11T18:00:00-04:00"
+        },
+        {
+          "time": "8:00 pm",
+          "title": "German Class",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-11T20:00:00-04:00"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "date": "2026-06-12",
+      "label": "Friday \u00b7 Jun 12",
+      "weather": {
+        "high_f": 100,
+        "low_f": 68,
+        "precip_pct": 37,
+        "weather_code": 82,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy showers"
+      },
+      "events": [
+        {
+          "time": "all day",
+          "title": "Empty washer lint trap",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-06-12T00:00"
+        },
+        {
+          "time": "all day",
+          "title": "VIVA \u26bd Tournament \u2014 Mid Atlantic June 12\u201314 (Mark Availability)",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-06-12T00:00"
+        },
+        {
+          "time": "10:00 am",
+          "title": "FW: Bi-Weekly Product Health and Incident Review with ELT",
+          "location": "https://draftkings.zoom.us/j/95183770035?pwd=jpUb1Xt5mcxx69DQkzdkaee60kpuZh.1",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-12T10:00:00-04:00"
+        },
+        {
+          "time": "6:00 pm",
+          "title": "World Cup Opening @ the Smith\u2019s",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-12T18:00:00-04:00"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "date": "2026-06-13",
+      "label": "Saturday \u00b7 Jun 13",
+      "weather": {
+        "high_f": 84,
+        "low_f": 69,
+        "precip_pct": 35,
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
+      },
+      "events": [
+        {
+          "time": "9:00 am",
+          "title": "\ud83e\uddd8 All-Levels Hatha",
+          "location": "Karma Yoga",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-13T09:00:00-04:00"
+        },
+        {
+          "time": "10:00 am",
+          "title": "\ud83d\ude97 Drive to Maryland Soccerplex (Villarreal game)",
+          "location": "18031 Central Park Cir, Boyds, MD 20841",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-13T10:00:00-04:00"
+        },
+        {
+          "time": "11:15 am",
+          "title": "\u26bd Villarreal vs DC Armory (Home) \u2014 Mid-Atlantic Cup",
+          "location": "Field 09C, Maryland Soccerplex, 18031 Central Park Cir, Boyds, MD 20841",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-13T11:15:00-04:00"
+        },
+        {
+          "time": "1:25 pm",
+          "title": "\u26bd Villarreal vs CSA Black \u2014 Mid-Atlantic Cup",
+          "location": "Field 09C, Maryland Soccerplex, 18031 Central Park Cir, Boyds, MD 20841",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-13T13:25:00-04:00"
+        },
+        {
+          "time": "2:40 pm",
+          "title": "\ud83d\ude97 Drive home from Maryland Soccerplex",
+          "location": "1014 N Quintana St, Arlington, VA 22205",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-13T14:40:00-04:00"
+        },
+        {
+          "time": "6:00 pm",
+          "title": "Tornado Mommas past and present",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-13T18:00:00-04:00"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "date": "2026-06-14",
+      "label": "Sunday \u00b7 Jun 14",
+      "weather": {
+        "high_f": 90,
+        "low_f": 66,
+        "precip_pct": 37,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
+      "events": [],
+      "conflicts": []
     }
-  },
-  "counts": {
-    "events_today": 5,
-    "conflicts_week": 2,
-    "added_week": 14
+  ],
+  "horizon": {
+    "birthdays": [
+      {
+        "title": "KJ Birthday",
+        "day": "Thu Jun 11",
+        "days_out": 3
+      },
+      {
+        "title": "Dad's Birthday",
+        "day": "Mon Jun 15",
+        "days_out": 7
+      },
+      {
+        "title": "Avani\u2019s Birthday",
+        "day": "Thu Jun 25",
+        "days_out": 17
+      },
+      {
+        "title": "Brandee Birthday",
+        "day": "Mon Jun 29",
+        "days_out": 21
+      }
+    ],
+    "holidays": [
+      {
+        "title": "Juneteenth",
+        "day": "Fri Jun 19",
+        "days_out": 11
+      },
+      {
+        "title": "Father's Day",
+        "day": "Sun Jun 21",
+        "days_out": 13
+      }
+    ]
   }
 }

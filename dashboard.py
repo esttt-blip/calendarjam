@@ -16,7 +16,7 @@ from pathlib import Path
 
 import lookahead
 from calendar_api import list_events
-from weather import fetch_today_forecast
+from weather import fetch_forecast, fetch_today_forecast
 
 BASE_DIR = Path(__file__).parent
 DASHBOARD_FILE = BASE_DIR / "dashboard.json"
@@ -76,6 +76,81 @@ def _today_events() -> list[dict]:
     return out
 
 
+def _day_label(d: datetime, today: datetime) -> str:
+    delta = (d.date() - today.date()).days
+    if delta == 0:
+        return f"Today · {d.strftime('%a %b %-d')}"
+    if delta == 1:
+        return f"Tomorrow · {d.strftime('%a %b %-d')}"
+    return d.strftime("%A · %b %-d")
+
+
+def _week_agenda(days: int = 7) -> list[dict]:
+    """Full day-by-day agenda for the next N days, with conflicts annotated."""
+    now = datetime.now(ET)
+    start = now.replace(hour=0, minute=0, second=0, microsecond=0)
+    end = start + timedelta(days=days)
+
+    raw = list_events(time_min_iso=start.isoformat(), time_max_iso=end.isoformat(), max_results=250)
+    forecast = fetch_forecast(days)
+
+    # Build day buckets
+    buckets: dict[str, dict] = {}
+    for i in range(days):
+        d = start + timedelta(days=i)
+        key = d.strftime("%Y-%m-%d")
+        buckets[key] = {
+            "date": key,
+            "label": _day_label(d, now),
+            "weather": forecast.get(key),
+            "events": [],
+            "conflicts": [],
+        }
+
+    for e in raw:
+        s = e.get("start", {}).get("dateTime") or e.get("start", {}).get("date")
+        if not s:
+            continue
+        if "T" in s:
+            dt = datetime.fromisoformat(s.replace("Z", "+00:00")).astimezone(ET)
+            key = dt.strftime("%Y-%m-%d")
+            time_label = dt.strftime("%-I:%M %p").lower()
+            sort_key = dt.isoformat()
+            all_day = False
+        else:
+            key = s
+            time_label = "all day"
+            sort_key = s + "T00:00"
+            all_day = False if False else True
+        if key not in buckets:
+            continue
+        summary = e.get("summary", "(untitled)")
+        buckets[key]["events"].append({
+            "time": time_label,
+            "title": summary,
+            "location": e.get("location", ""),
+            "all_day": all_day,
+            "is_drive": summary.strip().startswith("🚗"),
+            "sort": sort_key,
+        })
+
+    # Annotate conflicts onto their day
+    for c in lookahead.find_collisions(raw):
+        key = c["a_start"].strftime("%Y-%m-%d")
+        if key in buckets:
+            buckets[key]["conflicts"].append({
+                "a": c["a"], "a_time": c["a_start"].strftime("%-I:%M %p").lower(),
+                "b": c["b"], "b_time": c["b_start"].strftime("%-I:%M %p").lower(),
+            })
+
+    week = []
+    for key in sorted(buckets):
+        day = buckets[key]
+        day["events"].sort(key=lambda x: (not x["all_day"], x["sort"]))
+        week.append(day)
+    return week
+
+
 def _added_this_week() -> int:
     if not ACTIVITY_LOG.exists():
         return 0
@@ -120,29 +195,25 @@ def _serialize_scan(scan: dict) -> dict:
 def build_snapshot() -> dict:
     """Build and write dashboard.json. Returns the snapshot dict."""
     now = datetime.now(ET)
-    today_events = _today_events()
-    weather = fetch_today_forecast()
 
     try:
-        scan = _serialize_scan(lookahead.scan(days=7))
+        week = _week_agenda(days=7)
     except Exception as e:
-        print(f"  [dashboard] lookahead failed: {e}")
-        scan = {"collisions": [], "tight": [], "weather": [], "horizon": {"birthdays": [], "holidays": []}}
+        print(f"  [dashboard] week agenda failed: {e}")
+        week = []
 
-    n_conflicts = len(scan["collisions"]) + len(scan["tight"])
+    try:
+        horizon = lookahead.find_horizon(21)
+    except Exception as e:
+        print(f"  [dashboard] horizon failed: {e}")
+        horizon = {"birthdays": [], "holidays": []}
 
     snapshot = {
         "generated_at": now.isoformat(),
         "generated_label": now.strftime("%a %b %-d, %-I:%M %p"),
-        "weather": weather,
-        "today": [e for e in today_events if not e["is_drive"]],
-        "today_with_drives": today_events,
-        "week_ahead": scan,
-        "counts": {
-            "events_today": len([e for e in today_events if not e["is_drive"]]),
-            "conflicts_week": n_conflicts,
-            "added_week": _added_this_week(),
-        },
+        "weather": fetch_today_forecast(),
+        "week": week,
+        "horizon": horizon,
     }
 
     DASHBOARD_FILE.write_text(json.dumps(snapshot, indent=2, default=str))
@@ -153,4 +224,6 @@ if __name__ == "__main__":
     from dotenv import load_dotenv
     load_dotenv(BASE_DIR / ".env")
     snap = build_snapshot()
-    print(f"Dashboard written: {snap['counts']}")
+    print(f"Dashboard written: {len(snap['week'])} days, "
+          f"{sum(len(d['events']) for d in snap['week'])} events, "
+          f"{sum(len(d['conflicts']) for d in snap['week'])} conflicts")
