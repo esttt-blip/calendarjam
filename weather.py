@@ -70,6 +70,42 @@ def fetch_today_forecast() -> Optional[dict]:
         return None
 
 
+def fetch_forecast(days: int = 7) -> dict[str, dict]:
+    """Return a dict keyed by 'YYYY-MM-DD' -> forecast for the next N days."""
+    url = (
+        "https://api.open-meteo.com/v1/forecast"
+        f"?latitude={LAT}&longitude={LON}"
+        "&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,weather_code"
+        "&temperature_unit=fahrenheit"
+        "&timezone=America/New_York"
+        f"&forecast_days={max(1, min(days, 16))}"
+    )
+    out: dict[str, dict] = {}
+    try:
+        resp = requests.get(url, timeout=10)
+        resp.raise_for_status()
+        daily = resp.json().get("daily", {})
+        dates = daily.get("time", [])
+        for i, day in enumerate(dates):
+            code = daily["weather_code"][i]
+            emoji, label = _CODE_MAP.get(code, ("🌡", "—"))
+            out[day] = {
+                "high_f": round(daily["temperature_2m_max"][i]),
+                "low_f": round(daily["temperature_2m_min"][i]),
+                "precip_pct": daily["precipitation_probability_max"][i] or 0,
+                "weather_code": code,
+                "emoji": emoji,
+                "label": label,
+            }
+    except Exception as e:
+        print(f"  [weather] multi-day fetch failed: {e}")
+    return out
+
+
+# Weather codes that suggest an outdoor event could be cancelled
+CANCELLATION_CODES = {65, 75, 82, 95, 96, 99}  # heavy rain, heavy snow, violent showers, thunderstorms
+
+
 def format_strip(forecast: dict) -> str:
     """One-line text version for plain-text fallback or logging."""
     return (

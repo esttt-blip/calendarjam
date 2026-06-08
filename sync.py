@@ -29,6 +29,7 @@ import requests
 from icalendar import Calendar
 
 import activity
+import lookahead
 from briefing import build_briefing
 from calendar_api import create_event
 from classify import CalendarWrite, classify
@@ -454,6 +455,99 @@ def _format_activity_section() -> str:
     </td></tr>"""
 
 
+def _format_lookahead_section() -> str:
+    """Render the 'Week ahead' heads-up: collisions, tight turns, weather, horizon."""
+    try:
+        scan = lookahead.scan(days=7)
+    except Exception as e:
+        print(f"  [lookahead] scan failed: {e}", file=sys.stderr)
+        return ""
+
+    collisions = scan.get("collisions", [])
+    tight = scan.get("tight", [])
+    weather = scan.get("weather", [])
+    horizon = scan.get("horizon", {})
+    birthdays = horizon.get("birthdays", [])
+    holidays = horizon.get("holidays", [])
+
+    blocks = []
+
+    # ── Conflicts ──
+    if collisions:
+        rows = []
+        for c in collisions:
+            a_t = c["a_start"].strftime("%-I:%M%p").lower().lstrip("0")
+            b_t = c["b_start"].strftime("%-I:%M%p").lower().lstrip("0")
+            rows.append(
+                f'<div style="padding:5px 0;font-size:13px;color:#444;line-height:1.45">'
+                f'<span style="color:#c0392b;font-weight:700">⚠️ {c["day"]}</span> — '
+                f'<b>{c["a"]}</b> ({a_t}) overlaps <b>{c["b"]}</b> ({b_t})</div>'
+            )
+        blocks.append(("Conflicts", "".join(rows)))
+
+    # ── Tight turnarounds ──
+    if tight:
+        rows = []
+        for t in tight:
+            rows.append(
+                f'<div style="padding:5px 0;font-size:13px;color:#444;line-height:1.45">'
+                f'<span style="color:#d68910;font-weight:700">⏱ {t["day"]}</span> — '
+                f'only {t["gap_min"]} min between <b>{t["a"]}</b> and <b>{t["b"]}</b> '
+                f'(different locations)</div>'
+            )
+        blocks.append(("Tight turnarounds", "".join(rows)))
+
+    # ── Weather watch ──
+    if weather:
+        rows = []
+        for w in weather:
+            rows.append(
+                f'<div style="padding:5px 0;font-size:13px;color:#444;line-height:1.45">'
+                f'<span style="color:#2471a3;font-weight:700">{w["emoji"]} {w["day"]}</span> — '
+                f'<b>{w["title"]}</b> at {w["time"]} · {w["precip_pct"]}% rain '
+                f'({w["label"]}) — possible cancellation</div>'
+            )
+        blocks.append(("Weather watch", "".join(rows)))
+
+    # ── Coming up (birthdays + holidays) ──
+    horizon_rows = []
+    for b in birthdays:
+        when = "today" if b["days_out"] == 0 else f"in {b['days_out']} days"
+        horizon_rows.append(
+            f'<div style="padding:4px 0;font-size:13px;color:#444">'
+            f'🎂 <b>{b["title"]}</b> — {b["day"]} <span style="color:#999">({when})</span></div>'
+        )
+    for h in holidays:
+        horizon_rows.append(
+            f'<div style="padding:4px 0;font-size:13px;color:#444">'
+            f'🎉 {h["title"]} — {h["day"]}</div>'
+        )
+    if horizon_rows:
+        blocks.append(("Coming up", "".join(horizon_rows)))
+
+    if not blocks:
+        return ""
+
+    inner = ""
+    for label, content in blocks:
+        inner += (
+            f'<div style="margin-bottom:14px">'
+            f'<div style="color:#888;font-size:11px;font-weight:700;letter-spacing:0.5px;'
+            f'text-transform:uppercase;margin-bottom:4px">{label}</div>'
+            f'{content}</div>'
+        )
+
+    return f"""
+    <tr><td style="padding:18px 28px 4px 28px">
+      <span style="background:#fdecea;color:#c0392b;font-size:11px;font-weight:700;
+                   padding:4px 10px;border-radius:4px;letter-spacing:0.5px;
+                   text-transform:uppercase">⚠️ Week ahead</span>
+    </td></tr>
+    <tr><td style="padding:12px 28px 8px 28px">
+      <div style="background:#fafafa;border-radius:10px;padding:16px 18px">{inner}</div>
+    </td></tr>"""
+
+
 def send_summary_email(
     added: list[CalendarWrite],
     pending: list[dict],
@@ -521,6 +615,9 @@ def send_summary_email(
           </div>
         </td></tr>"""
 
+    # ── Week-ahead heads-up (conflicts, misses, weather, horizon) ──
+    lookahead_section = _format_lookahead_section()
+
     # ── Today's briefing (weather + calendar + linked emails) ──
     briefing_section = ""
     try:
@@ -548,6 +645,7 @@ def send_summary_email(
         </td></tr>
         {status_section}
         {cta_section}
+        {lookahead_section}
         {briefing_section}
         {activity_section}
         <tr><td style="padding:14px 28px;background:#fafafa;color:#999;
