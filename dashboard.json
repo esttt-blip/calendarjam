@@ -1,91 +1,15 @@
 {
-  "generated_at": "2026-06-08T15:39:41.327026-04:00",
-  "generated_label": "Mon Jun 8, 3:39 PM",
-  "weather": {
-    "high_f": 80,
-    "low_f": 68,
-    "precip_pct": 0,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-06-09T06:00:54.513945-04:00",
+  "generated_label": "Tue Jun 9, 6:00 AM",
+  "weather": null,
   "week": [
     {
-      "date": "2026-06-08",
-      "label": "Today \u00b7 Mon Jun 8",
-      "weather": {
-        "high_f": 80,
-        "low_f": 68,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "8:00 am",
-          "title": "HVAC Maintenance",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-08T08:00:00-04:00"
-        },
-        {
-          "time": "10:00 am",
-          "title": "Change lint filter",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-08T10:00:00-04:00"
-        },
-        {
-          "time": "10:40 am",
-          "title": "\ud83d\ude97 Drive to Giving Tree K9 Club (Milo eval)",
-          "location": "130 W Jefferson St, Falls Church, VA 22046",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-06-08T10:40:00-04:00"
-        },
-        {
-          "time": "11:00 am",
-          "title": "\ud83d\udc3e Milo Evaluation / Consultation \u2014 Giving Tree K9 Club",
-          "location": "Giving Tree K9 Club, 130 W Jefferson St, Falls Church, VA 22046",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-08T11:00:00-04:00"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "VIVA \u26bd Practice at Ossian",
-          "location": "7990 Heritage Dr, Annandale, VA 22003",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-08T19:00:00-04:00"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "\ud83d\uded2 Walmart delivery",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-08T19:00:00-04:00"
-        }
-      ],
-      "conflicts": [
-        {
-          "a": "VIVA \u26bd Practice at Ossian",
-          "a_time": "7:00 pm",
-          "b": "\ud83d\uded2 Walmart delivery",
-          "b_time": "7:00 pm"
-        }
-      ]
-    },
-    {
       "date": "2026-06-09",
-      "label": "Tomorrow \u00b7 Tue Jun 9",
+      "label": "Today \u00b7 Tue Jun 9",
       "weather": {
         "high_f": 88,
-        "low_f": 58,
-        "precip_pct": 4,
+        "low_f": 63,
+        "precip_pct": 6,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -159,14 +83,14 @@
     },
     {
       "date": "2026-06-10",
-      "label": "Wednesday \u00b7 Jun 10",
+      "label": "Tomorrow \u00b7 Wed Jun 10",
       "weather": {
-        "high_f": 89,
-        "low_f": 69,
-        "precip_pct": 28,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
+        "high_f": 90,
+        "low_f": 72,
+        "precip_pct": 62,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [
         {
@@ -216,12 +140,12 @@
       "date": "2026-06-11",
       "label": "Thursday \u00b7 Jun 11",
       "weather": {
-        "high_f": 100,
+        "high_f": 97,
         "low_f": 71,
-        "precip_pct": 43,
-        "weather_code": 82,
+        "precip_pct": 29,
+        "weather_code": 55,
         "emoji": "\ud83c\udf27",
-        "label": "Heavy showers"
+        "label": "Heavy drizzle"
       },
       "events": [
         {
@@ -255,12 +179,12 @@
       "date": "2026-06-12",
       "label": "Friday \u00b7 Jun 12",
       "weather": {
-        "high_f": 95,
+        "high_f": 96,
         "low_f": 70,
-        "precip_pct": 55,
-        "weather_code": 55,
+        "precip_pct": 49,
+        "weather_code": 82,
         "emoji": "\ud83c\udf27",
-        "label": "Heavy drizzle"
+        "label": "Heavy showers"
       },
       "events": [
         {
@@ -302,12 +226,12 @@
       "date": "2026-06-13",
       "label": "Saturday \u00b7 Jun 13",
       "weather": {
-        "high_f": 89,
-        "low_f": 72,
-        "precip_pct": 55,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "high_f": 84,
+        "low_f": 66,
+        "precip_pct": 49,
+        "weather_code": 80,
+        "emoji": "\ud83c\udf26",
+        "label": "Showers"
       },
       "events": [
         {
@@ -365,14 +289,37 @@
       "date": "2026-06-14",
       "label": "Sunday \u00b7 Jun 14",
       "weather": {
-        "high_f": 86,
-        "low_f": 68,
-        "precip_pct": 31,
+        "high_f": 90,
+        "low_f": 65,
+        "precip_pct": 23,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
       },
       "events": [],
+      "conflicts": []
+    },
+    {
+      "date": "2026-06-15",
+      "label": "Monday \u00b7 Jun 15",
+      "weather": {
+        "high_f": 74,
+        "low_f": 69,
+        "precip_pct": 31,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
+      "events": [
+        {
+          "time": "all day",
+          "title": "Dad's Birthday",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-06-15T00:00"
+        }
+      ],
       "conflicts": []
     }
   ],
@@ -381,34 +328,34 @@
       {
         "title": "KJ Birthday",
         "day": "Thu Jun 11",
-        "days_out": 3
+        "days_out": 2
       },
       {
         "title": "Dad's Birthday",
         "day": "Mon Jun 15",
-        "days_out": 7
+        "days_out": 6
       },
       {
         "title": "Avani\u2019s Birthday",
         "day": "Thu Jun 25",
-        "days_out": 17
+        "days_out": 16
       },
       {
         "title": "Brandee Birthday",
         "day": "Mon Jun 29",
-        "days_out": 21
+        "days_out": 20
       }
     ],
     "holidays": [
       {
         "title": "Juneteenth",
         "day": "Fri Jun 19",
-        "days_out": 11
+        "days_out": 10
       },
       {
         "title": "Father's Day",
         "day": "Sun Jun 21",
-        "days_out": 13
+        "days_out": 12
       }
     ]
   }
