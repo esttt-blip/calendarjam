@@ -141,6 +141,22 @@ if dash and dash.get("generated_label"):
 else:
     st.warning("No dashboard snapshot yet — the next 6:15 AM sync will populate this.", icon="⏳")
 
+# ─────────────────────────── theme-of-the-week banner ─────────────────────────
+
+theme = (dash or {}).get("theme")
+if theme:
+    st.markdown(
+        f"<div style='background:linear-gradient(135deg,{theme['color1']},{theme['color2']});"
+        f"border-radius:14px;padding:16px 22px;color:#fff;margin-bottom:20px;"
+        f"box-shadow:0 4px 14px rgba(0,0,0,.12)'>"
+        f"<span style='font-size:11px;letter-spacing:1.5px;text-transform:uppercase;"
+        f"font-weight:700;opacity:.85'>This week</span>"
+        f"<div style='font-size:24px;font-weight:800;margin-top:1px'>{theme['emoji']} {theme['title']}</div>"
+        f"<div style='font-size:13.5px;opacity:.95;margin-top:3px'>{theme['blurb']}</div>"
+        f"</div>",
+        unsafe_allow_html=True,
+    )
+
 week = (dash or {}).get("week", [])
 all_conflicts = []
 for day in week:

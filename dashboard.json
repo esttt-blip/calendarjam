@@ -1,12 +1,19 @@
 {
-  "generated_at": "2026-06-09T08:00:23.317491-04:00",
-  "generated_label": "Tue Jun 9, 8:00 AM",
+  "generated_at": "2026-06-09T08:05:11.159917-04:00",
+  "generated_label": "Tue Jun 9, 8:05 AM",
   "weather": {
     "high_f": 87,
     "low_f": 64,
     "precip_pct": 6,
     "emoji": "\u2601\ufe0f",
     "label": "Overcast"
+  },
+  "theme": {
+    "emoji": "\ud83c\udfc6",
+    "title": "Tournament Week",
+    "blurb": "Bring the cooler, the chairs, and the snacks.",
+    "color1": "#f7971e",
+    "color2": "#ffd200"
   },
   "week": [
     {

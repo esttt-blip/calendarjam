@@ -208,10 +208,20 @@ def build_snapshot() -> dict:
         print(f"  [dashboard] horizon failed: {e}")
         horizon = {"birthdays": [], "holidays": []}
 
+    weather = fetch_today_forecast()
+
+    try:
+        import theme as theme_mod
+        wk_theme = theme_mod.pick_theme(week, horizon, weather)
+    except Exception as e:
+        print(f"  [dashboard] theme failed: {e}")
+        wk_theme = None
+
     snapshot = {
         "generated_at": now.isoformat(),
         "generated_label": now.strftime("%a %b %-d, %-I:%M %p"),
-        "weather": fetch_today_forecast(),
+        "weather": weather,
+        "theme": wk_theme,
         "week": week,
         "horizon": horizon,
     }
