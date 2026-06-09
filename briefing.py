@@ -191,11 +191,11 @@ def _email_chip(related: dict) -> str:
 
 
 def render_event_row(event: dict, forecast: dict | None, related_emails: list[dict]) -> str:
-    """Render one row in the 'Your day' table."""
+    """Render one row in the 'Your day' table. (No per-event weather chip —
+    the day's forecast is shown once in the section header.)"""
     time_html = _fmt_time(event)
     title = (event.get("summary") or "(untitled)")[:90]
     location = (event.get("location") or "")[:70]
-    weather = _weather_chip(event, forecast)
 
     description = (event.get("description") or "")
     description = re.sub(r"<[^>]+>", " ", description)
@@ -217,7 +217,7 @@ def render_event_row(event: dict, forecast: dict | None, related_emails: list[di
       <table width="100%" cellpadding="0" cellspacing="0"><tr>
         <td width="78" style="vertical-align:top;padding-top:2px">{time_html}</td>
         <td>
-          <div style="color:#1a1a2e;font-weight:600;font-size:14px;line-height:1.35">{title}{weather}</div>
+          <div style="color:#1a1a2e;font-weight:600;font-size:14px;line-height:1.35">{title}</div>
           {loc_html}{desc_html}{emails_html}
         </td>
       </tr></table>

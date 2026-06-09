@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-09T07:06:16.449397-04:00",
-  "generated_label": "Tue Jun 9, 7:06 AM",
+  "generated_at": "2026-06-09T08:00:23.317491-04:00",
+  "generated_label": "Tue Jun 9, 8:00 AM",
   "weather": {
-    "high_f": 88,
+    "high_f": 87,
     "low_f": 64,
     "precip_pct": 6,
     "emoji": "\u2601\ufe0f",
@@ -13,7 +13,7 @@
       "date": "2026-06-09",
       "label": "Today \u00b7 Tue Jun 9",
       "weather": {
-        "high_f": 88,
+        "high_f": 87,
         "low_f": 64,
         "precip_pct": 6,
         "weather_code": 3,
@@ -123,12 +123,12 @@
       "date": "2026-06-11",
       "label": "Thursday \u00b7 Jun 11",
       "weather": {
-        "high_f": 97,
+        "high_f": 98,
         "low_f": 71,
         "precip_pct": 29,
-        "weather_code": 55,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy drizzle"
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
       },
       "events": [
         {
@@ -162,12 +162,12 @@
       "date": "2026-06-12",
       "label": "Friday \u00b7 Jun 12",
       "weather": {
-        "high_f": 96,
-        "low_f": 70,
+        "high_f": 100,
+        "low_f": 69,
         "precip_pct": 49,
-        "weather_code": 82,
+        "weather_code": 81,
         "emoji": "\ud83c\udf27",
-        "label": "Heavy showers"
+        "label": "Showers"
       },
       "events": [
         {
@@ -209,12 +209,12 @@
       "date": "2026-06-13",
       "label": "Saturday \u00b7 Jun 13",
       "weather": {
-        "high_f": 84,
-        "low_f": 66,
+        "high_f": 86,
+        "low_f": 68,
         "precip_pct": 49,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [
         {
@@ -272,8 +272,8 @@
       "date": "2026-06-14",
       "label": "Sunday \u00b7 Jun 14",
       "weather": {
-        "high_f": 90,
-        "low_f": 65,
+        "high_f": 91,
+        "low_f": 66,
         "precip_pct": 23,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
@@ -286,8 +286,8 @@
       "date": "2026-06-15",
       "label": "Monday \u00b7 Jun 15",
       "weather": {
-        "high_f": 74,
-        "low_f": 69,
+        "high_f": 79,
+        "low_f": 70,
         "precip_pct": 31,
         "weather_code": 51,
         "emoji": "\ud83c\udf26",

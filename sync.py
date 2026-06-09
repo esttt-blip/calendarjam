@@ -521,8 +521,9 @@ def _format_activity_section() -> str:
     </td></tr>"""
 
 
-def _format_lookahead_section() -> str:
-    """Render the 'Week ahead' heads-up: collisions, tight turns, weather, horizon."""
+def _format_conflicts_section(app_url: str) -> str:
+    """Conflicts + tight turnarounds — the attention items, shown near the top
+    with the decisions. Includes a link to resolve them in the app."""
     try:
         scan = lookahead.scan(days=7)
     except Exception as e:
@@ -531,87 +532,67 @@ def _format_lookahead_section() -> str:
 
     collisions = scan.get("collisions", [])
     tight = scan.get("tight", [])
-    weather = scan.get("weather", [])
-    horizon = scan.get("horizon", {})
-    birthdays = horizon.get("birthdays", [])
-    holidays = horizon.get("holidays", [])
-
-    blocks = []
-
-    # ── Conflicts ──
-    if collisions:
-        rows = []
-        for c in collisions:
-            a_t = c["a_start"].strftime("%-I:%M%p").lower().lstrip("0")
-            b_t = c["b_start"].strftime("%-I:%M%p").lower().lstrip("0")
-            rows.append(
-                f'<div style="padding:5px 0;font-size:13px;color:#444;line-height:1.45">'
-                f'<span style="color:#c0392b;font-weight:700">⚠️ {c["day"]}</span> — '
-                f'<b>{c["a"]}</b> ({a_t}) overlaps <b>{c["b"]}</b> ({b_t})</div>'
-            )
-        blocks.append(("Conflicts", "".join(rows)))
-
-    # ── Tight turnarounds ──
-    if tight:
-        rows = []
-        for t in tight:
-            rows.append(
-                f'<div style="padding:5px 0;font-size:13px;color:#444;line-height:1.45">'
-                f'<span style="color:#d68910;font-weight:700">⏱ {t["day"]}</span> — '
-                f'only {t["gap_min"]} min between <b>{t["a"]}</b> and <b>{t["b"]}</b> '
-                f'(different locations)</div>'
-            )
-        blocks.append(("Tight turnarounds", "".join(rows)))
-
-    # ── Weather watch ──
-    if weather:
-        rows = []
-        for w in weather:
-            rows.append(
-                f'<div style="padding:5px 0;font-size:13px;color:#444;line-height:1.45">'
-                f'<span style="color:#2471a3;font-weight:700">{w["emoji"]} {w["day"]}</span> — '
-                f'<b>{w["title"]}</b> at {w["time"]} · {w["precip_pct"]}% rain '
-                f'({w["label"]}) — possible cancellation</div>'
-            )
-        blocks.append(("Weather watch", "".join(rows)))
-
-    # ── Coming up (birthdays + holidays) ──
-    horizon_rows = []
-    for b in birthdays:
-        when = "today" if b["days_out"] == 0 else f"in {b['days_out']} days"
-        horizon_rows.append(
-            f'<div style="padding:4px 0;font-size:13px;color:#444">'
-            f'🎂 <b>{b["title"]}</b> — {b["day"]} <span style="color:#999">({when})</span></div>'
-        )
-    for h in holidays:
-        horizon_rows.append(
-            f'<div style="padding:4px 0;font-size:13px;color:#444">'
-            f'🎉 {h["title"]} — {h["day"]}</div>'
-        )
-    if horizon_rows:
-        blocks.append(("Coming up", "".join(horizon_rows)))
-
-    if not blocks:
+    if not collisions and not tight:
         return ""
 
-    inner = ""
-    for label, content in blocks:
-        inner += (
-            f'<div style="margin-bottom:14px">'
-            f'<div style="color:#888;font-size:11px;font-weight:700;letter-spacing:0.5px;'
-            f'text-transform:uppercase;margin-bottom:4px">{label}</div>'
-            f'{content}</div>'
+    rows = ""
+    for c in collisions:
+        a_t = c["a_start"].strftime("%-I:%M%p").lower().lstrip("0")
+        b_t = c["b_start"].strftime("%-I:%M%p").lower().lstrip("0")
+        rows += (
+            f'<div style="padding:5px 0;font-size:13px;color:#444;line-height:1.45">'
+            f'<span style="color:#c0392b;font-weight:700">⚠️ {c["day"]}</span> — '
+            f'<b>{c["a"]}</b> ({a_t}) overlaps <b>{c["b"]}</b> ({b_t})</div>'
+        )
+    for t in tight:
+        rows += (
+            f'<div style="padding:5px 0;font-size:13px;color:#444;line-height:1.45">'
+            f'<span style="color:#d68910;font-weight:700">⏱ {t["day"]}</span> — '
+            f'only {t["gap_min"]} min between <b>{t["a"]}</b> and <b>{t["b"]}</b></div>'
         )
 
     return f"""
     <tr><td style="padding:18px 28px 4px 28px">
       <span style="background:#fdecea;color:#c0392b;font-size:11px;font-weight:700;
                    padding:4px 10px;border-radius:4px;letter-spacing:0.5px;
-                   text-transform:uppercase">⚠️ Week ahead</span>
+                   text-transform:uppercase">⚠️ Conflicts</span>
     </td></tr>
-    <tr><td style="padding:12px 28px 8px 28px">
-      <div style="background:#fafafa;border-radius:10px;padding:16px 18px">{inner}</div>
+    <tr><td style="padding:10px 28px 4px 28px">
+      <div style="background:#fff6f4;border-radius:10px;padding:14px 16px">{rows}
+        <div style="margin-top:10px">
+          <a href="{app_url}" style="color:#c0392b;font-size:12px;font-weight:600;
+             text-decoration:none">Resolve in calendarjam &rarr;</a>
+        </div>
+      </div>
     </td></tr>"""
+
+
+def _format_horizon_section() -> str:
+    """Coming up — birthdays + major holidays, shown after the week."""
+    try:
+        horizon = lookahead.find_horizon(21)
+    except Exception:
+        return ""
+    birthdays = horizon.get("birthdays", [])
+    holidays = horizon.get("holidays", [])
+    if not birthdays and not holidays:
+        return ""
+
+    rows = ""
+    for b in birthdays:
+        when = "today" if b["days_out"] == 0 else f"in {b['days_out']} days"
+        rows += (f'<div style="padding:4px 0;font-size:13px;color:#444">'
+                 f'🎂 <b>{b["title"]}</b> — {b["day"]} <span style="color:#999">({when})</span></div>')
+    for h in holidays:
+        rows += f'<div style="padding:4px 0;font-size:13px;color:#444">🎉 {h["title"]} — {h["day"]}</div>'
+
+    return f"""
+    <tr><td style="padding:18px 28px 4px 28px">
+      <span style="background:#f5f5f5;color:#666;font-size:11px;font-weight:700;
+                   padding:4px 10px;border-radius:4px;letter-spacing:0.5px;
+                   text-transform:uppercase">🎂 Coming up</span>
+    </td></tr>
+    <tr><td style="padding:10px 28px 8px 28px">{rows}</td></tr>"""
 
 
 def send_summary_email(
@@ -681,10 +662,10 @@ def send_summary_email(
           </div>
         </td></tr>"""
 
-    # ── Week-ahead heads-up (conflicts, misses, weather, horizon) ──
-    lookahead_section = _format_lookahead_section()
+    # ── Conflicts (attention, grouped with decisions at the top) ──
+    conflicts_section = _format_conflicts_section(app_url)
 
-    # ── Today's briefing (weather + calendar + linked emails) ──
+    # ── Today's briefing — the day ahead (weather once + events + linked) ──
     briefing_section = ""
     try:
         briefing_html, briefing_count = build_briefing(gmail_address, app_password)
@@ -693,9 +674,11 @@ def send_summary_email(
     except Exception as e:
         print(f"  [briefing] failed: {e}", file=sys.stderr)
 
-    # ── Recent activity: last 5 days of decisions/adds for context ──
-    activity_section = _format_activity_section()
+    # ── Coming up — birthdays + holidays (after the day) ──
+    horizon_section = _format_horizon_section()
 
+    # Order: status → decisions(CTA) + conflicts → today → coming up.
+    # Recent activity intentionally lives only in the app, not the email.
     html_body = f"""<!DOCTYPE html>
 <html><head><meta name="viewport" content="width=device-width,initial-scale=1"></head>
 <body style="margin:0;padding:0;background:#f5f5f5;
@@ -706,17 +689,19 @@ def send_summary_email(
              style="max-width:580px;background:#fff;border-radius:12px;
                     overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.08)">
         <tr><td style="background:#1a1a2e;padding:18px 28px">
-          <p style="margin:0;color:#fff;font-size:20px;font-weight:700">📅 calendarjam</p>
+          <a href="{app_url}" style="text-decoration:none">
+            <span style="color:#fff;font-size:20px;font-weight:700">📅 calendarjam</span>
+          </a>
           <p style="margin:3px 0 0 0;color:#aaa;font-size:12px">{today}</p>
         </td></tr>
         {status_section}
         {cta_section}
-        {lookahead_section}
+        {conflicts_section}
         {briefing_section}
-        {activity_section}
+        {horizon_section}
         <tr><td style="padding:14px 28px;background:#fafafa;color:#999;
                        font-size:11px;text-align:center">
-          Daily sync runs at 6:15 AM ET · <a href="{app_url}" style="color:#999">Review in app</a>
+          Daily sync runs at 6:15 AM ET · <a href="{app_url}" style="color:#999">Open calendarjam</a>
         </td></tr>
       </table>
     </td></tr>

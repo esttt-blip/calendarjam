@@ -107,10 +107,16 @@ activity_log = activity_log or []
 
 # ─────────────────────────── header + sync status ───────────────────────────
 
+APP_URL = st.secrets.get("APP_URL", "https://calendarjam-ees.streamlit.app")
+
 w = (dash or {}).get("weather") or {}
 c1, c2 = st.columns([3, 2])
 with c1:
-    st.markdown("## 📅 calendarjam")
+    st.markdown(
+        f"<a href='{APP_URL}' target='_self' style='text-decoration:none;color:#1a1a2e'>"
+        f"<h2 style='margin:0'>📅 calendarjam</h2></a>",
+        unsafe_allow_html=True,
+    )
 with c2:
     if w:
         st.markdown(
@@ -132,58 +138,79 @@ if dash and dash.get("generated_label"):
 else:
     st.warning("No dashboard snapshot yet — the next 6:15 AM sync will populate this.", icon="⏳")
 
-# ─────────────────────────── decisions / review (top, actionable) ─────────────
+week = (dash or {}).get("week", [])
+all_conflicts = []
+for day in week:
+    for c in day.get("conflicts", []):
+        all_conflicts.append({**c, "day": day["label"]})
 
-if pending:
-    st.markdown(f"#### ✅ Decisions to make · {len(pending)}")
-    st.caption("These need a yes/no. Tap ✓ once handled, or ✗ to dismiss.")
-    for idx, item in enumerate(pending):
-        title = item.get("title", "(untitled)")
-        source = item.get("source", "")
-        sender = item.get("from", "").split("<")[0].strip().strip('"') or "—"
-        desc = (item.get("description") or "").replace("\r", "").strip()
-        if len(desc) > 220:
-            desc = desc[:220] + "…"
-        with st.container(border=True):
-            st.markdown(f"**{title}**")
-            st.caption(f"{source} · from {sender}")
-            if desc:
-                st.markdown(f"<div style='color:#555;font-size:13px;line-height:1.5'>{desc}</div>",
-                            unsafe_allow_html=True)
-            b1, b2, _ = st.columns([1, 1, 3])
-            if b1.button("✓ Got it", key=f"y{idx}", type="primary", use_container_width=True):
-                clear_item(item, pending); log_activity("acked", title, source); st.rerun()
-            if b2.button("✗ Skip", key=f"n{idx}", use_container_width=True):
-                clear_item(item, pending); log_activity("dismissed", title, source); st.rerun()
+# ─────────────────────── ① Needs you: decisions + conflicts ────────────────────
+
+if pending or all_conflicts:
+    st.markdown("#### ✅ Needs you")
+
+# Conflicts first — they're the time-sensitive ones
+for ci, c in enumerate(all_conflicts):
+    with st.container(border=True):
+        st.markdown(f"⚠️ **Conflict — {c['day']}**")
+        st.markdown(
+            f"<div style='font-size:13px;color:#444'>"
+            f"<b>{c['a']}</b> ({c['a_time']}) &nbsp;vs&nbsp; <b>{c['b']}</b> ({c['b_time']})</div>",
+            unsafe_allow_html=True,
+        )
+        st.caption("To resolve, remove one in your calendar (in-app resolve coming soon).")
+
+# Then the review decisions
+for idx, item in enumerate(pending):
+    title = item.get("title", "(untitled)")
+    source = item.get("source", "")
+    sender = item.get("from", "").split("<")[0].strip().strip('"') or "—"
+    desc = (item.get("description") or "").replace("\r", "").strip()
+    if len(desc) > 220:
+        desc = desc[:220] + "…"
+    with st.container(border=True):
+        st.markdown(f"**{title}**")
+        st.caption(f"{source} · from {sender}")
+        if desc:
+            st.markdown(f"<div style='color:#555;font-size:13px;line-height:1.5'>{desc}</div>",
+                        unsafe_allow_html=True)
+        b1, b2, _ = st.columns([1, 1, 3])
+        if b1.button("✓ Got it", key=f"y{idx}", type="primary", use_container_width=True):
+            clear_item(item, pending); log_activity("acked", title, source); st.rerun()
+        if b2.button("✗ Skip", key=f"n{idx}", use_container_width=True):
+            clear_item(item, pending); log_activity("dismissed", title, source); st.rerun()
+
+if pending or all_conflicts:
     st.divider()
 
-# ─────────────────────────── the week (holistic agenda) ───────────────────────
 
-week = (dash or {}).get("week", [])
-st.markdown("#### 🗓️ The week ahead")
-
-for day in week:
-    label = day["label"]
+def _render_day_card(day: dict) -> str:
     dw = day.get("weather") or {}
-    wx = f"&nbsp;&nbsp;<span style='color:#aaa;font-weight:400;font-size:12px'>{dw.get('emoji','')} {dw.get('high_f','')}°·{dw.get('precip_pct',0)}%</span>" if dw else ""
-
+    wx = (f"&nbsp;&nbsp;<span style='color:#aaa;font-weight:400;font-size:12px'>"
+          f"{dw.get('emoji','')} {dw.get('high_f','')}°·{dw.get('precip_pct',0)}%</span>") if dw else ""
     rows = ""
-    # conflicts first (so they're seen in context of the day)
-    for c in day.get("conflicts", []):
-        rows += (f"<div class='conflict'>⚠️ <b>{c['a']}</b> ({c['a_time']}) overlaps "
-                 f"<b>{c['b']}</b> ({c['b_time']})</div>")
     if day["events"]:
         for e in day["events"]:
             loc = f"<div class='ev-loc'>📍 {e['location'][:48]}</div>" if e.get("location") else ""
             rows += (f"<div class='ev-row'><div class='ev-time'>{e['time']}</div>"
                      f"<div class='ev-body'><div class='ev-title'>{e['title']}</div>{loc}</div></div>")
-    elif not day.get("conflicts"):
+    else:
         rows = "<div class='empty-day'>nothing scheduled</div>"
+    return f"<div class='day-card'><div class='day-head'>{day['label']}{wx}</div>{rows}</div>"
 
-    st.markdown(
-        f"<div class='day-card'><div class='day-head'>{label}{wx}</div>{rows}</div>",
-        unsafe_allow_html=True,
-    )
+
+# ─────────────────────────── ② Today (the day ahead) ──────────────────────────
+
+if week:
+    st.markdown("#### 📌 Today")
+    st.markdown(_render_day_card(week[0]), unsafe_allow_html=True)
+
+# ─────────────────────────── ③ Rest of the week ───────────────────────────────
+
+if len(week) > 1:
+    st.markdown("#### 🗓️ Rest of the week")
+    for day in week[1:]:
+        st.markdown(_render_day_card(day), unsafe_allow_html=True)
 
 if not week:
     st.info("Agenda will appear after the next sync.")
