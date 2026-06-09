@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-09T08:05:11.159917-04:00",
-  "generated_label": "Tue Jun 9, 8:05 AM",
+  "generated_at": "2026-06-09T13:35:42.847285-04:00",
+  "generated_label": "Tue Jun 9, 1:35 PM",
   "weather": {
     "high_f": 87,
     "low_f": 64,
-    "precip_pct": 6,
+    "precip_pct": 5,
     "emoji": "\u2601\ufe0f",
     "label": "Overcast"
   },
@@ -22,7 +22,7 @@
       "weather": {
         "high_f": 87,
         "low_f": 64,
-        "precip_pct": 6,
+        "precip_pct": 5,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -75,12 +75,12 @@
       "date": "2026-06-10",
       "label": "Tomorrow \u00b7 Wed Jun 10",
       "weather": {
-        "high_f": 90,
-        "low_f": 72,
-        "precip_pct": 62,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "high_f": 87,
+        "low_f": 71,
+        "precip_pct": 44,
+        "weather_code": 82,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy showers"
       },
       "events": [
         {
@@ -132,7 +132,7 @@
       "weather": {
         "high_f": 98,
         "low_f": 71,
-        "precip_pct": 29,
+        "precip_pct": 36,
         "weather_code": 53,
         "emoji": "\ud83c\udf26",
         "label": "Drizzle"
@@ -171,7 +171,7 @@
       "weather": {
         "high_f": 100,
         "low_f": 69,
-        "precip_pct": 49,
+        "precip_pct": 50,
         "weather_code": 81,
         "emoji": "\ud83c\udf27",
         "label": "Showers"
@@ -202,6 +202,14 @@
           "sort": "2026-06-12T10:00:00-04:00"
         },
         {
+          "time": "10:30 am",
+          "title": "Surgeon consult",
+          "location": "1800 N Beauregard St, Alexandria, VA 22311, USA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-12T10:30:00-04:00"
+        },
+        {
           "time": "6:00 pm",
           "title": "World Cup Opening @ the Smith\u2019s",
           "location": "",
@@ -218,7 +226,7 @@
       "weather": {
         "high_f": 86,
         "low_f": 68,
-        "precip_pct": 49,
+        "precip_pct": 50,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -249,12 +257,28 @@
           "sort": "2026-06-13T11:15:00-04:00"
         },
         {
+          "time": "11:15 am",
+          "title": "VIVA 2014B NCSL Yellow vs DC Soccer Federation DC Armory 2015 B",
+          "location": "18031 Central Park Cir\nBoyds MD 20841\nUnited States",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-13T11:15:05-04:00"
+        },
+        {
           "time": "1:25 pm",
           "title": "\u26bd Villarreal vs CSA Black \u2014 Mid-Atlantic Cup",
           "location": "Field 09C, Maryland Soccerplex, 18031 Central Park Cir, Boyds, MD 20841",
           "all_day": false,
           "is_drive": false,
           "sort": "2026-06-13T13:25:00-04:00"
+        },
+        {
+          "time": "1:25 pm",
+          "title": "VIVA 2014B NCSL Yellow at Calvert Soccer Assn CSA 14 B",
+          "location": "18031 Central Park Cir\nBoyds MD 20841\nUnited States",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-13T13:25:05-04:00"
         },
         {
           "time": "2:40 pm",
@@ -273,7 +297,20 @@
           "sort": "2026-06-13T18:00:00-04:00"
         }
       ],
-      "conflicts": []
+      "conflicts": [
+        {
+          "a": "\u26bd Villarreal vs DC Armory (Home) \u2014 Mid-Atlantic Cup",
+          "a_time": "11:15 am",
+          "b": "VIVA 2014B NCSL Yellow vs DC Soccer Federation DC Armory 2015 B",
+          "b_time": "11:15 am"
+        },
+        {
+          "a": "\u26bd Villarreal vs CSA Black \u2014 Mid-Atlantic Cup",
+          "a_time": "1:25 pm",
+          "b": "VIVA 2014B NCSL Yellow at Calvert Soccer Assn CSA 14 B",
+          "b_time": "1:25 pm"
+        }
+      ]
     },
     {
       "date": "2026-06-14",
@@ -281,13 +318,65 @@
       "weather": {
         "high_f": 91,
         "low_f": 66,
-        "precip_pct": 23,
+        "precip_pct": 21,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
       },
-      "events": [],
-      "conflicts": []
+      "events": [
+        {
+          "time": "8:00 am",
+          "title": "VIVA 2014B NCSL Yellow at Semi Finals TBD Bracket D Opponent",
+          "location": "18031 Central Park Cir\nBoyds MD 20841\nUnited States",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-14T08:00:05-04:00"
+        },
+        {
+          "time": "12:20 pm",
+          "title": "VIVA 2014B NCSL Yellow at Consolidation TBD Bracket D",
+          "location": "18031 Central Park Cir\nBoyds MD 20841\nUnited States",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-14T12:20:05-04:00"
+        },
+        {
+          "time": "12:30 pm",
+          "title": "VIVA 2014B NCSL Yellow at Finals",
+          "location": "18031 Central Park Cir\nBoyds MD 20841\nUnited States",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-14T12:30:05-04:00"
+        },
+        {
+          "time": "1:25 pm",
+          "title": "VIVA 2014B NCSL Yellow at Consolidation TBD Bracket D",
+          "location": "18031 Central Park Cir\nBoyds MD 20841\nUnited States",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-14T13:25:05-04:00"
+        }
+      ],
+      "conflicts": [
+        {
+          "a": "VIVA 2014B NCSL Yellow at Consolidation TBD Bracket D",
+          "a_time": "12:20 pm",
+          "b": "VIVA 2014B NCSL Yellow at Finals",
+          "b_time": "12:30 pm"
+        },
+        {
+          "a": "VIVA 2014B NCSL Yellow at Consolidation TBD Bracket D",
+          "a_time": "12:20 pm",
+          "b": "VIVA 2014B NCSL Yellow at Consolidation TBD Bracket D",
+          "b_time": "1:25 pm"
+        },
+        {
+          "a": "VIVA 2014B NCSL Yellow at Finals",
+          "a_time": "12:30 pm",
+          "b": "VIVA 2014B NCSL Yellow at Consolidation TBD Bracket D",
+          "b_time": "1:25 pm"
+        }
+      ]
     },
     {
       "date": "2026-06-15",
@@ -295,7 +384,7 @@
       "weather": {
         "high_f": 79,
         "low_f": 70,
-        "precip_pct": 31,
+        "precip_pct": 34,
         "weather_code": 51,
         "emoji": "\ud83c\udf26",
         "label": "Light drizzle"
