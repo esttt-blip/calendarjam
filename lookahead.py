@@ -53,6 +53,15 @@ def _is_drive(ev: dict) -> bool:
     return ev.get("summary", "").strip().startswith("🚗")
 
 
+def _is_passive(ev: dict) -> bool:
+    """Deliveries / free-time blocks that don't require you to 'be there' —
+    not real two-places-at-once conflicts."""
+    s = ev.get("summary", "").strip()
+    if s.startswith(("🛒", "🍱", "📦")):
+        return True
+    return ev.get("transparency") == "transparent"
+
+
 def _is_outdoor(ev: dict) -> bool:
     blob = (ev.get("summary", "") + " " + ev.get("location", "")).lower()
     return any(s in blob for s in OUTDOOR_SIGNALS)
@@ -81,7 +90,7 @@ def find_collisions(events: list[dict]) -> list[dict]:
     for e in events:
         start, all_day = _parse(e, "start")
         end, _ = _parse(e, "end")
-        if start and end and not all_day and not _is_drive(e):
+        if start and end and not all_day and not _is_drive(e) and not _is_passive(e):
             timed.append((start, end, e))
     timed.sort(key=lambda t: t[0])
 

@@ -1,14 +1,20 @@
 {
-  "generated_at": "2026-06-09T06:00:54.513945-04:00",
-  "generated_label": "Tue Jun 9, 6:00 AM",
-  "weather": null,
+  "generated_at": "2026-06-09T07:06:16.449397-04:00",
+  "generated_label": "Tue Jun 9, 7:06 AM",
+  "weather": {
+    "high_f": 88,
+    "low_f": 64,
+    "precip_pct": 6,
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
+  },
   "week": [
     {
       "date": "2026-06-09",
       "label": "Today \u00b7 Tue Jun 9",
       "weather": {
         "high_f": 88,
-        "low_f": 63,
+        "low_f": 64,
         "precip_pct": 6,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
@@ -40,22 +46,6 @@
           "sort": "2026-06-09T17:00:00-04:00"
         },
         {
-          "time": "5:15 pm",
-          "title": "\ud83d\ude97 Drive to Bluemont Park (Ignite Practice)",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-06-09T17:15:00-04:00"
-        },
-        {
-          "time": "5:30 pm",
-          "title": "Ignite \u26be Practice",
-          "location": "601 N Manchester St, Arlington, VA 22203 (Side Fields / Main Field if open)",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-09T17:30:00-04:00"
-        },
-        {
           "time": "5:30 pm",
           "title": "VIVA \u26bd Practice at Ossian",
           "location": "",
@@ -72,14 +62,7 @@
           "sort": "2026-06-09T20:00:00-04:00"
         }
       ],
-      "conflicts": [
-        {
-          "a": "Ignite \u26be Practice",
-          "a_time": "5:30 pm",
-          "b": "VIVA \u26bd Practice at Ossian",
-          "b_time": "5:30 pm"
-        }
-      ]
+      "conflicts": []
     },
     {
       "date": "2026-06-10",
