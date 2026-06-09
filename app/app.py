@@ -85,11 +85,12 @@ st.markdown("""
 <style>
   .block-container { padding-top: 1.5rem; padding-bottom: 3rem; max-width: 1180px; }
   /* Day cards sit in a grid; fixed-ish height keeps the grid tidy */
-  .day-card { background:#fff; border:1px solid #ececf0; border-radius:12px;
+  .day-card { background:#fff; border:1px solid #e6e6ec; border-radius:12px;
               padding:12px 16px; margin-bottom:14px; height:230px; overflow-y:auto; }
   .day-card.today { border:2px solid #1a1a2e; height:auto; }
   .day-head { font-weight:700; color:#1a1a2e; font-size:14px; margin-bottom:8px;
-              position:sticky; top:0; background:#fff; padding-bottom:4px; }
+              padding-bottom:4px; border-bottom:1px solid rgba(0,0,0,.06); }
+  .ev-row { border-bottom:1px solid rgba(0,0,0,.04); }
   .ev-row { display:flex; padding:5px 0; border-bottom:1px solid #f6f6f6; }
   .ev-time { width:74px; flex-shrink:0; color:#1a1a2e; font-weight:600;
              font-family:ui-monospace,monospace; font-size:12.5px; }
@@ -108,54 +109,49 @@ activity_log, _ = fetch_file("activity_log.json")
 pending = pending or []
 activity_log = activity_log or []
 
-# ─────────────────────────── header + sync status ───────────────────────────
+# ─────────────────────────── header (theme-integrated) ───────────────────────
 
 APP_URL = st.secrets.get("APP_URL", "https://calendarjam-ees.streamlit.app")
-
+theme = (dash or {}).get("theme") or {"emoji": "📅", "title": "", "blurb": "",
+                                      "color1": "#1a1a2e", "color2": "#3a3a55"}
 w = (dash or {}).get("weather") or {}
-c1, c2 = st.columns([3, 2])
-with c1:
+
+# Thin gradient accent bar carries the week's theme colors across the top
+st.markdown(
+    f"<div style='height:6px;border-radius:6px;margin-bottom:14px;"
+    f"background:linear-gradient(90deg,{theme['color1']},{theme['color2']})'></div>",
+    unsafe_allow_html=True,
+)
+
+hc1, hc2 = st.columns([3, 2])
+with hc1:
+    chip = (f"<a href='{APP_URL}' target='_self' style='text-decoration:none;"
+            f"display:inline-block;margin-left:10px;vertical-align:middle;"
+            f"background:linear-gradient(135deg,{theme['color1']},{theme['color2']});"
+            f"color:#fff;font-size:12px;font-weight:700;padding:4px 11px;border-radius:14px'>"
+            f"{theme['emoji']} {theme['title']}</a>") if theme.get("title") else ""
     st.markdown(
+        f"<div style='display:flex;align-items:center'>"
         f"<a href='{APP_URL}' target='_self' style='text-decoration:none;color:#1a1a2e'>"
-        f"<h2 style='margin:0'>📅 calendarjam</h2></a>",
+        f"<span style='font-size:26px;font-weight:800'>📅 calendarjam</span></a>{chip}</div>"
+        + (f"<div style='color:#888;font-size:12.5px;margin-top:2px'>{theme['blurb']}</div>"
+           if theme.get("blurb") else ""),
         unsafe_allow_html=True,
     )
-with c2:
+with hc2:
     if w:
         st.markdown(
-            f"<div style='text-align:right;padding-top:10px'>"
-            f"<span style='font-size:26px'>{w.get('emoji','')}</span> "
+            f"<div style='text-align:right;padding-top:6px'>"
+            f"<span style='font-size:24px'>{w.get('emoji','')}</span> "
             f"<span style='font-size:14px;color:#555'>{w.get('high_f','–')}°/{w.get('low_f','–')}°"
             f" · {w.get('precip_pct',0)}%</span></div>",
             unsafe_allow_html=True,
         )
 
-if dash and dash.get("generated_label"):
-    opened = datetime.now().astimezone().strftime("%-I:%M %p")
-    st.markdown(
-        f"<div style='background:#f0f4ff;border-radius:8px;padding:7px 12px;font-size:12px;"
-        f"color:#445;margin-bottom:16px'>🔄 <b>Last synced:</b> {dash['generated_label']}"
-        f" &nbsp;·&nbsp; <span style='color:#889'>opened {opened}</span></div>",
-        unsafe_allow_html=True,
-    )
-else:
+st.markdown("<div style='height:14px'></div>", unsafe_allow_html=True)
+
+if not dash:
     st.warning("No dashboard snapshot yet — the next 6:15 AM sync will populate this.", icon="⏳")
-
-# ─────────────────────────── theme-of-the-week banner ─────────────────────────
-
-theme = (dash or {}).get("theme")
-if theme:
-    st.markdown(
-        f"<div style='background:linear-gradient(135deg,{theme['color1']},{theme['color2']});"
-        f"border-radius:14px;padding:16px 22px;color:#fff;margin-bottom:20px;"
-        f"box-shadow:0 4px 14px rgba(0,0,0,.12)'>"
-        f"<span style='font-size:11px;letter-spacing:1.5px;text-transform:uppercase;"
-        f"font-weight:700;opacity:.85'>This week</span>"
-        f"<div style='font-size:24px;font-weight:800;margin-top:1px'>{theme['emoji']} {theme['title']}</div>"
-        f"<div style='font-size:13.5px;opacity:.95;margin-top:3px'>{theme['blurb']}</div>"
-        f"</div>",
-        unsafe_allow_html=True,
-    )
 
 week = (dash or {}).get("week", [])
 all_conflicts = []
@@ -164,9 +160,34 @@ for day in week:
         all_conflicts.append({**c, "day": day["label"]})
 
 
+def _weather_bg(w: dict | None) -> str:
+    """Soft background tint for a day card based on its weather —
+    color *is* the forecast: yellow=sun, blue=rain, red/yellow=hot, grey=cloud."""
+    if not w:
+        return "#ffffff"
+    code = w.get("weather_code", 0)
+    precip = w.get("precip_pct", 0)
+    high = w.get("high_f", 0)
+    if high >= 88:                                   # hot
+        return "linear-gradient(135deg,#fff3df,#ffdfd0)"
+    if code in (95, 96, 99):                         # thunderstorm
+        return "linear-gradient(135deg,#ecedfb,#dfe3f7)"
+    if code in (71, 73, 75, 77, 85, 86):             # snow
+        return "#eef4fb"
+    if precip >= 50 or code in (51, 53, 55, 61, 63, 65, 66, 67, 80, 81, 82):  # rain
+        return "linear-gradient(135deg,#eaf4fe,#dcebfb)"
+    if code in (45, 48):                             # fog
+        return "#f1f3f4"
+    if code == 3:                                    # overcast
+        return "#f4f5f7"
+    if code in (1, 2):                               # mostly/partly cloudy
+        return "#fcfdf3"
+    return "linear-gradient(135deg,#fffdef,#fff4cf)"  # clear / sunny
+
+
 def _render_day_card(day: dict, today: bool = False) -> str:
     dw = day.get("weather") or {}
-    wx = (f"&nbsp;&nbsp;<span style='color:#aaa;font-weight:400;font-size:12px'>"
+    wx = (f"&nbsp;&nbsp;<span style='color:#999;font-weight:400;font-size:12px'>"
           f"{dw.get('emoji','')} {dw.get('high_f','')}°·{dw.get('precip_pct',0)}%</span>") if dw else ""
     rows = ""
     for c in day.get("conflicts", []):
@@ -179,7 +200,9 @@ def _render_day_card(day: dict, today: bool = False) -> str:
     elif not day.get("conflicts"):
         rows = "<div class='empty-day'>nothing scheduled</div>"
     cls = "day-card today" if today else "day-card"
-    return f"<div class='{cls}'><div class='day-head'>{day['label']}{wx}</div>{rows}</div>"
+    bg = _weather_bg(dw)
+    return (f"<div class='{cls}' style='background:{bg}'>"
+            f"<div class='day-head'>{day['label']}{wx}</div>{rows}</div>")
 
 
 # ═══════════════ Top zone: Today (left) + Needs you (right) ═══════════════
@@ -267,6 +290,10 @@ with st.expander("📜 Recent activity"):
                         unsafe_allow_html=True)
 
 st.divider()
-if st.button("🔄 Refresh", use_container_width=True):
-    st.rerun()
-st.caption("Sync runs 6:15 AM ET daily. The week view reflects the last sync.")
+fc1, fc2 = st.columns([3, 1])
+with fc1:
+    synced_txt = f"🔄 Last synced {dash['generated_label']}" if dash and dash.get("generated_label") else "🔄 Awaiting first sync"
+    st.caption(f"{synced_txt} · runs 6:15 AM ET daily")
+with fc2:
+    if st.button("🔄 Refresh", use_container_width=True):
+        st.rerun()
