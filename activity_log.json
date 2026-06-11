@@ -184,5 +184,11 @@
     "action": "dismissed",
     "title": "Ken Stewart sent you an invite!",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-06-11T10:32:06.278569+00:00",
+    "action": "dismissed",
+    "title": "Reminder: your appointment is coming soon",
+    "source": "Gmail"
   }
 ]
