@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-10T15:57:27.711844-04:00",
-  "generated_label": "Wed Jun 10, 3:57 PM",
+  "generated_at": "2026-06-11T06:00:59.850319-04:00",
+  "generated_label": "Thu Jun 11, 6:00 AM",
   "weather": null,
   "theme": {
     "emoji": "\ud83c\udfc6",
@@ -11,71 +11,9 @@
   },
   "week": [
     {
-      "date": "2026-06-10",
-      "label": "Today \u00b7 Wed Jun 10",
-      "weather": {
-        "high_f": 90,
-        "low_f": 70,
-        "precip_pct": 56,
-        "weather_code": 65,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy rain"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "\ud83c\udf71 MightyMeals delivery",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-06-10T00:00"
-        },
-        {
-          "time": "5:15 pm",
-          "title": "\ud83d\ude97 Drive to Mason District Park (VIVA Academy Night)",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-06-10T17:15:00-04:00"
-        },
-        {
-          "time": "5:45 pm",
-          "title": "VIVA \u26bd Academy Night Practice \u2014 Purple Uniform",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-10T17:45:00-04:00"
-        },
-        {
-          "time": "6:45 pm",
-          "title": "VIVA 2014B NCSL Yellow - End of the Year Party!!",
-          "location": "6621 Columbia Pike, Annandale, VA  22003",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-10T18:45:31-04:00"
-        },
-        {
-          "time": "7:30 pm",
-          "title": "Taylor Dinner",
-          "location": "Minetta Tavern DC, 1287 4th St NE, Washington, DC 20002, USA",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-10T19:30:00-04:00"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-06-11",
-      "label": "Tomorrow \u00b7 Thu Jun 11",
-      "weather": {
-        "high_f": 98,
-        "low_f": 73,
-        "precip_pct": 30,
-        "weather_code": 81,
-        "emoji": "\ud83c\udf27",
-        "label": "Showers"
-      },
+      "label": "Today \u00b7 Thu Jun 11",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -106,15 +44,8 @@
     },
     {
       "date": "2026-06-12",
-      "label": "Friday \u00b7 Jun 12",
-      "weather": {
-        "high_f": 96,
-        "low_f": 72,
-        "precip_pct": 71,
-        "weather_code": 82,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy showers"
-      },
+      "label": "Tomorrow \u00b7 Fri Jun 12",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -162,14 +93,7 @@
     {
       "date": "2026-06-13",
       "label": "Saturday \u00b7 Jun 13",
-      "weather": {
-        "high_f": 84,
-        "low_f": 65,
-        "precip_pct": 47,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "9:00 am",
@@ -225,14 +149,7 @@
     {
       "date": "2026-06-14",
       "label": "Sunday \u00b7 Jun 14",
-      "weather": {
-        "high_f": 91,
-        "low_f": 65,
-        "precip_pct": 34,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "8:00 am",
@@ -291,14 +208,7 @@
     {
       "date": "2026-06-15",
       "label": "Monday \u00b7 Jun 15",
-      "weather": {
-        "high_f": 76,
-        "low_f": 66,
-        "precip_pct": 34,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -314,14 +224,7 @@
     {
       "date": "2026-06-16",
       "label": "Tuesday \u00b7 Jun 16",
-      "weather": {
-        "high_f": 78,
-        "low_f": 67,
-        "precip_pct": 41,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -357,6 +260,13 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-06-17",
+      "label": "Wednesday \u00b7 Jun 17",
+      "weather": null,
+      "events": [],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -364,34 +274,34 @@
       {
         "title": "KJ Birthday",
         "day": "Thu Jun 11",
-        "days_out": 1
+        "days_out": 0
       },
       {
         "title": "Dad's Birthday",
         "day": "Mon Jun 15",
-        "days_out": 5
+        "days_out": 4
       },
       {
         "title": "Avani\u2019s Birthday",
         "day": "Thu Jun 25",
-        "days_out": 15
+        "days_out": 14
       },
       {
         "title": "Brandee Birthday",
         "day": "Mon Jun 29",
-        "days_out": 19
+        "days_out": 18
       }
     ],
     "holidays": [
       {
         "title": "Juneteenth",
         "day": "Fri Jun 19",
-        "days_out": 9
+        "days_out": 8
       },
       {
         "title": "Father's Day",
         "day": "Sun Jun 21",
-        "days_out": 11
+        "days_out": 10
       }
     ]
   }
