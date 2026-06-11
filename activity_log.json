@@ -178,5 +178,11 @@
     "title": "Allergy Test",
     "source": "Gmail invite",
     "when": "2026-06-22T14:15"
+  },
+  {
+    "ts": "2026-06-11T10:31:53.645911+00:00",
+    "action": "dismissed",
+    "title": "Ken Stewart sent you an invite!",
+    "source": "Gmail"
   }
 ]
