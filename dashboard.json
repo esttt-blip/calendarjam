@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-06-12T13:55:58.968845-04:00",
-  "generated_label": "Fri Jun 12, 1:55 PM",
-  "weather": null,
+  "generated_at": "2026-06-12T14:25:34.180845-04:00",
+  "generated_label": "Fri Jun 12, 2:25 PM",
+  "weather": {
+    "high_f": 97,
+    "low_f": 72,
+    "precip_pct": 24,
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
+  },
   "theme": {
     "emoji": "\ud83c\udf86",
     "title": "Juneteenth Week",
