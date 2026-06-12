@@ -190,5 +190,12 @@
     "action": "dismissed",
     "title": "Reminder: your appointment is coming soon",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-06-12T10:01:05.055181+00:00",
+    "action": "added",
+    "title": "\ud83d\uded2 Walmart delivery",
+    "source": "Delivery",
+    "when": "2026-06-12T06:00:00"
   }
 ]

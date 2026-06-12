@@ -1,71 +1,19 @@
 {
-  "generated_at": "2026-06-11T16:01:33.367772-04:00",
-  "generated_label": "Thu Jun 11, 4:01 PM",
-  "weather": {
-    "high_f": 99,
-    "low_f": 72,
-    "precip_pct": 18,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-06-12T06:01:11.737710-04:00",
+  "generated_label": "Fri Jun 12, 6:01 AM",
+  "weather": null,
   "theme": {
-    "emoji": "\ud83c\udfc6",
-    "title": "Tournament Week",
-    "blurb": "Bring the cooler, the chairs, and the snacks.",
-    "color1": "#f7971e",
-    "color2": "#ffd200"
+    "emoji": "\ud83c\udf86",
+    "title": "Juneteenth Week",
+    "blurb": "Freedom, family, and a long weekend.",
+    "color1": "#e52d27",
+    "color2": "#b31217"
   },
   "week": [
     {
-      "date": "2026-06-11",
-      "label": "Today \u00b7 Thu Jun 11",
-      "weather": {
-        "high_f": 99,
-        "low_f": 72,
-        "precip_pct": 18,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "KJ Birthday",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-06-11T00:00"
-        },
-        {
-          "time": "6:00 pm",
-          "title": "Ignite \u26be Hitting Sessions",
-          "location": "5130 Wilson Blvd, Arlington, VA 22205",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-11T18:00:00-04:00"
-        },
-        {
-          "time": "8:00 pm",
-          "title": "German Class",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-11T20:00:00-04:00"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-06-12",
-      "label": "Tomorrow \u00b7 Fri Jun 12",
-      "weather": {
-        "high_f": 98,
-        "low_f": 76,
-        "precip_pct": 76,
-        "weather_code": 82,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy showers"
-      },
+      "label": "Today \u00b7 Fri Jun 12",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -82,6 +30,14 @@
           "all_day": true,
           "is_drive": false,
           "sort": "2026-06-12T00:00"
+        },
+        {
+          "time": "6:00 am",
+          "title": "\ud83d\uded2 Walmart delivery",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-12T06:00:00-04:00"
         },
         {
           "time": "10:00 am",
@@ -112,15 +68,8 @@
     },
     {
       "date": "2026-06-13",
-      "label": "Saturday \u00b7 Jun 13",
-      "weather": {
-        "high_f": 85,
-        "low_f": 65,
-        "precip_pct": 30,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Tomorrow \u00b7 Sat Jun 13",
+      "weather": null,
       "events": [
         {
           "time": "9:00 am",
@@ -176,14 +125,7 @@
     {
       "date": "2026-06-14",
       "label": "Sunday \u00b7 Jun 14",
-      "weather": {
-        "high_f": 94,
-        "low_f": 66,
-        "precip_pct": 53,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "8:00 am",
@@ -242,14 +184,7 @@
     {
       "date": "2026-06-15",
       "label": "Monday \u00b7 Jun 15",
-      "weather": {
-        "high_f": 83,
-        "low_f": 65,
-        "precip_pct": 53,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -265,14 +200,7 @@
     {
       "date": "2026-06-16",
       "label": "Tuesday \u00b7 Jun 16",
-      "weather": {
-        "high_f": 65,
-        "low_f": 62,
-        "precip_pct": 30,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -312,51 +240,143 @@
     {
       "date": "2026-06-17",
       "label": "Wednesday \u00b7 Jun 17",
-      "weather": {
-        "high_f": 79,
-        "low_f": 60,
-        "precip_pct": 18,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [],
       "conflicts": []
+    },
+    {
+      "date": "2026-06-18",
+      "label": "Thursday \u00b7 Jun 18",
+      "weather": null,
+      "events": [
+        {
+          "time": "12:00 am",
+          "title": "Last Day of School (Early Release)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-18T00:00:00-04:00"
+        },
+        {
+          "time": "8:30 am",
+          "title": "Taylor Dermatologist appt",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-18T08:30:00-04:00"
+        },
+        {
+          "time": "9:00 am",
+          "title": "\ud83d\udcda Last Day of School \u2014 Early Release",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-18T09:00:00-04:00"
+        },
+        {
+          "time": "1:00 pm",
+          "title": "Platform All Hands Monthly ",
+          "location": "https://draftkings.zoom.us/j/92909466243?pwd=MHoitIe4MyDL8SWx6TUx7DCGlQAawu.1&from=addon",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-18T13:00:00-04:00"
+        },
+        {
+          "time": "6:00 pm",
+          "title": "Ignite \u26be Hitting Sessions",
+          "location": "5130 Wilson Blvd, Arlington, VA 22205",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-18T18:00:00-04:00"
+        },
+        {
+          "time": "8:00 pm",
+          "title": "German Class",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-18T20:00:00-04:00"
+        }
+      ],
+      "conflicts": [
+        {
+          "a": "Last Day of School (Early Release)",
+          "a_time": "12:00 am",
+          "b": "Taylor Dermatologist appt",
+          "b_time": "8:30 am"
+        },
+        {
+          "a": "Last Day of School (Early Release)",
+          "a_time": "12:00 am",
+          "b": "\ud83d\udcda Last Day of School \u2014 Early Release",
+          "b_time": "9:00 am"
+        },
+        {
+          "a": "Last Day of School (Early Release)",
+          "a_time": "12:00 am",
+          "b": "Platform All Hands Monthly ",
+          "b_time": "1:00 pm"
+        },
+        {
+          "a": "Last Day of School (Early Release)",
+          "a_time": "12:00 am",
+          "b": "Ignite \u26be Hitting Sessions",
+          "b_time": "6:00 pm"
+        },
+        {
+          "a": "Last Day of School (Early Release)",
+          "a_time": "12:00 am",
+          "b": "German Class",
+          "b_time": "8:00 pm"
+        },
+        {
+          "a": "Taylor Dermatologist appt",
+          "a_time": "8:30 am",
+          "b": "\ud83d\udcda Last Day of School \u2014 Early Release",
+          "b_time": "9:00 am"
+        },
+        {
+          "a": "\ud83d\udcda Last Day of School \u2014 Early Release",
+          "a_time": "9:00 am",
+          "b": "Platform All Hands Monthly ",
+          "b_time": "1:00 pm"
+        }
+      ]
     }
   ],
   "horizon": {
     "birthdays": [
       {
-        "title": "KJ Birthday",
-        "day": "Thu Jun 11",
-        "days_out": 0
-      },
-      {
         "title": "Dad's Birthday",
         "day": "Mon Jun 15",
-        "days_out": 4
+        "days_out": 3
       },
       {
         "title": "Avani\u2019s Birthday",
         "day": "Thu Jun 25",
-        "days_out": 14
+        "days_out": 13
       },
       {
         "title": "Brandee Birthday",
         "day": "Mon Jun 29",
-        "days_out": 18
+        "days_out": 17
       }
     ],
     "holidays": [
       {
         "title": "Juneteenth",
         "day": "Fri Jun 19",
-        "days_out": 8
+        "days_out": 7
       },
       {
         "title": "Father's Day",
         "day": "Sun Jun 21",
-        "days_out": 10
+        "days_out": 9
+      },
+      {
+        "title": "Independence Day (substitute)",
+        "day": "Fri Jul 3",
+        "days_out": 21
       }
     ]
   }
