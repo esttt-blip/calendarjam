@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-06-12T14:25:34.180845-04:00",
-  "generated_label": "Fri Jun 12, 2:25 PM",
-  "weather": {
-    "high_f": 97,
-    "low_f": 72,
-    "precip_pct": 24,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-06-13T06:00:59.429793-04:00",
+  "generated_label": "Sat Jun 13, 6:00 AM",
+  "weather": null,
   "theme": {
     "emoji": "\ud83c\udf86",
     "title": "Juneteenth Week",
@@ -17,64 +11,8 @@
   },
   "week": [
     {
-      "date": "2026-06-12",
-      "label": "Today \u00b7 Fri Jun 12",
-      "weather": null,
-      "events": [
-        {
-          "time": "all day",
-          "title": "Empty washer lint trap",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-06-12T00:00"
-        },
-        {
-          "time": "all day",
-          "title": "VIVA \u26bd Tournament \u2014 Mid Atlantic June 12\u201314 (Mark Availability)",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-06-12T00:00"
-        },
-        {
-          "time": "6:00 am",
-          "title": "\ud83d\uded2 Walmart delivery",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-12T06:00:00-04:00"
-        },
-        {
-          "time": "10:00 am",
-          "title": "FW: Bi-Weekly Product Health and Incident Review with ELT",
-          "location": "https://draftkings.zoom.us/j/95183770035?pwd=jpUb1Xt5mcxx69DQkzdkaee60kpuZh.1",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-12T10:00:00-04:00"
-        },
-        {
-          "time": "10:30 am",
-          "title": "Surgeon consult @10:40",
-          "location": "1800 N Beauregard St, Alexandria, VA 22311, USA",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-12T10:30:00-04:00"
-        },
-        {
-          "time": "6:00 pm",
-          "title": "World Cup Opening @ the Smith\u2019s",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-12T18:00:00-04:00"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-06-13",
-      "label": "Tomorrow \u00b7 Sat Jun 13",
+      "label": "Today \u00b7 Sat Jun 13",
       "weather": null,
       "events": [
         {
@@ -130,7 +68,7 @@
     },
     {
       "date": "2026-06-14",
-      "label": "Sunday \u00b7 Jun 14",
+      "label": "Tomorrow \u00b7 Sun Jun 14",
       "weather": null,
       "events": [
         {
@@ -348,6 +286,93 @@
           "b_time": "1:00 pm"
         }
       ]
+    },
+    {
+      "date": "2026-06-19",
+      "label": "Friday \u00b7 Jun 19",
+      "weather": null,
+      "events": [
+        {
+          "time": "8:00 am",
+          "title": "Hassle Free Visit",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-19T08:00:00-04:00"
+        },
+        {
+          "time": "9:00 am",
+          "title": "\ud83d\udcda School Holiday (Juneteenth)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-19T09:00:00-04:00"
+        },
+        {
+          "time": "2:00 pm",
+          "title": "Henry VCO",
+          "location": "VCO Orthodontics, Dr. Crissy Markova, 1600 Wilson Blvd UNIT 810, Arlington, VA 22209, USA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-19T14:00:00-04:00"
+        },
+        {
+          "time": "2:00 pm",
+          "title": "Orthodontic Appointment for Henry",
+          "location": "1600 Wilson Blvd, Suite 810, Arlington, VA, 22209",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-19T14:00:00-04:00"
+        },
+        {
+          "time": "4:00 pm",
+          "title": "Boys haircuts",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-19T16:00:00-04:00"
+        },
+        {
+          "time": "8:00 pm",
+          "title": "Ignite Cadets 12U - Essex Tournament",
+          "location": "Towson, MD",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-19T20:00:00-04:00"
+        }
+      ],
+      "conflicts": [
+        {
+          "a": "Hassle Free Visit",
+          "a_time": "8:00 am",
+          "b": "\ud83d\udcda School Holiday (Juneteenth)",
+          "b_time": "9:00 am"
+        },
+        {
+          "a": "\ud83d\udcda School Holiday (Juneteenth)",
+          "a_time": "9:00 am",
+          "b": "Henry VCO",
+          "b_time": "2:00 pm"
+        },
+        {
+          "a": "\ud83d\udcda School Holiday (Juneteenth)",
+          "a_time": "9:00 am",
+          "b": "Orthodontic Appointment for Henry",
+          "b_time": "2:00 pm"
+        },
+        {
+          "a": "\ud83d\udcda School Holiday (Juneteenth)",
+          "a_time": "9:00 am",
+          "b": "Boys haircuts",
+          "b_time": "4:00 pm"
+        },
+        {
+          "a": "Henry VCO",
+          "a_time": "2:00 pm",
+          "b": "Orthodontic Appointment for Henry",
+          "b_time": "2:00 pm"
+        }
+      ]
     }
   ],
   "horizon": {
@@ -355,33 +380,38 @@
       {
         "title": "Dad's Birthday",
         "day": "Mon Jun 15",
-        "days_out": 3
+        "days_out": 2
       },
       {
         "title": "Avani\u2019s Birthday",
         "day": "Thu Jun 25",
-        "days_out": 13
+        "days_out": 12
       },
       {
         "title": "Brandee Birthday",
         "day": "Mon Jun 29",
-        "days_out": 17
+        "days_out": 16
       }
     ],
     "holidays": [
       {
         "title": "Juneteenth",
         "day": "Fri Jun 19",
-        "days_out": 7
+        "days_out": 6
       },
       {
         "title": "Father's Day",
         "day": "Sun Jun 21",
-        "days_out": 9
+        "days_out": 8
       },
       {
         "title": "Independence Day (substitute)",
         "day": "Fri Jul 3",
+        "days_out": 20
+      },
+      {
+        "title": "Independence Day",
+        "day": "Sat Jul 4",
         "days_out": 21
       }
     ]
