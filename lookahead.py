@@ -62,6 +62,19 @@ def _is_passive(ev: dict) -> bool:
     return ev.get("transparency") == "transparent"
 
 
+# Tournament bracket placeholders — the team only plays one of these slots
+# depending on earlier results, so overlapping bracket games aren't real
+# conflicts. Recognized by TBD / bracket / round-name markers.
+_BRACKET_MARKERS = ("tbd", "bracket", "consolation", "consolidation",
+                    "semi final", "semifinal", "semi-final", "quarter final",
+                    "quarterfinal", "quarter-final", "playoff", "play-in")
+
+
+def _is_bracket_tbd(ev: dict) -> bool:
+    s = (ev.get("summary", "") or "").lower()
+    return any(m in s for m in _BRACKET_MARKERS)
+
+
 def _is_outdoor(ev: dict) -> bool:
     blob = (ev.get("summary", "") + " " + ev.get("location", "")).lower()
     return any(s in blob for s in OUTDOOR_SIGNALS)
@@ -90,7 +103,8 @@ def find_collisions(events: list[dict]) -> list[dict]:
     for e in events:
         start, all_day = _parse(e, "start")
         end, _ = _parse(e, "end")
-        if start and end and not all_day and not _is_drive(e) and not _is_passive(e):
+        if (start and end and not all_day and not _is_drive(e)
+                and not _is_passive(e) and not _is_bracket_tbd(e)):
             timed.append((start, end, e))
     timed.sort(key=lambda t: t[0])
 
