@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-13T12:06:38.734969-04:00",
-  "generated_label": "Sat Jun 13, 12:06 PM",
+  "generated_at": "2026-06-14T06:01:05.951810-04:00",
+  "generated_label": "Sun Jun 14, 6:01 AM",
   "weather": null,
   "theme": {
     "emoji": "\ud83c\udf86",
@@ -11,80 +11,26 @@
   },
   "week": [
     {
-      "date": "2026-06-13",
-      "label": "Today \u00b7 Sat Jun 13",
-      "weather": {
-        "high_f": 90,
-        "low_f": 69,
-        "precip_pct": 7,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "9:00 am",
-          "title": "\ud83e\uddd8 All-Levels Hatha",
-          "location": "Karma Yoga",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-13T09:00:00-04:00"
-        },
-        {
-          "time": "10:00 am",
-          "title": "\ud83d\ude97 Drive to Maryland Soccerplex (Villarreal game)",
-          "location": "18031 Central Park Cir, Boyds, MD 20841",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-06-13T10:00:00-04:00"
-        },
-        {
-          "time": "11:15 am",
-          "title": "VIVA 2014B NCSL Yellow vs DC Soccer Federation DC Armory 2015 B",
-          "location": "18031 Central Park Cir\nBoyds MD 20841\nUnited States",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-13T11:15:05-04:00"
-        },
-        {
-          "time": "1:25 pm",
-          "title": "VIVA 2014B NCSL Yellow at Calvert Soccer Assn CSA 14 B",
-          "location": "18031 Central Park Cir\nBoyds MD 20841\nUnited States",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-13T13:25:05-04:00"
-        },
-        {
-          "time": "2:40 pm",
-          "title": "\ud83d\ude97 Drive home from Maryland Soccerplex",
-          "location": "1014 N Quintana St, Arlington, VA 22205",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-06-13T14:40:00-04:00"
-        },
-        {
-          "time": "6:00 pm",
-          "title": "Tornado Mommas past and present",
-          "location": "Clare & Don's Beach Shack, 130 N Washington St, Falls Church, VA 22046, USA",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-13T18:00:00-04:00"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-06-14",
-      "label": "Tomorrow \u00b7 Sun Jun 14",
-      "weather": {
-        "high_f": 95,
-        "low_f": 68,
-        "precip_pct": 50,
-        "weather_code": 81,
-        "emoji": "\ud83c\udf27",
-        "label": "Showers"
-      },
+      "label": "Today \u00b7 Sun Jun 14",
+      "weather": null,
       "events": [
+        {
+          "time": "6:30 am",
+          "title": "Drive",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-14T06:30:00-04:00"
+        },
+        {
+          "time": "7:15 am",
+          "title": "Warmup",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-14T07:15:00-04:00"
+        },
         {
           "time": "8:00 am",
           "title": "VIVA 2014B NCSL Yellow at Semi Finals TBD Bracket D Opponent",
@@ -141,15 +87,8 @@
     },
     {
       "date": "2026-06-15",
-      "label": "Monday \u00b7 Jun 15",
-      "weather": {
-        "high_f": 80,
-        "low_f": 64,
-        "precip_pct": 50,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Tomorrow \u00b7 Mon Jun 15",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -165,14 +104,7 @@
     {
       "date": "2026-06-16",
       "label": "Tuesday \u00b7 Jun 16",
-      "weather": {
-        "high_f": 82,
-        "low_f": 65,
-        "precip_pct": 12,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -212,28 +144,14 @@
     {
       "date": "2026-06-17",
       "label": "Wednesday \u00b7 Jun 17",
-      "weather": {
-        "high_f": 90,
-        "low_f": 64,
-        "precip_pct": 13,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "weather": null,
       "events": [],
       "conflicts": []
     },
     {
       "date": "2026-06-18",
       "label": "Thursday \u00b7 Jun 18",
-      "weather": {
-        "high_f": 96,
-        "low_f": 71,
-        "precip_pct": 25,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "12:00 am",
@@ -332,14 +250,7 @@
     {
       "date": "2026-06-19",
       "label": "Friday \u00b7 Jun 19",
-      "weather": {
-        "high_f": 76,
-        "low_f": 70,
-        "precip_pct": 38,
-        "weather_code": 81,
-        "emoji": "\ud83c\udf27",
-        "label": "Showers"
-      },
+      "weather": null,
       "events": [
         {
           "time": "8:00 am",
@@ -422,6 +333,38 @@
           "b_time": "2:00 pm"
         }
       ]
+    },
+    {
+      "date": "2026-06-20",
+      "label": "Saturday \u00b7 Jun 20",
+      "weather": null,
+      "events": [
+        {
+          "time": "8:40 am",
+          "title": "Reservation at East Potomac Golf Links",
+          "location": "East Potomac Golf Links, East Potomac Golf Links, 972 Ohio Dr. SW, Washington, DC 20024, US",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-20T08:40:00-04:00"
+        },
+        {
+          "time": "4:00 pm",
+          "title": "Group Lesson (2-3 Guests)",
+          "location": "20101 Century Blvd Germantown, MD 20874",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-20T16:00:00-04:00"
+        },
+        {
+          "time": "8:00 pm",
+          "title": "Ignite Cadets 12U - Essex Tournament",
+          "location": "Towson, MD",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-20T20:00:00-04:00"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -429,39 +372,39 @@
       {
         "title": "Dad's Birthday",
         "day": "Mon Jun 15",
-        "days_out": 2
+        "days_out": 1
       },
       {
         "title": "Avani\u2019s Birthday",
         "day": "Thu Jun 25",
-        "days_out": 12
+        "days_out": 11
       },
       {
         "title": "Brandee Birthday",
         "day": "Mon Jun 29",
-        "days_out": 16
+        "days_out": 15
       }
     ],
     "holidays": [
       {
         "title": "Juneteenth",
         "day": "Fri Jun 19",
-        "days_out": 6
+        "days_out": 5
       },
       {
         "title": "Father's Day",
         "day": "Sun Jun 21",
-        "days_out": 8
+        "days_out": 7
       },
       {
         "title": "Independence Day (substitute)",
         "day": "Fri Jul 3",
-        "days_out": 20
+        "days_out": 19
       },
       {
         "title": "Independence Day",
         "day": "Sat Jul 4",
-        "days_out": 21
+        "days_out": 20
       }
     ]
   }
