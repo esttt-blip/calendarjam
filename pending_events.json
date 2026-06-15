@@ -190,5 +190,29 @@
     "uid": "<B3.D1.42556.7BB3D2A6@i-0ebe7a37fd437e3a5.mta1vrest.sd.prd.sparkpost>",
     "needs_review": true,
     "from": "\"playDCgolf\" <course@golffacility.com>"
+  },
+  {
+    "id": "d9605ba1afc7956528248ab86b19ae42",
+    "source": "Gmail",
+    "title": "Appointment Booked!",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "Hi Esther, Thank you for booking an appointment with us on Wednesday 06/24/2026 at 6:15 PM for the following services: Ladies Cut (Natalie G) Please note: If you have scheduled for a service with no blowdry, we may not have a station for you to use. Please plan accordingly. If you need to cancel your appointment, log on to the portal and click cancel under 'my appointments.' If your appointment is not cancelled prior to the 48 hour window, this will result in a 50% cancellation fee. Please be advised; we assess a 3% surcharge on credit card transactions, to avoid this fee, please use a debit card. Please be sure to review our policies on our website. We have a complimentary parking garage located inside the building. You can park on the first and second levels. See ya soon, your mane chicks xo",
+    "uid": "<OOt59opbRwisN33PqqaQrg@geopod-ismtpd-54>",
+    "needs_review": true,
+    "from": "Rooted Mane Salon <info@rootedmane.com>"
+  },
+  {
+    "id": "116c5ed01cb7e1d77e62e838ac9ec0c2",
+    "source": "Gmail",
+    "title": "Reminder: Daycare  |  Troop Play Half Day for Milo",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "img {\r\n\t\t\t\t\tmax-width: 100%;\r\n\t\t\t\t}\r\n\t\t\t\tbody {\r\n\t\t\t\t\t-webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; width: 100% !important; height: 100%; line-height: 1.6em;\r\n\t\t\t\t}\r\n\t\t\t\tbody {\r\n\t\t\t\t\tbackground-color: #f6f6f6;\r\n\t\t\t\t}\r\n\t\t\t\t@media only screen and (max-width: 640px) {\r\n\t\t\t\t  body {\r\n\t\t\t\t    padding: 0 !important;\r\n\t\t\t\t  }\r\n\t\t\t\t  .container {\r\n\t\t\t\t    padding: 0 !important; width: 100% !important;\r\n\t\t\t\t  }\r\n\t\t\t\t  .content {\r\n\t\t\t\t    padding: 0 !important;\r\n\t\t\t\t    background-color: #FFFFFF;\r\n\t\t\t\t  }\r\n\t\t\t\t  .content-wrap {\r\n\t\t\t\t    padding: 10px !important;\r\n\t\t\t\t  }\r\n\t\t\t\t  .invoice {\r\n\t\t\t\t    width: 100% !important;\r\n\t\t\t\t  }\r\n\t\t\t\t}\r\n\t\t\t\r\n\t\t\r\n\r\n\t\t\r\n\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\tDear Esther,This is just a friendly reminder that Milo has a reservation for Daycare | Troop Play Half Day from June 15, 2026 at 8:30 am until June 15, 2026 at 12:30 pm.&gt;&gt;Here are some reminders for the upcoming reservation: &gt;Food Packing:\r\nIf you bring your pet's food, pack each serving in individual Ziploc bags for easy handling.Medication:\r\nIf your pet needs medication, organize them by date in a medication box for accurate administration.Vaccination Check:\r\nMake sure your pet's vaccinations are up to date, and provide the necessary documentation.Health Matters:\r\nPlease don't bring in pets showing symptoms of kennel cough or illness to maintain a healthy environment for ",
+    "uid": "<20260615020526.5211045548e771cf@mailgun.gingrapp.com>",
+    "needs_review": true,
+    "from": "Giving Tree K9 Club <givingtreepetresort@mailgun.gingrapp.com>"
   }
 ]
