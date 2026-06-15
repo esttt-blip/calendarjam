@@ -48,18 +48,6 @@
     "from": "Chubbies <support@chubbies.com>"
   },
   {
-    "id": "6eebb35054b773d8c46a550adb38d72f",
-    "source": "Gmail",
-    "title": "Milo's Reservation Cancelled!",
-    "start": null,
-    "end": null,
-    "location": "",
-    "description": "img {\r\n\t\t\t\t\tmax-width: 100%;\r\n\t\t\t\t}\r\n\t\t\t\tbody {\r\n\t\t\t\t\t-webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; width: 100% !important; height: 100%; line-height: 1.6em;\r\n\t\t\t\t}\r\n\t\t\t\tbody {\r\n\t\t\t\t\tbackground-color: #f6f6f6;\r\n\t\t\t\t}\r\n\t\t\t\t@media only screen and (max-width: 640px) {\r\n\t\t\t\t  body {\r\n\t\t\t\t    padding: 0 !important;\r\n\t\t\t\t  }\r\n\t\t\t\t  .container {\r\n\t\t\t\t    padding: 0 !important; width: 100% !important;\r\n\t\t\t\t  }\r\n\t\t\t\t  .content {\r\n\t\t\t\t    padding: 0 !important;\r\n\t\t\t\t    background-color: #FFFFFF;\r\n\t\t\t\t  }\r\n\t\t\t\t  .content-wrap {\r\n\t\t\t\t    padding: 10px !important;\r\n\t\t\t\t  }\r\n\t\t\t\t  .invoice {\r\n\t\t\t\t    width: 100% !important;\r\n\t\t\t\t  }\r\n\t\t\t\t}\r\n\t\t\t\r\n\t\t\r\n\r\n\t\t\r\n\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\tHello Esther Scott,\r\nMilo's reservation has been cancelled for June 11, 2026 at 8:30 am.\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\tUnsubscribe http://email.mailgun.gingrapp.com/c/eJxsjzFvhDAMhX9NMqLYHAkMGa6tUNcO7XoKYCAql6DgUl1_fZWrhFTpRvv5fc9vsI4qrLQcHDsrzJNApKvzy8UPAlGUZ4EITQONySM-C0QfNnahp0Of_O7DxIloJU60xcTHcfwOlA5YpZvmb59oXW4XjgfEhzGKk5r4YBR9vGbZvEiyYGoAU6mTkrMlN3bUa13rcoBBgatNh3Wpq85APZKS3qJCrTQAqOwpqOxG5bBE15V1RSBOKrecvkIx-TAlt645Ti52Zl63-0utwPZBtX8Gge2YYuALhUFg2y--_xTY_ry9zh_v590sMlnaeKZU0E7LLeSKOfmexvYBX-4WfwMAAP__2T1_XQ",
-    "uid": "<20260611105040.e3bf0a232ab385e1@mailgun.gingrapp.com>",
-    "needs_review": true,
-    "from": "Giving Tree Pet Resort- Reston <givingtreepetresort@mailgun.gingrapp.com>"
-  },
-  {
     "id": "a085ef60fad08d7d8f6f755b3e63cba1",
     "source": "Gmail",
     "title": "Reminder: Daycare  |  Troop Play Half Day for Milo",
