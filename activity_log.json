@@ -221,5 +221,11 @@
     "action": "dismissed",
     "title": "Milo's Reservation Cancelled!",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-06-15T10:25:20.147663+00:00",
+    "action": "acked",
+    "title": "Reminder: Daycare  |  Troop Play Half Day for Milo",
+    "source": "Gmail"
   }
 ]
