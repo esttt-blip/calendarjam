@@ -209,5 +209,11 @@
     "action": "acked",
     "title": "Your appointment has been cancelled",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-06-15T10:22:51.959194+00:00",
+    "action": "dismissed",
+    "title": "Re: Chubbies Chat Follow Up",
+    "source": "Gmail"
   }
 ]
