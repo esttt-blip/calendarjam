@@ -269,5 +269,11 @@
     "action": "acked",
     "title": "Reservation CONFIRMED",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-06-16T10:38:17.937764+00:00",
+    "action": "dismissed",
+    "title": "Re: Chubbies Chat Follow Up",
+    "source": "Gmail"
   }
 ]
