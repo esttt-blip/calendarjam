@@ -293,5 +293,11 @@
     "action": "dismissed",
     "title": "Fwd: Follow-up from tonight's Sidebar dinner",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-06-18T10:09:59.573463+00:00",
+    "action": "dismissed",
+    "title": "Reservation CONFIRMED",
+    "source": "Gmail"
   }
 ]
