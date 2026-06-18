@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-17T15:33:54.401605-04:00",
-  "generated_label": "Wed Jun 17, 3:33 PM",
+  "generated_at": "2026-06-18T06:01:04.064264-04:00",
+  "generated_label": "Thu Jun 18, 6:01 AM",
   "weather": {
-    "high_f": 86,
-    "low_f": 66,
-    "precip_pct": 2,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
+    "high_f": 93,
+    "low_f": 75,
+    "precip_pct": 21,
+    "emoji": "\ud83c\udf26",
+    "label": "Light drizzle"
   },
   "theme": {
     "emoji": "\u2600\ufe0f",
