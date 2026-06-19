@@ -317,5 +317,40 @@
     "action": "dismissed",
     "title": "DHARA Newsletter - June 18, 2026",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-06-19T13:27:01.833203+00:00",
+    "action": "added",
+    "title": "\ud83c\udf71 MightyMeals delivery",
+    "source": "Delivery",
+    "when": "2026-06-24"
+  },
+  {
+    "ts": "2026-06-19T13:27:02.219772+00:00",
+    "action": "added",
+    "title": "\ud83d\uded2 Walmart delivery",
+    "source": "Delivery",
+    "when": "2026-06-19T13:00:00"
+  },
+  {
+    "ts": "2026-06-19T13:27:02.718773+00:00",
+    "action": "added",
+    "title": "\ud83d\udcda Last Day of School \u2014 Early Release",
+    "source": "Swanson \ud83d\udcda",
+    "when": "2027-06-17T09:00"
+  },
+  {
+    "ts": "2026-06-19T13:27:03.155416+00:00",
+    "action": "added",
+    "title": "\ud83d\udcda School Holiday (Juneteenth (Observed))",
+    "source": "Swanson \ud83d\udcda",
+    "when": "2027-06-18T09:00"
+  },
+  {
+    "ts": "2026-06-19T13:27:03.674188+00:00",
+    "action": "added",
+    "title": "Appointment Reminder",
+    "source": "Gmail invite",
+    "when": "2026-06-19T18:00"
   }
 ]

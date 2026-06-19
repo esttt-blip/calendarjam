@@ -1,23 +1,426 @@
 {
-  "generated_at": "2026-06-19T06:01:03.058651-04:00",
-  "generated_label": "Fri Jun 19, 6:01 AM",
+  "generated_at": "2026-06-19T09:27:08.973858-04:00",
+  "generated_label": "Fri Jun 19, 9:27 AM",
   "weather": {
-    "high_f": 87,
+    "high_f": 86,
     "low_f": 73,
     "precip_pct": 22,
     "emoji": "\u2601\ufe0f",
     "label": "Overcast"
   },
   "theme": {
-    "emoji": "\u2600\ufe0f",
-    "title": "Summer Kickoff",
-    "blurb": "Long days, packed weekends.",
-    "color1": "#f7971e",
-    "color2": "#ffd200"
+    "emoji": "\ud83c\udf86",
+    "title": "Juneteenth Week",
+    "blurb": "Freedom, family, and a long weekend.",
+    "color1": "#e52d27",
+    "color2": "#b31217"
   },
-  "week": [],
+  "week": [
+    {
+      "date": "2026-06-19",
+      "label": "Today \u00b7 Fri Jun 19",
+      "weather": {
+        "high_f": 86,
+        "low_f": 73,
+        "precip_pct": 22,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
+      "events": [
+        {
+          "time": "9:00 am",
+          "title": "\ud83d\udcda School Holiday (Juneteenth)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-19T09:00:00-04:00"
+        },
+        {
+          "time": "11:00 am",
+          "title": "Henry VCO",
+          "location": "VCO Orthodontics, Dr. Crissy Markova, 1600 Wilson Blvd UNIT 810, Arlington, VA 22209, USA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-19T11:00:00-04:00"
+        },
+        {
+          "time": "1:00 pm",
+          "title": "\ud83d\uded2 Walmart delivery",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-19T13:00:00-04:00"
+        },
+        {
+          "time": "1:00 pm",
+          "title": "\ud83d\uded2 Walmart delivery",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-19T13:00:00-04:00"
+        },
+        {
+          "time": "2:00 pm",
+          "title": "Appointment Reminder",
+          "location": "1600 Wilson Blvd, Suite 810 Arlington,VA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-19T14:00:00-04:00"
+        },
+        {
+          "time": "2:00 pm",
+          "title": "Appointment Reminder",
+          "location": "1600 Wilson Blvd, Suite 810 Arlington,VA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-19T14:00:00-04:00"
+        }
+      ],
+      "conflicts": [
+        {
+          "a": "\ud83d\udcda School Holiday (Juneteenth)",
+          "a_time": "9:00 am",
+          "b": "Henry VCO",
+          "b_time": "11:00 am"
+        },
+        {
+          "a": "\ud83d\udcda School Holiday (Juneteenth)",
+          "a_time": "9:00 am",
+          "b": "Appointment Reminder",
+          "b_time": "2:00 pm"
+        },
+        {
+          "a": "\ud83d\udcda School Holiday (Juneteenth)",
+          "a_time": "9:00 am",
+          "b": "Appointment Reminder",
+          "b_time": "2:00 pm"
+        },
+        {
+          "a": "Appointment Reminder",
+          "a_time": "2:00 pm",
+          "b": "Appointment Reminder",
+          "b_time": "2:00 pm"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-20",
+      "label": "Tomorrow \u00b7 Sat Jun 20",
+      "weather": {
+        "high_f": 86,
+        "low_f": 64,
+        "precip_pct": 3,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
+      "events": [
+        {
+          "time": "8:40 am",
+          "title": "Reservation at East Potomac Golf Links - BLUE Course",
+          "location": "East Potomac Golf Links - BLUE Course, East Potomac Golf Links - BLUE Course, 972 Ohio Dr. SW, Washington, DC 20024, US",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-20T08:40:00-04:00"
+        },
+        {
+          "time": "4:00 pm",
+          "title": "Group Lesson (2-3 Guests)",
+          "location": "20101 Century Blvd Germantown, MD 20874",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-20T16:00:00-04:00"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "date": "2026-06-21",
+      "label": "Sunday \u00b7 Jun 21",
+      "weather": {
+        "high_f": 85,
+        "low_f": 62,
+        "precip_pct": 3,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
+      "events": [
+        {
+          "time": "3:00 pm",
+          "title": "(untitled)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-21T15:00:00-04:00"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "date": "2026-06-22",
+      "label": "Monday \u00b7 Jun 22",
+      "weather": {
+        "high_f": 86,
+        "low_f": 68,
+        "precip_pct": 83,
+        "weather_code": 80,
+        "emoji": "\ud83c\udf26",
+        "label": "Showers"
+      },
+      "events": [
+        {
+          "time": "all day",
+          "title": "Archery Camp",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-06-22T00:00"
+        },
+        {
+          "time": "8:45 am",
+          "title": "\ud83d\ude97 Drop off Henry \u2014 NOVA Archery",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-22T08:45:00-04:00"
+        },
+        {
+          "time": "3:45 pm",
+          "title": "\ud83d\ude97 Pick up Henry \u2014 NOVA Archery",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-22T15:45:00-04:00"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "date": "2026-06-23",
+      "label": "Tuesday \u00b7 Jun 23",
+      "weather": {
+        "high_f": 81,
+        "low_f": 67,
+        "precip_pct": 55,
+        "weather_code": 80,
+        "emoji": "\ud83c\udf26",
+        "label": "Showers"
+      },
+      "events": [
+        {
+          "time": "all day",
+          "title": "Henry: Northrip's Mail",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-06-23T00:00"
+        },
+        {
+          "time": "8:45 am",
+          "title": "\ud83d\ude97 Drop off Henry \u2014 NOVA Archery",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-23T08:45:00-04:00"
+        },
+        {
+          "time": "3:45 pm",
+          "title": "\ud83d\ude97 Pick up Henry \u2014 NOVA Archery",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-23T15:45:00-04:00"
+        },
+        {
+          "time": "5:15 pm",
+          "title": "\ud83d\ude97 Drive to Bluemont Park (Ignite Practice)",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-23T17:15:00-04:00"
+        },
+        {
+          "time": "5:30 pm",
+          "title": "Ignite \u26be Practice",
+          "location": "601 N Manchester St, Arlington, VA 22203 (Side Fields / Main Field if open)",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-23T17:30:00-04:00"
+        },
+        {
+          "time": "8:00 pm",
+          "title": "German Class",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-23T20:00:00-04:00"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "date": "2026-06-24",
+      "label": "Wednesday \u00b7 Jun 24",
+      "weather": {
+        "high_f": 86,
+        "low_f": 65,
+        "precip_pct": 12,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
+      "events": [
+        {
+          "time": "all day",
+          "title": "\ud83c\udf71 MightyMeals delivery",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-06-24T00:00"
+        },
+        {
+          "time": "all day",
+          "title": "\ud83c\udf71 MightyMeals delivery",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-06-24T00:00"
+        },
+        {
+          "time": "8:45 am",
+          "title": "\ud83d\ude97 Drop off Henry \u2014 NOVA Archery",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-24T08:45:00-04:00"
+        },
+        {
+          "time": "3:45 pm",
+          "title": "\ud83d\ude97 Pick up Henry \u2014 NOVA Archery",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-24T15:45:00-04:00"
+        },
+        {
+          "time": "6:03 pm",
+          "title": "\ud83d\ude97 Drive to Rooted Mane",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-24T18:03:00-04:00"
+        },
+        {
+          "time": "6:15 pm",
+          "title": "\ud83d\udc87 Ladies Cut \u2014 Rooted Mane (Natalie G)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-24T18:15:00-04:00"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "date": "2026-06-25",
+      "label": "Thursday \u00b7 Jun 25",
+      "weather": {
+        "high_f": 89,
+        "low_f": 65,
+        "precip_pct": 30,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
+      "events": [
+        {
+          "time": "all day",
+          "title": "Avani\u2019s Birthday",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-06-25T00:00"
+        },
+        {
+          "time": "8:45 am",
+          "title": "\ud83d\ude97 Drop off Henry \u2014 NOVA Archery",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-25T08:45:00-04:00"
+        },
+        {
+          "time": "9:30 am",
+          "title": "Seymour eye appointment",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-25T09:30:00-04:00"
+        },
+        {
+          "time": "3:45 pm",
+          "title": "\ud83d\ude97 Pick up Henry \u2014 NOVA Archery",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-25T15:45:00-04:00"
+        },
+        {
+          "time": "6:00 pm",
+          "title": "Ignite \u26be Hitting Sessions",
+          "location": "5130 Wilson Blvd, Arlington, VA 22205",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-25T18:00:00-04:00"
+        },
+        {
+          "time": "8:00 pm",
+          "title": "German Class",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-25T20:00:00-04:00"
+        }
+      ],
+      "conflicts": []
+    }
+  ],
   "horizon": {
-    "birthdays": [],
-    "holidays": []
+    "birthdays": [
+      {
+        "title": "Avani\u2019s Birthday",
+        "day": "Thu Jun 25",
+        "days_out": 6
+      },
+      {
+        "title": "Brandee Birthday",
+        "day": "Mon Jun 29",
+        "days_out": 10
+      }
+    ],
+    "holidays": [
+      {
+        "title": "Juneteenth",
+        "day": "Fri Jun 19",
+        "days_out": 0
+      },
+      {
+        "title": "Father's Day",
+        "day": "Sun Jun 21",
+        "days_out": 2
+      },
+      {
+        "title": "Independence Day (substitute)",
+        "day": "Fri Jul 3",
+        "days_out": 14
+      },
+      {
+        "title": "Independence Day",
+        "day": "Sat Jul 4",
+        "days_out": 15
+      }
+    ]
   }
 }
