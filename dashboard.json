@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-19T13:32:11.063238-04:00",
-  "generated_label": "Fri Jun 19, 1:32 PM",
+  "generated_at": "2026-06-19T14:12:03.182347-04:00",
+  "generated_label": "Fri Jun 19, 2:12 PM",
   "weather": null,
   "theme": {
     "emoji": "\ud83c\udf86",
@@ -13,7 +13,14 @@
     {
       "date": "2026-06-19",
       "label": "Today \u00b7 Fri Jun 19",
-      "weather": null,
+      "weather": {
+        "high_f": 84,
+        "low_f": 73,
+        "precip_pct": 22,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "9:00 am",
@@ -38,63 +45,21 @@
           "all_day": false,
           "is_drive": false,
           "sort": "2026-06-19T13:00:00-04:00"
-        },
-        {
-          "time": "1:00 pm",
-          "title": "\ud83d\uded2 Walmart delivery",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-19T13:00:00-04:00"
-        },
-        {
-          "time": "2:00 pm",
-          "title": "Appointment Reminder",
-          "location": "1600 Wilson Blvd, Suite 810 Arlington,VA",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-19T14:00:00-04:00"
-        },
-        {
-          "time": "2:00 pm",
-          "title": "Appointment Reminder",
-          "location": "1600 Wilson Blvd, Suite 810 Arlington,VA",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-19T14:00:00-04:00"
         }
       ],
-      "conflicts": [
-        {
-          "a": "\ud83d\udcda School Holiday (Juneteenth)",
-          "a_time": "9:00 am",
-          "b": "Henry VCO",
-          "b_time": "11:00 am"
-        },
-        {
-          "a": "\ud83d\udcda School Holiday (Juneteenth)",
-          "a_time": "9:00 am",
-          "b": "Appointment Reminder",
-          "b_time": "2:00 pm"
-        },
-        {
-          "a": "\ud83d\udcda School Holiday (Juneteenth)",
-          "a_time": "9:00 am",
-          "b": "Appointment Reminder",
-          "b_time": "2:00 pm"
-        },
-        {
-          "a": "Appointment Reminder",
-          "a_time": "2:00 pm",
-          "b": "Appointment Reminder",
-          "b_time": "2:00 pm"
-        }
-      ]
+      "conflicts": []
     },
     {
       "date": "2026-06-20",
       "label": "Tomorrow \u00b7 Sat Jun 20",
-      "weather": null,
+      "weather": {
+        "high_f": 87,
+        "low_f": 63,
+        "precip_pct": 6,
+        "weather_code": 2,
+        "emoji": "\u26c5",
+        "label": "Partly cloudy"
+      },
       "events": [
         {
           "time": "8:40 am",
@@ -118,7 +83,14 @@
     {
       "date": "2026-06-21",
       "label": "Sunday \u00b7 Jun 21",
-      "weather": null,
+      "weather": {
+        "high_f": 86,
+        "low_f": 63,
+        "precip_pct": 12,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "3:00 pm",
@@ -134,7 +106,14 @@
     {
       "date": "2026-06-22",
       "label": "Monday \u00b7 Jun 22",
-      "weather": null,
+      "weather": {
+        "high_f": 82,
+        "low_f": 67,
+        "precip_pct": 75,
+        "weather_code": 80,
+        "emoji": "\ud83c\udf26",
+        "label": "Showers"
+      },
       "events": [
         {
           "time": "all day",
@@ -166,7 +145,14 @@
     {
       "date": "2026-06-23",
       "label": "Tuesday \u00b7 Jun 23",
-      "weather": null,
+      "weather": {
+        "high_f": 79,
+        "low_f": 65,
+        "precip_pct": 55,
+        "weather_code": 80,
+        "emoji": "\ud83c\udf26",
+        "label": "Showers"
+      },
       "events": [
         {
           "time": "all day",
@@ -222,16 +208,15 @@
     {
       "date": "2026-06-24",
       "label": "Wednesday \u00b7 Jun 24",
-      "weather": null,
+      "weather": {
+        "high_f": 85,
+        "low_f": 62,
+        "precip_pct": 16,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
-        {
-          "time": "all day",
-          "title": "\ud83c\udf71 MightyMeals delivery",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-06-24T00:00"
-        },
         {
           "time": "all day",
           "title": "\ud83c\udf71 MightyMeals delivery",
@@ -278,7 +263,14 @@
     {
       "date": "2026-06-25",
       "label": "Thursday \u00b7 Jun 25",
-      "weather": null,
+      "weather": {
+        "high_f": 81,
+        "low_f": 66,
+        "precip_pct": 32,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
       "events": [
         {
           "time": "all day",
