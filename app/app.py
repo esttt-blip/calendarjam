@@ -256,17 +256,22 @@ with top_left:
     with st.container(border=True):
         changed = False
         for it in open_items:
-            new_val = st.checkbox(it["title"], value=it.get("done", False), key="oi_" + it["id"])
+            done = it.get("done", False)
+            label = f"~~{it['title']}~~  ✅" if done else it["title"]
+            new_val = st.checkbox(label, value=done, key="oi_" + it["id"])
             if it.get("sub"):
-                st.markdown(f"<div class='todo-sub'>{it['sub']}</div>", unsafe_allow_html=True)
-            if new_val != it.get("done", False):
+                sub_color = "#cccdd6" if (new_val or done) else "#9a9aa7"
+                st.markdown(f"<div class='todo-sub' style='color:{sub_color}'>{it['sub']}</div>",
+                            unsafe_allow_html=True)
+            if new_val != done:
                 it["done"] = new_val
                 changed = True
         if changed:
             try:
                 write_file("app_open_items.json", open_items, open_sha, "app: update to-do items")
+                st.toast("Saved ✓", icon="✅")
             except Exception:
-                pass
+                st.toast("Couldn't save — try again", icon="⚠️")
             st.rerun()
 
     # Coming up — birthdays + holidays
