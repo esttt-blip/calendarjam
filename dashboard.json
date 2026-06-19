@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-18T15:38:40.019063-04:00",
-  "generated_label": "Thu Jun 18, 3:38 PM",
+  "generated_at": "2026-06-19T06:01:03.058651-04:00",
+  "generated_label": "Fri Jun 19, 6:01 AM",
   "weather": {
-    "high_f": 92,
-    "low_f": 74,
-    "precip_pct": 24,
+    "high_f": 87,
+    "low_f": 73,
+    "precip_pct": 22,
     "emoji": "\u2601\ufe0f",
     "label": "Overcast"
   },
