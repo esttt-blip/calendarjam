@@ -3,30 +3,30 @@
     "id": "milo-boarding",
     "title": "\ud83d\udc36 Milo boarding \u2014 Alaska cruise Jul 8\u201319",
     "sub": "Pet Grand Hotel unavailable. Confirm Giving Tree K9 does overnight (571-799-8100).",
-    "done": false
+    "done": true
   },
   {
     "id": "camp-w5",
     "title": "\ud83c\udfd5\ufe0f Henry camp \u2014 Week 5 (Jul 20\u201324)",
     "sub": "First week after the cruise. TBD.",
-    "done": true
+    "done": false
   },
   {
     "id": "camp-w8",
     "title": "\ud83c\udfd5\ufe0f Henry camp \u2014 Week 8 (Aug 10\u201314)",
     "sub": "First week back from Germany. TBD.",
-    "done": true
+    "done": false
   },
   {
     "id": "camp-w9",
     "title": "\ud83c\udfd5\ufe0f Henry camp \u2014 Week 9 (Aug 17\u201321)",
     "sub": "Bridge week before Code Ninjas. TBD.",
-    "done": true
+    "done": false
   },
   {
     "id": "thrills-reg",
     "title": "\ud83d\udcdd Summertime Thrills registration (Week 6)",
     "sub": "Register via Arlington Rec \u2014 vaarlingtonweb.myvscloud.com",
-    "done": true
+    "done": false
   }
 ]
