@@ -1,11 +1,12 @@
 """calendarjam — command station.
 
-A holistic agenda: decisions to make (review queue) up top, then the full
-week laid out day-by-day with events, deliveries, conflicts inline, and
-upcoming birthdays/holidays. Reads from the GitHub repo:
-  - dashboard.json      (week agenda + horizon, written by sync)
-  - pending_events.json (review queue — interactive)
-  - activity_log.json   (recent decisions)
+A holistic agenda: today + open to-dos + upcoming birthdays/holidays in the
+left column, decisions to make (review queue) on the right, then the full week
+laid out day-by-day. Reads from the GitHub repo:
+  - dashboard.json        (week agenda + horizon, written by sync)
+  - pending_events.json   (review queue — interactive)
+  - app_open_items.json   (the to-do / open-logistics checklist — interactive)
+  - activity_log.json     (recent decisions)
 
 Streamlit Cloud secrets: GITHUB_TOKEN, GITHUB_REPO.
 """
@@ -28,6 +29,20 @@ HEADERS = {
     "Accept": "application/vnd.github+json",
     "X-GitHub-Api-Version": "2022-11-28",
 }
+
+# Seed list for the to-do checklist the first time it runs (no file yet).
+DEFAULT_OPEN_ITEMS = [
+    {"id": "milo-boarding", "title": "🐶 Milo boarding — Alaska cruise Jul 8–19",
+     "sub": "Pet Grand Hotel unavailable. Confirm Giving Tree K9 does overnight (571-799-8100).", "done": False},
+    {"id": "camp-w5", "title": "🏕️ Henry camp — Week 5 (Jul 20–24)",
+     "sub": "First week after the cruise. TBD.", "done": False},
+    {"id": "camp-w8", "title": "🏕️ Henry camp — Week 8 (Aug 10–14)",
+     "sub": "First week back from Germany. TBD.", "done": False},
+    {"id": "camp-w9", "title": "🏕️ Henry camp — Week 9 (Aug 17–21)",
+     "sub": "Bridge week before Code Ninjas. TBD.", "done": False},
+    {"id": "thrills-reg", "title": "📝 Summertime Thrills registration (Week 6)",
+     "sub": "Register via Arlington Rec — vaarlingtonweb.myvscloud.com", "done": False},
+]
 
 
 # ─────────────────────────── github i/o ───────────────────────────
@@ -83,15 +98,21 @@ st.set_page_config(page_title="calendarjam", page_icon="📅", layout="wide",
 
 st.markdown("""
 <style>
-  .block-container { padding-top: 1.5rem; padding-bottom: 3rem; max-width: 1180px; }
-  /* Day cards sit in a grid; fixed-ish height keeps the grid tidy */
-  .day-card { background:#fff; border:1px solid #e6e6ec; border-radius:12px;
-              padding:12px 16px; margin-bottom:14px; height:230px; overflow-y:auto; }
+  .block-container { padding-top: 1.4rem; padding-bottom: 3rem; max-width: 1180px; }
+
+  /* Section labels */
+  .sec { font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
+         color: #8a8a99; margin: 6px 0 10px; }
+
+  /* Day cards */
+  .day-card { background:#fff; border:1px solid #ebebf1; border-radius:14px;
+              padding:13px 16px; margin-bottom:14px; height:220px; overflow-y:auto;
+              box-shadow:0 1px 3px rgba(20,20,40,.04); }
   .day-card.today { border:2px solid #1a1a2e; height:auto; }
   .day-head { font-weight:700; color:#1a1a2e; font-size:14px; margin-bottom:8px;
-              padding-bottom:4px; border-bottom:1px solid rgba(0,0,0,.06); }
-  .ev-row { border-bottom:1px solid rgba(0,0,0,.04); }
+              padding-bottom:5px; border-bottom:1px solid rgba(0,0,0,.06); }
   .ev-row { display:flex; padding:5px 0; border-bottom:1px solid #f6f6f6; }
+  .ev-row:last-child { border-bottom:none; }
   .ev-time { width:74px; flex-shrink:0; color:#1a1a2e; font-weight:600;
              font-family:ui-monospace,monospace; font-size:12.5px; }
   .ev-body { flex:1; }
@@ -100,14 +121,28 @@ st.markdown("""
   .conflict { background:#fff4f0; border-left:3px solid #ff6b35; border-radius:6px;
               padding:7px 10px; margin:8px 0; font-size:12.5px; color:#8a3a1a; }
   .empty-day { color:#c4c4c4; font-size:13px; font-style:italic; }
+
+  /* Left-column info cards (to-do, coming up) */
+  .panel { background:#fff; border:1px solid #ebebf1; border-radius:14px;
+           padding:14px 16px; margin-bottom:14px; box-shadow:0 1px 3px rgba(20,20,40,.04); }
+  .todo-sub { color:#9a9aa7; font-size:11.5px; margin:0 0 8px 26px; }
+  .coming-row { padding:5px 0; font-size:13.5px; color:#333; border-bottom:1px solid #f6f6f6; }
+  .coming-row:last-child { border-bottom:none; }
+  .coming-when { color:#aaa; font-size:11.5px; }
+
+  /* Tighten checkbox spacing in the to-do panel */
+  div[data-testid="stCheckbox"] { margin-bottom: 0; }
 </style>
 """, unsafe_allow_html=True)
 
 dash, _ = fetch_file("dashboard.json")
 pending, _ = fetch_file("pending_events.json")
 activity_log, _ = fetch_file("activity_log.json")
+open_items, open_sha = fetch_file("app_open_items.json")
 pending = pending or []
 activity_log = activity_log or []
+if open_items is None:
+    open_items = DEFAULT_OPEN_ITEMS
 
 # ─────────────────────────── header (theme-integrated) ───────────────────────
 
@@ -116,7 +151,6 @@ theme = (dash or {}).get("theme") or {"emoji": "📅", "title": "", "blurb": "",
                                       "color1": "#1a1a2e", "color2": "#3a3a55"}
 w = (dash or {}).get("weather") or {}
 
-# Thin gradient accent bar carries the week's theme colors across the top
 st.markdown(
     f"<div style='height:6px;border-radius:6px;margin-bottom:14px;"
     f"background:linear-gradient(90deg,{theme['color1']},{theme['color2']})'></div>",
@@ -125,15 +159,13 @@ st.markdown(
 
 hc1, hc2 = st.columns([3, 2])
 with hc1:
-    chip = (f"<a href='{APP_URL}' target='_self' style='text-decoration:none;"
-            f"display:inline-block;margin-left:10px;vertical-align:middle;"
+    chip = (f"<span style='display:inline-block;margin-left:10px;vertical-align:middle;"
             f"background:linear-gradient(135deg,{theme['color1']},{theme['color2']});"
             f"color:#fff;font-size:12px;font-weight:700;padding:4px 11px;border-radius:14px'>"
-            f"{theme['emoji']} {theme['title']}</a>") if theme.get("title") else ""
+            f"{theme['emoji']} {theme['title']}</span>") if theme.get("title") else ""
     st.markdown(
         f"<div style='display:flex;align-items:center'>"
-        f"<a href='{APP_URL}' target='_self' style='text-decoration:none;color:#1a1a2e'>"
-        f"<span style='font-size:26px;font-weight:800'>📅 calendarjam</span></a>{chip}</div>"
+        f"<span style='font-size:26px;font-weight:800;color:#1a1a2e'>📅 calendarjam</span>{chip}</div>"
         + (f"<div style='color:#888;font-size:12.5px;margin-top:2px'>{theme['blurb']}</div>"
            if theme.get("blurb") else ""),
         unsafe_allow_html=True,
@@ -148,7 +180,7 @@ with hc2:
             unsafe_allow_html=True,
         )
 
-st.markdown("<div style='height:14px'></div>", unsafe_allow_html=True)
+st.markdown("<div style='height:10px'></div>", unsafe_allow_html=True)
 
 if not dash:
     st.warning("No dashboard snapshot yet — the next 6:15 AM sync will populate this.", icon="⏳")
@@ -159,30 +191,32 @@ for day in week:
     for c in day.get("conflicts", []):
         all_conflicts.append({**c, "day": day["label"]})
 
+horizon = (dash or {}).get("horizon", {})
+bdays = horizon.get("birthdays", [])
+hols = horizon.get("holidays", [])
+
 
 def _weather_bg(w: dict | None) -> str:
-    """Soft background tint for a day card based on its weather —
-    color *is* the forecast: yellow=sun, blue=rain, red/yellow=hot, grey=cloud."""
     if not w:
         return "#ffffff"
     code = w.get("weather_code", 0)
     precip = w.get("precip_pct", 0)
     high = w.get("high_f", 0)
-    if high >= 88:                                   # hot
+    if high >= 88:
         return "linear-gradient(135deg,#fff3df,#ffdfd0)"
-    if code in (95, 96, 99):                         # thunderstorm
+    if code in (95, 96, 99):
         return "linear-gradient(135deg,#ecedfb,#dfe3f7)"
-    if code in (71, 73, 75, 77, 85, 86):             # snow
+    if code in (71, 73, 75, 77, 85, 86):
         return "#eef4fb"
-    if precip >= 50 or code in (51, 53, 55, 61, 63, 65, 66, 67, 80, 81, 82):  # rain
+    if precip >= 50 or code in (51, 53, 55, 61, 63, 65, 66, 67, 80, 81, 82):
         return "linear-gradient(135deg,#eaf4fe,#dcebfb)"
-    if code in (45, 48):                             # fog
+    if code in (45, 48):
         return "#f1f3f4"
-    if code == 3:                                    # overcast
+    if code == 3:
         return "#f4f5f7"
-    if code in (1, 2):                               # mostly/partly cloudy
+    if code in (1, 2):
         return "#fcfdf3"
-    return "linear-gradient(135deg,#fffdef,#fff4cf)"  # clear / sunny
+    return "linear-gradient(135deg,#fffdef,#fff4cf)"
 
 
 def _render_day_card(day: dict, today: bool = False) -> str:
@@ -205,19 +239,51 @@ def _render_day_card(day: dict, today: bool = False) -> str:
             f"<div class='day-head'>{day['label']}{wx}</div>{rows}</div>")
 
 
-# ═══════════════ Top zone: Today (left) + Needs you (right) ═══════════════
+# ═══════════════ Top zone: at-a-glance (left) + decisions (right) ═══════════════
 
 top_left, top_right = st.columns([1, 1], gap="large")
 
 with top_left:
-    st.markdown("#### 📌 Today")
+    # Today
+    st.markdown("<div class='sec'>📌 Today</div>", unsafe_allow_html=True)
     if week:
         st.markdown(_render_day_card(week[0], today=True), unsafe_allow_html=True)
     else:
         st.info("Agenda will appear after the next sync.")
 
+    # To-do / open items
+    st.markdown("<div class='sec'>📋 To-do · open items</div>", unsafe_allow_html=True)
+    with st.container(border=True):
+        changed = False
+        for it in open_items:
+            new_val = st.checkbox(it["title"], value=it.get("done", False), key="oi_" + it["id"])
+            if it.get("sub"):
+                st.markdown(f"<div class='todo-sub'>{it['sub']}</div>", unsafe_allow_html=True)
+            if new_val != it.get("done", False):
+                it["done"] = new_val
+                changed = True
+        if changed:
+            try:
+                write_file("app_open_items.json", open_items, open_sha, "app: update to-do items")
+            except Exception:
+                pass
+            st.rerun()
+
+    # Coming up — birthdays + holidays
+    if bdays or hols:
+        st.markdown("<div class='sec'>🎂 Coming up</div>", unsafe_allow_html=True)
+        rows = ""
+        for b in bdays:
+            when = "today" if b["days_out"] == 0 else f"in {b['days_out']} days"
+            rows += (f"<div class='coming-row'>🎂 <b>{b['title']}</b> "
+                     f"<span class='coming-when'>· {b['day']} ({when})</span></div>")
+        for h in hols:
+            rows += (f"<div class='coming-row'>🎉 {h['title']} "
+                     f"<span class='coming-when'>· {h['day']}</span></div>")
+        st.markdown(f"<div class='panel'>{rows}</div>", unsafe_allow_html=True)
+
 with top_right:
-    st.markdown("#### ✅ Needs you")
+    st.markdown("<div class='sec'>✅ Needs you</div>", unsafe_allow_html=True)
     if not pending and not all_conflicts:
         st.success("All clear — nothing needs you right now.")
     for c in all_conflicts:
@@ -247,10 +313,10 @@ with top_right:
             if b2.button("✗ Skip", key=f"n{idx}", use_container_width=True):
                 clear_item(item, pending); log_activity("dismissed", title, source); st.rerun()
 
-# ═══════════════ Rest of the week — 3-across grid ═══════════════
+# ═══════════════ The full week — 3-across grid ═══════════════
 
 if len(week) > 1:
-    st.markdown("#### 🗓️ Rest of the week")
+    st.markdown("<div class='sec'>🗓️ The week ahead</div>", unsafe_allow_html=True)
     rest = week[1:]
     cols_per_row = 3
     for i in range(0, len(rest), cols_per_row):
@@ -259,20 +325,7 @@ if len(week) > 1:
             with cols[j]:
                 st.markdown(_render_day_card(day), unsafe_allow_html=True)
 
-# ─────────────────────────── coming up + activity ─────────────────────────
-
-horizon = (dash or {}).get("horizon", {})
-bdays = horizon.get("birthdays", [])
-hols = horizon.get("holidays", [])
-if bdays or hols:
-    st.markdown("#### 🎂 Coming up")
-    line = []
-    for b in bdays:
-        when = "today" if b["days_out"] == 0 else f"{b['days_out']}d"
-        line.append(f"🎂 **{b['title']}** ({b['day']}, {when})")
-    for h in hols:
-        line.append(f"🎉 {h['title']} ({h['day']})")
-    st.markdown(" &nbsp;·&nbsp; ".join(line))
+# ─────────────────────────── activity + footer ─────────────────────────
 
 with st.expander("📜 Recent activity"):
     if not activity_log:
