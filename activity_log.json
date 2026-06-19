@@ -299,5 +299,11 @@
     "action": "dismissed",
     "title": "Reservation CONFIRMED",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-06-19T11:26:34.260247+00:00",
+    "action": "acked",
+    "title": "Reservation CONFIRMED",
+    "source": "Gmail"
   }
 ]
