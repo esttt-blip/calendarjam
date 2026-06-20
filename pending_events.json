@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": "48020f0da25e64834b307bf09c4714f8",
+    "source": "Gmail",
+    "title": "Appointment Reminder for Group Lesson (2-3 Guests)",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "<!-- Emails use the XHTML Strict doctype -->\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    <!-- The character set should be utf-8 -->\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n    <!--[if !mso]><!-->\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\r\n    <!--<![endif]-->\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n\r\n    <!--[if (gte mso 9)|(IE)]>\r\n    <style type=\"text/css\">\r\n        table {border-collapse: collapse;}\r\n    </style>\r\n    <![endif]-->\r\n\r\n    \r\n    <style>\r\n        <!-- Your CSS to inline should be added here -->\r\n    </style>\r\n</head>\r\n\r\n<body style=\"margin: 0 !important; padding: 0; background-color: #ffffff; font-family: 'helvetica neue',helvetica,arial,sans-serif; font-size: 14px; line-height: 1.4285; color: #333;\">\r\n    <!-- Link to the email's CSS, which will be inlined into the email -->\r\n    <!-- this linked style sheet is what needs to be added to the <body> tag -->\r\n\r\n    <style>\r\n        .wrapper {\r\n  width: 100%; }\r\n\r\n#outlook a {\r\n  padding: 0; }\r\n\r\nbody {\r\n  width: 100% !important;\r\n  min-width: 100%;\r\n  -webkit-text-size-adjust: 100%;\r\n  -ms-text-size-adjust: 100%;\r\n  margin: 0;\r\n  Margin: 0;\r\n  padding: 0;\r\n  color: #333;\r\n  -moz-box-sizing: border-box;\r\n  -webkit-box-sizing: border-box;\r\n  box-sizing: border-box; }\r\n\r\n.ExternalClass {\r\n  width: 100%; }\r\n  .External",
+    "uid": "<0101019ee17a62cc-390eec3a-4107-4716-8f22-edc133c049ec-000000@us-west-2.amazonses.com>",
+    "needs_review": true,
+    "from": "Justin Karalfa <noreply@uschedulenotifications.com>"
+  }
+]

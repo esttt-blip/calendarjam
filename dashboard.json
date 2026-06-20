@@ -1,64 +1,25 @@
 {
-  "generated_at": "2026-06-19T14:12:03.182347-04:00",
-  "generated_label": "Fri Jun 19, 2:12 PM",
+  "generated_at": "2026-06-20T06:01:43.083890-04:00",
+  "generated_label": "Sat Jun 20, 6:01 AM",
   "weather": null,
   "theme": {
-    "emoji": "\ud83c\udf86",
-    "title": "Juneteenth Week",
-    "blurb": "Freedom, family, and a long weekend.",
-    "color1": "#e52d27",
-    "color2": "#b31217"
+    "emoji": "\ud83c\udfa3",
+    "title": "Father's Day Week",
+    "blurb": "Celebrate the dads.",
+    "color1": "#2c3e50",
+    "color2": "#4ca1af"
   },
   "week": [
     {
-      "date": "2026-06-19",
-      "label": "Today \u00b7 Fri Jun 19",
-      "weather": {
-        "high_f": 84,
-        "low_f": 73,
-        "precip_pct": 22,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "9:00 am",
-          "title": "\ud83d\udcda School Holiday (Juneteenth)",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-19T09:00:00-04:00"
-        },
-        {
-          "time": "11:00 am",
-          "title": "Henry VCO",
-          "location": "VCO Orthodontics, Dr. Crissy Markova, 1600 Wilson Blvd UNIT 810, Arlington, VA 22209, USA",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-19T11:00:00-04:00"
-        },
-        {
-          "time": "1:00 pm",
-          "title": "\ud83d\uded2 Walmart delivery",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-19T13:00:00-04:00"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-06-20",
-      "label": "Tomorrow \u00b7 Sat Jun 20",
+      "label": "Today \u00b7 Sat Jun 20",
       "weather": {
         "high_f": 87,
-        "low_f": 63,
+        "low_f": 66,
         "precip_pct": 6,
-        "weather_code": 2,
-        "emoji": "\u26c5",
-        "label": "Partly cloudy"
+        "weather_code": 1,
+        "emoji": "\ud83c\udf24",
+        "label": "Mostly clear"
       },
       "events": [
         {
@@ -82,11 +43,11 @@
     },
     {
       "date": "2026-06-21",
-      "label": "Sunday \u00b7 Jun 21",
+      "label": "Tomorrow \u00b7 Sun Jun 21",
       "weather": {
-        "high_f": 86,
-        "low_f": 63,
-        "precip_pct": 12,
+        "high_f": 88,
+        "low_f": 68,
+        "precip_pct": 7,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -107,12 +68,12 @@
       "date": "2026-06-22",
       "label": "Monday \u00b7 Jun 22",
       "weather": {
-        "high_f": 82,
-        "low_f": 67,
-        "precip_pct": 75,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
+        "high_f": 93,
+        "low_f": 68,
+        "precip_pct": 82,
+        "weather_code": 82,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy showers"
       },
       "events": [
         {
@@ -146,12 +107,12 @@
       "date": "2026-06-23",
       "label": "Tuesday \u00b7 Jun 23",
       "weather": {
-        "high_f": 79,
-        "low_f": 65,
-        "precip_pct": 55,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
+        "high_f": 81,
+        "low_f": 67,
+        "precip_pct": 68,
+        "weather_code": 55,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy drizzle"
       },
       "events": [
         {
@@ -209,9 +170,9 @@
       "date": "2026-06-24",
       "label": "Wednesday \u00b7 Jun 24",
       "weather": {
-        "high_f": 85,
+        "high_f": 82,
         "low_f": 62,
-        "precip_pct": 16,
+        "precip_pct": 8,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -264,9 +225,9 @@
       "date": "2026-06-25",
       "label": "Thursday \u00b7 Jun 25",
       "weather": {
-        "high_f": 81,
-        "low_f": 66,
-        "precip_pct": 32,
+        "high_f": 88,
+        "low_f": 64,
+        "precip_pct": 43,
         "weather_code": 51,
         "emoji": "\ud83c\udf26",
         "label": "Light drizzle"
@@ -322,6 +283,61 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-06-26",
+      "label": "Friday \u00b7 Jun 26",
+      "weather": {
+        "high_f": 76,
+        "low_f": 67,
+        "precip_pct": 32,
+        "weather_code": 95,
+        "emoji": "\u26c8",
+        "label": "Thunderstorm"
+      },
+      "events": [
+        {
+          "time": "8:45 am",
+          "title": "\ud83d\ude97 Drop off Henry \u2014 NOVA Archery",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-26T08:45:00-04:00"
+        },
+        {
+          "time": "9:00 am",
+          "title": "Seymour appointment",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-26T09:00:00-04:00"
+        },
+        {
+          "time": "10:00 am",
+          "title": "FW: Bi-Weekly Product Health and Incident Review with ELT",
+          "location": "https://draftkings.zoom.us/j/95183770035?pwd=jpUb1Xt5mcxx69DQkzdkaee60kpuZh.1",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-26T10:00:00-04:00"
+        },
+        {
+          "time": "11:30 am",
+          "title": "[hold] Shaq // Esther Lunch",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-26T11:30:00-04:00"
+        },
+        {
+          "time": "3:45 pm",
+          "title": "\ud83d\ude97 Pick up Henry \u2014 NOVA Archery",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-26T15:45:00-04:00"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -329,34 +345,29 @@
       {
         "title": "Avani\u2019s Birthday",
         "day": "Thu Jun 25",
-        "days_out": 6
+        "days_out": 5
       },
       {
         "title": "Brandee Birthday",
         "day": "Mon Jun 29",
-        "days_out": 10
+        "days_out": 9
       }
     ],
     "holidays": [
       {
-        "title": "Juneteenth",
-        "day": "Fri Jun 19",
-        "days_out": 0
-      },
-      {
         "title": "Father's Day",
         "day": "Sun Jun 21",
-        "days_out": 2
+        "days_out": 1
       },
       {
         "title": "Independence Day (substitute)",
         "day": "Fri Jul 3",
-        "days_out": 14
+        "days_out": 13
       },
       {
         "title": "Independence Day",
         "day": "Sat Jul 4",
-        "days_out": 15
+        "days_out": 14
       }
     ]
   }
