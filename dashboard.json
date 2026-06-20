@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-06-20T11:57:48.426450-04:00",
-  "generated_label": "Sat Jun 20, 11:57 AM",
-  "weather": {
-    "high_f": 88,
-    "low_f": 66,
-    "precip_pct": 2,
-    "emoji": "\u2600\ufe0f",
-    "label": "Clear"
-  },
+  "generated_at": "2026-06-20T12:09:07.596060-04:00",
+  "generated_label": "Sat Jun 20, 12:09 PM",
+  "weather": null,
   "theme": {
     "emoji": "\ud83c\udfa3",
     "title": "Father's Day Week",
