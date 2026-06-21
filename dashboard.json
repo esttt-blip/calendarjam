@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-20T12:09:07.596060-04:00",
-  "generated_label": "Sat Jun 20, 12:09 PM",
+  "generated_at": "2026-06-21T06:01:16.549811-04:00",
+  "generated_label": "Sun Jun 21, 6:01 AM",
   "weather": null,
   "theme": {
     "emoji": "\ud83c\udfa3",
@@ -11,48 +11,25 @@
   },
   "week": [
     {
-      "date": "2026-06-20",
-      "label": "Today \u00b7 Sat Jun 20",
-      "weather": {
-        "high_f": 88,
-        "low_f": 66,
-        "precip_pct": 2,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
-      },
-      "events": [
-        {
-          "time": "8:40 am",
-          "title": "Reservation at East Potomac Golf Links - BLUE Course",
-          "location": "East Potomac Golf Links - BLUE Course, East Potomac Golf Links - BLUE Course, 972 Ohio Dr. SW, Washington, DC 20024, US",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-20T08:40:00-04:00"
-        },
-        {
-          "time": "4:00 pm",
-          "title": "Group Lesson (2-3 Guests)",
-          "location": "20101 Century Blvd Germantown, MD 20874",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-20T16:00:00-04:00"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-06-21",
-      "label": "Tomorrow \u00b7 Sun Jun 21",
+      "label": "Today \u00b7 Sun Jun 21",
       "weather": {
         "high_f": 89,
-        "low_f": 65,
-        "precip_pct": 2,
+        "low_f": 69,
+        "precip_pct": 8,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
       },
       "events": [
+        {
+          "time": "12:30 pm",
+          "title": "Melina",
+          "location": "909 Rose Ave  North Bethesda, MD United States 20852",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-21T12:30:00-04:00"
+        },
         {
           "time": "3:00 pm",
           "title": "(untitled)",
@@ -66,14 +43,14 @@
     },
     {
       "date": "2026-06-22",
-      "label": "Monday \u00b7 Jun 22",
+      "label": "Tomorrow \u00b7 Mon Jun 22",
       "weather": {
-        "high_f": 95,
+        "high_f": 94,
         "low_f": 70,
-        "precip_pct": 82,
-        "weather_code": 82,
+        "precip_pct": 81,
+        "weather_code": 65,
         "emoji": "\ud83c\udf27",
-        "label": "Heavy showers"
+        "label": "Heavy rain"
       },
       "events": [
         {
@@ -109,10 +86,10 @@
       "weather": {
         "high_f": 78,
         "low_f": 67,
-        "precip_pct": 62,
-        "weather_code": 81,
-        "emoji": "\ud83c\udf27",
-        "label": "Showers"
+        "precip_pct": 80,
+        "weather_code": 95,
+        "emoji": "\u26c8",
+        "label": "Thunderstorm"
       },
       "events": [
         {
@@ -172,10 +149,10 @@
       "weather": {
         "high_f": 84,
         "low_f": 62,
-        "precip_pct": 7,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
+        "precip_pct": 1,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [
         {
@@ -225,12 +202,12 @@
       "date": "2026-06-25",
       "label": "Thursday \u00b7 Jun 25",
       "weather": {
-        "high_f": 86,
+        "high_f": 90,
         "low_f": 64,
         "precip_pct": 39,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
       },
       "events": [
         {
@@ -288,12 +265,12 @@
       "date": "2026-06-26",
       "label": "Friday \u00b7 Jun 26",
       "weather": {
-        "high_f": 83,
+        "high_f": 90,
         "low_f": 66,
-        "precip_pct": 39,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "precip_pct": 37,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
       },
       "events": [
         {
@@ -338,6 +315,29 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-06-27",
+      "label": "Saturday \u00b7 Jun 27",
+      "weather": {
+        "high_f": 91,
+        "low_f": 70,
+        "precip_pct": 17,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
+      "events": [
+        {
+          "time": "all day",
+          "title": "Oil Change for Audi",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-06-27T00:00"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -345,29 +345,29 @@
       {
         "title": "Avani\u2019s Birthday",
         "day": "Thu Jun 25",
-        "days_out": 5
+        "days_out": 4
       },
       {
         "title": "Brandee Birthday",
         "day": "Mon Jun 29",
-        "days_out": 9
+        "days_out": 8
       }
     ],
     "holidays": [
       {
         "title": "Father's Day",
         "day": "Sun Jun 21",
-        "days_out": 1
+        "days_out": 0
       },
       {
         "title": "Independence Day (substitute)",
         "day": "Fri Jul 3",
-        "days_out": 13
+        "days_out": 12
       },
       {
         "title": "Independence Day",
         "day": "Sat Jul 4",
-        "days_out": 14
+        "days_out": 13
       }
     ]
   }
