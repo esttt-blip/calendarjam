@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-06-21T12:21:12.438997-04:00",
-  "generated_label": "Sun Jun 21, 12:21 PM",
-  "weather": {
-    "high_f": 90,
-    "low_f": 70,
-    "precip_pct": 23,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-06-21T13:09:46.042844-04:00",
+  "generated_label": "Sun Jun 21, 1:09 PM",
+  "weather": null,
   "theme": {
     "emoji": "\ud83c\udfa3",
     "title": "Father's Day Week",
@@ -20,7 +14,7 @@
       "date": "2026-06-21",
       "label": "Today \u00b7 Sun Jun 21",
       "weather": {
-        "high_f": 90,
+        "high_f": 88,
         "low_f": 70,
         "precip_pct": 23,
         "weather_code": 3,
@@ -53,7 +47,7 @@
       "weather": {
         "high_f": 95,
         "low_f": 70,
-        "precip_pct": 55,
+        "precip_pct": 62,
         "weather_code": 63,
         "emoji": "\ud83c\udf27",
         "label": "Rain"
