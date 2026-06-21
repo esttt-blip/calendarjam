@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-06-21T06:01:16.549811-04:00",
-  "generated_label": "Sun Jun 21, 6:01 AM",
-  "weather": null,
+  "generated_at": "2026-06-21T12:21:12.438997-04:00",
+  "generated_label": "Sun Jun 21, 12:21 PM",
+  "weather": {
+    "high_f": 90,
+    "low_f": 70,
+    "precip_pct": 23,
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
+  },
   "theme": {
     "emoji": "\ud83c\udfa3",
     "title": "Father's Day Week",
@@ -14,9 +20,9 @@
       "date": "2026-06-21",
       "label": "Today \u00b7 Sun Jun 21",
       "weather": {
-        "high_f": 89,
-        "low_f": 69,
-        "precip_pct": 8,
+        "high_f": 90,
+        "low_f": 70,
+        "precip_pct": 23,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -45,12 +51,12 @@
       "date": "2026-06-22",
       "label": "Tomorrow \u00b7 Mon Jun 22",
       "weather": {
-        "high_f": 94,
+        "high_f": 95,
         "low_f": 70,
-        "precip_pct": 81,
-        "weather_code": 65,
+        "precip_pct": 55,
+        "weather_code": 63,
         "emoji": "\ud83c\udf27",
-        "label": "Heavy rain"
+        "label": "Rain"
       },
       "events": [
         {
@@ -63,7 +69,7 @@
         },
         {
           "time": "8:45 am",
-          "title": "\ud83d\ude97 Drop off Henry \u2014 NOVA Archery",
+          "title": "\ud83d\ude97 Esther carpool  \u2014 NOVA Archery",
           "location": "",
           "all_day": false,
           "is_drive": true,
@@ -71,7 +77,7 @@
         },
         {
           "time": "3:45 pm",
-          "title": "\ud83d\ude97 Pick up Henry \u2014 NOVA Archery",
+          "title": "\ud83d\ude97 Stacey carpool \u2014 NOVA Archery",
           "location": "",
           "all_day": false,
           "is_drive": true,
@@ -84,12 +90,12 @@
       "date": "2026-06-23",
       "label": "Tuesday \u00b7 Jun 23",
       "weather": {
-        "high_f": 78,
-        "low_f": 67,
-        "precip_pct": 80,
-        "weather_code": 95,
-        "emoji": "\u26c8",
-        "label": "Thunderstorm"
+        "high_f": 80,
+        "low_f": 69,
+        "precip_pct": 76,
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
       },
       "events": [
         {
@@ -102,7 +108,7 @@
         },
         {
           "time": "8:45 am",
-          "title": "\ud83d\ude97 Drop off Henry \u2014 NOVA Archery",
+          "title": "\ud83d\ude97 Taylor carpool \u2014 NOVA Archery",
           "location": "",
           "all_day": false,
           "is_drive": true,
@@ -110,7 +116,7 @@
         },
         {
           "time": "3:45 pm",
-          "title": "\ud83d\ude97 Pick up Henry \u2014 NOVA Archery",
+          "title": "\ud83d\ude97 Stacey carpool \u2014 NOVA Archery",
           "location": "",
           "all_day": false,
           "is_drive": true,
@@ -147,8 +153,8 @@
       "date": "2026-06-24",
       "label": "Wednesday \u00b7 Jun 24",
       "weather": {
-        "high_f": 84,
-        "low_f": 62,
+        "high_f": 86,
+        "low_f": 63,
         "precip_pct": 1,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
@@ -165,7 +171,7 @@
         },
         {
           "time": "8:45 am",
-          "title": "\ud83d\ude97 Drop off Henry \u2014 NOVA Archery",
+          "title": "\ud83d\ude97 Rhys carpool \u2014 NOVA Archery",
           "location": "",
           "all_day": false,
           "is_drive": true,
@@ -173,7 +179,7 @@
         },
         {
           "time": "3:45 pm",
-          "title": "\ud83d\ude97 Pick up Henry \u2014 NOVA Archery",
+          "title": "\ud83d\ude97 Rhys carpool \u2014 NOVA Archery",
           "location": "",
           "all_day": false,
           "is_drive": true,
@@ -202,12 +208,12 @@
       "date": "2026-06-25",
       "label": "Thursday \u00b7 Jun 25",
       "weather": {
-        "high_f": 90,
-        "low_f": 64,
-        "precip_pct": 39,
-        "weather_code": 51,
+        "high_f": 91,
+        "low_f": 66,
+        "precip_pct": 35,
+        "weather_code": 53,
         "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
+        "label": "Drizzle"
       },
       "events": [
         {
@@ -220,7 +226,7 @@
         },
         {
           "time": "8:45 am",
-          "title": "\ud83d\ude97 Drop off Henry \u2014 NOVA Archery",
+          "title": "\ud83d\ude97 Rhys carpool \u2014 NOVA Archery",
           "location": "",
           "all_day": false,
           "is_drive": true,
@@ -236,7 +242,7 @@
         },
         {
           "time": "3:45 pm",
-          "title": "\ud83d\ude97 Pick up Henry \u2014 NOVA Archery",
+          "title": "\ud83d\ude97 Stacey carpool \u2014 NOVA Archery",
           "location": "",
           "all_day": false,
           "is_drive": true,
@@ -265,17 +271,17 @@
       "date": "2026-06-26",
       "label": "Friday \u00b7 Jun 26",
       "weather": {
-        "high_f": 90,
+        "high_f": 89,
         "low_f": 66,
-        "precip_pct": 37,
-        "weather_code": 51,
+        "precip_pct": 36,
+        "weather_code": 53,
         "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
+        "label": "Drizzle"
       },
       "events": [
         {
           "time": "8:45 am",
-          "title": "\ud83d\ude97 Drop off Henry \u2014 NOVA Archery",
+          "title": "\ud83d\ude97 Taylor carpool \u2014 NOVA Archery",
           "location": "",
           "all_day": false,
           "is_drive": true,
@@ -307,7 +313,7 @@
         },
         {
           "time": "3:45 pm",
-          "title": "\ud83d\ude97 Pick up Henry \u2014 NOVA Archery",
+          "title": "\ud83d\ude97 Esther carpool \u2014 NOVA Archery",
           "location": "",
           "all_day": false,
           "is_drive": true,
@@ -320,12 +326,12 @@
       "date": "2026-06-27",
       "label": "Saturday \u00b7 Jun 27",
       "weather": {
-        "high_f": 91,
-        "low_f": 70,
-        "precip_pct": 17,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
+        "high_f": 89,
+        "low_f": 68,
+        "precip_pct": 27,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [
         {
