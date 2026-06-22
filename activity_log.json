@@ -443,5 +443,11 @@
     "action": "acked",
     "title": "Reservation CONFIRMED",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-06-22T10:25:41.972432+00:00",
+    "action": "acked",
+    "title": "Lesson Confirmation: Group Lesson (2-3 Guests)",
+    "source": "Gmail"
   }
 ]
