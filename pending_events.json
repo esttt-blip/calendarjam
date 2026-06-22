@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "id": "c84c59e24c5107b937b0f1056fef81cd",
+    "source": "Gmail",
+    "title": "Reminder: Daycare  |  Troop Play Full Day for Milo",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "img {\r\n\t\t\t\t\tmax-width: 100%;\r\n\t\t\t\t}\r\n\t\t\t\tbody {\r\n\t\t\t\t\t-webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; width: 100% !important; height: 100%; line-height: 1.6em;\r\n\t\t\t\t}\r\n\t\t\t\tbody {\r\n\t\t\t\t\tbackground-color: #f6f6f6;\r\n\t\t\t\t}\r\n\t\t\t\t@media only screen and (max-width: 640px) {\r\n\t\t\t\t  body {\r\n\t\t\t\t    padding: 0 !important;\r\n\t\t\t\t  }\r\n\t\t\t\t  .container {\r\n\t\t\t\t    padding: 0 !important; width: 100% !important;\r\n\t\t\t\t  }\r\n\t\t\t\t  .content {\r\n\t\t\t\t    padding: 0 !important;\r\n\t\t\t\t    background-color: #FFFFFF;\r\n\t\t\t\t  }\r\n\t\t\t\t  .content-wrap {\r\n\t\t\t\t    padding: 10px !important;\r\n\t\t\t\t  }\r\n\t\t\t\t  .invoice {\r\n\t\t\t\t    width: 100% !important;\r\n\t\t\t\t  }\r\n\t\t\t\t}\r\n\t\t\t\r\n\t\t\r\n\r\n\t\t\r\n\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\tDear Esther,This is just a friendly reminder that Milo has a reservation for Daycare | Troop Play Full Day from June 22, 2026 at 8:15 am until June 22, 2026 at 5:15 pm.&gt;&gt;Here are some reminders for the upcoming reservation: &gt;Food Packing:\r\nIf you bring your pet's food, pack each serving in individual Ziploc bags for easy handling.Medication:\r\nIf your pet needs medication, organize them by date in a medication box for accurate administration.Vaccination Check:\r\nMake sure your pet's vaccinations are up to date, and provide the necessary documentation.Health Matters:\r\nPlease don't bring in pets showing symptoms of kennel cough or illness to maintain a healthy environment for a",
+    "uid": "<20260622121406.5fb925496ff72929@mailgun.gingrapp.com>",
+    "needs_review": true,
+    "from": "Giving Tree K9 Club <givingtreepetresort@mailgun.gingrapp.com>"
+  },
+  {
+    "id": "34d3b8c8b4d49702e6d423f7a5c20830",
+    "source": "Gmail",
+    "title": "Appointment Reminder",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "Hi Esther! We cant wait to see you on Wednesday, June 24th, 2026 6:15 PM for the following services: Ladies Cut (Natalie G). Click here to confirm your appointment: Click to Confirm If you need to cancel your appointment , please do so prior to the 48 hour window to avoid a 50% cancellation fee. Please be advised; we assess a 3% surcharge on credit card transactions, to avoid this fee, please use a debit card. Please be sure to review our policies on our website. We have a complimentary parking garage located in the building. You can park on the first and second levels. See ya soon, your mane chicks xo",
+    "uid": "<ZTP69-NHTTC8rklpXoCMmw@geopod-ismtpd-13>",
+    "needs_review": true,
+    "from": "Rooted Mane Salon <info@rootedmane.com>"
+  }
+]

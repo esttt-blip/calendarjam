@@ -455,5 +455,19 @@
     "action": "acked",
     "title": "Reservation CONFIRMED",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-06-22T20:22:12.241829+00:00",
+    "action": "added",
+    "title": "Jasmine's bday Part 1",
+    "source": "Gmail invite",
+    "when": "2026-07-02T17:00"
+  },
+  {
+    "ts": "2026-06-22T20:22:12.878224+00:00",
+    "action": "added",
+    "title": "Jasmine's bday Part 1",
+    "source": "Gmail invite",
+    "when": "2026-07-02T17:00"
   }
 ]
