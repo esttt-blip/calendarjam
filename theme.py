@@ -12,6 +12,10 @@ from datetime import datetime
 SPORTS_WORDS = ("soccer", "baseball", "viva", "ignite", "spirit", "mystics",
                 "practice", "game", "match", "tournament", "scrimmage")
 
+# Only these birthdays are worth theming the whole week around. Acquaintance
+# birthdays still show in the look-ahead, but they don't become the headline.
+CLOSE_FAMILY = ("esther", "henry", "taylor")
+
 # Holiday name fragment → (emoji, title, blurb, color1, color2)
 _HOLIDAY_THEMES = {
     "juneteenth":     ("🎆", "Juneteenth Week", "Freedom, family, and a long weekend.", "#e52d27", "#b31217"),
@@ -50,7 +54,6 @@ def pick_theme(week: list[dict], horizon: dict, weather: dict | None) -> dict:
     birthdays = [b for b in horizon.get("birthdays", []) if b.get("days_out", 99) <= 7]
     holidays_soon = [h for h in horizon.get("holidays", []) if h.get("days_out", 99) <= 7]
 
-    # Gather event signal
     titles = " ".join(
         (e.get("title", "") or "").lower()
         for day in week for e in day.get("events", [])
@@ -80,11 +83,19 @@ def pick_theme(week: list[dict], horizon: dict, weather: dict | None) -> dict:
                 "blurb": "Bring the cooler, the chairs, and the snacks.",
                 "color1": "#f7971e", "color2": "#ffd200"}
 
-    # 3. Birthday(s)
-    if birthdays:
-        names = ", ".join(b["title"].replace("Birthday", "").replace("'s", "").strip() for b in birthdays[:3])
+    # 3. Birthday(s) — ONLY for close family (Esther, Henry, Taylor).
+    #    Acquaintance birthdays show in the look-ahead but never headline the week.
+    close_bdays = [
+        b for b in birthdays
+        if any(n in (b.get("title", "") or "").lower() for n in CLOSE_FAMILY)
+    ]
+    if close_bdays:
+        names = ", ".join(
+            b["title"].replace("Birthday", "").replace("'s", "").replace("’s", "").strip()
+            for b in close_bdays[:3]
+        )
         return {"emoji": "🎂", "title": "Birthday Week",
-                "blurb": f"Cake incoming — {names}." if names else "Someone's celebrating!",
+                "blurb": f"Cake incoming — {names}." if names else "Family birthday this week!",
                 "color1": "#ff758c", "color2": "#ff7eb3"}
 
     # 4. Sports-heavy
