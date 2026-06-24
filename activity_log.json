@@ -481,5 +481,11 @@
     "action": "dismissed",
     "title": "Villarreal Virginia Academy - Upcoming Installment Payment",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-06-24T11:00:37.003310+00:00",
+    "action": "dismissed",
+    "title": "A deposit for Milo has been collected",
+    "source": "Gmail"
   }
 ]
