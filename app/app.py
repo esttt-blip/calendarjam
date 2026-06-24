@@ -370,69 +370,68 @@ if all_conflicts or n_pending:
 
 # ─────────────────────────── 2. today (+ insights) ───────────────────────────
 
-colL, colR = st.columns([1.15, 1], gap="large")
+LOOK = lookahead_insights(week, horizon, open_items)
+CAP = 400  # column height cap — keeps the week reachable below
+c1, c2, c3 = st.columns(3, gap="medium")
 
-with colL:
+with c1:
     st.markdown("<div class='sec'>📌 Today</div>", unsafe_allow_html=True)
-    if week:
-        today = week[0]
-        st.markdown(
-            f"<div class='card today-card'><div class='day-head'>{today['label']}</div>"
-            f"{_day_card_inner(today)}{_chips(insights_for(today))}</div>",
-            unsafe_allow_html=True)
-    else:
-        st.info("Agenda will appear after the next sync.")
+    with st.container(height=CAP):
+        if week:
+            st.markdown(f"<div class='day-head'>{week[0]['label']}</div>"
+                        f"{_day_card_inner(week[0])}{_chips(insights_for(week[0]))}",
+                        unsafe_allow_html=True)
+        else:
+            st.info("Agenda appears after the next sync.")
 
-with colR:
+with c2:
     n_needs = len(pending) + len(all_conflicts)
     st.markdown(f"<div class='sec'>✅ Needs you{f' · {n_needs}' if n_needs else ''}</div>",
                 unsafe_allow_html=True)
-    if not pending and not all_conflicts:
-        st.success("All clear — nothing needs you right now.")
-    else:
-        # Fixed-height scroll so a long queue doesn't push the week off-screen.
-        with st.container(height=430):
-            for c in all_conflicts:
-                with st.container(border=True):
-                    st.markdown(f"⚠️ **Conflict — {c['day']}**")
-                    st.markdown(f"<div style='font-size:12.5px;color:#555'>{c['a']} ({c['a_time']}) "
-                                f"vs {c['b']} ({c['b_time']})</div>", unsafe_allow_html=True)
-            for idx, item in enumerate(pending):
-                title = item.get("title", "(untitled)")
-                source = item.get("source", "")
-                sender = item.get("from", "").split("<")[0].strip().strip('"') or "—"
-                desc = (item.get("description") or "").replace("\r", "").strip()
-                if len(desc) > 105:
-                    desc = desc[:105] + "…"
-                with st.container(border=True):
-                    st.markdown(f"<div style='font-weight:600;font-size:13.5px;line-height:1.3'>{title}</div>"
-                                f"<div style='color:#9a9aa7;font-size:11px;margin:1px 0 3px'>{source} · {sender}</div>"
-                                + (f"<div style='color:#666;font-size:12px;line-height:1.4'>{desc}</div>" if desc else ""),
-                                unsafe_allow_html=True)
-                    b1, b2, b3 = st.columns(3)
-                    if b1.button("✅ Add", key=f"y{idx}", type="primary", use_container_width=True):
-                        approve_item(item, pending); log_activity("approved", title, source)
-                        st.toast("Queued to add ✓", icon="✅"); st.rerun()
-                    if b2.button("🔁 Dup", key=f"d{idx}", use_container_width=True):
-                        clear_item(item, pending); log_activity("duplicate", title, source)
-                        st.toast("Marked duplicate", icon="🔁"); st.rerun()
-                    if b3.button("🚫 Ignore", key=f"n{idx}", use_container_width=True):
-                        clear_item(item, pending); log_activity("dismissed", title, source)
-                        st.toast("Ignored", icon="🚫"); st.rerun()
+    with st.container(height=CAP):
+        if not pending and not all_conflicts:
+            st.success("All clear.")
+        for c in all_conflicts:
+            with st.container(border=True):
+                st.markdown(f"⚠️ **Conflict — {c['day']}**")
+                st.markdown(f"<div style='font-size:12px;color:#555'>{c['a']} ({c['a_time']}) "
+                            f"vs {c['b']} ({c['b_time']})</div>", unsafe_allow_html=True)
+        for idx, item in enumerate(pending):
+            title = item.get("title", "(untitled)")
+            source = item.get("source", "")
+            sender = item.get("from", "").split("<")[0].strip().strip('"') or "—"
+            desc = (item.get("description") or "").replace("\r", "").strip()
+            if len(desc) > 90:
+                desc = desc[:90] + "…"
+            with st.container(border=True):
+                st.markdown(f"<div style='font-weight:600;font-size:13px;line-height:1.3'>{title}</div>"
+                            f"<div style='color:#9a9aa7;font-size:11px;margin:1px 0 3px'>{source} · {sender}</div>"
+                            + (f"<div style='color:#666;font-size:11.5px;line-height:1.4'>{desc}</div>" if desc else ""),
+                            unsafe_allow_html=True)
+                if st.button("✅ Add it", key=f"y{idx}", type="primary", use_container_width=True):
+                    approve_item(item, pending); log_activity("approved", title, source)
+                    st.toast("Queued to add ✓", icon="✅"); st.rerun()
+                if st.button("🔁 Duplicate", key=f"d{idx}", use_container_width=True):
+                    clear_item(item, pending); log_activity("duplicate", title, source)
+                    st.toast("Marked duplicate", icon="🔁"); st.rerun()
+                if st.button("🚫 Ignore", key=f"n{idx}", use_container_width=True):
+                    clear_item(item, pending); log_activity("dismissed", title, source)
+                    st.toast("Ignored", icon="🚫"); st.rerun()
 
-# ─────────────────────────── 4. look-ahead ───────────────────────────
-
-la = lookahead_insights(week, horizon, open_items)
-if la:
+with c3:
     st.markdown("<div class='sec'>🔭 Look ahead</div>", unsafe_allow_html=True)
-    rows = ""
-    for i, (icon, text, sev) in enumerate(la):
-        first = " first" if i == 0 else ""
-        muted = " muted" if sev == "muted" else ""
-        rows += f"<div class='look-row{first}{muted}'>{icon} {text}</div>"
-    st.markdown(f"<div class='card'>{rows}</div>", unsafe_allow_html=True)
+    with st.container(height=CAP):
+        if LOOK:
+            rows = ""
+            for i, (icon, text, sev) in enumerate(LOOK):
+                first = " first" if i == 0 else ""
+                muted = " muted" if sev == "muted" else ""
+                rows += f"<div class='look-row{first}{muted}'>{icon} {text}</div>"
+            st.markdown(rows, unsafe_allow_html=True)
+        else:
+            st.caption("Nothing in the next few weeks.")
 
-# ─────────────────────────── 5. the week ───────────────────────────
+# ─────────────────────────── the week ───────────────────────────
 
 if len(week) > 1:
     st.markdown("<div class='sec'>🗓️ The week ahead</div>", unsafe_allow_html=True)
