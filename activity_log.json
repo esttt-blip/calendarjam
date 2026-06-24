@@ -505,5 +505,11 @@
     "action": "approved",
     "title": "Re: Dog help",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-06-24T12:59:48.963484+00:00",
+    "action": "dismissed",
+    "title": "A deposit for Milo's reservation is required!",
+    "source": "Gmail"
   }
 ]
