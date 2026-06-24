@@ -259,11 +259,13 @@ st.set_page_config(page_title="calendarjam", page_icon="📅", layout="wide",
 st.markdown("""
 <style>
   :root { color-scheme: light; }
-  .block-container { padding-top: 1.1rem; padding-bottom: 3rem; max-width: 1240px; }
+  .block-container { padding-top: 0.8rem; padding-bottom: 2.5rem; max-width: 1240px; }
   .sec { font-size:11px; font-weight:800; letter-spacing:.07em; text-transform:uppercase;
-         color:#9398a8; margin:20px 0 8px; }
-  .card { background:#fff; border:1px solid #ececf2; border-radius:16px; padding:14px 16px;
-          box-shadow:0 1px 3px rgba(20,20,40,.05); margin-bottom:10px; }
+         color:#9398a8; margin:13px 0 5px; }
+  .card { background:#fff; border:1px solid #ececf2; border-radius:13px; padding:11px 14px;
+          box-shadow:0 1px 3px rgba(20,20,40,.05); margin-bottom:8px; }
+  div[data-testid="stVerticalBlockBorderWrapper"] { border-radius:12px; }
+  div[data-testid="stExpander"] details { border-radius:12px; }
   .today-card { border:1.5px solid #1a1a2e; }
   .day-head { font-weight:750; color:#1a1a2e; font-size:14px; margin-bottom:6px; }
   .ev-row { display:flex; gap:10px; padding:4px 0; border-top:1px solid #f4f4f7; }
@@ -382,35 +384,41 @@ with colL:
         st.info("Agenda will appear after the next sync.")
 
 with colR:
-    st.markdown("<div class='sec'>✅ Needs you</div>", unsafe_allow_html=True)
+    n_needs = len(pending) + len(all_conflicts)
+    st.markdown(f"<div class='sec'>✅ Needs you{f' · {n_needs}' if n_needs else ''}</div>",
+                unsafe_allow_html=True)
     if not pending and not all_conflicts:
         st.success("All clear — nothing needs you right now.")
-    for c in all_conflicts:
-        with st.container(border=True):
-            st.markdown(f"⚠️ **Conflict — {c['day']}**")
-            st.markdown(f"<div style='font-size:13px;color:#444'><b>{c['a']}</b> ({c['a_time']})"
-                        f" &nbsp;vs&nbsp; <b>{c['b']}</b> ({c['b_time']})</div>", unsafe_allow_html=True)
-            st.caption("Resolve by removing one in your calendar.")
-    for idx, item in enumerate(pending):
-        title = item.get("title", "(untitled)")
-        source = item.get("source", "")
-        sender = item.get("from", "").split("<")[0].strip().strip('"') or "—"
-        desc = (item.get("description") or "").replace("\r", "").strip()
-        if len(desc) > 170:
-            desc = desc[:170] + "…"
-        with st.container(border=True):
-            st.markdown(f"**{title}**")
-            st.caption(f"{source} · from {sender}")
-            if desc:
-                st.markdown(f"<div style='color:#555;font-size:13px;line-height:1.5'>{desc}</div>",
-                            unsafe_allow_html=True)
-            bb1, bb2 = st.columns(2)
-            if bb1.button("✅ Add it", key=f"y{idx}", type="primary", use_container_width=True):
-                approve_item(item, pending); log_activity("approved", title, source)
-                st.toast("Queued to add ✓", icon="✅"); st.rerun()
-            if bb2.button("🚫 Ignore", key=f"n{idx}", use_container_width=True):
-                clear_item(item, pending); log_activity("dismissed", title, source)
-                st.toast("Ignored", icon="🚫"); st.rerun()
+    else:
+        # Fixed-height scroll so a long queue doesn't push the week off-screen.
+        with st.container(height=430):
+            for c in all_conflicts:
+                with st.container(border=True):
+                    st.markdown(f"⚠️ **Conflict — {c['day']}**")
+                    st.markdown(f"<div style='font-size:12.5px;color:#555'>{c['a']} ({c['a_time']}) "
+                                f"vs {c['b']} ({c['b_time']})</div>", unsafe_allow_html=True)
+            for idx, item in enumerate(pending):
+                title = item.get("title", "(untitled)")
+                source = item.get("source", "")
+                sender = item.get("from", "").split("<")[0].strip().strip('"') or "—"
+                desc = (item.get("description") or "").replace("\r", "").strip()
+                if len(desc) > 105:
+                    desc = desc[:105] + "…"
+                with st.container(border=True):
+                    st.markdown(f"<div style='font-weight:600;font-size:13.5px;line-height:1.3'>{title}</div>"
+                                f"<div style='color:#9a9aa7;font-size:11px;margin:1px 0 3px'>{source} · {sender}</div>"
+                                + (f"<div style='color:#666;font-size:12px;line-height:1.4'>{desc}</div>" if desc else ""),
+                                unsafe_allow_html=True)
+                    b1, b2, b3 = st.columns(3)
+                    if b1.button("✅ Add", key=f"y{idx}", type="primary", use_container_width=True):
+                        approve_item(item, pending); log_activity("approved", title, source)
+                        st.toast("Queued to add ✓", icon="✅"); st.rerun()
+                    if b2.button("🔁 Dup", key=f"d{idx}", use_container_width=True):
+                        clear_item(item, pending); log_activity("duplicate", title, source)
+                        st.toast("Marked duplicate", icon="🔁"); st.rerun()
+                    if b3.button("🚫 Ignore", key=f"n{idx}", use_container_width=True):
+                        clear_item(item, pending); log_activity("dismissed", title, source)
+                        st.toast("Ignored", icon="🚫"); st.rerun()
 
 # ─────────────────────────── 4. look-ahead ───────────────────────────
 
