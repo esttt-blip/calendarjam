@@ -241,13 +241,13 @@ def _chips(insights) -> str:
 
 # ─────────────────────────── page setup ───────────────────────────
 
-st.set_page_config(page_title="calendarjam", page_icon="📅", layout="centered",
+st.set_page_config(page_title="calendarjam", page_icon="📅", layout="wide",
                    initial_sidebar_state="collapsed")
 
 st.markdown("""
 <style>
   :root { color-scheme: light; }
-  .block-container { padding-top: 1.1rem; padding-bottom: 3rem; max-width: 820px; }
+  .block-container { padding-top: 1.1rem; padding-bottom: 3rem; max-width: 1240px; }
   .sec { font-size:11px; font-weight:800; letter-spacing:.07em; text-transform:uppercase;
          color:#9398a8; margin:20px 0 8px; }
   .card { background:#fff; border:1px solid #ececf2; border-radius:16px; padding:14px 16px;
@@ -356,45 +356,47 @@ if all_conflicts or n_pending:
 
 # ─────────────────────────── 2. today (+ insights) ───────────────────────────
 
-st.markdown("<div class='sec'>📌 Today</div>", unsafe_allow_html=True)
-if week:
-    today = week[0]
-    st.markdown(
-        f"<div class='card today-card'><div class='day-head'>{today['label']}</div>"
-        f"{_day_card_inner(today)}{_chips(insights_for(today))}</div>",
-        unsafe_allow_html=True)
-else:
-    st.info("Agenda will appear after the next sync.")
+colL, colR = st.columns([1.15, 1], gap="large")
 
-# ─────────────────────────── 3. needs you ───────────────────────────
+with colL:
+    st.markdown("<div class='sec'>📌 Today</div>", unsafe_allow_html=True)
+    if week:
+        today = week[0]
+        st.markdown(
+            f"<div class='card today-card'><div class='day-head'>{today['label']}</div>"
+            f"{_day_card_inner(today)}{_chips(insights_for(today))}</div>",
+            unsafe_allow_html=True)
+    else:
+        st.info("Agenda will appear after the next sync.")
 
-st.markdown("<div class='sec'>✅ Needs you</div>", unsafe_allow_html=True)
-if not pending and not all_conflicts:
-    st.success("All clear — nothing needs you right now.")
-for c in all_conflicts:
-    with st.container(border=True):
-        st.markdown(f"⚠️ **Conflict — {c['day']}**")
-        st.markdown(f"<div style='font-size:13px;color:#444'><b>{c['a']}</b> ({c['a_time']})"
-                    f" &nbsp;vs&nbsp; <b>{c['b']}</b> ({c['b_time']})</div>", unsafe_allow_html=True)
-        st.caption("Resolve by removing one in your calendar.")
-for idx, item in enumerate(pending):
-    title = item.get("title", "(untitled)")
-    source = item.get("source", "")
-    sender = item.get("from", "").split("<")[0].strip().strip('"') or "—"
-    desc = (item.get("description") or "").replace("\r", "").strip()
-    if len(desc) > 170:
-        desc = desc[:170] + "…"
-    with st.container(border=True):
-        st.markdown(f"**{title}**")
-        st.caption(f"{source} · from {sender}")
-        if desc:
-            st.markdown(f"<div style='color:#555;font-size:13px;line-height:1.5'>{desc}</div>",
-                        unsafe_allow_html=True)
-        b1, b2, _ = st.columns([1, 1, 2])
-        if b1.button("✓ Got it", key=f"y{idx}", type="primary", use_container_width=True):
-            clear_item(item, pending); log_activity("acked", title, source); st.rerun()
-        if b2.button("✗ Skip", key=f"n{idx}", use_container_width=True):
-            clear_item(item, pending); log_activity("dismissed", title, source); st.rerun()
+with colR:
+    st.markdown("<div class='sec'>✅ Needs you</div>", unsafe_allow_html=True)
+    if not pending and not all_conflicts:
+        st.success("All clear — nothing needs you right now.")
+    for c in all_conflicts:
+        with st.container(border=True):
+            st.markdown(f"⚠️ **Conflict — {c['day']}**")
+            st.markdown(f"<div style='font-size:13px;color:#444'><b>{c['a']}</b> ({c['a_time']})"
+                        f" &nbsp;vs&nbsp; <b>{c['b']}</b> ({c['b_time']})</div>", unsafe_allow_html=True)
+            st.caption("Resolve by removing one in your calendar.")
+    for idx, item in enumerate(pending):
+        title = item.get("title", "(untitled)")
+        source = item.get("source", "")
+        sender = item.get("from", "").split("<")[0].strip().strip('"') or "—"
+        desc = (item.get("description") or "").replace("\r", "").strip()
+        if len(desc) > 170:
+            desc = desc[:170] + "…"
+        with st.container(border=True):
+            st.markdown(f"**{title}**")
+            st.caption(f"{source} · from {sender}")
+            if desc:
+                st.markdown(f"<div style='color:#555;font-size:13px;line-height:1.5'>{desc}</div>",
+                            unsafe_allow_html=True)
+            bb1, bb2 = st.columns(2)
+            if bb1.button("✓ Got it", key=f"y{idx}", type="primary", use_container_width=True):
+                clear_item(item, pending); log_activity("acked", title, source); st.rerun()
+            if bb2.button("✗ Skip", key=f"n{idx}", use_container_width=True):
+                clear_item(item, pending); log_activity("dismissed", title, source); st.rerun()
 
 # ─────────────────────────── 4. look-ahead ───────────────────────────
 
@@ -422,24 +424,26 @@ if len(week) > 1:
 
 st.markdown("<div class='sec'>🧭 Planning</div>", unsafe_allow_html=True)
 
-with st.expander("🧳 Trips", expanded=False):
+pc1, pc2 = st.columns(2, gap="large")
+with pc1:
     rows = ""
     for i, t in enumerate(TRIPS):
         first = " first" if i == 0 else ""
         rows += (f"<div class='trip-row{first}'><div class='trip-title'>{t['title']} "
                  f"<span class='muted'>· {t['window']}</span></div>"
                  f"<div class='trip-detail'>{t['detail']}</div></div>")
-    st.markdown(f"<div>{rows}</div>", unsafe_allow_html=True)
-    st.caption("Tell Claude trip dates/details to firm these up or add prep checklists.")
-
-with st.expander("🤖 Agents", expanded=False):
-    if not AGENTS:
-        st.caption("No active agents yet. Here's the shape one would take:")
-        with st.container(border=True):
-            st.markdown("**✈️ Italy flight-watch** &nbsp; *(example)*")
-            st.markdown("<div class='muted'>Would track Christmas fares to Italy, the trend, "
-                        "and a suggested book-by window.</div>", unsafe_allow_html=True)
-        st.caption("➕ Add an agent — tell Claude what you want monitored.")
+    st.markdown(f"<div class='card'><div class='day-head'>🧳 Trips</div>{rows}</div>",
+                unsafe_allow_html=True)
+with pc2:
+    sample = ("<div style='border:1px solid #ececf2;border-radius:12px;padding:10px 12px;margin-top:6px'>"
+              "<div style='font-size:13.5px;font-weight:600;color:#1a1a2e'>✈️ Italy flight-watch "
+              "<span class='muted'>· example</span></div>"
+              "<div class='muted' style='margin-top:2px'>Would track Christmas fares to Italy + a "
+              "suggested book-by window.</div></div>")
+    st.markdown(f"<div class='card'><div class='day-head'>🤖 Agents</div>"
+                f"<div class='muted'>No active agents yet — here's the shape one takes:</div>{sample}"
+                f"<div class='muted' style='margin-top:8px'>➕ Add an agent — tell Claude what to monitor.</div></div>",
+                unsafe_allow_html=True)
 
 with st.expander("📋 To-do · open items", expanded=False):
     changed = False
