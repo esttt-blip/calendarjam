@@ -45,7 +45,7 @@ DEFAULT_OPEN_ITEMS = [
     {"id": "camp-w5", "title": "🏕️ Henry camp — Week 5 (Jul 20–24)",
      "sub": "First week after the cruise. TBD.", "done": False},
     {"id": "camp-w8", "title": "🏕️ Henry camp — Week 8 (Aug 10–14)",
-     "sub": "First week back from Germany. TBD.", "done": False},
+     "sub": "Boys back from Germany Aug 9; Esther in Sofia till Aug 14. TBD.", "done": False},
     {"id": "camp-w9", "title": "🏕️ Henry camp — Week 9 (Aug 17–21)",
      "sub": "Bridge week before Code Ninjas. TBD.", "done": False},
     {"id": "thrills-reg", "title": "📝 Summertime Thrills registration (Week 6)",
@@ -57,7 +57,10 @@ DEFAULT_OPEN_ITEMS = [
 TRIPS = [
     {"title": "🛳️ Seattle + Alaska cruise", "window": "Jul 8–19",
      "detail": "Cruise Jul 11–18 · away (Seattle) Jul 8–19 · Milo boarding + mail hold"},
-    {"title": "🇩🇪 Germany", "window": "August", "detail": "Dates TBD"},
+    {"title": "🇩🇪 Germany", "window": "Jul 31 – Aug 9",
+     "detail": "Depart Jul 31 (overnight) · boys home Sun Aug 9"},
+    {"title": "🇧🇬 Bulgaria — Sofia (work)", "window": "Aug 9 – 14",
+     "detail": "Esther · depart ~Aug 9 as boys return · back Aug 14"},
     {"title": "🇮🇹 Italy", "window": "Christmas", "detail": "December · flight-watch candidate"},
 ]
 
