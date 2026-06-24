@@ -487,5 +487,11 @@
     "action": "dismissed",
     "title": "A deposit for Milo has been collected",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-06-24T12:59:26.407076+00:00",
+    "action": "dismissed",
+    "title": "Appointment Reminder",
+    "source": "Gmail"
   }
 ]
