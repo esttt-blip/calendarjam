@@ -371,7 +371,7 @@ if all_conflicts or n_pending:
 # ─────────────────────────── 2. today (+ insights) ───────────────────────────
 
 LOOK = lookahead_insights(week, horizon, open_items)
-CAP = 400  # column height cap — keeps the week reachable below
+CAP = 300  # column height cap — all three level; scroll within when full
 c1, c2, c3 = st.columns(3, gap="medium")
 
 with c1:
