@@ -499,5 +499,11 @@
     "action": "dismissed",
     "title": "How would you rate your Daycare  |  Troop Play Full Day reservation for Milo?",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-06-24T12:59:41.956687+00:00",
+    "action": "approved",
+    "title": "Re: Dog help",
+    "source": "Gmail"
   }
 ]
