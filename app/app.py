@@ -121,6 +121,18 @@ def clear_item(item, pending):
                psha, f"app: clear {item.get('title','')[:30]}")
 
 
+def approve_item(item, pending):
+    """Queue an item to be added to the calendar. The sync's actioning step
+    (resolve address → round-trip drives → 9-5 work rule → create) will pick
+    these up. Stored so nothing is lost before that step is wired."""
+    approved, asha = fetch_file("approved_events.json")
+    approved = approved or []
+    if not any(a.get("id") == item["id"] for a in approved):
+        approved.append(item)
+    write_file("approved_events.json", approved, asha, f"app: approve {item.get('title','')[:30]}")
+    clear_item(item, pending)
+
+
 # ─────────────────────────── insights engine ───────────────────────────
 
 
@@ -393,10 +405,12 @@ with colR:
                 st.markdown(f"<div style='color:#555;font-size:13px;line-height:1.5'>{desc}</div>",
                             unsafe_allow_html=True)
             bb1, bb2 = st.columns(2)
-            if bb1.button("✓ Got it", key=f"y{idx}", type="primary", use_container_width=True):
-                clear_item(item, pending); log_activity("acked", title, source); st.rerun()
-            if bb2.button("✗ Skip", key=f"n{idx}", use_container_width=True):
-                clear_item(item, pending); log_activity("dismissed", title, source); st.rerun()
+            if bb1.button("✅ Add it", key=f"y{idx}", type="primary", use_container_width=True):
+                approve_item(item, pending); log_activity("approved", title, source)
+                st.toast("Queued to add ✓", icon="✅"); st.rerun()
+            if bb2.button("🚫 Ignore", key=f"n{idx}", use_container_width=True):
+                clear_item(item, pending); log_activity("dismissed", title, source)
+                st.toast("Ignored", icon="🚫"); st.rerun()
 
 # ─────────────────────────── 4. look-ahead ───────────────────────────
 
