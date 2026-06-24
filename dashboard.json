@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-06-23T14:20:21.703196-04:00",
-  "generated_label": "Tue Jun 23, 2:20 PM",
-  "weather": null,
+  "generated_at": "2026-06-24T06:01:22.489808-04:00",
+  "generated_label": "Wed Jun 24, 6:01 AM",
+  "weather": {
+    "high_f": 82,
+    "low_f": 61,
+    "precip_pct": 0,
+    "emoji": "\u2600\ufe0f",
+    "label": "Clear"
+  },
   "theme": {
     "emoji": "\ud83c\udf82",
     "title": "Birthday Week",
@@ -11,65 +17,16 @@
   },
   "week": [
     {
-      "date": "2026-06-23",
-      "label": "Today \u00b7 Tue Jun 23",
-      "weather": null,
-      "events": [
-        {
-          "time": "all day",
-          "title": "Henry: Northrip's Mail",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-06-23T00:00"
-        },
-        {
-          "time": "8:45 am",
-          "title": "\ud83d\ude97 Taylor carpool \u2014 NOVA Archery",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-06-23T08:45:00-04:00"
-        },
-        {
-          "time": "3:45 pm",
-          "title": "\ud83d\ude97 Stacey carpool \u2014 NOVA Archery",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-06-23T15:45:00-04:00"
-        },
-        {
-          "time": "5:15 pm",
-          "title": "\ud83d\ude97 Drive to Bluemont Park (Ignite Practice)",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-06-23T17:15:00-04:00"
-        },
-        {
-          "time": "5:30 pm",
-          "title": "Ignite \u26be Practice",
-          "location": "601 N Manchester St, Arlington, VA 22203 (Side Fields / Main Field if open)",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-23T17:30:00-04:00"
-        },
-        {
-          "time": "8:00 pm",
-          "title": "German Class",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-23T20:00:00-04:00"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-06-24",
-      "label": "Tomorrow \u00b7 Wed Jun 24",
-      "weather": null,
+      "label": "Today \u00b7 Wed Jun 24",
+      "weather": {
+        "high_f": 82,
+        "low_f": 61,
+        "precip_pct": 0,
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
+      },
       "events": [
         {
           "time": "all day",
@@ -116,8 +73,15 @@
     },
     {
       "date": "2026-06-25",
-      "label": "Thursday \u00b7 Jun 25",
-      "weather": null,
+      "label": "Tomorrow \u00b7 Thu Jun 25",
+      "weather": {
+        "high_f": 89,
+        "low_f": 62,
+        "precip_pct": 7,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -173,7 +137,14 @@
     {
       "date": "2026-06-26",
       "label": "Friday \u00b7 Jun 26",
-      "weather": null,
+      "weather": {
+        "high_f": 90,
+        "low_f": 68,
+        "precip_pct": 63,
+        "weather_code": 80,
+        "emoji": "\ud83c\udf26",
+        "label": "Showers"
+      },
       "events": [
         {
           "time": "8:45 am",
@@ -221,7 +192,14 @@
     {
       "date": "2026-06-27",
       "label": "Saturday \u00b7 Jun 27",
-      "weather": null,
+      "weather": {
+        "high_f": 80,
+        "low_f": 67,
+        "precip_pct": 66,
+        "weather_code": 95,
+        "emoji": "\u26c8",
+        "label": "Thunderstorm"
+      },
       "events": [
         {
           "time": "all day",
@@ -237,7 +215,14 @@
     {
       "date": "2026-06-28",
       "label": "Sunday \u00b7 Jun 28",
-      "weather": null,
+      "weather": {
+        "high_f": 86,
+        "low_f": 66,
+        "precip_pct": 31,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "8:30 am",
@@ -261,7 +246,14 @@
     {
       "date": "2026-06-29",
       "label": "Monday \u00b7 Jun 29",
-      "weather": null,
+      "weather": {
+        "high_f": 88,
+        "low_f": 66,
+        "precip_pct": 6,
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
+      },
       "events": [
         {
           "time": "all day",
@@ -305,6 +297,69 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-06-30",
+      "label": "Tuesday \u00b7 Jun 30",
+      "weather": {
+        "high_f": 93,
+        "low_f": 64,
+        "precip_pct": 8,
+        "weather_code": 2,
+        "emoji": "\u26c5",
+        "label": "Partly cloudy"
+      },
+      "events": [
+        {
+          "time": "all day",
+          "title": "Henry: Chelsea FC Camp @ The St. James",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-06-30T00:00"
+        },
+        {
+          "time": "8:30 am",
+          "title": "\ud83d\ude97 Drop off Henry \u2014 Chelsea Camp",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-30T08:30:00-04:00"
+        },
+        {
+          "time": "9:45 am",
+          "title": "Allergy Test",
+          "location": "ENT Specialists of Northern Virginia - Arlington (1005 N Glebe Rd 500, Arlington, VA 22201, United States)",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-30T09:45:00-04:00"
+        },
+        {
+          "time": "2:30 pm",
+          "title": "\ud83d\ude97 Pick up Henry \u2014 Chelsea Camp",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-30T14:30:00-04:00"
+        },
+        {
+          "time": "5:15 pm",
+          "title": "\ud83d\ude97 Drive to Bluemont Park (Ignite Practice)",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-30T17:15:00-04:00"
+        },
+        {
+          "time": "5:30 pm",
+          "title": "Ignite \u26be Practice",
+          "location": "601 N Manchester St, Arlington, VA 22203 (Side Fields / Main Field if open)",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-30T17:30:00-04:00"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -312,44 +367,44 @@
       {
         "title": "Avani\u2019s Birthday",
         "day": "Thu Jun 25",
-        "days_out": 2
+        "days_out": 1
       },
       {
         "title": "Brandee Birthday",
         "day": "Mon Jun 29",
-        "days_out": 6
+        "days_out": 5
       },
       {
         "title": "Jasmine's bday Part 1",
         "day": "Thu Jul 2",
-        "days_out": 9
+        "days_out": 8
       },
       {
         "title": "Jasmine's bday Part 1",
         "day": "Thu Jul 2",
-        "days_out": 9
+        "days_out": 8
       },
       {
         "title": "Jasmine's bday Part 1",
         "day": "Thu Jul 2",
-        "days_out": 9
+        "days_out": 8
       },
       {
         "title": "Jen Lichtblau\u2019s Birthday",
         "day": "Mon Jul 13",
-        "days_out": 20
+        "days_out": 19
       }
     ],
     "holidays": [
       {
         "title": "Independence Day (substitute)",
         "day": "Fri Jul 3",
-        "days_out": 10
+        "days_out": 9
       },
       {
         "title": "Independence Day",
         "day": "Sat Jul 4",
-        "days_out": 11
+        "days_out": 10
       }
     ]
   }
