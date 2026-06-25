@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-25T06:01:07.360631-04:00",
-  "generated_label": "Thu Jun 25, 6:01 AM",
+  "generated_at": "2026-06-25T13:37:21.819419-04:00",
+  "generated_label": "Thu Jun 25, 1:37 PM",
   "weather": null,
   "theme": {
     "emoji": "\u2600\ufe0f",
@@ -33,7 +33,7 @@
         },
         {
           "time": "9:30 am",
-          "title": "Seymour eye appointment",
+          "title": "Seymour eye appointment @ 945",
           "location": "",
           "all_day": false,
           "is_drive": false,
@@ -96,12 +96,12 @@
           "sort": "2026-06-26T10:00:00-04:00"
         },
         {
-          "time": "11:30 am",
-          "title": "[hold] Shaq // Esther Lunch",
+          "time": "12:00 pm",
+          "title": "dog trainer",
           "location": "",
           "all_day": false,
           "is_drive": false,
-          "sort": "2026-06-26T11:30:00-04:00"
+          "sort": "2026-06-26T12:00:00-04:00"
         },
         {
           "time": "3:45 pm",
