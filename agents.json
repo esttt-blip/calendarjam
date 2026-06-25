@@ -1,0 +1,31 @@
+{
+  "agents": [
+    {
+      "id": "italy-flights",
+      "name": "✈️ Italy flight-watch",
+      "type": "flight-multicity",
+      "config": {
+        "travelers": 3,
+        "cabins": ["economy", "business"],
+        "airline_label": "United preferred · Star Alliance ok",
+        "include_airlines": "STAR_ALLIANCE",
+        "plans": [
+          {"label": "Naples-in", "legs": [
+            {"from": "IAD", "to": "NAP", "date": "2026-12-18"},
+            {"from": "MUC", "to": "IAD", "date": "2027-01-04"}
+          ]},
+          {"label": "Rome-in", "legs": [
+            {"from": "IAD", "to": "FCO", "date": "2026-12-19"},
+            {"from": "MUC", "to": "IAD", "date": "2027-01-04"}
+          ]}
+        ]
+      },
+      "status": {
+        "state": "awaiting_key",
+        "note": "Add a SERPAPI_KEY repo secret to activate, then run the Agents workflow.",
+        "updated": null
+      },
+      "history": []
+    }
+  ]
+}
