@@ -306,6 +306,7 @@ dash, _ = fetch_file("dashboard.json")
 pending, _ = fetch_file("pending_events.json")
 activity_log, _ = fetch_file("activity_log.json")
 open_items, open_sha = fetch_file("app_open_items.json")
+agents_data, _ = fetch_file("agents.json")
 pending = pending or []
 activity_log = activity_log or []
 if open_items is None:
@@ -459,15 +460,43 @@ with pc1:
     st.markdown(f"<div class='card'><div class='day-head'>🧳 Trips</div>{rows}</div>",
                 unsafe_allow_html=True)
 with pc2:
-    sample = ("<div style='border:1px solid #ececf2;border-radius:12px;padding:10px 12px;margin-top:6px'>"
-              "<div style='font-size:13.5px;font-weight:600;color:#1a1a2e'>✈️ Italy flight-watch "
-              "<span class='muted'>· example</span></div>"
-              "<div class='muted' style='margin-top:2px'>Would track Christmas fares to Italy + a "
-              "suggested book-by window.</div></div>")
-    st.markdown(f"<div class='card'><div class='day-head'>🤖 Agents</div>"
-                f"<div class='muted'>No active agents yet — here's the shape one takes:</div>{sample}"
-                f"<div class='muted' style='margin-top:8px'>➕ Add an agent — tell Claude what to monitor.</div></div>",
+    st.markdown("<div style='font-size:13.5px;font-weight:700;color:#1a1a2e;margin-bottom:4px'>🤖 Agents</div>",
                 unsafe_allow_html=True)
+    agents = (agents_data or {}).get("agents", [])
+    if not agents:
+        st.caption("No agents yet — tell Claude what to monitor.")
+    for ag in agents:
+        with st.container(border=True):
+            st.markdown(f"**{ag['name']}**")
+            stt = ag.get("status", {})
+            if stt.get("state") != "live":
+                st.caption(stt.get("note", "Not yet active."))
+                continue
+            cp, ce = stt.get("cheapest_plan"), stt.get("cheapest_econ")
+            if cp and ce:
+                st.markdown(f"<div style='font-size:13px'>Cheapest now: <b>{cp}</b> · "
+                            f"~${ce:,.0f} economy</div>", unsafe_allow_html=True)
+            hist = ag.get("history", [])
+            for res in stt.get("results", []):
+                lab = res["label"]
+                econ = res["cabins"].get("economy", {})
+                biz = res["cabins"].get("business", {})
+                parts = []
+                if econ.get("low"):
+                    parts.append(f"econ ${econ['low']:,.0f}{' ✈UA' if econ.get('is_united') else ''}")
+                if biz.get("low"):
+                    parts.append(f"biz ${biz['low']:,.0f}")
+                line = f"<b>{lab}</b>: " + (" · ".join(parts) if parts else "—")
+                vals = [h.get(f"{lab} economy") for h in hist if h.get(f"{lab} economy")]
+                if len(vals) >= 2:
+                    line += f" <span class='muted'>· seen ${min(vals):,.0f}–${max(vals):,.0f}</span>"
+                st.markdown(f"<div style='font-size:12px;padding:2px 0'>{line}</div>",
+                            unsafe_allow_html=True)
+            if cp:
+                series = [h.get(f"{cp} economy") for h in hist if h.get(f"{cp} economy")]
+                if len(series) >= 2:
+                    st.line_chart(series, height=90)
+            st.caption(f"Updated {stt.get('updated','—')} · {ag.get('config',{}).get('airline_label','')}")
 
 with st.expander("📋 To-do · open items", expanded=False):
     changed = False
