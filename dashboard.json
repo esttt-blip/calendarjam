@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T06:01:02.589970-04:00",
-  "generated_label": "Fri Jun 26, 6:01 AM",
+  "generated_at": "2026-06-26T13:12:29.167257-04:00",
+  "generated_label": "Fri Jun 26, 1:12 PM",
   "weather": null,
   "theme": {
     "emoji": "\ud83c\udf86",
@@ -272,6 +272,14 @@
           "sort": "2026-07-01T14:30:00-04:00"
         },
         {
+          "time": "5:00 pm",
+          "title": "Taylor team dinner",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-01T17:00:00-04:00"
+        },
+        {
           "time": "6:00 pm",
           "title": "Keith's birthday",
           "location": "",
@@ -280,7 +288,14 @@
           "sort": "2026-07-01T18:00:00-04:00"
         }
       ],
-      "conflicts": []
+      "conflicts": [
+        {
+          "a": "Taylor team dinner",
+          "a_time": "5:00 pm",
+          "b": "Keith's birthday",
+          "b_time": "6:00 pm"
+        }
+      ]
     },
     {
       "date": "2026-07-02",
