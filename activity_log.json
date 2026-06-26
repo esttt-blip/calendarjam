@@ -550,5 +550,11 @@
     "action": "dismissed",
     "title": "Reminder for your upcoming order",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-06-26T10:06:13.574633+00:00",
+    "action": "approved",
+    "title": "You're booked: \ud83e\uddd8 All-Levels Hatha",
+    "source": "Gmail"
   }
 ]
