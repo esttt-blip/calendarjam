@@ -1,76 +1,28 @@
 {
-  "generated_at": "2026-06-25T15:16:47.362564-04:00",
-  "generated_label": "Thu Jun 25, 3:16 PM",
+  "generated_at": "2026-06-26T06:01:02.589970-04:00",
+  "generated_label": "Fri Jun 26, 6:01 AM",
   "weather": null,
   "theme": {
-    "emoji": "\u2600\ufe0f",
-    "title": "Summer Kickoff",
-    "blurb": "Long days, packed weekends.",
-    "color1": "#f7971e",
-    "color2": "#ffd200"
+    "emoji": "\ud83c\udf86",
+    "title": "Star-Spangled Week",
+    "blurb": "Fireworks, cookouts, and red-white-blue.",
+    "color1": "#3a47d5",
+    "color2": "#ff3838"
   },
   "week": [
     {
-      "date": "2026-06-25",
-      "label": "Today \u00b7 Thu Jun 25",
-      "weather": null,
-      "events": [
-        {
-          "time": "all day",
-          "title": "Avani\u2019s Birthday",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-06-25T00:00"
-        },
-        {
-          "time": "8:45 am",
-          "title": "\ud83d\ude97 Rhys carpool \u2014 NOVA Archery",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-06-25T08:45:00-04:00"
-        },
-        {
-          "time": "9:30 am",
-          "title": "Seymour eye appointment @ 945",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-25T09:30:00-04:00"
-        },
-        {
-          "time": "3:45 pm",
-          "title": "\ud83d\ude97 Stacey carpool \u2014 NOVA Archery",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-06-25T15:45:00-04:00"
-        },
-        {
-          "time": "6:00 pm",
-          "title": "Ignite \u26be Hitting Sessions",
-          "location": "5130 Wilson Blvd, Arlington, VA 22205",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-25T18:00:00-04:00"
-        },
-        {
-          "time": "8:00 pm",
-          "title": "German Class",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-25T20:00:00-04:00"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-06-26",
-      "label": "Tomorrow \u00b7 Fri Jun 26",
+      "label": "Today \u00b7 Fri Jun 26",
       "weather": null,
       "events": [
+        {
+          "time": "7:00 am",
+          "title": "\ud83d\uded2 Walmart delivery",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-26T07:00:00-04:00"
+        },
         {
           "time": "8:45 am",
           "title": "\ud83d\ude97 Taylor carpool \u2014 NOVA Archery",
@@ -108,7 +60,7 @@
     },
     {
       "date": "2026-06-27",
-      "label": "Saturday \u00b7 Jun 27",
+      "label": "Tomorrow \u00b7 Sat Jun 27",
       "weather": null,
       "events": [
         {
@@ -118,6 +70,14 @@
           "all_day": true,
           "is_drive": false,
           "sort": "2026-06-27T00:00"
+        },
+        {
+          "time": "9:00 am",
+          "title": "\ud83e\uddd8 All-Levels Hatha",
+          "location": "Karma Yoga",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-27T09:00:00-04:00"
         },
         {
           "time": "3:48 pm",
@@ -166,6 +126,14 @@
           "all_day": false,
           "is_drive": false,
           "sort": "2026-06-28T11:30:00-04:00"
+        },
+        {
+          "time": "5:30 pm",
+          "title": "\u2728 Sunday Self Care: Nidra & Pranayama",
+          "location": "Karma Yoga",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-28T17:30:00-04:00"
         }
       ],
       "conflicts": []
@@ -313,56 +281,160 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-07-02",
+      "label": "Thursday \u00b7 Jul 2",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "Henry: Chelsea FC Camp @ The St. James",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-07-02T00:00"
+        },
+        {
+          "time": "8:30 am",
+          "title": "\ud83d\ude97 Drop off Henry \u2014 Chelsea Camp",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-07-02T08:30:00-04:00"
+        },
+        {
+          "time": "11:30 am",
+          "title": "[hold] Shaq // Esther Lunch",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-02T11:30:00-04:00"
+        },
+        {
+          "time": "2:30 pm",
+          "title": "\ud83d\ude97 Pick up Henry \u2014 Chelsea Camp",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-07-02T14:30:00-04:00"
+        },
+        {
+          "time": "5:00 pm",
+          "title": "Jasmine's bday Part 1",
+          "location": "444 W Broad St, Falls Church, VA 22046, USA; https://meet.google.com/xbx-emmp-xiw",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-02T17:00:00-04:00"
+        },
+        {
+          "time": "5:00 pm",
+          "title": "Jasmine's bday Part 1",
+          "location": "444 W Broad St, Falls Church, VA 22046, USA; https://meet.google.com/xbx-emmp-xiw",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-02T17:00:00-04:00"
+        },
+        {
+          "time": "5:00 pm",
+          "title": "Jasmine's bday Part 1",
+          "location": "444 W Broad St, Falls Church, VA 22046, USA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-02T17:00:00-04:00"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "Ignite \u26be Pitching/Catcher Development",
+          "location": "7731 Leesburg Pike, Falls Church, VA 22043",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-02T19:00:00-04:00"
+        }
+      ],
+      "conflicts": [
+        {
+          "a": "Jasmine's bday Part 1",
+          "a_time": "5:00 pm",
+          "b": "Jasmine's bday Part 1",
+          "b_time": "5:00 pm"
+        },
+        {
+          "a": "Jasmine's bday Part 1",
+          "a_time": "5:00 pm",
+          "b": "Jasmine's bday Part 1",
+          "b_time": "5:00 pm"
+        },
+        {
+          "a": "Jasmine's bday Part 1",
+          "a_time": "5:00 pm",
+          "b": "Ignite \u26be Pitching/Catcher Development",
+          "b_time": "7:00 pm"
+        },
+        {
+          "a": "Jasmine's bday Part 1",
+          "a_time": "5:00 pm",
+          "b": "Jasmine's bday Part 1",
+          "b_time": "5:00 pm"
+        },
+        {
+          "a": "Jasmine's bday Part 1",
+          "a_time": "5:00 pm",
+          "b": "Ignite \u26be Pitching/Catcher Development",
+          "b_time": "7:00 pm"
+        },
+        {
+          "a": "Jasmine's bday Part 1",
+          "a_time": "5:00 pm",
+          "b": "Ignite \u26be Pitching/Catcher Development",
+          "b_time": "7:00 pm"
+        }
+      ]
     }
   ],
   "horizon": {
     "birthdays": [
       {
-        "title": "Avani\u2019s Birthday",
-        "day": "Thu Jun 25",
-        "days_out": 0
-      },
-      {
         "title": "Brandee Birthday",
         "day": "Mon Jun 29",
-        "days_out": 4
+        "days_out": 3
       },
       {
         "title": "Keith's birthday",
         "day": "Wed Jul 1",
+        "days_out": 5
+      },
+      {
+        "title": "Jasmine's bday Part 1",
+        "day": "Thu Jul 2",
         "days_out": 6
       },
       {
         "title": "Jasmine's bday Part 1",
         "day": "Thu Jul 2",
-        "days_out": 7
+        "days_out": 6
       },
       {
         "title": "Jasmine's bday Part 1",
         "day": "Thu Jul 2",
-        "days_out": 7
-      },
-      {
-        "title": "Jasmine's bday Part 1",
-        "day": "Thu Jul 2",
-        "days_out": 7
+        "days_out": 6
       },
       {
         "title": "Jen Lichtblau\u2019s Birthday",
         "day": "Mon Jul 13",
-        "days_out": 18
+        "days_out": 17
       }
     ],
     "holidays": [
       {
         "title": "Independence Day (substitute)",
         "day": "Fri Jul 3",
-        "days_out": 8
+        "days_out": 7
       },
       {
         "title": "Independence Day",
         "day": "Sat Jul 4",
-        "days_out": 9
+        "days_out": 8
       }
     ]
   }
