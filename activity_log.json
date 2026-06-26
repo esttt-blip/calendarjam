@@ -544,5 +544,11 @@
     "action": "approved",
     "title": "You're booked: \u2728 Sunday Self Care: Nidra & Pranayama",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-06-26T10:06:05.019823+00:00",
+    "action": "dismissed",
+    "title": "Reminder for your upcoming order",
+    "source": "Gmail"
   }
 ]
