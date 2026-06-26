@@ -46,11 +46,52 @@
         ]
       },
       "status": {
-        "state": "awaiting_key",
-        "note": "Add a SERPAPI_KEY repo secret to activate.",
-        "updated": null
+        "state": "live",
+        "updated": "2026-06-26",
+        "cheapest_plan": "Naples-in",
+        "cheapest_econ": 4219,
+        "results": [
+          {
+            "label": "Naples-in",
+            "cabins": {
+              "economy": {
+                "low": 4219,
+                "airline": "Air Canada",
+                "is_united": false
+              },
+              "business": {
+                "low": 12417,
+                "airline": "Tap Air Portugal",
+                "is_united": false
+              }
+            }
+          },
+          {
+            "label": "Rome-in",
+            "cabins": {
+              "economy": {
+                "low": 4515,
+                "airline": "Tap Air Portugal",
+                "is_united": false
+              },
+              "business": {
+                "low": 12048,
+                "airline": "Tap Air Portugal",
+                "is_united": false
+              }
+            }
+          }
+        ]
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-06-26",
+          "Naples-in economy": 4219,
+          "Naples-in business": 12417,
+          "Rome-in economy": 4515,
+          "Rome-in business": 12048
+        }
+      ]
     }
   ]
 }
