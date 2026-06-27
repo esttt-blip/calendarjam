@@ -337,6 +337,13 @@ st.markdown("""
   .fair { font-size:12.5px; color:#333; margin-top:7px; }
   .ffn { font-size:11px; color:#b0b0ba; font-family:ui-monospace,monospace; margin-top:2px; }
   .frng { font-size:11px; color:#9a9aa7; margin-top:7px; padding-top:6px; border-top:1px solid #f4f4f7; }
+
+  /* Flight price table */
+  .ftbl { width:100%; border-collapse:collapse; font-size:13px; margin-top:4px; }
+  .ftbl th { text-align:left; font-size:10.5px; text-transform:uppercase; letter-spacing:.04em;
+             color:#9398a8; font-weight:700; padding:6px 10px; border-bottom:1px solid #ececf2; }
+  .ftbl td { padding:7px 10px; border-bottom:1px solid #f4f4f7; color:#1a1a2e; }
+  .ftbl-best td { background:#e9f7ef; font-weight:600; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -528,39 +535,26 @@ for ag in (agents_data or {}).get("agents", []):
             f"<div class='muted' style='margin-bottom:8px'>Prices are total for {pax} · "
             f"{ag.get('config',{}).get('airline_label','')} · updated {stt.get('updated','—')}</div>",
             unsafe_allow_html=True)
-    cards = ""
+    rows_html = ""
     for res in stt.get("results", []):
         lab = res["label"]
-        econ = res.get("economy") or {}
-        biz = res.get("business") or {}
-        best = (lab == cp)
-        airline = (econ.get("airlines") or ["—"])[0]
-        stops = econ.get("layovers", 0)
-        stoptxt = "nonstop" if not stops else f"{stops} stop"
-        fns = " · ".join(econ.get("flight_numbers") or [])
-        vals = [h.get(f"{lab} economy") for h in hist if h.get(f"{lab} economy")]
-        rngtxt = (f"tracked ${min(vals):,.0f}–${max(vals):,.0f} · {len(vals)} checks"
-                  if len(vals) >= 2 else "tracking begins next check")
-        econ_str = f"${econ['low']:,.0f}" if econ.get("low") else "—"
-        pp = f"<span class='fpp'> · ≈${econ['low']/pax:,.0f}/person</span>" if econ.get("low") else ""
-        biz_str = f"${biz['low']:,.0f}" if biz.get("low") else "—"
-        badge = "<span class='fbadge'>cheapest</span>" if best else ""
-        cards += (
-            f"<div class='fcard{' fbest' if best else ''}'>"
-            f"<div class='fhead'><span>{lab}</span>{badge}</div>"
-            f"<div class='fprice'>{econ_str}<span class='fcab'> economy</span></div>"
-            f"<div class='fpp'>{('≈$' + format(econ['low']/pax, ',.0f') + '/person') if econ.get('low') else ''}</div>"
-            f"<div class='fbiz'>Business {biz_str}</div>"
-            f"<div class='fair'>{airline} · {stoptxt}</div>"
-            f"<div class='ffn'>{fns}</div>"
-            f"<div class='frng'>{rngtxt}</div>"
-            f"</div>")
-    st.markdown(f"<div class='fgrid'>{cards}</div>", unsafe_allow_html=True)
-    if cp:
-        series = [h.get(f"{cp} economy") for h in hist if h.get(f"{cp} economy")]
-        if len(series) >= 2:
-            st.caption(f"{cp} — economy price trend")
-            st.line_chart(series, height=120)
+        for cabin in ("economy", "business"):
+            cur = (res.get(cabin) or {}).get("low")
+            if cur is None:
+                continue
+            vals = [h.get(f"{lab} {cabin}") for h in hist if h.get(f"{lab} {cabin}")]
+            lo = min(vals) if vals else cur
+            hi = max(vals) if vals else cur
+            best = " class='ftbl-best'" if (cabin == "economy" and lab == cp) else ""
+            rows_html += (f"<tr{best}><td>{lab}</td><td>{cabin.title()}</td>"
+                          f"<td>${cur:,.0f}</td><td>${lo:,.0f}</td><td>${hi:,.0f}</td></tr>")
+    st.markdown(
+        "<table class='ftbl'><thead><tr><th>Route</th><th>Cabin</th>"
+        "<th>Today</th><th>Low seen</th><th>High seen</th></tr></thead>"
+        f"<tbody>{rows_html}</tbody></table>"
+        f"<div class='muted' style='margin-top:6px'>Prices total for {pax} travelers · "
+        "Low/High = range tracked so far (grows with each check).</div>",
+        unsafe_allow_html=True)
 
 with st.expander("📋 To-do · open items", expanded=False):
     changed = False
