@@ -2,7 +2,7 @@ name: Agents
 
 on:
   schedule:
-    - cron: "0 11 */2 * *"  # ~7 AM ET every other day — stays within SerpApi free tier
+    - cron: "0 11 */3 * *"  # ~7 AM ET every 3rd day — 4 routes x 2 cabins stays within SerpApi free tier
   workflow_dispatch:
 
 permissions:
