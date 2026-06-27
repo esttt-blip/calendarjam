@@ -1,7 +1,7 @@
 """Google Calendar API wrapper for calendarjam.
 
 Wraps the bits of the Calendar API we actually use: list events, create event,
-update event. Uses our auth module for credentials.
+update event, delete event. Uses our auth module for credentials.
 """
 
 from __future__ import annotations
@@ -92,6 +92,15 @@ def update_event(event_id: str, updates: dict, calendar_id: str = "primary") -> 
         calendarId=calendar_id,
         eventId=event_id,
         body=updates,
+        sendUpdates="none",
+    ).execute()
+
+
+def delete_event(event_id: str, calendar_id: str = "primary") -> None:
+    """Delete an event by id."""
+    _service().events().delete(
+        calendarId=calendar_id,
+        eventId=event_id,
         sendUpdates="none",
     ).execute()
 
