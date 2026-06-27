@@ -136,6 +136,27 @@ def approve_item(item, pending):
     clear_item(item, pending)
 
 
+def _conf_sig(c) -> str:
+    return f"{c.get('date')}|{c.get('a')}|{c.get('a_time')}|{c.get('b')}|{c.get('b_time')}"
+
+
+def ignore_conflict(c):
+    obj, sha = fetch_file("ignored_conflicts.json")
+    obj = obj or []
+    sig = _conf_sig(c)
+    if sig not in obj:
+        obj.append(sig)
+    write_file("ignored_conflicts.json", obj, sha, "app: ignore conflict")
+
+
+def queue_conflict_delete(date, title, c):
+    q, qsha = fetch_file("conflict_deletes.json")
+    q = q or []
+    q.append({"date": date, "title": title})
+    write_file("conflict_deletes.json", q, qsha, f"app: delete {str(title)[:24]}")
+    ignore_conflict(c)  # hide from view immediately; resolver removes from calendar
+
+
 # ─────────────────────────── insights engine ───────────────────────────
 
 
@@ -324,6 +345,7 @@ pending, _ = fetch_file("pending_events.json")
 activity_log, _ = fetch_file("activity_log.json")
 open_items, open_sha = fetch_file("app_open_items.json")
 agents_data, _ = fetch_file("agents.json")
+ignored_conflicts, _ = fetch_file("ignored_conflicts.json")
 pending = pending or []
 activity_log = activity_log or []
 if open_items is None:
@@ -335,10 +357,13 @@ w = (dash or {}).get("weather") or {}
 week = (dash or {}).get("week", [])
 horizon = (dash or {}).get("horizon", {})
 
+ignored_set = set(ignored_conflicts or [])
 all_conflicts = []
 for day in week:
     for c in day.get("conflicts", []):
-        all_conflicts.append({**c, "day": day["label"], "date": day.get("date")})
+        cc = {**c, "day": day["label"], "date": day.get("date")}
+        if _conf_sig(cc) not in ignored_set:
+            all_conflicts.append(cc)
 
 
 def _day_card_inner(day: dict) -> str:
@@ -412,18 +437,19 @@ with c2:
     with st.container(height=CAP):
         if not pending and not all_conflicts:
             st.success("All clear.")
-        for c in all_conflicts:
+        for ci, c in enumerate(all_conflicts):
             with st.container(border=True):
                 st.markdown(f"⚠️ **Conflict — {c['day']}**")
                 st.markdown(f"<div style='font-size:12px;color:#555'>{c['a']} ({c['a_time']}) "
                             f"vs {c['b']} ({c['b_time']})</div>", unsafe_allow_html=True)
-                _d = c.get("date")
-                if _d and len(_d.split("-")) == 3:
-                    _y, _m, _dd = _d.split("-")
-                    st.link_button(
-                        "Fix in Google Calendar ↗",
-                        f"https://calendar.google.com/calendar/r/day/{int(_y)}/{int(_m)}/{int(_dd)}",
-                        use_container_width=True)
+                if st.button("🚫 Ignore — not a clash", key=f"cig{ci}", use_container_width=True):
+                    ignore_conflict(c); st.toast("Conflict ignored", icon="🚫"); st.rerun()
+                if st.button(f"🗑 Delete: {c['a'][:20]}", key=f"cda{ci}", use_container_width=True):
+                    queue_conflict_delete(c.get("date"), c["a"], c)
+                    st.toast("Delete queued (~15 min)", icon="🗑"); st.rerun()
+                if st.button(f"🗑 Delete: {c['b'][:20]}", key=f"cdb{ci}", use_container_width=True):
+                    queue_conflict_delete(c.get("date"), c["b"], c)
+                    st.toast("Delete queued (~15 min)", icon="🗑"); st.rerun()
         for idx, item in enumerate(pending):
             title = item.get("title", "(untitled)")
             source = item.get("source", "")
