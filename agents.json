@@ -2,39 +2,225 @@
   "agents": [
     {
       "id": "italy-flights",
-      "name": "✈️ Italy flight-watch",
+      "name": "\u2708\ufe0f Italy flight-watch",
       "type": "flight-multicity",
       "config": {
         "travelers": 3,
-        "cabins": ["economy", "business"],
-        "airline_label": "United preferred · Star Alliance ok",
+        "cabins": [
+          "economy",
+          "business"
+        ],
+        "airline_label": "United preferred \u00b7 Star Alliance ok",
         "include_airlines": "STAR_ALLIANCE",
-        "route_note": "IAD → Rome, home Munich → IAD. Comparing Dec 18/19 out, Jan 2/3 back.",
+        "route_note": "IAD \u2192 Rome, home Munich \u2192 IAD. Comparing Dec 18/19 out, Jan 2/3 back.",
         "plans": [
-          {"label": "Dec 18 → Jan 2", "legs": [
-            {"from": "IAD", "to": "FCO", "date": "2026-12-18"},
-            {"from": "MUC", "to": "IAD", "date": "2027-01-02"}
-          ]},
-          {"label": "Dec 18 → Jan 3", "legs": [
-            {"from": "IAD", "to": "FCO", "date": "2026-12-18"},
-            {"from": "MUC", "to": "IAD", "date": "2027-01-03"}
-          ]},
-          {"label": "Dec 19 → Jan 2", "legs": [
-            {"from": "IAD", "to": "FCO", "date": "2026-12-19"},
-            {"from": "MUC", "to": "IAD", "date": "2027-01-02"}
-          ]},
-          {"label": "Dec 19 → Jan 3", "legs": [
-            {"from": "IAD", "to": "FCO", "date": "2026-12-19"},
-            {"from": "MUC", "to": "IAD", "date": "2027-01-03"}
-          ]}
+          {
+            "label": "Dec 18 \u2192 Jan 2",
+            "legs": [
+              {
+                "from": "IAD",
+                "to": "FCO",
+                "date": "2026-12-18"
+              },
+              {
+                "from": "MUC",
+                "to": "IAD",
+                "date": "2027-01-02"
+              }
+            ]
+          },
+          {
+            "label": "Dec 18 \u2192 Jan 3",
+            "legs": [
+              {
+                "from": "IAD",
+                "to": "FCO",
+                "date": "2026-12-18"
+              },
+              {
+                "from": "MUC",
+                "to": "IAD",
+                "date": "2027-01-03"
+              }
+            ]
+          },
+          {
+            "label": "Dec 19 \u2192 Jan 2",
+            "legs": [
+              {
+                "from": "IAD",
+                "to": "FCO",
+                "date": "2026-12-19"
+              },
+              {
+                "from": "MUC",
+                "to": "IAD",
+                "date": "2027-01-02"
+              }
+            ]
+          },
+          {
+            "label": "Dec 19 \u2192 Jan 3",
+            "legs": [
+              {
+                "from": "IAD",
+                "to": "FCO",
+                "date": "2026-12-19"
+              },
+              {
+                "from": "MUC",
+                "to": "IAD",
+                "date": "2027-01-03"
+              }
+            ]
+          }
         ]
       },
       "status": {
-        "state": "awaiting_run",
-        "note": "Parameters updated. Run the Agents workflow to refresh prices.",
-        "updated": null
+        "state": "live",
+        "updated": "2026-06-27",
+        "cheapest_plan": "Dec 18 \u2192 Jan 3",
+        "cheapest_econ": 4914,
+        "results": [
+          {
+            "label": "Dec 18 \u2192 Jan 2",
+            "economy": {
+              "low": 5143,
+              "flight_numbers": [
+                "TP 234",
+                "TP 836"
+              ],
+              "airlines": [
+                "Tap Air Portugal",
+                "Tap Air Portugal"
+              ],
+              "is_united": false,
+              "layovers": 1,
+              "insights": null
+            },
+            "business": {
+              "low": 12028,
+              "flight_numbers": [
+                "TP 234",
+                "TP 836"
+              ],
+              "airlines": [
+                "Tap Air Portugal",
+                "Tap Air Portugal"
+              ],
+              "is_united": false,
+              "layovers": 1,
+              "insights": null
+            }
+          },
+          {
+            "label": "Dec 18 \u2192 Jan 3",
+            "economy": {
+              "low": 4914,
+              "flight_numbers": [
+                "TP 234",
+                "TP 836"
+              ],
+              "airlines": [
+                "Tap Air Portugal",
+                "Tap Air Portugal"
+              ],
+              "is_united": false,
+              "layovers": 1,
+              "insights": null
+            },
+            "business": {
+              "low": 14565,
+              "flight_numbers": [
+                "TP 234",
+                "TP 836"
+              ],
+              "airlines": [
+                "Tap Air Portugal",
+                "Tap Air Portugal"
+              ],
+              "is_united": false,
+              "layovers": 1,
+              "insights": null
+            }
+          },
+          {
+            "label": "Dec 19 \u2192 Jan 2",
+            "economy": {
+              "low": 5143,
+              "flight_numbers": [
+                "TP 232",
+                "TP 832"
+              ],
+              "airlines": [
+                "Tap Air Portugal",
+                "Tap Air Portugal"
+              ],
+              "is_united": false,
+              "layovers": 1,
+              "insights": null
+            },
+            "business": {
+              "low": 12028,
+              "flight_numbers": [
+                "TP 232",
+                "TP 832"
+              ],
+              "airlines": [
+                "Tap Air Portugal",
+                "Tap Air Portugal"
+              ],
+              "is_united": false,
+              "layovers": 1,
+              "insights": null
+            }
+          },
+          {
+            "label": "Dec 19 \u2192 Jan 3",
+            "economy": {
+              "low": 4914,
+              "flight_numbers": [
+                "TP 232",
+                "TP 832"
+              ],
+              "airlines": [
+                "Tap Air Portugal",
+                "Tap Air Portugal"
+              ],
+              "is_united": false,
+              "layovers": 1,
+              "insights": null
+            },
+            "business": {
+              "low": 14565,
+              "flight_numbers": [
+                "TP 232",
+                "TP 832"
+              ],
+              "airlines": [
+                "Tap Air Portugal",
+                "Tap Air Portugal"
+              ],
+              "is_united": false,
+              "layovers": 1,
+              "insights": null
+            }
+          }
+        ]
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-06-27",
+          "Dec 18 \u2192 Jan 2 economy": 5143,
+          "Dec 18 \u2192 Jan 2 business": 12028,
+          "Dec 18 \u2192 Jan 3 economy": 4914,
+          "Dec 18 \u2192 Jan 3 business": 14565,
+          "Dec 19 \u2192 Jan 2 economy": 5143,
+          "Dec 19 \u2192 Jan 2 business": 12028,
+          "Dec 19 \u2192 Jan 3 economy": 4914,
+          "Dec 19 \u2192 Jan 3 business": 14565
+        }
+      ]
     }
   ]
 }
