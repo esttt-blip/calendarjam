@@ -299,6 +299,23 @@ st.markdown("""
   .todo-sub { font-size:11px; margin:0 0 8px 28px; color:#9a9aa7; }
   .muted { color:#a6a6b2; font-size:11.5px; }
   div[data-testid="stCheckbox"] { margin-bottom:0; }
+
+  /* Flight-watch cards */
+  .fgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(225px,1fr)); gap:12px; margin:6px 0; }
+  .fcard { background:#fff; border:1px solid #ececf2; border-radius:14px; padding:13px 15px;
+           box-shadow:0 1px 3px rgba(20,20,40,.04); }
+  .fcard.fbest { border:2px solid #1c7a46; }
+  .fhead { font-size:13px; font-weight:700; color:#1a1a2e; display:flex; justify-content:space-between;
+           align-items:center; gap:6px; }
+  .fbadge { background:#e9f7ef; color:#1c7a46; font-size:9.5px; font-weight:700; padding:2px 7px;
+            border-radius:10px; text-transform:uppercase; letter-spacing:.04em; white-space:nowrap; }
+  .fprice { font-size:23px; font-weight:800; color:#1a1a2e; margin-top:7px; line-height:1.1; }
+  .fcab { font-size:12px; font-weight:500; color:#9a9aa7; }
+  .fpp { font-size:11px; color:#9a9aa7; }
+  .fbiz { font-size:12px; color:#5b5b6b; margin-top:4px; }
+  .fair { font-size:12.5px; color:#333; margin-top:7px; }
+  .ffn { font-size:11px; color:#b0b0ba; font-family:ui-monospace,monospace; margin-top:2px; }
+  .frng { font-size:11px; color:#9a9aa7; margin-top:7px; padding-top:6px; border-top:1px solid #f4f4f7; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -321,7 +338,7 @@ horizon = (dash or {}).get("horizon", {})
 all_conflicts = []
 for day in week:
     for c in day.get("conflicts", []):
-        all_conflicts.append({**c, "day": day["label"]})
+        all_conflicts.append({**c, "day": day["label"], "date": day.get("date")})
 
 
 def _day_card_inner(day: dict) -> str:
@@ -400,6 +417,13 @@ with c2:
                 st.markdown(f"⚠️ **Conflict — {c['day']}**")
                 st.markdown(f"<div style='font-size:12px;color:#555'>{c['a']} ({c['a_time']}) "
                             f"vs {c['b']} ({c['b_time']})</div>", unsafe_allow_html=True)
+                _d = c.get("date")
+                if _d and len(_d.split("-")) == 3:
+                    _y, _m, _dd = _d.split("-")
+                    st.link_button(
+                        "Fix in Google Calendar ↗",
+                        f"https://calendar.google.com/calendar/r/day/{int(_y)}/{int(_m)}/{int(_dd)}",
+                        use_container_width=True)
         for idx, item in enumerate(pending):
             title = item.get("title", "(untitled)")
             source = item.get("source", "")
@@ -449,61 +473,68 @@ if len(week) > 1:
 
 st.markdown("<div class='sec'>🧭 Planning</div>", unsafe_allow_html=True)
 
-pc1, pc2 = st.columns(2, gap="large")
-with pc1:
-    rows = ""
-    for i, t in enumerate(TRIPS):
-        first = " first" if i == 0 else ""
-        rows += (f"<div class='trip-row{first}'><div class='trip-title'>{t['title']} "
-                 f"<span class='muted'>· {t['window']}</span></div>"
-                 f"<div class='trip-detail'>{t['detail']}</div></div>")
-    st.markdown(f"<div class='card'><div class='day-head'>🧳 Trips</div>{rows}</div>",
-                unsafe_allow_html=True)
-with pc2:
-    st.markdown("<div style='font-size:13.5px;font-weight:700;color:#1a1a2e;margin-bottom:4px'>🤖 Agents</div>",
-                unsafe_allow_html=True)
-    agents = (agents_data or {}).get("agents", [])
-    if not agents:
-        st.caption("No agents yet — tell Claude what to monitor.")
-    for ag in agents:
-        with st.container(border=True):
-            st.markdown(f"**{ag['name']}**")
-            stt = ag.get("status", {})
-            if stt.get("state") != "live":
-                st.caption(stt.get("note", "Not yet active."))
-                continue
-            cp, ce = stt.get("cheapest_plan"), stt.get("cheapest_econ")
-            if cp and ce:
-                st.markdown(f"<div style='font-size:13px'>Cheapest now: <b>{cp}</b> · "
-                            f"~${ce:,.0f} economy</div>", unsafe_allow_html=True)
-            hist = ag.get("history", [])
-            for res in stt.get("results", []):
-                lab = res["label"]
-                econ = res.get("economy") or {}
-                biz = res.get("business") or {}
-                head = f"<b>{lab}</b>"
-                if econ.get("low"):
-                    head += (f" — econ <b>${econ['low']:,.0f}</b>"
-                             f"{' ✈UA' if econ.get('is_united') else ''}")
-                if biz.get("low"):
-                    head += f" <span class='muted'>· biz ${biz['low']:,.0f}</span>"
-                fns = econ.get("flight_numbers") or []
-                fnline = ""
-                if fns:
-                    stops = econ.get("layovers", 0)
-                    fnline = (f"<div style='font-size:11px;color:#777'>{' · '.join(fns)}"
-                              f" · {'nonstop' if not stops else str(stops) + ' stop'}</div>")
-                vals = [h.get(f"{lab} economy") for h in hist if h.get(f"{lab} economy")]
-                rng = (f"<div class='muted' style='font-size:11px'>tracked "
-                       f"${min(vals):,.0f}–${max(vals):,.0f} · {len(vals)} checks</div>"
-                       if len(vals) >= 2 else "")
-                st.markdown(f"<div style='padding:4px 0;border-top:1px solid #f4f4f7;font-size:12.5px'>"
-                            f"{head}{fnline}{rng}</div>", unsafe_allow_html=True)
-            if cp:
-                series = [h.get(f"{cp} economy") for h in hist if h.get(f"{cp} economy")]
-                if len(series) >= 2:
-                    st.line_chart(series, height=90)
-            st.caption(f"Updated {stt.get('updated','—')} · {ag.get('config',{}).get('airline_label','')}")
+trip_rows = ""
+for i, t in enumerate(TRIPS):
+    first = " first" if i == 0 else ""
+    trip_rows += (f"<div class='trip-row{first}'><div class='trip-title'>{t['title']} "
+                  f"<span class='muted'>· {t['window']}</span></div>"
+                  f"<div class='trip-detail'>{t['detail']}</div></div>")
+st.markdown(f"<div class='card'><div class='day-head'>🧳 Trips</div>{trip_rows}</div>",
+            unsafe_allow_html=True)
+
+# ── Flight-watch agents (full-width, human view) ──
+for ag in (agents_data or {}).get("agents", []):
+    if ag.get("type") != "flight-multicity":
+        continue
+    stt = ag.get("status", {})
+    pax = ag.get("config", {}).get("travelers", 1)
+    st.markdown(f"<div class='sec' style='margin-top:16px'>{ag['name']}</div>", unsafe_allow_html=True)
+    if stt.get("state") != "live":
+        st.info(stt.get("note", "Not yet active."))
+        continue
+    cp, ce = stt.get("cheapest_plan"), stt.get("cheapest_econ")
+    hist = ag.get("history", [])
+    if cp and ce:
+        st.markdown(
+            f"<div style='font-size:14px;margin-bottom:2px'>Cheapest right now: "
+            f"<b>{cp}</b> — <b>${ce:,.0f}</b> economy "
+            f"<span class='muted'>(≈${ce/pax:,.0f}/person)</span></div>"
+            f"<div class='muted' style='margin-bottom:8px'>Prices are total for {pax} · "
+            f"{ag.get('config',{}).get('airline_label','')} · updated {stt.get('updated','—')}</div>",
+            unsafe_allow_html=True)
+    cards = ""
+    for res in stt.get("results", []):
+        lab = res["label"]
+        econ = res.get("economy") or {}
+        biz = res.get("business") or {}
+        best = (lab == cp)
+        airline = (econ.get("airlines") or ["—"])[0]
+        stops = econ.get("layovers", 0)
+        stoptxt = "nonstop" if not stops else f"{stops} stop"
+        fns = " · ".join(econ.get("flight_numbers") or [])
+        vals = [h.get(f"{lab} economy") for h in hist if h.get(f"{lab} economy")]
+        rngtxt = (f"tracked ${min(vals):,.0f}–${max(vals):,.0f} · {len(vals)} checks"
+                  if len(vals) >= 2 else "tracking begins next check")
+        econ_str = f"${econ['low']:,.0f}" if econ.get("low") else "—"
+        pp = f"<span class='fpp'> · ≈${econ['low']/pax:,.0f}/person</span>" if econ.get("low") else ""
+        biz_str = f"${biz['low']:,.0f}" if biz.get("low") else "—"
+        badge = "<span class='fbadge'>cheapest</span>" if best else ""
+        cards += (
+            f"<div class='fcard{' fbest' if best else ''}'>"
+            f"<div class='fhead'><span>{lab}</span>{badge}</div>"
+            f"<div class='fprice'>{econ_str}<span class='fcab'> economy</span></div>"
+            f"<div class='fpp'>{('≈$' + format(econ['low']/pax, ',.0f') + '/person') if econ.get('low') else ''}</div>"
+            f"<div class='fbiz'>Business {biz_str}</div>"
+            f"<div class='fair'>{airline} · {stoptxt}</div>"
+            f"<div class='ffn'>{fns}</div>"
+            f"<div class='frng'>{rngtxt}</div>"
+            f"</div>")
+    st.markdown(f"<div class='fgrid'>{cards}</div>", unsafe_allow_html=True)
+    if cp:
+        series = [h.get(f"{cp} economy") for h in hist if h.get(f"{cp} economy")]
+        if len(series) >= 2:
+            st.caption(f"{cp} — economy price trend")
+            st.line_chart(series, height=120)
 
 with st.expander("📋 To-do · open items", expanded=False):
     changed = False
