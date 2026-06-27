@@ -343,7 +343,10 @@ st.markdown("""
   .ftbl th { text-align:left; font-size:10.5px; text-transform:uppercase; letter-spacing:.04em;
              color:#9398a8; font-weight:700; padding:6px 10px; border-bottom:1px solid #ececf2; }
   .ftbl td { padding:7px 10px; border-bottom:1px solid #f4f4f7; color:#1a1a2e; }
-  .ftbl-best td { background:#e9f7ef; font-weight:600; }
+  .ftbl-best td { background:#dff2e6; font-weight:600; }
+  .ftbl-b0 td { background:#ffffff; }
+  .ftbl-b1 td { background:#f3f4f8; }
+  .ffnum { font-family:ui-monospace,monospace; font-size:11.5px; color:#5b5b6b; white-space:nowrap; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -536,24 +539,28 @@ for ag in (agents_data or {}).get("agents", []):
             f"{ag.get('config',{}).get('airline_label','')} · updated {stt.get('updated','—')}</div>",
             unsafe_allow_html=True)
     rows_html = ""
-    for res in stt.get("results", []):
+    for ri, res in enumerate(stt.get("results", [])):
         lab = res["label"]
+        band = "ftbl-b0" if ri % 2 == 0 else "ftbl-b1"
         for cabin in ("economy", "business"):
-            cur = (res.get(cabin) or {}).get("low")
+            cd = res.get(cabin) or {}
+            cur = cd.get("low")
             if cur is None:
                 continue
             vals = [h.get(f"{lab} {cabin}") for h in hist if h.get(f"{lab} {cabin}")]
             lo = min(vals) if vals else cur
             hi = max(vals) if vals else cur
-            best = " class='ftbl-best'" if (cabin == "economy" and lab == cp) else ""
-            rows_html += (f"<tr{best}><td>{lab}</td><td>{cabin.title()}</td>"
-                          f"<td>${cur:,.0f}</td><td>${lo:,.0f}</td><td>${hi:,.0f}</td></tr>")
+            flights = " / ".join(cd.get("flight_numbers") or []) or "—"
+            cls = "ftbl-best" if (cabin == "economy" and lab == cp) else band
+            rows_html += (f"<tr class='{cls}'><td>{lab}</td><td>{cabin.title()}</td>"
+                          f"<td>${cur:,.0f}</td><td>${lo:,.0f}</td><td>${hi:,.0f}</td>"
+                          f"<td class='ffnum'>{flights}</td></tr>")
     st.markdown(
         "<table class='ftbl'><thead><tr><th>Route</th><th>Cabin</th>"
-        "<th>Today</th><th>Low seen</th><th>High seen</th></tr></thead>"
+        "<th>Today</th><th>Low seen</th><th>High seen</th><th>Flights</th></tr></thead>"
         f"<tbody>{rows_html}</tbody></table>"
         f"<div class='muted' style='margin-top:6px'>Prices total for {pax} travelers · "
-        "Low/High = range tracked so far (grows with each check).</div>",
+        "Low/High = range tracked so far.</div>",
         unsafe_allow_html=True)
 
 with st.expander("📋 To-do · open items", expanded=False):
