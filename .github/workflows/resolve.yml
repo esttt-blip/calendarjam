@@ -1,0 +1,39 @@
+name: Resolve conflicts
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"  # every 15 min — clears queued conflict deletions
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Resolve queued deletions
+        env:
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+        run: python resolve_conflicts.py
+
+      - name: Commit queue state
+        run: |
+          git config user.name "calendarjam-bot"
+          git config user.email "calendarjam@users.noreply.github.com"
+          git add conflict_deletes.json 2>/dev/null || true
+          if ! git diff --staged --quiet; then
+            git commit -m "resolve: process conflict deletions"
+            git push
+          fi
