@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T13:25:44.066620-04:00",
-  "generated_label": "Fri Jun 26, 1:25 PM",
+  "generated_at": "2026-06-27T06:01:20.433510-04:00",
+  "generated_label": "Sat Jun 27, 6:01 AM",
   "weather": null,
   "theme": {
     "emoji": "\ud83c\udf86",
@@ -11,56 +11,8 @@
   },
   "week": [
     {
-      "date": "2026-06-26",
-      "label": "Today \u00b7 Fri Jun 26",
-      "weather": null,
-      "events": [
-        {
-          "time": "7:00 am",
-          "title": "\ud83d\uded2 Walmart delivery",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-26T07:00:00-04:00"
-        },
-        {
-          "time": "8:45 am",
-          "title": "\ud83d\ude97 Taylor carpool \u2014 NOVA Archery",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-06-26T08:45:00-04:00"
-        },
-        {
-          "time": "9:00 am",
-          "title": "Seymour appointment",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-26T09:00:00-04:00"
-        },
-        {
-          "time": "12:00 pm",
-          "title": "dog trainer",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-26T12:00:00-04:00"
-        },
-        {
-          "time": "3:45 pm",
-          "title": "\ud83d\ude97 Esther carpool \u2014 NOVA Archery",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-06-26T15:45:00-04:00"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-06-27",
-      "label": "Tomorrow \u00b7 Sat Jun 27",
+      "label": "Today \u00b7 Sat Jun 27",
       "weather": null,
       "events": [
         {
@@ -100,7 +52,7 @@
     },
     {
       "date": "2026-06-28",
-      "label": "Sunday \u00b7 Jun 28",
+      "label": "Tomorrow \u00b7 Sun Jun 28",
       "weather": null,
       "events": [
         {
@@ -405,6 +357,53 @@
           "b_time": "7:00 pm"
         }
       ]
+    },
+    {
+      "date": "2026-07-03",
+      "label": "Friday \u00b7 Jul 3",
+      "weather": null,
+      "events": [
+        {
+          "time": "9:00 am",
+          "title": "\ud83d\udcda School Holiday (July 4 - Observed)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-03T09:00:00-04:00"
+        },
+        {
+          "time": "4:00 pm",
+          "title": "Boys haircuts",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-03T16:00:00-04:00"
+        },
+        {
+          "time": "7:10 pm",
+          "title": "\ud83d\ude97 Drive to Audi Field (Spirit vs Dash)",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-07-03T19:10:00-04:00"
+        },
+        {
+          "time": "8:00 pm",
+          "title": "Spirit vs Dash (Victory)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-03T20:00:00-04:00"
+        }
+      ],
+      "conflicts": [
+        {
+          "a": "\ud83d\udcda School Holiday (July 4 - Observed)",
+          "a_time": "9:00 am",
+          "b": "Boys haircuts",
+          "b_time": "4:00 pm"
+        }
+      ]
     }
   ],
   "horizon": {
@@ -412,44 +411,44 @@
       {
         "title": "Brandee Birthday",
         "day": "Mon Jun 29",
-        "days_out": 3
+        "days_out": 2
       },
       {
         "title": "Keith's birthday",
         "day": "Wed Jul 1",
+        "days_out": 4
+      },
+      {
+        "title": "Jasmine's bday Part 1",
+        "day": "Thu Jul 2",
         "days_out": 5
       },
       {
         "title": "Jasmine's bday Part 1",
         "day": "Thu Jul 2",
-        "days_out": 6
+        "days_out": 5
       },
       {
         "title": "Jasmine's bday Part 1",
         "day": "Thu Jul 2",
-        "days_out": 6
-      },
-      {
-        "title": "Jasmine's bday Part 1",
-        "day": "Thu Jul 2",
-        "days_out": 6
+        "days_out": 5
       },
       {
         "title": "Jen Lichtblau\u2019s Birthday",
         "day": "Mon Jul 13",
-        "days_out": 17
+        "days_out": 16
       }
     ],
     "holidays": [
       {
         "title": "Independence Day (substitute)",
         "day": "Fri Jul 3",
-        "days_out": 7
+        "days_out": 6
       },
       {
         "title": "Independence Day",
         "day": "Sat Jul 4",
-        "days_out": 8
+        "days_out": 7
       }
     ]
   }
