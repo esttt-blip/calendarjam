@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T06:01:20.433510-04:00",
-  "generated_label": "Sat Jun 27, 6:01 AM",
+  "generated_at": "2026-06-27T11:05:18.278309-04:00",
+  "generated_label": "Sat Jun 27, 11:05 AM",
   "weather": null,
   "theme": {
     "emoji": "\ud83c\udf86",
@@ -57,16 +57,24 @@
       "events": [
         {
           "time": "8:30 am",
-          "title": "Reservation at East Potomac Golf Links - White",
-          "location": "East Potomac Golf Links - White, East Potomac Golf Links - WHITE Course, 972 Ohio Dr SW, Washington, DC 20024, US",
+          "title": "Reservation at East Potomac Golf Links - WHITE Course",
+          "location": "East Potomac Golf Links - WHITE Course, East Potomac Golf Links - WHITE Course, 972 Ohio Dr SW, Washington, DC 20024, US",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-06-28T08:30:00-04:00"
+        },
+        {
+          "time": "8:30 am",
+          "title": "Reservation at East Potomac Golf Links - WHITE Course",
+          "location": "East Potomac Golf Links - WHITE Course, East Potomac Golf Links - WHITE Course, 972 Ohio Dr SW, Washington, DC 20024, US",
           "all_day": false,
           "is_drive": false,
           "sort": "2026-06-28T08:30:00-04:00"
         },
         {
           "time": "8:40 am",
-          "title": "Reservation at East Potomac Golf Links - White",
-          "location": "East Potomac Golf Links - White, East Potomac Golf Links - WHITE Course, 972 Ohio Dr SW, Washington, DC 20024, US",
+          "title": "Reservation at East Potomac Golf Links - WHITE Course",
+          "location": "East Potomac Golf Links - WHITE Course, East Potomac Golf Links - WHITE Course, 972 Ohio Dr SW, Washington, DC 20024, US",
           "all_day": false,
           "is_drive": false,
           "sort": "2026-06-28T08:40:00-04:00"
