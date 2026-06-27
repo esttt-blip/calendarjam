@@ -479,19 +479,26 @@ with pc2:
             hist = ag.get("history", [])
             for res in stt.get("results", []):
                 lab = res["label"]
-                econ = res["cabins"].get("economy", {})
-                biz = res["cabins"].get("business", {})
-                parts = []
+                econ = res.get("economy") or {}
+                biz = res.get("business") or {}
+                head = f"<b>{lab}</b>"
                 if econ.get("low"):
-                    parts.append(f"econ ${econ['low']:,.0f}{' ✈UA' if econ.get('is_united') else ''}")
+                    head += (f" — econ <b>${econ['low']:,.0f}</b>"
+                             f"{' ✈UA' if econ.get('is_united') else ''}")
                 if biz.get("low"):
-                    parts.append(f"biz ${biz['low']:,.0f}")
-                line = f"<b>{lab}</b>: " + (" · ".join(parts) if parts else "—")
+                    head += f" <span class='muted'>· biz ${biz['low']:,.0f}</span>"
+                fns = econ.get("flight_numbers") or []
+                fnline = ""
+                if fns:
+                    stops = econ.get("layovers", 0)
+                    fnline = (f"<div style='font-size:11px;color:#777'>{' · '.join(fns)}"
+                              f" · {'nonstop' if not stops else str(stops) + ' stop'}</div>")
                 vals = [h.get(f"{lab} economy") for h in hist if h.get(f"{lab} economy")]
-                if len(vals) >= 2:
-                    line += f" <span class='muted'>· seen ${min(vals):,.0f}–${max(vals):,.0f}</span>"
-                st.markdown(f"<div style='font-size:12px;padding:2px 0'>{line}</div>",
-                            unsafe_allow_html=True)
+                rng = (f"<div class='muted' style='font-size:11px'>tracked "
+                       f"${min(vals):,.0f}–${max(vals):,.0f} · {len(vals)} checks</div>"
+                       if len(vals) >= 2 else "")
+                st.markdown(f"<div style='padding:4px 0;border-top:1px solid #f4f4f7;font-size:12.5px'>"
+                            f"{head}{fnline}{rng}</div>", unsafe_allow_html=True)
             if cp:
                 series = [h.get(f"{cp} economy") for h in hist if h.get(f"{cp} economy")]
                 if len(series) >= 2:
