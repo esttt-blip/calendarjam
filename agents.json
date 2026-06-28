@@ -78,7 +78,7 @@
       },
       "status": {
         "state": "live",
-        "updated": "2026-06-27",
+        "updated": "2026-06-28",
         "cheapest_plan": "Dec 18 \u2192 Jan 3",
         "cheapest_econ": 4914,
         "results": [
@@ -211,6 +211,17 @@
       "history": [
         {
           "date": "2026-06-27",
+          "Dec 18 \u2192 Jan 2 economy": 5143,
+          "Dec 18 \u2192 Jan 2 business": 12028,
+          "Dec 18 \u2192 Jan 3 economy": 4914,
+          "Dec 18 \u2192 Jan 3 business": 14565,
+          "Dec 19 \u2192 Jan 2 economy": 5143,
+          "Dec 19 \u2192 Jan 2 business": 12028,
+          "Dec 19 \u2192 Jan 3 economy": 4914,
+          "Dec 19 \u2192 Jan 3 business": 14565
+        },
+        {
+          "date": "2026-06-28",
           "Dec 18 \u2192 Jan 2 economy": 5143,
           "Dec 18 \u2192 Jan 2 business": 12028,
           "Dec 18 \u2192 Jan 3 economy": 4914,
