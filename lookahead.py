@@ -34,6 +34,15 @@ OUTDOOR_SIGNALS = (
     "audi field", "park", "field", "outdoor", "tournament", "golf",
 )
 
+# Henry's activities — attended by him (and whichever parent handles the
+# drive), not a "two places at once" clash with Esther's own commitments.
+# Used to drop conflicts where different people in the house attend each event.
+KID_SIGNALS = (
+    "viva", "ignite", "soccer", "baseball", "swanson", "chelsea", "camp",
+    "practice", "athletic development", "pitching", "catcher", "infield",
+    "hitting", "academy night",
+)
+
 
 # ─────────────────────────── helpers ───────────────────────────
 
@@ -60,6 +69,21 @@ def _is_passive(ev: dict) -> bool:
     if s.startswith(("🛒", "🍱", "📦")):
         return True
     return ev.get("transparency") == "transparent"
+
+
+def _owner_class(ev: dict) -> str:
+    """Who in the house this event belongs to. Henry's sports/school/camp are
+    'kid'; everything else is 'adult'. A kid event overlapping an adult event
+    isn't a two-places-at-once clash — different people attend each."""
+    s = (ev.get("summary", "") or "").lower()
+    return "kid" if any(k in s for k in KID_SIGNALS) else "adult"
+
+
+def _same_title(a: dict, b: dict) -> bool:
+    """True if two events share the same title — a duplicate, not a real
+    conflict (avoids flagging an event against a stray copy of itself)."""
+    return (a.get("summary", "") or "").strip().lower() == \
+           (b.get("summary", "") or "").strip().lower()
 
 
 # Tournament bracket placeholders — the team only plays one of these slots
@@ -115,6 +139,13 @@ def find_collisions(events: list[dict]) -> list[dict]:
             s2, e2, ev2 = timed[j]
             if s2 >= e1:
                 break  # sorted: no later event can overlap
+            # Duplicate of the same event (a stray copy) — not a real clash.
+            if _same_title(ev1, ev2):
+                continue
+            # Different people in the house attend each (e.g. Henry's practice
+            # vs Esther's evening plans) — not a two-places-at-once conflict.
+            if _owner_class(ev1) != _owner_class(ev2):
+                continue
             out.append({
                 "a": ev1.get("summary", ""), "a_start": s1, "a_end": e1,
                 "b": ev2.get("summary", ""), "b_start": s2, "b_end": e2,
@@ -141,6 +172,10 @@ def find_tight_turnarounds(events: list[dict], gap_min: int = 15) -> list[dict]:
         gap = (s2 - e1).total_seconds() / 60
         loc1 = (ev1.get("location") or "").strip().lower()
         loc2 = (ev2.get("location") or "").strip().lower()
+        # Different people attend (kid vs adult) — they don't share the drive,
+        # so a tight gap between them isn't a turnaround problem for one person.
+        if _owner_class(ev1) != _owner_class(ev2):
+            continue
         if 0 <= gap <= gap_min and loc1 and loc2 and loc1 != loc2:
             out.append({
                 "a": ev1.get("summary", ""), "a_end": e1,
