@@ -574,5 +574,11 @@
     "action": "approved",
     "title": "Reminder: Boarding  |  Trailblazer Cabin for Milo",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-06-28T01:07:45.189384+00:00",
+    "action": "dismissed",
+    "title": "Continued Technical Difficulties - Communications",
+    "source": "Gmail"
   }
 ]
