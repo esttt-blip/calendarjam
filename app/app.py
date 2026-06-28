@@ -283,7 +283,7 @@ st.set_page_config(page_title="calendarjam", page_icon="📅", layout="wide",
 st.markdown("""
 <style>
   :root { color-scheme: light; }
-  .block-container { padding-top: 0.8rem; padding-bottom: 2.5rem; max-width: 1240px; }
+  .block-container { padding-top: 0.4rem; padding-bottom: 2.5rem; max-width: 1680px; }
   .sec { font-size:11px; font-weight:800; letter-spacing:.07em; text-transform:uppercase;
          color:#9398a8; margin:13px 0 5px; }
   .card { background:#fff; border:1px solid #ececf2; border-radius:13px; padding:11px 14px;
@@ -307,7 +307,8 @@ st.markdown("""
   .chip-muted{ background:#f1f1f4; color:#73737f; }
   .attention { background:linear-gradient(135deg,#fff4f0,#ffe9e0); border:1px solid #ffd9c9;
                border-radius:14px; padding:11px 15px; margin-bottom:6px; font-size:13px; color:#8a3a1a; }
-  .week-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:12px; }
+  .week-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:10px; }
+  @media (max-width:760px){ .week-grid { grid-template-columns:1fr; } }
   .wk-card { background:#fff; border:1px solid #ececf2; border-radius:14px; padding:11px 13px;
              box-shadow:0 1px 3px rgba(20,20,40,.04); }
   .look-row { padding:7px 0; font-size:13.5px; color:#333; border-top:1px solid #f4f4f7; line-height:1.4; }
@@ -393,7 +394,7 @@ def _day_card_inner(day: dict) -> str:
 # ─────────────────────────── header ───────────────────────────
 
 st.markdown(
-    f"<div style='height:6px;border-radius:6px;margin-bottom:12px;"
+    f"<div style='height:4px;border-radius:4px;margin-bottom:6px;"
     f"background:linear-gradient(90deg,{theme['color1']},{theme['color2']})'></div>",
     unsafe_allow_html=True,
 )
@@ -402,10 +403,12 @@ wx = (f"<span class='muted'>&nbsp;&nbsp;{w.get('emoji','')} {w.get('high_f','–
 chip = (f"<span style='margin-left:9px;background:linear-gradient(135deg,{theme['color1']},{theme['color2']});"
         f"color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:13px'>"
         f"{theme['emoji']} {theme['title']}</span>") if theme.get("title") else ""
+blurb = (f"<span class='muted' style='margin-left:10px;font-size:12px'>{theme['blurb']}</span>"
+         if theme.get("blurb") else "")
 st.markdown(
     f"<div style='display:flex;align-items:center;flex-wrap:wrap'>"
-    f"<span style='font-size:24px;font-weight:800;color:#1a1a2e'>📅 calendarjam</span>{chip}{wx}</div>"
-    + (f"<div class='muted' style='margin-top:2px'>{theme['blurb']}</div>" if theme.get("blurb") else ""),
+    f"<span style='font-size:20px;font-weight:800;color:#1a1a2e'>📅 calendarjam</span>"
+    f"{chip}{blurb}{wx}</div>",
     unsafe_allow_html=True,
 )
 
