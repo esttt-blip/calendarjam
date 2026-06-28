@@ -592,5 +592,11 @@
     "action": "duplicate",
     "title": "Reservation Reminder for East Potomac Golf Links - WHITE Course",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-06-28T10:04:53.249021+00:00",
+    "action": "dismissed",
+    "title": "Your next Fix is scheduled",
+    "source": "Gmail"
   }
 ]
