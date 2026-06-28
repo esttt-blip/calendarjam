@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T11:05:18.278309-04:00",
-  "generated_label": "Sat Jun 27, 11:05 AM",
+  "generated_at": "2026-06-28T06:00:55.690482-04:00",
+  "generated_label": "Sun Jun 28, 6:00 AM",
   "weather": null,
   "theme": {
     "emoji": "\ud83c\udf86",
@@ -11,73 +11,40 @@
   },
   "week": [
     {
-      "date": "2026-06-27",
-      "label": "Today \u00b7 Sat Jun 27",
-      "weather": null,
+      "date": "2026-06-28",
+      "label": "Today \u00b7 Sun Jun 28",
+      "weather": {
+        "high_f": 82,
+        "low_f": 71,
+        "precip_pct": 38,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
-          "time": "all day",
-          "title": "Oil Change for Audi",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-06-27T00:00"
-        },
-        {
-          "time": "9:00 am",
-          "title": "\ud83e\uddd8 All-Levels Hatha",
-          "location": "Karma Yoga",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-27T09:00:00-04:00"
-        },
-        {
-          "time": "3:48 pm",
-          "title": "\ud83d\ude97 Drive to Giving Tree K9 Club (Milo)",
+          "time": "7:40 am",
+          "title": "\ud83d\ude97 Drive to East Potomac Golf",
           "location": "",
           "all_day": false,
           "is_drive": true,
-          "sort": "2026-06-27T15:48:00-04:00"
+          "sort": "2026-06-28T07:40:00-04:00"
         },
         {
-          "time": "4:00 pm",
-          "title": "\ud83d\udc3e Milo \u2014 Giving Tree K9 reservation",
+          "time": "8:00 am",
+          "title": "\u26f3 Golf \u2014 East Potomac (White Course)",
           "location": "",
           "all_day": false,
           "is_drive": false,
-          "sort": "2026-06-27T16:00:00-04:00"
-        }
-      ],
-      "conflicts": []
-    },
-    {
-      "date": "2026-06-28",
-      "label": "Tomorrow \u00b7 Sun Jun 28",
-      "weather": null,
-      "events": [
-        {
-          "time": "8:30 am",
-          "title": "Reservation at East Potomac Golf Links - WHITE Course",
-          "location": "East Potomac Golf Links - WHITE Course, East Potomac Golf Links - WHITE Course, 972 Ohio Dr SW, Washington, DC 20024, US",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-28T08:30:00-04:00"
+          "sort": "2026-06-28T08:00:00-04:00"
         },
         {
-          "time": "8:30 am",
-          "title": "Reservation at East Potomac Golf Links - WHITE Course",
-          "location": "East Potomac Golf Links - WHITE Course, East Potomac Golf Links - WHITE Course, 972 Ohio Dr SW, Washington, DC 20024, US",
+          "time": "11:10 am",
+          "title": "\ud83d\ude97 Drive to Mi Vida (District Wharf)",
+          "location": "",
           "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-28T08:30:00-04:00"
-        },
-        {
-          "time": "8:40 am",
-          "title": "Reservation at East Potomac Golf Links - WHITE Course",
-          "location": "East Potomac Golf Links - WHITE Course, East Potomac Golf Links - WHITE Course, 972 Ohio Dr SW, Washington, DC 20024, US",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-28T08:40:00-04:00"
+          "is_drive": true,
+          "sort": "2026-06-28T11:10:00-04:00"
         },
         {
           "time": "11:30 am",
@@ -100,8 +67,15 @@
     },
     {
       "date": "2026-06-29",
-      "label": "Monday \u00b7 Jun 29",
-      "weather": null,
+      "label": "Tomorrow \u00b7 Mon Jun 29",
+      "weather": {
+        "high_f": 85,
+        "low_f": 69,
+        "precip_pct": 7,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -129,7 +103,7 @@
         },
         {
           "time": "8:30 am",
-          "title": "\ud83d\ude97 Drop off Henry \u2014 Chelsea Camp",
+          "title": "\ud83d\ude97 Rhys \u2014 Car pool",
           "location": "",
           "all_day": false,
           "is_drive": true,
@@ -137,7 +111,7 @@
         },
         {
           "time": "2:30 pm",
-          "title": "\ud83d\ude97 Pick up Henry \u2014 Chelsea Camp",
+          "title": "\ud83d\ude97 Schwartz \u2014 Chelsea Camp",
           "location": "",
           "all_day": false,
           "is_drive": true,
@@ -149,7 +123,14 @@
     {
       "date": "2026-06-30",
       "label": "Tuesday \u00b7 Jun 30",
-      "weather": null,
+      "weather": {
+        "high_f": 95,
+        "low_f": 68,
+        "precip_pct": 4,
+        "weather_code": 95,
+        "emoji": "\u26c8",
+        "label": "Thunderstorm"
+      },
       "events": [
         {
           "time": "all day",
@@ -161,11 +142,19 @@
         },
         {
           "time": "8:30 am",
-          "title": "\ud83d\ude97 Drop off Henry \u2014 Chelsea Camp",
+          "title": "\ud83d\ude97 Taylor \u2014 Car pool",
           "location": "",
           "all_day": false,
           "is_drive": true,
           "sort": "2026-06-30T08:30:00-04:00"
+        },
+        {
+          "time": "9:30 am",
+          "title": "\ud83d\ude97 Drive to Allergy Test (ENT)",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-06-30T09:30:00-04:00"
         },
         {
           "time": "9:45 am",
@@ -177,7 +166,7 @@
         },
         {
           "time": "2:30 pm",
-          "title": "\ud83d\ude97 Pick up Henry \u2014 Chelsea Camp",
+          "title": "\ud83d\ude97 Schwartz\u2014 Chelsea Camp",
           "location": "",
           "all_day": false,
           "is_drive": true,
@@ -205,7 +194,14 @@
     {
       "date": "2026-07-01",
       "label": "Wednesday \u00b7 Jul 1",
-      "weather": null,
+      "weather": {
+        "high_f": 101,
+        "low_f": 72,
+        "precip_pct": 4,
+        "weather_code": 95,
+        "emoji": "\u26c8",
+        "label": "Thunderstorm"
+      },
       "events": [
         {
           "time": "all day",
@@ -217,7 +213,7 @@
         },
         {
           "time": "8:30 am",
-          "title": "\ud83d\ude97 Drop off Henry \u2014 Chelsea Camp",
+          "title": "\ud83d\ude97 Esther \u2014 Car pool",
           "location": "",
           "all_day": false,
           "is_drive": true,
@@ -225,7 +221,7 @@
         },
         {
           "time": "2:30 pm",
-          "title": "\ud83d\ude97 Pick up Henry \u2014 Chelsea Camp",
+          "title": "\ud83d\ude97 Schwartz\u2014 Chelsea Camp",
           "location": "",
           "all_day": false,
           "is_drive": true,
@@ -260,7 +256,14 @@
     {
       "date": "2026-07-02",
       "label": "Thursday \u00b7 Jul 2",
-      "weather": null,
+      "weather": {
+        "high_f": 104,
+        "low_f": 80,
+        "precip_pct": 4,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -272,7 +275,7 @@
         },
         {
           "time": "8:30 am",
-          "title": "\ud83d\ude97 Drop off Henry \u2014 Chelsea Camp",
+          "title": "\ud83d\ude97 Taylor \u2014 Chelsea Camp",
           "location": "",
           "all_day": false,
           "is_drive": true,
@@ -288,27 +291,11 @@
         },
         {
           "time": "2:30 pm",
-          "title": "\ud83d\ude97 Pick up Henry \u2014 Chelsea Camp",
+          "title": "\ud83d\ude97 Schwartz\u2014 Chelsea Camp",
           "location": "",
           "all_day": false,
           "is_drive": true,
           "sort": "2026-07-02T14:30:00-04:00"
-        },
-        {
-          "time": "5:00 pm",
-          "title": "Jasmine's bday Part 1",
-          "location": "444 W Broad St, Falls Church, VA 22046, USA; https://meet.google.com/xbx-emmp-xiw",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-02T17:00:00-04:00"
-        },
-        {
-          "time": "5:00 pm",
-          "title": "Jasmine's bday Part 1",
-          "location": "444 W Broad St, Falls Church, VA 22046, USA; https://meet.google.com/xbx-emmp-xiw",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-02T17:00:00-04:00"
         },
         {
           "time": "5:00 pm",
@@ -327,49 +314,19 @@
           "sort": "2026-07-02T19:00:00-04:00"
         }
       ],
-      "conflicts": [
-        {
-          "a": "Jasmine's bday Part 1",
-          "a_time": "5:00 pm",
-          "b": "Jasmine's bday Part 1",
-          "b_time": "5:00 pm"
-        },
-        {
-          "a": "Jasmine's bday Part 1",
-          "a_time": "5:00 pm",
-          "b": "Jasmine's bday Part 1",
-          "b_time": "5:00 pm"
-        },
-        {
-          "a": "Jasmine's bday Part 1",
-          "a_time": "5:00 pm",
-          "b": "Ignite \u26be Pitching/Catcher Development",
-          "b_time": "7:00 pm"
-        },
-        {
-          "a": "Jasmine's bday Part 1",
-          "a_time": "5:00 pm",
-          "b": "Jasmine's bday Part 1",
-          "b_time": "5:00 pm"
-        },
-        {
-          "a": "Jasmine's bday Part 1",
-          "a_time": "5:00 pm",
-          "b": "Ignite \u26be Pitching/Catcher Development",
-          "b_time": "7:00 pm"
-        },
-        {
-          "a": "Jasmine's bday Part 1",
-          "a_time": "5:00 pm",
-          "b": "Ignite \u26be Pitching/Catcher Development",
-          "b_time": "7:00 pm"
-        }
-      ]
+      "conflicts": []
     },
     {
       "date": "2026-07-03",
       "label": "Friday \u00b7 Jul 3",
-      "weather": null,
+      "weather": {
+        "high_f": 104,
+        "low_f": 82,
+        "precip_pct": 17,
+        "weather_code": 95,
+        "emoji": "\u26c8",
+        "label": "Thunderstorm"
+      },
       "events": [
         {
           "time": "9:00 am",
@@ -412,6 +369,20 @@
           "b_time": "4:00 pm"
         }
       ]
+    },
+    {
+      "date": "2026-07-04",
+      "label": "Saturday \u00b7 Jul 4",
+      "weather": {
+        "high_f": 103,
+        "low_f": 82,
+        "precip_pct": 29,
+        "weather_code": 95,
+        "emoji": "\u26c8",
+        "label": "Thunderstorm"
+      },
+      "events": [],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -419,44 +390,34 @@
       {
         "title": "Brandee Birthday",
         "day": "Mon Jun 29",
-        "days_out": 2
+        "days_out": 1
       },
       {
         "title": "Keith's birthday",
         "day": "Wed Jul 1",
+        "days_out": 3
+      },
+      {
+        "title": "Jasmine's bday Part 1",
+        "day": "Thu Jul 2",
         "days_out": 4
-      },
-      {
-        "title": "Jasmine's bday Part 1",
-        "day": "Thu Jul 2",
-        "days_out": 5
-      },
-      {
-        "title": "Jasmine's bday Part 1",
-        "day": "Thu Jul 2",
-        "days_out": 5
-      },
-      {
-        "title": "Jasmine's bday Part 1",
-        "day": "Thu Jul 2",
-        "days_out": 5
       },
       {
         "title": "Jen Lichtblau\u2019s Birthday",
         "day": "Mon Jul 13",
-        "days_out": 16
+        "days_out": 15
       }
     ],
     "holidays": [
       {
         "title": "Independence Day (substitute)",
         "day": "Fri Jul 3",
-        "days_out": 6
+        "days_out": 5
       },
       {
         "title": "Independence Day",
         "day": "Sat Jul 4",
-        "days_out": 7
+        "days_out": 6
       }
     ]
   }
