@@ -1,17 +1,5 @@
 [
   {
-    "id": "11c5a6905c0e8b15411868dde09491d4",
-    "source": "Gmail",
-    "title": "Reminder: Boarding  |  Trailblazer Cabin for Milo",
-    "start": null,
-    "end": null,
-    "location": "",
-    "description": "img {\r\n\t\t\t\t\tmax-width: 100%;\r\n\t\t\t\t}\r\n\t\t\t\tbody {\r\n\t\t\t\t\t-webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; width: 100% !important; height: 100%; line-height: 1.6em;\r\n\t\t\t\t}\r\n\t\t\t\tbody {\r\n\t\t\t\t\tbackground-color: #f6f6f6;\r\n\t\t\t\t}\r\n\t\t\t\t@media only screen and (max-width: 640px) {\r\n\t\t\t\t  body {\r\n\t\t\t\t    padding: 0 !important;\r\n\t\t\t\t  }\r\n\t\t\t\t  .container {\r\n\t\t\t\t    padding: 0 !important; width: 100% !important;\r\n\t\t\t\t  }\r\n\t\t\t\t  .content {\r\n\t\t\t\t    padding: 0 !important;\r\n\t\t\t\t    background-color: #FFFFFF;\r\n\t\t\t\t  }\r\n\t\t\t\t  .content-wrap {\r\n\t\t\t\t    padding: 10px !important;\r\n\t\t\t\t  }\r\n\t\t\t\t  .invoice {\r\n\t\t\t\t    width: 100% !important;\r\n\t\t\t\t  }\r\n\t\t\t\t}\r\n\t\t\t\r\n\t\t\r\n\r\n\t\t\r\n\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\tDear Esther,This is just a friendly reminder that Milo has a reservation for Boarding | Trailblazer Cabin from June 27, 2026 at 4:00 pm until June 28, 2026 at 1:00 pm.&gt;&gt;Here are some reminders for the upcoming reservation: &gt;Food Packing:\r\nIf you bring your pet's food, pack each serving in individual Ziploc bags for easy handling.Medication:\r\nIf your pet needs medication, organize them by date in a medication box for accurate administration.Vaccination Check:\r\nMake sure your pet's vaccinations are up to date, and provide the necessary documentation.Health Matters:\r\nPlease don't bring in pets showing symptoms of kennel cough or illness to maintain a healthy environment for al",
-    "uid": "<20260626201105.0d70760f8c81afa3@mailgun.gingrapp.com>",
-    "needs_review": true,
-    "from": "Giving Tree K9 Club <givingtreepetresort@mailgun.gingrapp.com>"
-  },
-  {
     "id": "0d8d33994637bf894d2fef873275413b",
     "source": "Gmail",
     "title": "Continued Technical Difficulties - Communications",
