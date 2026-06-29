@@ -598,5 +598,11 @@
     "action": "dismissed",
     "title": "Your next Fix is scheduled",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-06-29T15:04:13.390123+00:00",
+    "action": "approved",
+    "title": "Reservation CONFIRMED",
+    "source": "Gmail"
   }
 ]
