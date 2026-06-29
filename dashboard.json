@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T08:21:11.680508-04:00",
-  "generated_label": "Sun Jun 28, 8:21 AM",
+  "generated_at": "2026-06-29T06:01:02.025108-04:00",
+  "generated_label": "Mon Jun 29, 6:01 AM",
   "weather": null,
   "theme": {
     "emoji": "\ud83c\udf86",
@@ -11,56 +11,8 @@
   },
   "week": [
     {
-      "date": "2026-06-28",
-      "label": "Today \u00b7 Sun Jun 28",
-      "weather": null,
-      "events": [
-        {
-          "time": "7:40 am",
-          "title": "\ud83d\ude97 Drive to East Potomac Golf",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-06-28T07:40:00-04:00"
-        },
-        {
-          "time": "8:00 am",
-          "title": "\u26f3 Golf \u2014 East Potomac (White Course)",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-28T08:00:00-04:00"
-        },
-        {
-          "time": "11:10 am",
-          "title": "\ud83d\ude97 Drive to Mi Vida (District Wharf)",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-06-28T11:10:00-04:00"
-        },
-        {
-          "time": "11:30 am",
-          "title": "Mi Vida, District Wharf",
-          "location": "98 District Square SW  Washington, DC United States 20024",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-28T11:30:00-04:00"
-        },
-        {
-          "time": "5:30 pm",
-          "title": "\u2728 Sunday Self Care: Nidra & Pranayama",
-          "location": "Karma Yoga",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-28T17:30:00-04:00"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-06-29",
-      "label": "Tomorrow \u00b7 Mon Jun 29",
+      "label": "Today \u00b7 Mon Jun 29",
       "weather": null,
       "events": [
         {
@@ -108,7 +60,7 @@
     },
     {
       "date": "2026-06-30",
-      "label": "Tuesday \u00b7 Jun 30",
+      "label": "Tomorrow \u00b7 Tue Jun 30",
       "weather": null,
       "events": [
         {
@@ -334,6 +286,13 @@
       "weather": null,
       "events": [],
       "conflicts": []
+    },
+    {
+      "date": "2026-07-05",
+      "label": "Sunday \u00b7 Jul 5",
+      "weather": null,
+      "events": [],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -341,34 +300,34 @@
       {
         "title": "Brandee Birthday",
         "day": "Mon Jun 29",
-        "days_out": 1
+        "days_out": 0
       },
       {
         "title": "Keith's birthday",
         "day": "Wed Jul 1",
-        "days_out": 3
+        "days_out": 2
       },
       {
         "title": "Jasmine's bday Part 1",
         "day": "Thu Jul 2",
-        "days_out": 4
+        "days_out": 3
       },
       {
         "title": "Jen Lichtblau\u2019s Birthday",
         "day": "Mon Jul 13",
-        "days_out": 15
+        "days_out": 14
       }
     ],
     "holidays": [
       {
         "title": "Independence Day (substitute)",
         "day": "Fri Jul 3",
-        "days_out": 5
+        "days_out": 4
       },
       {
         "title": "Independence Day",
         "day": "Sat Jul 4",
-        "days_out": 6
+        "days_out": 5
       }
     ]
   }
