@@ -610,5 +610,11 @@
     "action": "dismissed",
     "title": "Villarreal Virginia Academy - Upcoming Installment Payment",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-06-29T15:56:03.441896+00:00",
+    "action": "dismissed",
+    "title": "Reservation CONFIRMED",
+    "source": "Gmail"
   }
 ]
