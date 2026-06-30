@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-30T08:23:17.579104-04:00",
-  "generated_label": "Tue Jun 30, 8:23 AM",
+  "generated_at": "2026-06-30T09:16:28.121357-04:00",
+  "generated_label": "Tue Jun 30, 9:16 AM",
   "weather": null,
   "theme": {
     "emoji": "\ud83c\udf86",
@@ -266,6 +266,14 @@
       "label": "Sunday \u00b7 Jul 5",
       "weather": null,
       "events": [
+        {
+          "time": "8:20 am",
+          "title": "\ud83d\ude97 Drive to East Potomac Golf Links",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-07-05T08:20:00-04:00"
+        },
         {
           "time": "8:40 am",
           "title": "Reservation at East Potomac Golf Links - Red",
