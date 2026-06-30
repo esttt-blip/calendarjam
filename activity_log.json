@@ -646,5 +646,11 @@
     "action": "dismissed",
     "title": "Reservation CONFIRMED",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-06-30T10:53:37.531139+00:00",
+    "action": "dismissed",
+    "title": "Simona Antonescu added a note for Henry Scott about Archery Camp:\r\n 6/22-6/26 on Fri, Jun 26 at 9:00am",
+    "source": "Gmail"
   }
 ]
