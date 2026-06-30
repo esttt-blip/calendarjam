@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-29T10:53:29.796840-04:00",
-  "generated_label": "Mon Jun 29, 10:53 AM",
+  "generated_at": "2026-06-30T06:01:00.532698-04:00",
+  "generated_label": "Tue Jun 30, 6:01 AM",
   "weather": null,
   "theme": {
     "emoji": "\ud83c\udf86",
@@ -11,64 +11,8 @@
   },
   "week": [
     {
-      "date": "2026-06-29",
-      "label": "Today \u00b7 Mon Jun 29",
-      "weather": null,
-      "events": [
-        {
-          "time": "all day",
-          "title": "The Hill Launch Week",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-06-29T00:00"
-        },
-        {
-          "time": "all day",
-          "title": "Brandee Birthday",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-06-29T00:00"
-        },
-        {
-          "time": "all day",
-          "title": "Henry: Chelsea FC Camp @ The St. James",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-06-29T00:00"
-        },
-        {
-          "time": "8:30 am",
-          "title": "\ud83d\ude97 Rhys \u2014 Car pool",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-06-29T08:30:00-04:00"
-        },
-        {
-          "time": "2:30 pm",
-          "title": "\ud83d\ude97 Schwartz \u2014 Chelsea Camp",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-06-29T14:30:00-04:00"
-        },
-        {
-          "time": "4:00 pm",
-          "title": "Nervin- yard guy",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-29T16:00:00-04:00"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-06-30",
-      "label": "Tomorrow \u00b7 Tue Jun 30",
+      "label": "Today \u00b7 Tue Jun 30",
       "weather": null,
       "events": [
         {
@@ -132,7 +76,7 @@
     },
     {
       "date": "2026-07-01",
-      "label": "Wednesday \u00b7 Jul 1",
+      "label": "Tomorrow \u00b7 Wed Jul 1",
       "weather": null,
       "events": [
         {
@@ -321,43 +265,71 @@
       "date": "2026-07-05",
       "label": "Sunday \u00b7 Jul 5",
       "weather": null,
-      "events": [],
+      "events": [
+        {
+          "time": "8:40 am",
+          "title": "Reservation at East Potomac Golf Links - Red",
+          "location": "East Potomac Golf Links - Red, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-05T08:40:00-04:00"
+        },
+        {
+          "time": "8:40 am",
+          "title": "Reservation at East Potomac Golf Links - Red",
+          "location": "East Potomac Golf Links - Red, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-05T08:40:00-04:00"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "date": "2026-07-06",
+      "label": "Monday \u00b7 Jul 6",
+      "weather": null,
+      "events": [
+        {
+          "time": "7:00 pm",
+          "title": "Ignite \u26be Infield Development",
+          "location": "7731 Leesburg Pike, Falls Church, VA 22043",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-06T19:00:00-04:00"
+        }
+      ],
       "conflicts": []
     }
   ],
   "horizon": {
     "birthdays": [
       {
-        "title": "Brandee Birthday",
-        "day": "Mon Jun 29",
-        "days_out": 0
-      },
-      {
         "title": "Keith's birthday",
         "day": "Wed Jul 1",
-        "days_out": 2
+        "days_out": 1
       },
       {
         "title": "Jasmine's bday Part 1",
         "day": "Thu Jul 2",
-        "days_out": 3
+        "days_out": 2
       },
       {
         "title": "Jen Lichtblau\u2019s Birthday",
         "day": "Mon Jul 13",
-        "days_out": 14
+        "days_out": 13
       }
     ],
     "holidays": [
       {
         "title": "Independence Day (substitute)",
         "day": "Fri Jul 3",
-        "days_out": 4
+        "days_out": 3
       },
       {
         "title": "Independence Day",
         "day": "Sat Jul 4",
-        "days_out": 5
+        "days_out": 4
       }
     ]
   }
