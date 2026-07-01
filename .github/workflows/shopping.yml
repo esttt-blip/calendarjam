@@ -1,0 +1,35 @@
+name: Shopping monitor
+
+on:
+  schedule:
+    - cron: "0 12 * * *"  # ~8 AM ET daily — direct site fetch, no API budget, so daily is free
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  shopping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install requests
+
+      - name: Run shopping monitor
+        run: python shopping.py
+
+      - name: Commit shopping.json
+        run: |
+          git config user.name "calendarjam-bot"
+          git config user.email "calendarjam@users.noreply.github.com"
+          git add shopping.json
+          if ! git diff --staged --quiet; then
+            git commit -m "shopping: update $(date -u +%Y-%m-%d)"
+            git push
+          fi
