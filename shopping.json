@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "id": "oofos-oocoozie-thermo-white-w8",
+      "name": "OOFOS OOcoozie Thermo Mule \u2014 White \u00b7 W8",
+      "source": "shopify",
+      "url": "https://www.oofos.com/products/womens-oocoozie-thermo-mule-white.json",
+      "match": {
+        "size": "8",
+        "color": "White Thermo"
+      },
+      "buy_url": "https://www.oofos.com/products/womens-oocoozie-thermo-mule-white",
+      "status": {
+        "updated": "2026-06-30",
+        "price": 119.95,
+        "msrp": 119.95,
+        "compare_at": null,
+        "in_stock": true,
+        "is_deal": false,
+        "pct_off": 0
+      },
+      "history": [
+        {
+          "date": "2026-06-30",
+          "price": 119.95
+        }
+      ]
+    }
+  ]
+}
