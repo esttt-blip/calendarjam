@@ -348,6 +348,18 @@ st.markdown("""
   .ftbl-b0 td { background:#ffffff; }
   .ftbl-b1 td { background:#f3f4f8; }
   .ffnum { font-family:ui-monospace,monospace; font-size:11.5px; color:#5b5b6b; white-space:nowrap; }
+
+  /* Shopping deals cell — only rendered when something's on sale */
+  .deal-card { background:linear-gradient(135deg,#e9f7ef,#f4fbf6); border:1.5px solid #1c7a46; }
+  .deal-row { padding:8px 0; border-top:1px solid #d7ecdf; }
+  .deal-row.first { border-top:none; }
+  .deal-name { font-size:13.5px; font-weight:600; color:#1a1a2e; }
+  .deal-price { font-size:15px; font-weight:800; color:#1c7a46; margin-top:2px; }
+  .deal-was { font-size:12px; font-weight:500; color:#9a9aa7; text-decoration:line-through; margin-left:4px; }
+  .deal-badge { background:#1c7a46; color:#fff; font-size:10px; font-weight:700; padding:2px 7px;
+                border-radius:10px; margin-left:6px; vertical-align:middle; }
+  .deal-link { font-size:12px; font-weight:700; color:#1c7a46; text-decoration:none; margin-top:3px;
+               display:inline-block; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -357,6 +369,7 @@ activity_log, _ = fetch_file("activity_log.json")
 open_items, open_sha = fetch_file("app_open_items.json")
 agents_data, _ = fetch_file("agents.json")
 ignored_conflicts, _ = fetch_file("ignored_conflicts.json")
+shopping, _ = fetch_file("shopping.json")
 pending = pending or []
 activity_log = activity_log or []
 if open_items is None:
@@ -425,6 +438,26 @@ if all_conflicts or n_pending:
     if n_pending:
         bits.append(f"✅ {n_pending} to review")
     st.markdown(f"<div class='attention'><b>Heads up</b> &nbsp;·&nbsp; {' &nbsp;·&nbsp; '.join(bits)}</div>",
+                unsafe_allow_html=True)
+
+# ─────────────────────────── shopping deals (only when on sale) ───────────────────────────
+
+_deals = [p for p in (shopping or {}).get("products", []) if p.get("status", {}).get("is_deal")]
+if _deals:
+    rows = ""
+    for i, p in enumerate(_deals):
+        s = p.get("status", {})
+        first = " first" if i == 0 else ""
+        pct = s.get("pct_off", 0)
+        badge = f"<span class='deal-badge'>&minus;{pct}%</span>" if pct else ""
+        was = (f"<span class='deal-was'>was ${s['msrp']:,.2f}</span>"
+               if s.get("msrp") and s.get("price") and s["price"] < s["msrp"] else "")
+        stock = "in stock" if s.get("in_stock") else "⚠️ out of stock"
+        rows += (f"<div class='deal-row{first}'><div class='deal-name'>{p.get('name','')}</div>"
+                 f"<div class='deal-price'>${s.get('price',0):,.2f}{was}{badge}</div>"
+                 f"<a class='deal-link' href='{p.get('buy_url','#')}' target='_blank'>View &rarr;</a>"
+                 f"<span class='muted'> · {stock}</span></div>")
+    st.markdown(f"<div class='card deal-card'><div class='day-head'>🛍️ Deals — on sale now</div>{rows}</div>",
                 unsafe_allow_html=True)
 
 # ─────────────────────────── 2. today (+ insights) ───────────────────────────
