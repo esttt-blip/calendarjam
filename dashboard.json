@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-30T09:16:28.121357-04:00",
-  "generated_label": "Tue Jun 30, 9:16 AM",
+  "generated_at": "2026-07-01T06:01:05.931527-04:00",
+  "generated_label": "Wed Jul 1, 6:01 AM",
   "weather": null,
   "theme": {
     "emoji": "\ud83c\udf86",
@@ -11,72 +11,8 @@
   },
   "week": [
     {
-      "date": "2026-06-30",
-      "label": "Today \u00b7 Tue Jun 30",
-      "weather": null,
-      "events": [
-        {
-          "time": "all day",
-          "title": "Henry: Chelsea FC Camp @ The St. James",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-06-30T00:00"
-        },
-        {
-          "time": "8:30 am",
-          "title": "\ud83d\ude97 Taylor \u2014 Car pool",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-06-30T08:30:00-04:00"
-        },
-        {
-          "time": "9:30 am",
-          "title": "\ud83d\ude97 Drive to Allergy Test (ENT)",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-06-30T09:30:00-04:00"
-        },
-        {
-          "time": "9:45 am",
-          "title": "Allergy Test",
-          "location": "ENT Specialists of Northern Virginia - Arlington (1005 N Glebe Rd 500, Arlington, VA 22201, United States)",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-30T09:45:00-04:00"
-        },
-        {
-          "time": "2:30 pm",
-          "title": "\ud83d\ude97 Schwartz\u2014 Chelsea Camp",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-06-30T14:30:00-04:00"
-        },
-        {
-          "time": "5:15 pm",
-          "title": "\ud83d\ude97 Drive to Bluemont Park (Ignite Practice)",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-06-30T17:15:00-04:00"
-        },
-        {
-          "time": "5:30 pm",
-          "title": "Ignite \u26be Practice",
-          "location": "601 N Manchester St, Arlington, VA 22203 (Side Fields / Main Field if open)",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-06-30T17:30:00-04:00"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-07-01",
-      "label": "Tomorrow \u00b7 Wed Jul 1",
+      "label": "Today \u00b7 Wed Jul 1",
       "weather": null,
       "events": [
         {
@@ -131,7 +67,7 @@
     },
     {
       "date": "2026-07-02",
-      "label": "Thursday \u00b7 Jul 2",
+      "label": "Tomorrow \u00b7 Thu Jul 2",
       "weather": null,
       "events": [
         {
@@ -289,6 +225,14 @@
           "all_day": false,
           "is_drive": false,
           "sort": "2026-07-05T08:40:00-04:00"
+        },
+        {
+          "time": "6:00 pm",
+          "title": "The Smiths: Hot Wings of Death",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-05T18:00:00-04:00"
         }
       ],
       "conflicts": []
@@ -308,6 +252,30 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-07-07",
+      "label": "Tuesday \u00b7 Jul 7",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "Sylvia Wilson B-Day",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-07-07T00:00"
+        },
+        {
+          "time": "6:00 pm",
+          "title": "Ignite \u26be Athletic Development",
+          "location": "5130 Wilson Blvd, Arlington, VA 22205",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-07T18:00:00-04:00"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -315,29 +283,29 @@
       {
         "title": "Keith's birthday",
         "day": "Wed Jul 1",
-        "days_out": 1
+        "days_out": 0
       },
       {
         "title": "Jasmine's bday Part 1",
         "day": "Thu Jul 2",
-        "days_out": 2
+        "days_out": 1
       },
       {
         "title": "Jen Lichtblau\u2019s Birthday",
         "day": "Mon Jul 13",
-        "days_out": 13
+        "days_out": 12
       }
     ],
     "holidays": [
       {
         "title": "Independence Day (substitute)",
         "day": "Fri Jul 3",
-        "days_out": 3
+        "days_out": 2
       },
       {
         "title": "Independence Day",
         "day": "Sat Jul 4",
-        "days_out": 4
+        "days_out": 3
       }
     ]
   }
