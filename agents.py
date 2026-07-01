@@ -112,8 +112,12 @@ def run_flight_agent(agent: dict) -> None:
         if e.get("business"):
             snap[f"{e['label']} business"] = e["business"]["low"]
     if len(snap) > 1:
-        agent.setdefault("history", []).append(snap)
-        agent["history"] = agent["history"][-180:]
+        hist = agent.setdefault("history", [])
+        if hist and hist[-1].get("date") == snap["date"]:
+            hist[-1] = snap  # same-day rerun → replace, don't double-log
+        else:
+            hist.append(snap)
+        agent["history"] = hist[-180:]
 
 
 def main() -> None:

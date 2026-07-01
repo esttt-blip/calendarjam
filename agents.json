@@ -2,7 +2,7 @@
   "agents": [
     {
       "id": "italy-flights",
-      "name": "\u2708\ufe0f Italy flight-watch",
+      "name": "✈️ Italy flight-watch",
       "type": "flight-multicity",
       "config": {
         "travelers": 3,
@@ -10,42 +10,12 @@
           "economy",
           "business"
         ],
-        "airline_label": "United preferred \u00b7 Star Alliance ok",
+        "airline_label": "United preferred · Star Alliance ok",
         "include_airlines": "STAR_ALLIANCE",
-        "route_note": "IAD \u2192 Rome, home Munich \u2192 IAD. Comparing Dec 18/19 out, Jan 2/3 back.",
+        "route_note": "IAD → Rome (Dec 19), home Munich → IAD. Comparing Jan 2 vs Jan 3 return.",
         "plans": [
           {
-            "label": "Dec 18 \u2192 Jan 2",
-            "legs": [
-              {
-                "from": "IAD",
-                "to": "FCO",
-                "date": "2026-12-18"
-              },
-              {
-                "from": "MUC",
-                "to": "IAD",
-                "date": "2027-01-02"
-              }
-            ]
-          },
-          {
-            "label": "Dec 18 \u2192 Jan 3",
-            "legs": [
-              {
-                "from": "IAD",
-                "to": "FCO",
-                "date": "2026-12-18"
-              },
-              {
-                "from": "MUC",
-                "to": "IAD",
-                "date": "2027-01-03"
-              }
-            ]
-          },
-          {
-            "label": "Dec 19 \u2192 Jan 2",
+            "label": "Dec 19 → Jan 2",
             "legs": [
               {
                 "from": "IAD",
@@ -60,7 +30,7 @@
             ]
           },
           {
-            "label": "Dec 19 \u2192 Jan 3",
+            "label": "Dec 19 → Jan 3",
             "legs": [
               {
                 "from": "IAD",
@@ -79,73 +49,11 @@
       "status": {
         "state": "live",
         "updated": "2026-06-28",
-        "cheapest_plan": "Dec 18 \u2192 Jan 3",
+        "cheapest_plan": "Dec 19 → Jan 3",
         "cheapest_econ": 4914,
         "results": [
           {
-            "label": "Dec 18 \u2192 Jan 2",
-            "economy": {
-              "low": 5143,
-              "flight_numbers": [
-                "TP 234",
-                "TP 836"
-              ],
-              "airlines": [
-                "Tap Air Portugal",
-                "Tap Air Portugal"
-              ],
-              "is_united": false,
-              "layovers": 1,
-              "insights": null
-            },
-            "business": {
-              "low": 12028,
-              "flight_numbers": [
-                "TP 234",
-                "TP 836"
-              ],
-              "airlines": [
-                "Tap Air Portugal",
-                "Tap Air Portugal"
-              ],
-              "is_united": false,
-              "layovers": 1,
-              "insights": null
-            }
-          },
-          {
-            "label": "Dec 18 \u2192 Jan 3",
-            "economy": {
-              "low": 4914,
-              "flight_numbers": [
-                "TP 234",
-                "TP 836"
-              ],
-              "airlines": [
-                "Tap Air Portugal",
-                "Tap Air Portugal"
-              ],
-              "is_united": false,
-              "layovers": 1,
-              "insights": null
-            },
-            "business": {
-              "low": 14565,
-              "flight_numbers": [
-                "TP 234",
-                "TP 836"
-              ],
-              "airlines": [
-                "Tap Air Portugal",
-                "Tap Air Portugal"
-              ],
-              "is_united": false,
-              "layovers": 1,
-              "insights": null
-            }
-          },
-          {
-            "label": "Dec 19 \u2192 Jan 2",
+            "label": "Dec 19 → Jan 2",
             "economy": {
               "low": 5143,
               "flight_numbers": [
@@ -176,7 +84,7 @@
             }
           },
           {
-            "label": "Dec 19 \u2192 Jan 3",
+            "label": "Dec 19 → Jan 3",
             "economy": {
               "low": 4914,
               "flight_numbers": [
@@ -211,25 +119,17 @@
       "history": [
         {
           "date": "2026-06-27",
-          "Dec 18 \u2192 Jan 2 economy": 5143,
-          "Dec 18 \u2192 Jan 2 business": 12028,
-          "Dec 18 \u2192 Jan 3 economy": 4914,
-          "Dec 18 \u2192 Jan 3 business": 14565,
-          "Dec 19 \u2192 Jan 2 economy": 5143,
-          "Dec 19 \u2192 Jan 2 business": 12028,
-          "Dec 19 \u2192 Jan 3 economy": 4914,
-          "Dec 19 \u2192 Jan 3 business": 14565
+          "Dec 19 → Jan 2 economy": 5143,
+          "Dec 19 → Jan 2 business": 12028,
+          "Dec 19 → Jan 3 economy": 4914,
+          "Dec 19 → Jan 3 business": 14565
         },
         {
           "date": "2026-06-28",
-          "Dec 18 \u2192 Jan 2 economy": 5143,
-          "Dec 18 \u2192 Jan 2 business": 12028,
-          "Dec 18 \u2192 Jan 3 economy": 4914,
-          "Dec 18 \u2192 Jan 3 business": 14565,
-          "Dec 19 \u2192 Jan 2 economy": 5143,
-          "Dec 19 \u2192 Jan 2 business": 12028,
-          "Dec 19 \u2192 Jan 3 economy": 4914,
-          "Dec 19 \u2192 Jan 3 business": 14565
+          "Dec 19 → Jan 2 economy": 5143,
+          "Dec 19 → Jan 2 business": 12028,
+          "Dec 19 → Jan 3 economy": 4914,
+          "Dec 19 → Jan 3 business": 14565
         }
       ]
     }
