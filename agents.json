@@ -2,7 +2,7 @@
   "agents": [
     {
       "id": "italy-flights",
-      "name": "✈️ Italy flight-watch",
+      "name": "\u2708\ufe0f Italy flight-watch",
       "type": "flight-multicity",
       "config": {
         "travelers": 3,
@@ -10,12 +10,12 @@
           "economy",
           "business"
         ],
-        "airline_label": "United preferred · Star Alliance ok",
+        "airline_label": "United preferred \u00b7 Star Alliance ok",
         "include_airlines": "STAR_ALLIANCE",
-        "route_note": "IAD → Rome (Dec 19), home Munich → IAD. Comparing Jan 2 vs Jan 3 return.",
+        "route_note": "IAD \u2192 Rome (Dec 19), home Munich \u2192 IAD. Comparing Jan 2 vs Jan 3 return.",
         "plans": [
           {
-            "label": "Dec 19 → Jan 2",
+            "label": "Dec 19 \u2192 Jan 2",
             "legs": [
               {
                 "from": "IAD",
@@ -30,7 +30,7 @@
             ]
           },
           {
-            "label": "Dec 19 → Jan 3",
+            "label": "Dec 19 \u2192 Jan 3",
             "legs": [
               {
                 "from": "IAD",
@@ -48,14 +48,14 @@
       },
       "status": {
         "state": "live",
-        "updated": "2026-06-28",
-        "cheapest_plan": "Dec 19 → Jan 3",
-        "cheapest_econ": 4914,
+        "updated": "2026-07-01",
+        "cheapest_plan": "Dec 19 \u2192 Jan 3",
+        "cheapest_econ": 4910,
         "results": [
           {
-            "label": "Dec 19 → Jan 2",
+            "label": "Dec 19 \u2192 Jan 2",
             "economy": {
-              "low": 5143,
+              "low": 5145,
               "flight_numbers": [
                 "TP 232",
                 "TP 832"
@@ -69,7 +69,7 @@
               "insights": null
             },
             "business": {
-              "low": 12028,
+              "low": 12030,
               "flight_numbers": [
                 "TP 232",
                 "TP 832"
@@ -84,9 +84,9 @@
             }
           },
           {
-            "label": "Dec 19 → Jan 3",
+            "label": "Dec 19 \u2192 Jan 3",
             "economy": {
-              "low": 4914,
+              "low": 4910,
               "flight_numbers": [
                 "TP 232",
                 "TP 832"
@@ -100,7 +100,7 @@
               "insights": null
             },
             "business": {
-              "low": 14565,
+              "low": 12009,
               "flight_numbers": [
                 "TP 232",
                 "TP 832"
@@ -119,17 +119,24 @@
       "history": [
         {
           "date": "2026-06-27",
-          "Dec 19 → Jan 2 economy": 5143,
-          "Dec 19 → Jan 2 business": 12028,
-          "Dec 19 → Jan 3 economy": 4914,
-          "Dec 19 → Jan 3 business": 14565
+          "Dec 19 \u2192 Jan 2 economy": 5143,
+          "Dec 19 \u2192 Jan 2 business": 12028,
+          "Dec 19 \u2192 Jan 3 economy": 4914,
+          "Dec 19 \u2192 Jan 3 business": 14565
         },
         {
           "date": "2026-06-28",
-          "Dec 19 → Jan 2 economy": 5143,
-          "Dec 19 → Jan 2 business": 12028,
-          "Dec 19 → Jan 3 economy": 4914,
-          "Dec 19 → Jan 3 business": 14565
+          "Dec 19 \u2192 Jan 2 economy": 5143,
+          "Dec 19 \u2192 Jan 2 business": 12028,
+          "Dec 19 \u2192 Jan 3 economy": 4914,
+          "Dec 19 \u2192 Jan 3 business": 14565
+        },
+        {
+          "date": "2026-07-01",
+          "Dec 19 \u2192 Jan 2 economy": 5145,
+          "Dec 19 \u2192 Jan 2 business": 12030,
+          "Dec 19 \u2192 Jan 3 economy": 4910,
+          "Dec 19 \u2192 Jan 3 business": 12009
         }
       ]
     }
