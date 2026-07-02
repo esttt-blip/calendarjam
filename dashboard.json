@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-01T09:41:05.254786-04:00",
-  "generated_label": "Wed Jul 1, 9:41 AM",
+  "generated_at": "2026-07-02T06:01:05.120535-04:00",
+  "generated_label": "Thu Jul 2, 6:01 AM",
   "weather": null,
   "theme": {
     "emoji": "\ud83c\udf86",
@@ -11,63 +11,8 @@
   },
   "week": [
     {
-      "date": "2026-07-01",
-      "label": "Today \u00b7 Wed Jul 1",
-      "weather": null,
-      "events": [
-        {
-          "time": "all day",
-          "title": "Henry: Chelsea FC Camp @ The St. James",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-07-01T00:00"
-        },
-        {
-          "time": "8:30 am",
-          "title": "\ud83d\ude97 Esther \u2014 Car pool",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-07-01T08:30:00-04:00"
-        },
-        {
-          "time": "2:30 pm",
-          "title": "\ud83d\ude97 Schwartz\u2014 Chelsea Camp",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-07-01T14:30:00-04:00"
-        },
-        {
-          "time": "5:00 pm",
-          "title": "Taylor team dinner",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-01T17:00:00-04:00"
-        },
-        {
-          "time": "6:00 pm",
-          "title": "Keith's birthday",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-01T18:00:00-04:00"
-        }
-      ],
-      "conflicts": [
-        {
-          "a": "Taylor team dinner",
-          "a_time": "5:00 pm",
-          "b": "Keith's birthday",
-          "b_time": "6:00 pm"
-        }
-      ]
-    },
-    {
       "date": "2026-07-02",
-      "label": "Tomorrow \u00b7 Thu Jul 2",
+      "label": "Today \u00b7 Thu Jul 2",
       "weather": null,
       "events": [
         {
@@ -123,7 +68,7 @@
     },
     {
       "date": "2026-07-03",
-      "label": "Friday \u00b7 Jul 3",
+      "label": "Tomorrow \u00b7 Fri Jul 3",
       "weather": null,
       "events": [
         {
@@ -276,36 +221,79 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-07-08",
+      "label": "Wednesday \u00b7 Jul 8",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "Stay at The Westin Seattle",
+          "location": "The Westin Seattle, Seattle",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-07-08T00:00"
+        },
+        {
+          "time": "10:00 am",
+          "title": "Change lint filter",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-08T10:00:00-04:00"
+        },
+        {
+          "time": "12:00 pm",
+          "title": "Reservation at The Westin Seattle, Starts:07/08/26, Ends: 07/11/26 ",
+          "location": "The Westin Seattle 1900 5th Avenue   Seattle, Washington, USA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-08T12:00:00-04:00"
+        },
+        {
+          "time": "3:55 pm",
+          "title": "\ud83d\ude97 Drive to IAD (UA 326 to Seattle)",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-07-08T15:55:00-04:00"
+        },
+        {
+          "time": "5:55 pm",
+          "title": "Flight to Seattle (UA 326)",
+          "location": "Washington IAD",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-08T17:55:00-04:00"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
     "birthdays": [
       {
-        "title": "Keith's birthday",
-        "day": "Wed Jul 1",
-        "days_out": 0
-      },
-      {
         "title": "Jasmine's bday Part 1",
         "day": "Thu Jul 2",
-        "days_out": 1
+        "days_out": 0
       },
       {
         "title": "Jen Lichtblau\u2019s Birthday",
         "day": "Mon Jul 13",
-        "days_out": 12
+        "days_out": 11
       }
     ],
     "holidays": [
       {
         "title": "Independence Day (substitute)",
         "day": "Fri Jul 3",
-        "days_out": 2
+        "days_out": 1
       },
       {
         "title": "Independence Day",
         "day": "Sat Jul 4",
-        "days_out": 3
+        "days_out": 2
       }
     ]
   }
