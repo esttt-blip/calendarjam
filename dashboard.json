@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-03T06:01:07.182138-04:00",
-  "generated_label": "Fri Jul 3, 6:01 AM",
+  "generated_at": "2026-07-03T08:19:33.066605-04:00",
+  "generated_label": "Fri Jul 3, 8:19 AM",
   "weather": null,
   "theme": {
     "emoji": "\ud83c\udf86",
@@ -174,7 +174,7 @@
         {
           "time": "all day",
           "title": "Stay at The Westin Seattle",
-          "location": "The Westin Seattle, Seattle",
+          "location": "1900 5th Avenue, Seattle, Washington 98101, United States",
           "all_day": true,
           "is_drive": false,
           "sort": "2026-07-08T00:00"
