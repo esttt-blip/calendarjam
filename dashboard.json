@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-02T09:08:16.255937-04:00",
-  "generated_label": "Thu Jul 2, 9:08 AM",
+  "generated_at": "2026-07-03T06:01:07.182138-04:00",
+  "generated_label": "Fri Jul 3, 6:01 AM",
   "weather": null,
   "theme": {
     "emoji": "\ud83c\udf86",
@@ -11,64 +11,8 @@
   },
   "week": [
     {
-      "date": "2026-07-02",
-      "label": "Today \u00b7 Thu Jul 2",
-      "weather": null,
-      "events": [
-        {
-          "time": "all day",
-          "title": "Henry: Chelsea FC Camp @ The St. James",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-07-02T00:00"
-        },
-        {
-          "time": "8:30 am",
-          "title": "\ud83d\ude97 Taylor \u2014 Chelsea Camp",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-07-02T08:30:00-04:00"
-        },
-        {
-          "time": "11:30 am",
-          "title": "[hold] Shaq // Esther Lunch",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-02T11:30:00-04:00"
-        },
-        {
-          "time": "2:30 pm",
-          "title": "\ud83d\ude97 Schwartz\u2014 Chelsea Camp",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-07-02T14:30:00-04:00"
-        },
-        {
-          "time": "5:00 pm",
-          "title": "Jasmine's bday Part 1",
-          "location": "444 W Broad St, Falls Church, VA 22046, USA",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-02T17:00:00-04:00"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "Ignite \u26be Pitching/Catcher Development",
-          "location": "7731 Leesburg Pike, Falls Church, VA 22043",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-02T19:00:00-04:00"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-07-03",
-      "label": "Tomorrow \u00b7 Fri Jul 3",
+      "label": "Today \u00b7 Fri Jul 3",
       "weather": null,
       "events": [
         {
@@ -137,7 +81,7 @@
     },
     {
       "date": "2026-07-04",
-      "label": "Saturday \u00b7 Jul 4",
+      "label": "Tomorrow \u00b7 Sat Jul 4",
       "weather": null,
       "events": [],
       "conflicts": []
@@ -244,6 +188,14 @@
           "sort": "2026-07-08T10:00:00-04:00"
         },
         {
+          "time": "11:30 am",
+          "title": "Shaq // Esther Lunch",
+          "location": "Joon, 8045 Leesburg Pike Ste 120, Vienna, VA 22182, USA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-08T11:30:00-04:00"
+        },
+        {
           "time": "12:00 pm",
           "title": "Reservation at The Westin Seattle, Starts:07/08/26, Ends: 07/11/26 ",
           "location": "The Westin Seattle 1900 5th Avenue   Seattle, Washington, USA",
@@ -268,32 +220,41 @@
           "sort": "2026-07-08T17:55:00-04:00"
         }
       ],
+      "conflicts": [
+        {
+          "a": "Shaq // Esther Lunch",
+          "a_time": "11:30 am",
+          "b": "Reservation at The Westin Seattle, Starts:07/08/26, Ends: 07/11/26 ",
+          "b_time": "12:00 pm"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "label": "Thursday \u00b7 Jul 9",
+      "weather": null,
+      "events": [],
       "conflicts": []
     }
   ],
   "horizon": {
     "birthdays": [
       {
-        "title": "Jasmine's bday Part 1",
-        "day": "Thu Jul 2",
-        "days_out": 0
-      },
-      {
         "title": "Jen Lichtblau\u2019s Birthday",
         "day": "Mon Jul 13",
-        "days_out": 11
+        "days_out": 10
       }
     ],
     "holidays": [
       {
         "title": "Independence Day (substitute)",
         "day": "Fri Jul 3",
-        "days_out": 1
+        "days_out": 0
       },
       {
         "title": "Independence Day",
         "day": "Sat Jul 4",
-        "days_out": 2
+        "days_out": 1
       }
     ]
   }
