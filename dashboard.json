@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-03T09:11:57.659911-04:00",
-  "generated_label": "Fri Jul 3, 9:11 AM",
+  "generated_at": "2026-07-04T06:01:16.980878-04:00",
+  "generated_label": "Sat Jul 4, 6:01 AM",
   "weather": null,
   "theme": {
     "emoji": "\ud83c\udf86",
@@ -11,84 +11,24 @@
   },
   "week": [
     {
-      "date": "2026-07-03",
-      "label": "Today \u00b7 Fri Jul 3",
+      "date": "2026-07-04",
+      "label": "Today \u00b7 Sat Jul 4",
       "weather": null,
       "events": [
         {
-          "time": "8:20 am",
-          "title": "\ud83d\ude97 Drive to East Potomac Golf Links",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-07-03T08:20:00-04:00"
-        },
-        {
-          "time": "8:40 am",
-          "title": "\u26f3 Tee Time \u2014 East Potomac Golf Links",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-03T08:40:00-04:00"
-        },
-        {
           "time": "9:00 am",
-          "title": "\ud83d\udcda School Holiday (July 4 - Observed)",
-          "location": "",
+          "title": "\ud83e\uddd8 All-Levels Hatha",
+          "location": "Karma Yoga",
           "all_day": false,
           "is_drive": false,
-          "sort": "2026-07-03T09:00:00-04:00"
-        },
-        {
-          "time": "4:00 pm",
-          "title": "Boys haircuts",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-03T16:00:00-04:00"
-        },
-        {
-          "time": "7:10 pm",
-          "title": "\ud83d\ude97 Drive to Audi Field (Spirit vs Dash)",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-07-03T19:10:00-04:00"
-        },
-        {
-          "time": "8:00 pm",
-          "title": "Spirit vs Dash (Victory)",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-03T20:00:00-04:00"
+          "sort": "2026-07-04T09:00:00-04:00"
         }
       ],
-      "conflicts": [
-        {
-          "a": "\u26f3 Tee Time \u2014 East Potomac Golf Links",
-          "a_time": "8:40 am",
-          "b": "\ud83d\udcda School Holiday (July 4 - Observed)",
-          "b_time": "9:00 am"
-        },
-        {
-          "a": "\ud83d\udcda School Holiday (July 4 - Observed)",
-          "a_time": "9:00 am",
-          "b": "Boys haircuts",
-          "b_time": "4:00 pm"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-04",
-      "label": "Tomorrow \u00b7 Sat Jul 4",
-      "weather": null,
-      "events": [],
       "conflicts": []
     },
     {
       "date": "2026-07-05",
-      "label": "Sunday \u00b7 Jul 5",
+      "label": "Tomorrow \u00b7 Sun Jul 5",
       "weather": null,
       "events": [
         {
@@ -116,6 +56,14 @@
           "sort": "2026-07-05T08:40:00-04:00"
         },
         {
+          "time": "5:30 pm",
+          "title": "\u2728 Sunday Self Care: Nidra & Pranayama",
+          "location": "Karma Yoga",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-05T17:30:00-04:00"
+        },
+        {
           "time": "6:00 pm",
           "title": "The Smiths: Hot Wings of Death",
           "location": "",
@@ -124,7 +72,14 @@
           "sort": "2026-07-05T18:00:00-04:00"
         }
       ],
-      "conflicts": []
+      "conflicts": [
+        {
+          "a": "\u2728 Sunday Self Care: Nidra & Pranayama",
+          "a_time": "5:30 pm",
+          "b": "The Smiths: Hot Wings of Death",
+          "b_time": "6:00 pm"
+        }
+      ]
     },
     {
       "date": "2026-07-06",
@@ -226,6 +181,12 @@
           "a_time": "11:30 am",
           "b": "Reservation at The Westin Seattle, Starts:07/08/26, Ends: 07/11/26 ",
           "b_time": "12:00 pm"
+        },
+        {
+          "a": "Reservation at The Westin Seattle, Starts:07/08/26, Ends: 07/11/26 ",
+          "a_time": "12:00 pm",
+          "b": "FW: Bi-Weekly Product Health and Incident Review with ELT",
+          "b_time": "10:00 am"
         }
       ]
     },
@@ -235,6 +196,38 @@
       "weather": null,
       "events": [],
       "conflicts": []
+    },
+    {
+      "date": "2026-07-10",
+      "label": "Friday \u00b7 Jul 10",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "Stay at The Westin Seattle",
+          "location": "The Westin Seattle, Seattle",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-07-10T00:00"
+        },
+        {
+          "time": "10:00 am",
+          "title": "FW: Bi-Weekly Product Health and Incident Review with ELT",
+          "location": "https://draftkings.zoom.us/j/95183770035?pwd=jpUb1Xt5mcxx69DQkzdkaee60kpuZh.1",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-10T10:00:00-04:00"
+        },
+        {
+          "time": "4:23 pm",
+          "title": "Flight to Seattle (AS 3334)",
+          "location": "San Luis Obispo SBP",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-10T16:23:00-04:00"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -242,19 +235,14 @@
       {
         "title": "Jen Lichtblau\u2019s Birthday",
         "day": "Mon Jul 13",
-        "days_out": 10
+        "days_out": 9
       }
     ],
     "holidays": [
       {
-        "title": "Independence Day (substitute)",
-        "day": "Fri Jul 3",
-        "days_out": 0
-      },
-      {
         "title": "Independence Day",
         "day": "Sat Jul 4",
-        "days_out": 1
+        "days_out": 0
       }
     ]
   }

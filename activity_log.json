@@ -659,5 +659,19 @@
     "title": "\ud83c\udf71 MightyMeals delivery",
     "source": "Delivery",
     "when": "2026-07-22"
+  },
+  {
+    "ts": "2026-07-04T10:01:08.729738+00:00",
+    "action": "added",
+    "title": "\ud83e\uddd8 All-Levels Hatha",
+    "source": "Karma Yoga \ud83e\uddd8",
+    "when": "2026-07-04T13:00"
+  },
+  {
+    "ts": "2026-07-04T10:01:09.328375+00:00",
+    "action": "added",
+    "title": "\u2728 Sunday Self Care: Nidra & Pranayama",
+    "source": "Karma Yoga \ud83e\uddd8",
+    "when": "2026-07-05T21:30"
   }
 ]
