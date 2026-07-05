@@ -1,34 +1,18 @@
 {
-  "generated_at": "2026-07-04T08:18:21.118107-04:00",
-  "generated_label": "Sat Jul 4, 8:18 AM",
+  "generated_at": "2026-07-05T06:00:59.666573-04:00",
+  "generated_label": "Sun Jul 5, 6:00 AM",
   "weather": null,
   "theme": {
-    "emoji": "\ud83c\udf86",
-    "title": "Star-Spangled Week",
-    "blurb": "Fireworks, cookouts, and red-white-blue.",
-    "color1": "#3a47d5",
-    "color2": "#ff3838"
+    "emoji": "\ud83c\udfd6\ufe0f",
+    "title": "High Summer",
+    "blurb": "Heat, hydration, and hustle.",
+    "color1": "#ff512f",
+    "color2": "#f09819"
   },
   "week": [
     {
-      "date": "2026-07-04",
-      "label": "Today \u00b7 Sat Jul 4",
-      "weather": null,
-      "events": [
-        {
-          "time": "9:00 am",
-          "title": "\ud83e\uddd8 All-Levels Hatha",
-          "location": "Karma Yoga",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-04T09:00:00-04:00"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-07-05",
-      "label": "Tomorrow \u00b7 Sun Jul 5",
+      "label": "Today \u00b7 Sun Jul 5",
       "weather": null,
       "events": [
         {
@@ -41,16 +25,8 @@
         },
         {
           "time": "8:40 am",
-          "title": "Reservation at East Potomac Golf Links - Red",
-          "location": "East Potomac Golf Links - Red, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-05T08:40:00-04:00"
-        },
-        {
-          "time": "8:40 am",
-          "title": "Reservation at East Potomac Golf Links - Red",
-          "location": "East Potomac Golf Links - Red, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
+          "title": "Reservation at East Potomac Golf Links - RED Course",
+          "location": "East Potomac Golf Links - RED Course, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
           "all_day": false,
           "is_drive": false,
           "sort": "2026-07-05T08:40:00-04:00"
@@ -83,7 +59,7 @@
     },
     {
       "date": "2026-07-06",
-      "label": "Monday \u00b7 Jul 6",
+      "label": "Tomorrow \u00b7 Mon Jul 6",
       "weather": null,
       "events": [
         {
@@ -228,6 +204,30 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-07-11",
+      "label": "Saturday \u00b7 Jul 11",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "Alaska Cruise",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-07-11T00:00"
+        },
+        {
+          "time": "6:30 pm",
+          "title": "Spirit @ Courage (ion)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-11T18:30:00-04:00"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -235,15 +235,9 @@
       {
         "title": "Jen Lichtblau\u2019s Birthday",
         "day": "Mon Jul 13",
-        "days_out": 9
+        "days_out": 8
       }
     ],
-    "holidays": [
-      {
-        "title": "Independence Day",
-        "day": "Sat Jul 4",
-        "days_out": 0
-      }
-    ]
+    "holidays": []
   }
 }
