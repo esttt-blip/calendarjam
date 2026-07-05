@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-05T07:47:27.482852-04:00",
-  "generated_label": "Sun Jul 5, 7:47 AM",
+  "generated_at": "2026-07-05T08:41:48.729834-04:00",
+  "generated_label": "Sun Jul 5, 8:41 AM",
   "weather": null,
   "theme": {
-    "emoji": "\ud83c\udfd6\ufe0f",
-    "title": "High Summer",
-    "blurb": "Heat, hydration, and hustle.",
+    "emoji": "\ud83e\udd75",
+    "title": "Heat Wave",
+    "blurb": "Hydrate and seek shade out there.",
     "color1": "#ff512f",
     "color2": "#f09819"
   },
@@ -13,23 +13,22 @@
     {
       "date": "2026-07-05",
       "label": "Today \u00b7 Sun Jul 5",
-      "weather": null,
+      "weather": {
+        "high_f": 97,
+        "low_f": 75,
+        "precip_pct": 39,
+        "weather_code": 45,
+        "emoji": "\ud83c\udf2b",
+        "label": "Fog"
+      },
       "events": [
         {
-          "time": "8:20 am",
-          "title": "\ud83d\ude97 Drive to East Potomac Golf Links",
+          "time": "3:00 pm",
+          "title": "\ud83d\uded2 Walmart delivery",
           "location": "",
           "all_day": false,
-          "is_drive": true,
-          "sort": "2026-07-05T08:20:00-04:00"
-        },
-        {
-          "time": "8:40 am",
-          "title": "Reservation at East Potomac Golf Links - RED Course",
-          "location": "East Potomac Golf Links - RED Course, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
-          "all_day": false,
           "is_drive": false,
-          "sort": "2026-07-05T08:40:00-04:00"
+          "sort": "2026-07-05T15:00:00-04:00"
         },
         {
           "time": "5:30 pm",
@@ -60,7 +59,14 @@
     {
       "date": "2026-07-06",
       "label": "Tomorrow \u00b7 Mon Jul 6",
-      "weather": null,
+      "weather": {
+        "high_f": 90,
+        "low_f": 73,
+        "precip_pct": 84,
+        "weather_code": 63,
+        "emoji": "\ud83c\udf27",
+        "label": "Rain"
+      },
       "events": [
         {
           "time": "7:00 pm",
@@ -76,7 +82,14 @@
     {
       "date": "2026-07-07",
       "label": "Tuesday \u00b7 Jul 7",
-      "weather": null,
+      "weather": {
+        "high_f": 93,
+        "low_f": 69,
+        "precip_pct": 84,
+        "weather_code": 55,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy drizzle"
+      },
       "events": [
         {
           "time": "all day",
@@ -100,7 +113,14 @@
     {
       "date": "2026-07-08",
       "label": "Wednesday \u00b7 Jul 8",
-      "weather": null,
+      "weather": {
+        "high_f": 78,
+        "low_f": 68,
+        "precip_pct": 43,
+        "weather_code": 55,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy drizzle"
+      },
       "events": [
         {
           "time": "all day",
@@ -169,14 +189,28 @@
     {
       "date": "2026-07-09",
       "label": "Thursday \u00b7 Jul 9",
-      "weather": null,
+      "weather": {
+        "high_f": 92,
+        "low_f": 69,
+        "precip_pct": 44,
+        "weather_code": 82,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy showers"
+      },
       "events": [],
       "conflicts": []
     },
     {
       "date": "2026-07-10",
       "label": "Friday \u00b7 Jul 10",
-      "weather": null,
+      "weather": {
+        "high_f": 86,
+        "low_f": 70,
+        "precip_pct": 45,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
       "events": [
         {
           "time": "all day",
@@ -208,7 +242,14 @@
     {
       "date": "2026-07-11",
       "label": "Saturday \u00b7 Jul 11",
-      "weather": null,
+      "weather": {
+        "high_f": 81,
+        "low_f": 72,
+        "precip_pct": 26,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
       "events": [
         {
           "time": "all day",
