@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-07-07T08:38:18.821164-04:00",
-  "generated_label": "Tue Jul 7, 8:38 AM",
-  "weather": {
-    "high_f": 85,
-    "low_f": 72,
-    "precip_pct": 54,
-    "emoji": "\ud83c\udf27",
-    "label": "Rain"
-  },
+  "generated_at": "2026-07-07T09:26:38.998515-04:00",
+  "generated_label": "Tue Jul 7, 9:26 AM",
+  "weather": null,
   "theme": {
     "emoji": "\u2614",
     "title": "Rainy Stretch",
@@ -20,12 +14,12 @@
       "date": "2026-07-07",
       "label": "Today \u00b7 Tue Jul 7",
       "weather": {
-        "high_f": 85,
+        "high_f": 84,
         "low_f": 72,
         "precip_pct": 54,
-        "weather_code": 63,
+        "weather_code": 65,
         "emoji": "\ud83c\udf27",
-        "label": "Rain"
+        "label": "Heavy rain"
       },
       "events": [
         {
@@ -53,7 +47,7 @@
       "weather": {
         "high_f": 82,
         "low_f": 70,
-        "precip_pct": 27,
+        "precip_pct": 32,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
