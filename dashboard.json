@@ -1,55 +1,19 @@
 {
-  "generated_at": "2026-07-06T10:36:59.936681-04:00",
-  "generated_label": "Mon Jul 6, 10:36 AM",
-  "weather": {
-    "high_f": 87,
-    "low_f": 75,
-    "precip_pct": 41,
-    "emoji": "\ud83c\udf27",
-    "label": "Heavy showers"
-  },
+  "generated_at": "2026-07-07T06:01:06.635770-04:00",
+  "generated_label": "Tue Jul 7, 6:01 AM",
+  "weather": null,
   "theme": {
-    "emoji": "\ud83e\udd75",
-    "title": "Heat Wave",
-    "blurb": "Hydrate and seek shade out there.",
+    "emoji": "\ud83c\udfd6\ufe0f",
+    "title": "High Summer",
+    "blurb": "Heat, hydration, and hustle.",
     "color1": "#ff512f",
     "color2": "#f09819"
   },
   "week": [
     {
-      "date": "2026-07-06",
-      "label": "Today \u00b7 Mon Jul 6",
-      "weather": {
-        "high_f": 87,
-        "low_f": 75,
-        "precip_pct": 41,
-        "weather_code": 82,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy showers"
-      },
-      "events": [
-        {
-          "time": "7:00 pm",
-          "title": "Ignite \u26be Infield Development",
-          "location": "7731 Leesburg Pike, Falls Church, VA 22043",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-06T19:00:00-04:00"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-07-07",
-      "label": "Tomorrow \u00b7 Tue Jul 7",
-      "weather": {
-        "high_f": 82,
-        "low_f": 71,
-        "precip_pct": 54,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
-      },
+      "label": "Today \u00b7 Tue Jul 7",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -72,15 +36,8 @@
     },
     {
       "date": "2026-07-08",
-      "label": "Wednesday \u00b7 Jul 8",
-      "weather": {
-        "high_f": 78,
-        "low_f": 69,
-        "precip_pct": 54,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "label": "Tomorrow \u00b7 Wed Jul 8",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -115,6 +72,14 @@
           "sort": "2026-07-08T12:00:00-04:00"
         },
         {
+          "time": "1:30 pm",
+          "title": "Call Glasky",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-08T13:30:00-04:00"
+        },
+        {
           "time": "3:55 pm",
           "title": "\ud83d\ude97 Drive to IAD (UA 326 to Seattle)",
           "location": "",
@@ -141,6 +106,12 @@
         {
           "a": "Reservation at The Westin Seattle, Starts:07/08/26, Ends: 07/11/26 ",
           "a_time": "12:00 pm",
+          "b": "Call Glasky",
+          "b_time": "1:30 pm"
+        },
+        {
+          "a": "Reservation at The Westin Seattle, Starts:07/08/26, Ends: 07/11/26 ",
+          "a_time": "12:00 pm",
           "b": "FW: Bi-Weekly Product Health and Incident Review with ELT",
           "b_time": "10:00 am"
         }
@@ -149,28 +120,14 @@
     {
       "date": "2026-07-09",
       "label": "Thursday \u00b7 Jul 9",
-      "weather": {
-        "high_f": 87,
-        "low_f": 70,
-        "precip_pct": 48,
-        "weather_code": 95,
-        "emoji": "\u26c8",
-        "label": "Thunderstorm"
-      },
+      "weather": null,
       "events": [],
       "conflicts": []
     },
     {
       "date": "2026-07-10",
       "label": "Friday \u00b7 Jul 10",
-      "weather": {
-        "high_f": 91,
-        "low_f": 69,
-        "precip_pct": 42,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -202,14 +159,7 @@
     {
       "date": "2026-07-11",
       "label": "Saturday \u00b7 Jul 11",
-      "weather": {
-        "high_f": 82,
-        "low_f": 71,
-        "precip_pct": 38,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -233,14 +183,7 @@
     {
       "date": "2026-07-12",
       "label": "Sunday \u00b7 Jul 12",
-      "weather": {
-        "high_f": 78,
-        "low_f": 70,
-        "precip_pct": 26,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -268,6 +211,22 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-07-13",
+      "label": "Monday \u00b7 Jul 13",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "Jen Lichtblau\u2019s Birthday",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-07-13T00:00"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -275,12 +234,12 @@
       {
         "title": "Jen Lichtblau\u2019s Birthday",
         "day": "Mon Jul 13",
-        "days_out": 7
+        "days_out": 6
       },
       {
         "title": "Rhys Birthday",
         "day": "Mon Jul 27",
-        "days_out": 21
+        "days_out": 20
       }
     ],
     "holidays": []
