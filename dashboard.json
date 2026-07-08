@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-08T07:56:25.235740-04:00",
-  "generated_label": "Wed Jul 8, 7:56 AM",
+  "generated_at": "2026-07-08T08:51:54.601137-04:00",
+  "generated_label": "Wed Jul 8, 8:51 AM",
   "weather": null,
   "theme": {
     "emoji": "\ud83c\udfd6\ufe0f",
@@ -97,7 +97,24 @@
       "date": "2026-07-09",
       "label": "Tomorrow \u00b7 Thu Jul 9",
       "weather": null,
-      "events": [],
+      "events": [
+        {
+          "time": "6:03 pm",
+          "title": "\ud83d\ude97 Drive to Marshall High School (Ignite practice)",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-07-09T18:03:00-04:00"
+        },
+        {
+          "time": "6:30 pm",
+          "title": "\u26be Ignite Cadets 12U \u2014 Pitching/Catcher Development",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-09T18:30:00-04:00"
+        }
+      ],
       "conflicts": []
     },
     {
