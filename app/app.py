@@ -22,6 +22,7 @@ import base64
 import json
 from datetime import datetime, timezone
 
+import pandas as pd
 import requests
 import streamlit as st
 
@@ -428,18 +429,6 @@ st.markdown(
 if not dash:
     st.warning("No dashboard snapshot yet — the next 6 AM sync will populate this.", icon="⏳")
 
-# ─────────────────────────── 1. attention strip ───────────────────────────
-
-n_pending = len(pending)
-if all_conflicts or n_pending:
-    bits = []
-    if all_conflicts:
-        bits.append(f"⚠️ {len(all_conflicts)} conflict{'s' if len(all_conflicts) != 1 else ''}")
-    if n_pending:
-        bits.append(f"✅ {n_pending} to review")
-    st.markdown(f"<div class='attention'><b>Heads up</b> &nbsp;·&nbsp; {' &nbsp;·&nbsp; '.join(bits)}</div>",
-                unsafe_allow_html=True)
-
 # ─────────────────────────── shopping deals (only when on sale) ───────────────────────────
 
 _deals = [p for p in (shopping or {}).get("products", []) if p.get("status", {}).get("is_deal")]
@@ -598,6 +587,14 @@ for ag in (agents_data or {}).get("agents", []):
         f"<div class='muted' style='margin-top:6px'>Prices total for {pax} travelers · "
         "Low/High = range tracked so far.</div>",
         unsafe_allow_html=True)
+
+    if len(hist) > 1:
+        hist_df = pd.DataFrame(hist)
+        if "date" in hist_df.columns:
+            hist_df = hist_df.set_index("date")
+            st.markdown("<div class='muted' style='margin:12px 0 2px'>Price history — economy & business, "
+                        "per plan</div>", unsafe_allow_html=True)
+            st.line_chart(hist_df, height=230)
 
 with st.expander("📋 To-do · open items", expanded=False):
     changed = False
