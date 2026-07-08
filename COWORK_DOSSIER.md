@@ -189,6 +189,16 @@ lookahead.py, briefing.py, dashboard.py, theme.py).
 Newest first. Each pass appends here (daily-job step 8); durable rules also get folded
 into the sections above so they apply automatically.
 
+### 2026-07-08
+- **Streamlit app (`app/app.py`) updated directly** (not via Cowork artifact — that
+  was a dead end from an earlier session, ignore it). Two changes: (1) added a
+  price-history line chart under the Italy flight-watch table, built from the
+  `history` array already logged in `agents.json` (no new dependency — `pandas` +
+  `st.line_chart`). (2) Removed the top "Heads up · N conflicts · N to review"
+  attention strip — it fully duplicated the "✅ Needs you" column's header/content
+  right below it. If a future session is asked to touch the dashboard, this is
+  the current state — don't re-add either.
+
 ### 2026-06-27
 - **Drive time isn't just for sports.** The allergy test (ENT, Arlington) had no drive
   block because the cron only auto-drives ICS events. Added it manually. Rule updated:
