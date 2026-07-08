@@ -1,57 +1,19 @@
 {
-  "generated_at": "2026-07-07T09:26:38.998515-04:00",
-  "generated_label": "Tue Jul 7, 9:26 AM",
+  "generated_at": "2026-07-08T06:01:18.690519-04:00",
+  "generated_label": "Wed Jul 8, 6:01 AM",
   "weather": null,
   "theme": {
-    "emoji": "\u2614",
-    "title": "Rainy Stretch",
-    "blurb": "Keep umbrellas handy \u2014 fields may be iffy.",
-    "color1": "#4e9af1",
-    "color2": "#6dd5ed"
+    "emoji": "\ud83c\udfd6\ufe0f",
+    "title": "High Summer",
+    "blurb": "Heat, hydration, and hustle.",
+    "color1": "#ff512f",
+    "color2": "#f09819"
   },
   "week": [
     {
-      "date": "2026-07-07",
-      "label": "Today \u00b7 Tue Jul 7",
-      "weather": {
-        "high_f": 84,
-        "low_f": 72,
-        "precip_pct": 54,
-        "weather_code": 65,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy rain"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "Sylvia Wilson B-Day",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-07-07T00:00"
-        },
-        {
-          "time": "6:00 pm",
-          "title": "Ignite \u26be Athletic Development",
-          "location": "5130 Wilson Blvd, Arlington, VA 22205",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-07T18:00:00-04:00"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-07-08",
-      "label": "Tomorrow \u00b7 Wed Jul 8",
-      "weather": {
-        "high_f": 82,
-        "low_f": 70,
-        "precip_pct": 32,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Today \u00b7 Wed Jul 8",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -102,12 +64,12 @@
           "sort": "2026-07-08T15:55:00-04:00"
         },
         {
-          "time": "5:55 pm",
+          "time": "5:35 pm",
           "title": "Flight to Seattle (UA 326)",
           "location": "Washington IAD",
           "all_day": false,
           "is_drive": false,
-          "sort": "2026-07-08T17:55:00-04:00"
+          "sort": "2026-07-08T17:35:00-04:00"
         }
       ],
       "conflicts": [
@@ -133,29 +95,15 @@
     },
     {
       "date": "2026-07-09",
-      "label": "Thursday \u00b7 Jul 9",
-      "weather": {
-        "high_f": 92,
-        "low_f": 69,
-        "precip_pct": 80,
-        "weather_code": 95,
-        "emoji": "\u26c8",
-        "label": "Thunderstorm"
-      },
+      "label": "Tomorrow \u00b7 Thu Jul 9",
+      "weather": null,
       "events": [],
       "conflicts": []
     },
     {
       "date": "2026-07-10",
       "label": "Friday \u00b7 Jul 10",
-      "weather": {
-        "high_f": 88,
-        "low_f": 69,
-        "precip_pct": 56,
-        "weather_code": 55,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -187,14 +135,7 @@
     {
       "date": "2026-07-11",
       "label": "Saturday \u00b7 Jul 11",
-      "weather": {
-        "high_f": 89,
-        "low_f": 70,
-        "precip_pct": 29,
-        "weather_code": 55,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -218,14 +159,7 @@
     {
       "date": "2026-07-12",
       "label": "Sunday \u00b7 Jul 12",
-      "weather": {
-        "high_f": 75,
-        "low_f": 64,
-        "precip_pct": 25,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -257,14 +191,7 @@
     {
       "date": "2026-07-13",
       "label": "Monday \u00b7 Jul 13",
-      "weather": {
-        "high_f": 75,
-        "low_f": 62,
-        "precip_pct": 22,
-        "weather_code": 81,
-        "emoji": "\ud83c\udf27",
-        "label": "Showers"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -276,6 +203,22 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-07-14",
+      "label": "Tuesday \u00b7 Jul 14",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "Edgar!",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-07-14T00:00"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -283,12 +226,12 @@
       {
         "title": "Jen Lichtblau\u2019s Birthday",
         "day": "Mon Jul 13",
-        "days_out": 6
+        "days_out": 5
       },
       {
         "title": "Rhys Birthday",
         "day": "Mon Jul 27",
-        "days_out": 20
+        "days_out": 19
       }
     ],
     "holidays": []
