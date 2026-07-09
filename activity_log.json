@@ -795,5 +795,11 @@
     "action": "dismissed",
     "title": "Appointment Availability",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-07-09T13:59:55.022743+00:00",
+    "action": "dismissed",
+    "title": "[Personal] Your Wednesday afternoon trip with Uber",
+    "source": "Gmail"
   }
 ]
