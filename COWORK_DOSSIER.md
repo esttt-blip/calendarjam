@@ -154,6 +154,19 @@ exclusions in code; keep this section in sync if that logic changes.)*
 
 ---
 
+## Permanent ignores
+
+Some things should **never** reach the personal calendar or the dashboard — not
+surfaced, not added. They live in **`permanent_ignores.json`** (case-insensitive
+title-substring patterns). The dashboard filters them out of the week view; the pass
+must never add them, and should **remove any that are already on the calendar**.
+
+- **Bi-Weekly Product Health / Incident Review** — DraftKings work meeting, arrives as
+  an `FW:` invite; doesn't belong on the personal calendar. Patterns: `bi-weekly
+  product`, `product health`, `incident review`.
+
+To permanently ignore something new, add a title-substring to `permanent_ignores.json`.
+
 ## Guardrails — never do
 
 - Never **book or cancel** Karma Yoga classes (read-only).
@@ -194,6 +207,17 @@ lookahead.py, briefing.py, dashboard.py, theme.py).
 
 Newest first. Each pass appends here (daily-job step 8); durable rules also get folded
 into the sections above so they apply automatically.
+
+### 2026-07-09 (dashboard pass 6)
+- **Permanent-ignore list added** (`permanent_ignores.json`) — title-substring patterns
+  that never reach the calendar/dashboard. Seeded with the Bi-Weekly Product Health /
+  Incident Review. Dashboard filters the week view against it; documented in a new
+  "Permanent ignores" section. (The instance already on Fri Jul 10 still needs removing
+  from the actual Google Calendar — pending Esther's ok.)
+- **Removed the "N things on" / "Open day" status tags** — not additive.
+- **Week-ahead optimized for desktop**: cards no longer stretch to the tallest in the
+  row (`align-items:start`), and a `min-width:761px` block tightens padding/rows and
+  lays the week out 7-up. Mobile (single column) unchanged.
 
 ### 2026-07-09 (dashboard pass 5)
 - **Skip the Bi-Weekly Product Health / Incident Review** (work meeting; doesn't belong

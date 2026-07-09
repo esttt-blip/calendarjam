@@ -1,0 +1,8 @@
+{
+  "_comment": "Title-substring patterns (case-insensitive) that must NEVER reach the personal calendar or dashboard. The dashboard filters the week view against these; the morning pass must never add them and should remove any that are already on the calendar.",
+  "title_patterns": [
+    "bi-weekly product",
+    "product health",
+    "incident review"
+  ]
+}

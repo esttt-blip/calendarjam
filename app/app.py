@@ -188,15 +188,8 @@ def day_insights(day: dict):
         out.append(("⚠️", f"Conflict: {c['a']} vs {c['b']}", "warn"))
 
     n = len(timed)
-    allday = [e for e in events if e.get("all_day")]
-    if n == 0 and not day.get("conflicts"):
-        # A day with an all-day event (birthday, cruise, delivery) is NOT empty —
-        # the all-day pill already shows it, so don't contradict it with "nothing scheduled".
-        if not allday:
-            out.append(("🟢", "Open day — nothing scheduled", "ok"))
-    elif n >= 1:
-        # No "packed" callouts — Esther doesn't want days flagged as overloaded.
-        out.append(("📋", f"{n} thing{'s' if n != 1 else ''} on", "info"))
+    # Status/count tags ("N things on", "Open day — nothing scheduled") removed —
+    # not additive; the day card itself already shows what's on the day.
 
     starts = sorted([(_parse(e["sort"]), e) for e in timed if _parse(e.get("sort", ""))],
                     key=lambda x: x[0])
@@ -324,10 +317,22 @@ st.markdown("""
   .chip-muted{ background:#f1f1f4; color:#73737f; }
   .attention { background:linear-gradient(135deg,#fff4f0,#ffe9e0); border:1px solid #ffd9c9;
                border-radius:14px; padding:11px 15px; margin-bottom:6px; font-size:13px; color:#8a3a1a; }
-  .week-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:10px; }
+  .week-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(185px,1fr)); gap:10px;
+               align-items:start; }
   @media (max-width:760px){ .week-grid { grid-template-columns:1fr; } }
   .wk-card { background:#fff; border:1px solid #ececf2; border-radius:14px; padding:11px 13px;
              box-shadow:0 1px 3px rgba(20,20,40,.04); }
+  /* Desktop density: cards size to content (no stretch), tighter rows, 7-up grid */
+  @media (min-width:761px){
+    .week-grid { gap:11px; grid-template-columns:repeat(7, minmax(0, 1fr)); }
+    .wk-card { padding:10px 12px; }
+    .wk-card .day-head { font-size:13px; margin-bottom:4px; line-height:1.5; }
+    .wk-card .ev-row { padding:3px 0; }
+    .wk-card .ev-time { width:58px; font-size:11px; }
+    .wk-card .ev-title { font-size:12.5px; line-height:1.3; }
+    .wk-card .chip-allday { font-size:10.5px; padding:1px 8px; }
+    .wk-card .chips { margin-top:7px; }
+  }
   .look-row { padding:7px 0; font-size:13.5px; color:#333; border-top:1px solid #f4f4f7; line-height:1.4; }
   .look-row.first { border-top:none; }
   .look-row.muted { color:#9a9aa7; font-size:12.5px; }
@@ -420,6 +425,16 @@ theme = (dash or {}).get("theme") or {"emoji": "📅", "title": "", "blurb": "",
                                       "color1": "#1a1a2e", "color2": "#3a3a55"}
 w = (dash or {}).get("weather") or {}
 week = (dash or {}).get("week", [])
+
+# Permanent ignores: title-substring patterns that must never show (work meetings
+# etc. that don't belong on the personal calendar). Filter them out of every day
+# before counts/conflicts/insights are computed.
+pignore, _ = fetch_file("permanent_ignores.json")
+_ignore_pats = [p.lower() for p in (pignore or {}).get("title_patterns", []) if p]
+if _ignore_pats:
+    for _d in week:
+        _d["events"] = [e for e in _d.get("events", [])
+                        if not any(p in (e.get("title") or "").lower() for p in _ignore_pats)]
 horizon = (dash or {}).get("horizon", {})
 
 import re as _re
