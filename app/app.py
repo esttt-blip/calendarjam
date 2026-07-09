@@ -298,8 +298,7 @@ st.markdown("""
   /* Top-row columns: shrink to content, but cap height and scroll internally
      when very full so the week-ahead view below stays on screen. */
   .scrollcol { max-height:340px; overflow-y:auto; padding-right:4px; }
-  div[data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] > .cap-needs),
-  div[data-testid="stVerticalBlock"]:has(> .element-container > .cap-needs) {
+  div[data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] .cap-needs) {
       max-height:340px; overflow-y:auto; padding-right:5px;
   }
   .cap-needs { display:block; height:0; margin:0; padding:0; }
