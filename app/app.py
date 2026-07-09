@@ -505,6 +505,17 @@ def _allday_class(title: str) -> str:
     return "ad-default"
 
 
+_DOW_SHORT = {"Monday": "Mon", "Tuesday": "Tue", "Wednesday": "Wed",
+              "Thursday": "Thu", "Friday": "Fri", "Saturday": "Sat", "Sunday": "Sun"}
+
+
+def _short_label(label: str) -> str:
+    """Abbreviate full weekday names (Monday -> Mon) in a day label."""
+    for full, ab in _DOW_SHORT.items():
+        label = label.replace(full, ab)
+    return label
+
+
 def _day_head(day: dict) -> str:
     """Date header with color-coded all-day pills inline (next to the date, so
     they don't cost an extra row)."""
@@ -513,7 +524,7 @@ def _day_head(day: dict) -> str:
         f"<span class='chip-allday {_allday_class(e['title'])}'>{e['title']}</span>"
         for e in allday)
     inline = f"<span class='allday-inline'>{pills}</span>" if pills else ""
-    return f"<div class='day-head'>{day['label']}{inline}</div>"
+    return f"<div class='day-head'>{_short_label(day['label'])}{inline}</div>"
 
 
 def _day_card_inner(day: dict) -> str:
