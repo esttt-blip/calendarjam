@@ -189,6 +189,14 @@ lookahead.py, briefing.py, dashboard.py, theme.py).
 Newest first. Each pass appends here (daily-job step 8); durable rules also get folded
 into the sections above so they apply automatically.
 
+### 2026-07-09 (dashboard pass 4)
+- **Removed the "also noting" strip entirely** (and the now-unused `LOOK` compute).
+- **All-day pills are now color-coded by category** via `_allday_class()` in
+  `app/app.py` — birthday (pink), travel/flights/hotels (blue), Edgar/house/chores
+  (amber), deliveries (green), school (purple), everything else (default blue-grey).
+  No legend by design; keyword buckets, expand them over time as new patterns show up
+  (e.g. add a vendor/name keyword to the right bucket).
+
 ### 2026-07-09 (dashboard pass 3)
 - **Hid the Streamlit Cloud chrome.** The hosted toolbar (Fork / GitHub / ⋮ menu)
   was overlapping the app header. CSS now hides `stHeader`/`stToolbar`/`MainMenu`/

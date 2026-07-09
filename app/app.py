@@ -342,11 +342,14 @@ st.markdown("""
 
   /* All-day event pills + look-ahead strip */
   .allday-row { display:flex; flex-wrap:wrap; gap:5px; margin:0 0 7px; }
-  .chip-allday { background:#eef2fb; color:#34508f; font-size:11px; font-weight:600;
-                 padding:2px 9px; border-radius:20px; line-height:1.45; }
-  .look-strip { font-size:12.5px; color:#5b5b6b; background:#f7f8fb; border:1px solid #ececf2;
-                border-radius:11px; padding:8px 13px; margin:12px 0 2px; line-height:1.5; }
-  .look-strip .ls-sep { color:#c4c4cf; margin:0 6px; }
+  .chip-allday { font-size:11px; font-weight:600; padding:2px 9px; border-radius:20px;
+                 line-height:1.45; }
+  .ad-bday    { background:#fce7f0; color:#a4285f; }  /* birthdays */
+  .ad-travel  { background:#e3f0fb; color:#1f5fa8; }  /* trips / flights / hotels */
+  .ad-house   { background:#fbefd8; color:#8a5a12; }  /* Edgar / house / chores */
+  .ad-deliver { background:#e9f7ef; color:#1c7a46; }  /* deliveries */
+  .ad-school  { background:#efe9fb; color:#5a34a8; }  /* school */
+  .ad-default { background:#eef2fb; color:#34508f; }  /* everything else */
 
   /* Flight price-drop alert banner */
   .falert { background:linear-gradient(135deg,#e9f7ef,#f4fbf6); border:1.5px solid #1c7a46;
@@ -460,6 +463,31 @@ for day in week:
             all_conflicts.append(cc)
 
 
+def _allday_class(title: str) -> str:
+    """Color-code all-day pills by category. Keyword buckets, expanded over time;
+    no legend — the colors get learned by pattern."""
+    t = (title or "").lower()
+    def has(*w): return any(x in t for x in w)
+    if "🎂" in title or has("birthday", "bday", "b-day"):
+        return "ad-bday"
+    if (has("cruise", "flight", "stay at", "hotel", "trip", "airport", "vacation",
+            "resort", "airbnb", "getaway", "flying", "depart", "layover",
+            "check-in", "check out", "boarding")
+            or any(e in title for e in ("✈", "🛳", "🛫", "🏝", "🚢"))):
+        return "ad-travel"
+    if has("edgar", "washer", "lint", "dishwasher", "filter", "trash", "lawn",
+           "clean", "hvac", "plumb", "repair", "handyman", "chore", "gutter",
+           "furnace", "yard", "mow", "vacuum", "house"):
+        return "ad-house"
+    if (has("delivery", "mightymeals", "walmart", "grocery", "package", "arrives")
+            or any(e in title for e in ("🍱", "🛒", "📦"))):
+        return "ad-deliver"
+    if "📚" in title or has("school", "holiday", "early release", "sol",
+                                    "no school", "break", "swanson"):
+        return "ad-school"
+    return "ad-default"
+
+
 def _day_card_inner(day: dict) -> str:
     evs = day.get("events", [])
     if not evs:
@@ -468,7 +496,9 @@ def _day_card_inner(day: dict) -> str:
     timed = [e for e in evs if not e.get("all_day")]
     pills = ""
     if allday:
-        chips = "".join(f"<span class='chip-allday'>{e['title']}</span>" for e in allday)
+        chips = "".join(
+            f"<span class='chip-allday {_allday_class(e['title'])}'>{e['title']}</span>"
+            for e in allday)
         pills = f"<div class='allday-row'>{chips}</div>"
     rows = ""
     for i, e in enumerate(timed):
@@ -578,7 +608,6 @@ if _deals:
 
 # ─────────────────────────── 2. today (+ insights) ───────────────────────────
 
-LOOK = lookahead_insights(week, horizon, open_items)
 c1, c2 = st.columns(2, gap="medium")
 
 with c1:
@@ -633,14 +662,6 @@ with c2:
                 if st.button("🚫 Ignore", key=f"n{idx}", use_container_width=True):
                     clear_item(item, pending); log_activity("dismissed", title, source)
                     st.toast("Ignored", icon="🚫"); st.rerun()
-
-# Slim forward-looking strip (birthdays / holidays) above the week. Busiest-day
-# hint removed — not useful. Conflicts + to-dos already live in Needs you / To-do.
-_strip_bits = [f"{icon} {text}" for icon, text, sev in LOOK if icon in ("🎂", "🎉", "🗒️")]
-if _strip_bits:
-    st.markdown("<div class='look-strip'>"
-                + "<span class='ls-sep'>·</span>".join(_strip_bits)
-                + "</div>", unsafe_allow_html=True)
 
 # ─────────────────────────── the week ───────────────────────────
 
