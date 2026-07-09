@@ -801,5 +801,11 @@
     "action": "dismissed",
     "title": "[Personal] Your Wednesday afternoon trip with Uber",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-07-09T15:26:49.018837+00:00",
+    "action": "dismissed",
+    "title": "Re: Appointment Availability",
+    "source": "Gmail"
   }
 ]
