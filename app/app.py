@@ -188,8 +188,12 @@ def day_insights(day: dict):
         out.append(("⚠️", f"Conflict: {c['a']} vs {c['b']}", "warn"))
 
     n = len(timed)
+    allday = [e for e in events if e.get("all_day")]
     if n == 0 and not day.get("conflicts"):
-        out.append(("🟢", "Open day — nothing scheduled", "ok"))
+        # A day with an all-day event (birthday, cruise, delivery) is NOT empty —
+        # the all-day pill already shows it, so don't contradict it with "nothing scheduled".
+        if not allday:
+            out.append(("🟢", "Open day — nothing scheduled", "ok"))
     elif n >= 4:
         out.append(("🔴", f"Packed — {n} commitments", "warn"))
     elif n >= 1:
@@ -323,6 +327,14 @@ st.markdown("""
   .muted { color:#a6a6b2; font-size:11.5px; }
   div[data-testid="stCheckbox"] { margin-bottom:0; }
 
+  /* All-day event pills + look-ahead strip */
+  .allday-row { display:flex; flex-wrap:wrap; gap:5px; margin:0 0 7px; }
+  .chip-allday { background:#eef2fb; color:#34508f; font-size:11px; font-weight:600;
+                 padding:2px 9px; border-radius:20px; line-height:1.45; }
+  .look-strip { font-size:12.5px; color:#5b5b6b; background:#f7f8fb; border:1px solid #ececf2;
+                border-radius:11px; padding:8px 13px; margin:12px 0 2px; line-height:1.5; }
+  .look-strip .ls-sep { color:#c4c4cf; margin:0 6px; }
+
   /* Flight price-drop alert banner */
   .falert { background:linear-gradient(135deg,#e9f7ef,#f4fbf6); border:1.5px solid #1c7a46;
             border-radius:14px; padding:11px 15px; margin:2px 0 10px; }
@@ -394,6 +406,38 @@ w = (dash or {}).get("weather") or {}
 week = (dash or {}).get("week", [])
 horizon = (dash or {}).get("horizon", {})
 
+import re as _re
+
+
+def _norm_title(t: str) -> str:
+    t = (t or "").lower()
+    t = _re.sub(r"^(your|re:|fw:|fwd:|reminder:)\s+", "", t)
+    t = _re.sub(r"[^a-z0-9 ]", " ", t)
+    return _re.sub(r"\s+", " ", t).strip()
+
+
+# Deterministic dedup guard: a review suggestion whose title matches an event
+# already on the calendar (this week's snapshot) is dropped — it's not a decision
+# she needs to make. Belt-and-suspenders on top of the morning-pass dedup rule.
+_cal_titles = []
+for _d in week:
+    for _e in _d.get("events", []):
+        _nt = _norm_title(_e.get("title"))
+        if len(_nt) >= 8:
+            _cal_titles.append(_nt)
+
+
+def _already_on_calendar(item: dict) -> bool:
+    pt = _norm_title(item.get("title"))
+    if len(pt) < 8:
+        return False
+    return any(ct in pt or pt in ct for ct in _cal_titles)
+
+
+_pending_before = len(pending)
+pending = [it for it in pending if not _already_on_calendar(it)]
+_pending_deduped = _pending_before - len(pending)
+
 ignored_set = set(ignored_conflicts or [])
 all_conflicts = []
 for day in week:
@@ -404,17 +448,24 @@ for day in week:
 
 
 def _day_card_inner(day: dict) -> str:
-    rows = ""
     evs = day.get("events", [])
-    if evs:
-        for i, e in enumerate(evs):
-            loc = f"<div class='ev-loc'>📍 {e['location'][:40]}</div>" if e.get("location") else ""
-            first = " first" if i == 0 else ""
-            rows += (f"<div class='ev-row{first}'><div class='ev-time'>{e['time']}</div>"
-                     f"<div><div class='ev-title'>{e['title']}</div>{loc}</div></div>")
-    else:
-        rows = "<div class='empty-day'>nothing scheduled</div>"
-    return rows
+    if not evs:
+        return "<div class='empty-day'>nothing scheduled</div>"
+    allday = [e for e in evs if e.get("all_day")]
+    timed = [e for e in evs if not e.get("all_day")]
+    pills = ""
+    if allday:
+        chips = "".join(f"<span class='chip-allday'>{e['title']}</span>" for e in allday)
+        pills = f"<div class='allday-row'>{chips}</div>"
+    rows = ""
+    for i, e in enumerate(timed):
+        loc = f"<div class='ev-loc'>📍 {e['location'][:40]}</div>" if e.get("location") else ""
+        first = " first" if i == 0 else ""
+        rows += (f"<div class='ev-row{first}'><div class='ev-time'>{e['time']}</div>"
+                 f"<div><div class='ev-title'>{e['title']}</div>{loc}</div></div>")
+    if not timed:
+        rows = "<div class='empty-day' style='padding-top:1px'>no timed plans</div>"
+    return pills + rows
 
 
 def flight_price_alerts(agents_data: dict) -> list:
@@ -516,7 +567,7 @@ if _deals:
 
 LOOK = lookahead_insights(week, horizon, open_items)
 CAP = 300  # column height cap — all three level; scroll within when full
-c1, c2, c3 = st.columns(3, gap="medium")
+c1, c2 = st.columns(2, gap="medium")
 
 with c1:
     st.markdown("<div class='sec'>📌 Today</div>", unsafe_allow_html=True)
@@ -570,18 +621,13 @@ with c2:
                     clear_item(item, pending); log_activity("dismissed", title, source)
                     st.toast("Ignored", icon="🚫"); st.rerun()
 
-with c3:
-    st.markdown("<div class='sec'>🔭 Look ahead</div>", unsafe_allow_html=True)
-    with st.container(height=CAP):
-        if LOOK:
-            rows = ""
-            for i, (icon, text, sev) in enumerate(LOOK):
-                first = " first" if i == 0 else ""
-                muted = " muted" if sev == "muted" else ""
-                rows += f"<div class='look-row{first}{muted}'>{icon} {text}</div>"
-            st.markdown(rows, unsafe_allow_html=True)
-        else:
-            st.caption("Nothing in the next few weeks.")
+# Slim forward-looking strip (busiest day / birthdays / holidays) above the week.
+# Conflicts + to-dos live in "Needs you" and the To-do list, so keep them out here.
+_strip_bits = [f"{icon} {text}" for icon, text, sev in LOOK if icon in ("🔭", "🎂", "🎉", "🗒️")]
+if _strip_bits:
+    st.markdown("<div class='look-strip'>"
+                + "<span class='ls-sep'>·</span>".join(_strip_bits)
+                + "</div>", unsafe_allow_html=True)
 
 # ─────────────────────────── the week ───────────────────────────
 

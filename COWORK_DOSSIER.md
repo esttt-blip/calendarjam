@@ -189,6 +189,23 @@ lookahead.py, briefing.py, dashboard.py, theme.py).
 Newest first. Each pass appends here (daily-job step 8); durable rules also get folded
 into the sections above so they apply automatically.
 
+### 2026-07-09 (dashboard pass 2)
+- **Top row slimmed to two columns.** Dropped the tall, half-empty "Look ahead"
+  column (it duplicated the week grid). Top row is now **Today + Needs you**; the
+  forward-looking hints (busiest day, birthdays, holidays) moved to a slim one-line
+  strip above the week. Conflicts/to-dos stay in Needs you + the to-do list, not the strip.
+- **All-day events no longer contradict themselves.** A day with only an all-day item
+  (e.g. "Jen Lichtblau's Birthday", "Edgar!") was showing both the item and "🟢 Open
+  day — nothing scheduled". Fixed: all-day events now render as clean pills at the top
+  of each day card, and a day with all-day (but no timed) events is not called empty
+  (shows "no timed plans" instead). `day_insights` + `_day_card_inner` in `app/app.py`.
+- **Deterministic dedup guard added to the review queue.** The morning pass is supposed
+  to dedup against the calendar, but "Reservation at Tavolata Belltown" (Jul 10) was on
+  the calendar AND in review. `app/app.py` now drops any pending item whose normalized
+  title matches a calendar event before rendering "Needs you" — belt-and-suspenders on
+  top of the dossier rule. **Reminder for the pass: always confirm a candidate isn't
+  already on the calendar before surfacing it for review.**
+
 ### 2026-07-09
 - **Flight checker (`app/app.py`) — two additions, per Esther ("get more out of the
   flight checker").** (1) A **fare-drop alert banner** now renders at the very top of
