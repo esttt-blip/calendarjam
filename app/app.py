@@ -324,12 +324,14 @@ st.markdown("""
              box-shadow:0 1px 3px rgba(20,20,40,.04); }
   /* Desktop density: cards size to content (no stretch), tighter rows, 7-up grid */
   @media (min-width:761px){
-    .week-grid { gap:11px; grid-template-columns:repeat(7, minmax(0, 1fr)); }
-    .wk-card { padding:10px 12px; }
+    /* Fit the upcoming days across the row (auto-fit collapses any empty track,
+       so 6 days fill evenly), size cards to content, tighten rows a touch. */
+    .week-grid { gap:11px; grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); }
+    .wk-card { padding:10px 13px; }
     .wk-card .day-head { font-size:13px; margin-bottom:4px; line-height:1.5; }
     .wk-card .ev-row { padding:3px 0; }
-    .wk-card .ev-time { width:58px; font-size:11px; }
-    .wk-card .ev-title { font-size:12.5px; line-height:1.3; }
+    .wk-card .ev-time { width:60px; font-size:11px; }
+    .wk-card .ev-title { font-size:13px; line-height:1.32; }
     .wk-card .chip-allday { font-size:10.5px; padding:1px 8px; }
     .wk-card .chips { margin-top:7px; }
   }
