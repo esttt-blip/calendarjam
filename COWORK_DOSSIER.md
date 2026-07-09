@@ -217,7 +217,8 @@ into the sections above so they apply automatically.
 - **Removed the "N things on" / "Open day" status tags** — not additive.
 - **Week-ahead optimized for desktop**: cards no longer stretch to the tallest in the
   row (`align-items:start`), and a `min-width:761px` block tightens padding/rows and
-  lays the week out 7-up. Mobile (single column) unchanged.
+  uses `auto-fit minmax(188px,1fr)` so the full upcoming week sits on one compact row
+  (no orphaned card, no empty trailing column). Mobile (single column) unchanged.
 
 ### 2026-07-09 (dashboard pass 5)
 - **Skip the Bi-Weekly Product Health / Incident Review** (work meeting; doesn't belong
