@@ -317,20 +317,25 @@ st.markdown("""
   .chip-muted{ background:#f1f1f4; color:#73737f; }
   .attention { background:linear-gradient(135deg,#fff4f0,#ffe9e0); border:1px solid #ffd9c9;
                border-radius:14px; padding:11px 15px; margin-bottom:6px; font-size:13px; color:#8a3a1a; }
-  .week-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(185px,1fr)); gap:10px;
-               align-items:start; }
-  @media (max-width:760px){ .week-grid { grid-template-columns:1fr; } }
-  .wk-card { background:#fff; border:1px solid #ececf2; border-radius:14px; padding:11px 13px;
-             box-shadow:0 1px 3px rgba(20,20,40,.04); }
-  /* Desktop density: cards size to content (no stretch), tighter rows, 7-up grid */
+  /* Week ahead: columns separated by a light vertical line (no boxes), tight
+     spacing so text gets the width. */
+  .week-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(168px,1fr)); gap:0;
+               align-items:stretch; }
+  .wk-card { background:none; border:none; border-left:1px solid #ececf2; border-radius:0;
+             box-shadow:none; padding:2px 12px; }
+  .week-grid > .wk-card:first-child { border-left:none; padding-left:0; }
+  @media (max-width:760px){
+    /* Stacked on mobile -> horizontal dividers instead of vertical */
+    .week-grid { grid-template-columns:1fr; }
+    .wk-card { border-left:none; border-top:1px solid #ececf2; padding:10px 0 4px; }
+    .week-grid > .wk-card:first-child { border-top:none; padding-top:2px; }
+  }
   @media (min-width:761px){
-    /* Fit the upcoming days across the row (auto-fit collapses any empty track,
-       so 6 days fill evenly), size cards to content, tighten rows a touch. */
-    .week-grid { gap:10px; grid-template-columns:repeat(auto-fit, minmax(188px, 1fr)); }
-    .wk-card { padding:10px 13px; }
-    .wk-card .day-head { font-size:13px; margin-bottom:4px; line-height:1.5; }
+    .week-grid { grid-template-columns:repeat(auto-fit, minmax(156px, 1fr)); }
+    .wk-card { padding:2px 12px; }
+    .wk-card .day-head { font-size:13px; margin-bottom:5px; line-height:1.5; }
     .wk-card .ev-row { padding:3px 0; }
-    .wk-card .ev-time { width:60px; font-size:11px; }
+    .wk-card .ev-time { width:56px; font-size:11px; }
     .wk-card .ev-title { font-size:13px; line-height:1.32; }
     .wk-card .chip-allday { font-size:10.5px; padding:1px 8px; }
     .wk-card .chips { margin-top:7px; }
