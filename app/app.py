@@ -323,6 +323,18 @@ st.markdown("""
   .muted { color:#a6a6b2; font-size:11.5px; }
   div[data-testid="stCheckbox"] { margin-bottom:0; }
 
+  /* Flight price-drop alert banner */
+  .falert { background:linear-gradient(135deg,#e9f7ef,#f4fbf6); border:1.5px solid #1c7a46;
+            border-radius:14px; padding:11px 15px; margin:2px 0 10px; }
+  .falert-head { font-size:13px; font-weight:800; color:#14663a; letter-spacing:.02em;
+                 display:flex; align-items:center; gap:7px; margin-bottom:5px; }
+  .falert-row { font-size:13px; color:#1a1a2e; padding:3px 0; line-height:1.4; }
+  .falert-drop { color:#1c7a46; font-weight:800; }
+  .falert-badge { background:#1c7a46; color:#fff; font-size:9.5px; font-weight:700; padding:2px 7px;
+                  border-radius:10px; text-transform:uppercase; letter-spacing:.04em; margin-left:6px;
+                  vertical-align:middle; }
+  .falert-sub { font-size:11px; color:#6f8a79; margin-top:4px; }
+
   /* Flight-watch cards */
   .fgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(225px,1fr)); gap:12px; margin:6px 0; }
   .fcard { background:#fff; border:1px solid #ececf2; border-radius:14px; padding:13px 15px;
@@ -405,6 +417,39 @@ def _day_card_inner(day: dict) -> str:
     return rows
 
 
+def flight_price_alerts(agents_data: dict) -> list:
+    """From each flight agent's history, surface meaningful price drops and new
+    lows (latest snapshot vs the run before it, and vs the full tracked range).
+    Tiny $1-2 wiggles are ignored; a new all-time low always surfaces."""
+    NOISE = 25  # ignore sub-$25 day-to-day jitter for plain drops
+    out = []
+    for ag in (agents_data or {}).get("agents", []):
+        if ag.get("type") != "flight-multicity":
+            continue
+        hist = ag.get("history", [])
+        if len(hist) < 2:
+            continue
+        latest, prev = hist[-1], hist[-2]
+        pax = ag.get("config", {}).get("travelers", 1)
+        for key, val in latest.items():
+            if key == "date" or not isinstance(val, (int, float)):
+                continue
+            prior = [h[key] for h in hist[:-1]
+                     if isinstance(h.get(key), (int, float))]
+            if not prior:
+                continue
+            prev_val = prev.get(key)
+            prior_low = min(prior)
+            if val < prior_low:  # new all-time low over the tracked window
+                out.append({"label": key, "val": val, "drop": prior_low - val,
+                            "prev": prev_val, "pax": pax, "kind": "low"})
+            elif isinstance(prev_val, (int, float)) and prev_val - val >= NOISE:
+                out.append({"label": key, "val": val, "drop": prev_val - val,
+                            "prev": prev_val, "pax": pax, "kind": "drop"})
+    out.sort(key=lambda a: a["drop"], reverse=True)
+    return out
+
+
 # ─────────────────────────── header ───────────────────────────
 
 st.markdown(
@@ -428,6 +473,24 @@ st.markdown(
 
 if not dash:
     st.warning("No dashboard snapshot yet — the next 6 AM sync will populate this.", icon="⏳")
+
+# ─────────────────────────── flight price-drop alerts (top of page) ───────────────────────────
+_fal = flight_price_alerts(agents_data)
+if _fal:
+    _rows = ""
+    for _a in _fal[:6]:
+        _pax = _a["pax"] or 1
+        _badge = "<span class='falert-badge'>new low</span>" if _a["kind"] == "low" else ""
+        _rows += (f"<div class='falert-row'>{_a['label']} — "
+                  f"<span class='falert-drop'>▼ ${_a['drop']:,.0f}</span> to "
+                  f"<b>${_a['val']:,.0f}</b> "
+                  f"<span class='muted'>(≈${_a['val']/_pax:,.0f}/person)</span>{_badge}</div>")
+    st.markdown(
+        f"<div class='falert'><div class='falert-head'>✈️ Fare drop</div>{_rows}"
+        f"<div class='falert-sub'>Total price · vs the previous check · "
+        f"full tracker under Planning ↓</div></div>",
+        unsafe_allow_html=True,
+    )
 
 # ─────────────────────────── shopping deals (only when on sale) ───────────────────────────
 
@@ -588,13 +651,22 @@ for ag in (agents_data or {}).get("agents", []):
         "Low/High = range tracked so far.</div>",
         unsafe_allow_html=True)
 
-    if len(hist) > 1:
+    if hist:
         hist_df = pd.DataFrame(hist)
         if "date" in hist_df.columns:
             hist_df = hist_df.set_index("date")
-            st.markdown("<div class='muted' style='margin:12px 0 2px'>Price history — economy & business, "
-                        "per plan</div>", unsafe_allow_html=True)
-            st.line_chart(hist_df, height=230)
+            _since = hist[0].get("date", "—")
+            _n = len(hist)
+            st.markdown(
+                f"<div class='muted' style='margin:14px 0 2px'>📈 Price history — economy &amp; "
+                f"business, per plan · tracking since {_since} · {_n} "
+                f"snapshot{'s' if _n != 1 else ''}</div>",
+                unsafe_allow_html=True)
+            st.line_chart(hist_df, height=250)
+        else:
+            st.caption("📈 Price history will build here as daily checks accumulate.")
+    else:
+        st.caption("📈 Price history will build here as daily checks accumulate.")
 
 with st.expander("📋 To-do · open items", expanded=False):
     changed = False

@@ -189,6 +189,19 @@ lookahead.py, briefing.py, dashboard.py, theme.py).
 Newest first. Each pass appends here (daily-job step 8); durable rules also get folded
 into the sections above so they apply automatically.
 
+### 2026-07-09
+- **Flight checker (`app/app.py`) — two additions, per Esther ("get more out of the
+  flight checker").** (1) A **fare-drop alert banner** now renders at the very top of
+  the dashboard (above shopping/today) whenever the latest `agents.json` history
+  snapshot comes in below the previous run. Ignores sub-$25 day-to-day jitter; tags a
+  **"new low"** badge when a fare beats its whole tracked range; shows total +
+  per-person. No banner when nothing dropped. New helper `flight_price_alerts()` —
+  reads the existing `history` array, no new dependency, no change to the agents cron.
+  (2) The **price-history line chart is now always-on** (was hidden until 2+ points)
+  and labeled as an ongoing tracker ("tracking since <date> · N snapshots"); it keeps
+  building daily off `history` (capped 180). If a future session touches the dashboard,
+  this is the current state — don't remove either.
+
 ### 2026-07-08
 - **Streamlit app (`app/app.py`) updated directly** (not via Cowork artifact — that
   was a dead end from an earlier session, ignore it). Two changes: (1) added a
