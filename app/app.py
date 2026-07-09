@@ -326,7 +326,7 @@ st.markdown("""
   @media (min-width:761px){
     /* Fit the upcoming days across the row (auto-fit collapses any empty track,
        so 6 days fill evenly), size cards to content, tighten rows a touch. */
-    .week-grid { gap:11px; grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); }
+    .week-grid { gap:10px; grid-template-columns:repeat(auto-fit, minmax(188px, 1fr)); }
     .wk-card { padding:10px 13px; }
     .wk-card .day-head { font-size:13px; margin-bottom:4px; line-height:1.5; }
     .wk-card .ev-row { padding:3px 0; }
