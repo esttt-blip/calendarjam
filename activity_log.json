@@ -789,5 +789,11 @@
     "action": "dismissed",
     "title": "Reservation Reminder for East Potomac Golf Links - RED Course",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-07-09T13:59:42.310846+00:00",
+    "action": "dismissed",
+    "title": "Appointment Availability",
+    "source": "Gmail"
   }
 ]
