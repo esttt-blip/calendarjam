@@ -50,8 +50,11 @@ places (see Conflict rules).
      dates, anything you're unsure about. Err on the side of surfacing — noise is fine,
      missing things is not. **Never auto-add from free-text Gmail body alone.**
    - **Skip**: marketing, receipts you've already logged, `Accepted:/Declined:/Tentative:`
-     calendar-response notifications, and anything with "calendarjam" in the subject
-     (those are our own emails — hard skip, prevents a feedback loop).
+     calendar-response notifications, anything with "calendarjam" in the subject
+     (those are our own emails — hard skip, prevents a feedback loop), and **work /
+     DraftKings internal meetings that don't belong on the personal calendar** — in
+     particular the **Bi-Weekly Product Health / Incident Review** (often arrives as an
+     `FW:` invite). Don't add it; if it's already on the calendar, remove it.
 4. **Detect deliveries** → auto-add (see Deliveries section).
 5. **Detect real conflicts** in the next 7 days (see Conflict rules) — flag, don't
    auto-resolve.
@@ -117,6 +120,9 @@ places (see Conflict rules).
   Church, ~20 min to the SW DC Wharf / East Potomac / Audi Field.
 
 ---
+
+- **No "packed day" callouts.** Don't flag or label days as packed / overloaded /
+  busy. A plain count ("N things on") is fine; the alarm-y "Packed" chip is not.
 
 ## Conflict detection rules
 
@@ -188,6 +194,16 @@ lookahead.py, briefing.py, dashboard.py, theme.py).
 
 Newest first. Each pass appends here (daily-job step 8); durable rules also get folded
 into the sections above so they apply automatically.
+
+### 2026-07-09 (dashboard pass 5)
+- **Skip the Bi-Weekly Product Health / Incident Review** (work meeting; doesn't belong
+  on the personal calendar). Added to the Skip rules. The instance already on Fri Jul 10
+  should be removed from the calendar (pending Esther's ok).
+- **Dropped the "Packed — N commitments" callout** — she doesn't want packed-day flags.
+  Days with 4+ now just show "N things on". Folded into Preferences.
+- **All-day pills moved inline next to the date** (were on their own row). Color coding
+  unchanged; `_day_head()` renders the date + pills, `_day_card_inner()` now only does
+  timed rows.
 
 ### 2026-07-09 (dashboard pass 4)
 - **Removed the "also noting" strip entirely** (and the now-unused `LOOK` compute).

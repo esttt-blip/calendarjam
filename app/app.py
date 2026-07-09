@@ -194,9 +194,8 @@ def day_insights(day: dict):
         # the all-day pill already shows it, so don't contradict it with "nothing scheduled".
         if not allday:
             out.append(("🟢", "Open day — nothing scheduled", "ok"))
-    elif n >= 4:
-        out.append(("🔴", f"Packed — {n} commitments", "warn"))
     elif n >= 1:
+        # No "packed" callouts — Esther doesn't want days flagged as overloaded.
         out.append(("📋", f"{n} thing{'s' if n != 1 else ''} on", "info"))
 
     starts = sorted([(_parse(e["sort"]), e) for e in timed if _parse(e.get("sort", ""))],
@@ -309,7 +308,7 @@ st.markdown("""
   div[data-testid="stVerticalBlockBorderWrapper"] { border-radius:12px; }
   div[data-testid="stExpander"] details { border-radius:12px; }
   .today-card { border:1.5px solid #1a1a2e; }
-  .day-head { font-weight:750; color:#1a1a2e; font-size:14px; margin-bottom:6px; }
+  .day-head { font-weight:750; color:#1a1a2e; font-size:14px; margin-bottom:6px; line-height:1.7; }
   .ev-row { display:flex; gap:10px; padding:4px 0; border-top:1px solid #f4f4f7; }
   .ev-row.first { border-top:none; }
   .ev-time { width:68px; flex-shrink:0; color:#5b5b6b; font-weight:600;
@@ -341,7 +340,8 @@ st.markdown("""
   div[data-testid="stCheckbox"] { margin-bottom:0; }
 
   /* All-day event pills + look-ahead strip */
-  .allday-row { display:flex; flex-wrap:wrap; gap:5px; margin:0 0 7px; }
+  .allday-inline { margin-left:6px; }
+  .allday-inline .chip-allday { margin-left:3px; vertical-align:middle; }
   .chip-allday { font-size:11px; font-weight:600; padding:2px 9px; border-radius:20px;
                  line-height:1.45; }
   .ad-bday    { background:#fce7f0; color:#a4285f; }  /* birthdays */
@@ -488,18 +488,22 @@ def _allday_class(title: str) -> str:
     return "ad-default"
 
 
+def _day_head(day: dict) -> str:
+    """Date header with color-coded all-day pills inline (next to the date, so
+    they don't cost an extra row)."""
+    allday = [e for e in day.get("events", []) if e.get("all_day")]
+    pills = "".join(
+        f"<span class='chip-allday {_allday_class(e['title'])}'>{e['title']}</span>"
+        for e in allday)
+    inline = f"<span class='allday-inline'>{pills}</span>" if pills else ""
+    return f"<div class='day-head'>{day['label']}{inline}</div>"
+
+
 def _day_card_inner(day: dict) -> str:
     evs = day.get("events", [])
     if not evs:
         return "<div class='empty-day'>nothing scheduled</div>"
-    allday = [e for e in evs if e.get("all_day")]
     timed = [e for e in evs if not e.get("all_day")]
-    pills = ""
-    if allday:
-        chips = "".join(
-            f"<span class='chip-allday {_allday_class(e['title'])}'>{e['title']}</span>"
-            for e in allday)
-        pills = f"<div class='allday-row'>{chips}</div>"
     rows = ""
     for i, e in enumerate(timed):
         loc = f"<div class='ev-loc'>📍 {e['location'][:40]}</div>" if e.get("location") else ""
@@ -508,7 +512,7 @@ def _day_card_inner(day: dict) -> str:
                  f"<div><div class='ev-title'>{e['title']}</div>{loc}</div></div>")
     if not timed:
         rows = "<div class='empty-day' style='padding-top:1px'>no timed plans</div>"
-    return pills + rows
+    return rows
 
 
 def flight_price_alerts(agents_data: dict) -> list:
@@ -614,7 +618,7 @@ with c1:
     st.markdown("<div class='sec'>📌 Today</div>", unsafe_allow_html=True)
     if week:
         st.markdown("<div class='scrollcol'>"
-                    f"<div class='day-head'>{week[0]['label']}</div>"
+                    f"{_day_head(week[0])}"
                     f"{_day_card_inner(week[0])}{_chips(insights_for(week[0]))}"
                     "</div>", unsafe_allow_html=True)
     else:
@@ -669,7 +673,7 @@ if len(week) > 1:
     st.markdown("<div class='sec'>🗓️ The week ahead</div>", unsafe_allow_html=True)
     cards = ""
     for day in week[1:]:
-        cards += (f"<div class='wk-card'><div class='day-head'>{day['label']}</div>"
+        cards += (f"<div class='wk-card'>{_day_head(day)}"
                   f"{_day_card_inner(day)}{_chips(insights_for(day))}</div>")
     st.markdown(f"<div class='week-grid'>{cards}</div>", unsafe_allow_html=True)
 
