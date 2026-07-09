@@ -288,7 +288,21 @@ st.set_page_config(page_title="calendarjam", page_icon="📅", layout="wide",
 st.markdown("""
 <style>
   :root { color-scheme: light; }
-  .block-container { padding-top: 0.4rem; padding-bottom: 2.5rem; max-width: 1680px; }
+  .block-container { padding-top: 1.4rem; padding-bottom: 2.5rem; max-width: 1680px; }
+  /* Hide Streamlit Cloud chrome (top toolbar / Fork / GitHub / menu) so it
+     doesn't overlap the app's own header. */
+  header[data-testid="stHeader"] { display:none !important; }
+  [data-testid="stToolbar"], [data-testid="stDecoration"] { display:none !important; }
+  #MainMenu, footer { display:none !important; }
+  .stAppDeployButton { display:none !important; }
+  /* Top-row columns: shrink to content, but cap height and scroll internally
+     when very full so the week-ahead view below stays on screen. */
+  .scrollcol { max-height:340px; overflow-y:auto; padding-right:4px; }
+  div[data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] > .cap-needs),
+  div[data-testid="stVerticalBlock"]:has(> .element-container > .cap-needs) {
+      max-height:340px; overflow-y:auto; padding-right:5px;
+  }
+  .cap-needs { display:block; height:0; margin:0; padding:0; }
   .sec { font-size:11px; font-weight:800; letter-spacing:.07em; text-transform:uppercase;
          color:#9398a8; margin:13px 0 5px; }
   .card { background:#fff; border:1px solid #ececf2; border-radius:13px; padding:11px 14px;
@@ -566,24 +580,24 @@ if _deals:
 # ─────────────────────────── 2. today (+ insights) ───────────────────────────
 
 LOOK = lookahead_insights(week, horizon, open_items)
-CAP = 300  # column height cap — all three level; scroll within when full
 c1, c2 = st.columns(2, gap="medium")
 
 with c1:
     st.markdown("<div class='sec'>📌 Today</div>", unsafe_allow_html=True)
-    with st.container(height=CAP):
-        if week:
-            st.markdown(f"<div class='day-head'>{week[0]['label']}</div>"
-                        f"{_day_card_inner(week[0])}{_chips(insights_for(week[0]))}",
-                        unsafe_allow_html=True)
-        else:
-            st.info("Agenda appears after the next sync.")
+    if week:
+        st.markdown("<div class='scrollcol'>"
+                    f"<div class='day-head'>{week[0]['label']}</div>"
+                    f"{_day_card_inner(week[0])}{_chips(insights_for(week[0]))}"
+                    "</div>", unsafe_allow_html=True)
+    else:
+        st.info("Agenda appears after the next sync.")
 
 with c2:
     n_needs = len(pending) + len(all_conflicts)
     st.markdown(f"<div class='sec'>✅ Needs you{f' · {n_needs}' if n_needs else ''}</div>",
                 unsafe_allow_html=True)
-    with st.container(height=CAP):
+    with st.container():
+        st.markdown("<div class='cap-needs'></div>", unsafe_allow_html=True)
         if not pending and not all_conflicts:
             st.success("All clear.")
         for ci, c in enumerate(all_conflicts):
@@ -621,9 +635,9 @@ with c2:
                     clear_item(item, pending); log_activity("dismissed", title, source)
                     st.toast("Ignored", icon="🚫"); st.rerun()
 
-# Slim forward-looking strip (busiest day / birthdays / holidays) above the week.
-# Conflicts + to-dos live in "Needs you" and the To-do list, so keep them out here.
-_strip_bits = [f"{icon} {text}" for icon, text, sev in LOOK if icon in ("🔭", "🎂", "🎉", "🗒️")]
+# Slim forward-looking strip (birthdays / holidays) above the week. Busiest-day
+# hint removed — not useful. Conflicts + to-dos already live in Needs you / To-do.
+_strip_bits = [f"{icon} {text}" for icon, text, sev in LOOK if icon in ("🎂", "🎉", "🗒️")]
 if _strip_bits:
     st.markdown("<div class='look-strip'>"
                 + "<span class='ls-sep'>·</span>".join(_strip_bits)

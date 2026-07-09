@@ -189,6 +189,18 @@ lookahead.py, briefing.py, dashboard.py, theme.py).
 Newest first. Each pass appends here (daily-job step 8); durable rules also get folded
 into the sections above so they apply automatically.
 
+### 2026-07-09 (dashboard pass 3)
+- **Hid the Streamlit Cloud chrome.** The hosted toolbar (Fork / GitHub / ⋮ menu)
+  was overlapping the app header. CSS now hides `stHeader`/`stToolbar`/`MainMenu`/
+  footer and adds top padding. (Reappears if Streamlit renames those testids.)
+- **Top-row columns shrink to content with a capped scroll.** "Today" and "Needs you"
+  no longer sit at a fixed 300px (which wasted space when sparse). They shrink to
+  their content and cap at ~340px, scrolling internally when very full so the week
+  grid stays visible. Today uses a `.scrollcol` wrapper; Needs you uses a `:has()`
+  cap on its container (needs a `.cap-needs` marker div — keep it if editing).
+- **Removed the "busiest day ahead" hint** from the slim strip (not useful). Strip now
+  carries only birthdays/holidays; if none, it doesn't render.
+
 ### 2026-07-09 (dashboard pass 2)
 - **Top row slimmed to two columns.** Dropped the tall, half-empty "Look ahead"
   column (it duplicated the week grid). Top row is now **Today + Needs you**; the
