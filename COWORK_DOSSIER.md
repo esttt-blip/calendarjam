@@ -208,6 +208,13 @@ lookahead.py, briefing.py, dashboard.py, theme.py).
 Newest first. Each pass appends here (daily-job step 8); durable rules also get folded
 into the sections above so they apply automatically.
 
+### 2026-07-09 (dashboard pass 8)
+- **Calendar items are now click-through to the Google Calendar event.** `dashboard.py`
+  now carries each event's `htmlLink` into `dashboard.json` (`link` field); `app/app.py`
+  renders timed-event titles and all-day pills as links when a `link` is present (plain
+  text fallback otherwise). Takes effect once the cron rewrites `dashboard.json` with the
+  new field (next ingestion run) — the existing snapshot has no links yet.
+
 ### 2026-07-09 (dashboard pass 7)
 - **Week-ahead restyled from boxed cards to light vertical dividers.** No more outlined/
   rounded/shadowed `.wk-card` boxes — days are now columns split by a thin `border-left`

@@ -132,6 +132,7 @@ def _week_agenda(days: int = 7) -> list[dict]:
             "all_day": all_day,
             "is_drive": summary.strip().startswith("🚗"),
             "sort": sort_key,
+            "link": e.get("htmlLink", ""),  # deep-link back to the Google Calendar event
         })
 
     # Annotate conflicts onto their day

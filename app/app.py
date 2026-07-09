@@ -308,6 +308,9 @@ st.markdown("""
              font-family:ui-monospace,monospace; font-size:12px; }
   .ev-title { color:#222; font-size:13.5px; line-height:1.35; }
   .ev-loc { color:#a6a6b2; font-size:11px; }
+  .ev-link, .pill-link { color:inherit; text-decoration:none; }
+  .ev-link:hover { text-decoration:underline; text-decoration-color:#b8b8c4; }
+  .pill-link:hover { text-decoration:underline; }
   .empty-day { color:#c4c4cf; font-size:12.5px; font-style:italic; }
   .chips { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
   .chip { font-size:11px; font-weight:600; padding:3px 9px; border-radius:20px; line-height:1.35; }
@@ -525,9 +528,13 @@ def _day_head(day: dict) -> str:
     """Date header with color-coded all-day pills inline (next to the date, so
     they don't cost an extra row)."""
     allday = [e for e in day.get("events", []) if e.get("all_day")]
-    pills = "".join(
-        f"<span class='chip-allday {_allday_class(e['title'])}'>{e['title']}</span>"
-        for e in allday)
+    pills = ""
+    for e in allday:
+        label = e["title"]
+        if e.get("link"):
+            label = (f"<a class='pill-link' href='{e['link']}' target='_blank' "
+                     f"rel='noopener'>{e['title']}</a>")
+        pills += f"<span class='chip-allday {_allday_class(e['title'])}'>{label}</span>"
     inline = f"<span class='allday-inline'>{pills}</span>" if pills else ""
     return f"<div class='day-head'>{_short_label(day['label'])}{inline}</div>"
 
@@ -541,8 +548,12 @@ def _day_card_inner(day: dict) -> str:
     for i, e in enumerate(timed):
         loc = f"<div class='ev-loc'>📍 {e['location'][:40]}</div>" if e.get("location") else ""
         first = " first" if i == 0 else ""
+        title = e["title"]
+        if e.get("link"):
+            title = (f"<a class='ev-link' href='{e['link']}' target='_blank' "
+                     f"rel='noopener'>{e['title']}</a>")
         rows += (f"<div class='ev-row{first}'><div class='ev-time'>{e['time']}</div>"
-                 f"<div><div class='ev-title'>{e['title']}</div>{loc}</div></div>")
+                 f"<div><div class='ev-title'>{title}</div>{loc}</div></div>")
     if not timed:
         rows = "<div class='empty-day' style='padding-top:1px'>no timed plans</div>"
     return rows
