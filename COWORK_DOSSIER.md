@@ -208,6 +208,13 @@ lookahead.py, briefing.py, dashboard.py, theme.py).
 Newest first. Each pass appends here (daily-job step 8); durable rules also get folded
 into the sections above so they apply automatically.
 
+### 2026-07-09 (dashboard pass 7)
+- **Week-ahead restyled from boxed cards to light vertical dividers.** No more outlined/
+  rounded/shadowed `.wk-card` boxes — days are now columns split by a thin `border-left`
+  line (full-height via `align-items:stretch`), `gap:0`, tight 12px padding, so text gets
+  the width and wraps less. Weekday labels abbreviated (Mon, Tue, …) via `_short_label()`.
+  Mobile stacks with horizontal dividers instead.
+
 ### 2026-07-09 (dashboard pass 6)
 - **Permanent-ignore list added** (`permanent_ignores.json`) — title-substring patterns
   that never reach the calendar/dashboard. Seeded with the Bi-Weekly Product Health /
