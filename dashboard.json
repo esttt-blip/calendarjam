@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-07-09T08:45:59.278149-04:00",
-  "generated_label": "Thu Jul 9, 8:45 AM",
-  "weather": null,
+  "generated_at": "2026-07-10T06:01:15.765748-04:00",
+  "generated_label": "Fri Jul 10, 6:01 AM",
+  "weather": {
+    "high_f": 90,
+    "low_f": 71,
+    "precip_pct": 22,
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
+  },
   "theme": {
     "emoji": "\ud83c\udfd6\ufe0f",
     "title": "High Summer",
@@ -11,40 +17,8 @@
   },
   "week": [
     {
-      "date": "2026-07-09",
-      "label": "Today \u00b7 Thu Jul 9",
-      "weather": null,
-      "events": [
-        {
-          "time": "6:03 pm",
-          "title": "\ud83d\ude97 Drive to Marshall High School (Ignite practice)",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-07-09T18:03:00-04:00"
-        },
-        {
-          "time": "6:30 pm",
-          "title": "\u26be Ignite Cadets 12U \u2014 Pitching/Catcher Development",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-09T18:30:00-04:00"
-        },
-        {
-          "time": "8:15 pm",
-          "title": "Reservation at Umi Sake House for 3",
-          "location": "2230 First Avenue, Seattle, WA 98121",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-09T20:15:00-04:00"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-07-10",
-      "label": "Tomorrow \u00b7 Fri Jul 10",
+      "label": "Today \u00b7 Fri Jul 10",
       "weather": null,
       "events": [
         {
@@ -53,15 +27,8 @@
           "location": "1900 5th Avenue, Seattle, Washington 98101, United States",
           "all_day": true,
           "is_drive": false,
-          "sort": "2026-07-10T00:00"
-        },
-        {
-          "time": "10:00 am",
-          "title": "FW: Bi-Weekly Product Health and Incident Review with ELT",
-          "location": "https://draftkings.zoom.us/j/95183770035?pwd=jpUb1Xt5mcxx69DQkzdkaee60kpuZh.1",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-10T10:00:00-04:00"
+          "sort": "2026-07-10T00:00",
+          "link": "https://www.google.com/calendar/event?eid=Yzl0MWxyODRybmN2ZG0waGlmcWkzdnA4cWcgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "4:23 pm",
@@ -69,7 +36,8 @@
           "location": "San Luis Obispo SBP",
           "all_day": false,
           "is_drive": false,
-          "sort": "2026-07-10T16:23:00-04:00"
+          "sort": "2026-07-10T16:23:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=c3JsYzIyanJkZTF2M280NmxkdjdqZ3RzNzAgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "9:30 pm",
@@ -77,7 +45,8 @@
           "location": "2323 2nd Avenue",
           "all_day": false,
           "is_drive": false,
-          "sort": "2026-07-10T21:30:00-04:00"
+          "sort": "2026-07-10T21:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=MjB2dWQ2dGFjcDlzb3Z2dTR2cGFxbDdlcWYgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "9:30 pm",
@@ -85,14 +54,15 @@
           "location": "Tavolata Belltown, 2323 2nd Avenue, (Battery Street) Seattle, WA 98121",
           "all_day": false,
           "is_drive": false,
-          "sort": "2026-07-10T21:30:00-04:00"
+          "sort": "2026-07-10T21:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=cXBzZDQ4bXRyOGFoZzNhYjkxMDAxYTkzOWsgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
     },
     {
       "date": "2026-07-11",
-      "label": "Saturday \u00b7 Jul 11",
+      "label": "Tomorrow \u00b7 Sat Jul 11",
       "weather": null,
       "events": [
         {
@@ -101,7 +71,8 @@
           "location": "",
           "all_day": true,
           "is_drive": false,
-          "sort": "2026-07-11T00:00"
+          "sort": "2026-07-11T00:00",
+          "link": "https://www.google.com/calendar/event?eid=N2d0bG8zc2dzanUyNThmaHAwMmp1ZTBmdWogZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "6:30 pm",
@@ -109,7 +80,8 @@
           "location": "",
           "all_day": false,
           "is_drive": false,
-          "sort": "2026-07-11T18:30:00-04:00"
+          "sort": "2026-07-11T18:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Z2U2ZWNmbW9vcmZpczMzNXF1MzIxYjdnajAgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
@@ -125,7 +97,8 @@
           "location": "",
           "all_day": true,
           "is_drive": false,
-          "sort": "2026-07-12T00:00"
+          "sort": "2026-07-12T00:00",
+          "link": "https://www.google.com/calendar/event?eid=XzcwcDNhaDlsOGQxM2NiYTE4a29qZ2I5azhnb2s2YjlwODhwMzJiYTU4Y3EzMmQxbDc0cjRjY2hoNmdfMjAyNjA3MTIgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "6:00 pm",
@@ -133,7 +106,8 @@
           "location": "",
           "all_day": false,
           "is_drive": false,
-          "sort": "2026-07-12T18:00:00-04:00"
+          "sort": "2026-07-12T18:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=NTkzYjgzOTdqZDhpZTJwaWU1Ym9lNG9nZjAgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "6:00 pm",
@@ -141,7 +115,8 @@
           "location": "",
           "all_day": false,
           "is_drive": false,
-          "sort": "2026-07-12T18:00:00-04:00"
+          "sort": "2026-07-12T18:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=OW1qdmQ3YWszNWxwMWhiN3N2ZGJzZmFoMjAgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
@@ -157,7 +132,8 @@
           "location": "",
           "all_day": true,
           "is_drive": false,
-          "sort": "2026-07-13T00:00"
+          "sort": "2026-07-13T00:00",
+          "link": "https://www.google.com/calendar/event?eid=OXFvcjFyZnZoNXRubzdtb2ZrMjJhNTc1aWtfMjAyNjA3MTMgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
@@ -173,7 +149,8 @@
           "location": "",
           "all_day": true,
           "is_drive": false,
-          "sort": "2026-07-14T00:00"
+          "sort": "2026-07-14T00:00",
+          "link": "https://www.google.com/calendar/event?eid=ODdwZGNzNHF2cXJxYmNlMzU5Nms5NnUydmlfMjAyNjA3MTQgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
@@ -189,7 +166,8 @@
           "location": "",
           "all_day": false,
           "is_drive": false,
-          "sort": "2026-07-15T18:00:00-04:00"
+          "sort": "2026-07-15T18:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=aXVlbmJxcW9iM3RnYmplc2FlamhrbHRldmMgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "6:00 pm",
@@ -197,7 +175,8 @@
           "location": "",
           "all_day": false,
           "is_drive": false,
-          "sort": "2026-07-15T18:00:00-04:00"
+          "sort": "2026-07-15T18:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=cmwzYWN2bHN1bGtjcDY0dGVpZG5pZmhuamsgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "7:00 pm",
@@ -205,7 +184,25 @@
           "location": "",
           "all_day": false,
           "is_drive": false,
-          "sort": "2026-07-15T19:00:00-04:00"
+          "sort": "2026-07-15T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=cGZpdGZmcnVtdTZwbTc4YnVhMnFydGc2cjAgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "date": "2026-07-16",
+      "label": "Thursday \u00b7 Jul 16",
+      "weather": null,
+      "events": [
+        {
+          "time": "1:00 pm",
+          "title": "Platform All Hands Monthly ",
+          "location": "https://draftkings.zoom.us/j/92909466243?pwd=MHoitIe4MyDL8SWx6TUx7DCGlQAawu.1&from=addon",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-16T13:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc2cDJqMmg5bDc0cGs0aGkxODRxNDhncGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNjRvazRjOWk2dDIzNGQyNDg5MGtjZDFrOGQwa2NkcTE2c3EzMGVhMzYwcmo4ZzlpOGdyZ18yMDI2MDcxNlQxNzAwMDBaIGVzdGhlci5ldmVseW5AbQ"
         }
       ],
       "conflicts": []
@@ -216,12 +213,17 @@
       {
         "title": "Jen Lichtblau\u2019s Birthday",
         "day": "Mon Jul 13",
-        "days_out": 4
+        "days_out": 3
       },
       {
         "title": "Rhys Birthday",
         "day": "Mon Jul 27",
-        "days_out": 18
+        "days_out": 17
+      },
+      {
+        "title": "Danielle Berg's Birthday",
+        "day": "Fri Jul 31",
+        "days_out": 21
       }
     ],
     "holidays": []
