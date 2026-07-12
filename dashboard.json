@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-11T08:05:40.014750-04:00",
-  "generated_label": "Sat Jul 11, 8:05 AM",
+  "generated_at": "2026-07-12T06:02:13.677678-04:00",
+  "generated_label": "Sun Jul 12, 6:02 AM",
   "weather": null,
   "theme": {
     "emoji": "\ud83c\udfd6\ufe0f",
@@ -11,34 +11,8 @@
   },
   "week": [
     {
-      "date": "2026-07-11",
-      "label": "Today \u00b7 Sat Jul 11",
-      "weather": null,
-      "events": [
-        {
-          "time": "all day",
-          "title": "Alaska Cruise",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-07-11T00:00",
-          "link": "https://www.google.com/calendar/event?eid=N2d0bG8zc2dzanUyNThmaHAwMmp1ZTBmdWogZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:30 pm",
-          "title": "Spirit @ Courage (ion)",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-11T18:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Z2U2ZWNmbW9vcmZpczMzNXF1MzIxYjdnajAgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-07-12",
-      "label": "Tomorrow \u00b7 Sun Jul 12",
+      "label": "Today \u00b7 Sun Jul 12",
       "weather": null,
       "events": [
         {
@@ -73,7 +47,7 @@
     },
     {
       "date": "2026-07-13",
-      "label": "Monday \u00b7 Jul 13",
+      "label": "Tomorrow \u00b7 Mon Jul 13",
       "weather": null,
       "events": [
         {
@@ -163,6 +137,41 @@
       "weather": null,
       "events": [],
       "conflicts": []
+    },
+    {
+      "date": "2026-07-18",
+      "label": "Saturday \u00b7 Jul 18",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "Stay at The Westin Seattle",
+          "location": "The Westin Seattle, Seattle",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-07-18T00:00",
+          "link": "https://www.google.com/calendar/event?eid=OWZtc21xczE2ZGtqZmx1ZnV0dmpkZGt2cTQgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:40 pm",
+          "title": "Flight to San Luis Obispo (AS 2064)",
+          "location": "Seattle SEA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-18T19:40:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=anVnZHFzam1kZ201aW9nY2FvMjdlbmliNjggZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "8:00 pm",
+          "title": "Giants @ Mariners",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-18T20:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZWlmcmhsZG5kNHUzcXQ3cDY1b2FhZ2JwbmMgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -170,17 +179,17 @@
       {
         "title": "Jen Lichtblau\u2019s Birthday",
         "day": "Mon Jul 13",
-        "days_out": 2
+        "days_out": 1
       },
       {
         "title": "Rhys Birthday",
         "day": "Mon Jul 27",
-        "days_out": 16
+        "days_out": 15
       },
       {
         "title": "Danielle Berg's Birthday",
         "day": "Fri Jul 31",
-        "days_out": 20
+        "days_out": 19
       }
     ],
     "holidays": []
