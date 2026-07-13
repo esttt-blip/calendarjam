@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-07-13T08:41:10.347157-04:00",
-  "generated_label": "Mon Jul 13, 8:41 AM",
-  "weather": {
-    "high_f": 88,
-    "low_f": 64,
-    "precip_pct": 0,
-    "emoji": "\ud83c\udf24",
-    "label": "Mostly clear"
-  },
+  "generated_at": "2026-07-13T09:31:53.201048-04:00",
+  "generated_label": "Mon Jul 13, 9:31 AM",
+  "weather": null,
   "theme": {
     "emoji": "\ud83c\udfd6\ufe0f",
     "title": "High Summer",
