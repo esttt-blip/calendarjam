@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-12T08:08:04.108368-04:00",
-  "generated_label": "Sun Jul 12, 8:08 AM",
+  "generated_at": "2026-07-13T06:02:00.646930-04:00",
+  "generated_label": "Mon Jul 13, 6:02 AM",
   "weather": null,
   "theme": {
     "emoji": "\ud83c\udfd6\ufe0f",
@@ -11,43 +11,8 @@
   },
   "week": [
     {
-      "date": "2026-07-12",
-      "label": "Today \u00b7 Sun Jul 12",
-      "weather": null,
-      "events": [
-        {
-          "time": "all day",
-          "title": "Empty washer lint trap",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-07-12T00:00",
-          "link": "https://www.google.com/calendar/event?eid=XzcwcDNhaDlsOGQxM2NiYTE4a29qZ2I5azhnb2s2YjlwODhwMzJiYTU4Y3EzMmQxbDc0cjRjY2hoNmdfMjAyNjA3MTIgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:00 pm",
-          "title": "Reservation at TAMARIND - DINNER",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-12T18:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=NTkzYjgzOTdqZDhpZTJwaWU1Ym9lNG9nZjAgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:00 pm",
-          "title": "Confirmation of Your Holland America Line Purchases",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-12T18:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=OW1qdmQ3YWszNWxwMWhiN3N2ZGJzZmFoMjAgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-07-13",
-      "label": "Tomorrow \u00b7 Mon Jul 13",
+      "label": "Today \u00b7 Mon Jul 13",
       "weather": null,
       "events": [
         {
@@ -64,7 +29,7 @@
     },
     {
       "date": "2026-07-14",
-      "label": "Tuesday \u00b7 Jul 14",
+      "label": "Tomorrow \u00b7 Tue Jul 14",
       "weather": null,
       "events": [
         {
@@ -172,6 +137,32 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-07-19",
+      "label": "Sunday \u00b7 Jul 19",
+      "weather": null,
+      "events": [
+        {
+          "time": "11:15 am",
+          "title": "Flight to Washington (UA 2463)",
+          "location": "Seattle SEA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-19T11:15:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=YTBha2twY2JhMXZvdWFlOWkwcjY0YWk5NDAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "Spirit @ Boston (Victory)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-19T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=OXYydmZmZTNwZmE0NWFhODNydWg3b2o0b2sgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -179,17 +170,17 @@
       {
         "title": "Jen Lichtblau\u2019s Birthday",
         "day": "Mon Jul 13",
-        "days_out": 1
+        "days_out": 0
       },
       {
         "title": "Rhys Birthday",
         "day": "Mon Jul 27",
-        "days_out": 15
+        "days_out": 14
       },
       {
         "title": "Danielle Berg's Birthday",
         "day": "Fri Jul 31",
-        "days_out": 19
+        "days_out": 18
       }
     ],
     "holidays": []
