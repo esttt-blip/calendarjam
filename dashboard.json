@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-07-13T06:02:00.646930-04:00",
-  "generated_label": "Mon Jul 13, 6:02 AM",
-  "weather": null,
+  "generated_at": "2026-07-13T08:41:10.347157-04:00",
+  "generated_label": "Mon Jul 13, 8:41 AM",
+  "weather": {
+    "high_f": 88,
+    "low_f": 64,
+    "precip_pct": 0,
+    "emoji": "\ud83c\udf24",
+    "label": "Mostly clear"
+  },
   "theme": {
     "emoji": "\ud83c\udfd6\ufe0f",
     "title": "High Summer",
@@ -111,7 +117,7 @@
         {
           "time": "all day",
           "title": "Stay at The Westin Seattle",
-          "location": "The Westin Seattle, Seattle",
+          "location": "1900 5th Avenue, Seattle, Washington 98101, United States",
           "all_day": true,
           "is_drive": false,
           "sort": "2026-07-18T00:00",
