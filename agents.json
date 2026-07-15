@@ -48,9 +48,9 @@
       },
       "status": {
         "state": "live",
-        "updated": "2026-07-13",
+        "updated": "2026-07-15",
         "cheapest_plan": "Dec 19 \u2192 Jan 3",
-        "cheapest_econ": 4921,
+        "cheapest_econ": 4920,
         "results": [
           {
             "label": "Dec 19 \u2192 Jan 2",
@@ -69,7 +69,7 @@
               "insights": null
             },
             "business": {
-              "low": 15316,
+              "low": 15314,
               "flight_numbers": [
                 "UA 932",
                 "LH 236"
@@ -86,7 +86,7 @@
           {
             "label": "Dec 19 \u2192 Jan 3",
             "economy": {
-              "low": 4921,
+              "low": 4920,
               "flight_numbers": [
                 "TP 232",
                 "TP 832"
@@ -100,7 +100,7 @@
               "insights": null
             },
             "business": {
-              "low": 15316,
+              "low": 15314,
               "flight_numbers": [
                 "UA 932",
                 "LH 236"
@@ -179,6 +179,13 @@
           "Dec 19 \u2192 Jan 2 business": 15316,
           "Dec 19 \u2192 Jan 3 economy": 4921,
           "Dec 19 \u2192 Jan 3 business": 15316
+        },
+        {
+          "date": "2026-07-15",
+          "Dec 19 \u2192 Jan 2 economy": 5145,
+          "Dec 19 \u2192 Jan 2 business": 15314,
+          "Dec 19 \u2192 Jan 3 economy": 4920,
+          "Dec 19 \u2192 Jan 3 business": 15314
         }
       ]
     }
