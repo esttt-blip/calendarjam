@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-14T08:41:05.875086-04:00",
-  "generated_label": "Tue Jul 14, 8:41 AM",
+  "generated_at": "2026-07-15T06:01:15.697218-04:00",
+  "generated_label": "Wed Jul 15, 6:01 AM",
   "weather": null,
   "theme": {
     "emoji": "\ud83c\udfd6\ufe0f",
@@ -11,25 +11,8 @@
   },
   "week": [
     {
-      "date": "2026-07-14",
-      "label": "Today \u00b7 Tue Jul 14",
-      "weather": null,
-      "events": [
-        {
-          "time": "all day",
-          "title": "Edgar!",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-07-14T00:00",
-          "link": "https://www.google.com/calendar/event?eid=ODdwZGNzNHF2cXJxYmNlMzU5Nms5NnUydmlfMjAyNjA3MTQgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-07-15",
-      "label": "Tomorrow \u00b7 Wed Jul 15",
+      "label": "Today \u00b7 Wed Jul 15",
       "weather": null,
       "events": [
         {
@@ -64,7 +47,7 @@
     },
     {
       "date": "2026-07-16",
-      "label": "Thursday \u00b7 Jul 16",
+      "label": "Tomorrow \u00b7 Thu Jul 16",
       "weather": null,
       "events": [
         {
@@ -163,6 +146,23 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-07-21",
+      "label": "Tuesday \u00b7 Jul 21",
+      "weather": null,
+      "events": [
+        {
+          "time": "6:00 pm",
+          "title": "Ignite \u26be Athletic Development",
+          "location": "5130 Wilson Blvd, Arlington, VA 22205",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-21T18:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZTN2b2pvZGVoZXY5bzl0Yzk2dGwycjB2cGMgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -170,17 +170,17 @@
       {
         "title": "Rhys Birthday",
         "day": "Mon Jul 27",
-        "days_out": 13
+        "days_out": 12
       },
       {
         "title": "Danielle Berg's Birthday",
         "day": "Fri Jul 31",
-        "days_out": 17
+        "days_out": 16
       },
       {
         "title": "Erin Redding's Birthday",
         "day": "Tue Aug 4",
-        "days_out": 21
+        "days_out": 20
       }
     ],
     "holidays": []
