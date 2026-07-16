@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-15T08:42:47.489095-04:00",
-  "generated_label": "Wed Jul 15, 8:42 AM",
+  "generated_at": "2026-07-16T06:01:21.006489-04:00",
+  "generated_label": "Thu Jul 16, 6:01 AM",
   "weather": null,
   "theme": {
     "emoji": "\ud83c\udfd6\ufe0f",
@@ -11,43 +11,8 @@
   },
   "week": [
     {
-      "date": "2026-07-15",
-      "label": "Today \u00b7 Wed Jul 15",
-      "weather": null,
-      "events": [
-        {
-          "time": "6:00 pm",
-          "title": "Confirmation of Your Holland America Line Purchases",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-15T18:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=aXVlbmJxcW9iM3RnYmplc2FlamhrbHRldmMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:00 pm",
-          "title": "Reservation at MORIMOTO POP-UP DINNER",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-15T18:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=cmwzYWN2bHN1bGtjcDY0dGVpZG5pZmhuamsgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "Spirit @ Gotham (NWSL+)",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-15T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=cGZpdGZmcnVtdTZwbTc4YnVhMnFydGc2cjAgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-07-16",
-      "label": "Tomorrow \u00b7 Thu Jul 16",
+      "label": "Today \u00b7 Thu Jul 16",
       "weather": null,
       "events": [
         {
@@ -64,7 +29,7 @@
     },
     {
       "date": "2026-07-17",
-      "label": "Friday \u00b7 Jul 17",
+      "label": "Tomorrow \u00b7 Fri Jul 17",
       "weather": null,
       "events": [],
       "conflicts": []
@@ -153,6 +118,15 @@
       "weather": null,
       "events": [
         {
+          "time": "all day",
+          "title": "Stay at Boston Marriott Copley Place",
+          "location": "110 Huntington Avenue, Boston, Massachusetts 02116, United States",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-07-21T00:00",
+          "link": "https://www.google.com/calendar/event?eid=bWxidW1pdTUzMDBzb3IyYWNhMWQxbDYxMmsgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
           "time": "6:00 pm",
           "title": "Ignite \u26be Athletic Development",
           "location": "5130 Wilson Blvd, Arlington, VA 22205",
@@ -163,6 +137,23 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-07-22",
+      "label": "Wednesday \u00b7 Jul 22",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "\ud83c\udf71 MightyMeals delivery",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-07-22T00:00",
+          "link": "https://www.google.com/calendar/event?eid=OTZtZDJtam02M2UyaWMzOXZ1YzQxMjczZG8gZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -170,17 +161,17 @@
       {
         "title": "Rhys Birthday",
         "day": "Mon Jul 27",
-        "days_out": 12
+        "days_out": 11
       },
       {
         "title": "Danielle Berg's Birthday",
         "day": "Fri Jul 31",
-        "days_out": 16
+        "days_out": 15
       },
       {
         "title": "Erin Redding's Birthday",
         "day": "Tue Aug 4",
-        "days_out": 20
+        "days_out": 19
       }
     ],
     "holidays": []
