@@ -813,5 +813,11 @@
     "action": "dismissed",
     "title": "[Personal] Your Wednesday evening trip with Uber",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-07-17T16:22:23.665703+00:00",
+    "action": "dismissed",
+    "title": "Your Reservation at Tavolata Belltown | Esther Scott on 7/10/26",
+    "source": "Gmail"
   }
 ]
