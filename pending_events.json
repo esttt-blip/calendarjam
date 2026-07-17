@@ -60,18 +60,6 @@
     "from": "OnePay <mail@servicing.onepay.com>"
   },
   {
-    "id": "dbbb65e7ae61f2a07823c992ebdecdc7",
-    "source": "Gmail",
-    "title": "Booking Confirmation to Puzzle Break Seattle Escape Room",
-    "start": null,
-    "end": null,
-    "location": "",
-    "description": "Dear Player,\r\n\r\nThank you for signing up for a game at Puzzle Break Powered by PanIQ!\r\n\r\nPlease take a moment to look over the details of your reservation below.\r\n\r\n\ud83d\udccd Location \r\n2124 2nd Ave,\r\nSeattle, WA 98121 \r\n\r\n\ud83e\udde9 Room \r\nEscape from Seattle - The World&#039;s Fair Affair\r\nEscape Room \r\n\r\n\ud83d\udcc5 Date \r\nFriday, July 10, 2026 \r\n\r\n\u23f0 Time \r\n2:30 PM - 3:30 PM \r\n\r\n\ud83d\udc65 Players \r\n3 \r\n\r\nThis room contains flashing lights that may affect photosensitive players. \r\n\r\n\ud83d\udcb3 Total Price \r\n$146.02 \r\n\r\n\ud83d\udcb3 Amount Paid \r\n$146.02 \r\n\r\n\ud83d\udd17 Reservation \r\nView Your Booking \r\n\r\nPlease ensure every player in your team signs the digital waiver before arrival. \r\nhttps://www.puzzlebreak.us/waiver/gWLP1b2OUQ9 \r\n\r\nAdding extra players to your event is possible!\r\n\r\n- Private booking: You can add additional players to your reservation upon arrival, up to the maximum capacity of the booked room.\r\n\r\nHandicap Accessibility\r\n\r\nWe deeply understand the importance of providing equal access and accommodation for individuals with disabilities, but unfortunately, this facility is not handicap accessible.\r\n\r\nThe Rules\r\n\r\nYou can reschedule your booking up to 24 hours before its start time. For games less than 24 hours away, a 15% rescheduling fee will be charged. All sales are final. We do not issue refunds for cancellations, no-shows, or late arrivals. \r\n\r\nHow to reschedule your game in 3 steps: \r\n1. Click on your reservation link provided above.\r\n2. Once on our Booking Confirmation page, click the \"Reschedule Booking\" button. ",
-    "uid": "<09a0cdb0c772584df0f2fee3182f3ee4@puzzlebreak.us>",
-    "needs_review": true,
-    "from": "Puzzle Break <info@puzzlebreak.us>"
-  },
-  {
     "id": "a1c4b48800ae8e4e2df09b1482b107c9",
     "source": "Gmail",
     "title": "RE: Bi-Weekly Product Health and Incident Review with ELT",
