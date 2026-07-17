@@ -819,5 +819,11 @@
     "action": "dismissed",
     "title": "Your Reservation at Tavolata Belltown | Esther Scott on 7/10/26",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-07-17T16:22:36.913035+00:00",
+    "action": "dismissed",
+    "title": "Booking Confirmation to Puzzle Break Seattle Escape Room",
+    "source": "Gmail"
   }
 ]
