@@ -831,5 +831,11 @@
     "action": "dismissed",
     "title": "Re: Appointment Availability",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-07-18T14:06:40.414385+00:00",
+    "action": "dismissed",
+    "title": "Quick reminder: protect your info",
+    "source": "Gmail"
   }
 ]
