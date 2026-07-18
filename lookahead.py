@@ -86,6 +86,23 @@ def _same_title(a: dict, b: dict) -> bool:
            (b.get("summary", "") or "").strip().lower()
 
 
+def _likely_duplicate(ev1, ev2, s1, s2) -> bool:
+    """Two overlapping events that are really the SAME appointment from two
+    sources (e.g. 'Henry Ortho' vs 'Orthodontic Appointment for Henry', both
+    8:30 at 1600 Wilson Blvd). Different titles slip past _same_title, so also
+    treat as a duplicate — not a two-places-at-once conflict — when they start
+    within 2 min and we can't prove two *different* known locations."""
+    if abs((s1 - s2).total_seconds()) > 120:
+        return False
+    if _same_title(ev1, ev2):
+        return True
+    la = (ev1.get("location") or "").strip().lower()
+    lb = (ev2.get("location") or "").strip().lower()
+    if not la or not lb or la == lb:
+        return True
+    return False
+
+
 # Tournament bracket placeholders — the team only plays one of these slots
 # depending on earlier results, so overlapping bracket games aren't real
 # conflicts. Recognized by TBD / bracket / round-name markers.
@@ -141,6 +158,8 @@ def find_collisions(events: list[dict]) -> list[dict]:
                 break  # sorted: no later event can overlap
             # Duplicate of the same event (a stray copy) — not a real clash.
             if _same_title(ev1, ev2):
+                continue
+            if _likely_duplicate(ev1, ev2, s1, s2):
                 continue
             # Different people in the house attend each (e.g. Henry's practice
             # vs Esther's evening plans) — not a two-places-at-once conflict.
