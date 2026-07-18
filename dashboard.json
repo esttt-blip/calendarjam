@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-17T08:20:42.191581-04:00",
-  "generated_label": "Fri Jul 17, 8:20 AM",
+  "generated_at": "2026-07-18T03:39:37.917224-04:00",
+  "generated_label": "Sat Jul 18, 3:39 AM",
   "weather": null,
   "theme": {
     "emoji": "\ud83c\udfd6\ufe0f",
@@ -11,15 +11,8 @@
   },
   "week": [
     {
-      "date": "2026-07-17",
-      "label": "Today \u00b7 Fri Jul 17",
-      "weather": null,
-      "events": [],
-      "conflicts": []
-    },
-    {
       "date": "2026-07-18",
-      "label": "Tomorrow \u00b7 Sat Jul 18",
+      "label": "Today \u00b7 Sat Jul 18",
       "weather": null,
       "events": [
         {
@@ -54,7 +47,7 @@
     },
     {
       "date": "2026-07-19",
-      "label": "Sunday \u00b7 Jul 19",
+      "label": "Tomorrow \u00b7 Sun Jul 19",
       "weather": null,
       "events": [
         {
@@ -180,20 +173,33 @@
           "link": "https://www.google.com/calendar/event?eid=MWZidG9vMTZrcHV0MTVjN2RtNHUxZTMzbWMgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
-      "conflicts": [
+      "conflicts": []
+    },
+    {
+      "date": "2026-07-24",
+      "label": "Friday \u00b7 Jul 24",
+      "weather": null,
+      "events": [
         {
-          "a": "Henry Ortho",
-          "a_time": "8:30 am",
-          "b": "Orthodontic Appointment for Henry",
-          "b_time": "8:30 am"
+          "time": "9:00 am",
+          "title": "Taylor Dentist",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-24T09:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=YTBtZzB1dG9rcDRtcGNqdmgyY3BrdXRnYzQgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
-          "a": "Henry Ortho",
-          "a_time": "8:30 am",
-          "b": "Orthodontic Appointment for Henry",
-          "b_time": "8:30 am"
+          "time": "10:00 am",
+          "title": "FW: Bi-Weekly Product Health and Incident Review with ELT",
+          "location": "https://draftkings.zoom.us/j/95183770035?pwd=jpUb1Xt5mcxx69DQkzdkaee60kpuZh.1",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-24T10:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc3NG80YWNpMzY0cWsyaDlnNnQzNDhncGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNmQyazJlMW44a3EzZWMxZzZzcGtjZ3BrNnQxMzZkYTE4b3A0NGhobDZvb2o0Z2hpNzEwZ18yMDI2MDcyNFQxNDAwMDBaIGVzdGhlci5ldmVseW5AbQ"
         }
-      ]
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -201,17 +207,17 @@
       {
         "title": "Rhys Birthday",
         "day": "Mon Jul 27",
-        "days_out": 10
+        "days_out": 9
       },
       {
         "title": "Danielle Berg's Birthday",
         "day": "Fri Jul 31",
-        "days_out": 14
+        "days_out": 13
       },
       {
         "title": "Erin Redding's Birthday",
         "day": "Tue Aug 4",
-        "days_out": 18
+        "days_out": 17
       }
     ],
     "holidays": []
