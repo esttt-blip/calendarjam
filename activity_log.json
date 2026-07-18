@@ -855,5 +855,11 @@
     "action": "dismissed",
     "title": "You're Invited by Jason Thomas, Click the invitation for more details",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-07-18T14:07:28.667249+00:00",
+    "action": "approved",
+    "title": "USWNT battles Spain in twin October friendlies",
+    "source": "Gmail"
   }
 ]
