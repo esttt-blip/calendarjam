@@ -825,5 +825,11 @@
     "action": "dismissed",
     "title": "Booking Confirmation to Puzzle Break Seattle Escape Room",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-07-18T14:01:48.748245+00:00",
+    "action": "dismissed",
+    "title": "Re: Appointment Availability",
+    "source": "Gmail"
   }
 ]
