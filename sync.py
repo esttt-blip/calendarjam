@@ -107,6 +107,45 @@ def save_json(path: Path, data) -> None:
         json.dump(data, f, indent=2, default=str)
 
 
+# ── Noise filter: receipts, statements, rides, surveys, marketing — never
+# real appointments. The body may still contain a date/time (e.g. an Uber trip
+# time), so these must be filtered out before the surface-for-review step. ──
+_SKIP_SENDER_SUBSTR = (
+    "uber.com", "lyft.com", "squareup.com", "messaging.squareup.com",
+    "intuit.com", "quickbooks", "@chase.com", "capitalone.com",
+    "fidelity.com", "paypal.com", "venmo.com", "doordash.com",
+    "grubhub.com", "enterprise.com", "no-reply@youtube.com", "meta.com",
+)
+_SKIP_SUBJECT_MARKERS = (
+    "receipt", "your trip", "trip with", "charge summary", "e-statement",
+    "statement is", "statement is available", "your statement",
+    "autoship", "survey", "rewards club", "deposit", "withdrawal",
+    "your invoice", "price drop", "back in stock", "% off",
+)
+
+
+def _should_skip_noise(from_addr: str, subject_lower: str) -> bool:
+    fa = (from_addr or "").lower()
+    if any(s in fa for s in _SKIP_SENDER_SUBSTR):
+        return True
+    if any(m in subject_lower for m in _SKIP_SUBJECT_MARKERS):
+        return True
+    return False
+
+
+# Content-based dedup key (date + normalized title): stops the same appointment
+# — re-issued as a new invite (new UID) or arriving from a second source —
+# from being written to the calendar 2-3 times.
+import re as _re_dedup
+_EMOJI_RE = _re_dedup.compile(r"[^\w\s]", _re_dedup.UNICODE)
+
+
+def content_key(summary: str, start_iso: str) -> str:
+    title = _EMOJI_RE.sub("", (summary or "")).lower().strip()
+    title = _re_dedup.sub(r"\s+", " ", title)
+    return f"{(start_iso or '')[:10]}::{title}"
+
+
 def stable_id(source: str, uid: str) -> str:
     return hashlib.md5(f"{source}:{uid}".encode()).hexdigest()
 
@@ -246,6 +285,8 @@ def _process_message(msg, seq: str, now, cutoff, synced_ids, seen_msgids, events
     if "calendarjam" in subject_lower:
         return
 
+    if _should_skip_noise(from_addr, subject_lower):
+        return
     is_event_like = any(kw in subject_lower for kw in EVENT_SUBJECTS)
     msg_has_ics = False
     plain_body: str | None = None
@@ -808,26 +849,45 @@ def main():
     print(f"\nWriting {len(auto_writes)} events to calendar...")
     successful_writes: list[CalendarWrite] = []
     for w in auto_writes:
+        _ckey = stable_id("content", content_key(w.summary, w.start_iso))
+        if _ckey in synced_ids:
+            print(f"  ~ [dup] skip {w.summary} — already have this date+title")
+            continue
         if write_to_calendar(w):
             successful_writes.append(w)
             synced_ids.add(w.source_id)
+            synced_ids.add(_ckey)
 
     # Merge new review items into pending queue
     pending.extend(new_pending)
 
     # Send summary email and remember Message-ID for reply matching
-    msg_id = send_summary_email(successful_writes, pending)
+    # Send the summary — at most once per ET day. Historically several
+    # runs/day (two DST crons + a manual workflow_dispatch) each emailed;
+    # guard so only the first run of the ET day sends. Later runs still sync.
+    import zoneinfo as _zi_email
+    _email_today = datetime.now(_zi_email.ZoneInfo("America/New_York")).strftime("%Y-%m-%d")
+    _email_state = load_json(LAST_SUMMARY_FILE, {})
+    if _email_state.get("email_date") == _email_today:
+        print(" [Email] already sent today (ET) — skipping duplicate send")
+        msg_id = None
+    else:
+        msg_id = send_summary_email(successful_writes, pending)
 
     # Persist state
     save_json(SYNCED_FILE, sorted(synced_ids))
     save_json(PENDING_FILE, pending)
 
-    if msg_id and pending:
-        save_json(LAST_SUMMARY_FILE, {
-            "message_id": msg_id,
-            "sent_at": datetime.now(timezone.utc).isoformat(),
-            "pending_ids": [p["id"] for p in pending],
-        })
+    # Persist reply-matching state AND today's ET email date, so later runs
+    # today skip re-sending. email_date is always written; message_id/pending
+    # only when an email actually went out (used for reply matching).
+    _summary_state = load_json(LAST_SUMMARY_FILE, {})
+    _summary_state["email_date"] = _email_today
+    if msg_id:
+        _summary_state["message_id"] = msg_id
+        _summary_state["sent_at"] = datetime.now(timezone.utc).isoformat()
+        _summary_state["pending_ids"] = [p["id"] for p in pending]
+    save_json(LAST_SUMMARY_FILE, _summary_state)
 
     # Build the command-station snapshot for the web app
     print("Building dashboard snapshot...")
