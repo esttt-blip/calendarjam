@@ -849,5 +849,11 @@
     "action": "dismissed",
     "title": "Did you just log in on a new device?",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-07-18T14:07:19.223193+00:00",
+    "action": "dismissed",
+    "title": "You're Invited by Jason Thomas, Click the invitation for more details",
+    "source": "Gmail"
   }
 ]
