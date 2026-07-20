@@ -1,74 +1,25 @@
 {
-  "generated_at": "2026-07-19T07:21:31.562980-04:00",
-  "generated_label": "Sun Jul 19, 7:21 AM",
+  "generated_at": "2026-07-20T06:01:08.840510-04:00",
+  "generated_label": "Mon Jul 20, 6:01 AM",
   "weather": {
-    "high_f": 89,
-    "low_f": 76,
-    "precip_pct": 5,
+    "high_f": 90,
+    "low_f": 66,
+    "precip_pct": 1,
     "emoji": "\u2601\ufe0f",
     "label": "Overcast"
   },
   "theme": {
-    "emoji": "\ud83e\udd75",
-    "title": "Heat Wave",
-    "blurb": "Hydrate and seek shade out there.",
+    "emoji": "\ud83c\udfd6\ufe0f",
+    "title": "High Summer",
+    "blurb": "Heat, hydration, and hustle.",
     "color1": "#ff512f",
     "color2": "#f09819"
   },
   "week": [
     {
-      "date": "2026-07-19",
-      "label": "Today \u00b7 Sun Jul 19",
-      "weather": {
-        "high_f": 89,
-        "low_f": 76,
-        "precip_pct": 5,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "10:30 am",
-          "title": "Order groceries",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-19T10:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=bDZma2dldG5vY2Y2bXV1cWh1cnR2Z2NncGsgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "11:15 am",
-          "title": "Flight to Washington (UA 2463)",
-          "location": "Seattle SEA",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-19T11:15:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=YTBha2twY2JhMXZvdWFlOWkwcjY0YWk5NDAgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "Spirit @ Boston (Victory)",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-19T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=OXYydmZmZTNwZmE0NWFhODNydWg3b2o0b2sgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-07-20",
-      "label": "Tomorrow \u00b7 Mon Jul 20",
-      "weather": {
-        "high_f": 91,
-        "low_f": 69,
-        "precip_pct": 15,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Today \u00b7 Mon Jul 20",
+      "weather": null,
       "events": [
         {
           "time": "7:00 pm",
@@ -84,15 +35,8 @@
     },
     {
       "date": "2026-07-21",
-      "label": "Tuesday \u00b7 Jul 21",
-      "weather": {
-        "high_f": 94,
-        "low_f": 71,
-        "precip_pct": 77,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
-      },
+      "label": "Tomorrow \u00b7 Tue Jul 21",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -127,14 +71,7 @@
     {
       "date": "2026-07-22",
       "label": "Wednesday \u00b7 Jul 22",
-      "weather": {
-        "high_f": 89,
-        "low_f": 69,
-        "precip_pct": 77,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -151,14 +88,7 @@
     {
       "date": "2026-07-23",
       "label": "Thursday \u00b7 Jul 23",
-      "weather": {
-        "high_f": 82,
-        "low_f": 63,
-        "precip_pct": 18,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
-      },
+      "weather": null,
       "events": [
         {
           "time": "8:30 am",
@@ -211,14 +141,7 @@
     {
       "date": "2026-07-24",
       "label": "Friday \u00b7 Jul 24",
-      "weather": {
-        "high_f": 88,
-        "low_f": 64,
-        "precip_pct": 8,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "9:00 am",
@@ -244,14 +167,7 @@
     {
       "date": "2026-07-25",
       "label": "Saturday \u00b7 Jul 25",
-      "weather": {
-        "high_f": 90,
-        "low_f": 68,
-        "precip_pct": 17,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "10:15 am",
@@ -273,6 +189,50 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-07-26",
+      "label": "Sunday \u00b7 Jul 26",
+      "weather": null,
+      "events": [
+        {
+          "time": "8:40 am",
+          "title": "Reservation at East Potomac Golf Links - Red",
+          "location": "East Potomac Golf Links - Red, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-26T08:40:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=aGtkOXJvMmRobXNodDY4OXFjZXNicTNqZDAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "8:50 am",
+          "title": "Reservation at East Potomac Golf Links - Red",
+          "location": "East Potomac Golf Links - Red, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-26T08:50:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=aWwzMTQzNDd1c20yMDJpOWtyM2xhbTBsbzggZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "6:10 pm",
+          "title": "\ud83d\ude97 Drive to Audi Field (Spirit vs Denver)",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-07-26T18:10:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=OTd2OTUycHFudGU3dXY0aG45ODI2Y3NzcjggZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "Spirit vs Denver (Victory)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-26T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Nm4wMDc3cWluZzRjczZucjlwcWdhamMzY3MgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -280,17 +240,17 @@
       {
         "title": "Rhys Birthday",
         "day": "Mon Jul 27",
-        "days_out": 8
+        "days_out": 7
       },
       {
         "title": "Danielle Berg's Birthday",
         "day": "Fri Jul 31",
-        "days_out": 12
+        "days_out": 11
       },
       {
         "title": "Erin Redding's Birthday",
         "day": "Tue Aug 4",
-        "days_out": 16
+        "days_out": 15
       }
     ],
     "holidays": []
