@@ -903,5 +903,11 @@
     "action": "approved",
     "title": "Reservation CONFIRMED",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-07-20T10:24:15.299950+00:00",
+    "action": "duplicate",
+    "title": "Reservation CONFIRMED",
+    "source": "Gmail"
   }
 ]
