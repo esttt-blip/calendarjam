@@ -885,5 +885,11 @@
     "action": "dismissed",
     "title": "[Personal] Your Friday evening trip with Uber",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-07-20T10:15:49.512567+00:00",
+    "action": "dismissed",
+    "title": "[Personal] Your Saturday morning trip with Uber",
+    "source": "Gmail"
   }
 ]
