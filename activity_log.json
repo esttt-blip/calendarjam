@@ -927,5 +927,11 @@
     "action": "dismissed",
     "title": "[Personal] Your Friday afternoon trip with Uber",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-07-20T10:53:49.955840+00:00",
+    "action": "duplicate",
+    "title": "Reservation CONFIRMED",
+    "source": "Gmail"
   }
 ]
