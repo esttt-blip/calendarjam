@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-07-20T06:01:08.840510-04:00",
-  "generated_label": "Mon Jul 20, 6:01 AM",
+  "generated_at": "2026-07-20T08:25:47.728879-04:00",
+  "generated_label": "Mon Jul 20, 8:25 AM",
   "weather": {
     "high_f": 90,
-    "low_f": 66,
-    "precip_pct": 1,
+    "low_f": 67,
+    "precip_pct": 0,
     "emoji": "\u2601\ufe0f",
     "label": "Overcast"
   },
   "theme": {
-    "emoji": "\ud83c\udfd6\ufe0f",
-    "title": "High Summer",
-    "blurb": "Heat, hydration, and hustle.",
+    "emoji": "\ud83e\udd75",
+    "title": "Heat Wave",
+    "blurb": "Hydrate and seek shade out there.",
     "color1": "#ff512f",
     "color2": "#f09819"
   },
@@ -19,7 +19,14 @@
     {
       "date": "2026-07-20",
       "label": "Today \u00b7 Mon Jul 20",
-      "weather": null,
+      "weather": {
+        "high_f": 90,
+        "low_f": 67,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "7:00 pm",
@@ -36,7 +43,14 @@
     {
       "date": "2026-07-21",
       "label": "Tomorrow \u00b7 Tue Jul 21",
-      "weather": null,
+      "weather": {
+        "high_f": 96,
+        "low_f": 74,
+        "precip_pct": 82,
+        "weather_code": 63,
+        "emoji": "\ud83c\udf27",
+        "label": "Rain"
+      },
       "events": [
         {
           "time": "all day",
@@ -71,7 +85,14 @@
     {
       "date": "2026-07-22",
       "label": "Wednesday \u00b7 Jul 22",
-      "weather": null,
+      "weather": {
+        "high_f": 87,
+        "low_f": 70,
+        "precip_pct": 82,
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
+      },
       "events": [
         {
           "time": "all day",
@@ -88,7 +109,14 @@
     {
       "date": "2026-07-23",
       "label": "Thursday \u00b7 Jul 23",
-      "weather": null,
+      "weather": {
+        "high_f": 83,
+        "low_f": 63,
+        "precip_pct": 7,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "8:30 am",
@@ -141,7 +169,14 @@
     {
       "date": "2026-07-24",
       "label": "Friday \u00b7 Jul 24",
-      "weather": null,
+      "weather": {
+        "high_f": 84,
+        "low_f": 63,
+        "precip_pct": 8,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "9:00 am",
@@ -167,7 +202,14 @@
     {
       "date": "2026-07-25",
       "label": "Saturday \u00b7 Jul 25",
-      "weather": null,
+      "weather": {
+        "high_f": 86,
+        "low_f": 66,
+        "precip_pct": 10,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "10:15 am",
@@ -193,7 +235,14 @@
     {
       "date": "2026-07-26",
       "label": "Sunday \u00b7 Jul 26",
-      "weather": null,
+      "weather": {
+        "high_f": 83,
+        "low_f": 66,
+        "precip_pct": 10,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "8:40 am",
