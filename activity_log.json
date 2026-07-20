@@ -867,5 +867,11 @@
     "action": "dismissed",
     "title": "[Personal] Your Thursday afternoon trip with Uber",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-07-20T10:15:14.180078+00:00",
+    "action": "dismissed",
+    "title": "Your reservation at Tom's Watch Bar - SEATTLE NORTH BRESSI is\r\n confirmed",
+    "source": "Gmail"
   }
 ]
