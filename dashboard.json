@@ -1,56 +1,19 @@
 {
-  "generated_at": "2026-07-20T08:25:47.728879-04:00",
-  "generated_label": "Mon Jul 20, 8:25 AM",
-  "weather": {
-    "high_f": 90,
-    "low_f": 67,
-    "precip_pct": 0,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-07-21T06:01:03.926533-04:00",
+  "generated_label": "Tue Jul 21, 6:01 AM",
+  "weather": null,
   "theme": {
-    "emoji": "\ud83e\udd75",
-    "title": "Heat Wave",
-    "blurb": "Hydrate and seek shade out there.",
+    "emoji": "\ud83c\udfd6\ufe0f",
+    "title": "High Summer",
+    "blurb": "Heat, hydration, and hustle.",
     "color1": "#ff512f",
     "color2": "#f09819"
   },
   "week": [
     {
-      "date": "2026-07-20",
-      "label": "Today \u00b7 Mon Jul 20",
-      "weather": {
-        "high_f": 90,
-        "low_f": 67,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "7:00 pm",
-          "title": "Ignite \u26be Infield Development",
-          "location": "7731 Leesburg Pike, Falls Church, VA 22043",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-20T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=aGJoODFiNGw1MmsyaDRqYmJkaHZiZ3BqZjAgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-07-21",
-      "label": "Tomorrow \u00b7 Tue Jul 21",
-      "weather": {
-        "high_f": 96,
-        "low_f": 74,
-        "precip_pct": 82,
-        "weather_code": 63,
-        "emoji": "\ud83c\udf27",
-        "label": "Rain"
-      },
+      "label": "Today \u00b7 Tue Jul 21",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -84,15 +47,8 @@
     },
     {
       "date": "2026-07-22",
-      "label": "Wednesday \u00b7 Jul 22",
-      "weather": {
-        "high_f": 87,
-        "low_f": 70,
-        "precip_pct": 82,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "label": "Tomorrow \u00b7 Wed Jul 22",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -109,14 +65,7 @@
     {
       "date": "2026-07-23",
       "label": "Thursday \u00b7 Jul 23",
-      "weather": {
-        "high_f": 83,
-        "low_f": 63,
-        "precip_pct": 7,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "8:30 am",
@@ -155,6 +104,15 @@
           "link": "https://www.google.com/calendar/event?eid=Xzg0c2pnaGhuODhvM2NiOWc2Z3BqOGI5azYxMjQ0YmEyNmNwamNiOWw3MTJrNmdwajZvb2o4Y2hsNmMgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
+          "time": "6:30 pm",
+          "title": "VIVA U13 (B2013/14) - Offseason practice",
+          "location": "6560 Braddock Rd\nAlexandria VA 22312\nUnited States",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-23T18:30:51-04:00",
+          "link": "https://www.google.com/calendar/event?eid=bm5iOHQxbWE0YXQwN2xvanJhM3I4OTBoMzAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
           "time": "7:00 pm",
           "title": "Ignite \u26be Pitching/Catcher Development",
           "location": "7731 Leesburg Pike, Falls Church, VA 22043",
@@ -164,19 +122,19 @@
           "link": "https://www.google.com/calendar/event?eid=MWZidG9vMTZrcHV0MTVjN2RtNHUxZTMzbWMgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
-      "conflicts": []
+      "conflicts": [
+        {
+          "a": "VIVA U13 (B2013/14) - Offseason practice",
+          "a_time": "6:30 pm",
+          "b": "Ignite \u26be Pitching/Catcher Development",
+          "b_time": "7:00 pm"
+        }
+      ]
     },
     {
       "date": "2026-07-24",
       "label": "Friday \u00b7 Jul 24",
-      "weather": {
-        "high_f": 84,
-        "low_f": 63,
-        "precip_pct": 8,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "9:00 am",
@@ -202,14 +160,7 @@
     {
       "date": "2026-07-25",
       "label": "Saturday \u00b7 Jul 25",
-      "weather": {
-        "high_f": 86,
-        "low_f": 66,
-        "precip_pct": 10,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "10:15 am",
@@ -235,14 +186,7 @@
     {
       "date": "2026-07-26",
       "label": "Sunday \u00b7 Jul 26",
-      "weather": {
-        "high_f": 83,
-        "low_f": 66,
-        "precip_pct": 10,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "8:40 am",
@@ -282,6 +226,68 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-07-27",
+      "label": "Monday \u00b7 Jul 27",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "Rhys Birthday",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-07-27T00:00",
+          "link": "https://www.google.com/calendar/event?eid=XzZzczRhYzluNnNzNDhiOXA4bDFrMmI5azc0c2o2YmExNjRvajJiOW04a3M0MmdxNDcwc2pjaGE0NmdfMjAyNjA3MjcgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "all day",
+          "title": "Stay at The Westin Copley Place, Boston",
+          "location": "10 Huntington Avenue, Boston, Massachusetts 02116, United States",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-07-27T00:00",
+          "link": "https://www.google.com/calendar/event?eid=aDJlMGhwMDk4ZXU2MGY3aHJmMG9lMHNjZm8gZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "12:55 pm",
+          "title": "Flight  UA1392 IAD to BOS",
+          "location": "Departing Washington, DC",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-27T12:55:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=XzY0czQ4ZGhvNzEzM2liYTQ4b3MzMGI5azY1MTNjYmExNjhzNGNiYTM2cDIzMmdxMjhjcDM4YzlsNmcgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "12:55 pm",
+          "title": "Flight  UA1392 IAD to BOS",
+          "location": "Departing Washington, DC",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-27T12:55:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Xzg4cWphZ2E2NnNxamdiOW42MG9qZWI5azcwcTQ4YmExOHAxajBiOW82Y3JqZ2QxaTZvcDRjZDlwNnMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "6:15 pm",
+          "title": "\ud83d\ude97 Drive to Marshall HS (Ignite Infield)",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-07-27T18:15:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=cDBxNG9mcm84ZHZxb3JxM2xhdWdxdDlhaTAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "Ignite \u26be Infield Development",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-27T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=cWk2YjhlNTBzZ2hoYWNxNjhwYjQ5c3NkMWcgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -289,17 +295,17 @@
       {
         "title": "Rhys Birthday",
         "day": "Mon Jul 27",
-        "days_out": 7
+        "days_out": 6
       },
       {
         "title": "Danielle Berg's Birthday",
         "day": "Fri Jul 31",
-        "days_out": 11
+        "days_out": 10
       },
       {
         "title": "Erin Redding's Birthday",
         "day": "Tue Aug 4",
-        "days_out": 15
+        "days_out": 14
       }
     ],
     "holidays": []
