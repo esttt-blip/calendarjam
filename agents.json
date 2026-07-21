@@ -48,14 +48,14 @@
       },
       "status": {
         "state": "live",
-        "updated": "2026-07-19",
+        "updated": "2026-07-21",
         "cheapest_plan": "Dec 19 \u2192 Jan 3",
-        "cheapest_econ": 4923,
+        "cheapest_econ": 4298,
         "results": [
           {
             "label": "Dec 19 \u2192 Jan 2",
             "economy": {
-              "low": 5147,
+              "low": 4627,
               "flight_numbers": [
                 "TP 232",
                 "TP 832"
@@ -69,14 +69,14 @@
               "insights": null
             },
             "business": {
-              "low": 14822,
+              "low": 13645,
               "flight_numbers": [
-                "TP 232",
-                "TP 832"
+                "LX 73",
+                "LX 1736"
               ],
               "airlines": [
-                "Tap Air Portugal",
-                "Tap Air Portugal"
+                "SWISS",
+                "SWISS"
               ],
               "is_united": false,
               "layovers": 1,
@@ -86,7 +86,7 @@
           {
             "label": "Dec 19 \u2192 Jan 3",
             "economy": {
-              "low": 4923,
+              "low": 4298,
               "flight_numbers": [
                 "TP 232",
                 "TP 832"
@@ -100,14 +100,14 @@
               "insights": null
             },
             "business": {
-              "low": 14801,
+              "low": 13645,
               "flight_numbers": [
-                "TP 232",
-                "TP 832"
+                "LX 73",
+                "LX 1736"
               ],
               "airlines": [
-                "Tap Air Portugal",
-                "Tap Air Portugal"
+                "SWISS",
+                "SWISS"
               ],
               "is_united": false,
               "layovers": 1,
@@ -200,6 +200,13 @@
           "Dec 19 \u2192 Jan 2 business": 14822,
           "Dec 19 \u2192 Jan 3 economy": 4923,
           "Dec 19 \u2192 Jan 3 business": 14801
+        },
+        {
+          "date": "2026-07-21",
+          "Dec 19 \u2192 Jan 2 economy": 4627,
+          "Dec 19 \u2192 Jan 2 business": 13645,
+          "Dec 19 \u2192 Jan 3 economy": 4298,
+          "Dec 19 \u2192 Jan 3 business": 13645
         }
       ]
     }
