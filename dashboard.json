@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-07-21T07:58:48.332440-04:00",
-  "generated_label": "Tue Jul 21, 7:58 AM",
-  "weather": {
-    "high_f": 96,
-    "low_f": 74,
-    "precip_pct": 50,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-07-22T06:00:58.744629-04:00",
+  "generated_label": "Wed Jul 22, 6:00 AM",
+  "weather": null,
   "theme": {
     "emoji": "\ud83e\udd75",
     "title": "Heat Wave",
@@ -17,57 +11,15 @@
   },
   "week": [
     {
-      "date": "2026-07-21",
-      "label": "Today \u00b7 Tue Jul 21",
-      "weather": {
-        "high_f": 96,
-        "low_f": 74,
-        "precip_pct": 50,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "Stay at Boston Marriott Copley Place",
-          "location": "110 Huntington Avenue, Boston, Massachusetts 02116, United States",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-07-21T00:00",
-          "link": "https://www.google.com/calendar/event?eid=bWxidW1pdTUzMDBzb3IyYWNhMWQxbDYxMmsgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "5:25 pm",
-          "title": "Flight  UA688 IAD to BOS",
-          "location": "Departing Washington, DC",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-21T17:25:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Xzg5MWoyZGkxODRzM2NiOWs2OG9qZ2I5azhnc2tjYmExOGNzamViOW04OHBqNmNoajZsMmo4YzFrNjQgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:00 pm",
-          "title": "Ignite \u26be Athletic Development",
-          "location": "5130 Wilson Blvd, Arlington, VA 22205",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-21T18:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ZTN2b2pvZGVoZXY5bzl0Yzk2dGwycjB2cGMgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-07-22",
-      "label": "Tomorrow \u00b7 Wed Jul 22",
+      "label": "Today \u00b7 Wed Jul 22",
       "weather": {
-        "high_f": 89,
-        "low_f": 72,
-        "precip_pct": 59,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "high_f": 87,
+        "low_f": 71,
+        "precip_pct": 38,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
       },
       "events": [
         {
@@ -84,16 +36,25 @@
     },
     {
       "date": "2026-07-23",
-      "label": "Thursday \u00b7 Jul 23",
+      "label": "Tomorrow \u00b7 Thu Jul 23",
       "weather": {
         "high_f": 83,
-        "low_f": 64,
-        "precip_pct": 8,
+        "low_f": 66,
+        "precip_pct": 7,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
       },
       "events": [
+        {
+          "time": "1:25 am",
+          "title": "Flight to Washington (UA 564)",
+          "location": "Vancouver YVR",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-23T01:25:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Nzk5YmhlbmNwbHA4N2J0YWttcGtlcHNxYTggZXN0aGVyLmV2ZWx5bkBt"
+        },
         {
           "time": "8:30 am",
           "title": "Henry Ortho",
@@ -122,13 +83,13 @@
           "link": "https://www.google.com/calendar/event?eid=cmRpMDhvdGRsMzgwdTE4dWJrOXFwNjI2ODAgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
-          "time": "12:35 pm",
-          "title": "Flight  UA3413 BOS to IAD",
-          "location": "Departing Boston, MA",
+          "time": "8:30 am",
+          "title": "Appointment Reminder",
+          "location": "1600 Wilson Blvd, Suite 810 Arlington,VA",
           "all_day": false,
           "is_drive": false,
-          "sort": "2026-07-23T12:35:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Xzg0c2pnaGhuODhvM2NiOWc2Z3BqOGI5azYxMjQ0YmEyNmNwamNiOWw3MTJrNmdwajZvb2o4Y2hsNmMgZXN0aGVyLmV2ZWx5bkBt"
+          "sort": "2026-07-23T08:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=djA0cjFlYzU4OGoxY2w1Y21yYjduZnRlZGMgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "6:30 pm",
@@ -151,6 +112,18 @@
       ],
       "conflicts": [
         {
+          "a": "Orthodontic Appointment for Henry",
+          "a_time": "8:30 am",
+          "b": "Appointment Reminder",
+          "b_time": "8:30 am"
+        },
+        {
+          "a": "Orthodontic Appointment for Henry",
+          "a_time": "8:30 am",
+          "b": "Appointment Reminder",
+          "b_time": "8:30 am"
+        },
+        {
           "a": "VIVA U13 (B2013/14) - Offseason practice",
           "a_time": "6:30 pm",
           "b": "Ignite \u26be Pitching/Catcher Development",
@@ -164,19 +137,19 @@
       "weather": {
         "high_f": 82,
         "low_f": 64,
-        "precip_pct": 6,
+        "precip_pct": 0,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
       },
       "events": [
         {
-          "time": "9:00 am",
+          "time": "8:40 am",
           "title": "Taylor Dentist",
           "location": "",
           "all_day": false,
           "is_drive": false,
-          "sort": "2026-07-24T09:00:00-04:00",
+          "sort": "2026-07-24T08:40:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=YTBtZzB1dG9rcDRtcGNqdmgyY3BrdXRnYzQgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
@@ -195,9 +168,9 @@
       "date": "2026-07-25",
       "label": "Saturday \u00b7 Jul 25",
       "weather": {
-        "high_f": 85,
-        "low_f": 65,
-        "precip_pct": 16,
+        "high_f": 83,
+        "low_f": 64,
+        "precip_pct": 4,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -228,14 +201,23 @@
       "date": "2026-07-26",
       "label": "Sunday \u00b7 Jul 26",
       "weather": {
-        "high_f": 88,
-        "low_f": 66,
-        "precip_pct": 22,
-        "weather_code": 53,
+        "high_f": 89,
+        "low_f": 65,
+        "precip_pct": 35,
+        "weather_code": 51,
         "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
+        "label": "Light drizzle"
       },
       "events": [
+        {
+          "time": "7:50 am",
+          "title": "\ud83d\ude97 Drive to East Potomac Golf Links",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-07-26T07:50:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Z2tlazVpMnJqbTcyb2ppdjFwZWE4am5ibnMgZXN0aGVyLmV2ZWx5bkBt"
+        },
         {
           "time": "8:40 am",
           "title": "Reservation at East Potomac Golf Links - Red",
@@ -244,6 +226,15 @@
           "is_drive": false,
           "sort": "2026-07-26T08:40:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=aGtkOXJvMmRobXNodDY4OXFjZXNicTNqZDAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "8:40 am",
+          "title": "\u26f3 Golf \u2014 East Potomac (Red)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-26T08:40:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=dXR0dGs4OGc2aDNwbnVyc3VybGNtampjZDQgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "8:50 am",
@@ -279,12 +270,12 @@
       "date": "2026-07-27",
       "label": "Monday \u00b7 Jul 27",
       "weather": {
-        "high_f": 89,
-        "low_f": 66,
-        "precip_pct": 33,
-        "weather_code": 80,
+        "high_f": 86,
+        "low_f": 67,
+        "precip_pct": 35,
+        "weather_code": 51,
         "emoji": "\ud83c\udf26",
-        "label": "Showers"
+        "label": "Light drizzle"
       },
       "events": [
         {
@@ -304,6 +295,15 @@
           "is_drive": false,
           "sort": "2026-07-27T00:00",
           "link": "https://www.google.com/calendar/event?eid=aDJlMGhwMDk4ZXU2MGY3aHJmMG9lMHNjZm8gZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "10:55 am",
+          "title": "\ud83d\ude97 Drive to IAD (UA1392 to Boston)",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-07-27T10:55:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=YWprdWdqNnZhOTlwc21lMWp1NzAzN2ZibjQgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "12:55 pm",
@@ -343,6 +343,66 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-07-28",
+      "label": "Tuesday \u00b7 Jul 28",
+      "weather": {
+        "high_f": 95,
+        "low_f": 69,
+        "precip_pct": 37,
+        "weather_code": 96,
+        "emoji": "\u26c8",
+        "label": "Thunderstorm w/ hail"
+      },
+      "events": [
+        {
+          "time": "all day",
+          "title": "Henry: Summertime Thrills @ Yorktown HS",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-07-28T00:00",
+          "link": "https://www.google.com/calendar/event?eid=YmxicjZuZXBoc3A5c3Y0aTNiZWlsMGgwcGNfMjAyNjA3MjggZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "8:45 am",
+          "title": "\ud83d\ude97 Drop off Henry \u2014 Summertime Thrills",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-07-28T08:45:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=cDAxaGlycmlwY3ZydmlmbW00cDM5bTNzYzhfMjAyNjA3MjhUMTI0NTAwWiBlc3RoZXIuZXZlbHluQG0"
+        },
+        {
+          "time": "3:45 pm",
+          "title": "\ud83d\ude97 Pick up Henry \u2014 Summertime Thrills",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-07-28T15:45:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZG1hMnN0YTRxcm4yMTkxNDJtbjRhM2M3dHNfMjAyNjA3MjhUMTk0NTAwWiBlc3RoZXIuZXZlbHluQG0"
+        },
+        {
+          "time": "5:45 pm",
+          "title": "\ud83d\ude97 Drive to Ignite Facility (Athletic Dev)",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-07-28T17:45:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZWc1NGM4anJvdTBkdjJxc3Zuc2lyNTQ4dm8gZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "6:00 pm",
+          "title": "Ignite \u26be Athletic Development",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-28T18:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=cTRlc25yajVibmliMDRkaTd2cXNsNjQ0dWcgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -350,17 +410,17 @@
       {
         "title": "Rhys Birthday",
         "day": "Mon Jul 27",
-        "days_out": 6
+        "days_out": 5
       },
       {
         "title": "Danielle Berg's Birthday",
         "day": "Fri Jul 31",
-        "days_out": 10
+        "days_out": 9
       },
       {
         "title": "Erin Redding's Birthday",
         "day": "Tue Aug 4",
-        "days_out": 14
+        "days_out": 13
       }
     ],
     "holidays": []

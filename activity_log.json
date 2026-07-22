@@ -964,5 +964,12 @@
     "action": "dismissed",
     "title": "Reminder for Milo's Reservation.",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-07-22T10:00:52.359185+00:00",
+    "action": "added",
+    "title": "Appointment Reminder",
+    "source": "Gmail invite",
+    "when": "2026-07-23T12:30"
   }
 ]
