@@ -11,7 +11,7 @@
       },
       "buy_url": "https://www.oofos.com/products/womens-oocoozie-thermo-mule-white",
       "status": {
-        "updated": "2026-07-21",
+        "updated": "2026-07-22",
         "price": 119.95,
         "msrp": 119.95,
         "compare_at": null,
@@ -102,6 +102,10 @@
         },
         {
           "date": "2026-07-21",
+          "price": 119.95
+        },
+        {
+          "date": "2026-07-22",
           "price": 119.95
         }
       ]
