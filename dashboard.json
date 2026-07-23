@@ -1,56 +1,19 @@
 {
-  "generated_at": "2026-07-22T08:01:37.124270-04:00",
-  "generated_label": "Wed Jul 22, 8:01 AM",
-  "weather": {
-    "high_f": 87,
-    "low_f": 72,
-    "precip_pct": 38,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-07-23T06:01:05.661915-04:00",
+  "generated_label": "Thu Jul 23, 6:01 AM",
+  "weather": null,
   "theme": {
-    "emoji": "\ud83e\udd75",
-    "title": "Heat Wave",
-    "blurb": "Hydrate and seek shade out there.",
+    "emoji": "\ud83c\udfd6\ufe0f",
+    "title": "High Summer",
+    "blurb": "Heat, hydration, and hustle.",
     "color1": "#ff512f",
     "color2": "#f09819"
   },
   "week": [
     {
-      "date": "2026-07-22",
-      "label": "Today \u00b7 Wed Jul 22",
-      "weather": {
-        "high_f": 87,
-        "low_f": 72,
-        "precip_pct": 38,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "\ud83c\udf71 MightyMeals delivery",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-07-22T00:00",
-          "link": "https://www.google.com/calendar/event?eid=OTZtZDJtam02M2UyaWMzOXZ1YzQxMjczZG8gZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-07-23",
-      "label": "Tomorrow \u00b7 Thu Jul 23",
-      "weather": {
-        "high_f": 83,
-        "low_f": 66,
-        "precip_pct": 10,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Today \u00b7 Thu Jul 23",
+      "weather": null,
       "events": [
         {
           "time": "8:30 am",
@@ -60,24 +23,6 @@
           "is_drive": false,
           "sort": "2026-07-23T08:30:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=ZTFlMnBzM2p2MWQ1NmlpcjJlaDRjbXZ2bWcgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "8:30 am",
-          "title": "Orthodontic Appointment for Henry",
-          "location": "1600 Wilson Blvd, Suite 810, Arlington, VA, 22209",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-23T08:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=aTdoMzN0Z3UwZGN0bGt2bDlwbXV0ZWt1MDAgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "8:30 am",
-          "title": "Orthodontic Appointment for Henry",
-          "location": "1600 Wilson Blvd, Suite 810, Arlington, VA, 22209",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-23T08:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=cmRpMDhvdGRsMzgwdTE4dWJrOXFwNjI2ODAgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "8:30 am",
@@ -109,18 +54,6 @@
       ],
       "conflicts": [
         {
-          "a": "Orthodontic Appointment for Henry",
-          "a_time": "8:30 am",
-          "b": "Appointment Reminder",
-          "b_time": "8:30 am"
-        },
-        {
-          "a": "Orthodontic Appointment for Henry",
-          "a_time": "8:30 am",
-          "b": "Appointment Reminder",
-          "b_time": "8:30 am"
-        },
-        {
           "a": "VIVA U13 (B2013/14) - Offseason practice",
           "a_time": "6:30 pm",
           "b": "Ignite \u26be Pitching/Catcher Development",
@@ -130,15 +63,8 @@
     },
     {
       "date": "2026-07-24",
-      "label": "Friday \u00b7 Jul 24",
-      "weather": {
-        "high_f": 82,
-        "low_f": 64,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Tomorrow \u00b7 Fri Jul 24",
+      "weather": null,
       "events": [
         {
           "time": "8:40 am",
@@ -164,14 +90,7 @@
     {
       "date": "2026-07-25",
       "label": "Saturday \u00b7 Jul 25",
-      "weather": {
-        "high_f": 82,
-        "low_f": 65,
-        "precip_pct": 4,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "10:15 am",
@@ -190,6 +109,15 @@
           "is_drive": false,
           "sort": "2026-07-25T11:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=bTM3amU4M2M4dG5xY2pyNjN1MDVscmIycmMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "5:00 pm",
+          "title": "Restorative Yoga & Reiki ",
+          "location": "7505p Leesburg Pike, , Falls Church VA, 22043",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-25T17:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=XzhvcjNlZDIzNm9wM2diYTE2b3E0NGI5azYxMGo2YjlwNzByM2diOWw2MHI0YWMxajY4cmpjZDFnNmMgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
@@ -197,14 +125,7 @@
     {
       "date": "2026-07-26",
       "label": "Sunday \u00b7 Jul 26",
-      "weather": {
-        "high_f": 87,
-        "low_f": 64,
-        "precip_pct": 35,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "7:50 am",
@@ -259,6 +180,24 @@
           "is_drive": false,
           "sort": "2026-07-26T19:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=Nm4wMDc3cWluZzRjczZucjlwcWdhamMzY3MgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "Deep Rest: Yin & Sound Healing",
+          "location": "Karma Yoga",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-26T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=NzBwZTJpOW1wODA2b285ZjJhb2dvbW12bjAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "\ud83e\uddd8 Karma Yoga \u2014 Deep Rest: Yin & Sound Healing",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-26T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=NzM1YWpzZHQzZjBybzcyMHRlZWpiZXExZW8gZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
@@ -266,14 +205,7 @@
     {
       "date": "2026-07-27",
       "label": "Monday \u00b7 Jul 27",
-      "weather": {
-        "high_f": 88,
-        "low_f": 67,
-        "precip_pct": 35,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -344,14 +276,7 @@
     {
       "date": "2026-07-28",
       "label": "Tuesday \u00b7 Jul 28",
-      "weather": {
-        "high_f": 93,
-        "low_f": 70,
-        "precip_pct": 37,
-        "weather_code": 81,
-        "emoji": "\ud83c\udf27",
-        "label": "Showers"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -400,6 +325,90 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-07-29",
+      "label": "Wednesday \u00b7 Jul 29",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "Henry: Summertime Thrills @ Yorktown HS",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-07-29T00:00",
+          "link": "https://www.google.com/calendar/event?eid=YmxicjZuZXBoc3A5c3Y0aTNiZWlsMGgwcGNfMjAyNjA3MjkgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "8:45 am",
+          "title": "\ud83d\ude97 Drop off Henry \u2014 Summertime Thrills",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-07-29T08:45:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=cDAxaGlycmlwY3ZydmlmbW00cDM5bTNzYzhfMjAyNjA3MjlUMTI0NTAwWiBlc3RoZXIuZXZlbHluQG0"
+        },
+        {
+          "time": "3:45 pm",
+          "title": "\ud83d\ude97 Pick up Henry \u2014 Summertime Thrills",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-07-29T15:45:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZG1hMnN0YTRxcm4yMTkxNDJtbjRhM2M3dHNfMjAyNjA3MjlUMTk0NTAwWiBlc3RoZXIuZXZlbHluQG0"
+        },
+        {
+          "time": "7:27 pm",
+          "title": "Flight  UA2136 BOS to IAD",
+          "location": "Departing Boston, MA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-29T19:27:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=XzZvbzMwZ2hqODRvamFiYTM4aDEzZWI5azhsMjQ2YmExNjBzMzBiOW44b28zZ2NoazhoMjM2ZGhsNzAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:27 pm",
+          "title": "Flight  UA2136 BOS to IAD",
+          "location": "Departing Boston, MA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-29T19:27:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=XzhjcmppZDlqNzRyNDJiYTY4ZDFqNGI5azcwcDM2YmEyNmdwM2liYTU2NHMzZ2RxNjZsMGo0Y2EzNjggZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "9:00 pm",
+          "title": "Spirit @ Royals (NWSL+)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-29T21:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=cTAyNWFmZ2hpZDA2cXU0aXFzYXU4c2ZnOHMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "9:46 pm",
+          "title": "\ud83d\ude97 Drive home from IAD (UA2136 arrival)",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-07-29T21:46:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=NHQ0OTJ1ZjUxbHNrNXYzZXNqcnZidmdpaGcgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": [
+        {
+          "a": "Flight  UA2136 BOS to IAD",
+          "a_time": "7:27 pm",
+          "b": "Spirit @ Royals (NWSL+)",
+          "b_time": "9:00 pm"
+        },
+        {
+          "a": "Flight  UA2136 BOS to IAD",
+          "a_time": "7:27 pm",
+          "b": "Spirit @ Royals (NWSL+)",
+          "b_time": "9:00 pm"
+        }
+      ]
     }
   ],
   "horizon": {
@@ -407,17 +416,17 @@
       {
         "title": "Rhys Birthday",
         "day": "Mon Jul 27",
-        "days_out": 5
+        "days_out": 4
       },
       {
         "title": "Danielle Berg's Birthday",
         "day": "Fri Jul 31",
-        "days_out": 9
+        "days_out": 8
       },
       {
         "title": "Erin Redding's Birthday",
         "day": "Tue Aug 4",
-        "days_out": 13
+        "days_out": 12
       }
     ],
     "holidays": []

@@ -977,5 +977,12 @@
     "action": "dismissed",
     "title": "Reminder: Daycare  |  Troop Play Half Day for Milo",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-07-23T10:00:58.422107+00:00",
+    "action": "added",
+    "title": "Deep Rest: Yin & Sound Healing",
+    "source": "Karma Yoga \ud83e\uddd8",
+    "when": "2026-07-26T23:00"
   }
 ]
