@@ -1004,5 +1004,11 @@
     "title": "Orthodontic Appointment for Henry",
     "source": "Gmail invite",
     "when": "2026-08-27T12:30"
+  },
+  {
+    "ts": "2026-07-24T10:48:22.535555+00:00",
+    "action": "dismissed",
+    "title": "Mystics rally to snap Valkyries\u2019 record winning streak",
+    "source": "Gmail"
   }
 ]
