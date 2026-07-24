@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-07-24T06:01:08.127972-04:00",
-  "generated_label": "Fri Jul 24, 6:01 AM",
-  "weather": null,
+  "generated_at": "2026-07-24T07:54:29.605608-04:00",
+  "generated_label": "Fri Jul 24, 7:54 AM",
+  "weather": {
+    "high_f": 84,
+    "low_f": 61,
+    "precip_pct": 1,
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
+  },
   "theme": {
     "emoji": "\ud83e\udd75",
     "title": "Heat Wave",
@@ -49,7 +55,7 @@
       "weather": {
         "high_f": 88,
         "low_f": 68,
-        "precip_pct": 6,
+        "precip_pct": 5,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -89,12 +95,12 @@
       "date": "2026-07-26",
       "label": "Sunday \u00b7 Jul 26",
       "weather": {
-        "high_f": 88,
+        "high_f": 87,
         "low_f": 66,
         "precip_pct": 12,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
       },
       "events": [
         {
@@ -167,12 +173,12 @@
       "date": "2026-07-27",
       "label": "Monday \u00b7 Jul 27",
       "weather": {
-        "high_f": 88,
-        "low_f": 64,
+        "high_f": 85,
+        "low_f": 65,
         "precip_pct": 30,
-        "weather_code": 55,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy drizzle"
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
       },
       "events": [
         {
@@ -245,11 +251,11 @@
       "date": "2026-07-28",
       "label": "Tuesday \u00b7 Jul 28",
       "weather": {
-        "high_f": 89,
+        "high_f": 85,
         "low_f": 67,
         "precip_pct": 52,
-        "weather_code": 81,
-        "emoji": "\ud83c\udf27",
+        "weather_code": 80,
+        "emoji": "\ud83c\udf26",
         "label": "Showers"
       },
       "events": [
@@ -305,12 +311,12 @@
       "date": "2026-07-29",
       "label": "Wednesday \u00b7 Jul 29",
       "weather": {
-        "high_f": 89,
-        "low_f": 66,
+        "high_f": 86,
+        "low_f": 68,
         "precip_pct": 44,
-        "weather_code": 82,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy showers"
+        "weather_code": 80,
+        "emoji": "\ud83c\udf26",
+        "label": "Showers"
       },
       "events": [
         {
@@ -396,8 +402,8 @@
       "date": "2026-07-30",
       "label": "Thursday \u00b7 Jul 30",
       "weather": {
-        "high_f": 85,
-        "low_f": 67,
+        "high_f": 81,
+        "low_f": 68,
         "precip_pct": 24,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
