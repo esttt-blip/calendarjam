@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-07-23T08:00:59.785392-04:00",
-  "generated_label": "Thu Jul 23, 8:00 AM",
-  "weather": {
-    "high_f": 83,
-    "low_f": 66,
-    "precip_pct": 2,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-07-24T06:01:08.127972-04:00",
+  "generated_label": "Fri Jul 24, 6:01 AM",
+  "weather": null,
   "theme": {
     "emoji": "\ud83e\udd75",
     "title": "Heat Wave",
@@ -17,70 +11,12 @@
   },
   "week": [
     {
-      "date": "2026-07-23",
-      "label": "Today \u00b7 Thu Jul 23",
-      "weather": {
-        "high_f": 83,
-        "low_f": 66,
-        "precip_pct": 2,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "8:30 am",
-          "title": "Henry Ortho",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-23T08:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ZTFlMnBzM2p2MWQ1NmlpcjJlaDRjbXZ2bWcgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "8:30 am",
-          "title": "Appointment Reminder",
-          "location": "1600 Wilson Blvd, Suite 810 Arlington,VA",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-23T08:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=djA0cjFlYzU4OGoxY2w1Y21yYjduZnRlZGMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:30 pm",
-          "title": "VIVA U13 (B2013/14) - Offseason practice",
-          "location": "6560 Braddock Rd\nAlexandria VA 22312\nUnited States",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-23T18:30:51-04:00",
-          "link": "https://www.google.com/calendar/event?eid=bm5iOHQxbWE0YXQwN2xvanJhM3I4OTBoMzAgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "Ignite \u26be Pitching/Catcher Development",
-          "location": "7731 Leesburg Pike, Falls Church, VA 22043",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-23T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=MWZidG9vMTZrcHV0MTVjN2RtNHUxZTMzbWMgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": [
-        {
-          "a": "VIVA U13 (B2013/14) - Offseason practice",
-          "a_time": "6:30 pm",
-          "b": "Ignite \u26be Pitching/Catcher Development",
-          "b_time": "7:00 pm"
-        }
-      ]
-    },
-    {
       "date": "2026-07-24",
-      "label": "Tomorrow \u00b7 Fri Jul 24",
+      "label": "Today \u00b7 Fri Jul 24",
       "weather": {
-        "high_f": 85,
-        "low_f": 64,
-        "precip_pct": 2,
+        "high_f": 84,
+        "low_f": 61,
+        "precip_pct": 1,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -96,24 +32,24 @@
           "link": "https://www.google.com/calendar/event?eid=YTBtZzB1dG9rcDRtcGNqdmgyY3BrdXRnYzQgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
-          "time": "10:00 am",
-          "title": "FW: Bi-Weekly Product Health and Incident Review with ELT",
-          "location": "https://draftkings.zoom.us/j/95183770035?pwd=jpUb1Xt5mcxx69DQkzdkaee60kpuZh.1",
+          "time": "5:15 pm",
+          "title": "\ud83e\uddd8 Reformer Pilates | Beginner 50min (MIYU)",
+          "location": "",
           "all_day": false,
           "is_drive": false,
-          "sort": "2026-07-24T10:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc3NG80YWNpMzY0cWsyaDlnNnQzNDhncGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNmQyazJlMW44a3EzZWMxZzZzcGtjZ3BrNnQxMzZkYTE4b3A0NGhobDZvb2o0Z2hpNzEwZ18yMDI2MDcyNFQxNDAwMDBaIGVzdGhlci5ldmVseW5AbQ"
+          "sort": "2026-07-24T17:15:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=dGE4azRvZ2NjcWRzZXBraDk5ODdkZTNzdGsgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
     },
     {
       "date": "2026-07-25",
-      "label": "Saturday \u00b7 Jul 25",
+      "label": "Tomorrow \u00b7 Sat Jul 25",
       "weather": {
-        "high_f": 85,
+        "high_f": 88,
         "low_f": 68,
-        "precip_pct": 4,
+        "precip_pct": 6,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -155,12 +91,21 @@
       "weather": {
         "high_f": 88,
         "low_f": 66,
-        "precip_pct": 31,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
+        "precip_pct": 12,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [
+        {
+          "time": "all day",
+          "title": "\ud83c\udf71 MightyMeals delivery",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-07-26T00:00",
+          "link": "https://www.google.com/calendar/event?eid=ZTZpdnY0c3BlcmNib2t0dW5vMG1kZnE4ODQgZXN0aGVyLmV2ZWx5bkBt"
+        },
         {
           "time": "7:50 am",
           "title": "\ud83d\ude97 Drive to East Potomac Golf Links",
@@ -214,24 +159,6 @@
           "is_drive": false,
           "sort": "2026-07-26T19:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=Nm4wMDc3cWluZzRjczZucjlwcWdhamMzY3MgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "Deep Rest: Yin & Sound Healing",
-          "location": "Karma Yoga",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-26T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=NzBwZTJpOW1wODA2b285ZjJhb2dvbW12bjAgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "\ud83e\uddd8 Karma Yoga \u2014 Deep Rest: Yin & Sound Healing",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-26T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=NzM1YWpzZHQzZjBybzcyMHRlZWpiZXExZW8gZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
@@ -240,12 +167,12 @@
       "date": "2026-07-27",
       "label": "Monday \u00b7 Jul 27",
       "weather": {
-        "high_f": 83,
-        "low_f": 65,
+        "high_f": 88,
+        "low_f": 64,
         "precip_pct": 30,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
+        "weather_code": 55,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy drizzle"
       },
       "events": [
         {
@@ -318,12 +245,12 @@
       "date": "2026-07-28",
       "label": "Tuesday \u00b7 Jul 28",
       "weather": {
-        "high_f": 93,
-        "low_f": 71,
-        "precip_pct": 56,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
+        "high_f": 89,
+        "low_f": 67,
+        "precip_pct": 52,
+        "weather_code": 81,
+        "emoji": "\ud83c\udf27",
+        "label": "Showers"
       },
       "events": [
         {
@@ -378,12 +305,12 @@
       "date": "2026-07-29",
       "label": "Wednesday \u00b7 Jul 29",
       "weather": {
-        "high_f": 91,
-        "low_f": 70,
-        "precip_pct": 33,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
+        "high_f": 89,
+        "low_f": 66,
+        "precip_pct": 44,
+        "weather_code": 82,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy showers"
       },
       "events": [
         {
@@ -464,6 +391,75 @@
           "b_time": "9:00 pm"
         }
       ]
+    },
+    {
+      "date": "2026-07-30",
+      "label": "Thursday \u00b7 Jul 30",
+      "weather": {
+        "high_f": 85,
+        "low_f": 67,
+        "precip_pct": 24,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
+      "events": [
+        {
+          "time": "all day",
+          "title": "Henry: Summertime Thrills @ Yorktown HS",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-07-30T00:00",
+          "link": "https://www.google.com/calendar/event?eid=YmxicjZuZXBoc3A5c3Y0aTNiZWlsMGgwcGNfMjAyNjA3MzAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "8:30 am",
+          "title": "Seymour eye appointment",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-30T08:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=NmFxY2xibmgwdms5YmtrZDFscTZyOTVpMjggZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "8:45 am",
+          "title": "\ud83d\ude97 Drop off Henry \u2014 Summertime Thrills",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-07-30T08:45:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=cDAxaGlycmlwY3ZydmlmbW00cDM5bTNzYzhfMjAyNjA3MzBUMTI0NTAwWiBlc3RoZXIuZXZlbHluQG0"
+        },
+        {
+          "time": "3:45 pm",
+          "title": "\ud83d\ude97 Pick up Henry \u2014 Summertime Thrills",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-07-30T15:45:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZG1hMnN0YTRxcm4yMTkxNDJtbjRhM2M3dHNfMjAyNjA3MzBUMTk0NTAwWiBlc3RoZXIuZXZlbHluQG0"
+        },
+        {
+          "time": "6:15 pm",
+          "title": "\ud83d\ude97 Drive to Marshall HS (Ignite Pitching/Catcher)",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-07-30T18:15:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=dHNqa2EzcjFsdGRxdWxnOXJtcjdmYjBldXMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "Ignite \u26be Pitching/Catcher Development",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-30T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=bTduY2dqZTlqYzEwNWVyc2ZhcjYwNjdmYzggZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -471,17 +467,17 @@
       {
         "title": "Rhys Birthday",
         "day": "Mon Jul 27",
-        "days_out": 4
+        "days_out": 3
       },
       {
         "title": "Danielle Berg's Birthday",
         "day": "Fri Jul 31",
-        "days_out": 8
+        "days_out": 7
       },
       {
         "title": "Erin Redding's Birthday",
         "day": "Tue Aug 4",
-        "days_out": 12
+        "days_out": 11
       }
     ],
     "holidays": []

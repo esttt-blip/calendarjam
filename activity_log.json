@@ -990,5 +990,19 @@
     "action": "dismissed",
     "title": "Plan for your upcoming stay at Boston Marriott Copley Place on\r\n Tuesday, July 21, 2026",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-07-24T10:01:01.736540+00:00",
+    "action": "added",
+    "title": "Deep Rest: Yin & Sound Healing",
+    "source": "Karma Yoga \ud83e\uddd8",
+    "when": "2026-08-16T23:00"
+  },
+  {
+    "ts": "2026-07-24T10:01:02.366212+00:00",
+    "action": "added",
+    "title": "Orthodontic Appointment for Henry",
+    "source": "Gmail invite",
+    "when": "2026-08-27T12:30"
   }
 ]
