@@ -82,5 +82,29 @@
     "uid": "<HP2v710000019f88b81d27a7edfb434b5c4360155@res-marriott.com>",
     "needs_review": true,
     "from": "Westin Reservations  <reservations@res-marriott.com>"
+  },
+  {
+    "id": "0a6f84a9c3bb924c00de20528a87f139",
+    "source": "Gmail",
+    "title": "Villarreal Virginia Academy - Upcoming Installment Payment",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "Dear Esther Scott,\r\n\r\nThis email is to remind you that an upcoming installment payment\r\nfor $257.32 will be automatically withdrawn from the account on\r\nfile on Saturday August 01, 2026 for your order\r\n69ac76b88b4a9cb526ae31f4 with Villarreal Virginia Academy.\r\n\r\nThis payment is for these items :\r\n\r\n* Participant / Player:\r\nHenry Scott\r\n/  1-TRAVEL 2026-2027 - VIVA U13 Boys  /  Date\r\nRegistered:\r\n03/07/2026 02:04 pm\r\n\r\nIf you need to update your payment information on file, please\r\nlogin immediately using the following link to your order to avoid\r\nany potential failed transactions to your card:\r\nhttps://villarrealva.ottosport.ai/_my_household/#5c55b5a25b823026026cea88/orders/69ac76b88b4a9cb526ae31f4\r\n\r\nIf you have any questions or concerns, please do not reply to\r\nthis message. Send an email to admin@villarrealva.org, and refer\r\nto your order number.\r\n\r\nThank you.",
+    "uid": "<6a646602bca77_4e14b1dec116b0@c55e27085820.mail>",
+    "needs_review": true,
+    "from": "Villarreal Virginia Academy <noreply@ottosportmail.ai>"
+  },
+  {
+    "id": "566b02a18293a6f213e4dfab9f652718",
+    "source": "Gmail",
+    "title": "Appointment Reminder for Group Lesson (2-3 Guests)",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "<!-- Emails use the XHTML Strict doctype -->\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    <!-- The character set should be utf-8 -->\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n    <!--[if !mso]><!-->\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\r\n    <!--<![endif]-->\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n\r\n    <!--[if (gte mso 9)|(IE)]>\r\n    <style type=\"text/css\">\r\n        table {border-collapse: collapse;}\r\n    </style>\r\n    <![endif]-->\r\n\r\n    \r\n    <style>\r\n        <!-- Your CSS to inline should be added here -->\r\n    </style>\r\n</head>\r\n\r\n<body style=\"margin: 0 !important; padding: 0; background-color: #ffffff; font-family: 'helvetica neue',helvetica,arial,sans-serif; font-size: 14px; line-height: 1.4285; color: #333;\">\r\n    <!-- Link to the email's CSS, which will be inlined into the email -->\r\n    <!-- this linked style sheet is what needs to be added to the <body> tag -->\r\n\r\n    <style>\r\n        .wrapper {\r\n  width: 100%; }\r\n\r\n#outlook a {\r\n  padding: 0; }\r\n\r\nbody {\r\n  width: 100% !important;\r\n  min-width: 100%;\r\n  -webkit-text-size-adjust: 100%;\r\n  -ms-text-size-adjust: 100%;\r\n  margin: 0;\r\n  Margin: 0;\r\n  padding: 0;\r\n  color: #333;\r\n  -moz-box-sizing: border-box;\r\n  -webkit-box-sizing: border-box;\r\n  box-sizing: border-box; }\r\n\r\n.ExternalClass {\r\n  width: 100%; }\r\n  .External",
+    "uid": "<0101019f94a5f6ce-e60012f0-baef-475a-a47f-a1df80119780-000000@us-west-2.amazonses.com>",
+    "needs_review": true,
+    "from": "Justin Karalfa <noreply@uschedulenotifications.com>"
   }
 ]

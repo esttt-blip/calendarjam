@@ -1,65 +1,19 @@
 {
-  "generated_at": "2026-07-24T07:54:29.605608-04:00",
-  "generated_label": "Fri Jul 24, 7:54 AM",
-  "weather": {
-    "high_f": 84,
-    "low_f": 61,
-    "precip_pct": 1,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-07-25T06:01:01.580925-04:00",
+  "generated_label": "Sat Jul 25, 6:01 AM",
+  "weather": null,
   "theme": {
-    "emoji": "\ud83e\udd75",
-    "title": "Heat Wave",
-    "blurb": "Hydrate and seek shade out there.",
+    "emoji": "\ud83c\udfd6\ufe0f",
+    "title": "High Summer",
+    "blurb": "Heat, hydration, and hustle.",
     "color1": "#ff512f",
     "color2": "#f09819"
   },
   "week": [
     {
-      "date": "2026-07-24",
-      "label": "Today \u00b7 Fri Jul 24",
-      "weather": {
-        "high_f": 84,
-        "low_f": 61,
-        "precip_pct": 1,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "8:40 am",
-          "title": "Taylor Dentist",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-24T08:40:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=YTBtZzB1dG9rcDRtcGNqdmgyY3BrdXRnYzQgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "5:15 pm",
-          "title": "\ud83e\uddd8 Reformer Pilates | Beginner 50min (MIYU)",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-24T17:15:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=dGE4azRvZ2NjcWRzZXBraDk5ODdkZTNzdGsgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-07-25",
-      "label": "Tomorrow \u00b7 Sat Jul 25",
-      "weather": {
-        "high_f": 88,
-        "low_f": 68,
-        "precip_pct": 5,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Today \u00b7 Sat Jul 25",
+      "weather": null,
       "events": [
         {
           "time": "10:15 am",
@@ -93,15 +47,8 @@
     },
     {
       "date": "2026-07-26",
-      "label": "Sunday \u00b7 Jul 26",
-      "weather": {
-        "high_f": 87,
-        "low_f": 66,
-        "precip_pct": 12,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "label": "Tomorrow \u00b7 Sun Jul 26",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -172,14 +119,7 @@
     {
       "date": "2026-07-27",
       "label": "Monday \u00b7 Jul 27",
-      "weather": {
-        "high_f": 85,
-        "low_f": 65,
-        "precip_pct": 30,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -250,14 +190,7 @@
     {
       "date": "2026-07-28",
       "label": "Tuesday \u00b7 Jul 28",
-      "weather": {
-        "high_f": 85,
-        "low_f": 67,
-        "precip_pct": 52,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -310,14 +243,7 @@
     {
       "date": "2026-07-29",
       "label": "Wednesday \u00b7 Jul 29",
-      "weather": {
-        "high_f": 86,
-        "low_f": 68,
-        "precip_pct": 44,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -401,14 +327,7 @@
     {
       "date": "2026-07-30",
       "label": "Thursday \u00b7 Jul 30",
-      "weather": {
-        "high_f": 81,
-        "low_f": 68,
-        "precip_pct": 24,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -466,6 +385,86 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-07-31",
+      "label": "Friday \u00b7 Jul 31",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "Henry: Summertime Thrills @ Yorktown HS",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-07-31T00:00",
+          "link": "https://www.google.com/calendar/event?eid=YmxicjZuZXBoc3A5c3Y0aTNiZWlsMGgwcGNfMjAyNjA3MzEgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "all day",
+          "title": "Danielle Berg's Birthday",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-07-31T00:00",
+          "link": "https://www.google.com/calendar/event?eid=bzBwa3BwcDR2ZHY4ZTNybmNsZW5qcHFiMmtfMjAyNjA3MzEgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "8:45 am",
+          "title": "\ud83d\ude97 Drop off Henry \u2014 Summertime Thrills",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-07-31T08:45:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=cDAxaGlycmlwY3ZydmlmbW00cDM5bTNzYzhfMjAyNjA3MzFUMTI0NTAwWiBlc3RoZXIuZXZlbHluQG0"
+        },
+        {
+          "time": "9:00 am",
+          "title": "Check Skenes rotation \u2014 Pittsburgh trip 2 wks out",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-31T09:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=OTc1a2hkbGgzNzZxa3AycDMxNzg4Z29pODAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "3:45 pm",
+          "title": "\ud83d\ude97 Pick up Henry \u2014 Summertime Thrills",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-07-31T15:45:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZG1hMnN0YTRxcm4yMTkxNDJtbjRhM2M3dHNfMjAyNjA3MzFUMTk0NTAwWiBlc3RoZXIuZXZlbHluQG0"
+        },
+        {
+          "time": "4:00 pm",
+          "title": "Boys haircuts",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-31T16:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=NjVqdGxuZGZqcnA5bWpwcTRkcWw0M2RycTAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "8:15 pm",
+          "title": "\ud83d\ude97 Drive to IAD (UA 932 to Frankfurt)",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-07-31T20:15:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=bmpoamplcXZkMXFoMzZtdXViYm9wb2FkbjggZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "10:15 pm",
+          "title": "Flight to Frankfurt (UA 932)",
+          "location": "Washington IAD",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-31T22:15:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZXMxNnU1djJtbWNlam82cHA3NjBoNjlva28gZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -473,17 +472,17 @@
       {
         "title": "Rhys Birthday",
         "day": "Mon Jul 27",
-        "days_out": 3
+        "days_out": 2
       },
       {
         "title": "Danielle Berg's Birthday",
         "day": "Fri Jul 31",
-        "days_out": 7
+        "days_out": 6
       },
       {
         "title": "Erin Redding's Birthday",
         "day": "Tue Aug 4",
-        "days_out": 11
+        "days_out": 10
       }
     ],
     "holidays": []
