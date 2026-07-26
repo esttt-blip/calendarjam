@@ -118,17 +118,5 @@
     "uid": "<20260725140735.08b93af3a24b648d@mailgun.gingrapp.com>",
     "needs_review": true,
     "from": "Dude's Dog House & Spa <dudesdoghouse@mailgun.gingrapp.com>"
-  },
-  {
-    "id": "1ac9e8d3fd2619eb059c2061a5713256",
-    "source": "Gmail",
-    "title": "Milo is checked in",
-    "start": null,
-    "end": null,
-    "location": "",
-    "description": "img {\r\n\t\t\t\t\tmax-width: 100%;\r\n\t\t\t\t}\r\n\t\t\t\tbody {\r\n\t\t\t\t\t-webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; width: 100% !important; height: 100%; line-height: 1.6em;\r\n\t\t\t\t}\r\n\t\t\t\tbody {\r\n\t\t\t\t\tbackground-color: #f6f6f6;\r\n\t\t\t\t}\r\n\t\t\t\t@media only screen and (max-width: 640px) {\r\n\t\t\t\t  body {\r\n\t\t\t\t    padding: 0 !important;\r\n\t\t\t\t  }\r\n\t\t\t\t  .container {\r\n\t\t\t\t    padding: 0 !important; width: 100% !important;\r\n\t\t\t\t  }\r\n\t\t\t\t  .content {\r\n\t\t\t\t    padding: 0 !important;\r\n\t\t\t\t    background-color: #FFFFFF;\r\n\t\t\t\t  }\r\n\t\t\t\t  .content-wrap {\r\n\t\t\t\t    padding: 10px !important;\r\n\t\t\t\t  }\r\n\t\t\t\t  .invoice {\r\n\t\t\t\t    width: 100% !important;\r\n\t\t\t\t  }\r\n\t\t\t\t}\r\n\t\t\t\r\n\t\t\r\n\r\n\t\t\r\n\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\tHello Esther Scott,\u00a0Milo has just been checked in for a Daycare | Half Day reservation at Dude's Dog House & Spa.Reservation Check In Date/Time: July 25, 2026 at 10:07 amReservation Scheduled End Date/Time: July 25, 2026 at 3:45 pm\u00a0If this reservation was made in error, you'd like to change it, or you have any questions, please email us at info@dudesdoghouse.com or call 703-857-1400. Click the following button to cancel your reservation Cancel ReservationClick the following button to view more details about this reservationView ReservationOur location is:\u00a0Dude's Dog House & Spa7257 Lee HwyFalls Church, Virginia 22046\u00a0Thanks and have a great day!\u00a0\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t",
-    "uid": "<20260725140736.48ac82d513346d50@mailgun.gingrapp.com>",
-    "needs_review": true,
-    "from": "Dude's Dog House & Spa <dudesdoghouse@mailgun.gingrapp.com>"
   }
 ]
