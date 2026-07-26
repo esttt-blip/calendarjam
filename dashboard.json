@@ -1,74 +1,19 @@
 {
-  "generated_at": "2026-07-25T07:31:49.318901-04:00",
-  "generated_label": "Sat Jul 25, 7:31 AM",
-  "weather": {
-    "high_f": 82,
-    "low_f": 67,
-    "precip_pct": 18,
-    "emoji": "\ud83c\udf26",
-    "label": "Light drizzle"
-  },
+  "generated_at": "2026-07-26T06:00:58.828961-04:00",
+  "generated_label": "Sun Jul 26, 6:00 AM",
+  "weather": null,
   "theme": {
-    "emoji": "\ud83e\udd75",
-    "title": "Heat Wave",
-    "blurb": "Hydrate and seek shade out there.",
+    "emoji": "\ud83c\udfd6\ufe0f",
+    "title": "High Summer",
+    "blurb": "Heat, hydration, and hustle.",
     "color1": "#ff512f",
     "color2": "#f09819"
   },
   "week": [
     {
-      "date": "2026-07-25",
-      "label": "Today \u00b7 Sat Jul 25",
-      "weather": {
-        "high_f": 82,
-        "low_f": 67,
-        "precip_pct": 18,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
-      "events": [
-        {
-          "time": "10:15 am",
-          "title": "\ud83d\ude97 Drive to Topgolf Germantown",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-07-25T10:15:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=dHI2YWptazY1aTMyYjMxZGszdm9lOTUxcjggZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "11:00 am",
-          "title": "\ud83c\udfcc\ufe0f Topgolf Group Lesson (Justin Karalfa)",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-25T11:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=bTM3amU4M2M4dG5xY2pyNjN1MDVscmIycmMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "5:00 pm",
-          "title": "Restorative Yoga & Reiki ",
-          "location": "7505p Leesburg Pike, , Falls Church VA, 22043",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-25T17:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=XzhvcjNlZDIzNm9wM2diYTE2b3E0NGI5azYxMGo2YjlwNzByM2diOWw2MHI0YWMxajY4cmpjZDFnNmMgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-07-26",
-      "label": "Tomorrow \u00b7 Sun Jul 26",
-      "weather": {
-        "high_f": 88,
-        "low_f": 67,
-        "precip_pct": 17,
-        "weather_code": 81,
-        "emoji": "\ud83c\udf27",
-        "label": "Showers"
-      },
+      "label": "Today \u00b7 Sun Jul 26",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -90,8 +35,17 @@
         },
         {
           "time": "8:40 am",
-          "title": "Reservation at East Potomac Golf Links - Red",
-          "location": "East Potomac Golf Links - Red, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
+          "title": "Reservation at East Potomac Golf Links - RED Course",
+          "location": "East Potomac Golf Links - RED Course, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-07-26T08:40:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=NXBxMzdvZjlhbGJsOGY0bTNndWdtNTdxaGsgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "8:40 am",
+          "title": "Reservation at East Potomac Golf Links - RED Course",
+          "location": "East Potomac Golf Links - RED Course, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
           "all_day": false,
           "is_drive": false,
           "sort": "2026-07-26T08:40:00-04:00",
@@ -108,8 +62,8 @@
         },
         {
           "time": "8:50 am",
-          "title": "Reservation at East Potomac Golf Links - Red",
-          "location": "East Potomac Golf Links - Red, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
+          "title": "Reservation at East Potomac Golf Links - RED Course",
+          "location": "East Potomac Golf Links - RED Course, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
           "all_day": false,
           "is_drive": false,
           "sort": "2026-07-26T08:50:00-04:00",
@@ -138,15 +92,8 @@
     },
     {
       "date": "2026-07-27",
-      "label": "Monday \u00b7 Jul 27",
-      "weather": {
-        "high_f": 85,
-        "low_f": 65,
-        "precip_pct": 52,
-        "weather_code": 95,
-        "emoji": "\u26c8",
-        "label": "Thunderstorm"
-      },
+      "label": "Tomorrow \u00b7 Mon Jul 27",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -217,14 +164,7 @@
     {
       "date": "2026-07-28",
       "label": "Tuesday \u00b7 Jul 28",
-      "weather": {
-        "high_f": 82,
-        "low_f": 68,
-        "precip_pct": 69,
-        "weather_code": 55,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -277,14 +217,7 @@
     {
       "date": "2026-07-29",
       "label": "Wednesday \u00b7 Jul 29",
-      "weather": {
-        "high_f": 88,
-        "low_f": 69,
-        "precip_pct": 40,
-        "weather_code": 95,
-        "emoji": "\u26c8",
-        "label": "Thunderstorm"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -368,14 +301,7 @@
     {
       "date": "2026-07-30",
       "label": "Thursday \u00b7 Jul 30",
-      "weather": {
-        "high_f": 81,
-        "low_f": 70,
-        "precip_pct": 11,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -437,14 +363,7 @@
     {
       "date": "2026-07-31",
       "label": "Friday \u00b7 Jul 31",
-      "weather": {
-        "high_f": 89,
-        "low_f": 68,
-        "precip_pct": 19,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -520,6 +439,13 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-08-01",
+      "label": "Saturday \u00b7 Aug 1",
+      "weather": null,
+      "events": [],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -527,17 +453,17 @@
       {
         "title": "Rhys Birthday",
         "day": "Mon Jul 27",
-        "days_out": 2
+        "days_out": 1
       },
       {
         "title": "Danielle Berg's Birthday",
         "day": "Fri Jul 31",
-        "days_out": 6
+        "days_out": 5
       },
       {
         "title": "Erin Redding's Birthday",
         "day": "Tue Aug 4",
-        "days_out": 10
+        "days_out": 9
       }
     ],
     "holidays": []
