@@ -1,92 +1,19 @@
 {
-  "generated_at": "2026-07-28T08:10:32.220837-04:00",
-  "generated_label": "Tue Jul 28, 8:10 AM",
-  "weather": {
-    "high_f": 87,
-    "low_f": 74,
-    "precip_pct": 48,
-    "emoji": "\ud83c\udf26",
-    "label": "Showers"
-  },
+  "generated_at": "2026-07-29T06:01:03.989155-04:00",
+  "generated_label": "Wed Jul 29, 6:01 AM",
+  "weather": null,
   "theme": {
-    "emoji": "\ud83e\udd75",
-    "title": "Heat Wave",
-    "blurb": "Hydrate and seek shade out there.",
+    "emoji": "\ud83c\udfd6\ufe0f",
+    "title": "High Summer",
+    "blurb": "Heat, hydration, and hustle.",
     "color1": "#ff512f",
     "color2": "#f09819"
   },
   "week": [
     {
-      "date": "2026-07-28",
-      "label": "Today \u00b7 Tue Jul 28",
-      "weather": {
-        "high_f": 87,
-        "low_f": 74,
-        "precip_pct": 48,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "Henry: Summertime Thrills @ Yorktown HS",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-07-28T00:00",
-          "link": "https://www.google.com/calendar/event?eid=YmxicjZuZXBoc3A5c3Y0aTNiZWlsMGgwcGNfMjAyNjA3MjggZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "8:45 am",
-          "title": "\ud83d\ude97 Drop off Henry \u2014 Summertime Thrills",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-07-28T08:45:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=cDAxaGlycmlwY3ZydmlmbW00cDM5bTNzYzhfMjAyNjA3MjhUMTI0NTAwWiBlc3RoZXIuZXZlbHluQG0"
-        },
-        {
-          "time": "3:45 pm",
-          "title": "\ud83d\ude97 Pick up Henry \u2014 Summertime Thrills",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-07-28T15:45:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ZG1hMnN0YTRxcm4yMTkxNDJtbjRhM2M3dHNfMjAyNjA3MjhUMTk0NTAwWiBlc3RoZXIuZXZlbHluQG0"
-        },
-        {
-          "time": "5:45 pm",
-          "title": "\ud83d\ude97 Drive to Ignite Facility (Athletic Dev)",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-07-28T17:45:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ZWc1NGM4anJvdTBkdjJxc3Zuc2lyNTQ4dm8gZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:00 pm",
-          "title": "Ignite \u26be Athletic Development",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-28T18:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=cTRlc25yajVibmliMDRkaTd2cXNsNjQ0dWcgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-07-29",
-      "label": "Tomorrow \u00b7 Wed Jul 29",
-      "weather": {
-        "high_f": 87,
-        "low_f": 70,
-        "precip_pct": 11,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Today \u00b7 Wed Jul 29",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -196,15 +123,8 @@
     },
     {
       "date": "2026-07-30",
-      "label": "Thursday \u00b7 Jul 30",
-      "weather": {
-        "high_f": 84,
-        "low_f": 68,
-        "precip_pct": 6,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Tomorrow \u00b7 Thu Jul 30",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -275,14 +195,7 @@
     {
       "date": "2026-07-31",
       "label": "Friday \u00b7 Jul 31",
-      "weather": {
-        "high_f": 87,
-        "low_f": 67,
-        "precip_pct": 4,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -362,28 +275,14 @@
     {
       "date": "2026-08-01",
       "label": "Saturday \u00b7 Aug 1",
-      "weather": {
-        "high_f": 91,
-        "low_f": 67,
-        "precip_pct": 11,
-        "weather_code": 55,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy drizzle"
-      },
+      "weather": null,
       "events": [],
       "conflicts": []
     },
     {
       "date": "2026-08-02",
       "label": "Sunday \u00b7 Aug 2",
-      "weather": {
-        "high_f": 85,
-        "low_f": 69,
-        "precip_pct": 42,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -418,14 +317,7 @@
     {
       "date": "2026-08-03",
       "label": "Monday \u00b7 Aug 3",
-      "weather": {
-        "high_f": 83,
-        "low_f": 72,
-        "precip_pct": 42,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -456,6 +348,23 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-08-04",
+      "label": "Tuesday \u00b7 Aug 4",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "Erin Redding's Birthday",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-08-04T00:00",
+          "link": "https://www.google.com/calendar/event?eid=a2NzNWs3ZW5hODZwb3JvazYwaW4wanBwZjhfMjAyNjA4MDQgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -463,12 +372,12 @@
       {
         "title": "Danielle Berg's Birthday",
         "day": "Fri Jul 31",
-        "days_out": 3
+        "days_out": 2
       },
       {
         "title": "Erin Redding's Birthday",
         "day": "Tue Aug 4",
-        "days_out": 7
+        "days_out": 6
       }
     ],
     "holidays": []

@@ -1,11 +1,9 @@
 {
-  "message_id": "<calendarjam-20260728100102@calendarjam.local>",
-  "sent_at": "2026-07-28T10:01:05.146253+00:00",
+  "message_id": "<calendarjam-20260729100102@calendarjam.local>",
+  "sent_at": "2026-07-29T10:01:03.986831+00:00",
   "pending_ids": [
     "1eab2df3eb71768ce77da74a8891fc36",
-    "5ee2b8bed6b758500ddbb71f3e0c1c5d",
     "566b02a18293a6f213e4dfab9f652718",
-    "e55c12686634220ab39fc3bcf3dad34e",
     "b0207015cd8cf1f13e509d8aa85117a0",
     "81313baa78c1447f388f8b6918aaa9d1",
     "c6f9501c40b663f9a46a4081f628710a",
@@ -15,5 +13,5 @@
     "4749300de5e9e49117ab2d92aab8317c",
     "28ab832f91285ec6bc8d88b047c7155e"
   ],
-  "email_date": "2026-07-28"
+  "email_date": "2026-07-29"
 }
