@@ -1,150 +1,19 @@
 {
-  "generated_at": "2026-07-29T08:17:36.696919-04:00",
-  "generated_label": "Wed Jul 29, 8:17 AM",
-  "weather": {
-    "high_f": 86,
-    "low_f": 68,
-    "precip_pct": 10,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-07-30T06:01:13.730295-04:00",
+  "generated_label": "Thu Jul 30, 6:01 AM",
+  "weather": null,
   "theme": {
-    "emoji": "\ud83e\udd75",
-    "title": "Heat Wave",
-    "blurb": "Hydrate and seek shade out there.",
+    "emoji": "\ud83c\udfd6\ufe0f",
+    "title": "High Summer",
+    "blurb": "Heat, hydration, and hustle.",
     "color1": "#ff512f",
     "color2": "#f09819"
   },
   "week": [
     {
-      "date": "2026-07-29",
-      "label": "Today \u00b7 Wed Jul 29",
-      "weather": {
-        "high_f": 86,
-        "low_f": 68,
-        "precip_pct": 10,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "Henry: Summertime Thrills @ Yorktown HS",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-07-29T00:00",
-          "link": "https://www.google.com/calendar/event?eid=YmxicjZuZXBoc3A5c3Y0aTNiZWlsMGgwcGNfMjAyNjA3MjkgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "8:45 am",
-          "title": "\ud83d\ude97 Drop off Henry \u2014 Summertime Thrills",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-07-29T08:45:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=cDAxaGlycmlwY3ZydmlmbW00cDM5bTNzYzhfMjAyNjA3MjlUMTI0NTAwWiBlc3RoZXIuZXZlbHluQG0"
-        },
-        {
-          "time": "3:45 pm",
-          "title": "\ud83d\ude97 Pick up Henry \u2014 Summertime Thrills",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-07-29T15:45:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ZG1hMnN0YTRxcm4yMTkxNDJtbjRhM2M3dHNfMjAyNjA3MjlUMTk0NTAwWiBlc3RoZXIuZXZlbHluQG0"
-        },
-        {
-          "time": "7:27 pm",
-          "title": "Flight  UA2136 BOS to IAD",
-          "location": "Departing Boston, MA",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-29T19:27:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=XzZvbzMwZ2hqODRvamFiYTM4aDEzZWI5azhsMjQ2YmExNjBzMzBiOW44b28zZ2NoazhoMjM2ZGhsNzAgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:27 pm",
-          "title": "Flight  UA2136 BOS to IAD",
-          "location": "Departing Boston, MA",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-29T19:27:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=XzhjcmppZDlqNzRyNDJiYTY4ZDFqNGI5azcwcDM2YmEyNmdwM2liYTU2NHMzZ2RxNjZsMGo0Y2EzNjggZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "9:00 pm",
-          "title": "Spirit @ Royals (NWSL+)",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-29T21:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=cTAyNWFmZ2hpZDA2cXU0aXFzYXU4c2ZnOHMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "9:15 pm",
-          "title": "Call Taylor\u2019s parents",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-07-29T21:15:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Mm5tbjBicHQ2Z2V0YXFpaWdtN2dmcW51djQgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "9:46 pm",
-          "title": "\ud83d\ude97 Drive home from IAD (UA2136 arrival)",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-07-29T21:46:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=NHQ0OTJ1ZjUxbHNrNXYzZXNqcnZidmdpaGcgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": [
-        {
-          "a": "Flight  UA2136 BOS to IAD",
-          "a_time": "7:27 pm",
-          "b": "Spirit @ Royals (NWSL+)",
-          "b_time": "9:00 pm"
-        },
-        {
-          "a": "Flight  UA2136 BOS to IAD",
-          "a_time": "7:27 pm",
-          "b": "Call Taylor\u2019s parents",
-          "b_time": "9:15 pm"
-        },
-        {
-          "a": "Flight  UA2136 BOS to IAD",
-          "a_time": "7:27 pm",
-          "b": "Spirit @ Royals (NWSL+)",
-          "b_time": "9:00 pm"
-        },
-        {
-          "a": "Flight  UA2136 BOS to IAD",
-          "a_time": "7:27 pm",
-          "b": "Call Taylor\u2019s parents",
-          "b_time": "9:15 pm"
-        },
-        {
-          "a": "Spirit @ Royals (NWSL+)",
-          "a_time": "9:00 pm",
-          "b": "Call Taylor\u2019s parents",
-          "b_time": "9:15 pm"
-        }
-      ]
-    },
-    {
       "date": "2026-07-30",
-      "label": "Tomorrow \u00b7 Thu Jul 30",
-      "weather": {
-        "high_f": 84,
-        "low_f": 68,
-        "precip_pct": 7,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Today \u00b7 Thu Jul 30",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -214,15 +83,8 @@
     },
     {
       "date": "2026-07-31",
-      "label": "Friday \u00b7 Jul 31",
-      "weather": {
-        "high_f": 90,
-        "low_f": 68,
-        "precip_pct": 2,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Tomorrow \u00b7 Fri Jul 31",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -302,28 +164,14 @@
     {
       "date": "2026-08-01",
       "label": "Saturday \u00b7 Aug 1",
-      "weather": {
-        "high_f": 94,
-        "low_f": 70,
-        "precip_pct": 25,
-        "weather_code": 55,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy drizzle"
-      },
+      "weather": null,
       "events": [],
       "conflicts": []
     },
     {
       "date": "2026-08-02",
       "label": "Sunday \u00b7 Aug 2",
-      "weather": {
-        "high_f": 80,
-        "low_f": 70,
-        "precip_pct": 42,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -358,14 +206,7 @@
     {
       "date": "2026-08-03",
       "label": "Monday \u00b7 Aug 3",
-      "weather": {
-        "high_f": 77,
-        "low_f": 70,
-        "precip_pct": 42,
-        "weather_code": 81,
-        "emoji": "\ud83c\udf27",
-        "label": "Showers"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -400,14 +241,7 @@
     {
       "date": "2026-08-04",
       "label": "Tuesday \u00b7 Aug 4",
-      "weather": {
-        "high_f": 83,
-        "low_f": 67,
-        "precip_pct": 23,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -420,6 +254,13 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-08-05",
+      "label": "Wednesday \u00b7 Aug 5",
+      "weather": null,
+      "events": [],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -427,12 +268,12 @@
       {
         "title": "Danielle Berg's Birthday",
         "day": "Fri Jul 31",
-        "days_out": 2
+        "days_out": 1
       },
       {
         "title": "Erin Redding's Birthday",
         "day": "Tue Aug 4",
-        "days_out": 6
+        "days_out": 5
       }
     ],
     "holidays": []
