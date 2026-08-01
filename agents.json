@@ -48,14 +48,14 @@
       },
       "status": {
         "state": "live",
-        "updated": "2026-07-31",
+        "updated": "2026-08-01",
         "cheapest_plan": "Dec 19 \u2192 Jan 3",
-        "cheapest_econ": 4311,
+        "cheapest_econ": 4321,
         "results": [
           {
             "label": "Dec 19 \u2192 Jan 2",
             "economy": {
-              "low": 4626,
+              "low": 4629,
               "flight_numbers": [
                 "TP 232",
                 "TP 832"
@@ -69,16 +69,16 @@
               "insights": null
             },
             "business": {
-              "low": 16434,
+              "low": 16701,
               "flight_numbers": [
-                "LH 415",
-                "LH 1870"
+                "UA 950",
+                "AZ 159"
               ],
               "airlines": [
-                "Lufthansa",
-                "Lufthansa"
+                "United",
+                "ITA"
               ],
-              "is_united": false,
+              "is_united": true,
               "layovers": 1,
               "insights": null
             }
@@ -86,7 +86,7 @@
           {
             "label": "Dec 19 \u2192 Jan 3",
             "economy": {
-              "low": 4311,
+              "low": 4321,
               "flight_numbers": [
                 "TP 232",
                 "TP 832"
@@ -100,14 +100,14 @@
               "insights": null
             },
             "business": {
-              "low": 18269,
+              "low": 16701,
               "flight_numbers": [
-                "UA 3603",
-                "UA 40"
+                "UA 950",
+                "AZ 159"
               ],
               "airlines": [
                 "United",
-                "United"
+                "ITA"
               ],
               "is_united": true,
               "layovers": 1,
@@ -242,6 +242,13 @@
           "Dec 19 \u2192 Jan 2 business": 16434,
           "Dec 19 \u2192 Jan 3 economy": 4311,
           "Dec 19 \u2192 Jan 3 business": 18269
+        },
+        {
+          "date": "2026-08-01",
+          "Dec 19 \u2192 Jan 2 economy": 4629,
+          "Dec 19 \u2192 Jan 2 business": 16701,
+          "Dec 19 \u2192 Jan 3 economy": 4321,
+          "Dec 19 \u2192 Jan 3 business": 16701
         }
       ]
     }
