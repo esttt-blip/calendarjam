@@ -166,5 +166,17 @@
     "uid": "<0100019fc223a247-b59ef2d0-399d-4567-a5a3-6e9640d511c1-000000@email.amazonses.com>",
     "needs_review": true,
     "from": "team@karma.yoga"
+  },
+  {
+    "id": "5139bd29285c3c887d9ae06ace922369",
+    "source": "Gmail",
+    "title": "You're booked: \ud83e\uddd8 All-Levels Hatha",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "\ud83e\uddd8 All-Levels Hatha is confirmed for Saturday, August 15, 2026 at 9:00 AM EDT.\r\nKarma Yoga\r\n\r\n\r\nBOOKING CONFIRMED\r\n\r\nHi Esther Scott,\r\n\r\nYou're booked for \ud83e\uddd8 All-Levels Hatha with Corie Quattrocchi on Saturday, August 15, 2026 at 9:00 AM EDT.\r\n\r\nAdd it to your calendar below, or add your full Karma Yoga booking calendar so future changes stay synced.\r\n\r\nSee you soon,\r\nKarma Yoga\r\n\r\nClass: \ud83e\uddd8 All-Levels Hatha\r\n\r\nDate: Saturday, August 15, 2026\r\n\r\nTime: 9:00 AM EDT\r\n\r\nAdd this class https://app.karma.yoga/api/org/public/student-calendar-event/eyJ2ZXJzaW9uIjoxLCJvcmdhbml6YXRpb25JZCI6Im9yZ183dnNmUUFJNHc0ZF8iLCJwcm9maWxlSWQiOiJvdXBfSTllcFRKTlZ5dG9Cd054YSIsIm9jY3VycmVuY2VJZCI6IjB2RDRGMVA1R3h1MTJzNUVQcVd5RSJ9.hSkPLWOnAAGyBiam7P-drwoChuWGHgL0y0v8ptLh8oA.ics Add all bookings https://app.karma.yoga/api/org/public/student-calendar/eyJ2ZXJzaW9uIjoxLCJvcmdhbml6YXRpb25JZCI6Im9yZ183dnNmUUFJNHc0ZF8iLCJwcm9maWxlSWQiOiJvdXBfSTllcFRKTlZ5dG9Cd054YSJ9.ymwLub8_iZxqr7O6GJmoLgr_MZ56fkD94oEAC0ZNWs4.ics\r\n\r\nThe all-bookings calendar keeps future reservations and schedule changes synced.\r\n\r\nIf the button does not work, paste this link into your browser:\r\nhttps://app.karma.yoga/api/org/public/student-calendar-event/eyJ2ZXJzaW9uIjoxLCJvcmdhbml6YXRpb25JZCI6Im9yZ183dnNmUUFJNHc0ZF8iLCJwcm9maWxlSWQiOiJvdXBfSTllcFRKTlZ5dG9Cd054YSIsIm9jY3VycmVuY2VJZCI6IjB2RDRGMVA1R3h1MTJzNUVQcVd5RSJ9.hSkPLWOnAAGyBiam7P-drwoChuWGHgL0y0v8ptLh8oA.ics\r\n\r\n\r\n\r\nWith warmth,\r\nKarma Yoga",
+    "uid": "<0100019fc2b8a57c-91d8f4e8-bdf8-421b-bb10-c9666d3dccc5-000000@email.amazonses.com>",
+    "needs_review": true,
+    "from": "Karma Yoga <team@karma.yoga>"
   }
 ]
