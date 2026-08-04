@@ -1,19 +1,32 @@
 {
-  "generated_at": "2026-08-04T06:00:48.466678-04:00",
-  "generated_label": "Tue Aug 4, 6:00 AM",
-  "weather": null,
+  "generated_at": "2026-08-04T08:16:25.603675-04:00",
+  "generated_label": "Tue Aug 4, 8:16 AM",
+  "weather": {
+    "high_f": 86,
+    "low_f": 71,
+    "precip_pct": 6,
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
+  },
   "theme": {
-    "emoji": "\ud83c\udf3b",
-    "title": "Late Summer",
-    "blurb": "Squeeze out every sunny minute.",
-    "color1": "#f7971e",
-    "color2": "#ff9a3c"
+    "emoji": "\ud83e\udd75",
+    "title": "Heat Wave",
+    "blurb": "Hydrate and seek shade out there.",
+    "color1": "#ff512f",
+    "color2": "#f09819"
   },
   "week": [
     {
       "date": "2026-08-04",
       "label": "Today \u00b7 Tue Aug 4",
-      "weather": null,
+      "weather": {
+        "high_f": 86,
+        "low_f": 71,
+        "precip_pct": 6,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -30,21 +43,42 @@
     {
       "date": "2026-08-05",
       "label": "Tomorrow \u00b7 Wed Aug 5",
-      "weather": null,
+      "weather": {
+        "high_f": 82,
+        "low_f": 74,
+        "precip_pct": 48,
+        "weather_code": 81,
+        "emoji": "\ud83c\udf27",
+        "label": "Showers"
+      },
       "events": [],
       "conflicts": []
     },
     {
       "date": "2026-08-06",
       "label": "Thursday \u00b7 Aug 6",
-      "weather": null,
+      "weather": {
+        "high_f": 96,
+        "low_f": 71,
+        "precip_pct": 15,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
       "events": [],
       "conflicts": []
     },
     {
       "date": "2026-08-07",
       "label": "Friday \u00b7 Aug 7",
-      "weather": null,
+      "weather": {
+        "high_f": 95,
+        "low_f": 73,
+        "precip_pct": 49,
+        "weather_code": 95,
+        "emoji": "\u26c8",
+        "label": "Thunderstorm"
+      },
       "events": [
         {
           "time": "10:00 am",
@@ -70,7 +104,14 @@
     {
       "date": "2026-08-08",
       "label": "Saturday \u00b7 Aug 8",
-      "weather": null,
+      "weather": {
+        "high_f": 89,
+        "low_f": 71,
+        "precip_pct": 59,
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
+      },
       "events": [
         {
           "time": "10:00 am",
@@ -96,7 +137,14 @@
     {
       "date": "2026-08-09",
       "label": "Sunday \u00b7 Aug 9",
-      "weather": null,
+      "weather": {
+        "high_f": 96,
+        "low_f": 71,
+        "precip_pct": 27,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
       "events": [
         {
           "time": "all day",
@@ -131,7 +179,14 @@
     {
       "date": "2026-08-10",
       "label": "Monday \u00b7 Aug 10",
-      "weather": null,
+      "weather": {
+        "high_f": 98,
+        "low_f": 76,
+        "precip_pct": 10,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
       "events": [
         {
           "time": "6:15 pm",
