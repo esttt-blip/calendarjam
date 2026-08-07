@@ -48,14 +48,14 @@
       },
       "status": {
         "state": "live",
-        "updated": "2026-08-05",
+        "updated": "2026-08-07",
         "cheapest_plan": "Dec 19 \u2192 Jan 3",
-        "cheapest_econ": 4656,
+        "cheapest_econ": 4651,
         "results": [
           {
             "label": "Dec 19 \u2192 Jan 2",
             "economy": {
-              "low": 5195,
+              "low": 5196,
               "flight_numbers": [
                 "TP 232",
                 "TP 832"
@@ -69,16 +69,16 @@
               "insights": null
             },
             "business": {
-              "low": 14825,
+              "low": 16702,
               "flight_numbers": [
-                "TP 232",
-                "TP 832"
+                "UA 950",
+                "AZ 159"
               ],
               "airlines": [
-                "Tap Air Portugal",
-                "Tap Air Portugal"
+                "United",
+                "ITA"
               ],
-              "is_united": false,
+              "is_united": true,
               "layovers": 1,
               "insights": null
             }
@@ -86,7 +86,7 @@
           {
             "label": "Dec 19 \u2192 Jan 3",
             "economy": {
-              "low": 4656,
+              "low": 4651,
               "flight_numbers": [
                 "TP 232",
                 "TP 832"
@@ -262,6 +262,13 @@
           "Dec 19 \u2192 Jan 2 economy": 5195,
           "Dec 19 \u2192 Jan 2 business": 14825,
           "Dec 19 \u2192 Jan 3 economy": 4656,
+          "Dec 19 \u2192 Jan 3 business": 17277
+        },
+        {
+          "date": "2026-08-07",
+          "Dec 19 \u2192 Jan 2 economy": 5196,
+          "Dec 19 \u2192 Jan 2 business": 16702,
+          "Dec 19 \u2192 Jan 3 economy": 4651,
           "Dec 19 \u2192 Jan 3 business": 17277
         }
       ]
