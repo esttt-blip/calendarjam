@@ -1,46 +1,19 @@
 {
-  "generated_at": "2026-08-06T08:16:20.252678-04:00",
-  "generated_label": "Thu Aug 6, 8:16 AM",
-  "weather": {
-    "high_f": 93,
-    "low_f": 76,
-    "precip_pct": 22,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-08-07T06:01:03.476388-04:00",
+  "generated_label": "Fri Aug 7, 6:01 AM",
+  "weather": null,
   "theme": {
-    "emoji": "\ud83e\udd75",
-    "title": "Heat Wave",
-    "blurb": "Hydrate and seek shade out there.",
-    "color1": "#ff512f",
-    "color2": "#f09819"
+    "emoji": "\ud83c\udf3b",
+    "title": "Late Summer",
+    "blurb": "Squeeze out every sunny minute.",
+    "color1": "#f7971e",
+    "color2": "#ff9a3c"
   },
   "week": [
     {
-      "date": "2026-08-06",
-      "label": "Today \u00b7 Thu Aug 6",
-      "weather": {
-        "high_f": 93,
-        "low_f": 76,
-        "precip_pct": 22,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [],
-      "conflicts": []
-    },
-    {
       "date": "2026-08-07",
-      "label": "Tomorrow \u00b7 Fri Aug 7",
-      "weather": {
-        "high_f": 94,
-        "low_f": 74,
-        "precip_pct": 62,
-        "weather_code": 63,
-        "emoji": "\ud83c\udf27",
-        "label": "Rain"
-      },
+      "label": "Today \u00b7 Fri Aug 7",
+      "weather": null,
       "events": [
         {
           "time": "10:00 am",
@@ -65,15 +38,8 @@
     },
     {
       "date": "2026-08-08",
-      "label": "Saturday \u00b7 Aug 8",
-      "weather": {
-        "high_f": 97,
-        "low_f": 70,
-        "precip_pct": 56,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
-      },
+      "label": "Tomorrow \u00b7 Sat Aug 8",
+      "weather": null,
       "events": [
         {
           "time": "10:00 am",
@@ -99,14 +65,7 @@
     {
       "date": "2026-08-09",
       "label": "Sunday \u00b7 Aug 9",
-      "weather": {
-        "high_f": 94,
-        "low_f": 72,
-        "precip_pct": 30,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -159,14 +118,7 @@
     {
       "date": "2026-08-10",
       "label": "Monday \u00b7 Aug 10",
-      "weather": {
-        "high_f": 98,
-        "low_f": 74,
-        "precip_pct": 13,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "6:15 pm",
@@ -192,14 +144,7 @@
     {
       "date": "2026-08-11",
       "label": "Tuesday \u00b7 Aug 11",
-      "weather": {
-        "high_f": 98,
-        "low_f": 72,
-        "precip_pct": 32,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -234,14 +179,7 @@
     {
       "date": "2026-08-12",
       "label": "Wednesday \u00b7 Aug 12",
-      "weather": {
-        "high_f": 89,
-        "low_f": 73,
-        "precip_pct": 45,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -251,6 +189,32 @@
           "is_drive": false,
           "sort": "2026-08-12T00:00",
           "link": "https://www.google.com/calendar/event?eid=XzcwcDNhaDlsOGQxM2NiYTE4a29qZ2I5azhnb2s2YjlwODhwMzJiYTU4Y3EzMmQxbDc0cjRjY2hoNmdfMjAyNjA4MTIgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "date": "2026-08-13",
+      "label": "Thursday \u00b7 Aug 13",
+      "weather": null,
+      "events": [
+        {
+          "time": "6:15 pm",
+          "title": "\ud83d\ude97 Drive to Marshall HS (Ignite Pitching/Catcher)",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-08-13T18:15:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=OW85a3M5aWV0OWI2dGQ5YXJ2ZzZyMTd0cHMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "Ignite \u26be Pitching/Catcher Development",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-13T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=amw4dWZwMXRpM2hoajNpZWg1cmNzcWplOW8gZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
