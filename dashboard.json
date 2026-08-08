@@ -1,65 +1,19 @@
 {
-  "generated_at": "2026-08-07T07:04:54.806812-04:00",
-  "generated_label": "Fri Aug 7, 7:04 AM",
-  "weather": {
-    "high_f": 92,
-    "low_f": 72,
-    "precip_pct": 21,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-08-08T06:01:08.892807-04:00",
+  "generated_label": "Sat Aug 8, 6:01 AM",
+  "weather": null,
   "theme": {
-    "emoji": "\ud83e\udd75",
-    "title": "Heat Wave",
-    "blurb": "Hydrate and seek shade out there.",
-    "color1": "#ff512f",
-    "color2": "#f09819"
+    "emoji": "\ud83c\udf3b",
+    "title": "Late Summer",
+    "blurb": "Squeeze out every sunny minute.",
+    "color1": "#f7971e",
+    "color2": "#ff9a3c"
   },
   "week": [
     {
-      "date": "2026-08-07",
-      "label": "Today \u00b7 Fri Aug 7",
-      "weather": {
-        "high_f": 92,
-        "low_f": 72,
-        "precip_pct": 21,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "10:00 am",
-          "title": "FW: Bi-Weekly Product Health and Incident Review with ELT",
-          "location": "https://draftkings.zoom.us/j/95183770035?pwd=jpUb1Xt5mcxx69DQkzdkaee60kpuZh.1",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-07T10:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc3NG80YWNpMzY0cWsyaDlnNnQzNDhncGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNmQyazJlMW44a3EzZWMxZzZzcGtjZ3BrNnQxMzZkYTE4b3A0NGhobDZvb2o0Z2hpNzEwZ18yMDI2MDgwN1QxNDAwMDBaIGVzdGhlci5ldmVseW5AbQ"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "Book Club Hang!",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-07T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=bm1tMTU0N2NnbjNqY2x1MWo1ZWVkdDdidTQgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-08-08",
-      "label": "Tomorrow \u00b7 Sat Aug 8",
-      "weather": {
-        "high_f": 92,
-        "low_f": 74,
-        "precip_pct": 55,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
-      },
+      "label": "Today \u00b7 Sat Aug 8",
+      "weather": null,
       "events": [
         {
           "time": "10:00 am",
@@ -84,15 +38,8 @@
     },
     {
       "date": "2026-08-09",
-      "label": "Sunday \u00b7 Aug 9",
-      "weather": {
-        "high_f": 94,
-        "low_f": 72,
-        "precip_pct": 11,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "label": "Tomorrow \u00b7 Sun Aug 9",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -145,14 +92,7 @@
     {
       "date": "2026-08-10",
       "label": "Monday \u00b7 Aug 10",
-      "weather": {
-        "high_f": 97,
-        "low_f": 72,
-        "precip_pct": 8,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "6:15 pm",
@@ -178,14 +118,7 @@
     {
       "date": "2026-08-11",
       "label": "Tuesday \u00b7 Aug 11",
-      "weather": {
-        "high_f": 89,
-        "low_f": 74,
-        "precip_pct": 27,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -220,14 +153,7 @@
     {
       "date": "2026-08-12",
       "label": "Wednesday \u00b7 Aug 12",
-      "weather": {
-        "high_f": 88,
-        "low_f": 75,
-        "precip_pct": 44,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -244,14 +170,7 @@
     {
       "date": "2026-08-13",
       "label": "Thursday \u00b7 Aug 13",
-      "weather": {
-        "high_f": 82,
-        "low_f": 72,
-        "precip_pct": 43,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "6:15 pm",
@@ -270,6 +189,59 @@
           "is_drive": false,
           "sort": "2026-08-13T19:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=amw4dWZwMXRpM2hoajNpZWg1cmNzcWplOW8gZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "date": "2026-08-14",
+      "label": "Friday \u00b7 Aug 14",
+      "weather": null,
+      "events": [
+        {
+          "time": "1:00 am",
+          "title": "Flight  UA9836 SOF to VIE",
+          "location": "Departing Sofia, BG",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-14T01:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=XzZrcjQ2ZTFpOG9wamFiYTM3NTFqMmI5azZvcmpjYjlwODhwamViOWc4cDIzMmc5cDg4cWsyZ2EyOGsgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "1:00 am",
+          "title": "Flight  UA9836 SOF to VIE",
+          "location": "Departing Sofia, BG",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-14T01:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Xzcwb2s2Z2hvOG9xamViOXA2OHI0MmI5azYwcTNjYmExNmdxajBiOW02Y3AzYWdhMjZvcmo2ZDlwNm8gZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "4:50 am",
+          "title": "Flight  UA9821 VIE to IAD",
+          "location": "Departing Vienna, AT",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-14T04:50:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=XzY4cTNlZWE2NzBwNDJiOXA2cDFrOGI5azY4bzNnYjlwNmwxajRiYTU2NTMzMmUyMjYxMTRhZWEyNzQgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "4:50 am",
+          "title": "Flight  UA9821 VIE to IAD",
+          "location": "Departing Vienna, AT",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-14T04:50:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Xzg5MjM4ZGhsNnAyazZiOWo3MHNrY2I5azg1MGthYmExOGQya2NiOW02MHBqY2RxMjZoMGppZTFuOGsgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "3:05 pm",
+          "title": "\ud83d\ude97 Drive home from IAD (UA9821 arrival)",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-08-14T15:05:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=bGM0MDVkajF2am91YmZpY2FyZWpkbDBic2MgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
