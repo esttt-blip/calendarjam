@@ -48,14 +48,14 @@
       },
       "status": {
         "state": "live",
-        "updated": "2026-08-07",
+        "updated": "2026-08-09",
         "cheapest_plan": "Dec 19 \u2192 Jan 3",
-        "cheapest_econ": 4651,
+        "cheapest_econ": 4657,
         "results": [
           {
             "label": "Dec 19 \u2192 Jan 2",
             "economy": {
-              "low": 5196,
+              "low": 5195,
               "flight_numbers": [
                 "TP 232",
                 "TP 832"
@@ -69,14 +69,14 @@
               "insights": null
             },
             "business": {
-              "low": 16702,
+              "low": 16403,
               "flight_numbers": [
                 "UA 950",
-                "AZ 159"
+                "SN 3181"
               ],
               "airlines": [
                 "United",
-                "ITA"
+                "Brussels Airlines"
               ],
               "is_united": true,
               "layovers": 1,
@@ -86,7 +86,7 @@
           {
             "label": "Dec 19 \u2192 Jan 3",
             "economy": {
-              "low": 4651,
+              "low": 4657,
               "flight_numbers": [
                 "TP 232",
                 "TP 832"
@@ -100,14 +100,14 @@
               "insights": null
             },
             "business": {
-              "low": 17277,
+              "low": 16474,
               "flight_numbers": [
-                "TP 232",
-                "TP 832"
+                "LH 415",
+                "LH 1872"
               ],
               "airlines": [
-                "Tap Air Portugal",
-                "Tap Air Portugal"
+                "Lufthansa",
+                "Lufthansa"
               ],
               "is_united": false,
               "layovers": 1,
@@ -270,6 +270,13 @@
           "Dec 19 \u2192 Jan 2 business": 16702,
           "Dec 19 \u2192 Jan 3 economy": 4651,
           "Dec 19 \u2192 Jan 3 business": 17277
+        },
+        {
+          "date": "2026-08-09",
+          "Dec 19 \u2192 Jan 2 economy": 5195,
+          "Dec 19 \u2192 Jan 2 business": 16403,
+          "Dec 19 \u2192 Jan 3 economy": 4657,
+          "Dec 19 \u2192 Jan 3 business": 16474
         }
       ]
     }
