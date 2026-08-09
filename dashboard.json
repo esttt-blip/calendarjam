@@ -1,65 +1,19 @@
 {
-  "generated_at": "2026-08-08T06:49:30.315291-04:00",
-  "generated_label": "Sat Aug 8, 6:49 AM",
-  "weather": {
-    "high_f": 94,
-    "low_f": 73,
-    "precip_pct": 19,
-    "emoji": "\ud83c\udf27",
-    "label": "Showers"
-  },
+  "generated_at": "2026-08-09T06:00:55.638273-04:00",
+  "generated_label": "Sun Aug 9, 6:00 AM",
+  "weather": null,
   "theme": {
-    "emoji": "\ud83e\udd75",
-    "title": "Heat Wave",
-    "blurb": "Hydrate and seek shade out there.",
-    "color1": "#ff512f",
-    "color2": "#f09819"
+    "emoji": "\ud83c\udf3b",
+    "title": "Late Summer",
+    "blurb": "Squeeze out every sunny minute.",
+    "color1": "#f7971e",
+    "color2": "#ff9a3c"
   },
   "week": [
     {
-      "date": "2026-08-08",
-      "label": "Today \u00b7 Sat Aug 8",
-      "weather": {
-        "high_f": 94,
-        "low_f": 73,
-        "precip_pct": 19,
-        "weather_code": 81,
-        "emoji": "\ud83c\udf27",
-        "label": "Showers"
-      },
-      "events": [
-        {
-          "time": "10:00 am",
-          "title": "Change lint filter",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-08T10:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=MGIxZ284azRuczNoaXEwYm4xc2VmdDdyY2tfMjAyNjA4MDhUMTQwMDAwWiBlc3RoZXIuZXZlbHluQG0"
-        },
-        {
-          "time": "6:30 pm",
-          "title": "Spirit vs Courage (ion)",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-08T18:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ZW80NTFwbGloc2I1ZXRqcGV1czVlcmxrZXMgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-08-09",
-      "label": "Tomorrow \u00b7 Sun Aug 9",
-      "weather": {
-        "high_f": 96,
-        "low_f": 75,
-        "precip_pct": 3,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Today \u00b7 Sun Aug 9",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -78,6 +32,15 @@
           "is_drive": false,
           "sort": "2026-08-09T00:45:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=bmxnMWI3cjBpYnY4aG1oNmdkYW5xOG51NDAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "12:54 am",
+          "title": "Train to Frankfurt(M) Flughafen Fernbf",
+          "location": "K\u00f6ln Hbf",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-09T00:54:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=N2pnMGJjaXNrZzBjcm5rZjVxNjkyN2o4Mm8gZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "2:45 am",
@@ -111,15 +74,8 @@
     },
     {
       "date": "2026-08-10",
-      "label": "Monday \u00b7 Aug 10",
-      "weather": {
-        "high_f": 97,
-        "low_f": 71,
-        "precip_pct": 19,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
-      },
+      "label": "Tomorrow \u00b7 Mon Aug 10",
+      "weather": null,
       "events": [
         {
           "time": "6:15 pm",
@@ -145,14 +101,7 @@
     {
       "date": "2026-08-11",
       "label": "Tuesday \u00b7 Aug 11",
-      "weather": {
-        "high_f": 96,
-        "low_f": 71,
-        "precip_pct": 45,
-        "weather_code": 82,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy showers"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -187,14 +136,7 @@
     {
       "date": "2026-08-12",
       "label": "Wednesday \u00b7 Aug 12",
-      "weather": {
-        "high_f": 86,
-        "low_f": 70,
-        "precip_pct": 36,
-        "weather_code": 95,
-        "emoji": "\u26c8",
-        "label": "Thunderstorm"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -211,14 +153,7 @@
     {
       "date": "2026-08-13",
       "label": "Thursday \u00b7 Aug 13",
-      "weather": {
-        "high_f": 91,
-        "low_f": 70,
-        "precip_pct": 34,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "6:15 pm",
@@ -244,14 +179,7 @@
     {
       "date": "2026-08-14",
       "label": "Friday \u00b7 Aug 14",
-      "weather": {
-        "high_f": 85,
-        "low_f": 72,
-        "precip_pct": 26,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "1:00 am",
@@ -297,6 +225,32 @@
           "is_drive": true,
           "sort": "2026-08-14T15:05:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=bGM0MDVkajF2am91YmZpY2FyZWpkbDBic2MgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "date": "2026-08-15",
+      "label": "Saturday \u00b7 Aug 15",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "Cancel Whole Foods grocery delivery",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-08-15T00:00",
+          "link": "https://www.google.com/calendar/event?eid=YmVxdjRpb2ZzaDBydjRnZHY0azNqOTlkb3MgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "9:00 am",
+          "title": "\ud83e\uddd8 All-Levels Hatha",
+          "location": "Karma Yoga",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-15T09:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=N21vMjYxaG9ibzkyZzIxdW1ycjlrZG80YmMgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
