@@ -48,14 +48,14 @@
       },
       "status": {
         "state": "live",
-        "updated": "2026-08-09",
+        "updated": "2026-08-11",
         "cheapest_plan": "Dec 19 \u2192 Jan 3",
-        "cheapest_econ": 4657,
+        "cheapest_econ": 4932,
         "results": [
           {
             "label": "Dec 19 \u2192 Jan 2",
             "economy": {
-              "low": 5195,
+              "low": 5427,
               "flight_numbers": [
                 "TP 232",
                 "TP 832"
@@ -69,16 +69,16 @@
               "insights": null
             },
             "business": {
-              "low": 16403,
+              "low": 16384,
               "flight_numbers": [
-                "UA 950",
-                "SN 3181"
+                "LX 73",
+                "LX 1736"
               ],
               "airlines": [
-                "United",
-                "Brussels Airlines"
+                "SWISS",
+                "SWISS"
               ],
-              "is_united": true,
+              "is_united": false,
               "layovers": 1,
               "insights": null
             }
@@ -86,7 +86,7 @@
           {
             "label": "Dec 19 \u2192 Jan 3",
             "economy": {
-              "low": 4657,
+              "low": 4932,
               "flight_numbers": [
                 "TP 232",
                 "TP 832"
@@ -100,10 +100,10 @@
               "insights": null
             },
             "business": {
-              "low": 16474,
+              "low": 16440,
               "flight_numbers": [
                 "LH 415",
-                "LH 1872"
+                "LH 1870"
               ],
               "airlines": [
                 "Lufthansa",
@@ -277,6 +277,13 @@
           "Dec 19 \u2192 Jan 2 business": 16403,
           "Dec 19 \u2192 Jan 3 economy": 4657,
           "Dec 19 \u2192 Jan 3 business": 16474
+        },
+        {
+          "date": "2026-08-11",
+          "Dec 19 \u2192 Jan 2 economy": 5427,
+          "Dec 19 \u2192 Jan 2 business": 16384,
+          "Dec 19 \u2192 Jan 3 economy": 4932,
+          "Dec 19 \u2192 Jan 3 business": 16440
         }
       ]
     }
