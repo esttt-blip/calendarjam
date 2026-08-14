@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-08-13T07:09:34.140596-04:00",
-  "generated_label": "Thu Aug 13, 7:09 AM",
-  "weather": {
-    "high_f": 94,
-    "low_f": 76,
-    "precip_pct": 3,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-08-14T06:01:58.371843-04:00",
+  "generated_label": "Fri Aug 14, 6:01 AM",
+  "weather": null,
   "theme": {
     "emoji": "\ud83c\udfc6",
     "title": "Tournament Week",
@@ -17,49 +11,9 @@
   },
   "week": [
     {
-      "date": "2026-08-13",
-      "label": "Today \u00b7 Thu Aug 13",
-      "weather": {
-        "high_f": 94,
-        "low_f": 76,
-        "precip_pct": 3,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "6:15 pm",
-          "title": "\ud83d\ude97 Drive to Marshall HS (Ignite Pitching/Catcher)",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-08-13T18:15:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=OW85a3M5aWV0OWI2dGQ5YXJ2ZzZyMTd0cHMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "Ignite \u26be Pitching/Catcher Development",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-13T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=amw4dWZwMXRpM2hoajNpZWg1cmNzcWplOW8gZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-08-14",
-      "label": "Tomorrow \u00b7 Fri Aug 14",
-      "weather": {
-        "high_f": 84,
-        "low_f": 76,
-        "precip_pct": 47,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Today \u00b7 Fri Aug 14",
+      "weather": null,
       "events": [
         {
           "time": "1:00 am",
@@ -120,15 +74,8 @@
     },
     {
       "date": "2026-08-15",
-      "label": "Saturday \u00b7 Aug 15",
-      "weather": {
-        "high_f": 88,
-        "low_f": 67,
-        "precip_pct": 47,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Tomorrow \u00b7 Sat Aug 15",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -140,15 +87,6 @@
           "link": "https://www.google.com/calendar/event?eid=YmVxdjRpb2ZzaDBydjRnZHY0azNqOTlkb3MgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
-          "time": "9:00 am",
-          "title": "\ud83e\uddd8 All-Levels Hatha",
-          "location": "Karma Yoga",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-15T09:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=N21vMjYxaG9ibzkyZzIxdW1ycjlrZG80YmMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
           "time": "10:00 am",
           "title": "St James Tournament",
           "location": "",
@@ -158,26 +96,12 @@
           "link": "https://www.google.com/calendar/event?eid=aHE1amMwODc0M3VsOGU2dW03NGhqMzEwNTggZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
-      "conflicts": [
-        {
-          "a": "\ud83e\uddd8 All-Levels Hatha",
-          "a_time": "9:00 am",
-          "b": "St James Tournament",
-          "b_time": "10:00 am"
-        }
-      ]
+      "conflicts": []
     },
     {
       "date": "2026-08-16",
       "label": "Sunday \u00b7 Aug 16",
-      "weather": {
-        "high_f": 96,
-        "low_f": 69,
-        "precip_pct": 49,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
-      },
+      "weather": null,
       "events": [
         {
           "time": "7:00 pm",
@@ -203,14 +127,7 @@
     {
       "date": "2026-08-17",
       "label": "Monday \u00b7 Aug 17",
-      "weather": {
-        "high_f": 85,
-        "low_f": 74,
-        "precip_pct": 49,
-        "weather_code": 95,
-        "emoji": "\u26c8",
-        "label": "Thunderstorm"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -245,14 +162,7 @@
     {
       "date": "2026-08-18",
       "label": "Tuesday \u00b7 Aug 18",
-      "weather": {
-        "high_f": 90,
-        "low_f": 70,
-        "precip_pct": 9,
-        "weather_code": 1,
-        "emoji": "\ud83c\udf24",
-        "label": "Mostly clear"
-      },
+      "weather": null,
       "events": [
         {
           "time": "5:15 pm",
@@ -278,14 +188,7 @@
     {
       "date": "2026-08-19",
       "label": "Wednesday \u00b7 Aug 19",
-      "weather": {
-        "high_f": 95,
-        "low_f": 72,
-        "precip_pct": 18,
-        "weather_code": 1,
-        "emoji": "\ud83c\udf24",
-        "label": "Mostly clear"
-      },
+      "weather": null,
       "events": [
         {
           "time": "9:00 am",
@@ -295,6 +198,50 @@
           "is_drive": false,
           "sort": "2026-08-19T09:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=MzdhYXZmbjc1b2d0ZjFmbGZ1c2QzcGptODggZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "date": "2026-08-20",
+      "label": "Thursday \u00b7 Aug 20",
+      "weather": null,
+      "events": [
+        {
+          "time": "1:00 pm",
+          "title": "Platform All Hands Monthly ",
+          "location": "https://draftkings.zoom.us/j/92909466243?pwd=MHoitIe4MyDL8SWx6TUx7DCGlQAawu.1&from=addon",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-20T13:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc2cDJqMmg5bDc0cGs0aGkxODRxNDhncGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNjRvazRjOWk2dDIzNGQyNDg5MGtjZDFrOGQwa2NkcTE2c3EzMGVhMzYwcmo4ZzlpOGdyZ18yMDI2MDgyMFQxNzAwMDBaIGVzdGhlci5ldmVseW5AbQ"
+        },
+        {
+          "time": "5:00 pm",
+          "title": "Newmans",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-20T17:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=OXRqcW84bGQ2cjNldWxpajVudmV1bHJoZWsgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "6:40 pm",
+          "title": "\ud83d\ude97 Drive to Marshall HS (Ignite)",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-08-20T18:40:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=dDJidGU2bWxlb3ZkNzlsZm1zNWJndDRidW8gZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "Ignite \u26be Pitching/Catcher Development",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-20T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=bWFsbjFmY2YwcjJnOXZxZ3Bhczc1YWdlcnMgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
