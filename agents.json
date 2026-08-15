@@ -48,14 +48,14 @@
       },
       "status": {
         "state": "live",
-        "updated": "2026-08-13",
-        "cheapest_plan": "Dec 19 \u2192 Jan 3",
-        "cheapest_econ": 5651,
+        "updated": "2026-08-15",
+        "cheapest_plan": "Dec 19 \u2192 Jan 2",
+        "cheapest_econ": 5803,
         "results": [
           {
             "label": "Dec 19 \u2192 Jan 2",
             "economy": {
-              "low": 5804,
+              "low": 5803,
               "flight_numbers": [
                 "AC 8619",
                 "AC 890"
@@ -69,16 +69,16 @@
               "insights": null
             },
             "business": {
-              "low": 18405,
+              "low": 16773,
               "flight_numbers": [
-                "LH 415",
-                "LH 1870"
+                "UA 918",
+                "AZ 203"
               ],
               "airlines": [
-                "Lufthansa",
-                "Lufthansa"
+                "United",
+                "ITA"
               ],
-              "is_united": false,
+              "is_united": true,
               "layovers": 1,
               "insights": null
             }
@@ -86,28 +86,28 @@
           {
             "label": "Dec 19 \u2192 Jan 3",
             "economy": {
-              "low": 5651,
+              "low": 6049,
               "flight_numbers": [
-                "TP 232",
-                "TP 832"
+                "AC 8619",
+                "AC 890"
               ],
               "airlines": [
-                "Tap Air Portugal",
-                "Tap Air Portugal"
+                "Air Canada",
+                "Air Canada"
               ],
               "is_united": false,
               "layovers": 1,
               "insights": null
             },
             "business": {
-              "low": 16702,
+              "low": 16531,
               "flight_numbers": [
-                "UA 950",
-                "AZ 159"
+                "UA 932",
+                "LH 236"
               ],
               "airlines": [
                 "United",
-                "ITA"
+                "Lufthansa"
               ],
               "is_united": true,
               "layovers": 1,
@@ -291,6 +291,13 @@
           "Dec 19 \u2192 Jan 2 business": 18405,
           "Dec 19 \u2192 Jan 3 economy": 5651,
           "Dec 19 \u2192 Jan 3 business": 16702
+        },
+        {
+          "date": "2026-08-15",
+          "Dec 19 \u2192 Jan 2 economy": 5803,
+          "Dec 19 \u2192 Jan 2 business": 16773,
+          "Dec 19 \u2192 Jan 3 economy": 6049,
+          "Dec 19 \u2192 Jan 3 business": 16531
         }
       ]
     }
