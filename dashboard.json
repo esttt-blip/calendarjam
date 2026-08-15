@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-08-14T07:07:19.817409-04:00",
-  "generated_label": "Fri Aug 14, 7:07 AM",
-  "weather": {
-    "high_f": 87,
-    "low_f": 77,
-    "precip_pct": 21,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-08-15T06:00:58.566313-04:00",
+  "generated_label": "Sat Aug 15, 6:00 AM",
+  "weather": null,
   "theme": {
     "emoji": "\ud83c\udfc6",
     "title": "Tournament Week",
@@ -17,85 +11,9 @@
   },
   "week": [
     {
-      "date": "2026-08-14",
-      "label": "Today \u00b7 Fri Aug 14",
-      "weather": {
-        "high_f": 87,
-        "low_f": 77,
-        "precip_pct": 21,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "1:00 am",
-          "title": "Flight  UA9836 SOF to VIE",
-          "location": "Departing Sofia, BG",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-14T01:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=XzZrcjQ2ZTFpOG9wamFiYTM3NTFqMmI5azZvcmpjYjlwODhwamViOWc4cDIzMmc5cDg4cWsyZ2EyOGsgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "1:00 am",
-          "title": "Flight  UA9836 SOF to VIE",
-          "location": "Departing Sofia, BG",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-14T01:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Xzcwb2s2Z2hvOG9xamViOXA2OHI0MmI5azYwcTNjYmExNmdxajBiOW02Y3AzYWdhMjZvcmo2ZDlwNm8gZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "4:50 am",
-          "title": "Flight  UA9821 VIE to IAD",
-          "location": "Departing Vienna, AT",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-14T04:50:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=XzY4cTNlZWE2NzBwNDJiOXA2cDFrOGI5azY4bzNnYjlwNmwxajRiYTU2NTMzMmUyMjYxMTRhZWEyNzQgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "4:50 am",
-          "title": "Flight  UA9821 VIE to IAD",
-          "location": "Departing Vienna, AT",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-14T04:50:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Xzg5MjM4ZGhsNnAyazZiOWo3MHNrY2I5azg1MGthYmExOGQya2NiOW02MHBqY2RxMjZoMGppZTFuOGsgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "3:05 pm",
-          "title": "\ud83d\ude97 Drive home from IAD (UA9821 arrival)",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-08-14T15:05:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=bGM0MDVkajF2am91YmZpY2FyZWpkbDBic2MgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "3:30 pm",
-          "title": "Haircuts",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-14T15:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Zm9xcWRkcXFhaGNqOWRqanZsZTBuYmdmZ28gZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-08-15",
-      "label": "Tomorrow \u00b7 Sat Aug 15",
-      "weather": {
-        "high_f": 89,
-        "low_f": 73,
-        "precip_pct": 6,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Today \u00b7 Sat Aug 15",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -107,12 +25,21 @@
           "link": "https://www.google.com/calendar/event?eid=YmVxdjRpb2ZzaDBydjRnZHY0azNqOTlkb3MgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
-          "time": "10:00 am",
+          "time": "9:15 am",
+          "title": "Drive to St James",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-15T09:15:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZWU3cjA5ajZ0OTY3ZTd1MjZodXR1NGM5a28gZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "9:45 am",
           "title": "St James Tournament",
           "location": "",
           "all_day": false,
           "is_drive": false,
-          "sort": "2026-08-15T10:00:00-04:00",
+          "sort": "2026-08-15T09:45:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=aHE1amMwODc0M3VsOGU2dW03NGhqMzEwNTggZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
@@ -120,16 +47,18 @@
     },
     {
       "date": "2026-08-16",
-      "label": "Sunday \u00b7 Aug 16",
-      "weather": {
-        "high_f": 81,
-        "low_f": 71,
-        "precip_pct": 54,
-        "weather_code": 81,
-        "emoji": "\ud83c\udf27",
-        "label": "Showers"
-      },
+      "label": "Tomorrow \u00b7 Sun Aug 16",
+      "weather": null,
       "events": [
+        {
+          "time": "6:30 pm",
+          "title": "Taylor: Odyssey",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-16T18:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Z2ltYzVodjdvcnE0MjRha3ZqZXFqdnBpZzQgZXN0aGVyLmV2ZWx5bkBt"
+        },
         {
           "time": "7:00 pm",
           "title": "Deep Rest: Yin & Sound Healing",
@@ -149,19 +78,19 @@
           "link": "https://www.google.com/calendar/event?eid=dHFjcDB0Mm81aDQ3Y3Exazk3aHNibWE1cTAgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
-      "conflicts": []
+      "conflicts": [
+        {
+          "a": "Taylor: Odyssey",
+          "a_time": "6:30 pm",
+          "b": "Deep Rest: Yin & Sound Healing",
+          "b_time": "7:00 pm"
+        }
+      ]
     },
     {
       "date": "2026-08-17",
       "label": "Monday \u00b7 Aug 17",
-      "weather": {
-        "high_f": 87,
-        "low_f": 74,
-        "precip_pct": 50,
-        "weather_code": 81,
-        "emoji": "\ud83c\udf27",
-        "label": "Showers"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -196,14 +125,7 @@
     {
       "date": "2026-08-18",
       "label": "Tuesday \u00b7 Aug 18",
-      "weather": {
-        "high_f": 86,
-        "low_f": 69,
-        "precip_pct": 4,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "5:15 pm",
@@ -229,14 +151,7 @@
     {
       "date": "2026-08-19",
       "label": "Wednesday \u00b7 Aug 19",
-      "weather": {
-        "high_f": 93,
-        "low_f": 70,
-        "precip_pct": 9,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "9:00 am",
@@ -253,14 +168,7 @@
     {
       "date": "2026-08-20",
       "label": "Thursday \u00b7 Aug 20",
-      "weather": {
-        "high_f": 92,
-        "low_f": 76,
-        "precip_pct": 26,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "1:00 pm",
@@ -297,6 +205,41 @@
           "is_drive": false,
           "sort": "2026-08-20T19:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=bWFsbjFmY2YwcjJnOXZxZ3Bhczc1YWdlcnMgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "date": "2026-08-21",
+      "label": "Friday \u00b7 Aug 21",
+      "weather": null,
+      "events": [
+        {
+          "time": "9:00 am",
+          "title": "Max Vet Appointment",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-21T09:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=cjFqODloNWliYTE3aWlvMWtibjBzYWZtaDAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "10:00 am",
+          "title": "FW: Bi-Weekly Product Health and Incident Review with ELT",
+          "location": "https://draftkings.zoom.us/j/95183770035?pwd=jpUb1Xt5mcxx69DQkzdkaee60kpuZh.1",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-21T10:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc3NG80YWNpMzY0cWsyaDlnNnQzNDhncGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNmQyazJlMW44a3EzZWMxZzZzcGtjZ3BrNnQxMzZkYTE4b3A0NGhobDZvb2o0Z2hpNzEwZ18yMDI2MDgyMVQxNDAwMDBaIGVzdGhlci5ldmVseW5AbQ"
+        },
+        {
+          "time": "12:30 pm",
+          "title": "Brittney / Esther Lunch",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-21T12:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=amY4ODRmOGdxN2lpMXV1cTZzNDg2dnY1b2MgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
