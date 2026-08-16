@@ -445,6 +445,8 @@ if _ignore_pats:
     for _d in week:
         _d["events"] = [e for e in _d.get("events", [])
                         if not any(p in (e.get("title") or "").lower() for p in _ignore_pats)]
+    pending = [p for p in pending
+               if not any(q in (p.get("title") or "").lower() for q in _ignore_pats)]
 horizon = (dash or {}).get("horizon", {})
 
 import re as _re
