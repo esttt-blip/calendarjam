@@ -1,14 +1,29 @@
 {
   "products": [
-        {
+    {
       "id": "cotopaxi-allpa-26l-fig",
-      "name": "Cotopaxi Allpa 26L Daypack — Fig",
+      "name": "Cotopaxi Allpa 26L Daypack \u2014 Fig",
       "source": "shopify",
       "url": "https://www.cotopaxi.com/products/allpa-26l-daypack.json",
       "match": {
         "size": "Fig"
       },
-      "buy_url": "https://www.cotopaxi.com/products/allpa-26l-daypack?variant=42097992761405"
+      "buy_url": "https://www.cotopaxi.com/products/allpa-26l-daypack?variant=42097992761405",
+      "status": {
+        "updated": "2026-08-16",
+        "price": 150.0,
+        "msrp": 150.0,
+        "compare_at": 150.0,
+        "in_stock": true,
+        "is_deal": false,
+        "pct_off": 0
+      },
+      "history": [
+        {
+          "date": "2026-08-16",
+          "price": 150.0
+        }
+      ]
     },
     {
       "id": "oofos-oocoozie-thermo-white-w8",
