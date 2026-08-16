@@ -25,6 +25,7 @@ from datetime import datetime, timezone
 import pandas as pd
 import requests
 import streamlit as st
+import panels
 
 REPO = st.secrets.get("GITHUB_REPO", "esttt-blip/calendarjam")
 TOKEN = st.secrets["GITHUB_TOKEN"]
@@ -53,16 +54,19 @@ DEFAULT_OPEN_ITEMS = [
      "sub": "Register via Arlington Rec — vaarlingtonweb.myvscloud.com", "done": False},
 ]
 
-# Known trips — always shown. Placeholders until dates firm up; each can later
-# hold its own prep checklist + attached agents.
+# Known trips. Each carries a real end date so past trips drop off the planner
+# automatically, and an optional agent_id binding it to a flight-watch agent in
+# agents.json — that agent's fares then render inside the trip itself.
 TRIPS = [
-    {"title": "🛳️ Seattle + Alaska cruise", "window": "Jul 8–19",
+    {"title": "🛳️ Seattle + Alaska cruise", "window": "Jul 8–19", "end": "2026-07-19",
      "detail": "Cruise Jul 11–18 · away (Seattle) Jul 8–19 · Milo boarding + mail hold"},
-    {"title": "🇩🇪 Germany", "window": "Jul 31 – Aug 9",
+    {"title": "🇩🇪 Germany", "window": "Jul 31 – Aug 9", "end": "2026-08-09",
      "detail": "Depart Jul 31 (overnight) · boys home Sun Aug 9"},
-    {"title": "🇧🇬 Bulgaria — Sofia (work)", "window": "Aug 9 – 14",
+    {"title": "🇧🇬 Bulgaria — Sofia (work)", "window": "Aug 9 – 14", "end": "2026-08-14",
      "detail": "Esther · depart ~Aug 9 as boys return · back Aug 14"},
-    {"title": "🇮🇹 Italy", "window": "Christmas", "detail": "December · flight-watch candidate"},
+    {"title": "🇮🇹 Italy", "window": "Dec 19 – Jan 3", "end": "2027-01-03",
+     "detail": "IAD → Rome Dec 19 · home Munich → IAD · comparing Jan 2 vs Jan 3 return",
+     "agent_id": "italy-flights"},
 ]
 
 # Agents framework — none active yet; the Italy example shows the shape.
