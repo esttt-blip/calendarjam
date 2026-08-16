@@ -1,74 +1,19 @@
 {
-  "generated_at": "2026-08-15T06:36:14.216526-04:00",
-  "generated_label": "Sat Aug 15, 6:36 AM",
-  "weather": {
-    "high_f": 90,
-    "low_f": 73,
-    "precip_pct": 3,
-    "emoji": "\ud83c\udf24",
-    "label": "Mostly clear"
-  },
+  "generated_at": "2026-08-16T06:01:01.103994-04:00",
+  "generated_label": "Sun Aug 16, 6:01 AM",
+  "weather": null,
   "theme": {
-    "emoji": "\ud83c\udfc6",
-    "title": "Tournament Week",
-    "blurb": "Bring the cooler, the chairs, and the snacks.",
+    "emoji": "\ud83c\udf3b",
+    "title": "Late Summer",
+    "blurb": "Squeeze out every sunny minute.",
     "color1": "#f7971e",
-    "color2": "#ffd200"
+    "color2": "#ff9a3c"
   },
   "week": [
     {
-      "date": "2026-08-15",
-      "label": "Today \u00b7 Sat Aug 15",
-      "weather": {
-        "high_f": 90,
-        "low_f": 73,
-        "precip_pct": 3,
-        "weather_code": 1,
-        "emoji": "\ud83c\udf24",
-        "label": "Mostly clear"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "Cancel Whole Foods grocery delivery",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-08-15T00:00",
-          "link": "https://www.google.com/calendar/event?eid=YmVxdjRpb2ZzaDBydjRnZHY0azNqOTlkb3MgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "9:15 am",
-          "title": "Drive to St James",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-15T09:15:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ZWU3cjA5ajZ0OTY3ZTd1MjZodXR1NGM5a28gZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "9:45 am",
-          "title": "St James Tournament",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-15T09:45:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=aHE1amMwODc0M3VsOGU2dW03NGhqMzEwNTggZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-08-16",
-      "label": "Tomorrow \u00b7 Sun Aug 16",
-      "weather": {
-        "high_f": 81,
-        "low_f": 73,
-        "precip_pct": 77,
-        "weather_code": 65,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy rain"
-      },
+      "label": "Today \u00b7 Sun Aug 16",
+      "weather": null,
       "events": [
         {
           "time": "6:30 pm",
@@ -109,15 +54,8 @@
     },
     {
       "date": "2026-08-17",
-      "label": "Monday \u00b7 Aug 17",
-      "weather": {
-        "high_f": 89,
-        "low_f": 73,
-        "precip_pct": 61,
-        "weather_code": 63,
-        "emoji": "\ud83c\udf27",
-        "label": "Rain"
-      },
+      "label": "Tomorrow \u00b7 Mon Aug 17",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -152,14 +90,7 @@
     {
       "date": "2026-08-18",
       "label": "Tuesday \u00b7 Aug 18",
-      "weather": {
-        "high_f": 87,
-        "low_f": 69,
-        "precip_pct": 3,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "5:15 pm",
@@ -185,14 +116,7 @@
     {
       "date": "2026-08-19",
       "label": "Wednesday \u00b7 Aug 19",
-      "weather": {
-        "high_f": 89,
-        "low_f": 70,
-        "precip_pct": 14,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "9:00 am",
@@ -209,14 +133,7 @@
     {
       "date": "2026-08-20",
       "label": "Thursday \u00b7 Aug 20",
-      "weather": {
-        "high_f": 87,
-        "low_f": 70,
-        "precip_pct": 32,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "1:00 pm",
@@ -260,14 +177,7 @@
     {
       "date": "2026-08-21",
       "label": "Friday \u00b7 Aug 21",
-      "weather": {
-        "high_f": 87,
-        "low_f": 69,
-        "precip_pct": 32,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "9:00 am",
@@ -295,6 +205,32 @@
           "is_drive": false,
           "sort": "2026-08-21T12:30:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=amY4ODRmOGdxN2lpMXV1cTZzNDg2dnY1b2MgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "date": "2026-08-22",
+      "label": "Saturday \u00b7 Aug 22",
+      "weather": null,
+      "events": [
+        {
+          "time": "10:15 am",
+          "title": "\ud83d\ude97 Drive to Topgolf Germantown",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-08-22T10:15:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=MWRrYjl2ZzAwMWlzbzU2amtsNzU3bGtscDAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "11:00 am",
+          "title": "\ud83c\udfcc\ufe0f Topgolf Group Lesson (Justin Karalfa)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-22T11:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZTJsMjJhajJuOXNuOGVmYzkwbGZtaTU0dDQgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
