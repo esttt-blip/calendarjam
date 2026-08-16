@@ -634,25 +634,57 @@ if _fal:
         unsafe_allow_html=True,
     )
 
-# ─────────────────────────── shopping deals (only when on sale) ───────────────────────────
+# ─────────────────────────── shopping deals (always visible) ───────────────────────────
 
-_deals = [p for p in (shopping or {}).get("products", []) if p.get("status", {}).get("is_deal")]
-if _deals:
-    rows = ""
-    for i, p in enumerate(_deals):
+# Sale-watch list. The panel is a standing list so it's obvious what's being
+# watched even on days when nothing is discounted.
+WATCHED_VENDORS = ("Bombas", "OOFOS", "Cotopaxi")
+
+
+def _vendor_of(p: dict) -> str:
+    blob = f"{p.get('id','')} {p.get('url','')} {p.get('name','')}".lower()
+    for v in WATCHED_VENDORS:
+        if v.lower() in blob:
+            return v
+    return (p.get("name") or "Tracked").split()[0]
+
+
+_products = (shopping or {}).get("products", [])
+_by_vendor = {v: [] for v in WATCHED_VENDORS}
+for _p in _products:
+    _by_vendor.setdefault(_vendor_of(_p), []).append(_p)
+_any_deal = any(p.get("status", {}).get("is_deal") for p in _products)
+
+rows = ""
+for i, (_vendor, _items) in enumerate(_by_vendor.items()):
+    first = " first" if i == 0 else ""
+    if not _items:
+        rows += (f"<div class='deal-row{first}'><div class='deal-name'>{_vendor}</div>"
+                 f"<span class='muted'>watching · nothing tracked yet</span></div>")
+        continue
+    for p in _items:
         s = p.get("status", {})
-        first = " first" if i == 0 else ""
         pct = s.get("pct_off", 0)
-        badge = f"<span class='deal-badge'>&minus;{pct}%</span>" if pct else ""
-        was = (f"<span class='deal-was'>was ${s['msrp']:,.2f}</span>"
-               if s.get("msrp") and s.get("price") and s["price"] < s["msrp"] else "")
-        stock = "in stock" if s.get("in_stock") else "⚠️ out of stock"
-        rows += (f"<div class='deal-row{first}'><div class='deal-name'>{p.get('name','')}</div>"
-                 f"<div class='deal-price'>${s.get('price',0):,.2f}{was}{badge}</div>"
-                 f"<a class='deal-link' href='{p.get('buy_url','#')}' target='_blank'>View &rarr;</a>"
-                 f"<span class='muted'> · {stock}</span></div>")
-    st.markdown(f"<div class='card deal-card'><div class='day-head'>🛍️ Deals — on sale now</div>{rows}</div>",
-                unsafe_allow_html=True)
+        if s.get("is_deal"):
+            badge = f"<span class='deal-badge'>&minus;{pct}%</span>" if pct else ""
+            was = (f"<span class='deal-was'>was ${s['msrp']:,.2f}</span>"
+                   if s.get("msrp") and s.get("price") and s["price"] < s["msrp"] else "")
+            stock = "in stock" if s.get("in_stock") else "⚠️ out of stock"
+            rows += (f"<div class='deal-row{first}'>"
+                     f"<div class='deal-name'>{_vendor} · {p.get('name','')}</div>"
+                     f"<div class='deal-price'>${s.get('price',0):,.2f}{was}{badge}</div>"
+                     f"<a class='deal-link' href='{p.get('buy_url','#')}' target='_blank'>View &rarr;</a>"
+                     f"<span class='muted'> · {stock}</span></div>")
+        else:
+            rows += (f"<div class='deal-row{first}'>"
+                     f"<div class='deal-name'>{_vendor} · {p.get('name','')}</div>"
+                     f"<span class='muted'>${s.get('price',0):,.2f} · no markdown "
+                     f"(low ${s.get('msrp',0):,.2f})</span></div>")
+
+_deal_head = "🛍️ Deals — on sale now" if _any_deal else "🛍️ Deals worth a look"
+_deal_cls = "card deal-card" if _any_deal else "card"
+st.markdown(f"<div class='{_deal_cls}'><div class='day-head'>{_deal_head}</div>{rows}</div>",
+            unsafe_allow_html=True)
 
 # ─────────────────────────── 2. today (+ insights) ───────────────────────────
 
