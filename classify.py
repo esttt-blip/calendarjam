@@ -86,12 +86,12 @@ def transform_swanson(event: dict) -> CalendarWrite:
 
 
 def transform_ics_generic(event: dict) -> CalendarWrite:
-    """Generic ICS-to-calendar mapping for VIVA, Ignite, etc."""
+    """Generic ICS-to-calendar mapping for VIVA, Karma Yoga, Gmail invites."""
     start = event["start"]
     end = event.get("end") or _add_hour(start)
 
     description = event.get("description", "")
-    if event["source"] in ("VIVA ⚽", "Ignite ⚾") and not event.get("location"):
+    if "VIVA" in event["source"] and not event.get("location"):
         description = (
             "⚠️ Location not in feed — verify field/venue before departure.\n\n"
             + description
@@ -144,7 +144,7 @@ def classify(event: dict) -> tuple[Literal["auto", "review", "skip"], CalendarWr
     if source == "Swanson 📚":
         return ("auto", transform_swanson(event))
 
-    if source in ("VIVA ⚽", "Ignite ⚾", "Gmail invite", "Karma Yoga 🧘"):
+    if source in ("VIVA ⚽", "Gmail invite", "Karma Yoga 🧘"):
         return ("auto", transform_ics_generic(event))
 
     # Default: surface for review
