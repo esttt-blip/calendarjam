@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-16T06:36:56.335648-04:00",
-  "generated_label": "Sun Aug 16, 6:36 AM",
+  "generated_at": "2026-08-16T16:15:32.866233-04:00",
+  "generated_label": "Sun Aug 16, 4:15 PM",
   "weather": {
     "high_f": 83,
-    "low_f": 72,
-    "precip_pct": 68,
+    "low_f": 73,
+    "precip_pct": 58,
     "emoji": "\ud83c\udf27",
     "label": "Heavy rain"
   },
@@ -21,8 +21,8 @@
       "label": "Today \u00b7 Sun Aug 16",
       "weather": {
         "high_f": 83,
-        "low_f": 72,
-        "precip_pct": 68,
+        "low_f": 73,
+        "precip_pct": 58,
         "weather_code": 65,
         "emoji": "\ud83c\udf27",
         "label": "Heavy rain"
@@ -69,12 +69,12 @@
       "date": "2026-08-17",
       "label": "Tomorrow \u00b7 Mon Aug 17",
       "weather": {
-        "high_f": 88,
+        "high_f": 94,
         "low_f": 73,
-        "precip_pct": 40,
-        "weather_code": 65,
+        "precip_pct": 44,
+        "weather_code": 55,
         "emoji": "\ud83c\udf27",
-        "label": "Heavy rain"
+        "label": "Heavy drizzle"
       },
       "events": [
         {
@@ -87,22 +87,13 @@
           "link": "https://www.google.com/calendar/event?eid=XzZsMTMyaDloOGtxamFiOW02c3I0YWI5azg4czM2YjlwNnNxM2FiOWw4Y3NqZWgxZzZsMjMyZzlwODRfMjAyNjA4MTcgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
-          "time": "6:15 pm",
-          "title": "\ud83d\ude97 Drive to Marshall HS (Ignite Infield)",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-08-17T18:15:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Y2FxYjVkYnJyOXRlbXI4aGY0djc2aThvYXMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "Ignite \u26be Infield Development",
-          "location": "",
+          "time": "7:15 pm",
+          "title": "VIVA U13 BOYS ALL - Practice",
+          "location": "3301 Peace Valley Ln, Falls Church, VA 22044, USA",
           "all_day": false,
           "is_drive": false,
-          "sort": "2026-08-17T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=bDVkZG5tNGRyMDdyYWhkOXMxdHFodnFiYzggZXN0aGVyLmV2ZWx5bkBt"
+          "sort": "2026-08-17T19:15:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=cDNzMTI3dXZocWF0dTAydWs0MGJpYTU4ajggZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
@@ -111,33 +102,14 @@
       "date": "2026-08-18",
       "label": "Tuesday \u00b7 Aug 18",
       "weather": {
-        "high_f": 87,
+        "high_f": 89,
         "low_f": 71,
-        "precip_pct": 3,
+        "precip_pct": 4,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
       },
-      "events": [
-        {
-          "time": "5:15 pm",
-          "title": "\ud83d\ude97 Drive to Ignite Facility (Athletic Dev)",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-08-18T17:15:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=bHJoMmZsajhtc3RmZ2NlZ2s5YXJxOTQ2N2sgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:00 pm",
-          "title": "Ignite \u26be Athletic Development",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-18T18:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=bm4wcTFybGVwYWhmcThkdGFmcjE4MXQzdTggZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
+      "events": [],
       "conflicts": []
     },
     {
@@ -146,7 +118,7 @@
       "weather": {
         "high_f": 92,
         "low_f": 71,
-        "precip_pct": 14,
+        "precip_pct": 8,
         "weather_code": 51,
         "emoji": "\ud83c\udf26",
         "label": "Light drizzle"
@@ -160,6 +132,15 @@
           "is_drive": false,
           "sort": "2026-08-19T09:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=MzdhYXZmbjc1b2d0ZjFmbGZ1c2QzcGptODggZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "VIVA U13 BOYS ALL - Practice",
+          "location": "3301 Peace Valley Ln, Falls Church, VA 22044, USA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-19T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=amIzaWI3OWFvN2o3aDJ2ZGxra3Y1ZmwwbmMgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
@@ -168,23 +149,14 @@
       "date": "2026-08-20",
       "label": "Thursday \u00b7 Aug 20",
       "weather": {
-        "high_f": 91,
-        "low_f": 72,
-        "precip_pct": 43,
-        "weather_code": 53,
+        "high_f": 81,
+        "low_f": 71,
+        "precip_pct": 52,
+        "weather_code": 80,
         "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
+        "label": "Showers"
       },
       "events": [
-        {
-          "time": "1:00 pm",
-          "title": "Platform All Hands Monthly ",
-          "location": "https://draftkings.zoom.us/j/92909466243?pwd=MHoitIe4MyDL8SWx6TUx7DCGlQAawu.1&from=addon",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-20T13:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc2cDJqMmg5bDc0cGs0aGkxODRxNDhncGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNjRvazRjOWk2dDIzNGQyNDg5MGtjZDFrOGQwa2NkcTE2c3EzMGVhMzYwcmo4ZzlpOGdyZ18yMDI2MDgyMFQxNzAwMDBaIGVzdGhlci5ldmVseW5AbQ"
-        },
         {
           "time": "5:00 pm",
           "title": "Newmans",
@@ -195,22 +167,13 @@
           "link": "https://www.google.com/calendar/event?eid=OXRqcW84bGQ2cjNldWxpajVudmV1bHJoZWsgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
-          "time": "6:40 pm",
-          "title": "\ud83d\ude97 Drive to Marshall HS (Ignite)",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-08-20T18:40:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=dDJidGU2bWxlb3ZkNzlsZm1zNWJndDRidW8gZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
           "time": "7:00 pm",
-          "title": "Ignite \u26be Pitching/Catcher Development",
-          "location": "",
+          "title": "VIVA U13 BOYS ALL - Practice",
+          "location": "Thomas Jefferson High School for Science and Technology, Braddock Road, Alexandria, VA, USA",
           "all_day": false,
           "is_drive": false,
           "sort": "2026-08-20T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=bWFsbjFmY2YwcjJnOXZxZ3Bhczc1YWdlcnMgZXN0aGVyLmV2ZWx5bkBt"
+          "link": "https://www.google.com/calendar/event?eid=NnJuMGM0OWc3NmdiZmNtYW85bGozN3Fna2cgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
@@ -219,11 +182,11 @@
       "date": "2026-08-21",
       "label": "Friday \u00b7 Aug 21",
       "weather": {
-        "high_f": 75,
-        "low_f": 66,
-        "precip_pct": 29,
-        "weather_code": 81,
-        "emoji": "\ud83c\udf27",
+        "high_f": 71,
+        "low_f": 63,
+        "precip_pct": 27,
+        "weather_code": 80,
+        "emoji": "\ud83c\udf26",
         "label": "Showers"
       },
       "events": [
@@ -235,15 +198,6 @@
           "is_drive": false,
           "sort": "2026-08-21T09:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=cjFqODloNWliYTE3aWlvMWtibjBzYWZtaDAgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "10:00 am",
-          "title": "FW: Bi-Weekly Product Health and Incident Review with ELT",
-          "location": "https://draftkings.zoom.us/j/95183770035?pwd=jpUb1Xt5mcxx69DQkzdkaee60kpuZh.1",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-21T10:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc3NG80YWNpMzY0cWsyaDlnNnQzNDhncGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNmQyazJlMW44a3EzZWMxZzZzcGtjZ3BrNnQxMzZkYTE4b3A0NGhobDZvb2o0Z2hpNzEwZ18yMDI2MDgyMVQxNDAwMDBaIGVzdGhlci5ldmVseW5AbQ"
         },
         {
           "time": "12:30 pm",
@@ -261,12 +215,12 @@
       "date": "2026-08-22",
       "label": "Saturday \u00b7 Aug 22",
       "weather": {
-        "high_f": 70,
-        "low_f": 66,
-        "precip_pct": 21,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
+        "high_f": 78,
+        "low_f": 63,
+        "precip_pct": 26,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [
         {
