@@ -25,10 +25,9 @@ ET = zoneinfo.ZoneInfo("America/New_York")
 # what to search the inbox for. Keys are case-insensitive substrings of event titles.
 _EVENT_SEARCH_TERMS: dict[str, list[str]] = {
     "spirit": ["spirit", "audi field", "washington spirit"],
-    "viva": ["viva", "teamsnap"],
-    "ignite": ["ignite", "teamsnap"],
+    "viva": ["viva", "playmetrics"],
     "mystics": ["mystics", "wnba"],
-    "milo": ["pet grand hotel", "milo"],
+    "milo": ["giving tree", "milo"],
     "swanson": ["swanson", "school"],
     "golf": ["golf", "tee time"],
 }
