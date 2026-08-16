@@ -1,5 +1,15 @@
 {
   "products": [
+        {
+      "id": "cotopaxi-allpa-26l-fig",
+      "name": "Cotopaxi Allpa 26L Daypack — Fig",
+      "source": "shopify",
+      "url": "https://www.cotopaxi.com/products/allpa-26l-daypack.json",
+      "match": {
+        "size": "Fig"
+      },
+      "buy_url": "https://www.cotopaxi.com/products/allpa-26l-daypack?variant=42097992761405"
+    },
     {
       "id": "oofos-oocoozie-thermo-white-w8",
       "name": "OOFOS OOcoozie Thermo Mule \u2014 White \u00b7 W8",
