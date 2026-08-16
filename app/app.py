@@ -622,75 +622,6 @@ st.markdown(
 if not dash:
     st.warning("No dashboard snapshot yet — the next 6 AM sync will populate this.", icon="⏳")
 
-# ─────────────────────────── flight price-drop alerts (top of page) ───────────────────────────
-_fal = flight_price_alerts(agents_data)
-if _fal:
-    _rows = ""
-    for _a in _fal[:6]:
-        _pax = _a["pax"] or 1
-        _badge = "<span class='falert-badge'>new low</span>" if _a["kind"] == "low" else ""
-        _rows += (f"<div class='falert-row'>{_a['label']} — "
-                  f"<span class='falert-drop'>▼ ${_a['drop']:,.0f}</span> to "
-                  f"<b>${_a['val']:,.0f}</b> "
-                  f"<span class='muted'>(≈${_a['val']/_pax:,.0f}/person)</span>{_badge}</div>")
-    st.markdown(
-        f"<div class='falert'><div class='falert-head'>✈️ Fare drop</div>{_rows}"
-        f"<div class='falert-sub'>Total price · vs the previous check · "
-        f"full tracker under Planning ↓</div></div>",
-        unsafe_allow_html=True,
-    )
-
-# ─────────────────────────── shopping deals (always visible) ───────────────────────────
-
-# Sale-watch list. The panel is a standing list so it's obvious what's being
-# watched even on days when nothing is discounted.
-WATCHED_VENDORS = ("Bombas", "OOFOS", "Cotopaxi")
-
-
-def _vendor_of(p: dict) -> str:
-    blob = f"{p.get('id','')} {p.get('url','')} {p.get('name','')}".lower()
-    for v in WATCHED_VENDORS:
-        if v.lower() in blob:
-            return v
-    return (p.get("name") or "Tracked").split()[0]
-
-
-_products = (shopping or {}).get("products", [])
-_by_vendor = {v: [] for v in WATCHED_VENDORS}
-for _p in _products:
-    _by_vendor.setdefault(_vendor_of(_p), []).append(_p)
-_any_deal = any(p.get("status", {}).get("is_deal") for p in _products)
-
-rows = ""
-for i, (_vendor, _items) in enumerate(_by_vendor.items()):
-    first = " first" if i == 0 else ""
-    if not _items:
-        rows += (f"<div class='deal-row{first}'><div class='deal-name'>{_vendor}</div>"
-                 f"<span class='muted'>watching · nothing tracked yet</span></div>")
-        continue
-    for p in _items:
-        s = p.get("status", {})
-        pct = s.get("pct_off", 0)
-        if s.get("is_deal"):
-            badge = f"<span class='deal-badge'>&minus;{pct}%</span>" if pct else ""
-            was = (f"<span class='deal-was'>was ${s['msrp']:,.2f}</span>"
-                   if s.get("msrp") and s.get("price") and s["price"] < s["msrp"] else "")
-            stock = "in stock" if s.get("in_stock") else "⚠️ out of stock"
-            rows += (f"<div class='deal-row{first}'>"
-                     f"<div class='deal-name'>{_vendor} · {p.get('name','')}</div>"
-                     f"<div class='deal-price'>${s.get('price',0):,.2f}{was}{badge}</div>"
-                     f"<a class='deal-link' href='{p.get('buy_url','#')}' target='_blank'>View &rarr;</a>"
-                     f"<span class='muted'> · {stock}</span></div>")
-        else:
-            rows += (f"<div class='deal-row{first}'>"
-                     f"<div class='deal-name'>{_vendor} · {p.get('name','')}</div>"
-                     f"<span class='muted'>${s.get('price',0):,.2f} · no markdown "
-                     f"(low ${s.get('msrp',0):,.2f})</span></div>")
-
-_deal_head = "🛍️ Deals — on sale now" if _any_deal else "🛍️ Deals worth a look"
-_deal_cls = "card deal-card" if _any_deal else "card"
-st.markdown(f"<div class='{_deal_cls}'><div class='day-head'>{_deal_head}</div>{rows}</div>",
-            unsafe_allow_html=True)
 
 # ─────────────────────────── 2. today (+ insights) ───────────────────────────
 
@@ -749,6 +680,19 @@ with c2:
                     clear_item(item, pending); log_activity("dismissed", title, source)
                     st.toast("Ignored", icon="🚫"); st.rerun()
 
+
+# ───────────────── agents row: trip planner + deal hunter ─────────────────
+# Flight tracking lives inside the trip it belongs to (panels binds a trip to
+# its agent via agent_id), so there's no separate fare section any more.
+
+_fal = flight_price_alerts(agents_data)
+
+a1, a2 = st.columns(2, gap="medium")
+with a1:
+    panels.render_trip_planner(TRIPS, agents_data, _fal)
+with a2:
+    panels.render_deal_hunter(shopping)
+
 # ─────────────────────────── the week ───────────────────────────
 
 if len(week) > 1:
@@ -763,76 +707,6 @@ if len(week) > 1:
 
 st.markdown("<div class='sec'>🧭 Planning</div>", unsafe_allow_html=True)
 
-trip_rows = ""
-for i, t in enumerate(TRIPS):
-    first = " first" if i == 0 else ""
-    trip_rows += (f"<div class='trip-row{first}'><div class='trip-title'>{t['title']} "
-                  f"<span class='muted'>· {t['window']}</span></div>"
-                  f"<div class='trip-detail'>{t['detail']}</div></div>")
-st.markdown(f"<div class='card'><div class='day-head'>🧳 Trips</div>{trip_rows}</div>",
-            unsafe_allow_html=True)
-
-# ── Flight-watch agents (full-width, human view) ──
-for ag in (agents_data or {}).get("agents", []):
-    if ag.get("type") != "flight-multicity":
-        continue
-    stt = ag.get("status", {})
-    pax = ag.get("config", {}).get("travelers", 1)
-    st.markdown(f"<div class='sec' style='margin-top:16px'>{ag['name']}</div>", unsafe_allow_html=True)
-    if stt.get("state") != "live":
-        st.info(stt.get("note", "Not yet active."))
-        continue
-    cp, ce = stt.get("cheapest_plan"), stt.get("cheapest_econ")
-    hist = ag.get("history", [])
-    if cp and ce:
-        st.markdown(
-            f"<div style='font-size:14px;margin-bottom:2px'>Cheapest right now: "
-            f"<b>{cp}</b> — <b>${ce:,.0f}</b> economy "
-            f"<span class='muted'>(≈${ce/pax:,.0f}/person)</span></div>"
-            f"<div class='muted' style='margin-bottom:8px'>Prices are total for {pax} · "
-            f"{ag.get('config',{}).get('airline_label','')} · updated {stt.get('updated','—')}</div>",
-            unsafe_allow_html=True)
-    rows_html = ""
-    for ri, res in enumerate(stt.get("results", [])):
-        lab = res["label"]
-        band = "ftbl-b0" if ri % 2 == 0 else "ftbl-b1"
-        for cabin in ("economy", "business"):
-            cd = res.get(cabin) or {}
-            cur = cd.get("low")
-            if cur is None:
-                continue
-            vals = [h.get(f"{lab} {cabin}") for h in hist if h.get(f"{lab} {cabin}")]
-            lo = min(vals) if vals else cur
-            hi = max(vals) if vals else cur
-            flights = " / ".join(cd.get("flight_numbers") or []) or "—"
-            cls = "ftbl-best" if (cabin == "economy" and lab == cp) else band
-            rows_html += (f"<tr class='{cls}'><td>{lab}</td><td>{cabin.title()}</td>"
-                          f"<td>${cur:,.0f}</td><td>${lo:,.0f}</td><td>${hi:,.0f}</td>"
-                          f"<td class='ffnum'>{flights}</td></tr>")
-    st.markdown(
-        "<table class='ftbl'><thead><tr><th>Route</th><th>Cabin</th>"
-        "<th>Today</th><th>Low seen</th><th>High seen</th><th>Flights</th></tr></thead>"
-        f"<tbody>{rows_html}</tbody></table>"
-        f"<div class='muted' style='margin-top:6px'>Prices total for {pax} travelers · "
-        "Low/High = range tracked so far.</div>",
-        unsafe_allow_html=True)
-
-    if hist:
-        hist_df = pd.DataFrame(hist)
-        if "date" in hist_df.columns:
-            hist_df = hist_df.set_index("date")
-            _since = hist[0].get("date", "—")
-            _n = len(hist)
-            st.markdown(
-                f"<div class='muted' style='margin:14px 0 2px'>📈 Price history — economy &amp; "
-                f"business, per plan · tracking since {_since} · {_n} "
-                f"snapshot{'s' if _n != 1 else ''}</div>",
-                unsafe_allow_html=True)
-            st.line_chart(hist_df, height=250)
-        else:
-            st.caption("📈 Price history will build here as daily checks accumulate.")
-    else:
-        st.caption("📈 Price history will build here as daily checks accumulate.")
 
 with st.expander("📋 To-do · open items", expanded=False):
     changed = False
