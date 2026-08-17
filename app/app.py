@@ -283,7 +283,8 @@ st.set_page_config(page_title="calendarjam", page_icon="📅", layout="wide",
 
 st.markdown("""
 <style>
-  :root { color-scheme: light; }
+    :root { color-scheme: light; }
+  .block-container { padding-top: 0.6rem; padding-bottom: 2rem; max-width: 1500px; }
   /* The whole design assumes a light surface (white cards, #1a1a2e ink). Pin it
      so a viewer whose OS is in dark mode doesn't get dark-on-dark text. This
      backs up .streamlit/config.toml in case Cloud reads config from elsewhere. */
@@ -301,11 +302,11 @@ st.markdown("""
   [data-testid="stToolbar"], [data-testid="stDecoration"] { display:none !important; }
   #MainMenu, footer { display:none !important; }
   .stAppDeployButton { display:none !important; }
-  /* Top-row columns: shrink to content, but cap height and scroll internally
-     when very full so the week-ahead view below stays on screen. */
-  .scrollcol { max-height:340px; overflow-y:auto; padding-right:4px; }
+  /* Top row sizes to its content. Needs-you can run long so it scrolls, but
+     with enough room that a card is never clipped mid-sentence. */
+  .scrollcol { padding-right:2px; }
   div[data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] .cap-needs) {
-      max-height:340px; overflow-y:auto; padding-right:5px;
+      max-height:min(70vh, 600px); overflow-y:auto; padding-right:6px;
   }
   .cap-needs { display:block; height:0; margin:0; padding:0; }
   .sec { font-size:11px; font-weight:800; letter-spacing:.07em; text-transform:uppercase;
@@ -421,7 +422,7 @@ st.markdown("""
 
   /* Shopping deals cell — only rendered when something's on sale */
   .deal-card { background:linear-gradient(135deg,#e9f7ef,#f4fbf6); border:1.5px solid #1c7a46; }
-  .deal-row { padding:8px 0; border-top:1px solid #d7ecdf; }
+    .deal-row { padding:6px 0; border-top:1px solid #ececf2; }
   .deal-row.first { border-top:none; }
   .deal-name { font-size:13.5px; font-weight:600; color:#1a1a2e; }
   .deal-price { font-size:15px; font-weight:800; color:#1c7a46; margin-top:2px; }
@@ -660,12 +661,13 @@ with c2:
                 st.markdown(f"⚠️ **Conflict — {c['day']}**")
                 st.markdown(f"<div style='font-size:12px;color:#555'>{c['a']} ({c['a_time']}) "
                             f"vs {c['b']} ({c['b_time']})</div>", unsafe_allow_html=True)
-                if st.button("🚫 Ignore — not a clash", key=f"cig{ci}", use_container_width=True):
+                                k1, k2, k3 = st.columns(3, gap="small")
+                if k1.button("🚫 Not a clash", key=f"cig{ci}", use_container_width=True):
                     ignore_conflict(c); st.toast("Conflict ignored", icon="🚫"); st.rerun()
-                if st.button(f"🗑 Delete: {c['a'][:20]}", key=f"cda{ci}", use_container_width=True):
+                if k2.button(f"🗑 {c['a'][:13]}", key=f"cda{ci}", use_container_width=True):
                     queue_conflict_delete(c.get("date"), c["a"], c)
                     st.toast("Delete queued (~15 min)", icon="🗑"); st.rerun()
-                if st.button(f"🗑 Delete: {c['b'][:20]}", key=f"cdb{ci}", use_container_width=True):
+                if k3.button(f"🗑 {c['b'][:13]}", key=f"cdb{ci}", use_container_width=True):
                     queue_conflict_delete(c.get("date"), c["b"], c)
                     st.toast("Delete queued (~15 min)", icon="🗑"); st.rerun()
         for idx, item in enumerate(pending):
@@ -680,13 +682,14 @@ with c2:
                             f"<div style='color:#9a9aa7;font-size:11px;margin:1px 0 3px'>{source} · {sender}</div>"
                             + (f"<div style='color:#666;font-size:11.5px;line-height:1.4'>{desc}</div>" if desc else ""),
                             unsafe_allow_html=True)
-                if st.button("✅ Add it", key=f"y{idx}", type="primary", use_container_width=True):
+                b1, b2, b3 = st.columns(3, gap="small")
+                if b1.button("✅ Add", key=f"y{idx}", type="primary", use_container_width=True):
                     approve_item(item, pending); log_activity("approved", title, source)
                     st.toast("Queued to add ✓", icon="✅"); st.rerun()
-                if st.button("🔁 Duplicate", key=f"d{idx}", use_container_width=True):
+                if b2.button("🔁 Dupe", key=f"d{idx}", use_container_width=True):
                     clear_item(item, pending); log_activity("duplicate", title, source)
                     st.toast("Marked duplicate", icon="🔁"); st.rerun()
-                if st.button("🚫 Ignore", key=f"n{idx}", use_container_width=True):
+                if b3.button("🚫 Ignore", key=f"n{idx}", use_container_width=True):
                     clear_item(item, pending); log_activity("dismissed", title, source)
                     st.toast("Ignored", icon="🚫"); st.rerun()
 
@@ -697,7 +700,7 @@ with c2:
 
 _fal = flight_price_alerts(agents_data)
 
-a1, a2 = st.columns(2, gap="medium")
+a1, a2 = st.columns([1, 1.5], gap="medium")
 with a1:
     panels.render_deal_hunter(shopping)
 with a2:
