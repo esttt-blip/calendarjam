@@ -1,81 +1,19 @@
 {
-  "generated_at": "2026-08-16T16:15:32.866233-04:00",
-  "generated_label": "Sun Aug 16, 4:15 PM",
-  "weather": {
-    "high_f": 83,
-    "low_f": 73,
-    "precip_pct": 58,
-    "emoji": "\ud83c\udf27",
-    "label": "Heavy rain"
-  },
+  "generated_at": "2026-08-17T06:00:55.202206-04:00",
+  "generated_label": "Mon Aug 17, 6:00 AM",
+  "weather": null,
   "theme": {
-    "emoji": "\ud83e\udd75",
-    "title": "Heat Wave",
-    "blurb": "Hydrate and seek shade out there.",
-    "color1": "#ff512f",
-    "color2": "#f09819"
+    "emoji": "\ud83c\udf3b",
+    "title": "Late Summer",
+    "blurb": "Squeeze out every sunny minute.",
+    "color1": "#f7971e",
+    "color2": "#ff9a3c"
   },
   "week": [
     {
-      "date": "2026-08-16",
-      "label": "Today \u00b7 Sun Aug 16",
-      "weather": {
-        "high_f": 83,
-        "low_f": 73,
-        "precip_pct": 58,
-        "weather_code": 65,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy rain"
-      },
-      "events": [
-        {
-          "time": "6:30 pm",
-          "title": "Taylor: Odyssey",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-16T18:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Z2ltYzVodjdvcnE0MjRha3ZqZXFqdnBpZzQgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "Deep Rest: Yin & Sound Healing",
-          "location": "Karma Yoga",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-16T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ODRvM3AzcjNjdjd1NnE5bjc0OTFwYnJxOWcgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "9:00 pm",
-          "title": "Spirit @ Angel City (ESPN)",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-16T21:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=dHFjcDB0Mm81aDQ3Y3Exazk3aHNibWE1cTAgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": [
-        {
-          "a": "Taylor: Odyssey",
-          "a_time": "6:30 pm",
-          "b": "Deep Rest: Yin & Sound Healing",
-          "b_time": "7:00 pm"
-        }
-      ]
-    },
-    {
       "date": "2026-08-17",
-      "label": "Tomorrow \u00b7 Mon Aug 17",
-      "weather": {
-        "high_f": 94,
-        "low_f": 73,
-        "precip_pct": 44,
-        "weather_code": 55,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy drizzle"
-      },
+      "label": "Today \u00b7 Mon Aug 17",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -100,29 +38,15 @@
     },
     {
       "date": "2026-08-18",
-      "label": "Tuesday \u00b7 Aug 18",
-      "weather": {
-        "high_f": 89,
-        "low_f": 71,
-        "precip_pct": 4,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Tomorrow \u00b7 Tue Aug 18",
+      "weather": null,
       "events": [],
       "conflicts": []
     },
     {
       "date": "2026-08-19",
       "label": "Wednesday \u00b7 Aug 19",
-      "weather": {
-        "high_f": 92,
-        "low_f": 71,
-        "precip_pct": 8,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "9:00 am",
@@ -148,14 +72,7 @@
     {
       "date": "2026-08-20",
       "label": "Thursday \u00b7 Aug 20",
-      "weather": {
-        "high_f": 81,
-        "low_f": 71,
-        "precip_pct": 52,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
-      },
+      "weather": null,
       "events": [
         {
           "time": "5:00 pm",
@@ -181,14 +98,7 @@
     {
       "date": "2026-08-21",
       "label": "Friday \u00b7 Aug 21",
-      "weather": {
-        "high_f": 71,
-        "low_f": 63,
-        "precip_pct": 27,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
-      },
+      "weather": null,
       "events": [
         {
           "time": "9:00 am",
@@ -214,14 +124,7 @@
     {
       "date": "2026-08-22",
       "label": "Saturday \u00b7 Aug 22",
-      "weather": {
-        "high_f": 78,
-        "low_f": 63,
-        "precip_pct": 26,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "10:15 am",
@@ -243,10 +146,60 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-08-23",
+      "label": "Sunday \u00b7 Aug 23",
+      "weather": null,
+      "events": [
+        {
+          "time": "7:30 am",
+          "title": "\ud83d\ude97 Drive to Burke Lake Park (Golf)",
+          "location": "Burke Lake Golf Center, 6915 Ox Rd, Fairfax Station, VA 22039",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-08-23T07:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=dHU0NTRhM3ZnNGdjMzltMzg2am10YTY3bTggZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "8:30 am",
+          "title": "Golf",
+          "location": "Burke Lake Park, 7315 Ox Rd, Fairfax Station, VA 22039, USA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-23T08:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=cGxvNWJwb2swbXBtMGZhYmRwNjQ4aXI0cGMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "3:10 pm",
+          "title": "\ud83d\ude97 Drive to Audi Field (Spirit vs Pride)",
+          "location": "Audi Field, 100 Potomac Ave SW, Washington, DC 20024",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-08-23T15:10:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=c3Q1Zm5yZ2h0djhqYmE4OTRkZTI1c3RxMmsgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "4:00 pm",
+          "title": "Spirit vs Pride (ESPN2)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-23T16:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=YmZicWhoOXVpOWRoNTAxbjRhcmNlOHU2ZjggZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
     "birthdays": [],
-    "holidays": []
+    "holidays": [
+      {
+        "title": "Labor Day",
+        "day": "Mon Sep 7",
+        "days_out": 21
+      }
+    ]
   }
 }
