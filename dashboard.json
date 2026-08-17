@@ -1,19 +1,32 @@
 {
-  "generated_at": "2026-08-17T06:00:55.202206-04:00",
-  "generated_label": "Mon Aug 17, 6:00 AM",
-  "weather": null,
+  "generated_at": "2026-08-17T06:46:17.689075-04:00",
+  "generated_label": "Mon Aug 17, 6:46 AM",
+  "weather": {
+    "high_f": 92,
+    "low_f": 73,
+    "precip_pct": 23,
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
+  },
   "theme": {
-    "emoji": "\ud83c\udf3b",
-    "title": "Late Summer",
-    "blurb": "Squeeze out every sunny minute.",
-    "color1": "#f7971e",
-    "color2": "#ff9a3c"
+    "emoji": "\u2614",
+    "title": "Rainy Stretch",
+    "blurb": "Keep umbrellas handy \u2014 fields may be iffy.",
+    "color1": "#4e9af1",
+    "color2": "#6dd5ed"
   },
   "week": [
     {
       "date": "2026-08-17",
       "label": "Today \u00b7 Mon Aug 17",
-      "weather": null,
+      "weather": {
+        "high_f": 92,
+        "low_f": 73,
+        "precip_pct": 23,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -39,15 +52,38 @@
     {
       "date": "2026-08-18",
       "label": "Tomorrow \u00b7 Tue Aug 18",
-      "weather": null,
+      "weather": {
+        "high_f": 88,
+        "low_f": 76,
+        "precip_pct": 9,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [],
       "conflicts": []
     },
     {
       "date": "2026-08-19",
       "label": "Wednesday \u00b7 Aug 19",
-      "weather": null,
+      "weather": {
+        "high_f": 93,
+        "low_f": 71,
+        "precip_pct": 5,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
+        {
+          "time": "all day",
+          "title": "\ud83c\udf71 MightyMeals delivery",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-08-19T00:00",
+          "link": "https://www.google.com/calendar/event?eid=ZzFwb3ZxdXJnZWtkNGU1Y2Ruc3YzdnZqMDAgZXN0aGVyLmV2ZWx5bkBt"
+        },
         {
           "time": "9:00 am",
           "title": "Esther - doctor",
@@ -72,7 +108,14 @@
     {
       "date": "2026-08-20",
       "label": "Thursday \u00b7 Aug 20",
-      "weather": null,
+      "weather": {
+        "high_f": 91,
+        "low_f": 73,
+        "precip_pct": 60,
+        "weather_code": 55,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy drizzle"
+      },
       "events": [
         {
           "time": "5:00 pm",
@@ -98,7 +141,14 @@
     {
       "date": "2026-08-21",
       "label": "Friday \u00b7 Aug 21",
-      "weather": null,
+      "weather": {
+        "high_f": 77,
+        "low_f": 64,
+        "precip_pct": 59,
+        "weather_code": 81,
+        "emoji": "\ud83c\udf27",
+        "label": "Showers"
+      },
       "events": [
         {
           "time": "9:00 am",
@@ -124,7 +174,14 @@
     {
       "date": "2026-08-22",
       "label": "Saturday \u00b7 Aug 22",
-      "weather": null,
+      "weather": {
+        "high_f": 79,
+        "low_f": 67,
+        "precip_pct": 52,
+        "weather_code": 55,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy drizzle"
+      },
       "events": [
         {
           "time": "10:15 am",
@@ -150,7 +207,14 @@
     {
       "date": "2026-08-23",
       "label": "Sunday \u00b7 Aug 23",
-      "weather": null,
+      "weather": {
+        "high_f": 88,
+        "low_f": 69,
+        "precip_pct": 28,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
       "events": [
         {
           "time": "7:30 am",
