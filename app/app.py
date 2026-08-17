@@ -284,7 +284,17 @@ st.set_page_config(page_title="calendarjam", page_icon="📅", layout="wide",
 st.markdown("""
 <style>
   :root { color-scheme: light; }
-  .block-container { padding-top: 1.4rem; padding-bottom: 2.5rem; max-width: 1680px; }
+  /* The whole design assumes a light surface (white cards, #1a1a2e ink). Pin it
+     so a viewer whose OS is in dark mode doesn't get dark-on-dark text. This
+     backs up .streamlit/config.toml in case Cloud reads config from elsewhere. */
+  [data-testid="stAppViewContainer"], [data-testid="stMain"], .stApp, body {
+      background:#ffffff !important; color:#1a1a2e !important; }
+  [data-testid="stHeader"] { background:transparent !important; }
+  div[data-testid="stVerticalBlockBorderWrapper"] { background:#ffffff !important; }
+  div[data-testid="stExpander"] details { background:#ffffff !important; }
+  .stMarkdown, .stMarkdown p { color:#1a1a2e !important; }
+  [data-testid="stCaptionContainer"], [data-testid="stCaptionContainer"] p {
+      color:#5b5b6b !important; }
   /* Hide Streamlit Cloud chrome (top toolbar / Fork / GitHub / menu) so it
      doesn't overlap the app's own header. */
   header[data-testid="stHeader"] { display:none !important; }
