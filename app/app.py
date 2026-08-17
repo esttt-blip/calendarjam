@@ -661,7 +661,7 @@ with c2:
                 st.markdown(f"⚠️ **Conflict — {c['day']}**")
                 st.markdown(f"<div style='font-size:12px;color:#555'>{c['a']} ({c['a_time']}) "
                             f"vs {c['b']} ({c['b_time']})</div>", unsafe_allow_html=True)
-                                k1, k2, k3 = st.columns(3, gap="small")
+                k1, k2, k3 = st.columns(3, gap="small")
                 if k1.button("🚫 Not a clash", key=f"cig{ci}", use_container_width=True):
                     ignore_conflict(c); st.toast("Conflict ignored", icon="🚫"); st.rerun()
                 if k2.button(f"🗑 {c['a'][:13]}", key=f"cda{ci}", use_container_width=True):
