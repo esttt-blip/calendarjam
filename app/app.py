@@ -681,7 +681,7 @@ with c2:
                     st.toast("Ignored", icon="🚫"); st.rerun()
 
 
-# ───────────────── agents row: trip planner + deal hunter ─────────────────
+# ───────────────── agents row: deal hunter + trip planner ─────────────────
 # Flight tracking lives inside the trip it belongs to (panels binds a trip to
 # its agent via agent_id), so there's no separate fare section any more.
 
@@ -689,9 +689,9 @@ _fal = flight_price_alerts(agents_data)
 
 a1, a2 = st.columns(2, gap="medium")
 with a1:
-    panels.render_trip_planner(TRIPS, agents_data, _fal)
-with a2:
     panels.render_deal_hunter(shopping)
+with a2:
+    panels.render_trip_planner(TRIPS, agents_data, _fal)
 
 # ─────────────────────────── the week ───────────────────────────
 
