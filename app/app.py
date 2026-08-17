@@ -308,7 +308,11 @@ st.markdown("""
   div[data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] .cap-needs) {
       max-height:min(70vh, 600px); overflow-y:auto; padding-right:6px;
   }
-  .cap-needs { display:block; height:0; margin:0; padding:0; }
+.cap-needs { display:block; height:0; margin:0; padding:0; }
+/* Compact action buttons — they were full-width and stacked three rows deep. */
+div[data-testid="stVerticalBlockBorderWrapper"] .stButton button {
+padding:2px 6px; min-height:30px; font-size:12px; line-height:1.2; }
+div[data-testid="stVerticalBlockBorderWrapper"] [data-testid="stHorizontalBlock"] { gap:6px; }
   .sec { font-size:11px; font-weight:800; letter-spacing:.07em; text-transform:uppercase;
          color:#9398a8; margin:13px 0 5px; }
   .card { background:#fff; border:1px solid #ececf2; border-radius:13px; padding:11px 14px;
