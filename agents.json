@@ -48,14 +48,14 @@
       },
       "status": {
         "state": "live",
-        "updated": "2026-08-17",
+        "updated": "2026-08-19",
         "cheapest_plan": "Dec 19 \u2192 Jan 3",
-        "cheapest_econ": 5664,
+        "cheapest_econ": 5667,
         "results": [
           {
             "label": "Dec 19 \u2192 Jan 2",
             "economy": {
-              "low": 5704,
+              "low": 5707,
               "flight_numbers": [
                 "TK 188",
                 "TK 1861"
@@ -69,14 +69,14 @@
               "insights": null
             },
             "business": {
-              "low": 18394,
+              "low": 17597,
               "flight_numbers": [
-                "LX 73",
-                "LX 1736"
+                "TP 232",
+                "TP 832"
               ],
               "airlines": [
-                "SWISS",
-                "SWISS"
+                "Tap Air Portugal",
+                "Tap Air Portugal"
               ],
               "is_united": false,
               "layovers": 1,
@@ -86,7 +86,7 @@
           {
             "label": "Dec 19 \u2192 Jan 3",
             "economy": {
-              "low": 5664,
+              "low": 5667,
               "flight_numbers": [
                 "TP 232",
                 "TP 832"
@@ -100,7 +100,7 @@
               "insights": null
             },
             "business": {
-              "low": 16702,
+              "low": 16704,
               "flight_numbers": [
                 "UA 950",
                 "AZ 159"
@@ -305,6 +305,13 @@
           "Dec 19 \u2192 Jan 2 business": 18394,
           "Dec 19 \u2192 Jan 3 economy": 5664,
           "Dec 19 \u2192 Jan 3 business": 16702
+        },
+        {
+          "date": "2026-08-19",
+          "Dec 19 \u2192 Jan 2 economy": 5707,
+          "Dec 19 \u2192 Jan 2 business": 17597,
+          "Dec 19 \u2192 Jan 3 economy": 5667,
+          "Dec 19 \u2192 Jan 3 business": 16704
         }
       ]
     }
