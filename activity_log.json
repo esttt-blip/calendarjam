@@ -1452,5 +1452,11 @@
     "action": "approved",
     "title": "Appointment Confirmation: August 19, 2026 at 4:20\u202fPM at Suburban Animal Hospital",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-08-19T10:47:10.968783+00:00",
+    "action": "approved",
+    "title": "Your appointment is set.",
+    "source": "Gmail"
   }
 ]
