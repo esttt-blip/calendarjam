@@ -82,5 +82,17 @@
     "uid": "<E6.6D.01763.1825D5A6@i-0cc0c9a3fa3ce8bbd.mta1vrest.sd.prd.sparkpost>",
     "needs_review": true,
     "from": "\"East Potomac Park Golf Course-RED Course\" <course@golffacility.com>"
+  },
+  {
+    "id": "d2fe943d9a0191eaad9574ac69dd433f",
+    "source": "Gmail",
+    "title": "Appointment Confirmation: August 19, 2026 at 4:20\u202fPM at Suburban Animal Hospital",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "Dear  Esther Scott,Thank you for booking an appointment with us for Milo.Be\r\nsure to ask us about our Happy Healthy Pets\u2122 Care Plans, which are a set of\r\nveterinarian-recommended preventive services such as vaccinations, exams,\r\ndental cleanings and more \u2013 all in one annual plan. There is a Care Plan for\r\npets of all ages, sizes, and breeds. Click here to learn more.The appointment\r\ndetails are as follows:Date: August 19, 2026 Time: 4:20\u202fPM With: Technician\r\nAppointment- Must be an established patient with an exam with our doctor\r\nwithin 12 monthsNew Client or New Pet: Please complete the New Client\r\nRegistration form and email your pet's medical records\r\ntocontact@suburbananimalhospital.net before your visit.\u00a0IMPORTANT NOTE: This\r\nappointment is with one of our Technicians. If your pet has a medical concern\r\nor needs medical attention, please call us to reschedule with a Veterinarian.\r\nPets must have been examined by a doctor in the past 12 months, if not, please\r\nschedule this appointment with a doctor. Rabies vaccines must be scheduled\r\nwith a  doctor.To edit or cancel your appointment, or to see full details\r\nplease click the link below:Reschedule / CancelAmendment/Cancellation\r\nPolicy:To avoid the unnecessary suffering of other pets who need to be seen,\r\nwe kindly request you advise us as soon as possible if you are unable to make\r\nyour scheduled appointment time. If you need to cancel or reschedule within 24\r\nhours of your appointment, please call us at (703) 532-4043. ",
+    "uid": "<010101a014a43da3-0a4ea894-a80b-471a-aebd-3dc7ca24fbf6-000000@us-west-2.amazonses.com>",
+    "needs_review": true,
+    "from": "Suburban Animal Hospital <contact@suburbananimalhospital.net>"
   }
 ]
