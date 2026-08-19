@@ -1458,5 +1458,11 @@
     "action": "approved",
     "title": "Your appointment is set.",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-08-19T10:47:20.758889+00:00",
+    "action": "dismissed",
+    "title": "ParCiti Indoor Golf - Confirmation",
+    "source": "Gmail"
   }
 ]
