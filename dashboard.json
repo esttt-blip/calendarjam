@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-08-18T06:44:44.786175-04:00",
-  "generated_label": "Tue Aug 18, 6:44 AM",
-  "weather": {
-    "high_f": 90,
-    "low_f": 73,
-    "precip_pct": 7,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-08-19T06:01:06.423496-04:00",
+  "generated_label": "Wed Aug 19, 6:01 AM",
+  "weather": null,
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -17,30 +11,9 @@
   },
   "week": [
     {
-      "date": "2026-08-18",
-      "label": "Today \u00b7 Tue Aug 18",
-      "weather": {
-        "high_f": 90,
-        "low_f": 73,
-        "precip_pct": 7,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [],
-      "conflicts": []
-    },
-    {
       "date": "2026-08-19",
-      "label": "Tomorrow \u00b7 Wed Aug 19",
-      "weather": {
-        "high_f": 91,
-        "low_f": 70,
-        "precip_pct": 2,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Today \u00b7 Wed Aug 19",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -83,15 +56,8 @@
     },
     {
       "date": "2026-08-20",
-      "label": "Thursday \u00b7 Aug 20",
-      "weather": {
-        "high_f": 91,
-        "low_f": 73,
-        "precip_pct": 65,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "label": "Tomorrow \u00b7 Thu Aug 20",
+      "weather": null,
       "events": [
         {
           "time": "5:00 pm",
@@ -117,14 +83,7 @@
     {
       "date": "2026-08-21",
       "label": "Friday \u00b7 Aug 21",
-      "weather": {
-        "high_f": 77,
-        "low_f": 64,
-        "precip_pct": 38,
-        "weather_code": 81,
-        "emoji": "\ud83c\udf27",
-        "label": "Showers"
-      },
+      "weather": null,
       "events": [
         {
           "time": "9:00 am",
@@ -150,14 +109,7 @@
     {
       "date": "2026-08-22",
       "label": "Saturday \u00b7 Aug 22",
-      "weather": {
-        "high_f": 79,
-        "low_f": 67,
-        "precip_pct": 42,
-        "weather_code": 55,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "10:15 am",
@@ -183,14 +135,7 @@
     {
       "date": "2026-08-23",
       "label": "Sunday \u00b7 Aug 23",
-      "weather": {
-        "high_f": 88,
-        "low_f": 69,
-        "precip_pct": 42,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "7:30 am",
@@ -234,14 +179,7 @@
     {
       "date": "2026-08-24",
       "label": "Monday \u00b7 Aug 24",
-      "weather": {
-        "high_f": 82,
-        "low_f": 65,
-        "precip_pct": 11,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -281,6 +219,50 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-08-25",
+      "label": "Tuesday \u00b7 Aug 25",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "Henry: Code Ninjas @ Lee Harrison",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-08-25T00:00",
+          "link": "https://www.google.com/calendar/event?eid=ajdjY2dpc3BsajYzbmFpNGwyamp2bmJpNGdfMjAyNjA4MjUgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "8:15 am",
+          "title": "\ud83d\ude97 Drop off Henry \u2014 Code Ninjas",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-08-25T08:15:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZHJiNTdsMGJrMzdnbW9mb2JzbGVyM2ZvZ2NfMjAyNjA4MjVUMTIxNTAwWiBlc3RoZXIuZXZlbHluQG0"
+        },
+        {
+          "time": "3:45 pm",
+          "title": "\ud83d\ude97 Pick up Henry \u2014 Code Ninjas",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-08-25T15:45:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=MXVhZHBmZXNjcjZ0YmlpOW5kbDR2MzdqbThfMjAyNjA4MjVUMTk0NTAwWiBlc3RoZXIuZXZlbHluQG0"
+        },
+        {
+          "time": "5:00 pm",
+          "title": "Taylor Dinner in DC",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-25T17:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=MWxoM2l0OThtYnV1ZGpjZnFrZzRnODJvb2sgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -289,7 +271,7 @@
       {
         "title": "Labor Day",
         "day": "Mon Sep 7",
-        "days_out": 20
+        "days_out": 19
       }
     ]
   }
