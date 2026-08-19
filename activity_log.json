@@ -1446,5 +1446,11 @@
     "action": "dismissed",
     "title": "Re: Important Information For Milo!",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-08-19T10:46:49.902453+00:00",
+    "action": "approved",
+    "title": "Appointment Confirmation: August 19, 2026 at 4:20\u202fPM at Suburban Animal Hospital",
+    "source": "Gmail"
   }
 ]
