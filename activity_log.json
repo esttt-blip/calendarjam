@@ -1477,5 +1477,11 @@
     "action": "dismissed",
     "title": "MIYU Beauty & Wellbeing Reminder: Yin Yoga at 7:30pm  on 8/19/2026",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-08-20T10:23:10.500827+00:00",
+    "action": "dismissed",
+    "title": "reservation for 8/19/2026 at 7:30 PM at MIYU Beauty & Wellbeing Has\r\n Been Cancelled",
+    "source": "Gmail"
   }
 ]
