@@ -1464,5 +1464,12 @@
     "action": "dismissed",
     "title": "ParCiti Indoor Golf - Confirmation",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-08-20T10:00:39.274816+00:00",
+    "action": "added",
+    "title": "Appointment with Rachel Rubin MD PLLC",
+    "source": "Gmail invite",
+    "when": "2026-10-29T13:30"
   }
 ]
