@@ -1483,5 +1483,11 @@
     "action": "dismissed",
     "title": "reservation for 8/19/2026 at 7:30 PM at MIYU Beauty & Wellbeing Has\r\n Been Cancelled",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-08-20T10:23:37.597251+00:00",
+    "action": "approved",
+    "title": "A friendly reminder for your upcoming Golf Galaxy appointment",
+    "source": "Gmail"
   }
 ]
