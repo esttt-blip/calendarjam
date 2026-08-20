@@ -1471,5 +1471,11 @@
     "title": "Appointment with Rachel Rubin MD PLLC",
     "source": "Gmail invite",
     "when": "2026-10-29T13:30"
+  },
+  {
+    "ts": "2026-08-20T10:01:31.052203+00:00",
+    "action": "dismissed",
+    "title": "MIYU Beauty & Wellbeing Reminder: Yin Yoga at 7:30pm  on 8/19/2026",
+    "source": "Gmail"
   }
 ]
