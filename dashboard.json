@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-24T06:01:07.457639-04:00",
-  "generated_label": "Mon Aug 24, 6:01 AM",
+  "generated_at": "2026-08-24T06:51:02.788047-04:00",
+  "generated_label": "Mon Aug 24, 6:51 AM",
   "weather": {
     "high_f": 83,
-    "low_f": 63,
+    "low_f": 62,
     "precip_pct": 1,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
+    "emoji": "\ud83c\udf24",
+    "label": "Mostly clear"
   },
   "theme": {
     "emoji": "\u26bd",
@@ -21,11 +21,11 @@
       "label": "Today \u00b7 Mon Aug 24",
       "weather": {
         "high_f": 83,
-        "low_f": 63,
+        "low_f": 62,
         "precip_pct": 1,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "weather_code": 1,
+        "emoji": "\ud83c\udf24",
+        "label": "Mostly clear"
       },
       "events": [
         {
