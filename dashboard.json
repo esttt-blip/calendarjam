@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-23T06:37:16.227732-04:00",
-  "generated_label": "Sun Aug 23, 6:37 AM",
+  "generated_at": "2026-08-24T06:01:07.457639-04:00",
+  "generated_label": "Mon Aug 24, 6:01 AM",
   "weather": {
-    "high_f": 84,
-    "low_f": 65,
-    "precip_pct": 71,
-    "emoji": "\ud83c\udf27",
-    "label": "Heavy rain"
+    "high_f": 83,
+    "low_f": 63,
+    "precip_pct": 1,
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
   },
   "theme": {
     "emoji": "\u26bd",
@@ -17,66 +17,15 @@
   },
   "week": [
     {
-      "date": "2026-08-23",
-      "label": "Today \u00b7 Sun Aug 23",
-      "weather": {
-        "high_f": 84,
-        "low_f": 65,
-        "precip_pct": 71,
-        "weather_code": 65,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy rain"
-      },
-      "events": [
-        {
-          "time": "7:30 am",
-          "title": "\ud83d\ude97 Drive to Burke Lake Park (Golf)",
-          "location": "Burke Lake Golf Center, 6915 Ox Rd, Fairfax Station, VA 22039",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-08-23T07:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=dHU0NTRhM3ZnNGdjMzltMzg2am10YTY3bTggZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "8:30 am",
-          "title": "Golf",
-          "location": "Burke Lake Park, 7315 Ox Rd, Fairfax Station, VA 22039, USA",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-23T08:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=cGxvNWJwb2swbXBtMGZhYmRwNjQ4aXI0cGMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "3:10 pm",
-          "title": "\ud83d\ude97 Drive to Audi Field (Spirit vs Pride)",
-          "location": "Audi Field, 100 Potomac Ave SW, Washington, DC 20024",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-08-23T15:10:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=c3Q1Zm5yZ2h0djhqYmE4OTRkZTI1c3RxMmsgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "4:00 pm",
-          "title": "Spirit vs Pride (ESPN2)",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-23T16:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=YmZicWhoOXVpOWRoNTAxbjRhcmNlOHU2ZjggZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-08-24",
-      "label": "Tomorrow \u00b7 Mon Aug 24",
+      "label": "Today \u00b7 Mon Aug 24",
       "weather": {
-        "high_f": 86,
-        "low_f": 62,
-        "precip_pct": 0,
-        "weather_code": 2,
-        "emoji": "\u26c5",
-        "label": "Partly cloudy"
+        "high_f": 83,
+        "low_f": 63,
+        "precip_pct": 1,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [
         {
@@ -138,10 +87,10 @@
     },
     {
       "date": "2026-08-25",
-      "label": "Tuesday \u00b7 Aug 25",
+      "label": "Tomorrow \u00b7 Tue Aug 25",
       "weather": {
         "high_f": 85,
-        "low_f": 64,
+        "low_f": 62,
         "precip_pct": 0,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
@@ -191,12 +140,12 @@
       "date": "2026-08-26",
       "label": "Wednesday \u00b7 Aug 26",
       "weather": {
-        "high_f": 87,
-        "low_f": 68,
-        "precip_pct": 7,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
+        "high_f": 89,
+        "low_f": 67,
+        "precip_pct": 19,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [
         {
@@ -251,12 +200,12 @@
       "date": "2026-08-27",
       "label": "Thursday \u00b7 Aug 27",
       "weather": {
-        "high_f": 93,
-        "low_f": 67,
-        "precip_pct": 55,
-        "weather_code": 82,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy showers"
+        "high_f": 88,
+        "low_f": 69,
+        "precip_pct": 71,
+        "weather_code": 95,
+        "emoji": "\u26c8",
+        "label": "Thunderstorm"
       },
       "events": [
         {
@@ -329,12 +278,12 @@
       "date": "2026-08-28",
       "label": "Friday \u00b7 Aug 28",
       "weather": {
-        "high_f": 88,
+        "high_f": 90,
         "low_f": 68,
-        "precip_pct": 44,
-        "weather_code": 51,
+        "precip_pct": 43,
+        "weather_code": 80,
         "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
+        "label": "Showers"
       },
       "events": [
         {
@@ -371,12 +320,12 @@
       "date": "2026-08-29",
       "label": "Saturday \u00b7 Aug 29",
       "weather": {
-        "high_f": 85,
-        "low_f": 70,
-        "precip_pct": 15,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "high_f": 91,
+        "low_f": 71,
+        "precip_pct": 19,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
       },
       "events": [
         {
@@ -399,6 +348,39 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-08-30",
+      "label": "Sunday \u00b7 Aug 30",
+      "weather": {
+        "high_f": 95,
+        "low_f": 72,
+        "precip_pct": 11,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
+      "events": [
+        {
+          "time": "11:40 am",
+          "title": "\ud83d\ude97 Drive to Audi Field (Spirit vs Bay FC)",
+          "location": "Audi Field, 100 Potomac Ave SW, Washington, DC 20024",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-08-30T11:40:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=YXZkZnNxNG1oZXA5cmRwMW0xcHM4dmdqaGsgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "12:30 pm",
+          "title": "Spirit vs Bay FC (ESPN2)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-30T12:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=NWxpczFoaTg3Z2toYWgxN2EyaTRlcDQ2dDAgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -407,7 +389,7 @@
       {
         "title": "Labor Day",
         "day": "Mon Sep 7",
-        "days_out": 15
+        "days_out": 14
       }
     ]
   }
