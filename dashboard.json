@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-08-26T06:00:54.850155-04:00",
-  "generated_label": "Wed Aug 26, 6:00 AM",
-  "weather": null,
+  "generated_at": "2026-08-26T06:50:00.998446-04:00",
+  "generated_label": "Wed Aug 26, 6:50 AM",
+  "weather": {
+    "high_f": 86,
+    "low_f": 62,
+    "precip_pct": 1,
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
+  },
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
