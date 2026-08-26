@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-08-25T06:47:29.306737-04:00",
-  "generated_label": "Tue Aug 25, 6:47 AM",
-  "weather": {
-    "high_f": 86,
-    "low_f": 63,
-    "precip_pct": 0,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-08-26T06:00:54.850155-04:00",
+  "generated_label": "Wed Aug 26, 6:00 AM",
+  "weather": null,
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -17,63 +11,12 @@
   },
   "week": [
     {
-      "date": "2026-08-25",
-      "label": "Today \u00b7 Tue Aug 25",
+      "date": "2026-08-26",
+      "label": "Today \u00b7 Wed Aug 26",
       "weather": {
         "high_f": 86,
-        "low_f": 63,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "Henry: Code Ninjas @ Lee Harrison",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-08-25T00:00",
-          "link": "https://www.google.com/calendar/event?eid=ajdjY2dpc3BsajYzbmFpNGwyamp2bmJpNGdfMjAyNjA4MjUgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "8:15 am",
-          "title": "\ud83d\ude97 Drop off Henry \u2014 Code Ninjas",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-08-25T08:15:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ZHJiNTdsMGJrMzdnbW9mb2JzbGVyM2ZvZ2NfMjAyNjA4MjVUMTIxNTAwWiBlc3RoZXIuZXZlbHluQG0"
-        },
-        {
-          "time": "3:45 pm",
-          "title": "\ud83d\ude97 Pick up Henry \u2014 Code Ninjas",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-08-25T15:45:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=MXVhZHBmZXNjcjZ0YmlpOW5kbDR2MzdqbThfMjAyNjA4MjVUMTk0NTAwWiBlc3RoZXIuZXZlbHluQG0"
-        },
-        {
-          "time": "5:00 pm",
-          "title": "Taylor Dinner in DC",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-25T17:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=MWxoM2l0OThtYnV1ZGpjZnFrZzRnODJvb2sgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
-      "date": "2026-08-26",
-      "label": "Tomorrow \u00b7 Wed Aug 26",
-      "weather": {
-        "high_f": 88,
-        "low_f": 66,
-        "precip_pct": 5,
+        "low_f": 62,
+        "precip_pct": 1,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -123,20 +66,29 @@
           "is_drive": false,
           "sort": "2026-08-26T19:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=NWxsY2Zwc29jZDdsZ29zM2JuN2RjMmZtNzAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:30 pm",
+          "title": "Yin Yoga",
+          "location": "7505p Leesburg Pike, , Falls Church VA, 22043",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-26T19:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Xzg4bzM4YzFnNjhwMzBiYTU2Y3MzZ2I5azYxMjM0YmEyNnAxM2liOW42aDIzNmg5aTZkMzMyZ3BsNnMgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
     },
     {
       "date": "2026-08-27",
-      "label": "Thursday \u00b7 Aug 27",
+      "label": "Tomorrow \u00b7 Thu Aug 27",
       "weather": {
-        "high_f": 86,
-        "low_f": 67,
-        "precip_pct": 54,
-        "weather_code": 95,
-        "emoji": "\u26c8",
-        "label": "Thunderstorm"
+        "high_f": 90,
+        "low_f": 70,
+        "precip_pct": 58,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [
         {
@@ -185,6 +137,15 @@
           "link": "https://www.google.com/calendar/event?eid=Z25taDUyamxqZmsyaHJudDdhNHY2dTM1N2cgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
+          "time": "8:30 am",
+          "title": "Appointment Reminder",
+          "location": "1600 Wilson Blvd, Suite 810 Arlington,VA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-27T08:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=azV1dTNiaW8wZHRuM252NzEycDdwa3Jxa2cgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
           "time": "3:45 pm",
           "title": "\ud83d\ude97 Pick up Henry \u2014 Code Ninjas",
           "location": "",
@@ -203,18 +164,25 @@
           "link": "https://www.google.com/calendar/event?eid=bXZqMTY4b28zcjYwc3JkZXNkZzNldWp0a2sgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
-      "conflicts": []
+      "conflicts": [
+        {
+          "a": "Orthodontic Appointment for Henry",
+          "a_time": "8:30 am",
+          "b": "Appointment Reminder",
+          "b_time": "8:30 am"
+        }
+      ]
     },
     {
       "date": "2026-08-28",
       "label": "Friday \u00b7 Aug 28",
       "weather": {
-        "high_f": 84,
-        "low_f": 70,
-        "precip_pct": 40,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
+        "high_f": 86,
+        "low_f": 66,
+        "precip_pct": 58,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [
         {
@@ -251,9 +219,9 @@
       "date": "2026-08-29",
       "label": "Saturday \u00b7 Aug 29",
       "weather": {
-        "high_f": 84,
-        "low_f": 65,
-        "precip_pct": 17,
+        "high_f": 82,
+        "low_f": 71,
+        "precip_pct": 14,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -284,9 +252,9 @@
       "date": "2026-08-30",
       "label": "Sunday \u00b7 Aug 30",
       "weather": {
-        "high_f": 87,
-        "low_f": 66,
-        "precip_pct": 9,
+        "high_f": 90,
+        "low_f": 67,
+        "precip_pct": 6,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -318,8 +286,8 @@
       "label": "Monday \u00b7 Aug 31",
       "weather": {
         "high_f": 97,
-        "low_f": 71,
-        "precip_pct": 12,
+        "low_f": 72,
+        "precip_pct": 3,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -336,6 +304,48 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-09-01",
+      "label": "Tuesday \u00b7 Sep 1",
+      "weather": {
+        "high_f": 97,
+        "low_f": 78,
+        "precip_pct": 13,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
+      "events": [
+        {
+          "time": "all day",
+          "title": "Esther in BOS",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-09-01T00:00",
+          "link": "https://www.google.com/calendar/event?eid=bmhnZTk2OWI0dG80cWxtbzc0NzF0aG83M28gZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "3:28 pm",
+          "title": "\ud83d\ude97 Drive to IAD (UA688 to BOS)",
+          "location": "Washington Dulles International Airport (IAD), 1 Saarinen Cir, Dulles, VA 20166",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-09-01T15:28:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=MGFuYTQ1b3RyNXZ1dnNzNDMyMzF1ZmNlNTQgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "5:28 pm",
+          "title": "Flight  UA688 IAD to BOS",
+          "location": "Departing Washington, DC",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-01T17:28:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=XzZvcjMyZ2hwODRyamliOW84b3JrY2I5azhnczNhYmExODhvM2ViOWo2NTJrNmc5bzhoMjQ4Z2hvNmsgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -343,19 +353,19 @@
       {
         "title": "Brent's Birthday",
         "day": "Tue Sep 15",
-        "days_out": 21
+        "days_out": 20
       },
       {
         "title": "Brent Scott's Birthday",
         "day": "Tue Sep 15",
-        "days_out": 21
+        "days_out": 20
       }
     ],
     "holidays": [
       {
         "title": "Labor Day",
         "day": "Mon Sep 7",
-        "days_out": 13
+        "days_out": 12
       }
     ]
   }
