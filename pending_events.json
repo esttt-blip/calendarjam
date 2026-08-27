@@ -1,17 +1,5 @@
 [
   {
-    "id": "d2529315729e0ab77211ccb2a9db621a",
-    "source": "Gmail",
-    "title": "Reminder: Daycare  |  Troop Play Full Day for Milo",
-    "start": null,
-    "end": null,
-    "location": "",
-    "description": "img {\r\n\t\t\t\t\tmax-width: 100%;\r\n\t\t\t\t}\r\n\t\t\t\tbody {\r\n\t\t\t\t\t-webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; width: 100% !important; height: 100%; line-height: 1.6em;\r\n\t\t\t\t}\r\n\t\t\t\tbody {\r\n\t\t\t\t\tbackground-color: #f6f6f6;\r\n\t\t\t\t}\r\n\t\t\t\t@media only screen and (max-width: 640px) {\r\n\t\t\t\t  body {\r\n\t\t\t\t    padding: 0 !important;\r\n\t\t\t\t  }\r\n\t\t\t\t  .container {\r\n\t\t\t\t    padding: 0 !important; width: 100% !important;\r\n\t\t\t\t  }\r\n\t\t\t\t  .content {\r\n\t\t\t\t    padding: 0 !important;\r\n\t\t\t\t    background-color: #FFFFFF;\r\n\t\t\t\t  }\r\n\t\t\t\t  .content-wrap {\r\n\t\t\t\t    padding: 10px !important;\r\n\t\t\t\t  }\r\n\t\t\t\t  .invoice {\r\n\t\t\t\t    width: 100% !important;\r\n\t\t\t\t  }\r\n\t\t\t\t}\r\n\t\t\t\r\n\t\t\r\n\r\n\t\t\r\n\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\tDear Esther,This is a friendly reminder that Milo has a reservation for Daycare | Troop Play Full Day from August 25, 2026 at 8:30 am until August 25, 2026 at 4:30 pm.Here are a few important reminders for the upcoming reservation:Food Packing: If you bring your pet's food, please pack each serving in an individual Ziploc bag for easy handling and feeding.Medication: If your pet needs medication, please organize it by date in a medication box or clearly labeled containers to help ensure accurate administration.Vaccination Check: Please make sure your pet's Rabies, Distemper, and Bordetella vaccinations are current and that we have the most recent vaccination records on file.72-Hour ",
-    "uid": "<20260825121411.997dd5fa52711e2c@mailgun.gingrapp.com>",
-    "needs_review": true,
-    "from": "Giving Tree K9 Club <givingtreepetresort@mailgun.gingrapp.com>"
-  },
-  {
     "id": "64ba3901a4cd01b34dafac99d2bfb9e3",
     "source": "Gmail",
     "title": "Appointment Reminder for Group Lesson (2-3 Guests)",
