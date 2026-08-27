@@ -1,101 +1,19 @@
 {
-  "generated_at": "2026-08-26T06:50:00.998446-04:00",
-  "generated_label": "Wed Aug 26, 6:50 AM",
-  "weather": {
-    "high_f": 86,
-    "low_f": 62,
-    "precip_pct": 1,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-08-27T06:00:58.905387-04:00",
+  "generated_label": "Thu Aug 27, 6:00 AM",
+  "weather": null,
   "theme": {
-    "emoji": "\u26bd",
-    "title": "Game On Week",
-    "blurb": "4 games & practices on deck.",
-    "color1": "#11998e",
-    "color2": "#38ef7d"
+    "emoji": "\ud83c\udf3b",
+    "title": "Late Summer",
+    "blurb": "Squeeze out every sunny minute.",
+    "color1": "#f7971e",
+    "color2": "#ff9a3c"
   },
   "week": [
     {
-      "date": "2026-08-26",
-      "label": "Today \u00b7 Wed Aug 26",
-      "weather": {
-        "high_f": 86,
-        "low_f": 62,
-        "precip_pct": 1,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "Henry: Code Ninjas @ Lee Harrison",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-08-26T00:00",
-          "link": "https://www.google.com/calendar/event?eid=ajdjY2dpc3BsajYzbmFpNGwyamp2bmJpNGdfMjAyNjA4MjYgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "8:15 am",
-          "title": "\ud83d\ude97 Drop off Henry \u2014 Code Ninjas",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-08-26T08:15:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ZHJiNTdsMGJrMzdnbW9mb2JzbGVyM2ZvZ2NfMjAyNjA4MjZUMTIxNTAwWiBlc3RoZXIuZXZlbHluQG0"
-        },
-        {
-          "time": "3:45 pm",
-          "title": "\ud83d\ude97 Pick up Henry \u2014 Code Ninjas",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-08-26T15:45:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=MXVhZHBmZXNjcjZ0YmlpOW5kbDR2MzdqbThfMjAyNjA4MjZUMTk0NTAwWiBlc3RoZXIuZXZlbHluQG0"
-        },
-        {
-          "time": "6:48 pm",
-          "title": "\ud83d\ude97 Drive to VIVA practice (our carpool)",
-          "location": "Justice High School, 3301 Peace Valley Ln, Falls Church, VA 22044",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-08-26T18:48:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ZTBkMmozNDgxdTZkcXI5dGU0YW8wbHBsNmMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "VIVA U13 Practice \u2014 \ud83d\ude97 our carpool (we drive)",
-          "location": "3301 Peace Valley Ln, Falls Church, VA 22044, USA",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-26T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=NWxsY2Zwc29jZDdsZ29zM2JuN2RjMmZtNzAgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:30 pm",
-          "title": "Yin Yoga",
-          "location": "7505p Leesburg Pike, , Falls Church VA, 22043",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-26T19:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Xzg4bzM4YzFnNjhwMzBiYTU2Y3MzZ2I5azYxMjM0YmEyNnAxM2liOW42aDIzNmg5aTZkMzMyZ3BsNnMgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-08-27",
-      "label": "Tomorrow \u00b7 Thu Aug 27",
-      "weather": {
-        "high_f": 90,
-        "low_f": 70,
-        "precip_pct": 58,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Today \u00b7 Thu Aug 27",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -143,15 +61,6 @@
           "link": "https://www.google.com/calendar/event?eid=Z25taDUyamxqZmsyaHJudDdhNHY2dTM1N2cgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
-          "time": "8:30 am",
-          "title": "Appointment Reminder",
-          "location": "1600 Wilson Blvd, Suite 810 Arlington,VA",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-27T08:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=azV1dTNiaW8wZHRuM252NzEycDdwa3Jxa2cgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
           "time": "3:45 pm",
           "title": "\ud83d\ude97 Pick up Henry \u2014 Code Ninjas",
           "location": "",
@@ -159,37 +68,14 @@
           "is_drive": true,
           "sort": "2026-08-27T15:45:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=MXVhZHBmZXNjcjZ0YmlpOW5kbDR2MzdqbThfMjAyNjA4MjdUMTk0NTAwWiBlc3RoZXIuZXZlbHluQG0"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "VIVA U13 Practice \u2014 \ud83d\ude97 carpool (not driving)",
-          "location": "Thomas Jefferson High School for Science and Technology, Braddock Road, Alexandria, VA, USA",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-27T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=bXZqMTY4b28zcjYwc3JkZXNkZzNldWp0a2sgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
-      "conflicts": [
-        {
-          "a": "Orthodontic Appointment for Henry",
-          "a_time": "8:30 am",
-          "b": "Appointment Reminder",
-          "b_time": "8:30 am"
-        }
-      ]
+      "conflicts": []
     },
     {
       "date": "2026-08-28",
-      "label": "Friday \u00b7 Aug 28",
-      "weather": {
-        "high_f": 86,
-        "low_f": 66,
-        "precip_pct": 58,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Tomorrow \u00b7 Fri Aug 28",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -224,14 +110,7 @@
     {
       "date": "2026-08-29",
       "label": "Saturday \u00b7 Aug 29",
-      "weather": {
-        "high_f": 82,
-        "low_f": 71,
-        "precip_pct": 14,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "10:15 am",
@@ -257,14 +136,7 @@
     {
       "date": "2026-08-30",
       "label": "Sunday \u00b7 Aug 30",
-      "weather": {
-        "high_f": 90,
-        "low_f": 67,
-        "precip_pct": 6,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "11:40 am",
@@ -290,39 +162,24 @@
     {
       "date": "2026-08-31",
       "label": "Monday \u00b7 Aug 31",
-      "weather": {
-        "high_f": 97,
-        "low_f": 72,
-        "precip_pct": 3,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "7:00 pm",
-          "title": "VIVA U13 Practice \u2014 \ud83d\ude97 carpool (not driving)",
-          "location": "3401 Woodburn Rd, Annandale, VA 22003, United States",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-31T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=czE5ZzNidG80MXFxcDZ1aTk3YmMwbm44aDggZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
+      "weather": null,
+      "events": [],
       "conflicts": []
     },
     {
       "date": "2026-09-01",
       "label": "Tuesday \u00b7 Sep 1",
-      "weather": {
-        "high_f": 97,
-        "low_f": 78,
-        "precip_pct": 13,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
+        {
+          "time": "all day",
+          "title": "Stay at Boston Marriott Copley Place",
+          "location": "110 Huntington Avenue Boston, Massachusetts 02116 USA",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-09-01T00:00",
+          "link": "https://www.google.com/calendar/event?eid=NjBhbnZvb285bDNmOWU3Zjc1b3Y1cmg0N3MgZXN0aGVyLmV2ZWx5bkBt"
+        },
         {
           "time": "all day",
           "title": "Esther in BOS",
@@ -352,6 +209,32 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-09-02",
+      "label": "Wednesday \u00b7 Sep 2",
+      "weather": null,
+      "events": [
+        {
+          "time": "7:23 pm",
+          "title": "Flight  UA2136 BOS to IAD",
+          "location": "Departing Boston, MA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-02T19:23:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=XzZsMjM0Z2kyOG9yNDhiOWc4NHM0Y2I5azhoMzQyYjlvOG9xa2FiOW03MHAzNmM5cDhvcWpnZGk0OGsgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "9:38 pm",
+          "title": "\ud83d\ude97 Drive home from IAD (UA2136 from BOS)",
+          "location": "Washington Dulles International Airport (IAD), 1 Saarinen Cir, Dulles, VA 20166",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-09-02T21:38:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=dmQ4cmF1dGZqNGY2Z3QxNWIyZGxodmNtZmMgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -359,19 +242,19 @@
       {
         "title": "Brent's Birthday",
         "day": "Tue Sep 15",
-        "days_out": 20
+        "days_out": 19
       },
       {
         "title": "Brent Scott's Birthday",
         "day": "Tue Sep 15",
-        "days_out": 20
+        "days_out": 19
       }
     ],
     "holidays": [
       {
         "title": "Labor Day",
         "day": "Mon Sep 7",
-        "days_out": 12
+        "days_out": 11
       }
     ]
   }
