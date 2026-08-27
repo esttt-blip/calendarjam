@@ -1557,5 +1557,11 @@
     "action": "dismissed",
     "title": "Appointment Reminder for Group Lesson (2-3 Guests)",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-08-27T11:05:48.474365+00:00",
+    "action": "dismissed",
+    "title": "MIYU Beauty & Wellbeing Reservation for Yin Yoga on 8/26/2026 at 7:30\r\n PM",
+    "source": "Gmail"
   }
 ]
