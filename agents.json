@@ -48,14 +48,14 @@
       },
       "status": {
         "state": "live",
-        "updated": "2026-08-25",
+        "updated": "2026-08-27",
         "cheapest_plan": "Dec 19 \u2192 Jan 3",
-        "cheapest_econ": 5679,
+        "cheapest_econ": 5676,
         "results": [
           {
             "label": "Dec 19 \u2192 Jan 2",
             "economy": {
-              "low": 5709,
+              "low": 5708,
               "flight_numbers": [
                 "TK 188",
                 "TK 1861"
@@ -69,16 +69,16 @@
               "insights": null
             },
             "business": {
-              "low": 18725,
+              "low": 16790,
               "flight_numbers": [
-                "LH 415",
-                "LH 1870"
+                "UA 989",
+                "LH 232"
               ],
               "airlines": [
-                "Lufthansa",
+                "United",
                 "Lufthansa"
               ],
-              "is_united": false,
+              "is_united": true,
               "layovers": 1,
               "insights": null
             }
@@ -86,7 +86,7 @@
           {
             "label": "Dec 19 \u2192 Jan 3",
             "economy": {
-              "low": 5679,
+              "low": 5676,
               "flight_numbers": [
                 "TP 232",
                 "TP 832"
@@ -100,7 +100,7 @@
               "insights": null
             },
             "business": {
-              "low": 16732,
+              "low": 16778,
               "flight_numbers": [
                 "LH 415",
                 "LH 1870"
@@ -333,6 +333,13 @@
           "Dec 19 \u2192 Jan 2 business": 18725,
           "Dec 19 \u2192 Jan 3 economy": 5679,
           "Dec 19 \u2192 Jan 3 business": 16732
+        },
+        {
+          "date": "2026-08-27",
+          "Dec 19 \u2192 Jan 2 economy": 5708,
+          "Dec 19 \u2192 Jan 2 business": 16790,
+          "Dec 19 \u2192 Jan 3 economy": 5676,
+          "Dec 19 \u2192 Jan 3 business": 16778
         }
       ]
     }
