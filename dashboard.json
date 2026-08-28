@@ -1,19 +1,32 @@
 {
-  "generated_at": "2026-08-28T06:00:52.399688-04:00",
-  "generated_label": "Fri Aug 28, 6:00 AM",
-  "weather": null,
+  "generated_at": "2026-08-28T17:10:55.525434-04:00",
+  "generated_label": "Fri Aug 28, 5:10 PM",
+  "weather": {
+    "high_f": 88,
+    "low_f": 73,
+    "precip_pct": 23,
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
+  },
   "theme": {
-    "emoji": "\ud83c\udf3b",
-    "title": "Late Summer",
-    "blurb": "Squeeze out every sunny minute.",
-    "color1": "#f7971e",
-    "color2": "#ff9a3c"
+    "emoji": "\ud83e\udd75",
+    "title": "Heat Wave",
+    "blurb": "Hydrate and seek shade out there.",
+    "color1": "#ff512f",
+    "color2": "#f09819"
   },
   "week": [
     {
       "date": "2026-08-28",
       "label": "Today \u00b7 Fri Aug 28",
-      "weather": null,
+      "weather": {
+        "high_f": 88,
+        "low_f": 73,
+        "precip_pct": 23,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -59,6 +72,15 @@
           "is_drive": false,
           "sort": "2026-08-28T18:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=Y3VuYW4wcGY2dWUxNWxwMGtpZ3RjaDlhYmsgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "\ud83d\uded2 Walmart delivery",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-28T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZGZmdW1nMGZtY25wdDJzZ3U5b2ZiOGRyNnMgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
@@ -66,7 +88,14 @@
     {
       "date": "2026-08-29",
       "label": "Tomorrow \u00b7 Sat Aug 29",
-      "weather": null,
+      "weather": {
+        "high_f": 85,
+        "low_f": 68,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -94,6 +123,15 @@
           "is_drive": false,
           "sort": "2026-08-29T11:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=NzRhOTU4ZTB0cGI5cjl0NzRwMTBhc3EyM28gZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "5:20 pm",
+          "title": "Reservation at East Potomac Golf Links - Red",
+          "location": "East Potomac Golf Links - Red, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-29T17:20:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=YzU4N3RvazExOHRqMWZ0MTkwOWdkcTlraG8gZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
@@ -101,7 +139,14 @@
     {
       "date": "2026-08-30",
       "label": "Sunday \u00b7 Aug 30",
-      "weather": null,
+      "weather": {
+        "high_f": 93,
+        "low_f": 69,
+        "precip_pct": 9,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "11:40 am",
@@ -127,14 +172,28 @@
     {
       "date": "2026-08-31",
       "label": "Monday \u00b7 Aug 31",
-      "weather": null,
+      "weather": {
+        "high_f": 90,
+        "low_f": 73,
+        "precip_pct": 7,
+        "weather_code": 82,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy showers"
+      },
       "events": [],
       "conflicts": []
     },
     {
       "date": "2026-09-01",
       "label": "Tuesday \u00b7 Sep 1",
-      "weather": null,
+      "weather": {
+        "high_f": 93,
+        "low_f": 72,
+        "precip_pct": 11,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
       "events": [
         {
           "time": "all day",
@@ -178,7 +237,14 @@
     {
       "date": "2026-09-02",
       "label": "Wednesday \u00b7 Sep 2",
-      "weather": null,
+      "weather": {
+        "high_f": 86,
+        "low_f": 71,
+        "precip_pct": 30,
+        "weather_code": 55,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy drizzle"
+      },
       "events": [
         {
           "time": "7:23 pm",
@@ -204,7 +270,14 @@
     {
       "date": "2026-09-03",
       "label": "Thursday \u00b7 Sep 3",
-      "weather": null,
+      "weather": {
+        "high_f": 102,
+        "low_f": 71,
+        "precip_pct": 30,
+        "weather_code": 55,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy drizzle"
+      },
       "events": [],
       "conflicts": []
     }
