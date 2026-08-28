@@ -1,101 +1,19 @@
 {
-  "generated_at": "2026-08-27T16:27:43.385654-04:00",
-  "generated_label": "Thu Aug 27, 4:27 PM",
-  "weather": {
-    "high_f": 90,
-    "low_f": 73,
-    "precip_pct": 41,
-    "emoji": "\ud83c\udf27",
-    "label": "Heavy showers"
-  },
+  "generated_at": "2026-08-28T06:00:52.399688-04:00",
+  "generated_label": "Fri Aug 28, 6:00 AM",
+  "weather": null,
   "theme": {
-    "emoji": "\ud83e\udd75",
-    "title": "Heat Wave",
-    "blurb": "Hydrate and seek shade out there.",
-    "color1": "#ff512f",
-    "color2": "#f09819"
+    "emoji": "\ud83c\udf3b",
+    "title": "Late Summer",
+    "blurb": "Squeeze out every sunny minute.",
+    "color1": "#f7971e",
+    "color2": "#ff9a3c"
   },
   "week": [
     {
-      "date": "2026-08-27",
-      "label": "Today \u00b7 Thu Aug 27",
-      "weather": {
-        "high_f": 90,
-        "low_f": 73,
-        "precip_pct": 41,
-        "weather_code": 82,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy showers"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "Henry: Code Ninjas @ Lee Harrison",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-08-27T00:00",
-          "link": "https://www.google.com/calendar/event?eid=ajdjY2dpc3BsajYzbmFpNGwyamp2bmJpNGdfMjAyNjA4MjcgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "8:15 am",
-          "title": "\ud83d\ude97 Drop off Henry \u2014 Code Ninjas",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-08-27T08:15:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ZHJiNTdsMGJrMzdnbW9mb2JzbGVyM2ZvZ2NfMjAyNjA4MjdUMTIxNTAwWiBlc3RoZXIuZXZlbHluQG0"
-        },
-        {
-          "time": "8:30 am",
-          "title": "Orthodontic Appointment for Henry",
-          "location": "1600 Wilson Blvd, Suite 810, Arlington, VA, 22209",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-27T08:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=NTdzNm9jbW5hcDJldjR1am9xbTIzZGNzMHMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "8:30 am",
-          "title": "Henry orthodontist appointment",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-27T08:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=OHA1N2JqZmdldXJlZXRoNzVxdDVwYXVkdmcgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "8:30 am",
-          "title": "Max drop off",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-27T08:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Z25taDUyamxqZmsyaHJudDdhNHY2dTM1N2cgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "3:45 pm",
-          "title": "\ud83d\ude97 Pick up Henry \u2014 Code Ninjas",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-08-27T15:45:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=MXVhZHBmZXNjcjZ0YmlpOW5kbDR2MzdqbThfMjAyNjA4MjdUMTk0NTAwWiBlc3RoZXIuZXZlbHluQG0"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-08-28",
-      "label": "Tomorrow \u00b7 Fri Aug 28",
-      "weather": {
-        "high_f": 84,
-        "low_f": 70,
-        "precip_pct": 23,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
-      },
+      "label": "Today \u00b7 Fri Aug 28",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -123,22 +41,42 @@
           "is_drive": true,
           "sort": "2026-08-28T15:45:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=MXVhZHBmZXNjcjZ0YmlpOW5kbDR2MzdqbThfMjAyNjA4MjhUMTk0NTAwWiBlc3RoZXIuZXZlbHluQG0"
+        },
+        {
+          "time": "5:48 pm",
+          "title": "\ud83d\ude97 Drive to Golf Galaxy (Falls Church)",
+          "location": "5821 Crossroads Center Way, Falls Church, VA 22041",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-08-28T17:48:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZGlwa2U5MTJoa2owZG5kYXRqZ2s0ajQzOXMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "6:00 pm",
+          "title": "\u26f3 Golf Galaxy \u2014 Summer Fridays Appointment",
+          "location": "5821 Crossroads Center Way, Falls Church, VA 22041",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-08-28T18:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Y3VuYW4wcGY2dWUxNWxwMGtpZ3RjaDlhYmsgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
     },
     {
       "date": "2026-08-29",
-      "label": "Saturday \u00b7 Aug 29",
-      "weather": {
-        "high_f": 86,
-        "low_f": 70,
-        "precip_pct": 4,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "label": "Tomorrow \u00b7 Sat Aug 29",
+      "weather": null,
       "events": [
+        {
+          "time": "all day",
+          "title": "\ud83c\udf71 MightyMeals delivery",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-08-29T00:00",
+          "link": "https://www.google.com/calendar/event?eid=dmJpc3U3MG5kdWpvajJlMjA5aGs5cmZrZTAgZXN0aGVyLmV2ZWx5bkBt"
+        },
         {
           "time": "10:15 am",
           "title": "\ud83d\ude97 Drive to Topgolf Germantown",
@@ -163,14 +101,7 @@
     {
       "date": "2026-08-30",
       "label": "Sunday \u00b7 Aug 30",
-      "weather": {
-        "high_f": 90,
-        "low_f": 67,
-        "precip_pct": 10,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "11:40 am",
@@ -196,28 +127,14 @@
     {
       "date": "2026-08-31",
       "label": "Monday \u00b7 Aug 31",
-      "weather": {
-        "high_f": 95,
-        "low_f": 72,
-        "precip_pct": 6,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [],
       "conflicts": []
     },
     {
       "date": "2026-09-01",
       "label": "Tuesday \u00b7 Sep 1",
-      "weather": {
-        "high_f": 101,
-        "low_f": 76,
-        "precip_pct": 15,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -261,14 +178,7 @@
     {
       "date": "2026-09-02",
       "label": "Wednesday \u00b7 Sep 2",
-      "weather": {
-        "high_f": 94,
-        "low_f": 76,
-        "precip_pct": 34,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "7:23 pm",
@@ -290,6 +200,13 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-09-03",
+      "label": "Thursday \u00b7 Sep 3",
+      "weather": null,
+      "events": [],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -297,19 +214,19 @@
       {
         "title": "Brent's Birthday",
         "day": "Tue Sep 15",
-        "days_out": 19
+        "days_out": 18
       },
       {
         "title": "Brent Scott's Birthday",
         "day": "Tue Sep 15",
-        "days_out": 19
+        "days_out": 18
       }
     ],
     "holidays": [
       {
         "title": "Labor Day",
         "day": "Mon Sep 7",
-        "days_out": 11
+        "days_out": 10
       }
     ]
   }
