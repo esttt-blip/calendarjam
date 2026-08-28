@@ -172,6 +172,29 @@ def _parse(iso):
         return None
 
 
+def _proposed_when(item: dict) -> str:
+    """Human-readable 'when' for a pending item, so the proposed time shows on
+    the card and she can confirm it before tapping Add. sync.py stores the start
+    in "start" (ISO); email free-text items have start=None -> shows 'time TBD'."""
+    start = next((item.get(k) for k in
+                  ("start", "start_iso", "when", "start_time", "dtstart",
+                   "datetime", "sort", "date") if item.get(k)), None)
+    end = next((item.get(k) for k in
+                ("end", "end_iso", "end_time", "dtend") if item.get(k)), None)
+    if not start:
+        return ""
+    ds = _parse(str(start))
+    if not ds:
+        return str(start)
+    if len(str(start)) <= 10:
+        return ds.strftime("%a %b %-d · all day")
+    out = ds.strftime("%a %b %-d · %-I:%M %p")
+    de = _parse(str(end)) if end else None
+    if de and de.date() == ds.date() and de > ds:
+        out += de.strftime("–%-I:%M %p")
+    return out
+
+
 def _is_close_family(title: str) -> bool:
     t = (title or "").lower()
     return any(n in t for n in CLOSE_FAMILY)
@@ -686,6 +709,7 @@ with c2:
                             f"<div style='color:#9a9aa7;font-size:11px;margin:1px 0 3px'>{source} · {sender}</div>"
                             + (f"<div style='color:#666;font-size:11.5px;line-height:1.4'>{desc}</div>" if desc else ""),
                             unsafe_allow_html=True)
+                st.markdown((f"<div style='color:#1a7f52;font-size:12px;font-weight:600;margin:2px 0'>🕒 {w}</div>" if (w:=_proposed_when(item)) else "<div style='color:#b4483f;font-size:11px;margin:2px 0'>🕒 time TBD — check the email</div>"), unsafe_allow_html=True)
                 b1, b2, b3 = st.columns(3, gap="small")
                 if b1.button("✅ Add", key=f"y{idx}", type="primary", use_container_width=True):
                     approve_item(item, pending); log_activity("approved", title, source)
