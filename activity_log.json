@@ -1603,5 +1603,11 @@
     "action": "dismissed",
     "title": "[Golf Live] Re: cancel lesson",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-08-29T01:41:54.067517+00:00",
+    "action": "dismissed",
+    "title": "Appointment Reminder for Group Lesson (2-3 Guests)",
+    "source": "Gmail"
   }
 ]
