@@ -1633,5 +1633,12 @@
     "action": "duplicate",
     "title": "Reservation CONFIRMED",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-08-29T10:00:55.996366+00:00",
+    "action": "added",
+    "title": "\ud83e\uddd8 All-Levels Hatha",
+    "source": "Karma Yoga \ud83e\uddd8",
+    "when": "2026-08-29T13:00"
   }
 ]
