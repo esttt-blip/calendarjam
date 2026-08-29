@@ -1597,5 +1597,11 @@
     "action": "dismissed",
     "title": "Your appointment is set.",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-08-29T01:41:40.468151+00:00",
+    "action": "dismissed",
+    "title": "[Golf Live] Re: cancel lesson",
+    "source": "Gmail"
   }
 ]
