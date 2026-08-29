@@ -1627,5 +1627,11 @@
     "action": "dismissed",
     "title": "Important Studio Update: Systems & Payment Information",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-08-29T01:45:13.971367+00:00",
+    "action": "duplicate",
+    "title": "Reservation CONFIRMED",
+    "source": "Gmail"
   }
 ]
