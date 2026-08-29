@@ -1609,5 +1609,11 @@
     "action": "dismissed",
     "title": "Appointment Reminder for Group Lesson (2-3 Guests)",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-08-29T01:42:04.335809+00:00",
+    "action": "duplicate",
+    "title": "Reservation CONFIRMED",
+    "source": "Gmail"
   }
 ]
