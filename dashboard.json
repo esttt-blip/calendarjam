@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-08-30T06:01:04.887580-04:00",
-  "generated_label": "Sun Aug 30, 6:01 AM",
-  "weather": null,
+  "generated_at": "2026-08-30T10:51:46.699303-04:00",
+  "generated_label": "Sun Aug 30, 10:51 AM",
+  "weather": {
+    "high_f": 91,
+    "low_f": 69,
+    "precip_pct": 7,
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
+  },
   "theme": {
     "emoji": "\ud83c\udfc6",
     "title": "Tournament Week",
@@ -13,7 +19,14 @@
     {
       "date": "2026-08-30",
       "label": "Today \u00b7 Sun Aug 30",
-      "weather": null,
+      "weather": {
+        "high_f": 91,
+        "low_f": 69,
+        "precip_pct": 7,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "11:40 am",
@@ -39,7 +52,14 @@
     {
       "date": "2026-08-31",
       "label": "Tomorrow \u00b7 Mon Aug 31",
-      "weather": null,
+      "weather": {
+        "high_f": 95,
+        "low_f": 74,
+        "precip_pct": 11,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -60,12 +80,12 @@
           "link": "https://www.google.com/calendar/event?eid=Y2NkNWFpazJjZWMza3M1MGwzMzVzdGNtamsgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
-          "time": "7:00 pm",
+          "time": "7:15 pm",
           "title": "\u26bd Henry \u2014 VIVA practice",
-          "location": "Pine Ridge Park, 3401 Woodburn Rd, Annandale, VA 22003",
+          "location": "Justice High School, 3301 Peace Valley Ln, Falls Church, VA 22044",
           "all_day": false,
           "is_drive": false,
-          "sort": "2026-08-31T19:00:00-04:00",
+          "sort": "2026-08-31T19:15:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=YjE0bjg2MnVva3I5bWdzZHJrZjZvZWNpOWcgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
@@ -74,7 +94,14 @@
     {
       "date": "2026-09-01",
       "label": "Tuesday \u00b7 Sep 1",
-      "weather": null,
+      "weather": {
+        "high_f": 96,
+        "low_f": 74,
+        "precip_pct": 5,
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
+      },
       "events": [
         {
           "time": "all day",
@@ -118,7 +145,14 @@
     {
       "date": "2026-09-02",
       "label": "Wednesday \u00b7 Sep 2",
-      "weather": null,
+      "weather": {
+        "high_f": 101,
+        "low_f": 72,
+        "precip_pct": 16,
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
+      },
       "events": [
         {
           "time": "7:23 pm",
@@ -144,14 +178,28 @@
     {
       "date": "2026-09-03",
       "label": "Thursday \u00b7 Sep 3",
-      "weather": null,
+      "weather": {
+        "high_f": 99,
+        "low_f": 75,
+        "precip_pct": 38,
+        "weather_code": 55,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy drizzle"
+      },
       "events": [],
       "conflicts": []
     },
     {
       "date": "2026-09-04",
       "label": "Friday \u00b7 Sep 4",
-      "weather": null,
+      "weather": {
+        "high_f": 86,
+        "low_f": 72,
+        "precip_pct": 38,
+        "weather_code": 80,
+        "emoji": "\ud83c\udf26",
+        "label": "Showers"
+      },
       "events": [
         {
           "time": "all day",
@@ -177,7 +225,14 @@
     {
       "date": "2026-09-05",
       "label": "Saturday \u00b7 Sep 5",
-      "weather": null,
+      "weather": {
+        "high_f": 75,
+        "low_f": 67,
+        "precip_pct": 20,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
       "events": [
         {
           "time": "all day",
