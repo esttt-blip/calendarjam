@@ -48,37 +48,37 @@
       },
       "status": {
         "state": "live",
-        "updated": "2026-08-29",
-        "cheapest_plan": "Dec 19 \u2192 Jan 2",
+        "updated": "2026-08-31",
+        "cheapest_plan": "Dec 19 \u2192 Jan 3",
         "cheapest_econ": 5708,
         "results": [
           {
             "label": "Dec 19 \u2192 Jan 2",
             "economy": {
-              "low": 5708,
+              "low": 6203,
               "flight_numbers": [
-                "TK 188",
-                "TK 1861"
+                "AC 8619",
+                "AC 890"
               ],
               "airlines": [
-                "Turkish Airlines",
-                "Turkish Airlines"
+                "Air Canada",
+                "Air Canada"
               ],
               "is_united": false,
               "layovers": 1,
               "insights": null
             },
             "business": {
-              "low": 18769,
+              "low": 16790,
               "flight_numbers": [
-                "LH 415",
-                "LH 1870"
+                "UA 989",
+                "LH 232"
               ],
               "airlines": [
-                "Lufthansa",
+                "United",
                 "Lufthansa"
               ],
-              "is_united": false,
+              "is_united": true,
               "layovers": 1,
               "insights": null
             }
@@ -100,16 +100,16 @@
               "insights": null
             },
             "business": {
-              "low": 16777,
+              "low": 16767,
               "flight_numbers": [
-                "LH 415",
-                "LH 1870"
+                "UA 950",
+                "AZ 159"
               ],
               "airlines": [
-                "Lufthansa",
-                "Lufthansa"
+                "United",
+                "ITA"
               ],
-              "is_united": false,
+              "is_united": true,
               "layovers": 1,
               "insights": null
             }
@@ -347,6 +347,13 @@
           "Dec 19 \u2192 Jan 2 business": 18769,
           "Dec 19 \u2192 Jan 3 economy": 5708,
           "Dec 19 \u2192 Jan 3 business": 16777
+        },
+        {
+          "date": "2026-08-31",
+          "Dec 19 \u2192 Jan 2 economy": 6203,
+          "Dec 19 \u2192 Jan 2 business": 16790,
+          "Dec 19 \u2192 Jan 3 economy": 5708,
+          "Dec 19 \u2192 Jan 3 business": 16767
         }
       ]
     }
