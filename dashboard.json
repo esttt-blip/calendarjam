@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-08-31T06:01:02.798868-04:00",
-  "generated_label": "Mon Aug 31, 6:01 AM",
-  "weather": null,
+  "generated_at": "2026-08-31T13:41:02.209495-04:00",
+  "generated_label": "Mon Aug 31, 1:41 PM",
+  "weather": {
+    "high_f": 88,
+    "low_f": 71,
+    "precip_pct": 10,
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
+  },
   "theme": {
     "emoji": "\ud83d\udee0\ufe0f",
     "title": "Labor Day Week",
@@ -13,7 +19,14 @@
     {
       "date": "2026-08-31",
       "label": "Today \u00b7 Mon Aug 31",
-      "weather": null,
+      "weather": {
+        "high_f": 88,
+        "low_f": 71,
+        "precip_pct": 10,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -48,7 +61,14 @@
     {
       "date": "2026-09-01",
       "label": "Tomorrow \u00b7 Tue Sep 1",
-      "weather": null,
+      "weather": {
+        "high_f": 98,
+        "low_f": 72,
+        "precip_pct": 7,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -92,7 +112,14 @@
     {
       "date": "2026-09-02",
       "label": "Wednesday \u00b7 Sep 2",
-      "weather": null,
+      "weather": {
+        "high_f": 96,
+        "low_f": 76,
+        "precip_pct": 32,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "7:23 pm",
@@ -118,14 +145,65 @@
     {
       "date": "2026-09-03",
       "label": "Thursday \u00b7 Sep 3",
-      "weather": null,
-      "events": [],
+      "weather": {
+        "high_f": 102,
+        "low_f": 74,
+        "precip_pct": 32,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
+      "events": [
+        {
+          "time": "10:05 am",
+          "title": "Esther - Eye Doc",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-03T10:05:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc2c3A0NGgxbDZjbzQ4ZDFwNmNzazhoMWc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNjkzNGFkcG42b3FqY2U5ajY0cTNlZGhrNjkwa2FnaG42b3JqY2NxNjhncDM4Y3ExNjUyZyBlc3RoZXIuZXZlbHluQG0"
+        },
+        {
+          "time": "10:05 am",
+          "title": "Esther - Eye Doc",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-03T10:05:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=cnJkbjRyOWFyN2oxNjk4cG9zNXNhZ2p2aG8gZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "10:25 am",
+          "title": "Appointment with Virginia Vision Associates",
+          "location": "Virginia Vision Associates, 3800 Fairfax Dr. Suite 1, Arlington, VA 22203",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-03T10:25:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=bm1iOWRlZGpwbjYybXBxanI0YmEzZzIxZjQgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "6:45 pm",
+          "title": "VIRTUAL Restorative Yoga",
+          "location": "Portland Yoga Collective",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-03T18:45:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=b2RuaWJhOGdhaTNucGhhZzk4NzdrMDEzZTggZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
       "conflicts": []
     },
     {
       "date": "2026-09-04",
       "label": "Friday \u00b7 Sep 4",
-      "weather": null,
+      "weather": {
+        "high_f": 101,
+        "low_f": 77,
+        "precip_pct": 28,
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
+      },
       "events": [
         {
           "time": "all day",
@@ -144,6 +222,24 @@
           "is_drive": false,
           "sort": "2026-09-04T09:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=Y2hnNmxvZ3I3Y2xta25idTJvMjl1ZW52bmMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "5:30 pm",
+          "title": "\ud83d\ude80 Fly into Yin",
+          "location": "Karma Yoga",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-04T17:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=MjFhb3ZmYnR2cHJrOG9tN2Z2YzgxcnVjZjQgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "6:00 pm",
+          "title": "\u26bd Henry \u2014 VIVA practice",
+          "location": "Justice High School, 3301 Peace Valley Ln, Falls Church, VA 22044",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-04T18:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Z2YzNzRsdG9mcXF0ZG5nYzh0MGs5ZjhramcgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
@@ -151,7 +247,14 @@
     {
       "date": "2026-09-05",
       "label": "Saturday \u00b7 Sep 5",
-      "weather": null,
+      "weather": {
+        "high_f": 89,
+        "low_f": 72,
+        "precip_pct": 19,
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
+      },
       "events": [
         {
           "time": "all day",
@@ -195,7 +298,14 @@
     {
       "date": "2026-09-06",
       "label": "Sunday \u00b7 Sep 6",
-      "weather": null,
+      "weather": {
+        "high_f": 78,
+        "low_f": 65,
+        "precip_pct": 9,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "4:00 pm",
@@ -205,9 +315,43 @@
           "is_drive": false,
           "sort": "2026-09-06T16:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=cjc1b2syYmsxbTdxbjVoZjh0ZXJib2gxMjQgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "4:20 pm",
+          "title": "\ud83d\ude97 Drive to East Potomac Golf Links",
+          "location": "East Potomac Golf Links, 972 Ohio Dr SW, Washington, DC 20024",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-09-06T16:20:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=cjE1YmdhODZpZmJiYzlwa2plOGt2NjYxZTAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "5:10 pm",
+          "title": "\u26f3 Golf \u2014 East Potomac (Blue)",
+          "location": "East Potomac Golf Links, 972 Ohio Dr SW, Washington, DC 20024",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-06T17:10:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=YTM0ZzRrYm41N2s1b2pwdXZxOG4za2hwZWMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "5:10 pm",
+          "title": "Reservation at East Potomac Golf Links",
+          "location": "East Potomac Golf Links, East Potomac Golf Links, 972 Ohio Dr. SW, Washington, DC 20024, US",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-06T17:10:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Y3Zxamk2Y2NuZXM0MWNtc3ZsM2UyMmhnOTggZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
-      "conflicts": []
+      "conflicts": [
+        {
+          "a": "Spirit @ Thorns (CBS)",
+          "a_time": "4:00 pm",
+          "b": "\u26f3 Golf \u2014 East Potomac (Blue)",
+          "b_time": "5:10 pm"
+        }
+      ]
     }
   ],
   "horizon": {
