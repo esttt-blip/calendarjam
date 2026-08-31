@@ -1,65 +1,19 @@
 {
-  "generated_at": "2026-08-30T10:51:46.699303-04:00",
-  "generated_label": "Sun Aug 30, 10:51 AM",
-  "weather": {
-    "high_f": 91,
-    "low_f": 69,
-    "precip_pct": 7,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-08-31T06:01:02.798868-04:00",
+  "generated_label": "Mon Aug 31, 6:01 AM",
+  "weather": null,
   "theme": {
-    "emoji": "\ud83c\udfc6",
-    "title": "Tournament Week",
-    "blurb": "Bring the cooler, the chairs, and the snacks.",
-    "color1": "#f7971e",
-    "color2": "#ffd200"
+    "emoji": "\ud83d\udee0\ufe0f",
+    "title": "Labor Day Week",
+    "blurb": "Last hurrah of summer.",
+    "color1": "#373b44",
+    "color2": "#4286f4"
   },
   "week": [
     {
-      "date": "2026-08-30",
-      "label": "Today \u00b7 Sun Aug 30",
-      "weather": {
-        "high_f": 91,
-        "low_f": 69,
-        "precip_pct": 7,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "11:40 am",
-          "title": "\ud83d\ude97 Drive to Audi Field (Spirit vs Bay FC)",
-          "location": "Audi Field, 100 Potomac Ave SW, Washington, DC 20024",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-08-30T11:40:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=YXZkZnNxNG1oZXA5cmRwMW0xcHM4dmdqaGsgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "12:30 pm",
-          "title": "Spirit vs Bay FC (ESPN2)",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-30T12:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=NWxpczFoaTg3Z2toYWgxN2EyaTRlcDQ2dDAgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-08-31",
-      "label": "Tomorrow \u00b7 Mon Aug 31",
-      "weather": {
-        "high_f": 95,
-        "low_f": 74,
-        "precip_pct": 11,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Today \u00b7 Mon Aug 31",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -93,15 +47,8 @@
     },
     {
       "date": "2026-09-01",
-      "label": "Tuesday \u00b7 Sep 1",
-      "weather": {
-        "high_f": 96,
-        "low_f": 74,
-        "precip_pct": 5,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "label": "Tomorrow \u00b7 Tue Sep 1",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -145,14 +92,7 @@
     {
       "date": "2026-09-02",
       "label": "Wednesday \u00b7 Sep 2",
-      "weather": {
-        "high_f": 101,
-        "low_f": 72,
-        "precip_pct": 16,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "7:23 pm",
@@ -178,28 +118,14 @@
     {
       "date": "2026-09-03",
       "label": "Thursday \u00b7 Sep 3",
-      "weather": {
-        "high_f": 99,
-        "low_f": 75,
-        "precip_pct": 38,
-        "weather_code": 55,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy drizzle"
-      },
+      "weather": null,
       "events": [],
       "conflicts": []
     },
     {
       "date": "2026-09-04",
       "label": "Friday \u00b7 Sep 4",
-      "weather": {
-        "high_f": 86,
-        "low_f": 72,
-        "precip_pct": 38,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -225,14 +151,7 @@
     {
       "date": "2026-09-05",
       "label": "Saturday \u00b7 Sep 5",
-      "weather": {
-        "high_f": 75,
-        "low_f": 67,
-        "precip_pct": 20,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -272,6 +191,23 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-09-06",
+      "label": "Sunday \u00b7 Sep 6",
+      "weather": null,
+      "events": [
+        {
+          "time": "4:00 pm",
+          "title": "Spirit @ Thorns (CBS)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-06T16:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=cjc1b2syYmsxbTdxbjVoZjh0ZXJib2gxMjQgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -279,19 +215,19 @@
       {
         "title": "Brent's Birthday",
         "day": "Tue Sep 15",
-        "days_out": 16
+        "days_out": 15
       },
       {
         "title": "Brent Scott's Birthday",
         "day": "Tue Sep 15",
-        "days_out": 16
+        "days_out": 15
       }
     ],
     "holidays": [
       {
         "title": "Labor Day",
         "day": "Mon Sep 7",
-        "days_out": 8
+        "days_out": 7
       }
     ]
   }
