@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-08-31T13:41:02.209495-04:00",
-  "generated_label": "Mon Aug 31, 1:41 PM",
-  "weather": {
-    "high_f": 88,
-    "low_f": 71,
-    "precip_pct": 10,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-09-01T06:01:20.755881-04:00",
+  "generated_label": "Tue Sep 1, 6:01 AM",
+  "weather": null,
   "theme": {
     "emoji": "\ud83d\udee0\ufe0f",
     "title": "Labor Day Week",
@@ -17,58 +11,9 @@
   },
   "week": [
     {
-      "date": "2026-08-31",
-      "label": "Today \u00b7 Mon Aug 31",
-      "weather": {
-        "high_f": 88,
-        "low_f": 71,
-        "precip_pct": 10,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "EP",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-08-31T00:00",
-          "link": "https://www.google.com/calendar/event?eid=NGlkYWdqazk5aGlvMXBtcmZybmxyb2c1Ym9fMjAyNjA4MzEgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "all day",
-          "title": "\ud83c\udfeb First Day of School (K-12) \u2014 Swanson",
-          "location": "Swanson Middle School, 5800 Washington Blvd, Arlington, VA 22205",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-08-31T00:00",
-          "link": "https://www.google.com/calendar/event?eid=Y2NkNWFpazJjZWMza3M1MGwzMzVzdGNtamsgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:15 pm",
-          "title": "\u26bd Henry \u2014 VIVA practice",
-          "location": "Justice High School, 3301 Peace Valley Ln, Falls Church, VA 22044",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-08-31T19:15:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=YjE0bjg2MnVva3I5bWdzZHJrZjZvZWNpOWcgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-09-01",
-      "label": "Tomorrow \u00b7 Tue Sep 1",
-      "weather": {
-        "high_f": 98,
-        "low_f": 72,
-        "precip_pct": 7,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Today \u00b7 Tue Sep 1",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -111,15 +56,8 @@
     },
     {
       "date": "2026-09-02",
-      "label": "Wednesday \u00b7 Sep 2",
-      "weather": {
-        "high_f": 96,
-        "low_f": 76,
-        "precip_pct": 32,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Tomorrow \u00b7 Wed Sep 2",
+      "weather": null,
       "events": [
         {
           "time": "7:23 pm",
@@ -145,14 +83,7 @@
     {
       "date": "2026-09-03",
       "label": "Thursday \u00b7 Sep 3",
-      "weather": {
-        "high_f": 102,
-        "low_f": 74,
-        "precip_pct": 32,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "10:05 am",
@@ -196,14 +127,7 @@
     {
       "date": "2026-09-04",
       "label": "Friday \u00b7 Sep 4",
-      "weather": {
-        "high_f": 101,
-        "low_f": 77,
-        "precip_pct": 28,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -247,14 +171,7 @@
     {
       "date": "2026-09-05",
       "label": "Saturday \u00b7 Sep 5",
-      "weather": {
-        "high_f": 89,
-        "low_f": 72,
-        "precip_pct": 19,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -298,14 +215,7 @@
     {
       "date": "2026-09-06",
       "label": "Sunday \u00b7 Sep 6",
-      "weather": {
-        "high_f": 78,
-        "low_f": 65,
-        "precip_pct": 9,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "4:00 pm",
@@ -352,6 +262,75 @@
           "b_time": "5:10 pm"
         }
       ]
+    },
+    {
+      "date": "2026-09-07",
+      "label": "Monday \u00b7 Sep 7",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "EP",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-09-07T00:00",
+          "link": "https://www.google.com/calendar/event?eid=NGlkYWdqazk5aGlvMXBtcmZybmxyb2c1Ym9fMjAyNjA5MDcgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:20 am",
+          "title": "\ud83d\ude97 Drive to East Potomac Golf Links",
+          "location": "East Potomac Golf Links, 972 Ohio Dr SW, Washington, DC 20024",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-09-07T07:20:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Y3BiMmxwZHVxamgwcWFyczdpdmxyaGE1YzQgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "8:10 am",
+          "title": "\u26f3 Golf \u2014 East Potomac (Red)",
+          "location": "East Potomac Golf Links, 972 Ohio Dr SW, Washington, DC 20024",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-07T08:10:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZzUwc2wwbXQ2dmFta2g4bGNxbWwwZ3VtM2sgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "8:10 am",
+          "title": "Reservation at East Potomac Golf Links - Red",
+          "location": "East Potomac Golf Links - Red, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-07T08:10:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=cDBxN3NtNmNobGppMGppMTdoMnZmcWRxcGcgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "9:00 am",
+          "title": "\ud83d\udcda School Holiday (Labor Day)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-07T09:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=OHA2MGplbG41bDM4c2c2bmQ0amRnZjhlMHMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "\u26bd Henry \u2014 VIVA practice",
+          "location": "Pine Ridge Park, 3401 Woodburn Rd, Annandale, VA 22003",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-07T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZmFjZ3NrZTU1bXRzM3R0anFtM2YzdXJiaGsgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": [
+        {
+          "a": "\u26f3 Golf \u2014 East Potomac (Red)",
+          "a_time": "8:10 am",
+          "b": "\ud83d\udcda School Holiday (Labor Day)",
+          "b_time": "9:00 am"
+        }
+      ]
     }
   ],
   "horizon": {
@@ -359,19 +338,19 @@
       {
         "title": "Brent's Birthday",
         "day": "Tue Sep 15",
-        "days_out": 15
+        "days_out": 14
       },
       {
         "title": "Brent Scott's Birthday",
         "day": "Tue Sep 15",
-        "days_out": 15
+        "days_out": 14
       }
     ],
     "holidays": [
       {
         "title": "Labor Day",
         "day": "Mon Sep 7",
-        "days_out": 7
+        "days_out": 6
       }
     ]
   }
