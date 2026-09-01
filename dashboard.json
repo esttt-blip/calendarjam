@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-09-01T06:01:20.755881-04:00",
-  "generated_label": "Tue Sep 1, 6:01 AM",
-  "weather": null,
+  "generated_at": "2026-09-01T10:50:58.542861-04:00",
+  "generated_label": "Tue Sep 1, 10:50 AM",
+  "weather": {
+    "high_f": 97,
+    "low_f": 76,
+    "precip_pct": 5,
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
+  },
   "theme": {
     "emoji": "\ud83d\udee0\ufe0f",
     "title": "Labor Day Week",
@@ -13,7 +19,14 @@
     {
       "date": "2026-09-01",
       "label": "Today \u00b7 Tue Sep 1",
-      "weather": null,
+      "weather": {
+        "high_f": 97,
+        "low_f": 76,
+        "precip_pct": 5,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -57,7 +70,14 @@
     {
       "date": "2026-09-02",
       "label": "Tomorrow \u00b7 Wed Sep 2",
-      "weather": null,
+      "weather": {
+        "high_f": 96,
+        "low_f": 77,
+        "precip_pct": 35,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "7:23 pm",
@@ -83,7 +103,14 @@
     {
       "date": "2026-09-03",
       "label": "Thursday \u00b7 Sep 3",
-      "weather": null,
+      "weather": {
+        "high_f": 96,
+        "low_f": 74,
+        "precip_pct": 35,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
       "events": [
         {
           "time": "10:05 am",
@@ -127,7 +154,14 @@
     {
       "date": "2026-09-04",
       "label": "Friday \u00b7 Sep 4",
-      "weather": null,
+      "weather": {
+        "high_f": 97,
+        "low_f": 73,
+        "precip_pct": 23,
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
+      },
       "events": [
         {
           "time": "all day",
@@ -171,7 +205,14 @@
     {
       "date": "2026-09-05",
       "label": "Saturday \u00b7 Sep 5",
-      "weather": null,
+      "weather": {
+        "high_f": 85,
+        "low_f": 70,
+        "precip_pct": 20,
+        "weather_code": 80,
+        "emoji": "\ud83c\udf26",
+        "label": "Showers"
+      },
       "events": [
         {
           "time": "all day",
@@ -215,8 +256,33 @@
     {
       "date": "2026-09-06",
       "label": "Sunday \u00b7 Sep 6",
-      "weather": null,
+      "weather": {
+        "high_f": 83,
+        "low_f": 65,
+        "precip_pct": 10,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
+        {
+          "time": "9:15 am",
+          "title": "\ud83d\ude97 Drive to VIVA game (Poplar Tree Park)",
+          "location": "Poplar Tree Park, 4718 Stringfellow Rd, Fairfax, VA 22030",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-09-06T09:15:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=aGU2NWkzcWFpY2JhcmU4aHVidjhlY3VxcmcgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "10:30 am",
+          "title": "\u26bd Henry \u2014 VIVA game vs Villarreal Verde",
+          "location": "Poplar Tree Park, 4718 Stringfellow Rd, Fairfax, VA 22030",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-06T10:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZWYwMnFuNzBlYmNyaTE0bDBmZWJqaW00Z2cgZXN0aGVyLmV2ZWx5bkBt"
+        },
         {
           "time": "4:00 pm",
           "title": "Spirit @ Thorns (CBS)",
@@ -266,7 +332,14 @@
     {
       "date": "2026-09-07",
       "label": "Monday \u00b7 Sep 7",
-      "weather": null,
+      "weather": {
+        "high_f": 84,
+        "low_f": 65,
+        "precip_pct": 25,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
