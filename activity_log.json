@@ -1674,5 +1674,11 @@
     "title": "VIRTUAL Restorative Yoga",
     "source": "Gmail invite",
     "when": "2026-09-03T18:45"
+  },
+  {
+    "ts": "2026-09-01T10:54:05.333235+00:00",
+    "action": "dismissed",
+    "title": "You're booked: \ud83e\uddd8 All-Levels Hatha",
+    "source": "Gmail"
   }
 ]
