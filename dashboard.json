@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-09-01T10:50:58.542861-04:00",
-  "generated_label": "Tue Sep 1, 10:50 AM",
-  "weather": {
-    "high_f": 97,
-    "low_f": 76,
-    "precip_pct": 5,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-09-02T06:01:14.168741-04:00",
+  "generated_label": "Wed Sep 2, 6:01 AM",
+  "weather": null,
   "theme": {
     "emoji": "\ud83d\udee0\ufe0f",
     "title": "Labor Day Week",
@@ -17,67 +11,9 @@
   },
   "week": [
     {
-      "date": "2026-09-01",
-      "label": "Today \u00b7 Tue Sep 1",
-      "weather": {
-        "high_f": 97,
-        "low_f": 76,
-        "precip_pct": 5,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "Stay at Boston Marriott Copley Place",
-          "location": "110 Huntington Avenue Boston, Massachusetts 02116 USA",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-09-01T00:00",
-          "link": "https://www.google.com/calendar/event?eid=NjBhbnZvb285bDNmOWU3Zjc1b3Y1cmg0N3MgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "all day",
-          "title": "Esther in BOS",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-09-01T00:00",
-          "link": "https://www.google.com/calendar/event?eid=bmhnZTk2OWI0dG80cWxtbzc0NzF0aG83M28gZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "3:28 pm",
-          "title": "\ud83d\ude97 Drive to IAD (UA688 to BOS)",
-          "location": "Washington Dulles International Airport (IAD), 1 Saarinen Cir, Dulles, VA 20166",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-09-01T15:28:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=MGFuYTQ1b3RyNXZ1dnNzNDMyMzF1ZmNlNTQgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "5:28 pm",
-          "title": "Flight  UA688 IAD to BOS",
-          "location": "Departing Washington, DC",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-01T17:28:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=XzZvcjMyZ2hwODRyamliOW84b3JrY2I5azhnczNhYmExODhvM2ViOWo2NTJrNmc5bzhoMjQ4Z2hvNmsgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-09-02",
-      "label": "Tomorrow \u00b7 Wed Sep 2",
-      "weather": {
-        "high_f": 96,
-        "low_f": 77,
-        "precip_pct": 35,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Today \u00b7 Wed Sep 2",
+      "weather": null,
       "events": [
         {
           "time": "7:23 pm",
@@ -102,15 +38,8 @@
     },
     {
       "date": "2026-09-03",
-      "label": "Thursday \u00b7 Sep 3",
-      "weather": {
-        "high_f": 96,
-        "low_f": 74,
-        "precip_pct": 35,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "label": "Tomorrow \u00b7 Thu Sep 3",
+      "weather": null,
       "events": [
         {
           "time": "10:05 am",
@@ -154,14 +83,7 @@
     {
       "date": "2026-09-04",
       "label": "Friday \u00b7 Sep 4",
-      "weather": {
-        "high_f": 97,
-        "low_f": 73,
-        "precip_pct": 23,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -205,14 +127,7 @@
     {
       "date": "2026-09-05",
       "label": "Saturday \u00b7 Sep 5",
-      "weather": {
-        "high_f": 85,
-        "low_f": 70,
-        "precip_pct": 20,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -256,14 +171,7 @@
     {
       "date": "2026-09-06",
       "label": "Sunday \u00b7 Sep 6",
-      "weather": {
-        "high_f": 83,
-        "low_f": 65,
-        "precip_pct": 10,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "9:15 am",
@@ -332,14 +240,7 @@
     {
       "date": "2026-09-07",
       "label": "Monday \u00b7 Sep 7",
-      "weather": {
-        "high_f": 84,
-        "low_f": 65,
-        "precip_pct": 25,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -404,6 +305,41 @@
           "b_time": "9:00 am"
         }
       ]
+    },
+    {
+      "date": "2026-09-08",
+      "label": "Tuesday \u00b7 Sep 8",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "Edgar!",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-09-08T00:00",
+          "link": "https://www.google.com/calendar/event?eid=ODdwZGNzNHF2cXJxYmNlMzU5Nms5NnUydmlfMjAyNjA5MDggZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "9:00 am",
+          "title": "Post-Op Visit",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-08T09:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=NGRwdjdlNG0xZXIzcGUwazRra2w4OHM3dWMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "10:00 am",
+          "title": "Change lint filter",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-08T10:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=MGIxZ284azRuczNoaXEwYm4xc2VmdDdyY2tfMjAyNjA5MDhUMTQwMDAwWiBlc3RoZXIuZXZlbHluQG0"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -411,19 +347,19 @@
       {
         "title": "Brent's Birthday",
         "day": "Tue Sep 15",
-        "days_out": 14
+        "days_out": 13
       },
       {
         "title": "Brent Scott's Birthday",
         "day": "Tue Sep 15",
-        "days_out": 14
+        "days_out": 13
       }
     ],
     "holidays": [
       {
         "title": "Labor Day",
         "day": "Mon Sep 7",
-        "days_out": 6
+        "days_out": 5
       }
     ]
   }
