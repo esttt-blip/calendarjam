@@ -48,14 +48,14 @@
       },
       "status": {
         "state": "live",
-        "updated": "2026-09-01",
+        "updated": "2026-09-03",
         "cheapest_plan": "Dec 19 \u2192 Jan 2",
-        "cheapest_econ": 5706,
+        "cheapest_econ": 5707,
         "results": [
           {
             "label": "Dec 19 \u2192 Jan 2",
             "economy": {
-              "low": 5706,
+              "low": 5707,
               "flight_numbers": [
                 "TK 188",
                 "TK 1861"
@@ -69,38 +69,7 @@
               "insights": null
             },
             "business": {
-              "low": 17596,
-              "flight_numbers": [
-                "TP 232",
-                "TP 832"
-              ],
-              "airlines": [
-                "Tap Air Portugal",
-                "Tap Air Portugal"
-              ],
-              "is_united": false,
-              "layovers": 1,
-              "insights": null
-            }
-          },
-          {
-            "label": "Dec 19 \u2192 Jan 3",
-            "economy": {
-              "low": 5706,
-              "flight_numbers": [
-                "TK 188",
-                "TK 1861"
-              ],
-              "airlines": [
-                "Turkish Airlines",
-                "Turkish Airlines"
-              ],
-              "is_united": false,
-              "layovers": 1,
-              "insights": null
-            },
-            "business": {
-              "low": 18767,
+              "low": 19067,
               "flight_numbers": [
                 "LH 415",
                 "LH 1870"
@@ -110,6 +79,37 @@
                 "Lufthansa"
               ],
               "is_united": false,
+              "layovers": 1,
+              "insights": null
+            }
+          },
+          {
+            "label": "Dec 19 \u2192 Jan 3",
+            "economy": {
+              "low": 5707,
+              "flight_numbers": [
+                "TK 188",
+                "TK 1861"
+              ],
+              "airlines": [
+                "Turkish Airlines",
+                "Turkish Airlines"
+              ],
+              "is_united": false,
+              "layovers": 1,
+              "insights": null
+            },
+            "business": {
+              "low": 17135,
+              "flight_numbers": [
+                "UA 989",
+                "LH 232"
+              ],
+              "airlines": [
+                "United",
+                "Lufthansa"
+              ],
+              "is_united": true,
               "layovers": 1,
               "insights": null
             }
@@ -361,6 +361,13 @@
           "Dec 19 \u2192 Jan 2 business": 17596,
           "Dec 19 \u2192 Jan 3 economy": 5706,
           "Dec 19 \u2192 Jan 3 business": 18767
+        },
+        {
+          "date": "2026-09-03",
+          "Dec 19 \u2192 Jan 2 economy": 5707,
+          "Dec 19 \u2192 Jan 2 business": 19067,
+          "Dec 19 \u2192 Jan 3 economy": 5707,
+          "Dec 19 \u2192 Jan 3 business": 17135
         }
       ]
     }
