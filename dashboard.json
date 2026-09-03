@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-03T06:01:23.443419-04:00",
-  "generated_label": "Thu Sep 3, 6:01 AM",
+  "generated_at": "2026-09-03T10:31:33.950472-04:00",
+  "generated_label": "Thu Sep 3, 10:31 AM",
   "weather": {
-    "high_f": 98,
-    "low_f": 72,
-    "precip_pct": 24,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
+    "high_f": 96,
+    "low_f": 73,
+    "precip_pct": 27,
+    "emoji": "\ud83c\udf26",
+    "label": "Light drizzle"
   },
   "theme": {
     "emoji": "\ud83d\udee0\ufe0f",
@@ -20,12 +20,12 @@
       "date": "2026-09-03",
       "label": "Today \u00b7 Thu Sep 3",
       "weather": {
-        "high_f": 98,
-        "low_f": 72,
-        "precip_pct": 24,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "high_f": 96,
+        "low_f": 73,
+        "precip_pct": 27,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
       },
       "events": [
         {
@@ -71,9 +71,9 @@
       "date": "2026-09-04",
       "label": "Tomorrow \u00b7 Fri Sep 4",
       "weather": {
-        "high_f": 92,
-        "low_f": 74,
-        "precip_pct": 47,
+        "high_f": 95,
+        "low_f": 73,
+        "precip_pct": 32,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -96,6 +96,15 @@
           "is_drive": false,
           "sort": "2026-09-04T09:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=Y2hnNmxvZ3I3Y2xta25idTJvMjl1ZW52bmMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "5:15 pm",
+          "title": "\ud83d\ude97 Drive to Karma Yoga (Fly into Yin)",
+          "location": "Karma Yoga, 246-A W Broad St, Falls Church, VA 22046",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-09-04T17:15:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=NmQwNHZzcHQxMzc2czk4ZWZiNThraGg4dmMgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "5:30 pm",
@@ -122,12 +131,12 @@
       "date": "2026-09-05",
       "label": "Saturday \u00b7 Sep 5",
       "weather": {
-        "high_f": 86,
-        "low_f": 71,
+        "high_f": 87,
+        "low_f": 70,
         "precip_pct": 32,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [
         {
@@ -173,7 +182,7 @@
       "date": "2026-09-06",
       "label": "Sunday \u00b7 Sep 6",
       "weather": {
-        "high_f": 82,
+        "high_f": 83,
         "low_f": 65,
         "precip_pct": 8,
         "weather_code": 3,
@@ -249,7 +258,7 @@
       "date": "2026-09-07",
       "label": "Monday \u00b7 Sep 7",
       "weather": {
-        "high_f": 84,
+        "high_f": 83,
         "low_f": 64,
         "precip_pct": 1,
         "weather_code": 3,
@@ -325,7 +334,7 @@
       "date": "2026-09-08",
       "label": "Tuesday \u00b7 Sep 8",
       "weather": {
-        "high_f": 83,
+        "high_f": 85,
         "low_f": 62,
         "precip_pct": 1,
         "weather_code": 3,
@@ -367,12 +376,12 @@
       "date": "2026-09-09",
       "label": "Wednesday \u00b7 Sep 9",
       "weather": {
-        "high_f": 85,
-        "low_f": 68,
+        "high_f": 91,
+        "low_f": 67,
         "precip_pct": 5,
-        "weather_code": 55,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy drizzle"
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [
         {
