@@ -82,5 +82,29 @@
     "uid": "<010001a058161fc6-e7d2168b-4492-47e3-aa04-c1dde9c566ed-000000@email.amazonses.com>",
     "needs_review": true,
     "from": "Karma Yoga <team@karma.yoga>"
+  },
+  {
+    "id": "a70a23da0d78252dc1f6a584040d75fc",
+    "source": "Gmail",
+    "title": "Re: You're booked: \ud83d\ude80 Fly into Yin",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "Hi Esther,\r\n\r\nThank you for letting us know. They system doesn't have a lot of\r\nfunctionality at the moment. So, we cannot cancel your booking or refund\r\nyour credit online. However, we are using the honor system. So, I am giving\r\nyou that credit back.\r\n\r\nFor the time being, students do not need to sign up for classes. Please\r\nfeel free to attend any class you wish and keep track of how many you\r\nattend. We have handy punch cards at the studio to help you keep track.\r\n\r\nBe well,\r\nElizabeth\r\n\r\nOn Thu, Sep 3, 2026 at 8:26\u202fAM Esther Scott <esther.evelyn@gmail.com> wrote:\r\n\r\n> the links aren't working and I can't login to cancel this. can i have my\r\n> credit back please?\r\n>\r\n> thanks,\r\n> Esther\r\n>\r\n> On Mon, Aug 31, 2026 at 9:50\u202fAM Karma Yoga <team@karma.yoga> wrote:\r\n>\r\n>> \ud83d\ude80 Fly into Yin is confirmed for Friday, September 4, 2026 at 5:30 PM\r\n>> EDT.\r\n>> Karma Yoga\r\n>> Booking confirmed\r\n>>\r\n>> Hi Esther Scott,\r\n>>\r\n>> You're booked for \ud83d\ude80 Fly into Yin with Caylen Beight on Friday, September\r\n>> 4, 2026 at 5:30 PM EDT.\r\n>>\r\n>> Add it to your calendar below, or add your full Karma Yoga booking\r\n>> calendar so future changes stay synced.\r\n>>\r\n>> See you soon,\r\n>> Karma Yoga\r\n>>\r\n>> *Class:* \ud83d\ude80 Fly into Yin\r\n>>\r\n>> *Date:* Friday, September 4, 2026\r\n>>\r\n>> *Time:* 5:30 PM EDT\r\n>> Add this class\r\n>> <https://app.karma.yoga/api/org/public/student-calendar-event/eyJ2ZXJzaW9uIjoxLCJvcmdhbml6YXRpb25JZCI6Im9yZ183dnNmUUFJNHc0ZF8iLCJwcm9maWxlSWQiOiJvdXBfSTllcFRKTlZ5dG9Cd054YSIsIm9jY3VycmVuY2V",
+    "uid": "<CAH=JcpJ1fet0c2j-JTJjiU8VvWQS2nF+=d+6mDjjNc+Yk3HdLQ@mail.gmail.com>",
+    "needs_review": true,
+    "from": "Karma Team <team@karma.yoga>"
+  },
+  {
+    "id": "713e5464cf2a499f9b1fd376619b921e",
+    "source": "Gmail",
+    "title": "Security Alert: Signon from New Device",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "Dear Esther Scott, Your Workday Account was just signed in to from a new Mac OS X device. You're getting this email to make sure it was you. Time: 9/3/26, 7:09 PM Device: Chrome on Mac OS X Tenant: draftkings If you don't recognize this action, immediately notify your company's Workday administrator and follow your organization's policies to reset your password. This email box is not monitored. Please do not reply to this message. This email was intended for esther.evelyn@gmail.com DraftKings \u00b7 222 Berkeley St., Boston, MA 02116",
+    "uid": "<010001a06988c84a-5d803eb4-312a-4231-8e0f-3fc6be7fe612-000000@email.amazonses.com>",
+    "needs_review": true,
+    "from": "draftkings@myworkday.com"
   }
 ]

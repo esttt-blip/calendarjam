@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-09-03T10:31:33.950472-04:00",
-  "generated_label": "Thu Sep 3, 10:31 AM",
-  "weather": {
-    "high_f": 96,
-    "low_f": 73,
-    "precip_pct": 27,
-    "emoji": "\ud83c\udf26",
-    "label": "Light drizzle"
-  },
+  "generated_at": "2026-09-04T06:00:54.643802-04:00",
+  "generated_label": "Fri Sep 4, 6:00 AM",
+  "weather": null,
   "theme": {
     "emoji": "\ud83d\udee0\ufe0f",
     "title": "Labor Day Week",
@@ -17,63 +11,12 @@
   },
   "week": [
     {
-      "date": "2026-09-03",
-      "label": "Today \u00b7 Thu Sep 3",
-      "weather": {
-        "high_f": 96,
-        "low_f": 73,
-        "precip_pct": 27,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
-      "events": [
-        {
-          "time": "10:05 am",
-          "title": "Esther - Eye Doc",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-03T10:05:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc2c3A0NGgxbDZjbzQ4ZDFwNmNzazhoMWc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNjkzNGFkcG42b3FqY2U5ajY0cTNlZGhrNjkwa2FnaG42b3JqY2NxNjhncDM4Y3ExNjUyZyBlc3RoZXIuZXZlbHluQG0"
-        },
-        {
-          "time": "10:05 am",
-          "title": "Esther - Eye Doc",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-03T10:05:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=cnJkbjRyOWFyN2oxNjk4cG9zNXNhZ2p2aG8gZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "10:25 am",
-          "title": "Appointment with Virginia Vision Associates",
-          "location": "Virginia Vision Associates, 3800 Fairfax Dr. Suite 1, Arlington, VA 22203",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-03T10:25:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=bm1iOWRlZGpwbjYybXBxanI0YmEzZzIxZjQgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:45 pm",
-          "title": "VIRTUAL Restorative Yoga",
-          "location": "Portland Yoga Collective",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-03T18:45:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=b2RuaWJhOGdhaTNucGhhZzk4NzdrMDEzZTggZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-09-04",
-      "label": "Tomorrow \u00b7 Fri Sep 4",
+      "label": "Today \u00b7 Fri Sep 4",
       "weather": {
-        "high_f": 95,
-        "low_f": 73,
-        "precip_pct": 32,
+        "high_f": 93,
+        "low_f": 70,
+        "precip_pct": 64,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -129,14 +72,14 @@
     },
     {
       "date": "2026-09-05",
-      "label": "Saturday \u00b7 Sep 5",
+      "label": "Tomorrow \u00b7 Sat Sep 5",
       "weather": {
-        "high_f": 87,
-        "low_f": 70,
-        "precip_pct": 32,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "high_f": 83,
+        "low_f": 71,
+        "precip_pct": 30,
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
       },
       "events": [
         {
@@ -183,11 +126,11 @@
       "label": "Sunday \u00b7 Sep 6",
       "weather": {
         "high_f": 83,
-        "low_f": 65,
-        "precip_pct": 8,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "low_f": 66,
+        "precip_pct": 12,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
       },
       "events": [
         {
@@ -258,9 +201,9 @@
       "date": "2026-09-07",
       "label": "Monday \u00b7 Sep 7",
       "weather": {
-        "high_f": 83,
+        "high_f": 85,
         "low_f": 64,
-        "precip_pct": 1,
+        "precip_pct": 6,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -334,9 +277,9 @@
       "date": "2026-09-08",
       "label": "Tuesday \u00b7 Sep 8",
       "weather": {
-        "high_f": 85,
-        "low_f": 62,
-        "precip_pct": 1,
+        "high_f": 87,
+        "low_f": 63,
+        "precip_pct": 2,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -376,14 +319,23 @@
       "date": "2026-09-09",
       "label": "Wednesday \u00b7 Sep 9",
       "weather": {
-        "high_f": 91,
-        "low_f": 67,
-        "precip_pct": 5,
+        "high_f": 94,
+        "low_f": 66,
+        "precip_pct": 10,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
       },
       "events": [
+        {
+          "time": "8:30 am",
+          "title": "Henry eye appointment",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-09T08:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=djFwaDJ1aXZuOTN2cDJ2cDVkZnQ3aTF0dG8gZXN0aGVyLmV2ZWx5bkBt"
+        },
         {
           "time": "6:30 pm",
           "title": "\ud83d\ude97 Drive to VIVA practice (carpool pickups)",
@@ -413,6 +365,39 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-09-10",
+      "label": "Thursday \u00b7 Sep 10",
+      "weather": {
+        "high_f": 90,
+        "low_f": 70,
+        "precip_pct": 22,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
+      "events": [
+        {
+          "time": "7:15 pm",
+          "title": "\ud83d\ude97 Drive to Karma Yoga (Restorative Yoga & Reiki)",
+          "location": "Karma Yoga, 246-A W Broad St, Falls Church, VA 22046",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-09-10T19:15:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Nmc4aW9hN3NvM25nZTZncnJiNmc1a2hmMmMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:30 pm",
+          "title": "\u2728 Restorative Yoga & Reiki",
+          "location": "Karma Yoga",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-10T19:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=aGZiOTl0YTUzaHQzZ3AxdTI5OGQ3ZTNrYjAgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -420,19 +405,19 @@
       {
         "title": "Brent's Birthday",
         "day": "Tue Sep 15",
-        "days_out": 12
+        "days_out": 11
       },
       {
         "title": "Brent Scott's Birthday",
         "day": "Tue Sep 15",
-        "days_out": 12
+        "days_out": 11
       }
     ],
     "holidays": [
       {
         "title": "Labor Day",
         "day": "Mon Sep 7",
-        "days_out": 4
+        "days_out": 3
       }
     ]
   }
