@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-09-04T10:19:26.730758-04:00",
-  "generated_label": "Fri Sep 4, 10:19 AM",
-  "weather": {
-    "high_f": 93,
-    "low_f": 70,
-    "precip_pct": 64,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-09-05T06:01:03.280241-04:00",
+  "generated_label": "Sat Sep 5, 6:01 AM",
+  "weather": null,
   "theme": {
     "emoji": "\ud83d\udee0\ufe0f",
     "title": "Labor Day Week",
@@ -17,76 +11,9 @@
   },
   "week": [
     {
-      "date": "2026-09-04",
-      "label": "Today \u00b7 Fri Sep 4",
-      "weather": {
-        "high_f": 93,
-        "low_f": 70,
-        "precip_pct": 64,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "EP",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-09-04T00:00",
-          "link": "https://www.google.com/calendar/event?eid=NGlkYWdqazk5aGlvMXBtcmZybmxyb2c1Ym9fMjAyNjA5MDQgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "9:00 am",
-          "title": "\ud83d\udcda School Holiday (Labor Day)",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-04T09:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Y2hnNmxvZ3I3Y2xta25idTJvMjl1ZW52bmMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "5:15 pm",
-          "title": "\ud83d\ude97 Drive to Karma Yoga (Fly into Yin)",
-          "location": "Karma Yoga, 246-A W Broad St, Falls Church, VA 22046",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-09-04T17:15:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=NmQwNHZzcHQxMzc2czk4ZWZiNThraGg4dmMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "5:30 pm",
-          "title": "\ud83d\ude80 Fly into Yin",
-          "location": "Karma Yoga",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-04T17:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=MjFhb3ZmYnR2cHJrOG9tN2Z2YzgxcnVjZjQgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:00 pm",
-          "title": "\u26bd Henry \u2014 VIVA practice",
-          "location": "Justice High School, 3301 Peace Valley Ln, Falls Church, VA 22044",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-04T18:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Z2YzNzRsdG9mcXF0ZG5nYzh0MGs5ZjhramcgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-09-05",
-      "label": "Tomorrow \u00b7 Sat Sep 5",
-      "weather": {
-        "high_f": 82,
-        "low_f": 71,
-        "precip_pct": 27,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Today \u00b7 Sat Sep 5",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -129,15 +56,8 @@
     },
     {
       "date": "2026-09-06",
-      "label": "Sunday \u00b7 Sep 6",
-      "weather": {
-        "high_f": 81,
-        "low_f": 65,
-        "precip_pct": 12,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "label": "Tomorrow \u00b7 Sun Sep 6",
+      "weather": null,
       "events": [
         {
           "time": "9:15 am",
@@ -221,14 +141,7 @@
     {
       "date": "2026-09-07",
       "label": "Monday \u00b7 Sep 7",
-      "weather": {
-        "high_f": 82,
-        "low_f": 64,
-        "precip_pct": 6,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -297,14 +210,7 @@
     {
       "date": "2026-09-08",
       "label": "Tuesday \u00b7 Sep 8",
-      "weather": {
-        "high_f": 86,
-        "low_f": 63,
-        "precip_pct": 2,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -330,15 +236,17 @@
     {
       "date": "2026-09-09",
       "label": "Wednesday \u00b7 Sep 9",
-      "weather": {
-        "high_f": 92,
-        "low_f": 64,
-        "precip_pct": 10,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
+        {
+          "time": "all day",
+          "title": "\ud83c\udf71 MightyMeals delivery",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-09-09T00:00",
+          "link": "https://www.google.com/calendar/event?eid=cGY1bzIwcDh2NjJzNjg4bTdodmM0MWpvN3MgZXN0aGVyLmV2ZWx5bkBt"
+        },
         {
           "time": "8:30 am",
           "title": "Henry eye appointment",
@@ -381,14 +289,7 @@
     {
       "date": "2026-09-10",
       "label": "Thursday \u00b7 Sep 10",
-      "weather": {
-        "high_f": 86,
-        "low_f": 67,
-        "precip_pct": 22,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "7:15 pm",
@@ -410,6 +311,50 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-09-11",
+      "label": "Friday \u00b7 Sep 11",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "EP",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-09-11T00:00",
+          "link": "https://www.google.com/calendar/event?eid=NGlkYWdqazk5aGlvMXBtcmZybmxyb2c1Ym9fMjAyNjA5MTEgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "all day",
+          "title": "Ski rentals for Henry",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-09-11T00:00",
+          "link": "https://www.google.com/calendar/event?eid=Nzhtc2F2bHAwbWpmM2d2NDNrN3R0N2IzamkgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "5:45 pm",
+          "title": "\ud83d\ude97 Drive to VIVA practice (Justice HS)",
+          "location": "Justice High School, 3301 Peace Valley Ln, Falls Church, VA 22044",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-09-11T17:45:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=YmI1ZWV1NHY5YW1tcHBxdXNiMzZkdTg3OWcgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "6:00 pm",
+          "title": "\u26bd Henry \u2014 VIVA practice",
+          "location": "Justice High School, 3301 Peace Valley Ln, Falls Church, VA 22044",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-11T18:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=NGNmc2pzZGRxajBlZ200NDRlMzY2a25tN2MgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -417,19 +362,19 @@
       {
         "title": "Brent's Birthday",
         "day": "Tue Sep 15",
-        "days_out": 11
+        "days_out": 10
       },
       {
         "title": "Brent Scott's Birthday",
         "day": "Tue Sep 15",
-        "days_out": 11
+        "days_out": 10
       }
     ],
     "holidays": [
       {
         "title": "Labor Day",
         "day": "Mon Sep 7",
-        "days_out": 3
+        "days_out": 2
       }
     ]
   }
