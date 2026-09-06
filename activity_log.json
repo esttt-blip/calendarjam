@@ -1704,5 +1704,12 @@
     "action": "dismissed",
     "title": "\ud83d\udc3e Sound Immersion, Paws and Poses, and White Lotus Fall Retreat",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-09-06T10:00:47.088973+00:00",
+    "action": "added",
+    "title": "Book Club Hang!",
+    "source": "Gmail invite",
+    "when": "2026-11-13T18:30"
   }
 ]
