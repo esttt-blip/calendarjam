@@ -1711,5 +1711,11 @@
     "title": "Book Club Hang!",
     "source": "Gmail invite",
     "when": "2026-11-13T18:30"
+  },
+  {
+    "ts": "2026-09-07T15:14:16.156391+00:00",
+    "action": "dismissed",
+    "title": "Reservation CONFIRMED",
+    "source": "Gmail"
   }
 ]
