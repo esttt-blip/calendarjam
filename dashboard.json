@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-09-06T09:41:17.722487-04:00",
-  "generated_label": "Sun Sep 6, 9:41 AM",
-  "weather": {
-    "high_f": 84,
-    "low_f": 63,
-    "precip_pct": 3,
-    "emoji": "\ud83c\udf26",
-    "label": "Light drizzle"
-  },
+  "generated_at": "2026-09-07T06:00:50.072244-04:00",
+  "generated_label": "Mon Sep 7, 6:00 AM",
+  "weather": null,
   "theme": {
     "emoji": "\ud83d\udee0\ufe0f",
     "title": "Labor Day Week",
@@ -17,107 +11,9 @@
   },
   "week": [
     {
-      "date": "2026-09-06",
-      "label": "Today \u00b7 Sun Sep 6",
-      "weather": {
-        "high_f": 84,
-        "low_f": 63,
-        "precip_pct": 3,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
-      "events": [
-        {
-          "time": "9:15 am",
-          "title": "\ud83d\ude97 Drive to VIVA game (Poplar Tree Park)",
-          "location": "Poplar Tree Park, 4718 Stringfellow Rd, Fairfax, VA 22030",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-09-06T09:15:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=aGU2NWkzcWFpY2JhcmU4aHVidjhlY3VxcmcgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "10:30 am",
-          "title": "\u26bd Henry \u2014 VIVA game vs Villarreal Verde",
-          "location": "Poplar Tree Park, 4718 Stringfellow Rd, Fairfax, VA 22030",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-06T10:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ZWYwMnFuNzBlYmNyaTE0bDBmZWJqaW00Z2cgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "11:30 am",
-          "title": "Arsenal v Chelsea @ Hulu",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-06T11:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=dXBmaGM2c2lvbnB1OTNqZ2FxbGdnNWdqMTAgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "4:00 pm",
-          "title": "Spirit @ Thorns (CBS)",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-06T16:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=cjc1b2syYmsxbTdxbjVoZjh0ZXJib2gxMjQgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "4:20 pm",
-          "title": "\ud83d\ude97 Drive to East Potomac Golf Links",
-          "location": "East Potomac Golf Links, 972 Ohio Dr SW, Washington, DC 20024",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-09-06T16:20:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=cjE1YmdhODZpZmJiYzlwa2plOGt2NjYxZTAgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "5:10 pm",
-          "title": "\u26f3 Golf \u2014 East Potomac (Blue)",
-          "location": "East Potomac Golf Links, 972 Ohio Dr SW, Washington, DC 20024",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-06T17:10:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=YTM0ZzRrYm41N2s1b2pwdXZxOG4za2hwZWMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "5:10 pm",
-          "title": "Reservation at East Potomac Golf Links - BLUE Course",
-          "location": "East Potomac Golf Links - BLUE Course, East Potomac Golf Links - BLUE Course, 972 Ohio Dr. SW, Washington, DC 20024, US",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-06T17:10:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Y3Zxamk2Y2NuZXM0MWNtc3ZsM2UyMmhnOTggZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": [
-        {
-          "a": "\u26bd Henry \u2014 VIVA game vs Villarreal Verde",
-          "a_time": "10:30 am",
-          "b": "Arsenal v Chelsea @ Hulu",
-          "b_time": "11:30 am"
-        },
-        {
-          "a": "Spirit @ Thorns (CBS)",
-          "a_time": "4:00 pm",
-          "b": "\u26f3 Golf \u2014 East Potomac (Blue)",
-          "b_time": "5:10 pm"
-        }
-      ]
-    },
-    {
       "date": "2026-09-07",
-      "label": "Tomorrow \u00b7 Mon Sep 7",
-      "weather": {
-        "high_f": 82,
-        "low_f": 63,
-        "precip_pct": 4,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Today \u00b7 Mon Sep 7",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -138,24 +34,6 @@
           "link": "https://www.google.com/calendar/event?eid=Y3BiMmxwZHVxamgwcWFyczdpdmxyaGE1YzQgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
-          "time": "8:10 am",
-          "title": "\u26f3 Golf \u2014 East Potomac (Red)",
-          "location": "East Potomac Golf Links, 972 Ohio Dr SW, Washington, DC 20024",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-07T08:10:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ZzUwc2wwbXQ2dmFta2g4bGNxbWwwZ3VtM2sgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "8:10 am",
-          "title": "Reservation at East Potomac Golf Links - Red",
-          "location": "East Potomac Golf Links - Red, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-07T08:10:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=cDBxN3NtNmNobGppMGppMTdoMnZmcWRxcGcgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
           "time": "9:00 am",
           "title": "\ud83d\udcda School Holiday (Labor Day)",
           "location": "",
@@ -163,6 +41,15 @@
           "is_drive": false,
           "sort": "2026-09-07T09:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=OHA2MGplbG41bDM4c2c2bmQ0amRnZjhlMHMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "1:00 pm",
+          "title": "4th floor hang",
+          "location": "Caf\u00e9 Monet, 6910 Fleetwood Rd, McLean, VA 22101, USA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-07T13:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=MXJjYW8wczd0aDJua3J0M2VnZDMzZHRxOG8gZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "7:00 pm",
@@ -176,24 +63,17 @@
       ],
       "conflicts": [
         {
-          "a": "\u26f3 Golf \u2014 East Potomac (Red)",
-          "a_time": "8:10 am",
-          "b": "\ud83d\udcda School Holiday (Labor Day)",
-          "b_time": "9:00 am"
+          "a": "\ud83d\udcda School Holiday (Labor Day)",
+          "a_time": "9:00 am",
+          "b": "4th floor hang",
+          "b_time": "1:00 pm"
         }
       ]
     },
     {
       "date": "2026-09-08",
-      "label": "Tuesday \u00b7 Sep 8",
-      "weather": {
-        "high_f": 86,
-        "low_f": 65,
-        "precip_pct": 2,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Tomorrow \u00b7 Tue Sep 8",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -219,14 +99,7 @@
     {
       "date": "2026-09-09",
       "label": "Wednesday \u00b7 Sep 9",
-      "weather": {
-        "high_f": 91,
-        "low_f": 64,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -279,14 +152,7 @@
     {
       "date": "2026-09-10",
       "label": "Thursday \u00b7 Sep 10",
-      "weather": {
-        "high_f": 94,
-        "low_f": 70,
-        "precip_pct": 45,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "7:15 pm",
@@ -312,14 +178,7 @@
     {
       "date": "2026-09-11",
       "label": "Friday \u00b7 Sep 11",
-      "weather": {
-        "high_f": 82,
-        "low_f": 69,
-        "precip_pct": 35,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -363,14 +222,7 @@
     {
       "date": "2026-09-12",
       "label": "Saturday \u00b7 Sep 12",
-      "weather": {
-        "high_f": 88,
-        "low_f": 66,
-        "precip_pct": 14,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -383,6 +235,50 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-09-13",
+      "label": "Sunday \u00b7 Sep 13",
+      "weather": null,
+      "events": [
+        {
+          "time": "10:30 am",
+          "title": "\ud83d\ude97 Drive to VIVA game (Potomac Green Park)",
+          "location": "Potomac Green Park, 20750 Marblehead Dr, Ashburn, VA 20147",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-09-13T10:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=bGRncGJndnRtOXNxZGxjMG5oYWg3YzFjZmsgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "12:00 pm",
+          "title": "\u26bd Henry \u2014 VIVA game vs LOUD",
+          "location": "Potomac Green Park, 20750 Marblehead Dr, Ashburn, VA 20147",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-13T12:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=MjIzYjRxcDV1amluNjh1bHJ1OG1zYnVzaTAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "12:10 pm",
+          "title": "\ud83d\ude97 Drive to Audi Field (Spirit vs Boston)",
+          "location": "Audi Field, 100 Potomac Ave SW, Washington, DC 20024",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-09-13T12:10:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=a3BhcWcyajRkcWVqa3M5aGoxNmk1aWUwcjQgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "1:00 pm",
+          "title": "Spirit vs Boston (ESPN)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-13T13:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=cmJlNnAzOW9kbmtnMmwyaXMwZmNyN2MwOGsgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -390,19 +286,19 @@
       {
         "title": "Brent's Birthday",
         "day": "Tue Sep 15",
-        "days_out": 9
+        "days_out": 8
       },
       {
         "title": "Brent Scott's Birthday",
         "day": "Tue Sep 15",
-        "days_out": 9
+        "days_out": 8
       }
     ],
     "holidays": [
       {
         "title": "Labor Day",
         "day": "Mon Sep 7",
-        "days_out": 1
+        "days_out": 0
       }
     ]
   }
