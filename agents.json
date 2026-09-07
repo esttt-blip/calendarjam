@@ -48,7 +48,7 @@
       },
       "status": {
         "state": "live",
-        "updated": "2026-09-05",
+        "updated": "2026-09-07",
         "cheapest_plan": "Dec 19 \u2192 Jan 2",
         "cheapest_econ": 5707,
         "results": [
@@ -69,38 +69,7 @@
               "insights": null
             },
             "business": {
-              "low": 16776,
-              "flight_numbers": [
-                "LH 415",
-                "LH 1870"
-              ],
-              "airlines": [
-                "Lufthansa",
-                "Lufthansa"
-              ],
-              "is_united": false,
-              "layovers": 1,
-              "insights": null
-            }
-          },
-          {
-            "label": "Dec 19 \u2192 Jan 3",
-            "economy": {
-              "low": 6311,
-              "flight_numbers": [
-                "AC 8619",
-                "AC 890"
-              ],
-              "airlines": [
-                "Air Canada",
-                "Air Canada"
-              ],
-              "is_united": false,
-              "layovers": 1,
-              "insights": null
-            },
-            "business": {
-              "low": 16772,
+              "low": 16718,
               "flight_numbers": [
                 "UA 950",
                 "AZ 159"
@@ -110,6 +79,37 @@
                 "ITA"
               ],
               "is_united": true,
+              "layovers": 1,
+              "insights": null
+            }
+          },
+          {
+            "label": "Dec 19 \u2192 Jan 3",
+            "economy": {
+              "low": 5707,
+              "flight_numbers": [
+                "TK 188",
+                "TK 1861"
+              ],
+              "airlines": [
+                "Turkish Airlines",
+                "Turkish Airlines"
+              ],
+              "is_united": false,
+              "layovers": 1,
+              "insights": null
+            },
+            "business": {
+              "low": 16763,
+              "flight_numbers": [
+                "LH 415",
+                "LH 1870"
+              ],
+              "airlines": [
+                "Lufthansa",
+                "Lufthansa"
+              ],
+              "is_united": false,
               "layovers": 1,
               "insights": null
             }
@@ -375,6 +375,13 @@
           "Dec 19 \u2192 Jan 2 business": 16776,
           "Dec 19 \u2192 Jan 3 economy": 6311,
           "Dec 19 \u2192 Jan 3 business": 16772
+        },
+        {
+          "date": "2026-09-07",
+          "Dec 19 \u2192 Jan 2 economy": 5707,
+          "Dec 19 \u2192 Jan 2 business": 16718,
+          "Dec 19 \u2192 Jan 3 economy": 5707,
+          "Dec 19 \u2192 Jan 3 business": 16763
         }
       ]
     }
