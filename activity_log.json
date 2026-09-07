@@ -1735,5 +1735,11 @@
     "action": "dismissed",
     "title": "Appointment reminder from Virginia Vision Associates",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-09-07T21:44:38.519429+00:00",
+    "action": "dismissed",
+    "title": "You're booked: \ud83d\ude80 Fly into Yin",
+    "source": "Gmail"
   }
 ]
