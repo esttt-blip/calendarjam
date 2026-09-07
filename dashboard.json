@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-09-07T06:00:50.072244-04:00",
-  "generated_label": "Mon Sep 7, 6:00 AM",
-  "weather": null,
+  "generated_at": "2026-09-07T11:49:11.211716-04:00",
+  "generated_label": "Mon Sep 7, 11:49 AM",
+  "weather": {
+    "high_f": 84,
+    "low_f": 62,
+    "precip_pct": 0,
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
+  },
   "theme": {
     "emoji": "\ud83d\udee0\ufe0f",
     "title": "Labor Day Week",
@@ -13,7 +19,14 @@
     {
       "date": "2026-09-07",
       "label": "Today \u00b7 Mon Sep 7",
-      "weather": null,
+      "weather": {
+        "high_f": 84,
+        "low_f": 62,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -25,13 +38,13 @@
           "link": "https://www.google.com/calendar/event?eid=NGlkYWdqazk5aGlvMXBtcmZybmxyb2c1Ym9fMjAyNjA5MDcgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
-          "time": "7:20 am",
-          "title": "\ud83d\ude97 Drive to East Potomac Golf Links",
-          "location": "East Potomac Golf Links, 972 Ohio Dr SW, Washington, DC 20024",
+          "time": "7:45 am",
+          "title": "\ud83d\ude97 Drive to VIVA game (Sully Highlands Park)",
+          "location": "Sully Highlands Park, 13808 Wall Rd, Herndon, VA 20171",
           "all_day": false,
           "is_drive": true,
-          "sort": "2026-09-07T07:20:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Y3BiMmxwZHVxamgwcWFyczdpdmxyaGE1YzQgZXN0aGVyLmV2ZWx5bkBt"
+          "sort": "2026-09-07T07:45:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=MmVrbnRlZWtjczR1NjljN2VqYTI2OTA0OHMgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "9:00 am",
@@ -43,6 +56,15 @@
           "link": "https://www.google.com/calendar/event?eid=OHA2MGplbG41bDM4c2c2bmQ0amRnZjhlMHMgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
+          "time": "9:00 am",
+          "title": "\u26bd Henry \u2014 VIVA game vs Villarreal Verde",
+          "location": "Sully Highlands Park, 13808 Wall Rd, Herndon, VA 20171",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-07T09:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=OHFyYzNwYTUycmpqZzY4N2NzanFsdDQ0ZDggZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
           "time": "1:00 pm",
           "title": "4th floor hang",
           "location": "Caf\u00e9 Monet, 6910 Fleetwood Rd, McLean, VA 22101, USA",
@@ -50,15 +72,6 @@
           "is_drive": false,
           "sort": "2026-09-07T13:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=MXJjYW8wczd0aDJua3J0M2VnZDMzZHRxOG8gZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "\u26bd Henry \u2014 VIVA practice",
-          "location": "Pine Ridge Park, 3401 Woodburn Rd, Annandale, VA 22003",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-07T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ZmFjZ3NrZTU1bXRzM3R0anFtM2YzdXJiaGsgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": [
@@ -73,7 +86,14 @@
     {
       "date": "2026-09-08",
       "label": "Tomorrow \u00b7 Tue Sep 8",
-      "weather": null,
+      "weather": {
+        "high_f": 88,
+        "low_f": 62,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -99,7 +119,14 @@
     {
       "date": "2026-09-09",
       "label": "Wednesday \u00b7 Sep 9",
-      "weather": null,
+      "weather": {
+        "high_f": 92,
+        "low_f": 65,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -152,7 +179,14 @@
     {
       "date": "2026-09-10",
       "label": "Thursday \u00b7 Sep 10",
-      "weather": null,
+      "weather": {
+        "high_f": 88,
+        "low_f": 69,
+        "precip_pct": 52,
+        "weather_code": 81,
+        "emoji": "\ud83c\udf27",
+        "label": "Showers"
+      },
       "events": [
         {
           "time": "7:15 pm",
@@ -178,7 +212,14 @@
     {
       "date": "2026-09-11",
       "label": "Friday \u00b7 Sep 11",
-      "weather": null,
+      "weather": {
+        "high_f": 85,
+        "low_f": 69,
+        "precip_pct": 48,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
       "events": [
         {
           "time": "all day",
@@ -222,7 +263,14 @@
     {
       "date": "2026-09-12",
       "label": "Saturday \u00b7 Sep 12",
-      "weather": null,
+      "weather": {
+        "high_f": 82,
+        "low_f": 68,
+        "precip_pct": 26,
+        "weather_code": 80,
+        "emoji": "\ud83c\udf26",
+        "label": "Showers"
+      },
       "events": [
         {
           "time": "all day",
@@ -239,7 +287,14 @@
     {
       "date": "2026-09-13",
       "label": "Sunday \u00b7 Sep 13",
-      "weather": null,
+      "weather": {
+        "high_f": 79,
+        "low_f": 70,
+        "precip_pct": 20,
+        "weather_code": 55,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy drizzle"
+      },
       "events": [
         {
           "time": "10:30 am",
