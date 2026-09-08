@@ -1747,5 +1747,11 @@
     "action": "dismissed",
     "title": "Invitation for Board Participation",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-09-08T12:40:49.320380+00:00",
+    "action": "dismissed",
+    "title": "Transfer Rescheduled",
+    "source": "Gmail"
   }
 ]
