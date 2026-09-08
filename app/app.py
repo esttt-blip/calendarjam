@@ -523,9 +523,46 @@ _pending_before = len(pending)
 pending = [it for it in pending if not _already_on_calendar(it)]
 _pending_deduped = _pending_before - len(pending)
 
+# ── Forward-only ────────────────────────────────
+# "Needs you" is a decision surface, so it must never show history. A refactor
+# dropped this guard, which is why the box filled with old items. Restore it:
+# drop any pending item or conflict whose date is already past, and age out
+# stale *undated* items (no parseable date + first surfaced >7 days ago).
+_today = datetime.now().astimezone().date()
+
+
+def _item_date(item: dict):
+    raw = next((item.get(k) for k in
+                ("start", "start_iso", "when", "start_time", "dtstart",
+                 "datetime", "sort", "date", "end", "end_iso", "dtend")
+                if item.get(k)), None)
+    d = _parse(str(raw)) if raw else None
+    return d.date() if d else None
+
+
+def _item_stale(item: dict) -> bool:
+    dt = _item_date(item)
+    if dt is not None:
+        return dt < _today
+    ts = next((item.get(k) for k in
+               ("ts", "first_seen", "surfaced", "added", "created")
+               if item.get(k)), None)
+    d = _parse(str(ts)) if ts else None
+    if d is not None:
+        return (_today - d.date()).days > 7
+    return False
+
+
+_pending_pre_fwd = len(pending)
+pending = [it for it in pending if not _item_stale(it)]
+_pending_dropped_past = _pending_pre_fwd - len(pending)
+
 ignored_set = set(ignored_conflicts or [])
 all_conflicts = []
 for day in week:
+    _dd = _parse(str(day.get("date"))) if day.get("date") else None
+    if _dd is not None and _dd.date() < _today:
+        continue
     for c in day.get("conflicts", []):
         cc = {**c, "day": day["label"], "date": day.get("date")}
         if _conf_sig(cc) not in ignored_set:
@@ -659,6 +696,13 @@ st.markdown(
 
 if not dash:
     st.warning("No dashboard snapshot yet — the next 6 AM sync will populate this.", icon="⏳")
+else:
+    # Staleness banner: the app only refreshes when the sync pushes fresh JSON
+    # to the repo, so an old snapshot should say so instead of looking current.
+    _gen = _parse(str((dash or {}).get("generated_at") or ""))
+    if _gen is not None and (datetime.now(_gen.tzinfo) - _gen).days >= 2:
+        _age = (datetime.now(_gen.tzinfo) - _gen).days
+        st.warning(f"⚠️ This snapshot is {_age} days old — the dashboard only updates when the daily sync pushes to GitHub.", icon="🕰️")
 
 
 # ─────────────────────────── 2. today (+ insights) ───────────────────────────
