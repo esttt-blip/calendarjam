@@ -553,8 +553,43 @@ def _item_stale(item: dict) -> bool:
     return False
 
 
+_MONTHS = {m: i for i, m in enumerate(
+    ["january", "february", "march", "april", "may", "june", "july",
+     "august", "september", "october", "november", "december"], 1)}
+
+
+def _freetext_dates(text: str):
+    """Dates written into an email title/body (e.g. "September 3, 2026",
+    "9/3/26", "9.7.26") — many review items carry no structured date, so this
+    is the only way to tell a past reminder from a live one."""
+    found = []
+    for m in _re.finditer(r'([A-Za-z]{3,9})\s+(\d{1,2}),?\s+(20\d{2})', text or ""):
+        mo = _MONTHS.get(m.group(1).lower())
+        if mo:
+            try:
+                found.append(datetime(int(m.group(3)), mo, int(m.group(2))).date())
+            except Exception:
+                pass
+    for m in _re.finditer(r'\b(\d{1,2})[/.](\d{1,2})[/.](\d{2,4})\b', text or ""):
+        mo, d, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        y += 2000 if y < 100 else 0
+        if 1 <= mo <= 12 and 1 <= d <= 31:
+            try:
+                found.append(datetime(y, mo, d).date())
+            except Exception:
+                pass
+    return found
+
+
+def _freetext_past(item: dict) -> bool:
+    """Drop a review item when every date mentioned in it is already past —
+    a reminder for a Sep 3 appointment is not a decision on Sep 8."""
+    ds = _freetext_dates((item.get("title") or "") + " " + (item.get("description") or ""))
+    return bool(ds) and max(ds) < _today
+
+
 _pending_pre_fwd = len(pending)
-pending = [it for it in pending if not _item_stale(it)]
+pending = [it for it in pending if not (_item_stale(it) or _freetext_past(it))]
 _pending_dropped_past = _pending_pre_fwd - len(pending)
 
 ignored_set = set(ignored_conflicts or [])
