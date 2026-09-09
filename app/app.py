@@ -55,8 +55,7 @@ DEFAULT_OPEN_ITEMS = [
 ]
 
 # Known trips. Each carries a real end date so past trips drop off the planner
-# automatically, and an optional agent_id binding it to a flight-watch agent in
-# agents.json — that agent's fares then render inside the trip itself.
+# automatically.
 TRIPS = [
     {"title": "🛳️ Seattle + Alaska cruise", "window": "Jul 8–19", "end": "2026-07-19",
      "detail": "Cruise Jul 11–18 · away (Seattle) Jul 8–19 · Milo boarding + mail hold"},
@@ -65,11 +64,9 @@ TRIPS = [
     {"title": "🇧🇬 Bulgaria — Sofia (work)", "window": "Aug 9 – 14", "end": "2026-08-14",
      "detail": "Esther · depart ~Aug 9 as boys return · back Aug 14"},
     {"title": "🇮🇹 Italy", "window": "Dec 19 – Jan 3", "end": "2027-01-03",
-     "detail": "IAD → Rome Dec 19 · home Munich → IAD · comparing Jan 2 vs Jan 3 return",
-     "agent_id": "italy-flights"},
+     "detail": "IAD → Rome Dec 19 · home Munich → IAD (flights booked)"},
 ]
 
-# Agents framework — none active yet; the Italy example shows the shape.
 AGENTS = []
 
 # Recurring maintenance / health cadence — reference list for now.
@@ -408,45 +405,6 @@ div[data-testid="stVerticalBlockBorderWrapper"] [data-testid="stHorizontalBlock"
   .ad-school  { background:#efe9fb; color:#5a34a8; }  /* school */
   .ad-default { background:#eef2fb; color:#34508f; }  /* everything else */
 
-  /* Flight price-drop alert banner */
-  .falert { background:linear-gradient(135deg,#e9f7ef,#f4fbf6); border:1.5px solid #1c7a46;
-            border-radius:14px; padding:11px 15px; margin:2px 0 10px; }
-  .falert-head { font-size:13px; font-weight:800; color:#14663a; letter-spacing:.02em;
-                 display:flex; align-items:center; gap:7px; margin-bottom:5px; }
-  .falert-row { font-size:13px; color:#1a1a2e; padding:3px 0; line-height:1.4; }
-  .falert-drop { color:#1c7a46; font-weight:800; }
-  .falert-badge { background:#1c7a46; color:#fff; font-size:9.5px; font-weight:700; padding:2px 7px;
-                  border-radius:10px; text-transform:uppercase; letter-spacing:.04em; margin-left:6px;
-                  vertical-align:middle; }
-  .falert-sub { font-size:11px; color:#6f8a79; margin-top:4px; }
-
-  /* Flight-watch cards */
-  .fgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(225px,1fr)); gap:12px; margin:6px 0; }
-  .fcard { background:#fff; border:1px solid #ececf2; border-radius:14px; padding:13px 15px;
-           box-shadow:0 1px 3px rgba(20,20,40,.04); }
-  .fcard.fbest { border:2px solid #1c7a46; }
-  .fhead { font-size:13px; font-weight:700; color:#1a1a2e; display:flex; justify-content:space-between;
-           align-items:center; gap:6px; }
-  .fbadge { background:#e9f7ef; color:#1c7a46; font-size:9.5px; font-weight:700; padding:2px 7px;
-            border-radius:10px; text-transform:uppercase; letter-spacing:.04em; white-space:nowrap; }
-  .fprice { font-size:23px; font-weight:800; color:#1a1a2e; margin-top:7px; line-height:1.1; }
-  .fcab { font-size:12px; font-weight:500; color:#9a9aa7; }
-  .fpp { font-size:11px; color:#9a9aa7; }
-  .fbiz { font-size:12px; color:#5b5b6b; margin-top:4px; }
-  .fair { font-size:12.5px; color:#333; margin-top:7px; }
-  .ffn { font-size:11px; color:#b0b0ba; font-family:ui-monospace,monospace; margin-top:2px; }
-  .frng { font-size:11px; color:#9a9aa7; margin-top:7px; padding-top:6px; border-top:1px solid #f4f4f7; }
-
-  /* Flight price table */
-  .ftbl { width:100%; border-collapse:collapse; font-size:13px; margin-top:4px; }
-  .ftbl th { text-align:left; font-size:10.5px; text-transform:uppercase; letter-spacing:.04em;
-             color:#9398a8; font-weight:700; padding:6px 10px; border-bottom:1px solid #ececf2; }
-  .ftbl td { padding:7px 10px; border-bottom:1px solid #f4f4f7; color:#1a1a2e; }
-  .ftbl-best td { background:#dff2e6; font-weight:600; }
-  .ftbl-b0 td { background:#ffffff; }
-  .ftbl-b1 td { background:#f3f4f8; }
-  .ffnum { font-family:ui-monospace,monospace; font-size:11.5px; color:#5b5b6b; white-space:nowrap; }
-
   /* Shopping deals cell — only rendered when something's on sale */
   .deal-card { background:linear-gradient(135deg,#e9f7ef,#f4fbf6); border:1.5px solid #1c7a46; }
     .deal-row { padding:6px 0; border-top:1px solid #ececf2; }
@@ -465,7 +423,6 @@ dash, _ = fetch_file("dashboard.json")
 pending, _ = fetch_file("pending_events.json")
 activity_log, _ = fetch_file("activity_log.json")
 open_items, open_sha = fetch_file("app_open_items.json")
-agents_data, _ = fetch_file("agents.json")
 ignored_conflicts, _ = fetch_file("ignored_conflicts.json")
 shopping, _ = fetch_file("shopping.json")
 pending = pending or []
@@ -675,39 +632,6 @@ def _day_card_inner(day: dict) -> str:
     return rows
 
 
-def flight_price_alerts(agents_data: dict) -> list:
-    """From each flight agent's history, surface meaningful price drops and new
-    lows (latest snapshot vs the run before it, and vs the full tracked range).
-    Tiny $1-2 wiggles are ignored; a new all-time low always surfaces."""
-    NOISE = 25  # ignore sub-$25 day-to-day jitter for plain drops
-    out = []
-    for ag in (agents_data or {}).get("agents", []):
-        if ag.get("type") != "flight-multicity":
-            continue
-        hist = ag.get("history", [])
-        if len(hist) < 2:
-            continue
-        latest, prev = hist[-1], hist[-2]
-        pax = ag.get("config", {}).get("travelers", 1)
-        for key, val in latest.items():
-            if key == "date" or not isinstance(val, (int, float)):
-                continue
-            prior = [h[key] for h in hist[:-1]
-                     if isinstance(h.get(key), (int, float))]
-            if not prior:
-                continue
-            prev_val = prev.get(key)
-            prior_low = min(prior)
-            if val < prior_low:  # new all-time low over the tracked window
-                out.append({"label": key, "val": val, "drop": prior_low - val,
-                            "prev": prev_val, "pax": pax, "kind": "low"})
-            elif isinstance(prev_val, (int, float)) and prev_val - val >= NOISE:
-                out.append({"label": key, "val": val, "drop": prev_val - val,
-                            "prev": prev_val, "pax": pax, "kind": "drop"})
-    out.sort(key=lambda a: a["drop"], reverse=True)
-    return out
-
-
 # ─────────────────────────── header ───────────────────────────
 
 st.markdown(
@@ -801,17 +725,13 @@ with c2:
                     st.toast("Ignored", icon="🚫"); st.rerun()
 
 
-# ───────────────── agents row: deal hunter + trip planner ─────────────────
-# Flight tracking lives inside the trip it belongs to (panels binds a trip to
-# its agent via agent_id), so there's no separate fare section any more.
-
-_fal = flight_price_alerts(agents_data)
+# ───────────────── row: deal hunter + trip planner ─────────────────
 
 a1, a2 = st.columns([1, 1.5], gap="medium")
 with a1:
     panels.render_deal_hunter(shopping)
 with a2:
-    panels.render_trip_planner(TRIPS, agents_data, _fal)
+    panels.render_trip_planner(TRIPS)
 
 # ─────────────────────────── the week ───────────────────────────
 

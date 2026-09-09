@@ -1,25 +1,23 @@
-"""calendarjam agent panels — trip planner (with fare watch) + deal hunter.
+"""calendarjam agent panels — trip planner + deal hunter.
 
 These two render side by side under Today. Both are defensive: bad or missing
 data yields a quiet placeholder rather than taking the page down.
 
-The trip planner is the flight tracker: a trip binds to a flight-watch agent in
-agents.json via its "agent_id", so fares render inside the trip they belong to
-instead of in a separate section.
+The trip planner lists upcoming trips. (Flight fare-watching was removed once
+the Italy flights were booked — trips now render as simple cards.)
 """
 
 from __future__ import annotations
 
 from datetime import date, datetime
 
-import pandas as pd
 import streamlit as st
 
-WATCHED_VENDORS = ("Bombas", "OOFOS", "Cotopaxi")
-CABINS = ("economy", "business")
+WATCHED_VENDORS = ("Bombas", "OOFOS", "Cotopaxi", "Bad Birdie", "G/FORE",
+                   "NOBULL", "Away", "P.F. Candle Co")
 
 
-# ─────────────────────────── trips + fares ───────────────────────────
+# ─────────────────────────── trips ───────────────────────────
 
 
 def upcoming_trips(trips: list[dict], today: date | None = None) -> list[dict]:
@@ -39,92 +37,13 @@ def upcoming_trips(trips: list[dict], today: date | None = None) -> list[dict]:
     return out
 
 
-def _agent_for(agents_data: dict | None, agent_id: str | None) -> dict | None:
-    if not agent_id:
-        return None
-    for ag in (agents_data or {}).get("agents", []):
-        if ag.get("id") == agent_id:
-            return ag
-    return None
+def render_trip_planner(trips: list[dict], *_ignored) -> None:
+    """Upcoming trips, rendered as simple cards.
 
-
-def _render_fares(agent: dict, alerts: list[dict]) -> None:
-    """Cheapest fare, any drops, the route table, and price history."""
-    stt = agent.get("status") or {}
-    cfg = agent.get("config") or {}
-    pax = cfg.get("travelers", 1) or 1
-
-    if stt.get("state") != "live":
-        st.caption(stt.get("note", "Flight watch not active yet."))
-        return
-
-    cp, ce = stt.get("cheapest_plan"), stt.get("cheapest_econ")
-    if cp and ce:
-        st.markdown(
-            f"<div style='font-size:13.5px;margin:2px 0 1px'>Cheapest now: "
-            f"<b>{cp}</b> — <b>${ce:,.0f}</b> economy "
-            f"<span style='color:#9a9aa7'>(≈${ce/pax:,.0f}/person)</span></div>",
-            unsafe_allow_html=True,
-        )
-
-    # app.py's flight_price_alerts() doesn't tag agent_id (single agent today),
-    # so untagged alerts are treated as belonging to this agent.
-    mine = [a for a in (alerts or [])
-            if a.get("agent_id") in (None, agent.get("id"))]
-    for a in mine[:3]:
-        badge = ("<span class='falert-badge'>new low</span>"
-                 if a.get("kind") == "low" else "")
-        st.markdown(
-            f"<div style='font-size:12.5px;padding:1px 0'>{a['label']} — "
-            f"<span class='falert-drop'>▼ ${a['drop']:,.0f}</span> to "
-            f"<b>${a['val']:,.0f}</b>{badge}</div>",
-            unsafe_allow_html=True,
-        )
-
-    hist = agent.get("history", [])
-    rows = ""
-    for ri, res in enumerate(stt.get("results", [])):
-        lab = res.get("label", "—")
-        band = "ftbl-b0" if ri % 2 == 0 else "ftbl-b1"
-        for cabin in CABINS:
-            cd = res.get(cabin) or {}
-            cur = cd.get("low")
-            if cur is None:
-                continue
-            vals = [h.get(f"{lab} {cabin}") for h in hist if h.get(f"{lab} {cabin}")]
-            lo = min(vals) if vals else cur
-            cls = "ftbl-best" if (cabin == "economy" and lab == cp) else band
-            rows += (f"<tr class='{cls}'><td>{lab}</td><td>{cabin.title()}</td>"
-                     f"<td>${cur:,.0f}</td><td>${lo:,.0f}</td></tr>")
-    if rows:
-        st.markdown(
-            "<table class='ftbl'><thead><tr><th>Route</th><th>Cabin</th>"
-            f"<th>Today</th><th>Low seen</th></tr></thead><tbody>{rows}</tbody></table>"
-            f"<div class='muted' style='margin-top:5px'>Total for {pax} · "
-            f"{cfg.get('airline_label','')}</div>",
-            unsafe_allow_html=True,
-        )
-
-    if len(hist) >= 2:
-        try:
-            df = pd.DataFrame(hist)
-            if "date" in df.columns:
-                df = df.set_index("date")
-            st.markdown(
-                f"<div class='muted' style='margin:10px 0 2px'>📈 Since "
-                f"{hist[0].get('date','—')} · {len(hist)} checks</div>",
-                unsafe_allow_html=True,
-            )
-            st.line_chart(df, height=190)
-        except Exception:
-            pass
-
-
-def render_trip_planner(trips: list[dict], agents_data: dict | None,
-                        alerts: list[dict] | None = None) -> None:
-    """Upcoming trips; a trip bound to a flight agent shows its fares inline."""
-    st.markdown("<div class='sec'>✈️ Trips &amp; fare watch</div>",
-                unsafe_allow_html=True)
+    Accepts and ignores extra positional args for backward compatibility with
+    older callers that passed agents_data / alerts for fare watching.
+    """
+    st.markdown("<div class='sec'>✈️ Trips</div>", unsafe_allow_html=True)
 
     live = upcoming_trips(trips)
     if not live:
@@ -139,9 +58,6 @@ def render_trip_planner(trips: list[dict], agents_data: dict | None,
                 f"<div class='trip-detail'>{t.get('detail','')}</div>",
                 unsafe_allow_html=True,
             )
-            agent = _agent_for(agents_data, t.get("agent_id"))
-            if agent:
-                _render_fares(agent, alerts or [])
 
 
 # ─────────────────────────── deal hunter ───────────────────────────
