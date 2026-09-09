@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-09-09T06:00:49.787911-04:00",
-  "generated_label": "Wed Sep 9, 6:00 AM",
-  "weather": null,
+  "generated_at": "2026-09-09T10:32:36.641501-04:00",
+  "generated_label": "Wed Sep 9, 10:32 AM",
+  "weather": {
+    "high_f": 91,
+    "low_f": 67,
+    "precip_pct": 1,
+    "emoji": "\u2600\ufe0f",
+    "label": "Clear"
+  },
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -13,7 +19,14 @@
     {
       "date": "2026-09-09",
       "label": "Today \u00b7 Wed Sep 9",
-      "weather": null,
+      "weather": {
+        "high_f": 91,
+        "low_f": 67,
+        "precip_pct": 1,
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
+      },
       "events": [
         {
           "time": "all day",
@@ -27,7 +40,7 @@
         {
           "time": "8:30 am",
           "title": "Henry eye appointment",
-          "location": "",
+          "location": "3800 Fairfax Dr, Arlington, VA 22203, USA",
           "all_day": false,
           "is_drive": false,
           "sort": "2026-09-09T08:30:00-04:00",
@@ -66,7 +79,14 @@
     {
       "date": "2026-09-10",
       "label": "Tomorrow \u00b7 Thu Sep 10",
-      "weather": null,
+      "weather": {
+        "high_f": 91,
+        "low_f": 74,
+        "precip_pct": 61,
+        "weather_code": 82,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy showers"
+      },
       "events": [
         {
           "time": "7:15 pm",
@@ -92,7 +112,14 @@
     {
       "date": "2026-09-11",
       "label": "Friday \u00b7 Sep 11",
-      "weather": null,
+      "weather": {
+        "high_f": 80,
+        "low_f": 68,
+        "precip_pct": 61,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
       "events": [
         {
           "time": "all day",
@@ -154,7 +181,14 @@
     {
       "date": "2026-09-12",
       "label": "Saturday \u00b7 Sep 12",
-      "weather": null,
+      "weather": {
+        "high_f": 71,
+        "low_f": 66,
+        "precip_pct": 47,
+        "weather_code": 61,
+        "emoji": "\ud83c\udf27",
+        "label": "Light rain"
+      },
       "events": [
         {
           "time": "all day",
@@ -171,7 +205,14 @@
     {
       "date": "2026-09-13",
       "label": "Sunday \u00b7 Sep 13",
-      "weather": null,
+      "weather": {
+        "high_f": 83,
+        "low_f": 71,
+        "precip_pct": 35,
+        "weather_code": 55,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy drizzle"
+      },
       "events": [
         {
           "time": "10:30 am",
@@ -215,7 +256,14 @@
     {
       "date": "2026-09-14",
       "label": "Monday \u00b7 Sep 14",
-      "weather": null,
+      "weather": {
+        "high_f": 90,
+        "low_f": 72,
+        "precip_pct": 7,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
       "events": [
         {
           "time": "all day",
@@ -227,22 +275,13 @@
           "link": "https://www.google.com/calendar/event?eid=NGlkYWdqazk5aGlvMXBtcmZybmxyb2c1Ym9fMjAyNjA5MTQgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
-          "time": "3:28 pm",
-          "title": "\u2708\ufe0f Airport \u2014 UA688 to BOS",
-          "location": "Washington Dulles International Airport (IAD), 1 Saarinen Cir, Dulles, VA 20166",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-14T15:28:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=c3RodG5sNTc4ZGgxYm81aW5tOGtrbXZtaTQgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "5:28 pm",
-          "title": "Flight  UA688 IAD to BOS",
+          "time": "8:35 am",
+          "title": "Flight  UA641 IAD to BOS",
           "location": "Departing Washington, DC",
           "all_day": false,
           "is_drive": false,
-          "sort": "2026-09-14T17:28:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=XzZncWo4Y2hwNmdvamliYTY2aDMzNGI5azYxMzQ0YmEyNjhxajBiOW04Y3AzY2NwaDZjcGowZWE1NjAgZXN0aGVyLmV2ZWx5bkBt"
+          "sort": "2026-09-14T08:35:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=XzhoMWthYzI0OGQzM2FiOWk2bDMzMGI5azZncWo4YjlwNjhzM2FiOWk2MTFqOGg5cDYwcTM0ZDIzNm8gZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "6:30 pm",
@@ -268,7 +307,14 @@
     {
       "date": "2026-09-15",
       "label": "Tuesday \u00b7 Sep 15",
-      "weather": null,
+      "weather": {
+        "high_f": 93,
+        "low_f": 72,
+        "precip_pct": 13,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
