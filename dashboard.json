@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-09-08T10:31:05.716061-04:00",
-  "generated_label": "Tue Sep 8, 10:31 AM",
-  "weather": {
-    "high_f": 87,
-    "low_f": 61,
-    "precip_pct": 0,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-09-09T06:00:49.787911-04:00",
+  "generated_label": "Wed Sep 9, 6:00 AM",
+  "weather": null,
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -17,49 +11,9 @@
   },
   "week": [
     {
-      "date": "2026-09-08",
-      "label": "Today \u00b7 Tue Sep 8",
-      "weather": {
-        "high_f": 87,
-        "low_f": 61,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "Edgar!",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-09-08T00:00",
-          "link": "https://www.google.com/calendar/event?eid=ODdwZGNzNHF2cXJxYmNlMzU5Nms5NnUydmlfMjAyNjA5MDggZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "10:00 am",
-          "title": "Change lint filter",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-08T10:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=MGIxZ284azRuczNoaXEwYm4xc2VmdDdyY2tfMjAyNjA5MDhUMTQwMDAwWiBlc3RoZXIuZXZlbHluQG0"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-09-09",
-      "label": "Tomorrow \u00b7 Wed Sep 9",
-      "weather": {
-        "high_f": 92,
-        "low_f": 65,
-        "precip_pct": 1,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Today \u00b7 Wed Sep 9",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -111,15 +65,8 @@
     },
     {
       "date": "2026-09-10",
-      "label": "Thursday \u00b7 Sep 10",
-      "weather": {
-        "high_f": 89,
-        "low_f": 72,
-        "precip_pct": 68,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
-      },
+      "label": "Tomorrow \u00b7 Thu Sep 10",
+      "weather": null,
       "events": [
         {
           "time": "7:15 pm",
@@ -145,14 +92,7 @@
     {
       "date": "2026-09-11",
       "label": "Friday \u00b7 Sep 11",
-      "weather": {
-        "high_f": 84,
-        "low_f": 69,
-        "precip_pct": 68,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -171,6 +111,15 @@
           "is_drive": false,
           "sort": "2026-09-11T00:00",
           "link": "https://www.google.com/calendar/event?eid=Nzhtc2F2bHAwbWpmM2d2NDNrN3R0N2IzamkgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "10:00 am",
+          "title": "Seymour Vet Appointment",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-11T10:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=YWU5c29mOGowbDFwZ3Y5aWIwdWNkbXNhYmcgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "5:20 pm",
@@ -205,14 +154,7 @@
     {
       "date": "2026-09-12",
       "label": "Saturday \u00b7 Sep 12",
-      "weather": {
-        "high_f": 84,
-        "low_f": 66,
-        "precip_pct": 29,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -229,14 +171,7 @@
     {
       "date": "2026-09-13",
       "label": "Sunday \u00b7 Sep 13",
-      "weather": {
-        "high_f": 84,
-        "low_f": 72,
-        "precip_pct": 29,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
-      },
+      "weather": null,
       "events": [
         {
           "time": "10:30 am",
@@ -280,14 +215,7 @@
     {
       "date": "2026-09-14",
       "label": "Monday \u00b7 Sep 14",
-      "weather": {
-        "high_f": 92,
-        "low_f": 72,
-        "precip_pct": 19,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -336,6 +264,32 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-09-15",
+      "label": "Tuesday \u00b7 Sep 15",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "Brent's Birthday",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-09-15T00:00",
+          "link": "https://www.google.com/calendar/event?eid=amFkZWlxaWE3dXI2cm5xZXQ1anRmMjZtMWdfMjAyNjA5MTUgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "all day",
+          "title": "Brent Scott's Birthday",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-09-15T00:00",
+          "link": "https://www.google.com/calendar/event?eid=bjk4MG1jb3U4MzliYmZpdmttYXAwZmFuZ3NfMjAyNjA5MTUgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -343,12 +297,12 @@
       {
         "title": "Brent's Birthday",
         "day": "Tue Sep 15",
-        "days_out": 7
+        "days_out": 6
       },
       {
         "title": "Brent Scott's Birthday",
         "day": "Tue Sep 15",
-        "days_out": 7
+        "days_out": 6
       }
     ],
     "holidays": []
