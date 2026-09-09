@@ -10,7 +10,7 @@
       },
       "buy_url": "https://www.cotopaxi.com/products/allpa-26l-daypack?variant=42097992761405",
       "status": {
-        "updated": "2026-09-08",
+        "updated": "2026-09-09",
         "price": 150.0,
         "msrp": 150.0,
         "compare_at": 150.0,
@@ -114,6 +114,10 @@
         {
           "date": "2026-09-08",
           "price": 150.0
+        },
+        {
+          "date": "2026-09-09",
+          "price": 150.0
         }
       ]
     },
@@ -128,7 +132,7 @@
       },
       "buy_url": "https://www.oofos.com/products/womens-oocoozie-thermo-mule-white",
       "status": {
-        "updated": "2026-09-08",
+        "updated": "2026-09-09",
         "price": 119.95,
         "msrp": 119.95,
         "compare_at": null,
@@ -415,6 +419,10 @@
         },
         {
           "date": "2026-09-08",
+          "price": 119.95
+        },
+        {
+          "date": "2026-09-09",
           "price": 119.95
         }
       ]
