@@ -208,6 +208,20 @@ lookahead.py, briefing.py, dashboard.py, theme.py).
 Newest first. Each pass appends here (daily-job step 8); durable rules also get folded
 into the sections above so they apply automatically.
 
+### 2026-09-10 (flight tracker removed)
+- **Flight/fare tracker fully removed — Italy flights are booked, so there's nothing left
+  to watch.** This SUPERSEDES the 2026-07-08 and 2026-07-09 "Flight checker" entries below
+  ("don't remove either" no longer applies). Deleted: `agents.py`, `agents.json`, and the
+  `.github/workflows/agents.yml` cron. In `app/app.py`: removed `flight_price_alerts()`,
+  the `agents.json` fetch, the fare-drop banner + flight-watch/price-table CSS, and the
+  Italy trip's `agent_id` binding. In `app/panels.py`: removed `_render_fares()` /
+  `_agent_for()`; `render_trip_planner()` now renders plain trip cards (keeps a `*_ignored`
+  arg for back-compat). The Italy trip stays on the planner as a normal card. If a future
+  session is asked about fare watching, it's gone by design — don't re-add it.
+- **Deal hunter watchlist corrected.** `WATCHED_VENDORS` in `app/panels.py` was stale
+  (only Bombas/OOFOS/Cotopaxi); now includes all eight watched vendors: + Bad Birdie,
+  G/FORE, NOBULL, Away, P.F. Candle Co.
+
 ### 2026-07-09 (dashboard pass 8)
 - **Calendar items are now click-through to the Google Calendar event.** `dashboard.py`
   now carries each event's `htmlLink` into `dashboard.json` (`link` field); `app/app.py`
