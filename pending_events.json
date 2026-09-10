@@ -118,5 +118,29 @@
     "uid": "<3KNKQg_jRZq8cy-pP977tw@geopod-ismtpd-5>",
     "needs_review": true,
     "from": "Rooted Mane Salon <info@rootedmane.com>"
+  },
+  {
+    "id": "e5e9b95363d996065d0d3ebfea7e19e6",
+    "source": "Gmail",
+    "title": "Appointment Reminder",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "Hi Esther! We cant wait to see you on Thursday, September 10th, 2026 5:45 PM for the following services: Ladies Cut (Natalie G). Click here to confirm your appointment: Click to Confirm If you need to cancel your appointment , please do so prior to the 48 hour window to avoid a 50% cancellation fee. Please be advised; we assess a 3% surcharge on credit card transactions, to avoid this fee, please use a debit card. Please be sure to review our policies on our website. We have a complimentary parking garage located in the building. You can park on the first and second levels. See ya soon, your mane chicks xo",
+    "uid": "<AqNTw9HcTS2qq9dxcYGXvw@geopod-ismtpd-92>",
+    "needs_review": true,
+    "from": "Rooted Mane Salon <info@rootedmane.com>"
+  },
+  {
+    "id": "db5382dc5f4fd08072c0bbba93f67d07",
+    "source": "Gmail",
+    "title": "Game update for VIVA U13 Azul B2013/14",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "Villarreal CF Virginia Game update for VIVA U13 Azul B2013/14 The VIVA U13 Azul B2013/14 game vs. LOUD U13B Silver has been rescheduled for Sun, Sep 13 at 12:00pm at Riverside HS Stadium . Please arrive at 11:15am. View Team Villarreal CF Virginia You received this email because you are part of the Villarreal CF Virginia club and subscribed to receive communications regarding the club. Manage Preferences or Unsubscribe",
+    "uid": "<20260909164029.06c5c4aa99ebe352@vva.playmetrics.com>",
+    "needs_review": true,
+    "from": "Villarreal CF Virginia <noreply@vva.playmetrics.com>"
   }
 ]
