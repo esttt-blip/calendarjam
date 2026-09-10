@@ -171,6 +171,65 @@ def _added_this_week() -> int:
     return n
 
 
+CALENDARJAM_MARK = "created by calendarjam"
+
+
+def _parse_ts(v: str):
+    try:
+        return datetime.fromisoformat((v or "").replace("Z", "+00:00"))
+    except Exception:
+        return None
+
+
+def _when_label(e: dict) -> str:
+    s = e.get("start", {}).get("dateTime") or e.get("start", {}).get("date")
+    if not s:
+        return ""
+    if "T" in s:
+        try:
+            return datetime.fromisoformat(s.replace("Z", "+00:00")).astimezone(ET).strftime("%a %b %-d · %-I:%M %p")
+        except Exception:
+            return s
+    try:
+        return datetime.fromisoformat(s).strftime("%a %b %-d")
+    except Exception:
+        return s
+
+
+def _recent_calendarjam(hours: int = 26) -> tuple[list[dict], list[dict]]:
+    """Scan a wide future window for calendarjam-stamped events created or
+    edited in the last `hours`, so the app can show what the automation just
+    did. Returns (added, changed). `changed` = an existing calendarjam event
+    that was edited after creation (a feed venue/time move, a reschedule)."""
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
+    start = (datetime.now(ET) - timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0)
+    end = start + timedelta(days=120)
+    try:
+        raw = list_events(time_min_iso=start.isoformat(), time_max_iso=end.isoformat(), max_results=250)
+    except Exception as e:
+        print(f"  [dashboard] recent-changes scan failed: {e}")
+        return [], []
+    added, changed = [], []
+    for e in raw:
+        desc = e.get("description") or ""
+        if CALENDARJAM_MARK not in desc.lower():
+            continue
+        title = e.get("summary", "(untitled)")
+        row = {"title": title, "when": _when_label(e), "link": e.get("htmlLink", "")}
+        created, updated = _parse_ts(e.get("created")), _parse_ts(e.get("updated"))
+        if created and created >= cutoff:
+            added.append(row)
+        elif updated and updated >= cutoff:
+            if title.strip().startswith("🚗"):
+                continue  # a drive's change is covered by its parent event
+            m = re.search(r"((?:venue|location|time)[^.]*moved[^.]*|moved[^.]*|reschedul[^.]*|changed[^.]*)", desc, re.I)
+            row["note"] = (m.group(0).strip()[:130] if m else "edited")
+            changed.append(row)
+    added.sort(key=lambda x: x["when"])
+    changed.sort(key=lambda x: x["when"])
+    return added[:25], changed[:15]
+
+
 def _serialize_scan(scan: dict) -> dict:
     """Convert datetime objects in the lookahead scan to display strings."""
     collisions = []
@@ -212,6 +271,12 @@ def build_snapshot() -> dict:
     weather = fetch_today_forecast()
 
     try:
+        added, feed_changes = _recent_calendarjam()
+    except Exception as e:
+        print(f"  [dashboard] recent-calendarjam failed: {e}")
+        added, feed_changes = [], []
+
+    try:
         import theme as theme_mod
         wk_theme = theme_mod.pick_theme(week, horizon, weather)
     except Exception as e:
@@ -225,6 +290,8 @@ def build_snapshot() -> dict:
         "theme": wk_theme,
         "week": week,
         "horizon": horizon,
+        "added": added,
+        "feed_changes": feed_changes,
     }
 
     DASHBOARD_FILE.write_text(json.dumps(snapshot, indent=2, default=str))

@@ -416,6 +416,15 @@ div[data-testid="stVerticalBlockBorderWrapper"] [data-testid="stHorizontalBlock"
                 border-radius:10px; margin-left:6px; vertical-align:middle; }
   .deal-link { font-size:12px; font-weight:700; color:#1c7a46; text-decoration:none; margin-top:3px;
                display:inline-block; }
+
+  /* Auto-added / feed-changes review rows */
+  .cj-row { padding:6px 0; border-top:1px solid #ececf2; }
+  .cj-row.first { border-top:none; }
+  .cj-title { font-size:13px; font-weight:600; color:#1a1a2e; line-height:1.35; }
+  .cj-when { font-size:11.5px; font-weight:500; color:#9a9aa7; margin-left:6px; }
+  .cj-note { font-size:11.5px; color:#8a5a12; margin-top:1px; }
+  .cj-link { color:#1a1a2e; text-decoration:none; border-bottom:1px solid #d7d7e0; }
+  .cj-link:hover { color:#1c7a46; border-color:#1c7a46; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -447,6 +456,8 @@ if _ignore_pats:
     pending = [p for p in pending
                if not any(q in (p.get("title") or "").lower() for q in _ignore_pats)]
 horizon = (dash or {}).get("horizon", {})
+added_items = (dash or {}).get("added", [])
+feed_changes = (dash or {}).get("feed_changes", [])
 
 import re as _re
 
@@ -704,25 +715,71 @@ with c2:
             title = item.get("title", "(untitled)")
             source = item.get("source", "")
             sender = item.get("from", "").split("<")[0].strip().strip('"') or "—"
-            desc = (item.get("description") or "").replace("\r", "").strip()
-            if len(desc) > 90:
-                desc = desc[:90] + "…"
+            src_line = f"{source} · {sender}" if sender != "—" else source
+            loc = (item.get("location") or "").strip()
+            desc = (item.get("description") or "").replace("\r", " ").strip()
+            desc_short = desc if len(desc) <= 280 else desc[:280] + "…"
             with st.container(border=True):
                 st.markdown(f"<div style='font-weight:600;font-size:13px;line-height:1.3'>{title}</div>"
-                            f"<div style='color:#9a9aa7;font-size:11px;margin:1px 0 3px'>{source} · {sender}</div>"
-                            + (f"<div style='color:#666;font-size:11.5px;line-height:1.4'>{desc}</div>" if desc else ""),
+                            f"<div style='color:#9a9aa7;font-size:11px;margin:1px 0 3px'>{src_line}</div>",
                             unsafe_allow_html=True)
                 st.markdown((f"<div style='color:#1a7f52;font-size:12px;font-weight:600;margin:2px 0'>🕒 {w}</div>" if (w:=_proposed_when(item)) else "<div style='color:#b4483f;font-size:11px;margin:2px 0'>🕒 time TBD — check the email</div>"), unsafe_allow_html=True)
-                b1, b2, b3 = st.columns(3, gap="small")
+                if loc:
+                    st.markdown(f"<div style='color:#555;font-size:11.5px;margin:1px 0'>📍 {loc}</div>",
+                                unsafe_allow_html=True)
+                if desc_short:
+                    st.markdown(f"<div style='color:#666;font-size:11.5px;line-height:1.4;margin:2px 0'>{desc_short}</div>",
+                                unsafe_allow_html=True)
+                    if len(desc) > 280:
+                        with st.expander("Full details"):
+                            st.markdown(f"<div style='color:#555;font-size:11.5px;line-height:1.45'>{desc}</div>",
+                                        unsafe_allow_html=True)
+                b1, b2 = st.columns(2, gap="small")
                 if b1.button("✅ Add", key=f"y{idx}", type="primary", use_container_width=True):
                     approve_item(item, pending); log_activity("approved", title, source)
                     st.toast("Queued to add ✓", icon="✅"); st.rerun()
-                if b2.button("🔁 Dupe", key=f"d{idx}", use_container_width=True):
-                    clear_item(item, pending); log_activity("duplicate", title, source)
-                    st.toast("Marked duplicate", icon="🔁"); st.rerun()
-                if b3.button("🚫 Ignore", key=f"n{idx}", use_container_width=True):
+                if b2.button("🗑 Dismiss", key=f"n{idx}", use_container_width=True):
                     clear_item(item, pending); log_activity("dismissed", title, source)
-                    st.toast("Ignored", icon="🚫"); st.rerun()
+                    st.toast("Dismissed", icon="🗑"); st.rerun()
+
+
+# ───────────────── what the automation just did (review surface) ─────────────────
+# Two read-only panels so Esther can see what calendarjam changed on the shared
+# calendar each run — auto-adds she might want to undo, and feed-driven edits
+# (a soccer venue move, a reschedule) that would otherwise happen silently.
+
+def _cj_row(it: dict, first: bool) -> str:
+    cls = "cj-row first" if first else "cj-row"
+    title = it.get("title", "(untitled)")
+    if it.get("link"):
+        title = f"<a class='cj-link' href='{it['link']}' target='_blank' rel='noopener'>{title}</a>"
+    when = f"<span class='cj-when'>{it['when']}</span>" if it.get("when") else ""
+    note = f"<div class='cj-note'>{it['note']}</div>" if it.get("note") else ""
+    return f"<div class='{cls}'><div class='cj-title'>{title}{when}</div>{note}</div>"
+
+
+if added_items or feed_changes:
+    d1, d2 = st.columns(2, gap="medium")
+    with d1:
+        st.markdown(f"<div class='sec'>🆕 Auto-added this run{f' · {len(added_items)}' if added_items else ''}</div>",
+                    unsafe_allow_html=True)
+        with st.container(border=True):
+            if not added_items:
+                st.markdown("<div class='cj-row first'><span class='muted'>Nothing auto-added since the last run.</span></div>",
+                            unsafe_allow_html=True)
+            else:
+                st.markdown("".join(_cj_row(it, i == 0) for i, it in enumerate(added_items)),
+                            unsafe_allow_html=True)
+    with d2:
+        st.markdown(f"<div class='sec'>🔄 Feed changes{f' · {len(feed_changes)}' if feed_changes else ''}</div>",
+                    unsafe_allow_html=True)
+        with st.container(border=True):
+            if not feed_changes:
+                st.markdown("<div class='cj-row first'><span class='muted'>No feed time/venue changes since the last run.</span></div>",
+                            unsafe_allow_html=True)
+            else:
+                st.markdown("".join(_cj_row(it, i == 0) for i, it in enumerate(feed_changes)),
+                            unsafe_allow_html=True)
 
 
 # ───────────────── row: deal hunter + trip planner ─────────────────
