@@ -1789,5 +1789,11 @@
     "action": "dismissed",
     "title": "Reservation CONFIRMED",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-09-11T12:41:27.880060+00:00",
+    "action": "dismissed",
+    "title": "Your United Airlines booking confirmation \u2013  LC4EDN",
+    "source": "Gmail"
   }
 ]
