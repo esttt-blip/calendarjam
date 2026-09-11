@@ -1,11 +1,17 @@
 {
-  "generated_at": "2026-09-11T06:01:03.128675-04:00",
-  "generated_label": "Fri Sep 11, 6:01 AM",
-  "weather": null,
+  "generated_at": "2026-09-11T10:23:42.543095-04:00",
+  "generated_label": "Fri Sep 11, 10:23 AM",
+  "weather": {
+    "high_f": 81,
+    "low_f": 69,
+    "precip_pct": 54,
+    "emoji": "\ud83c\udf27",
+    "label": "Heavy rain"
+  },
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
-    "blurb": "10 games & practices on deck.",
+    "blurb": "9 games & practices on deck.",
     "color1": "#11998e",
     "color2": "#38ef7d"
   },
@@ -13,7 +19,14 @@
     {
       "date": "2026-09-11",
       "label": "Today \u00b7 Fri Sep 11",
-      "weather": null,
+      "weather": {
+        "high_f": 81,
+        "low_f": 69,
+        "precip_pct": 54,
+        "weather_code": 65,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy rain"
+      },
       "events": [
         {
           "time": "all day",
@@ -43,22 +56,13 @@
           "link": "https://www.google.com/calendar/event?eid=YWU5c29mOGowbDFwZ3Y5aWIwdWNkbXNhYmcgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
-          "time": "5:20 pm",
-          "title": "Reservation at East Potomac Golf Links - Red",
-          "location": "East Potomac Golf Links - Red, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
+          "time": "5:00 pm",
+          "title": "\ud83c\udfcc\ufe0f Golf Galaxy \u2014 Youth on Course sim rental",
+          "location": "5821 Crossroads Center Way, Falls Church, VA 22041",
           "all_day": false,
           "is_drive": false,
-          "sort": "2026-09-11T17:20:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Z2lhNjVsdWxxN2IxdTlrYmhraTJsbWF0cTggZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "5:45 pm",
-          "title": "\ud83d\ude97 Drive to VIVA practice (Justice HS)",
-          "location": "Justice High School, 3301 Peace Valley Ln, Falls Church, VA 22044",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-09-11T17:45:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=YmI1ZWV1NHY5YW1tcHBxdXNiMzZkdTg3OWcgZXN0aGVyLmV2ZWx5bkBt"
+          "sort": "2026-09-11T17:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=NnJxY2N2MGs3czhxbGNncHRsZnJoZzFjbDAgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "6:00 pm",
@@ -84,7 +88,14 @@
     {
       "date": "2026-09-12",
       "label": "Tomorrow \u00b7 Sat Sep 12",
-      "weather": null,
+      "weather": {
+        "high_f": 77,
+        "low_f": 68,
+        "precip_pct": 74,
+        "weather_code": 81,
+        "emoji": "\ud83c\udf27",
+        "label": "Showers"
+      },
       "events": [
         {
           "time": "all day",
@@ -96,13 +107,31 @@
           "link": "https://www.google.com/calendar/event?eid=XzcwcDNhaDlsOGQxM2NiYTE4a29qZ2I5azhnb2s2YjlwODhwMzJiYTU4Y3EzMmQxbDc0cjRjY2hoNmdfMjAyNjA5MTIgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
+          "time": "7:50 am",
+          "title": "\ud83d\ude97 Drive to East Potomac Golf Links",
+          "location": "972 Ohio Dr SW, Washington, DC 20024",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-09-12T07:50:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=bjl2Z2hjdG5tc2hkMjc5YTBrZDg4czZvMDQgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
           "time": "8:40 am",
-          "title": "Reservation at East Potomac Golf Links - Red",
-          "location": "East Potomac Golf Links - Red, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
+          "title": "Reservation at East Potomac Golf Links - RED Course",
+          "location": "East Potomac Golf Links - RED Course, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
           "all_day": false,
           "is_drive": false,
           "sort": "2026-09-12T08:40:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=aGI1bzFxam9xNTIxOWg1ajUzMjY4ZXFzZmMgZXN0aGVyLmV2ZWx5bkBt"
+          "link": "https://www.google.com/calendar/event?eid=OHEzb2V0c24xdHNoYmo0dTZicHBvaHViMGcgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "8:40 am",
+          "title": "\u26f3 Golf \u2014 East Potomac (Red)",
+          "location": "972 Ohio Dr SW, Washington, DC 20024",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-12T08:40:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=bWZhcmV2cHR2bzNoM29vbDN0bDUxZ2RmbjggZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
@@ -110,7 +139,14 @@
     {
       "date": "2026-09-13",
       "label": "Sunday \u00b7 Sep 13",
-      "weather": null,
+      "weather": {
+        "high_f": 88,
+        "low_f": 70,
+        "precip_pct": 74,
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
+      },
       "events": [
         {
           "time": "10:20 am",
@@ -154,7 +190,14 @@
     {
       "date": "2026-09-14",
       "label": "Monday \u00b7 Sep 14",
-      "weather": null,
+      "weather": {
+        "high_f": 76,
+        "low_f": 65,
+        "precip_pct": 3,
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
+      },
       "events": [
         {
           "time": "all day",
@@ -207,7 +250,14 @@
     {
       "date": "2026-09-15",
       "label": "Tuesday \u00b7 Sep 15",
-      "weather": null,
+      "weather": {
+        "high_f": 77,
+        "low_f": 58,
+        "precip_pct": 1,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -233,7 +283,14 @@
     {
       "date": "2026-09-16",
       "label": "Wednesday \u00b7 Sep 16",
-      "weather": null,
+      "weather": {
+        "high_f": 82,
+        "low_f": 61,
+        "precip_pct": 8,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "10:00 am",
@@ -304,7 +361,14 @@
     {
       "date": "2026-09-17",
       "label": "Thursday \u00b7 Sep 17",
-      "weather": null,
+      "weather": {
+        "high_f": 85,
+        "low_f": 64,
+        "precip_pct": 31,
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
+      },
       "events": [
         {
           "time": "9:30 am",
@@ -351,5 +415,55 @@
       }
     ],
     "holidays": []
-  }
+  },
+  "added": [
+    {
+      "title": "\ud83c\udfcc\ufe0f Golf Galaxy \u2014 Youth on Course sim rental",
+      "when": "Fri Sep 11 \u00b7 5:00 PM",
+      "link": "https://www.google.com/calendar/event?eid=NnJxY2N2MGs3czhxbGNncHRsZnJoZzFjbDAgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\udcda Book club (Elizabeth's)",
+      "when": "Fri Sep 11 \u00b7 6:30 PM",
+      "link": "https://www.google.com/calendar/event?eid=N25xYWZhanV0YzdzamUxdmh0NXNvYWFwaW8gZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\u2708\ufe0f Airport \u2014 UA641 to BOS",
+      "when": "Mon Sep 14 \u00b7 6:35 AM",
+      "link": "https://www.google.com/calendar/event?eid=c3Y4OWVjdjRwZnAwdDJrdWU0MDdpa2Z1YW8gZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\ude97 Drive to East Potomac Golf Links",
+      "when": "Sat Sep 12 \u00b7 7:50 AM",
+      "link": "https://www.google.com/calendar/event?eid=bjl2Z2hjdG5tc2hkMjc5YTBrZDg4czZvMDQgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\u26f3 Golf \u2014 East Potomac (Red)",
+      "when": "Sat Sep 12 \u00b7 8:40 AM",
+      "link": "https://www.google.com/calendar/event?eid=bWZhcmV2cHR2bzNoM29vbDN0bDUxZ2RmbjggZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\ude97 Drive to VIVA practice (Thomas Jefferson HS)",
+      "when": "Thu Sep 24 \u00b7 6:35 PM",
+      "link": "https://www.google.com/calendar/event?eid=bjM1a2VuOWdlbXN0bHZrcGc1bTFnYWhzaHMgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\u26bd Henry \u2014 VIVA practice",
+      "when": "Thu Sep 24 \u00b7 7:00 PM",
+      "link": "https://www.google.com/calendar/event?eid=N2FlOThhZ2RxZ2ZqZWplcjVtcGppMHBwc2sgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\u26bd Henry \u2014 VIVA practice",
+      "when": "Wed Sep 23 \u00b7 7:00 PM",
+      "link": "https://www.google.com/calendar/event?eid=ZGY3YTdtcWsxaDY3ajVidHRzbGQwNWdtNmsgZXN0aGVyLmV2ZWx5bkBt"
+    }
+  ],
+  "feed_changes": [
+    {
+      "title": "\u26bd Henry \u2014 VIVA game vs LOUD",
+      "when": "Sun Sep 13 \u00b7 12:00 PM",
+      "link": "https://www.google.com/calendar/event?eid=MjIzYjRxcDV1amluNjh1bHJ1OG1zYnVzaTAgZXN0aGVyLmV2ZWx5bkBt",
+      "note": "Venue moved to Riverside HS Stadium (was Potomac Green Park)"
+    }
+  ]
 }
