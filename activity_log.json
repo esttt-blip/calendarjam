@@ -1777,5 +1777,11 @@
     "action": "dismissed",
     "title": "On-Field Invite: September 13th",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-09-11T11:27:54.371636+00:00",
+    "action": "approved",
+    "title": "Reservation CONFIRMED",
+    "source": "Gmail"
   }
 ]
