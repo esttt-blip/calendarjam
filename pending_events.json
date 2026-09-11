@@ -130,5 +130,41 @@
     "uid": "<HP2v61000001a08b94fbe7ae516d434b5c38d8151@notifications.golfgalaxy.com>",
     "needs_review": true,
     "from": "Golf Galaxy  <from@notifications.golfgalaxy.com>"
+  },
+  {
+    "id": "a35aa94017a589a35a75bc597a1a984f",
+    "source": "Gmail",
+    "title": "Reservation CONFIRMED",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "96 Confirmation# 429855703 Hi Esther Scott , Thank you for your reservation at East Potomac Golf Links - Red ! Here are your tee time reservation details : East Potomac Golf Links - Red Saturday, September 12, 2026 8:40 am 1 Player(s) Payment Details Green Fees $9.00 Paid Online $9.00 Questions about your reservation? Call us at (202) 554-7660 . Book Next Round Visit Our Website East Potomac Golf Links - RED Course 972 Ohio Dr SW, Washington, DC 20024, US (202) 554-7660 TM and copyright \u00a9 2026 East Potomac Golf Links - RED Course Please contact East Potomac Golf Links - RED Course for a copy of our privacy policy powered by NBC Sports Next",
+    "uid": "<1A.7D.45902.E95E2AA6@i-0505b2d270d2200a3.mta1vrest.sd.prd.sparkpost>",
+    "needs_review": true,
+    "from": "\"East Potomac Park Golf Course-RED Course\" <course@golffacility.com>"
+  },
+  {
+    "id": "e3dc1aa072017630c060a194e564574a",
+    "source": "Gmail",
+    "title": "Reservation CONFIRMED",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "96 Confirmation# 429855684 Hi Esther Scott , Thank you for your reservation at East Potomac Golf Links - Red ! Here are your tee time reservation details : East Potomac Golf Links - Red Saturday, September 12, 2026 8:40 am 2 Player(s) Payment Details Green Fees $40.00 Paid Online $40.00 Questions about your reservation? Call us at (202) 554-7660 . Book Next Round Visit Our Website East Potomac Golf Links - RED Course 972 Ohio Dr SW, Washington, DC 20024, US (202) 554-7660 TM and copyright \u00a9 2026 East Potomac Golf Links - RED Course Please contact East Potomac Golf Links - RED Course for a copy of our privacy policy powered by NBC Sports Next",
+    "uid": "<34.27.11726.E95E2AA6@i-04d0b6adc3b68e4f3.mta1vrest.sd.prd.sparkpost>",
+    "needs_review": true,
+    "from": "\"East Potomac Park Golf Course-RED Course\" <course@golffacility.com>"
+  },
+  {
+    "id": "4773aec5f28dce746f428529a46b13d5",
+    "source": "Gmail",
+    "title": "Reservation CANCELED",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "96 Confirmation# 429746476 Hi Esther Scott , Your reservation has been cancelled. East Potomac Golf Links - RED Course Friday, September 11, 2026 5:20 pm 4 Player(s) Notes: We're sorry to see you cancel your reservation, but we look forward to seeing you in the future. If you believe this cancellation was made in error, please give us a call at (202) 554-7660 . Book Next Round Visit Our Website East Potomac Golf Links - RED Course 972 Ohio Dr SW, Washington, DC 20024, US (202) 554-7660 TM and copyright \u00a9 2026 East Potomac Golf Links - RED Course Please contact East Potomac Golf Links - RED Course for a copy of our privacy policy powered by GolfNow for Business",
+    "uid": "<30.63.26027.116E2AA6@i-0b4a83eca36f35724.mta1vrest.sd.prd.sparkpost>",
+    "needs_review": true,
+    "from": "\"East Potomac Park Golf Course-RED Course\" <course@golffacility.com>"
   }
 ]
