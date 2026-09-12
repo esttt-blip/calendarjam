@@ -1801,5 +1801,11 @@
     "action": "dismissed",
     "title": "Your appointment is set.",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-09-12T11:48:44.003552+00:00",
+    "action": "dismissed",
+    "title": "Reservation CONFIRMED",
+    "source": "Gmail"
   }
 ]
