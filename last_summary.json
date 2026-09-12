@@ -1,21 +1,16 @@
 {
-  "message_id": "<calendarjam-20260911100100@calendarjam.local>",
-  "sent_at": "2026-09-11T10:01:03.126723+00:00",
+  "message_id": "<calendarjam-20260912100050@calendarjam.local>",
+  "sent_at": "2026-09-12T10:00:53.578233+00:00",
   "pending_ids": [
-    "77a780c0e72091bc32a749bf628fc5be",
-    "d7e8a8976bfe6b7dde74f284653e9403",
-    "a70a23da0d78252dc1f6a584040d75fc",
-    "713e5464cf2a499f9b1fd376619b921e",
+    "e3dc1aa072017630c060a194e564574a",
+    "4773aec5f28dce746f428529a46b13d5",
     "26eae044b747694d636b2e8601bc8d26",
     "dc64d399a7612fde812cd9837bd2b73e",
-    "0cc20551b3c9821c6ca1046f19d5ee1e",
     "f66046fdbdcabd5319488b99b0659d62",
     "cbf31546f8eaece8ed2864dc1bd8777f",
     "70968fcaf8736e14ea82608a67a36923",
-    "80b6cee941609894cacdbf30b5913456",
-    "a35aa94017a589a35a75bc597a1a984f",
-    "e3dc1aa072017630c060a194e564574a",
-    "4773aec5f28dce746f428529a46b13d5"
+    "837e18b7705cee3528dc95a2c6359a47",
+    "25f3f2eca02ad5dcd1e1c0fcc7e415e7"
   ],
-  "email_date": "2026-09-11"
+  "email_date": "2026-09-12"
 }
