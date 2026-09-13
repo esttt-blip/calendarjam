@@ -70,5 +70,29 @@
     "uid": "<30.63.26027.116E2AA6@i-0b4a83eca36f35724.mta1vrest.sd.prd.sparkpost>",
     "needs_review": true,
     "from": "\"East Potomac Park Golf Course-RED Course\" <course@golffacility.com>"
+  },
+  {
+    "id": "6e4665d785b8d080b4dd2e13e79a25ed",
+    "source": "Gmail",
+    "title": "Reservation CONFIRMED",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "96 Hi Esther Scott , Thank you for your reservation at East Potomac Golf Links - White ! Here are your tee time reservation details : East Potomac Golf Links - White Saturday, September 19, 2026 8:30 am 4 Player(s) Confirmation# 429975100 Payment Details Green Fees $100.00 Paid Online $100.00 Questions about your reservation? Call us at (202) 554-7660 . Book Next Round Visit Our Website East Potomac Golf Links - WHITE Course 972 Ohio Dr SW, Washington, DC 20024, US (202) 554-7660 TM and copyright \u00a9 2026 East Potomac Golf Links - WHITE Course Please contact East Potomac Golf Links - WHITE Course for a copy of our privacy policy powered by NBC Sports Next",
+    "uid": "<CF.30.60857.7A3C5AA6@i-0a00b522b554e170a.mta1vrest.sd.prd.sparkpost>",
+    "needs_review": true,
+    "from": "\"East Potomac Park Golf Course-WHITE\" <course@golffacility.com>"
+  },
+  {
+    "id": "376e796d9678c5dc46f56142804f10c0",
+    "source": "Gmail",
+    "title": "Reminder for your upcoming order",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "96 You can make changes until 06:00am on Sep 13 \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c Order date: Sat, Sep 12 Order number: 2000150-57859964 Last chance to add more items Need to add last-minute items to your order? You can add more to your order until 06:00am on Sun, Sep 13 . Add items View the status of your order in your order details . Delivery from store Location Esther Scott 1014 N Quintana St Arlington, VA 22205 Estimated date and time Sun, Sep 13 9am - 11am Shop anywhere with the Walmart app Questions? Visit our Help Center Walmart protects your security and privacy. We will never ask for personal information (such as passwords or credit card numbers) in an email. If you receive such a request, please do not respond. Learn more about online safety and see our Privacy Policy . Manage which messages you receive in your communication preferences . Please do not reply to this email. This mailbox is not monitored. \u00a9 2026 Walmart. All rights reserved.",
+    "uid": "<20260913075812.40ee0a485328a336@prod.walmart.com>",
+    "needs_review": true,
+    "from": "Walmart.com <help@walmart.com>"
   }
 ]

@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-09-12T09:35:23.390934-04:00",
-  "generated_label": "Sat Sep 12, 9:35 AM",
-  "weather": {
-    "high_f": 83,
-    "low_f": 68,
-    "precip_pct": 24,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-09-13T06:01:08.591191-04:00",
+  "generated_label": "Sun Sep 13, 6:01 AM",
+  "weather": null,
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -17,68 +11,19 @@
   },
   "week": [
     {
-      "date": "2026-09-12",
-      "label": "Today \u00b7 Sat Sep 12",
-      "weather": {
-        "high_f": 83,
-        "low_f": 68,
-        "precip_pct": 24,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "Empty washer lint trap",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-09-12T00:00",
-          "link": "https://www.google.com/calendar/event?eid=XzcwcDNhaDlsOGQxM2NiYTE4a29qZ2I5azhnb2s2YjlwODhwMzJiYTU4Y3EzMmQxbDc0cjRjY2hoNmdfMjAyNjA5MTIgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:50 am",
-          "title": "\ud83d\ude97 Drive to East Potomac Golf Links",
-          "location": "972 Ohio Dr SW, Washington, DC 20024",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-09-12T07:50:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=bjl2Z2hjdG5tc2hkMjc5YTBrZDg4czZvMDQgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "8:40 am",
-          "title": "Reservation at East Potomac Golf Links - RED Course",
-          "location": "East Potomac Golf Links - RED Course, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-12T08:40:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=OHEzb2V0c24xdHNoYmo0dTZicHBvaHViMGcgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "8:40 am",
-          "title": "\u26f3 Golf \u2014 East Potomac (Red)",
-          "location": "972 Ohio Dr SW, Washington, DC 20024",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-12T08:40:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=bWZhcmV2cHR2bzNoM29vbDN0bDUxZ2RmbjggZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-09-13",
-      "label": "Tomorrow \u00b7 Sun Sep 13",
-      "weather": {
-        "high_f": 83,
-        "low_f": 73,
-        "precip_pct": 41,
-        "weather_code": 82,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy showers"
-      },
+      "label": "Today \u00b7 Sun Sep 13",
+      "weather": null,
       "events": [
+        {
+          "time": "9:00 am",
+          "title": "\ud83d\uded2 Walmart delivery",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-13T09:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=MGxtYXY0MWNlN2UyYjI4Y2hhbTlmbGVhdjAgZXN0aGVyLmV2ZWx5bkBt"
+        },
         {
           "time": "10:20 am",
           "title": "\ud83d\ude97 Drive to VIVA game (Riverside HS Stadium)",
@@ -114,21 +59,23 @@
           "is_drive": false,
           "sort": "2026-09-13T13:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=cmJlNnAzOW9kbmtnMmwyaXMwZmNyN2MwOGsgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "Deep Rest: Yin & Sound Healing",
+          "location": "Karma Yoga Studio",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-13T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=NmpwNWRkYjkzcHV2dm9sZmEwam9xZHE3dTkgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
     },
     {
       "date": "2026-09-14",
-      "label": "Monday \u00b7 Sep 14",
-      "weather": {
-        "high_f": 80,
-        "low_f": 67,
-        "precip_pct": 3,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "label": "Tomorrow \u00b7 Mon Sep 14",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -181,14 +128,7 @@
     {
       "date": "2026-09-15",
       "label": "Tuesday \u00b7 Sep 15",
-      "weather": {
-        "high_f": 79,
-        "low_f": 60,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -214,14 +154,7 @@
     {
       "date": "2026-09-16",
       "label": "Wednesday \u00b7 Sep 16",
-      "weather": {
-        "high_f": 83,
-        "low_f": 62,
-        "precip_pct": 3,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "10:00 am",
@@ -292,14 +225,7 @@
     {
       "date": "2026-09-17",
       "label": "Thursday \u00b7 Sep 17",
-      "weather": {
-        "high_f": 89,
-        "low_f": 63,
-        "precip_pct": 16,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
-      },
+      "weather": null,
       "events": [
         {
           "time": "9:30 am",
@@ -334,14 +260,7 @@
     {
       "date": "2026-09-18",
       "label": "Friday \u00b7 Sep 18",
-      "weather": {
-        "high_f": 85,
-        "low_f": 71,
-        "precip_pct": 16,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -399,6 +318,23 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-09-19",
+      "label": "Saturday \u00b7 Sep 19",
+      "weather": null,
+      "events": [
+        {
+          "time": "8:30 am",
+          "title": "Reservation at East Potomac Golf Links - White",
+          "location": "East Potomac Golf Links - White, East Potomac Golf Links - WHITE Course, 972 Ohio Dr SW, Washington, DC 20024, US",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-19T08:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=cnMwMXJpc2lsNThlZ2plbTVkaDFnY2Fpc28gZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -406,44 +342,27 @@
       {
         "title": "Brent's Birthday",
         "day": "Tue Sep 15",
-        "days_out": 3
+        "days_out": 2
       },
       {
         "title": "Brent Scott's Birthday",
         "day": "Tue Sep 15",
-        "days_out": 3
+        "days_out": 2
       },
       {
         "title": "Kristen\u2019s Birthday",
         "day": "Sat Oct 3",
-        "days_out": 21
+        "days_out": 20
       }
     ],
     "holidays": []
   },
   "added": [
     {
-      "title": "\ud83c\udfcc\ufe0f Golf Galaxy \u2014 Youth on Course sim rental",
-      "when": "Fri Sep 11 \u00b7 5:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=NnJxY2N2MGs3czhxbGNncHRsZnJoZzFjbDAgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\ude97 Drive to East Potomac Golf Links",
-      "when": "Sat Sep 12 \u00b7 7:50 AM",
-      "link": "https://www.google.com/calendar/event?eid=bjl2Z2hjdG5tc2hkMjc5YTBrZDg4czZvMDQgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26f3 Golf \u2014 East Potomac (Red)",
-      "when": "Sat Sep 12 \u00b7 8:40 AM",
-      "link": "https://www.google.com/calendar/event?eid=bWZhcmV2cHR2bzNoM29vbDN0bDUxZ2RmbjggZXN0aGVyLmV2ZWx5bkBt"
+      "title": "\ud83d\ude97 Drive to Audi Field (Spirit vs Angel City)",
+      "when": "Sat Sep 26 \u00b7 5:40 PM",
+      "link": "https://www.google.com/calendar/event?eid=ZDY1ZXFsaHN2djFkb2ZxdXFnZzE3cjAwN2MgZXN0aGVyLmV2ZWx5bkBt"
     }
   ],
-  "feed_changes": [
-    {
-      "title": "\ud83d\udcda Book club (Elizabeth's)",
-      "when": "Fri Sep 11 \u00b7 6:30 PM",
-      "link": "https://www.google.com/calendar/event?eid=N25xYWZhanV0YzdzamUxdmh0NXNvYWFwaW8gZXN0aGVyLmV2ZWx5bkBt",
-      "note": "edited"
-    }
-  ]
+  "feed_changes": []
 }
