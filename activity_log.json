@@ -1826,5 +1826,11 @@
     "action": "approved",
     "title": "Reservation CONFIRMED",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-09-13T18:08:03.572259+00:00",
+    "action": "dismissed",
+    "title": "\u270f\ufe0f Old School Registration, Sound Immersion and White Lotus Retreat",
+    "source": "Gmail"
   }
 ]
