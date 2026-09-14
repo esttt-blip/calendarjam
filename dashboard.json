@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-09-14T06:01:15.112757-04:00",
-  "generated_label": "Mon Sep 14, 6:01 AM",
-  "weather": null,
+  "generated_at": "2026-09-14T12:21:21.430248-04:00",
+  "generated_label": "Mon Sep 14, 12:21 PM",
+  "weather": {
+    "high_f": 82,
+    "low_f": 66,
+    "precip_pct": 8,
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
+  },
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -13,7 +19,14 @@
     {
       "date": "2026-09-14",
       "label": "Today \u00b7 Mon Sep 14",
-      "weather": null,
+      "weather": {
+        "high_f": 82,
+        "low_f": 66,
+        "precip_pct": 8,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -66,7 +79,14 @@
     {
       "date": "2026-09-15",
       "label": "Tomorrow \u00b7 Tue Sep 15",
-      "weather": null,
+      "weather": {
+        "high_f": 80,
+        "low_f": 57,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -92,7 +112,14 @@
     {
       "date": "2026-09-16",
       "label": "Wednesday \u00b7 Sep 16",
-      "weather": null,
+      "weather": {
+        "high_f": 85,
+        "low_f": 60,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -181,7 +208,14 @@
     {
       "date": "2026-09-17",
       "label": "Thursday \u00b7 Sep 17",
-      "weather": null,
+      "weather": {
+        "high_f": 88,
+        "low_f": 63,
+        "precip_pct": 1,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
       "events": [
         {
           "time": "9:30 am",
@@ -216,7 +250,14 @@
     {
       "date": "2026-09-18",
       "label": "Friday \u00b7 Sep 18",
-      "weather": null,
+      "weather": {
+        "high_f": 89,
+        "low_f": 68,
+        "precip_pct": 29,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
       "events": [
         {
           "time": "all day",
@@ -278,7 +319,14 @@
     {
       "date": "2026-09-19",
       "label": "Saturday \u00b7 Sep 19",
-      "weather": null,
+      "weather": {
+        "high_f": 91,
+        "low_f": 72,
+        "precip_pct": 17,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "7:40 am",
@@ -313,7 +361,14 @@
     {
       "date": "2026-09-20",
       "label": "Sunday \u00b7 Sep 20",
-      "weather": null,
+      "weather": {
+        "high_f": 97,
+        "low_f": 73,
+        "precip_pct": 30,
+        "weather_code": 80,
+        "emoji": "\ud83c\udf26",
+        "label": "Showers"
+      },
       "events": [
         {
           "time": "11:15 am",
@@ -386,29 +441,9 @@
   },
   "added": [
     {
-      "title": "\ud83d\ude97 Drive to East Potomac Golf Links",
-      "when": "Sat Sep 19 \u00b7 7:40 AM",
-      "link": "https://www.google.com/calendar/event?eid=OXEzaWNsczUybmdudGFxdWRhOWtraGljZ28gZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26f3 Golf \u2014 East Potomac Golf Links (White)",
-      "when": "Sat Sep 19 \u00b7 8:30 AM",
-      "link": "https://www.google.com/calendar/event?eid=Mm5ydG9ocmtyZjdrN2F1dTRibXQ1N3Bsc2MgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\ude97 Drive to VIVA game (Justice HS Stadium)",
-      "when": "Sun Sep 27 \u00b7 8:30 AM",
-      "link": "https://www.google.com/calendar/event?eid=YThkMnBsZzRuMXJjOGlubzFwYXYzcmxjZ3MgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26bd Henry \u2014 VIVA game vs ALEX",
-      "when": "Sun Sep 27 \u00b7 9:30 AM",
-      "link": "https://www.google.com/calendar/event?eid=cmNyczBjZnB2Y2hjcThsODk4OXU4bzNhNXMgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83c\udf71 MightyMeals delivery",
-      "when": "Wed Sep 16",
-      "link": "https://www.google.com/calendar/event?eid=djNybW4xZHJwa2xvcXJodnZvN281dW5zNDggZXN0aGVyLmV2ZWx5bkBt"
+      "title": "\u26bd Henry \u2014 VIVA practice",
+      "when": "Mon Sep 28 \u00b7 7:00 PM",
+      "link": "https://www.google.com/calendar/event?eid=ZXByMjY1Y2NydWtpdjVvYzRiamVnMWIyNzAgZXN0aGVyLmV2ZWx5bkBt"
     }
   ],
   "feed_changes": []
