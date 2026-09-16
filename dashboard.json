@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-09-15T10:58:40.036811-04:00",
-  "generated_label": "Tue Sep 15, 10:58 AM",
-  "weather": {
-    "high_f": 79,
-    "low_f": 56,
-    "precip_pct": 1,
-    "emoji": "\u26c5",
-    "label": "Partly cloudy"
-  },
+  "generated_at": "2026-09-16T06:01:08.303263-04:00",
+  "generated_label": "Wed Sep 16, 6:01 AM",
+  "weather": null,
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -17,49 +11,9 @@
   },
   "week": [
     {
-      "date": "2026-09-15",
-      "label": "Today \u00b7 Tue Sep 15",
-      "weather": {
-        "high_f": 79,
-        "low_f": 56,
-        "precip_pct": 1,
-        "weather_code": 2,
-        "emoji": "\u26c5",
-        "label": "Partly cloudy"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "Brent's Birthday",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-09-15T00:00",
-          "link": "https://www.google.com/calendar/event?eid=amFkZWlxaWE3dXI2cm5xZXQ1anRmMjZtMWdfMjAyNjA5MTUgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "all day",
-          "title": "Brent Scott's Birthday",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-09-15T00:00",
-          "link": "https://www.google.com/calendar/event?eid=bjk4MG1jb3U4MzliYmZpdmttYXAwZmFuZ3NfMjAyNjA5MTUgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-09-16",
-      "label": "Tomorrow \u00b7 Wed Sep 16",
-      "weather": {
-        "high_f": 86,
-        "low_f": 60,
-        "precip_pct": 5,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
-      },
+      "label": "Today \u00b7 Wed Sep 16",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -78,15 +32,6 @@
           "is_drive": false,
           "sort": "2026-09-16T10:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=ODZqcGEyNzNvdHFxbWE2NGtqc2lzaXVuaDQgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "3:00 pm",
-          "title": "Catch up with Taylor",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-16T15:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=cGdraDFiMjB2ZnRtODdhN24zMGlnMzU1bDAgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "6:30 pm",
@@ -147,15 +92,8 @@
     },
     {
       "date": "2026-09-17",
-      "label": "Thursday \u00b7 Sep 17",
-      "weather": {
-        "high_f": 87,
-        "low_f": 66,
-        "precip_pct": 18,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "label": "Tomorrow \u00b7 Thu Sep 17",
+      "weather": null,
       "events": [
         {
           "time": "9:30 am",
@@ -190,14 +128,7 @@
     {
       "date": "2026-09-18",
       "label": "Friday \u00b7 Sep 18",
-      "weather": {
-        "high_f": 86,
-        "low_f": 71,
-        "precip_pct": 18,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -259,14 +190,7 @@
     {
       "date": "2026-09-19",
       "label": "Saturday \u00b7 Sep 19",
-      "weather": {
-        "high_f": 83,
-        "low_f": 69,
-        "precip_pct": 7,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "7:40 am",
@@ -301,14 +225,7 @@
     {
       "date": "2026-09-20",
       "label": "Sunday \u00b7 Sep 20",
-      "weather": {
-        "high_f": 86,
-        "low_f": 68,
-        "precip_pct": 36,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "11:15 am",
@@ -361,14 +278,7 @@
     {
       "date": "2026-09-21",
       "label": "Monday \u00b7 Sep 21",
-      "weather": {
-        "high_f": 74,
-        "low_f": 70,
-        "precip_pct": 37,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -442,24 +352,21 @@
           "b_time": "9:00 am"
         }
       ]
+    },
+    {
+      "date": "2026-09-22",
+      "label": "Tuesday \u00b7 Sep 22",
+      "weather": null,
+      "events": [],
+      "conflicts": []
     }
   ],
   "horizon": {
     "birthdays": [
       {
-        "title": "Brent's Birthday",
-        "day": "Tue Sep 15",
-        "days_out": 0
-      },
-      {
-        "title": "Brent Scott's Birthday",
-        "day": "Tue Sep 15",
-        "days_out": 0
-      },
-      {
         "title": "Kristen\u2019s Birthday",
         "day": "Sat Oct 3",
-        "days_out": 18
+        "days_out": 17
       }
     ],
     "holidays": []
