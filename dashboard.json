@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-09-16T06:01:08.303263-04:00",
-  "generated_label": "Wed Sep 16, 6:01 AM",
-  "weather": null,
+  "generated_at": "2026-09-16T10:57:02.277437-04:00",
+  "generated_label": "Wed Sep 16, 10:57 AM",
+  "weather": {
+    "high_f": 86,
+    "low_f": 60,
+    "precip_pct": 1,
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
+  },
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -13,7 +19,14 @@
     {
       "date": "2026-09-16",
       "label": "Today \u00b7 Wed Sep 16",
-      "weather": null,
+      "weather": {
+        "high_f": 86,
+        "low_f": 60,
+        "precip_pct": 1,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -93,7 +106,14 @@
     {
       "date": "2026-09-17",
       "label": "Tomorrow \u00b7 Thu Sep 17",
-      "weather": null,
+      "weather": {
+        "high_f": 92,
+        "low_f": 67,
+        "precip_pct": 39,
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
+      },
       "events": [
         {
           "time": "9:30 am",
@@ -128,7 +148,14 @@
     {
       "date": "2026-09-18",
       "label": "Friday \u00b7 Sep 18",
-      "weather": null,
+      "weather": {
+        "high_f": 86,
+        "low_f": 71,
+        "precip_pct": 39,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
       "events": [
         {
           "time": "all day",
@@ -190,7 +217,14 @@
     {
       "date": "2026-09-19",
       "label": "Saturday \u00b7 Sep 19",
-      "weather": null,
+      "weather": {
+        "high_f": 79,
+        "low_f": 66,
+        "precip_pct": 1,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "7:40 am",
@@ -225,7 +259,14 @@
     {
       "date": "2026-09-20",
       "label": "Sunday \u00b7 Sep 20",
-      "weather": null,
+      "weather": {
+        "high_f": 88,
+        "low_f": 66,
+        "precip_pct": 54,
+        "weather_code": 82,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy showers"
+      },
       "events": [
         {
           "time": "11:15 am",
@@ -278,7 +319,14 @@
     {
       "date": "2026-09-21",
       "label": "Monday \u00b7 Sep 21",
-      "weather": null,
+      "weather": {
+        "high_f": 72,
+        "low_f": 66,
+        "precip_pct": 54,
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
+      },
       "events": [
         {
           "time": "all day",
@@ -356,7 +404,14 @@
     {
       "date": "2026-09-22",
       "label": "Tuesday \u00b7 Sep 22",
-      "weather": null,
+      "weather": {
+        "high_f": 67,
+        "low_f": 65,
+        "precip_pct": 40,
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
+      },
       "events": [],
       "conflicts": []
     }
@@ -371,12 +426,6 @@
     ],
     "holidays": []
   },
-  "added": [
-    {
-      "title": "\u2708\ufe0f Airport \u2014 UA688 to BOS",
-      "when": "Mon Sep 28 \u00b7 3:15 PM",
-      "link": "https://www.google.com/calendar/event?eid=MGtvaGJuZGlxMDduaXV0aGF2a3BkYjlnYm8gZXN0aGVyLmV2ZWx5bkBt"
-    }
-  ],
+  "added": [],
   "feed_changes": []
 }
