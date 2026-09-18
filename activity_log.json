@@ -1869,5 +1869,11 @@
     "action": "approved",
     "title": "Your appointment is set.",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-09-18T12:09:20.301493+00:00",
+    "action": "dismissed",
+    "title": "Quick reminder: protect your info",
+    "source": "Gmail"
   }
 ]
