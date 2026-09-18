@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-09-17T10:59:01.952582-04:00",
-  "generated_label": "Thu Sep 17, 10:59 AM",
-  "weather": {
-    "high_f": 90,
-    "low_f": 69,
-    "precip_pct": 32,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-09-18T06:01:30.451488-04:00",
+  "generated_label": "Fri Sep 18, 6:01 AM",
+  "weather": null,
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -17,58 +11,9 @@
   },
   "week": [
     {
-      "date": "2026-09-17",
-      "label": "Today \u00b7 Thu Sep 17",
-      "weather": {
-        "high_f": 90,
-        "low_f": 69,
-        "precip_pct": 32,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "9:30 am",
-          "title": "Seymour eye appointment 945",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-17T09:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=djd2bHU5NWduOGljNzZqdHFwZWJzZWthdm8gZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:35 pm",
-          "title": "\ud83d\ude97 Drive to VIVA practice (Thomas Jefferson HS)",
-          "location": "Thomas Jefferson High School for Science and Technology, 6560 Braddock Rd, Alexandria, VA 22312",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-09-17T18:35:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=MW1yY3UwdHBsaWo1ZHVqODV2Nms4dDg1dm8gZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "\u26bd Henry \u2014 VIVA practice",
-          "location": "Thomas Jefferson High School for Science and Technology, 6560 Braddock Rd, Alexandria, VA 22312",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-17T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=aGdvdmtoZmI1ZzI0ZmRhajgzMWRlbGxjNjAgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-09-18",
-      "label": "Tomorrow \u00b7 Fri Sep 18",
-      "weather": {
-        "high_f": 83,
-        "low_f": 70,
-        "precip_pct": 8,
-        "weather_code": 63,
-        "emoji": "\ud83c\udf27",
-        "label": "Rain"
-      },
+      "label": "Today \u00b7 Fri Sep 18",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -129,15 +74,8 @@
     },
     {
       "date": "2026-09-19",
-      "label": "Saturday \u00b7 Sep 19",
-      "weather": {
-        "high_f": 78,
-        "low_f": 64,
-        "precip_pct": 10,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Tomorrow \u00b7 Sat Sep 19",
+      "weather": null,
       "events": [
         {
           "time": "7:40 am",
@@ -172,14 +110,7 @@
     {
       "date": "2026-09-20",
       "label": "Sunday \u00b7 Sep 20",
-      "weather": {
-        "high_f": 84,
-        "low_f": 67,
-        "precip_pct": 53,
-        "weather_code": 82,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy showers"
-      },
+      "weather": null,
       "events": [
         {
           "time": "11:15 am",
@@ -232,14 +163,7 @@
     {
       "date": "2026-09-21",
       "label": "Monday \u00b7 Sep 21",
-      "weather": {
-        "high_f": 71,
-        "low_f": 63,
-        "precip_pct": 53,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -317,28 +241,14 @@
     {
       "date": "2026-09-22",
       "label": "Tuesday \u00b7 Sep 22",
-      "weather": {
-        "high_f": 64,
-        "low_f": 60,
-        "precip_pct": 44,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [],
       "conflicts": []
     },
     {
       "date": "2026-09-23",
       "label": "Wednesday \u00b7 Sep 23",
-      "weather": {
-        "high_f": 71,
-        "low_f": 59,
-        "precip_pct": 35,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "6:30 pm",
@@ -369,6 +279,50 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-09-24",
+      "label": "Thursday \u00b7 Sep 24",
+      "weather": null,
+      "events": [
+        {
+          "time": "2:00 pm",
+          "title": "Seymour @ 2:30 CVCA",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-24T14:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=OTFhbXBqZmNqbDd2OWd2cmgwaWJsNjJ1NG8gZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "6:30 pm",
+          "title": "Taylor to London",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-24T18:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=YWVwa244cjhoY3FqanE0ZmlhcXR0cjYwOHMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "6:35 pm",
+          "title": "\ud83d\ude97 Drive to VIVA practice (Thomas Jefferson HS)",
+          "location": "Thomas Jefferson High School for Science and Technology, 6560 Braddock Rd, Alexandria, VA 22312",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-09-24T18:35:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=bjM1a2VuOWdlbXN0bHZrcGc1bTFnYWhzaHMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "\u26bd Henry \u2014 VIVA practice",
+          "location": "Thomas Jefferson High School for Science and Technology, 6560 Braddock Rd, Alexandria, VA 22312",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-24T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=N2FlOThhZ2RxZ2ZqZWplcjVtcGppMHBwc2sgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -376,7 +330,7 @@
       {
         "title": "Kristen\u2019s Birthday",
         "day": "Sat Oct 3",
-        "days_out": 16
+        "days_out": 15
       }
     ],
     "holidays": []
