@@ -1863,5 +1863,11 @@
     "action": "dismissed",
     "title": "Chelsea FC UK Tour \u2013 December 2026 | Trip Confirmed!",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-09-18T12:09:12.754545+00:00",
+    "action": "approved",
+    "title": "Your appointment is set.",
+    "source": "Gmail"
   }
 ]
