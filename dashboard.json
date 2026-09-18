@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-09-18T06:01:30.451488-04:00",
-  "generated_label": "Fri Sep 18, 6:01 AM",
-  "weather": null,
+  "generated_at": "2026-09-18T10:29:29.833995-04:00",
+  "generated_label": "Fri Sep 18, 10:29 AM",
+  "weather": {
+    "high_f": 87,
+    "low_f": 72,
+    "precip_pct": 9,
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
+  },
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -13,7 +19,14 @@
     {
       "date": "2026-09-18",
       "label": "Today \u00b7 Fri Sep 18",
-      "weather": null,
+      "weather": {
+        "high_f": 87,
+        "low_f": 72,
+        "precip_pct": 9,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -43,12 +56,30 @@
           "link": "https://www.google.com/calendar/event?eid=ZWYxOGtvNTEyanVwMmwwdG5naWY2ZzFtazAgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
-          "time": "6:00 pm",
-          "title": "Veronica lands @ IAD",
+          "time": "4:45 pm",
+          "title": "\ud83d\ude97 Drive to Golf Galaxy",
+          "location": "5821 Crossroads Center Way, Falls Church, VA 22041",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-09-18T16:45:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZDkzamVhdXNuNjY0ZDhiZm51Nm5nM2hjaDAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "5:00 pm",
+          "title": "\u26f3 Golf Galaxy \u2014 Simulator Rental",
+          "location": "5821 Crossroads Center Way, Falls Church, VA 22041",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-18T17:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=djduODQ0aWFvN2ZjcjZxOW0zaXRoMmx2dTQgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "6:30 pm",
+          "title": "Veronica lands @ IAD 6:50",
           "location": "",
           "all_day": false,
           "is_drive": false,
-          "sort": "2026-09-18T18:00:00-04:00",
+          "sort": "2026-09-18T18:30:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=NW44M25uNXNyZDdwdnU0azZ2cGtidWhqNnMgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
@@ -75,7 +106,14 @@
     {
       "date": "2026-09-19",
       "label": "Tomorrow \u00b7 Sat Sep 19",
-      "weather": null,
+      "weather": {
+        "high_f": 80,
+        "low_f": 64,
+        "precip_pct": 15,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "7:40 am",
@@ -97,8 +135,8 @@
         },
         {
           "time": "8:30 am",
-          "title": "Reservation at East Potomac Golf Links - White",
-          "location": "East Potomac Golf Links - White, East Potomac Golf Links - WHITE Course, 972 Ohio Dr SW, Washington, DC 20024, US",
+          "title": "Reservation at East Potomac Golf Links - WHITE Course",
+          "location": "East Potomac Golf Links - WHITE Course, East Potomac Golf Links - WHITE Course, 972 Ohio Dr SW, Washington, DC 20024, US",
           "all_day": false,
           "is_drive": false,
           "sort": "2026-09-19T08:30:00-04:00",
@@ -110,7 +148,14 @@
     {
       "date": "2026-09-20",
       "label": "Sunday \u00b7 Sep 20",
-      "weather": null,
+      "weather": {
+        "high_f": 81,
+        "low_f": 66,
+        "precip_pct": 61,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
       "events": [
         {
           "time": "11:15 am",
@@ -163,7 +208,14 @@
     {
       "date": "2026-09-21",
       "label": "Monday \u00b7 Sep 21",
-      "weather": null,
+      "weather": {
+        "high_f": 71,
+        "low_f": 66,
+        "precip_pct": 61,
+        "weather_code": 80,
+        "emoji": "\ud83c\udf26",
+        "label": "Showers"
+      },
       "events": [
         {
           "time": "all day",
@@ -241,14 +293,38 @@
     {
       "date": "2026-09-22",
       "label": "Tuesday \u00b7 Sep 22",
-      "weather": null,
-      "events": [],
+      "weather": {
+        "high_f": 67,
+        "low_f": 62,
+        "precip_pct": 51,
+        "weather_code": 55,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy drizzle"
+      },
+      "events": [
+        {
+          "time": "7:00 am",
+          "title": "Veronica leaves @ 8:30",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-22T07:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZTI2Z29nMHRldTJ0Ymc3MzBuY280bjllaWMgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
       "conflicts": []
     },
     {
       "date": "2026-09-23",
       "label": "Wednesday \u00b7 Sep 23",
-      "weather": null,
+      "weather": {
+        "high_f": 61,
+        "low_f": 57,
+        "precip_pct": 51,
+        "weather_code": 63,
+        "emoji": "\ud83c\udf27",
+        "label": "Rain"
+      },
       "events": [
         {
           "time": "6:30 pm",
@@ -283,7 +359,14 @@
     {
       "date": "2026-09-24",
       "label": "Thursday \u00b7 Sep 24",
-      "weather": null,
+      "weather": {
+        "high_f": 67,
+        "low_f": 56,
+        "precip_pct": 42,
+        "weather_code": 55,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy drizzle"
+      },
       "events": [
         {
           "time": "2:00 pm",
@@ -337,6 +420,16 @@
   },
   "added": [
     {
+      "title": "\ud83d\ude97 Drive to Golf Galaxy",
+      "when": "Fri Sep 18 \u00b7 4:45 PM",
+      "link": "https://www.google.com/calendar/event?eid=ZDkzamVhdXNuNjY0ZDhiZm51Nm5nM2hjaDAgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\u26f3 Golf Galaxy \u2014 Simulator Rental",
+      "when": "Fri Sep 18 \u00b7 5:00 PM",
+      "link": "https://www.google.com/calendar/event?eid=djduODQ0aWFvN2ZjcjZxOW0zaXRoMmx2dTQgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
       "title": "\ud83d\ude97 Drive to VIVA practice (Thomas Jefferson HS)",
       "when": "Thu Oct 1 \u00b7 6:35 PM",
       "link": "https://www.google.com/calendar/event?eid=ZGVmZ282YXUxdjBoNGpkdGI4NjBzMjI5aTAgZXN0aGVyLmV2ZWx5bkBt"
@@ -345,6 +438,11 @@
       "title": "\u26bd Henry \u2014 VIVA practice",
       "when": "Thu Oct 1 \u00b7 7:00 PM",
       "link": "https://www.google.com/calendar/event?eid=Mzg1a3R1a282c2Y4Yjl0ajFuczU5YWU4dmMgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\ude97 Drive home from IAD (UA2136)",
+      "when": "Wed Sep 30 \u00b7 9:28 PM",
+      "link": "https://www.google.com/calendar/event?eid=ZWNocnV1dGE0dWs0Mm5xYzlicW51bnVzZ3MgZXN0aGVyLmV2ZWx5bkBt"
     }
   ],
   "feed_changes": []
