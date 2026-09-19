@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-19T06:01:43.396096-04:00",
-  "generated_label": "Sat Sep 19, 6:01 AM",
+  "generated_at": "2026-09-19T09:55:09.660548-04:00",
+  "generated_label": "Sat Sep 19, 9:55 AM",
   "weather": {
-    "high_f": 83,
+    "high_f": 82,
     "low_f": 64,
-    "precip_pct": 9,
+    "precip_pct": 4,
     "emoji": "\u2601\ufe0f",
     "label": "Overcast"
   },
@@ -20,9 +20,9 @@
       "date": "2026-09-19",
       "label": "Today \u00b7 Sat Sep 19",
       "weather": {
-        "high_f": 83,
+        "high_f": 82,
         "low_f": 64,
-        "precip_pct": 9,
+        "precip_pct": 4,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -131,12 +131,12 @@
       "date": "2026-09-21",
       "label": "Monday \u00b7 Sep 21",
       "weather": {
-        "high_f": 73,
-        "low_f": 64,
+        "high_f": 72,
+        "low_f": 65,
         "precip_pct": 58,
-        "weather_code": 61,
-        "emoji": "\ud83c\udf27",
-        "label": "Light rain"
+        "weather_code": 80,
+        "emoji": "\ud83c\udf26",
+        "label": "Showers"
       },
       "events": [
         {
@@ -219,9 +219,9 @@
         "high_f": 67,
         "low_f": 60,
         "precip_pct": 46,
-        "weather_code": 53,
+        "weather_code": 80,
         "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
+        "label": "Showers"
       },
       "events": [
         {
@@ -240,12 +240,12 @@
       "date": "2026-09-23",
       "label": "Wednesday \u00b7 Sep 23",
       "weather": {
-        "high_f": 59,
-        "low_f": 56,
+        "high_f": 61,
+        "low_f": 54,
         "precip_pct": 40,
-        "weather_code": 81,
+        "weather_code": 63,
         "emoji": "\ud83c\udf27",
-        "label": "Showers"
+        "label": "Rain"
       },
       "events": [
         {
@@ -282,12 +282,12 @@
       "date": "2026-09-24",
       "label": "Thursday \u00b7 Sep 24",
       "weather": {
-        "high_f": 63,
+        "high_f": 61,
         "low_f": 55,
         "precip_pct": 32,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
       },
       "events": [
         {
@@ -333,8 +333,8 @@
       "date": "2026-09-25",
       "label": "Friday \u00b7 Sep 25",
       "weather": {
-        "high_f": 70,
-        "low_f": 54,
+        "high_f": 71,
+        "low_f": 53,
         "precip_pct": 17,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
@@ -373,22 +373,6 @@
     ],
     "holidays": []
   },
-  "added": [
-    {
-      "title": "\ud83d\ude97 Drive to Golf Galaxy",
-      "when": "Fri Sep 18 \u00b7 4:45 PM",
-      "link": "https://www.google.com/calendar/event?eid=ZDkzamVhdXNuNjY0ZDhiZm51Nm5nM2hjaDAgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26f3 Golf Galaxy \u2014 Simulator Rental",
-      "when": "Fri Sep 18 \u00b7 5:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=djduODQ0aWFvN2ZjcjZxOW0zaXRoMmx2dTQgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\ude97 Drive home from IAD (UA2136)",
-      "when": "Wed Sep 30 \u00b7 9:28 PM",
-      "link": "https://www.google.com/calendar/event?eid=ZWNocnV1dGE0dWs0Mm5xYzlicW51bnVzZ3MgZXN0aGVyLmV2ZWx5bkBt"
-    }
-  ],
+  "added": [],
   "feed_changes": []
 }
