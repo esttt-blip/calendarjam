@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-18T10:29:29.833995-04:00",
-  "generated_label": "Fri Sep 18, 10:29 AM",
+  "generated_at": "2026-09-19T06:01:43.396096-04:00",
+  "generated_label": "Sat Sep 19, 6:01 AM",
   "weather": {
-    "high_f": 87,
-    "low_f": 72,
+    "high_f": 83,
+    "low_f": 64,
     "precip_pct": 9,
     "emoji": "\u2601\ufe0f",
     "label": "Overcast"
@@ -17,99 +17,12 @@
   },
   "week": [
     {
-      "date": "2026-09-18",
-      "label": "Today \u00b7 Fri Sep 18",
-      "weather": {
-        "high_f": 87,
-        "low_f": 72,
-        "precip_pct": 9,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "EP",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-09-18T00:00",
-          "link": "https://www.google.com/calendar/event?eid=NGlkYWdqazk5aGlvMXBtcmZybmxyb2c1Ym9fMjAyNjA5MTggZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "all day",
-          "title": "Veronica Visit",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-09-18T00:00",
-          "link": "https://www.google.com/calendar/event?eid=dHB0bTc3OXB0ZTVxNnFjcTA3bGdrN2drNGsgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "4:00 pm",
-          "title": "Boys haircuts",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-18T16:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ZWYxOGtvNTEyanVwMmwwdG5naWY2ZzFtazAgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "4:45 pm",
-          "title": "\ud83d\ude97 Drive to Golf Galaxy",
-          "location": "5821 Crossroads Center Way, Falls Church, VA 22041",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-09-18T16:45:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ZDkzamVhdXNuNjY0ZDhiZm51Nm5nM2hjaDAgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "5:00 pm",
-          "title": "\u26f3 Golf Galaxy \u2014 Simulator Rental",
-          "location": "5821 Crossroads Center Way, Falls Church, VA 22041",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-18T17:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=djduODQ0aWFvN2ZjcjZxOW0zaXRoMmx2dTQgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:30 pm",
-          "title": "Veronica lands @ IAD 6:50",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-18T18:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=NW44M25uNXNyZDdwdnU0azZ2cGtidWhqNnMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:30 pm",
-          "title": "\ud83d\ude97 Drive to VIVA Coaches Education (Springfield G&CC)",
-          "location": "Springfield Golf & Country Club, 8301 Old Keene Mill Rd, Springfield, VA 22152",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-09-18T18:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=cTc4bTVra2xyc2ozYXVwaWE3cXZzYWZtYmMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "VIVA U13 BOYS ALL - Coaches Education - Mandatory Event ",
-          "location": "Springfield Golf & Country Club, Old Keene Mill Road, Springfield, VA, USA",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-18T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Z2Jmb2o0NXRvMXI0ZmxvdXFnZm1lazI0bzQgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-09-19",
-      "label": "Tomorrow \u00b7 Sat Sep 19",
+      "label": "Today \u00b7 Sat Sep 19",
       "weather": {
-        "high_f": 80,
+        "high_f": 83,
         "low_f": 64,
-        "precip_pct": 15,
+        "precip_pct": 9,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -141,20 +54,29 @@
           "is_drive": false,
           "sort": "2026-09-19T08:30:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=cnMwMXJpc2lsNThlZ2plbTVkaDFnY2Fpc28gZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "9:00 am",
+          "title": "\ud83d\uded2 Walmart delivery",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-19T09:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=MHR2NmMwZm1yNjF1b3M4NHUzZ2c4bTBnbTggZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
     },
     {
       "date": "2026-09-20",
-      "label": "Sunday \u00b7 Sep 20",
+      "label": "Tomorrow \u00b7 Sun Sep 20",
       "weather": {
-        "high_f": 81,
-        "low_f": 66,
-        "precip_pct": 61,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
+        "high_f": 82,
+        "low_f": 70,
+        "precip_pct": 58,
+        "weather_code": 63,
+        "emoji": "\ud83c\udf27",
+        "label": "Rain"
       },
       "events": [
         {
@@ -209,12 +131,12 @@
       "date": "2026-09-21",
       "label": "Monday \u00b7 Sep 21",
       "weather": {
-        "high_f": 71,
-        "low_f": 66,
-        "precip_pct": 61,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
+        "high_f": 73,
+        "low_f": 64,
+        "precip_pct": 58,
+        "weather_code": 61,
+        "emoji": "\ud83c\udf27",
+        "label": "Light rain"
       },
       "events": [
         {
@@ -295,11 +217,11 @@
       "label": "Tuesday \u00b7 Sep 22",
       "weather": {
         "high_f": 67,
-        "low_f": 62,
-        "precip_pct": 51,
-        "weather_code": 55,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy drizzle"
+        "low_f": 60,
+        "precip_pct": 46,
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
       },
       "events": [
         {
@@ -318,12 +240,12 @@
       "date": "2026-09-23",
       "label": "Wednesday \u00b7 Sep 23",
       "weather": {
-        "high_f": 61,
-        "low_f": 57,
-        "precip_pct": 51,
-        "weather_code": 63,
+        "high_f": 59,
+        "low_f": 56,
+        "precip_pct": 40,
+        "weather_code": 81,
         "emoji": "\ud83c\udf27",
-        "label": "Rain"
+        "label": "Showers"
       },
       "events": [
         {
@@ -360,12 +282,12 @@
       "date": "2026-09-24",
       "label": "Thursday \u00b7 Sep 24",
       "weather": {
-        "high_f": 67,
-        "low_f": 56,
-        "precip_pct": 42,
-        "weather_code": 55,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy drizzle"
+        "high_f": 63,
+        "low_f": 55,
+        "precip_pct": 32,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [
         {
@@ -406,6 +328,39 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-09-25",
+      "label": "Friday \u00b7 Sep 25",
+      "weather": {
+        "high_f": 70,
+        "low_f": 54,
+        "precip_pct": 17,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
+      "events": [
+        {
+          "time": "all day",
+          "title": "EP",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-09-25T00:00",
+          "link": "https://www.google.com/calendar/event?eid=NGlkYWdqazk5aGlvMXBtcmZybmxyb2c1Ym9fMjAyNjA5MjUgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "all day",
+          "title": "Taylor in London",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-09-25T00:00",
+          "link": "https://www.google.com/calendar/event?eid=bGZlMmF0N2wwdnBwMGgybGs2cmxoZ2pvM2cgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -413,7 +368,7 @@
       {
         "title": "Kristen\u2019s Birthday",
         "day": "Sat Oct 3",
-        "days_out": 15
+        "days_out": 14
       }
     ],
     "holidays": []
@@ -428,16 +383,6 @@
       "title": "\u26f3 Golf Galaxy \u2014 Simulator Rental",
       "when": "Fri Sep 18 \u00b7 5:00 PM",
       "link": "https://www.google.com/calendar/event?eid=djduODQ0aWFvN2ZjcjZxOW0zaXRoMmx2dTQgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\ude97 Drive to VIVA practice (Thomas Jefferson HS)",
-      "when": "Thu Oct 1 \u00b7 6:35 PM",
-      "link": "https://www.google.com/calendar/event?eid=ZGVmZ282YXUxdjBoNGpkdGI4NjBzMjI5aTAgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26bd Henry \u2014 VIVA practice",
-      "when": "Thu Oct 1 \u00b7 7:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=Mzg1a3R1a282c2Y4Yjl0ajFuczU5YWU4dmMgZXN0aGVyLmV2ZWx5bkBt"
     },
     {
       "title": "\ud83d\ude97 Drive home from IAD (UA2136)",

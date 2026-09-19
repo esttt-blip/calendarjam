@@ -118,5 +118,29 @@
     "uid": "<90.74.08930.DDE2DAA6@i-0981ca7ed7ea10856.mta1vrest.sd.prd.sparkpost>",
     "needs_review": true,
     "from": "\"East Potomac Park Golf Course-WHITE\" <course@golffacility.com>"
+  },
+  {
+    "id": "5b8cb0d37a02d9254afcb09b0dd9de41",
+    "source": "Gmail",
+    "title": "Security Alert: Signon from New Device",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "Dear Esther Scott, Your Workday Account was just signed in to from a new Mac OS X device. You're getting this email to make sure it was you. Time: 9/18/26, 12:24 PM Device: Chrome on Mac OS X Tenant: draftkings If you don't recognize this action, immediately notify your company's Workday administrator and follow your organization's policies to reset your password. This email box is not monitored. Please do not reply to this message. This email was intended for esther.evelyn@gmail.com DraftKings \u00b7 222 Berkeley St., Boston, MA 02116",
+    "uid": "<010001a0b555f066-03adc5ef-058f-4de4-8829-0febb67d1696-000000@email.amazonses.com>",
+    "needs_review": true,
+    "from": "draftkings@myworkday.com"
+  },
+  {
+    "id": "070b94de16b6ac807fc413541fadca4b",
+    "source": "Gmail",
+    "title": "Reminder for your upcoming order",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "96 You can make changes until 06:00am on Sep 19 \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c Order date: Fri, Sep 18 Order number: 2000152-01100523 Last chance to add more items Need to add last-minute items to your order? You can add more to your order until 06:00am on Sat, Sep 19 . Add items View the status of your order in your order details . Delivery from store Location Esther Scott 1014 N Quintana St Arlington, VA 22205 Estimated date and time Sat, Sep 19 9am - 11am Shop anywhere with the Walmart app Questions? Visit our Help Center Walmart protects your security and privacy. We will never ask for personal information (such as passwords or credit card numbers) in an email. If you receive such a request, please do not respond. Learn more about online safety and see our Privacy Policy . Manage which messages you receive in your communication preferences . Please do not reply to this email. This mailbox is not monitored. \u00a9 2026 Walmart. All rights reserved.",
+    "uid": "<f15b44eb8678a264d61cadfa1a609e99336b6a818b458787677fde7940d61418@walmart.com>",
+    "needs_review": true,
+    "from": "\"Walmart.com\" <help@walmart.com>"
   }
 ]
