@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-09-19T09:55:09.660548-04:00",
-  "generated_label": "Sat Sep 19, 9:55 AM",
-  "weather": {
-    "high_f": 82,
-    "low_f": 64,
-    "precip_pct": 4,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-09-20T10:12:45.541256-04:00",
+  "generated_label": "Sun Sep 20, 10:12 AM",
+  "weather": null,
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -17,67 +11,9 @@
   },
   "week": [
     {
-      "date": "2026-09-19",
-      "label": "Today \u00b7 Sat Sep 19",
-      "weather": {
-        "high_f": 82,
-        "low_f": 64,
-        "precip_pct": 4,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "7:40 am",
-          "title": "\ud83d\ude97 Drive to East Potomac Golf Links",
-          "location": "East Potomac Golf Links, 972 Ohio Dr SW, Washington, DC 20024",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-09-19T07:40:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=OXEzaWNsczUybmdudGFxdWRhOWtraGljZ28gZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "8:30 am",
-          "title": "\u26f3 Golf \u2014 East Potomac Golf Links (White)",
-          "location": "East Potomac Golf Links, 972 Ohio Dr SW, Washington, DC 20024",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-19T08:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Mm5ydG9ocmtyZjdrN2F1dTRibXQ1N3Bsc2MgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "8:30 am",
-          "title": "Reservation at East Potomac Golf Links - WHITE Course",
-          "location": "East Potomac Golf Links - WHITE Course, East Potomac Golf Links - WHITE Course, 972 Ohio Dr SW, Washington, DC 20024, US",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-19T08:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=cnMwMXJpc2lsNThlZ2plbTVkaDFnY2Fpc28gZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "9:00 am",
-          "title": "\ud83d\uded2 Walmart delivery",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-19T09:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=MHR2NmMwZm1yNjF1b3M4NHUzZ2c4bTBnbTggZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-09-20",
-      "label": "Tomorrow \u00b7 Sun Sep 20",
-      "weather": {
-        "high_f": 82,
-        "low_f": 70,
-        "precip_pct": 58,
-        "weather_code": 63,
-        "emoji": "\ud83c\udf27",
-        "label": "Rain"
-      },
+      "label": "Today \u00b7 Sun Sep 20",
+      "weather": null,
       "events": [
         {
           "time": "11:15 am",
@@ -96,6 +32,15 @@
           "is_drive": false,
           "sort": "2026-09-20T12:30:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=c3V2bTQ1MmZ2Zzg4MHY2ZWNkbzR2ZnIybzggZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "2:00 pm",
+          "title": "\ud83d\uded2 Whole Foods pickup",
+          "location": "Whole Foods Market, 103 E Broad St, Falls Church, VA 22046",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-20T14:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ajlnZzJwZjUyNmR0bmU1bGw2MWs5Mm10N2MgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "5:00 pm",
@@ -129,15 +74,8 @@
     },
     {
       "date": "2026-09-21",
-      "label": "Monday \u00b7 Sep 21",
-      "weather": {
-        "high_f": 72,
-        "low_f": 65,
-        "precip_pct": 58,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
-      },
+      "label": "Tomorrow \u00b7 Mon Sep 21",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -215,14 +153,7 @@
     {
       "date": "2026-09-22",
       "label": "Tuesday \u00b7 Sep 22",
-      "weather": {
-        "high_f": 67,
-        "low_f": 60,
-        "precip_pct": 46,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
-      },
+      "weather": null,
       "events": [
         {
           "time": "7:00 am",
@@ -239,14 +170,7 @@
     {
       "date": "2026-09-23",
       "label": "Wednesday \u00b7 Sep 23",
-      "weather": {
-        "high_f": 61,
-        "low_f": 54,
-        "precip_pct": 40,
-        "weather_code": 63,
-        "emoji": "\ud83c\udf27",
-        "label": "Rain"
-      },
+      "weather": null,
       "events": [
         {
           "time": "6:30 pm",
@@ -281,14 +205,7 @@
     {
       "date": "2026-09-24",
       "label": "Thursday \u00b7 Sep 24",
-      "weather": {
-        "high_f": 61,
-        "low_f": 55,
-        "precip_pct": 32,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "2:00 pm",
@@ -332,14 +249,7 @@
     {
       "date": "2026-09-25",
       "label": "Friday \u00b7 Sep 25",
-      "weather": {
-        "high_f": 71,
-        "low_f": 53,
-        "precip_pct": 17,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -361,6 +271,32 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-09-26",
+      "label": "Saturday \u00b7 Sep 26",
+      "weather": null,
+      "events": [
+        {
+          "time": "5:40 pm",
+          "title": "\ud83d\ude97 Drive to Audi Field (Spirit vs Angel City)",
+          "location": "Audi Field, 100 Potomac Ave SW, Washington, DC 20024",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-09-26T17:40:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZDY1ZXFsaHN2djFkb2ZxdXFnZzE3cjAwN2MgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "6:30 pm",
+          "title": "Spirit vs Angel City (ion)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-26T18:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=cmcwZ3UzMjVtamM2OWtvbWY4cW44aWI3Z3MgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -368,11 +304,27 @@
       {
         "title": "Kristen\u2019s Birthday",
         "day": "Sat Oct 3",
-        "days_out": 14
+        "days_out": 13
       }
     ],
     "holidays": []
   },
-  "added": [],
+  "added": [
+    {
+      "title": "\ud83d\ude97 Drive to VIVA game (Justice HS Stadium)",
+      "when": "Sun Oct 4 \u00b7 10:30 AM",
+      "link": "https://www.google.com/calendar/event?eid=cW44c21yMGN1NjZucDdpMHVtdXBscjUyN2cgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\u26bd Henry \u2014 VIVA game vs MSI",
+      "when": "Sun Oct 4 \u00b7 11:30 AM",
+      "link": "https://www.google.com/calendar/event?eid=anJkcTV1cGM5dnB1czRkb3Zrc2ZvNGJmZmMgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\uded2 Whole Foods pickup",
+      "when": "Sun Sep 20 \u00b7 2:00 PM",
+      "link": "https://www.google.com/calendar/event?eid=ajlnZzJwZjUyNmR0bmU1bGw2MWs5Mm10N2MgZXN0aGVyLmV2ZWx5bkBt"
+    }
+  ],
   "feed_changes": []
 }
