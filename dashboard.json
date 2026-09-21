@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-21T06:00:51.158910-04:00",
-  "generated_label": "Mon Sep 21, 6:00 AM",
+  "generated_at": "2026-09-21T12:27:41.657333-04:00",
+  "generated_label": "Mon Sep 21, 12:27 PM",
   "weather": {
-    "high_f": 79,
+    "high_f": 77,
     "low_f": 67,
-    "precip_pct": 27,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
+    "precip_pct": 17,
+    "emoji": "\ud83c\udf26",
+    "label": "Drizzle"
   },
   "theme": {
     "emoji": "\u26bd",
@@ -20,12 +20,12 @@
       "date": "2026-09-21",
       "label": "Today \u00b7 Mon Sep 21",
       "weather": {
-        "high_f": 79,
+        "high_f": 77,
         "low_f": 67,
-        "precip_pct": 27,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "precip_pct": 17,
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
       },
       "events": [
         {
@@ -105,12 +105,12 @@
       "date": "2026-09-22",
       "label": "Tomorrow \u00b7 Tue Sep 22",
       "weather": {
-        "high_f": 68,
+        "high_f": 67,
         "low_f": 60,
-        "precip_pct": 81,
-        "weather_code": 63,
+        "precip_pct": 75,
+        "weather_code": 65,
         "emoji": "\ud83c\udf27",
-        "label": "Rain"
+        "label": "Heavy rain"
       },
       "events": [
         {
@@ -129,9 +129,9 @@
       "date": "2026-09-23",
       "label": "Wednesday \u00b7 Sep 23",
       "weather": {
-        "high_f": 63,
+        "high_f": 61,
         "low_f": 54,
-        "precip_pct": 81,
+        "precip_pct": 76,
         "weather_code": 61,
         "emoji": "\ud83c\udf27",
         "label": "Light rain"
@@ -171,9 +171,9 @@
       "date": "2026-09-24",
       "label": "Thursday \u00b7 Sep 24",
       "weather": {
-        "high_f": 65,
-        "low_f": 56,
-        "precip_pct": 33,
+        "high_f": 67,
+        "low_f": 55,
+        "precip_pct": 20,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -224,10 +224,10 @@
       "weather": {
         "high_f": 71,
         "low_f": 51,
-        "precip_pct": 16,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "precip_pct": 14,
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
       },
       "events": [
         {
@@ -255,12 +255,12 @@
       "date": "2026-09-26",
       "label": "Saturday \u00b7 Sep 26",
       "weather": {
-        "high_f": 66,
-        "low_f": 56,
-        "precip_pct": 16,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "high_f": 73,
+        "low_f": 52,
+        "precip_pct": 6,
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
       },
       "events": [
         {
@@ -288,9 +288,9 @@
       "date": "2026-09-27",
       "label": "Sunday \u00b7 Sep 27",
       "weather": {
-        "high_f": 68,
-        "low_f": 57,
-        "precip_pct": 8,
+        "high_f": 76,
+        "low_f": 55,
+        "precip_pct": 4,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -336,19 +336,14 @@
   },
   "added": [
     {
-      "title": "\ud83d\ude97 Drive to VIVA game (Justice HS Stadium)",
-      "when": "Sun Oct 4 \u00b7 10:30 AM",
-      "link": "https://www.google.com/calendar/event?eid=cW44c21yMGN1NjZucDdpMHVtdXBscjUyN2cgZXN0aGVyLmV2ZWx5bkBt"
+      "title": "\ud83d\ude97 Drive to VIVA practice (Pine Ridge Park)",
+      "when": "Mon Oct 5 \u00b7 6:30 PM",
+      "link": "https://www.google.com/calendar/event?eid=cGs4c2dmOWpxYmQ4bXRiZ2RkYWF1MGJ0cjggZXN0aGVyLmV2ZWx5bkBt"
     },
     {
-      "title": "\u26bd Henry \u2014 VIVA game vs MSI",
-      "when": "Sun Oct 4 \u00b7 11:30 AM",
-      "link": "https://www.google.com/calendar/event?eid=anJkcTV1cGM5dnB1czRkb3Zrc2ZvNGJmZmMgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\uded2 Whole Foods pickup",
-      "when": "Sun Sep 20 \u00b7 2:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=ajlnZzJwZjUyNmR0bmU1bGw2MWs5Mm10N2MgZXN0aGVyLmV2ZWx5bkBt"
+      "title": "\u26bd Henry \u2014 VIVA practice",
+      "when": "Mon Oct 5 \u00b7 7:00 PM",
+      "link": "https://www.google.com/calendar/event?eid=dTZkbWYxZmQ4djRqMm11Y3BwNzZhb243MzQgZXN0aGVyLmV2ZWx5bkBt"
     }
   ],
   "feed_changes": []
