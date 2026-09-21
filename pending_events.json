@@ -154,5 +154,17 @@
     "uid": "<010101a0ba8ef035-b00f80bd-9345-43b1-b564-36b3d249002a-000000@us-west-2.amazonses.com>",
     "needs_review": true,
     "from": "Great Country Farms <GreatCountryFarms@ticketspice.com>"
+  },
+  {
+    "id": "ef3ea46b348486818dd8b0a0bc3ea76d",
+    "source": "Gmail",
+    "title": "Reminder: New swim spa quote",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "Hi Esther,\r\n\r\nThis is a friendly reminder from The Cover Guy regarding ticket 552493. Since we haven\u2019t heard back from you, we\u2019ll go ahead and close the ticket for now and assume everything\u2019s been sorted out.\r\n\r\nIf you still need help or have any new questions, no worries \u2014 just reply to this email and we\u2019ll jump right back in!\r\n\r\nThanks again for reaching out \u2014 we\u2019re always here if you need us. \ud83d\ude0a\r\n\r\nThe Cover Guy\r\n\r\n--------------------------------\r\nThis email is a service from The Cover Guy.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n[RRGKGE-7J9ER]",
+    "uid": "<RRGKGE7J9ER_6ab01f6cbdf3_e458dc4bb135da_sprut@zendesk.com>",
+    "needs_review": true,
+    "from": "The Cover Guy <info@thecoverguy.com>"
   }
 ]
