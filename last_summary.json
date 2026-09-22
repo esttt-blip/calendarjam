@@ -1,6 +1,6 @@
 {
-  "message_id": "<calendarjam-20260921100048@calendarjam.local>",
-  "sent_at": "2026-09-21T10:00:51.156521+00:00",
+  "message_id": "<calendarjam-20260922100052@calendarjam.local>",
+  "sent_at": "2026-09-22T10:00:53.912218+00:00",
   "pending_ids": [
     "c760736a33dbf340abcb431cafb08e56",
     "624f7d0f37c82a799ea9c1361e71eb40",
@@ -17,5 +17,5 @@
     "50a0078197d6556cc36c66c49a717860",
     "ef3ea46b348486818dd8b0a0bc3ea76d"
   ],
-  "email_date": "2026-09-21"
+  "email_date": "2026-09-22"
 }

@@ -1,117 +1,19 @@
 {
-  "generated_at": "2026-09-21T12:27:41.657333-04:00",
-  "generated_label": "Mon Sep 21, 12:27 PM",
-  "weather": {
-    "high_f": 77,
-    "low_f": 67,
-    "precip_pct": 17,
-    "emoji": "\ud83c\udf26",
-    "label": "Drizzle"
-  },
+  "generated_at": "2026-09-22T06:00:53.915144-04:00",
+  "generated_label": "Tue Sep 22, 6:00 AM",
+  "weather": null,
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
-    "blurb": "8 games & practices on deck.",
+    "blurb": "7 games & practices on deck.",
     "color1": "#11998e",
     "color2": "#38ef7d"
   },
   "week": [
     {
-      "date": "2026-09-21",
-      "label": "Today \u00b7 Mon Sep 21",
-      "weather": {
-        "high_f": 77,
-        "low_f": 67,
-        "precip_pct": 17,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "EP",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-09-21T00:00",
-          "link": "https://www.google.com/calendar/event?eid=NGlkYWdqazk5aGlvMXBtcmZybmxyb2c1Ym9fMjAyNjA5MjEgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "all day",
-          "title": "Stay at Guest Relations at The Westin Copley Place, Boston",
-          "location": "10 Huntington Avenue, Boston, Massachusetts, USA",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-09-21T00:00",
-          "link": "https://www.google.com/calendar/event?eid=NWs1amFpOXJodjgxb29obGltcmQya2ZqazggZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:35 am",
-          "title": "\u2708\ufe0f Airport \u2014 UA641 to BOS",
-          "location": "Washington Dulles International Airport (IAD), 1 Saarinen Cir, Dulles, VA 20166",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-21T06:35:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=dDJ2bTgyNGx1ZWtncTludGo3aWpxamFuZTAgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "8:35 am",
-          "title": "Flight  UA641 IAD to BOS",
-          "location": "Departing Washington, DC",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-21T08:35:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=XzhjcTQ0ZDluNmQzMzZiOW04bDIzaWI5azhwMmppYjlwOGdvamFiOW84OHNqNmQyNjZoMTM0ZGkzOG8gZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "9:00 am",
-          "title": "\ud83d\udcda School Holiday (Yom Kippur)",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-21T09:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=YjR2OTJtYTAxcWZ1cWw3ZWxuZGpjcmdtY28gZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:30 pm",
-          "title": "\ud83d\ude97 Drive to VIVA practice (Pine Ridge Park)",
-          "location": "Pine Ridge Park, 3401 Woodburn Rd, Annandale, VA 22003",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-09-21T18:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=YmRwZWJjMGhtNnU3dGRocWw3bW9vdG5qOTggZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "\u26bd Henry \u2014 VIVA practice",
-          "location": "Pine Ridge Park, 3401 Woodburn Rd, Annandale, VA 22003",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-21T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=cGRnZnVuZmF2c3AzbWtmOTd1bzIwY2NwNnMgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": [
-        {
-          "a": "Flight  UA641 IAD to BOS",
-          "a_time": "8:35 am",
-          "b": "\ud83d\udcda School Holiday (Yom Kippur)",
-          "b_time": "9:00 am"
-        }
-      ]
-    },
-    {
       "date": "2026-09-22",
-      "label": "Tomorrow \u00b7 Tue Sep 22",
-      "weather": {
-        "high_f": 67,
-        "low_f": 60,
-        "precip_pct": 75,
-        "weather_code": 65,
-        "emoji": "\ud83c\udf27",
-        "label": "Heavy rain"
-      },
+      "label": "Today \u00b7 Tue Sep 22",
+      "weather": null,
       "events": [
         {
           "time": "7:00 am",
@@ -127,15 +29,8 @@
     },
     {
       "date": "2026-09-23",
-      "label": "Wednesday \u00b7 Sep 23",
-      "weather": {
-        "high_f": 61,
-        "low_f": 54,
-        "precip_pct": 76,
-        "weather_code": 61,
-        "emoji": "\ud83c\udf27",
-        "label": "Light rain"
-      },
+      "label": "Tomorrow \u00b7 Wed Sep 23",
+      "weather": null,
       "events": [
         {
           "time": "6:30 pm",
@@ -170,14 +65,7 @@
     {
       "date": "2026-09-24",
       "label": "Thursday \u00b7 Sep 24",
-      "weather": {
-        "high_f": 67,
-        "low_f": 55,
-        "precip_pct": 20,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "2:00 pm",
@@ -221,14 +109,7 @@
     {
       "date": "2026-09-25",
       "label": "Friday \u00b7 Sep 25",
-      "weather": {
-        "high_f": 71,
-        "low_f": 51,
-        "precip_pct": 14,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -254,14 +135,7 @@
     {
       "date": "2026-09-26",
       "label": "Saturday \u00b7 Sep 26",
-      "weather": {
-        "high_f": 73,
-        "low_f": 52,
-        "precip_pct": 6,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
-      },
+      "weather": null,
       "events": [
         {
           "time": "5:40 pm",
@@ -287,14 +161,7 @@
     {
       "date": "2026-09-27",
       "label": "Sunday \u00b7 Sep 27",
-      "weather": {
-        "high_f": 76,
-        "low_f": 55,
-        "precip_pct": 4,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "8:30 am",
@@ -316,6 +183,50 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-09-28",
+      "label": "Monday \u00b7 Sep 28",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "EP",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-09-28T00:00",
+          "link": "https://www.google.com/calendar/event?eid=NGlkYWdqazk5aGlvMXBtcmZybmxyb2c1Ym9fMjAyNjA5MjggZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "3:15 pm",
+          "title": "\u2708\ufe0f Airport \u2014 UA688 to BOS",
+          "location": "Washington Dulles International Airport (IAD), 1 Saarinen Cir, Dulles, VA 20166",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-28T15:15:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=MGtvaGJuZGlxMDduaXV0aGF2a3BkYjlnYm8gZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "5:15 pm",
+          "title": "Flight  UA688 IAD to BOS",
+          "location": "Departing Washington, DC",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-28T17:15:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=XzhncWpjY3E0ODRwazRiOWs2aDJrNmI5azhwMTMyYmExNzRzajBiYTI2a29rMmRwbzcxMWs0YzI1OGcgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "\u26bd Henry \u2014 VIVA practice",
+          "location": "Pine Ridge Park, 3401 Woodburn Rd, Annandale, VA 22003",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-28T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZXByMjY1Y2NydWtpdjVvYzRiamVnMWIyNzAgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -323,14 +234,14 @@
       {
         "title": "Kristen\u2019s Birthday",
         "day": "Sat Oct 3",
-        "days_out": 12
+        "days_out": 11
       }
     ],
     "holidays": [
       {
         "title": "Columbus Day",
         "day": "Mon Oct 12",
-        "days_out": 21
+        "days_out": 20
       }
     ]
   },
