@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-09-22T06:00:53.915144-04:00",
-  "generated_label": "Tue Sep 22, 6:00 AM",
-  "weather": null,
+  "generated_at": "2026-09-22T10:50:02.621019-04:00",
+  "generated_label": "Tue Sep 22, 10:50 AM",
+  "weather": {
+    "high_f": 64,
+    "low_f": 59,
+    "precip_pct": 72,
+    "emoji": "\ud83c\udf27",
+    "label": "Light rain"
+  },
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -13,7 +19,14 @@
     {
       "date": "2026-09-22",
       "label": "Today \u00b7 Tue Sep 22",
-      "weather": null,
+      "weather": {
+        "high_f": 64,
+        "low_f": 59,
+        "precip_pct": 72,
+        "weather_code": 61,
+        "emoji": "\ud83c\udf27",
+        "label": "Light rain"
+      },
       "events": [
         {
           "time": "7:00 am",
@@ -30,7 +43,14 @@
     {
       "date": "2026-09-23",
       "label": "Tomorrow \u00b7 Wed Sep 23",
-      "weather": null,
+      "weather": {
+        "high_f": 60,
+        "low_f": 55,
+        "precip_pct": 43,
+        "weather_code": 61,
+        "emoji": "\ud83c\udf27",
+        "label": "Light rain"
+      },
       "events": [
         {
           "time": "6:30 pm",
@@ -65,7 +85,14 @@
     {
       "date": "2026-09-24",
       "label": "Thursday \u00b7 Sep 24",
-      "weather": null,
+      "weather": {
+        "high_f": 68,
+        "low_f": 53,
+        "precip_pct": 11,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "2:00 pm",
@@ -109,7 +136,14 @@
     {
       "date": "2026-09-25",
       "label": "Friday \u00b7 Sep 25",
-      "weather": null,
+      "weather": {
+        "high_f": 74,
+        "low_f": 52,
+        "precip_pct": 8,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -135,7 +169,14 @@
     {
       "date": "2026-09-26",
       "label": "Saturday \u00b7 Sep 26",
-      "weather": null,
+      "weather": {
+        "high_f": 75,
+        "low_f": 54,
+        "precip_pct": 8,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "5:40 pm",
@@ -161,7 +202,14 @@
     {
       "date": "2026-09-27",
       "label": "Sunday \u00b7 Sep 27",
-      "weather": null,
+      "weather": {
+        "high_f": 76,
+        "low_f": 56,
+        "precip_pct": 5,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "8:30 am",
@@ -187,7 +235,14 @@
     {
       "date": "2026-09-28",
       "label": "Monday \u00b7 Sep 28",
-      "weather": null,
+      "weather": {
+        "high_f": 78,
+        "low_f": 58,
+        "precip_pct": 3,
+        "weather_code": 2,
+        "emoji": "\u26c5",
+        "label": "Partly cloudy"
+      },
       "events": [
         {
           "time": "all day",
@@ -245,17 +300,6 @@
       }
     ]
   },
-  "added": [
-    {
-      "title": "\ud83d\ude97 Drive to VIVA practice (Pine Ridge Park)",
-      "when": "Mon Oct 5 \u00b7 6:30 PM",
-      "link": "https://www.google.com/calendar/event?eid=cGs4c2dmOWpxYmQ4bXRiZ2RkYWF1MGJ0cjggZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26bd Henry \u2014 VIVA practice",
-      "when": "Mon Oct 5 \u00b7 7:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=dTZkbWYxZmQ4djRqMm11Y3BwNzZhb243MzQgZXN0aGVyLmV2ZWx5bkBt"
-    }
-  ],
+  "added": [],
   "feed_changes": []
 }
