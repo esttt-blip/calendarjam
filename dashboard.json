@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-09-22T10:50:02.621019-04:00",
-  "generated_label": "Tue Sep 22, 10:50 AM",
-  "weather": {
-    "high_f": 64,
-    "low_f": 59,
-    "precip_pct": 72,
-    "emoji": "\ud83c\udf27",
-    "label": "Light rain"
-  },
+  "generated_at": "2026-09-23T06:01:51.208245-04:00",
+  "generated_label": "Wed Sep 23, 6:01 AM",
+  "weather": null,
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -17,40 +11,9 @@
   },
   "week": [
     {
-      "date": "2026-09-22",
-      "label": "Today \u00b7 Tue Sep 22",
-      "weather": {
-        "high_f": 64,
-        "low_f": 59,
-        "precip_pct": 72,
-        "weather_code": 61,
-        "emoji": "\ud83c\udf27",
-        "label": "Light rain"
-      },
-      "events": [
-        {
-          "time": "7:00 am",
-          "title": "Veronica leaves @ 8:30",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-22T07:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ZTI2Z29nMHRldTJ0Ymc3MzBuY280bjllaWMgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-09-23",
-      "label": "Tomorrow \u00b7 Wed Sep 23",
-      "weather": {
-        "high_f": 60,
-        "low_f": 55,
-        "precip_pct": 43,
-        "weather_code": 61,
-        "emoji": "\ud83c\udf27",
-        "label": "Light rain"
-      },
+      "label": "Today \u00b7 Wed Sep 23",
+      "weather": null,
       "events": [
         {
           "time": "6:30 pm",
@@ -84,15 +47,8 @@
     },
     {
       "date": "2026-09-24",
-      "label": "Thursday \u00b7 Sep 24",
-      "weather": {
-        "high_f": 68,
-        "low_f": 53,
-        "precip_pct": 11,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Tomorrow \u00b7 Thu Sep 24",
+      "weather": null,
       "events": [
         {
           "time": "2:00 pm",
@@ -136,14 +92,7 @@
     {
       "date": "2026-09-25",
       "label": "Friday \u00b7 Sep 25",
-      "weather": {
-        "high_f": 74,
-        "low_f": 52,
-        "precip_pct": 8,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -169,14 +118,7 @@
     {
       "date": "2026-09-26",
       "label": "Saturday \u00b7 Sep 26",
-      "weather": {
-        "high_f": 75,
-        "low_f": 54,
-        "precip_pct": 8,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "5:40 pm",
@@ -202,14 +144,7 @@
     {
       "date": "2026-09-27",
       "label": "Sunday \u00b7 Sep 27",
-      "weather": {
-        "high_f": 76,
-        "low_f": 56,
-        "precip_pct": 5,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "8:30 am",
@@ -235,14 +170,7 @@
     {
       "date": "2026-09-28",
       "label": "Monday \u00b7 Sep 28",
-      "weather": {
-        "high_f": 78,
-        "low_f": 58,
-        "precip_pct": 3,
-        "weather_code": 2,
-        "emoji": "\u26c5",
-        "label": "Partly cloudy"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -282,6 +210,13 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-09-29",
+      "label": "Tuesday \u00b7 Sep 29",
+      "weather": null,
+      "events": [],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -289,14 +224,14 @@
       {
         "title": "Kristen\u2019s Birthday",
         "day": "Sat Oct 3",
-        "days_out": 11
+        "days_out": 10
       }
     ],
     "holidays": [
       {
         "title": "Columbus Day",
         "day": "Mon Oct 12",
-        "days_out": 20
+        "days_out": 19
       }
     ]
   },
