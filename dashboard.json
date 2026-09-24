@@ -1,70 +1,22 @@
 {
-  "generated_at": "2026-09-23T10:59:21.361648-04:00",
-  "generated_label": "Wed Sep 23, 10:59 AM",
-  "weather": {
-    "high_f": 63,
-    "low_f": 54,
-    "precip_pct": 53,
-    "emoji": "\ud83c\udf26",
-    "label": "Drizzle"
-  },
+  "generated_at": "2026-09-24T06:00:50.372439-04:00",
+  "generated_label": "Thu Sep 24, 6:00 AM",
+  "weather": null,
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
-    "blurb": "7 games & practices on deck.",
+    "blurb": "5 games & practices on deck.",
     "color1": "#11998e",
     "color2": "#38ef7d"
   },
   "week": [
     {
-      "date": "2026-09-23",
-      "label": "Today \u00b7 Wed Sep 23",
-      "weather": {
-        "high_f": 63,
-        "low_f": 54,
-        "precip_pct": 53,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
-      "events": [
-        {
-          "time": "6:30 pm",
-          "title": "\ud83d\ude97 Drive to VIVA practice (carpool pickups)",
-          "location": "5212 11th Rd N, Arlington, VA 22205; 965 N Longfellow St, Arlington, VA 22205",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-09-23T18:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=MGhtMzA5NDNocjRoaG1rdTVkNzk0MW92M2cgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "\u26bd Henry \u2014 VIVA practice",
-          "location": "Justice High School, 3301 Peace Valley Ln, Falls Church, VA 22044",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-23T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ZGY3YTdtcWsxaDY3ajVidHRzbGQwNWdtNmsgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "8:00 pm",
-          "title": "\ud83d\ude97 Drive home from VIVA (carpool dropoffs)",
-          "location": "5212 11th Rd N, Arlington, VA 22205; 965 N Longfellow St, Arlington, VA 22205",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-09-23T20:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=dWc1cWRqa2diazFrNnVnMGtiamo0ZDFyMGcgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-09-24",
-      "label": "Tomorrow \u00b7 Thu Sep 24",
+      "label": "Today \u00b7 Thu Sep 24",
       "weather": {
         "high_f": 61,
         "low_f": 51,
-        "precip_pct": 1,
+        "precip_pct": 0,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -78,6 +30,15 @@
           "is_drive": false,
           "sort": "2026-09-24T14:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=OTFhbXBqZmNqbDd2OWd2cmgwaWJsNjJ1NG8gZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "4:30 pm",
+          "title": "Head to airport",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-24T16:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=MXBlYmdiNDNnZjM4ZThoajUxcWcxNTQ2YTQgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "6:30 pm",
@@ -111,11 +72,11 @@
     },
     {
       "date": "2026-09-25",
-      "label": "Friday \u00b7 Sep 25",
+      "label": "Tomorrow \u00b7 Fri Sep 25",
       "weather": {
-        "high_f": 73,
+        "high_f": 71,
         "low_f": 49,
-        "precip_pct": 5,
+        "precip_pct": 1,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -146,9 +107,9 @@
       "date": "2026-09-26",
       "label": "Saturday \u00b7 Sep 26",
       "weather": {
-        "high_f": 75,
-        "low_f": 53,
-        "precip_pct": 6,
+        "high_f": 76,
+        "low_f": 56,
+        "precip_pct": 12,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -179,12 +140,12 @@
       "date": "2026-09-27",
       "label": "Sunday \u00b7 Sep 27",
       "weather": {
-        "high_f": 75,
-        "low_f": 57,
-        "precip_pct": 13,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "high_f": 65,
+        "low_f": 58,
+        "precip_pct": 12,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
       },
       "events": [
         {
@@ -212,12 +173,12 @@
       "date": "2026-09-28",
       "label": "Monday \u00b7 Sep 28",
       "weather": {
-        "high_f": 76,
-        "low_f": 60,
-        "precip_pct": 7,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "high_f": 66,
+        "low_f": 61,
+        "precip_pct": 5,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
       },
       "events": [
         {
@@ -272,14 +233,65 @@
       "date": "2026-09-29",
       "label": "Tuesday \u00b7 Sep 29",
       "weather": {
-        "high_f": 82,
-        "low_f": 60,
-        "precip_pct": 2,
-        "weather_code": 1,
-        "emoji": "\ud83c\udf24",
-        "label": "Mostly clear"
+        "high_f": 78,
+        "low_f": 61,
+        "precip_pct": 1,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [],
+      "conflicts": []
+    },
+    {
+      "date": "2026-09-30",
+      "label": "Wednesday \u00b7 Sep 30",
+      "weather": {
+        "high_f": 85,
+        "low_f": 60,
+        "precip_pct": 3,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
+      "events": [
+        {
+          "time": "all day",
+          "title": "Change thermostat settings to winter",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-09-30T00:00",
+          "link": "https://www.google.com/calendar/event?eid=MnF2YW02b3Y1NmRlc3JiaGRrcTBqcTJpNzdfMjAyNjA5MzAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:13 pm",
+          "title": "Flight  UA2136 BOS to IAD",
+          "location": "Departing Boston, MA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-30T19:13:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=XzY1MWphY2kyNnQzMzRiOW02OHAzMGI5azY0czRhYmEyNjkyNDRiOWw4aDE0OGhpMzZsMzNpY3BsOGcgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:13 pm",
+          "title": "Flight  UA2136 BOS to IAD",
+          "location": "Departing Boston, MA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-30T19:13:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Xzc0cjRhZHBvODRvamdiOWc4a3JqNGI5azg4czQ2YjlvNzByNDZiOWw2Z3NqNmRwZzZzczQyZ3EyODQgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "9:28 pm",
+          "title": "\ud83d\ude97 Drive home from IAD (UA2136)",
+          "location": "Washington Dulles International Airport (IAD), 1 Saarinen Cir, Dulles, VA 20166",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-09-30T21:28:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZWNocnV1dGE0dWs0Mm5xYzlicW51bnVzZ3MgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
       "conflicts": []
     }
   ],
@@ -288,14 +300,14 @@
       {
         "title": "Kristen\u2019s Birthday",
         "day": "Sat Oct 3",
-        "days_out": 10
+        "days_out": 9
       }
     ],
     "holidays": [
       {
         "title": "Columbus Day",
         "day": "Mon Oct 12",
-        "days_out": 19
+        "days_out": 18
       }
     ]
   },
