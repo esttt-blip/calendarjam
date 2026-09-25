@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-09-24T11:01:51.649453-04:00",
-  "generated_label": "Thu Sep 24, 11:01 AM",
-  "weather": {
-    "high_f": 62,
-    "low_f": 51,
-    "precip_pct": 0,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-09-25T06:01:25.013589-04:00",
+  "generated_label": "Fri Sep 25, 6:01 AM",
+  "weather": null,
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -17,72 +11,12 @@
   },
   "week": [
     {
-      "date": "2026-09-24",
-      "label": "Today \u00b7 Thu Sep 24",
+      "date": "2026-09-25",
+      "label": "Today \u00b7 Fri Sep 25",
       "weather": {
-        "high_f": 62,
+        "high_f": 73,
         "low_f": 51,
         "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "2:00 pm",
-          "title": "Seymour @ 2:30 CVCA",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-24T14:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=OTFhbXBqZmNqbDd2OWd2cmgwaWJsNjJ1NG8gZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "4:30 pm",
-          "title": "Head to airport",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-24T16:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=MXBlYmdiNDNnZjM4ZThoajUxcWcxNTQ2YTQgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:30 pm",
-          "title": "Taylor to London",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-24T18:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=YWVwa244cjhoY3FqanE0ZmlhcXR0cjYwOHMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:35 pm",
-          "title": "\ud83d\ude97 Drive to VIVA practice (Thomas Jefferson HS)",
-          "location": "Thomas Jefferson High School for Science and Technology, 6560 Braddock Rd, Alexandria, VA 22312",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-09-24T18:35:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=bjM1a2VuOWdlbXN0bHZrcGc1bTFnYWhzaHMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "\u26bd Henry \u2014 VIVA practice",
-          "location": "Thomas Jefferson High School for Science and Technology, 6560 Braddock Rd, Alexandria, VA 22312",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-24T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=N2FlOThhZ2RxZ2ZqZWplcjVtcGppMHBwc2sgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
-      "date": "2026-09-25",
-      "label": "Tomorrow \u00b7 Fri Sep 25",
-      "weather": {
-        "high_f": 71,
-        "low_f": 48,
-        "precip_pct": 1,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -108,7 +42,7 @@
         },
         {
           "time": "5:40 pm",
-          "title": "Reservation at Oakmont Golf Center",
+          "title": "Reservation for Oakmont Golf Center",
           "location": "Oakmont Golf Center, Oakmont Golf Center, 3136 Jermantown Road, Oakton, VA 22124, US",
           "all_day": false,
           "is_drive": false,
@@ -120,14 +54,14 @@
     },
     {
       "date": "2026-09-26",
-      "label": "Saturday \u00b7 Sep 26",
+      "label": "Tomorrow \u00b7 Sat Sep 26",
       "weather": {
-        "high_f": 75,
-        "low_f": 54,
-        "precip_pct": 16,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "high_f": 69,
+        "low_f": 55,
+        "precip_pct": 46,
+        "weather_code": 61,
+        "emoji": "\ud83c\udf27",
+        "label": "Light rain"
       },
       "events": [
         {
@@ -155,9 +89,9 @@
       "date": "2026-09-27",
       "label": "Sunday \u00b7 Sep 27",
       "weather": {
-        "high_f": 72,
-        "low_f": 60,
-        "precip_pct": 12,
+        "high_f": 62,
+        "low_f": 56,
+        "precip_pct": 38,
         "weather_code": 51,
         "emoji": "\ud83c\udf26",
         "label": "Light drizzle"
@@ -188,9 +122,9 @@
       "date": "2026-09-28",
       "label": "Monday \u00b7 Sep 28",
       "weather": {
-        "high_f": 72,
-        "low_f": 59,
-        "precip_pct": 10,
+        "high_f": 66,
+        "low_f": 58,
+        "precip_pct": 12,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -248,8 +182,8 @@
       "date": "2026-09-29",
       "label": "Tuesday \u00b7 Sep 29",
       "weather": {
-        "high_f": 75,
-        "low_f": 65,
+        "high_f": 76,
+        "low_f": 62,
         "precip_pct": 1,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
@@ -262,8 +196,8 @@
       "date": "2026-09-30",
       "label": "Wednesday \u00b7 Sep 30",
       "weather": {
-        "high_f": 87,
-        "low_f": 61,
+        "high_f": 81,
+        "low_f": 62,
         "precip_pct": 3,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
@@ -308,6 +242,39 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-10-01",
+      "label": "Thursday \u00b7 Oct 1",
+      "weather": {
+        "high_f": 87,
+        "low_f": 63,
+        "precip_pct": 9,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
+      "events": [
+        {
+          "time": "6:35 pm",
+          "title": "\ud83d\ude97 Drive to VIVA practice (Thomas Jefferson HS)",
+          "location": "Thomas Jefferson High School for Science and Technology, 6560 Braddock Rd, Alexandria, VA 22312",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-10-01T18:35:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZGVmZ282YXUxdjBoNGpkdGI4NjBzMjI5aTAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "\u26bd Henry \u2014 VIVA practice",
+          "location": "Thomas Jefferson High School for Science and Technology, 6560 Braddock Rd, Alexandria, VA 22312",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-01T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Mzg1a3R1a282c2Y4Yjl0ajFuczU5YWU4dmMgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -315,14 +282,14 @@
       {
         "title": "Kristen\u2019s Birthday",
         "day": "Sat Oct 3",
-        "days_out": 9
+        "days_out": 8
       }
     ],
     "holidays": [
       {
         "title": "Columbus Day",
         "day": "Mon Oct 12",
-        "days_out": 18
+        "days_out": 17
       }
     ]
   },
