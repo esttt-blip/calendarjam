@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-09-25T06:01:25.013589-04:00",
-  "generated_label": "Fri Sep 25, 6:01 AM",
-  "weather": null,
+  "generated_at": "2026-09-25T11:13:37.769885-04:00",
+  "generated_label": "Fri Sep 25, 11:13 AM",
+  "weather": {
+    "high_f": 73,
+    "low_f": 52,
+    "precip_pct": 0,
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
+  },
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -15,7 +21,7 @@
       "label": "Today \u00b7 Fri Sep 25",
       "weather": {
         "high_f": 73,
-        "low_f": 51,
+        "low_f": 52,
         "precip_pct": 0,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
@@ -56,12 +62,12 @@
       "date": "2026-09-26",
       "label": "Tomorrow \u00b7 Sat Sep 26",
       "weather": {
-        "high_f": 69,
-        "low_f": 55,
-        "precip_pct": 46,
-        "weather_code": 61,
-        "emoji": "\ud83c\udf27",
-        "label": "Light rain"
+        "high_f": 74,
+        "low_f": 54,
+        "precip_pct": 40,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [
         {
@@ -89,12 +95,12 @@
       "date": "2026-09-27",
       "label": "Sunday \u00b7 Sep 27",
       "weather": {
-        "high_f": 62,
-        "low_f": 56,
-        "precip_pct": 38,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
+        "high_f": 64,
+        "low_f": 57,
+        "precip_pct": 51,
+        "weather_code": 61,
+        "emoji": "\ud83c\udf27",
+        "label": "Light rain"
       },
       "events": [
         {
@@ -122,12 +128,12 @@
       "date": "2026-09-28",
       "label": "Monday \u00b7 Sep 28",
       "weather": {
-        "high_f": 66,
+        "high_f": 69,
         "low_f": 58,
-        "precip_pct": 12,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "precip_pct": 14,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
       },
       "events": [
         {
@@ -182,12 +188,12 @@
       "date": "2026-09-29",
       "label": "Tuesday \u00b7 Sep 29",
       "weather": {
-        "high_f": 76,
-        "low_f": 62,
+        "high_f": 77,
+        "low_f": 61,
         "precip_pct": 1,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
       },
       "events": [],
       "conflicts": []
@@ -196,9 +202,9 @@
       "date": "2026-09-30",
       "label": "Wednesday \u00b7 Sep 30",
       "weather": {
-        "high_f": 81,
+        "high_f": 84,
         "low_f": 62,
-        "precip_pct": 3,
+        "precip_pct": 0,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -247,9 +253,9 @@
       "date": "2026-10-01",
       "label": "Thursday \u00b7 Oct 1",
       "weather": {
-        "high_f": 87,
+        "high_f": 88,
         "low_f": 63,
-        "precip_pct": 9,
+        "precip_pct": 6,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -293,17 +299,6 @@
       }
     ]
   },
-  "added": [
-    {
-      "title": "\ud83c\udfeb Swanson \u2014 No School (Parent-Teacher Conferences)",
-      "when": "Fri Oct 9",
-      "link": "https://www.google.com/calendar/event?eid=c2cxcDhtOWRxYTJoN2p1bTZtb3EyaTNlcTggZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83c\udfeb Swanson \u2014 Early Release (Parent-Teacher Conferences)",
-      "when": "Thu Oct 8",
-      "link": "https://www.google.com/calendar/event?eid=bWtrb2U0Y2M2YWY1MnA2anE2MmNncXUyYzQgZXN0aGVyLmV2ZWx5bkBt"
-    }
-  ],
+  "added": [],
   "feed_changes": []
 }
