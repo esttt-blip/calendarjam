@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-09-25T11:13:37.769885-04:00",
-  "generated_label": "Fri Sep 25, 11:13 AM",
-  "weather": {
-    "high_f": 73,
-    "low_f": 52,
-    "precip_pct": 0,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-09-26T06:01:38.149096-04:00",
+  "generated_label": "Sat Sep 26, 6:01 AM",
+  "weather": null,
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -17,58 +11,9 @@
   },
   "week": [
     {
-      "date": "2026-09-25",
-      "label": "Today \u00b7 Fri Sep 25",
-      "weather": {
-        "high_f": 73,
-        "low_f": 52,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "EP",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-09-25T00:00",
-          "link": "https://www.google.com/calendar/event?eid=NGlkYWdqazk5aGlvMXBtcmZybmxyb2c1Ym9fMjAyNjA5MjUgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "all day",
-          "title": "Taylor in London",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-09-25T00:00",
-          "link": "https://www.google.com/calendar/event?eid=bGZlMmF0N2wwdnBwMGgybGs2cmxoZ2pvM2cgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "5:40 pm",
-          "title": "Reservation for Oakmont Golf Center",
-          "location": "Oakmont Golf Center, Oakmont Golf Center, 3136 Jermantown Road, Oakton, VA 22124, US",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-25T17:40:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=dGE3MGU0bDZzbTVoNDN1aHBwazQ4ZzM5OW8gZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-09-26",
-      "label": "Tomorrow \u00b7 Sat Sep 26",
-      "weather": {
-        "high_f": 74,
-        "low_f": 54,
-        "precip_pct": 40,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Today \u00b7 Sat Sep 26",
+      "weather": null,
       "events": [
         {
           "time": "5:40 pm",
@@ -93,16 +38,18 @@
     },
     {
       "date": "2026-09-27",
-      "label": "Sunday \u00b7 Sep 27",
-      "weather": {
-        "high_f": 64,
-        "low_f": 57,
-        "precip_pct": 51,
-        "weather_code": 61,
-        "emoji": "\ud83c\udf27",
-        "label": "Light rain"
-      },
+      "label": "Tomorrow \u00b7 Sun Sep 27",
+      "weather": null,
       "events": [
+        {
+          "time": "7:00 am",
+          "title": "Taylor flight LHR to IAD",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-27T07:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=cTExaXYzdGU2czByZjZkMDRmZWFyb25zdGcgZXN0aGVyLmV2ZWx5bkBt"
+        },
         {
           "time": "8:30 am",
           "title": "\ud83d\ude97 Drive to VIVA game (Justice HS Stadium)",
@@ -127,14 +74,7 @@
     {
       "date": "2026-09-28",
       "label": "Monday \u00b7 Sep 28",
-      "weather": {
-        "high_f": 69,
-        "low_f": 58,
-        "precip_pct": 14,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -187,28 +127,14 @@
     {
       "date": "2026-09-29",
       "label": "Tuesday \u00b7 Sep 29",
-      "weather": {
-        "high_f": 77,
-        "low_f": 61,
-        "precip_pct": 1,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
-      },
+      "weather": null,
       "events": [],
       "conflicts": []
     },
     {
       "date": "2026-09-30",
       "label": "Wednesday \u00b7 Sep 30",
-      "weather": {
-        "high_f": 84,
-        "low_f": 62,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -252,14 +178,7 @@
     {
       "date": "2026-10-01",
       "label": "Thursday \u00b7 Oct 1",
-      "weather": {
-        "high_f": 88,
-        "low_f": 63,
-        "precip_pct": 6,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "6:35 pm",
@@ -281,6 +200,32 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-10-02",
+      "label": "Friday \u00b7 Oct 2",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "EP",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-10-02T00:00",
+          "link": "https://www.google.com/calendar/event?eid=NGlkYWdqazk5aGlvMXBtcmZybmxyb2c1Ym9fMjAyNjEwMDIgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "5:00 pm",
+          "title": "Reservation at Oakmont Golf Center",
+          "location": "Oakmont Golf Center, Oakmont Golf Center, 3136 Jermantown Road, Oakton, VA 22124, US",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-02T17:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=a2VlczRrZm1sdnBob2lyN3A3ajZucDNjZ2sgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -288,14 +233,14 @@
       {
         "title": "Kristen\u2019s Birthday",
         "day": "Sat Oct 3",
-        "days_out": 8
+        "days_out": 7
       }
     ],
     "holidays": [
       {
         "title": "Columbus Day",
         "day": "Mon Oct 12",
-        "days_out": 17
+        "days_out": 16
       }
     ]
   },
