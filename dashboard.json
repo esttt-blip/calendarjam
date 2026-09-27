@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-09-26T10:27:31.372549-04:00",
-  "generated_label": "Sat Sep 26, 10:27 AM",
-  "weather": {
-    "high_f": 72,
-    "low_f": 58,
-    "precip_pct": 67,
-    "emoji": "\ud83c\udf27",
-    "label": "Rain"
-  },
+  "generated_at": "2026-09-27T06:00:59.556607-04:00",
+  "generated_label": "Sun Sep 27, 6:00 AM",
+  "weather": null,
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -17,49 +11,9 @@
   },
   "week": [
     {
-      "date": "2026-09-26",
-      "label": "Today \u00b7 Sat Sep 26",
-      "weather": {
-        "high_f": 72,
-        "low_f": 58,
-        "precip_pct": 67,
-        "weather_code": 63,
-        "emoji": "\ud83c\udf27",
-        "label": "Rain"
-      },
-      "events": [
-        {
-          "time": "5:40 pm",
-          "title": "\ud83d\ude97 Drive to Audi Field (Spirit vs Angel City)",
-          "location": "Audi Field, 100 Potomac Ave SW, Washington, DC 20024",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-09-26T17:40:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ZDY1ZXFsaHN2djFkb2ZxdXFnZzE3cjAwN2MgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:30 pm",
-          "title": "Spirit vs Angel City (ion)",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-09-26T18:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=cmcwZ3UzMjVtamM2OWtvbWY4cW44aWI3Z3MgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-09-27",
-      "label": "Tomorrow \u00b7 Sun Sep 27",
-      "weather": {
-        "high_f": 70,
-        "low_f": 57,
-        "precip_pct": 27,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "label": "Today \u00b7 Sun Sep 27",
+      "weather": null,
       "events": [
         {
           "time": "7:00 am",
@@ -87,21 +41,41 @@
           "is_drive": false,
           "sort": "2026-09-27T09:30:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=cmNyczBjZnB2Y2hjcThsODk4OXU4bzNhNXMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "12:00 pm",
+          "title": "\ud83d\uded2 Whole Foods pickup",
+          "location": "Whole Foods Market, 103 E Broad St, Falls Church, VA 22046",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-27T12:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=YnNzaXJzMDgyaHJoMjJsOG00bWNlM2QxMWcgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "1:00 pm",
+          "title": "\ud83d\uded2 Walmart delivery",
+          "location": "1014 N Quintana St, Arlington, VA 22205",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-27T13:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=NDUxajRiODNsczgwamVoMTQyY3R1MDE4ODQgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "1:00 pm",
+          "title": "\ud83d\uded2 Walmart delivery",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-27T13:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=bGY4OXRxYmQwOWFiNTJxdXFvNXVidXVzNDQgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
     },
     {
       "date": "2026-09-28",
-      "label": "Monday \u00b7 Sep 28",
-      "weather": {
-        "high_f": 69,
-        "low_f": 60,
-        "precip_pct": 12,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
+      "label": "Tomorrow \u00b7 Mon Sep 28",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -154,28 +128,14 @@
     {
       "date": "2026-09-29",
       "label": "Tuesday \u00b7 Sep 29",
-      "weather": {
-        "high_f": 75,
-        "low_f": 63,
-        "precip_pct": 1,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [],
       "conflicts": []
     },
     {
       "date": "2026-09-30",
       "label": "Wednesday \u00b7 Sep 30",
-      "weather": {
-        "high_f": 83,
-        "low_f": 61,
-        "precip_pct": 4,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -185,6 +145,15 @@
           "is_drive": false,
           "sort": "2026-09-30T00:00",
           "link": "https://www.google.com/calendar/event?eid=MnF2YW02b3Y1NmRlc3JiaGRrcTBqcTJpNzdfMjAyNjA5MzAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "\u26bd Henry \u2014 VIVA practice",
+          "location": "Annandale High School Track, 4700 Medford Dr, Annandale, VA 22003",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-09-30T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=bXQ4dWllNmNxcGxoNnNpaTZocDQyOW5yN2cgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "7:13 pm",
@@ -219,24 +188,8 @@
     {
       "date": "2026-10-01",
       "label": "Thursday \u00b7 Oct 1",
-      "weather": {
-        "high_f": 84,
-        "low_f": 69,
-        "precip_pct": 4,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
-        {
-          "time": "6:35 pm",
-          "title": "\ud83d\ude97 Drive to VIVA practice (Thomas Jefferson HS)",
-          "location": "Thomas Jefferson High School for Science and Technology, 6560 Braddock Rd, Alexandria, VA 22312",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-10-01T18:35:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ZGVmZ282YXUxdjBoNGpkdGI4NjBzMjI5aTAgZXN0aGVyLmV2ZWx5bkBt"
-        },
         {
           "time": "7:00 pm",
           "title": "\u26bd Henry \u2014 VIVA practice",
@@ -252,14 +205,7 @@
     {
       "date": "2026-10-02",
       "label": "Friday \u00b7 Oct 2",
-      "weather": {
-        "high_f": 84,
-        "low_f": 70,
-        "precip_pct": 10,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -269,6 +215,33 @@
           "is_drive": false,
           "sort": "2026-10-02T00:00",
           "link": "https://www.google.com/calendar/event?eid=NGlkYWdqazk5aGlvMXBtcmZybmxyb2c1Ym9fMjAyNjEwMDIgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "4:00 pm",
+          "title": "\ud83d\ude97 Drive to Oakmont Golf Center",
+          "location": "Oakmont Golf Center, 3136 Jermantown Rd, Oakton, VA 22124",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-10-02T16:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=MWtlMXR1MjM1anI0bW5zMXBxdXNrbXJtZjQgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "4:00 pm",
+          "title": "\ud83d\ude97 Out of office",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-10-02T16:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=bDFhNXMyanZmaHBjbGIzb3E0N2ZzMG1sZGsgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "5:00 pm",
+          "title": "\u26f3 Golf \u2014 Oakmont Golf Center",
+          "location": "Oakmont Golf Center, 3136 Jermantown Rd, Oakton, VA 22124",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-02T17:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Zmd1cHJmMGM5cGlvNDc5bmE3dmc3ODRidTggZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "5:00 pm",
@@ -281,6 +254,41 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-10-03",
+      "label": "Saturday \u00b7 Oct 3",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "Kristen\u2019s Birthday",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-10-03T00:00",
+          "link": "https://www.google.com/calendar/event?eid=XzhrcTRjYzlqODRzamNiOXA2NG9rMmI5azhoMms4YmEyOGdwajBiYTQ2ZDIzMmRxMTY4cTQyZGhwNjRfMjAyNjEwMDMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "10:00 am",
+          "title": "Lunch with Sophia",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-03T10:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Nmg2cm1xMGFncDE1N2YyYWVwdmVuZDViazAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "6:00 pm",
+          "title": "Pineapples & Pearls",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-03T18:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Zzc2cmF1OWhvbjMwZ2xja2c2bzQ1anBoNTggZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -288,17 +296,83 @@
       {
         "title": "Kristen\u2019s Birthday",
         "day": "Sat Oct 3",
-        "days_out": 7
+        "days_out": 6
       }
     ],
     "holidays": [
       {
         "title": "Columbus Day",
         "day": "Mon Oct 12",
-        "days_out": 16
+        "days_out": 15
       }
     ]
   },
-  "added": [],
+  "added": [
+    {
+      "title": "\ud83d\ude97 Drive to Oakmont Golf Center",
+      "when": "Fri Oct 2 \u00b7 4:00 PM",
+      "link": "https://www.google.com/calendar/event?eid=MWtlMXR1MjM1anI0bW5zMXBxdXNrbXJtZjQgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\ude97 Out of office",
+      "when": "Fri Oct 2 \u00b7 4:00 PM",
+      "link": "https://www.google.com/calendar/event?eid=bDFhNXMyanZmaHBjbGIzb3E0N2ZzMG1sZGsgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\u26f3 Golf \u2014 Oakmont Golf Center",
+      "when": "Fri Oct 2 \u00b7 5:00 PM",
+      "link": "https://www.google.com/calendar/event?eid=Zmd1cHJmMGM5cGlvNDc5bmE3dmc3ODRidTggZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\ude97 Drive to Audi Field (USWNT v Spain)",
+      "when": "Sat Oct 10 \u00b7 1:40 PM",
+      "link": "https://www.google.com/calendar/event?eid=MDBtbnVlOXFjOG1hOWhoaWwyMHBka3E5OWsgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\uded2 Whole Foods pickup",
+      "when": "Sun Sep 27 \u00b7 12:00 PM",
+      "link": "https://www.google.com/calendar/event?eid=YnNzaXJzMDgyaHJoMjJsOG00bWNlM2QxMWcgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\uded2 Walmart delivery",
+      "when": "Sun Sep 27 \u00b7 1:00 PM",
+      "link": "https://www.google.com/calendar/event?eid=NDUxajRiODNsczgwamVoMTQyY3R1MDE4ODQgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\u26bd Henry \u2014 VIVA practice",
+      "when": "Thu Oct 8 \u00b7 7:15 PM",
+      "link": "https://www.google.com/calendar/event?eid=bG1mbzhtbjR2dDBpcDFwdHJzYWsydm43MjAgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\ude97 Drive to Henry's orthodontist",
+      "when": "Thu Oct 8 \u00b7 8:15 AM",
+      "link": "https://www.google.com/calendar/event?eid=dTkzMzhwanYzbXM0bmZ2ZGFqN3EwaHAxZjggZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\ude97 Out of office",
+      "when": "Thu Oct 8 \u00b7 9:00 AM",
+      "link": "https://www.google.com/calendar/event?eid=ZzNnMW1ma203ZnU4bDlqaGgwbzJ0aDRjc2sgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\ude97 Drive Henry to Swanson (from ortho)",
+      "when": "Thu Oct 8 \u00b7 9:15 AM",
+      "link": "https://www.google.com/calendar/event?eid=MGp0NGlsZmdhYmZnMjllaGRmZHNtN2ZtazQgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\ude97 Drive to VIVA practice (Annandale HS Track)",
+      "when": "Wed Oct 7 \u00b7 6:30 PM",
+      "link": "https://www.google.com/calendar/event?eid=bnU2amV2a2RxODBxN3QyMWVvdDJlYmpuOW8gZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\u26bd Henry \u2014 VIVA practice",
+      "when": "Wed Oct 7 \u00b7 7:00 PM",
+      "link": "https://www.google.com/calendar/event?eid=cnB0bzhpMDFuaXB1YmFuYTN1dGRwMjgzdWsgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\u26bd Henry \u2014 VIVA practice",
+      "when": "Wed Sep 30 \u00b7 7:00 PM",
+      "link": "https://www.google.com/calendar/event?eid=bXQ4dWllNmNxcGxoNnNpaTZocDQyOW5yN2cgZXN0aGVyLmV2ZWx5bkBt"
+    }
+  ],
   "feed_changes": []
 }
