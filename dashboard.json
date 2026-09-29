@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-09-29T06:00:53.701069-04:00",
-  "generated_label": "Tue Sep 29, 6:00 AM",
-  "weather": null,
+  "generated_at": "2026-09-29T12:29:26.701405-04:00",
+  "generated_label": "Tue Sep 29, 12:29 PM",
+  "weather": {
+    "high_f": 73,
+    "low_f": 63,
+    "precip_pct": 4,
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
+  },
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -13,14 +19,28 @@
     {
       "date": "2026-09-29",
       "label": "Today \u00b7 Tue Sep 29",
-      "weather": null,
+      "weather": {
+        "high_f": 73,
+        "low_f": 63,
+        "precip_pct": 4,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [],
       "conflicts": []
     },
     {
       "date": "2026-09-30",
       "label": "Tomorrow \u00b7 Wed Sep 30",
-      "weather": null,
+      "weather": {
+        "high_f": 82,
+        "low_f": 60,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -73,7 +93,14 @@
     {
       "date": "2026-10-01",
       "label": "Thursday \u00b7 Oct 1",
-      "weather": null,
+      "weather": {
+        "high_f": 88,
+        "low_f": 62,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "7:00 pm",
@@ -90,7 +117,14 @@
     {
       "date": "2026-10-02",
       "label": "Friday \u00b7 Oct 2",
-      "weather": null,
+      "weather": {
+        "high_f": 91,
+        "low_f": 63,
+        "precip_pct": 14,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
       "events": [
         {
           "time": "all day",
@@ -143,7 +177,14 @@
     {
       "date": "2026-10-03",
       "label": "Saturday \u00b7 Oct 3",
-      "weather": null,
+      "weather": {
+        "high_f": 72,
+        "low_f": 58,
+        "precip_pct": 31,
+        "weather_code": 55,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy drizzle"
+      },
       "events": [
         {
           "time": "all day",
@@ -187,7 +228,14 @@
     {
       "date": "2026-10-04",
       "label": "Sunday \u00b7 Oct 4",
-      "weather": null,
+      "weather": {
+        "high_f": 63,
+        "low_f": 59,
+        "precip_pct": 54,
+        "weather_code": 61,
+        "emoji": "\ud83c\udf27",
+        "label": "Light rain"
+      },
       "events": [
         {
           "time": "10:30 am",
@@ -222,7 +270,14 @@
     {
       "date": "2026-10-05",
       "label": "Monday \u00b7 Oct 5",
-      "weather": null,
+      "weather": {
+        "high_f": 69,
+        "low_f": 56,
+        "precip_pct": 32,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -262,17 +317,6 @@
       }
     ]
   },
-  "added": [
-    {
-      "title": "\ud83c\udfeb Swanson \u2014 No School (Countywide PL for Staff)",
-      "when": "Mon Oct 12",
-      "link": "https://www.google.com/calendar/event?eid=dmJhamlvNHZqMGJrMGpoZ2Q3MXEybDZpMGsgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26bd Henry \u2014 VIVA practice",
-      "when": "Mon Oct 12 \u00b7 7:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=c2phOHNtMnFpOW5sYzRvcDBkOGI1dmVvN2sgZXN0aGVyLmV2ZWx5bkBt"
-    }
-  ],
+  "added": [],
   "feed_changes": []
 }
