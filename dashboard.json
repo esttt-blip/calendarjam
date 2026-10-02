@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-10-02T06:00:50.895267-04:00",
-  "generated_label": "Fri Oct 2, 6:00 AM",
-  "weather": null,
+  "generated_at": "2026-10-02T12:15:08.984745-04:00",
+  "generated_label": "Fri Oct 2, 12:15 PM",
+  "weather": {
+    "high_f": 90,
+    "low_f": 62,
+    "precip_pct": 35,
+    "emoji": "\ud83c\udf27",
+    "label": "Light rain"
+  },
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -13,7 +19,14 @@
     {
       "date": "2026-10-02",
       "label": "Today \u00b7 Fri Oct 2",
-      "weather": null,
+      "weather": {
+        "high_f": 90,
+        "low_f": 62,
+        "precip_pct": 35,
+        "weather_code": 61,
+        "emoji": "\ud83c\udf27",
+        "label": "Light rain"
+      },
       "events": [
         {
           "time": "all day",
@@ -66,7 +79,14 @@
     {
       "date": "2026-10-03",
       "label": "Tomorrow \u00b7 Sat Oct 3",
-      "weather": null,
+      "weather": {
+        "high_f": 70,
+        "low_f": 60,
+        "precip_pct": 29,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
       "events": [
         {
           "time": "all day",
@@ -110,7 +130,14 @@
     {
       "date": "2026-10-04",
       "label": "Sunday \u00b7 Oct 4",
-      "weather": null,
+      "weather": {
+        "high_f": 63,
+        "low_f": 59,
+        "precip_pct": 81,
+        "weather_code": 82,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy showers"
+      },
       "events": [
         {
           "time": "10:30 am",
@@ -145,7 +172,14 @@
     {
       "date": "2026-10-05",
       "label": "Monday \u00b7 Oct 5",
-      "weather": null,
+      "weather": {
+        "high_f": 75,
+        "low_f": 59,
+        "precip_pct": 8,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -171,7 +205,14 @@
     {
       "date": "2026-10-06",
       "label": "Tuesday \u00b7 Oct 6",
-      "weather": null,
+      "weather": {
+        "high_f": 64,
+        "low_f": 50,
+        "precip_pct": 0,
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
+      },
       "events": [
         {
           "time": "all day",
@@ -188,7 +229,14 @@
     {
       "date": "2026-10-07",
       "label": "Wednesday \u00b7 Oct 7",
-      "weather": null,
+      "weather": {
+        "high_f": 68,
+        "low_f": 49,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -241,7 +289,14 @@
     {
       "date": "2026-10-08",
       "label": "Thursday \u00b7 Oct 8",
-      "weather": null,
+      "weather": {
+        "high_f": 76,
+        "low_f": 49,
+        "precip_pct": 0,
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
+      },
       "events": [
         {
           "time": "all day",
@@ -326,12 +381,6 @@
       }
     ]
   },
-  "added": [
-    {
-      "title": "\u26bd Henry \u2014 VIVA practice",
-      "when": "Thu Oct 15 \u00b7 7:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=OGxjcXRwN2ptMXBsa3Z1bTkyMG84cGowcWsgZXN0aGVyLmV2ZWx5bkBt"
-    }
-  ],
+  "added": [],
   "feed_changes": []
 }
