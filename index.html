@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>calendarjam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+  /* calendarjam — family ops system. Phase 1: renders the live dashboard.json
+     (Today/Week/weather/horizon) in the redesigned shell. Tasks/Deals are the
+     designed preview until the sync pass emits coverage + trip data (Phase 2+). */
+  :root{
+    --bg:#f0efe8; --surface:#fff; --surface-2:#faf9f4;
+    --ink:#16201a; --ink-2:#5b655e; --ink-3:#979f98;
+    --line:#e7e6dd; --line-soft:#f0efe8;
+    --brand:#1c7a46; --brand-strong:#14603a; --brand-soft:#e7f3ea;
+    --amber:#a9671a; --amber-soft:#fbeeda;
+    --blue:#2f6fb0; --blue-soft:#e8f0fa;
+    --pink:#b23f76; --pink-soft:#fbe8f1;
+    --rain:#2f6fb0; --rain-soft:#e4eefa;
+    --warn:#b4471f; --warn-soft:#fdeadf;
+    --good:#1c7a46; --good-soft:#e7f3ea;
+    --shadow:0 1px 2px rgba(20,30,22,.05), 0 6px 20px rgba(20,30,22,.05);
+    --r:18px;
+    --f-display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+    --f-body:"Figtree",ui-sans-serif,system-ui,-apple-system,sans-serif;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+    --bg:#0f130e; --surface:#171c15; --surface-2:#1d231b;
+    --ink:#e9ede7; --ink-2:#9ba49c; --ink-3:#6a736c;
+    --line:#2a3127; --line-soft:#1f251d;
+    --brand:#4ade80; --brand-strong:#86efac; --brand-soft:#15301f;
+    --amber:#e0a866; --amber-soft:#2c2415;
+    --blue:#7fb2e6; --blue-soft:#15222e; --pink:#ef9cc4; --pink-soft:#2c1620;
+    --rain:#7fb2e6; --rain-soft:#15222e; --warn:#eb8a5f; --warn-soft:#2e1a12;
+    --good:#4ade80; --good-soft:#15301f;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.28);
+    color-scheme:dark;
+  }}
+  :root[data-theme="dark"]{
+    --bg:#0f130e; --surface:#171c15; --surface-2:#1d231b;
+    --ink:#e9ede7; --ink-2:#9ba49c; --ink-3:#6a736c;
+    --line:#2a3127; --line-soft:#1f251d;
+    --brand:#4ade80; --brand-strong:#86efac; --brand-soft:#15301f;
+    --amber:#e0a866; --amber-soft:#2c2415;
+    --blue:#7fb2e6; --blue-soft:#15222e; --pink:#ef9cc4; --pink-soft:#2c1620;
+    --rain:#7fb2e6; --rain-soft:#15222e; --warn:#eb8a5f; --warn-soft:#2e1a12;
+    --good:#4ade80; --good-soft:#15301f;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.28);
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.45;
+       -webkit-font-smoothing:antialiased;padding-top:env(safe-area-inset-top,0);padding-bottom:env(safe-area-inset-bottom,0)}
+  img{max-width:100%}
+  .wrap{max-width:460px;margin:0 auto;position:relative;padding:0 16px 100px}
+  h1,h2,h3{margin:0;font-family:var(--f-display);text-wrap:balance}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit;cursor:pointer}
+
+  .top{position:sticky;top:env(safe-area-inset-top,0);z-index:20;margin:0 -16px;padding:13px 16px 11px;
+       background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .brandrow{display:flex;align-items:center;gap:10px}
+  .logo{font-family:var(--f-display);font-weight:800;font-size:18px;letter-spacing:-.02em;display:flex;align-items:center;gap:7px;color:var(--ink-2)}
+  .logo .mark{width:23px;height:23px;border-radius:7px;display:grid;place-items:center;background:var(--brand);color:#fff;font-size:12px}
+  .spacer{flex:1}
+  .tbtn{width:32px;height:32px;border-radius:9px;border:1px solid var(--line);background:var(--surface);color:var(--ink-2);font-size:14px;display:grid;place-items:center}
+  .datewx{display:flex;align-items:flex-end;gap:10px;margin-top:9px}
+  .datewx h1{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1}
+  .datewx h1 small{display:block;font-size:12px;font-weight:600;color:var(--ink-3);margin-top:3px;font-family:var(--f-body)}
+  .datewx .nx{margin-left:auto;text-align:right;font-size:12px;color:var(--ink-2);line-height:1.35;max-width:52%}
+  .datewx .nx small{color:var(--ink-3);font-size:11px}
+
+  .eyebrow{display:flex;align-items:baseline;gap:8px;margin:22px 2px 10px}
+  .eyebrow h2{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+  .eyebrow .count{font-size:11px;font-weight:700;color:var(--brand);background:var(--brand-soft);border-radius:20px;padding:1px 8px}
+  .eyebrow .count.warn{color:var(--warn);background:var(--warn-soft)}
+  .eyebrow .when{margin-left:auto;font-size:11.5px;color:var(--ink-3)}
+  .preview-tag{font-size:10px;font-weight:700;letter-spacing:.04em;color:var(--amber);background:var(--amber-soft);border-radius:6px;padding:2px 7px;margin-left:auto}
+
+  .card{background:var(--surface);border-radius:var(--r);box-shadow:var(--shadow);padding:5px 15px}
+  .pad{padding:14px 16px}
+  .gl{display:flex;gap:11px;padding:9px 0;border-top:1px solid var(--line-soft);align-items:flex-start}
+  .gl:first-child{border-top:none}
+  .gl .ic{font-size:15px;width:20px;text-align:center;flex-shrink:0;margin-top:1px}
+  .gl .g-txt{min-width:0;font-size:14px}.gl .g-txt b{font-weight:700}
+  .gl.good .ic{color:var(--good)} .gl.info .ic{color:var(--blue)} .gl.warn .ic{color:var(--warn)}
+
+  .ev{display:grid;grid-template-columns:60px 1fr;gap:12px;padding:13px 0;border-top:1px solid var(--line-soft);align-items:start}
+  .ev:first-child{border-top:none}
+  .ev .t{font-variant-numeric:tabular-nums;font-weight:600;font-size:12.5px;color:var(--ink-2);padding-top:2px;white-space:nowrap}
+  .ev .t .ap{color:var(--ink-3)}
+  .ev .body{min-width:0;display:flex;gap:10px}
+  .dot{width:9px;height:9px;border-radius:50%;margin-top:6px;flex-shrink:0;background:var(--ink-3)}
+  .dot.sport{background:var(--brand)} .dot.golf{background:#8a6d1e} .dot.travel{background:var(--blue)} .dot.food{background:var(--pink)} .dot.home{background:var(--amber)} .dot.drive{background:var(--ink-3)}
+  .evmain{min-width:0}
+  .ttl{font-weight:600;font-size:15px;letter-spacing:-.01em;line-height:1.3}
+  .ttl.drive{font-weight:600;color:var(--ink-2);font-size:13.5px}
+  .loc{color:var(--ink-3);font-size:12.5px;margin-top:2px}
+  .chiprow{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;align-items:center}
+  .chip{font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;white-space:nowrap}
+  .chip.wx{background:var(--rain-soft);color:var(--rain);font-variant-numeric:tabular-nums}
+  .chip.wx.hot{background:var(--warn-soft);color:var(--warn)}
+  .cov{font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;border:1px solid transparent;white-space:nowrap}
+  .cov.tbd{background:var(--warn-soft);color:var(--warn);border-style:dashed;border-color:color-mix(in srgb,var(--warn) 40%,transparent)}
+  .cov.set{background:var(--good-soft);color:var(--good)}
+  .nudge{margin-top:7px;font-size:12.5px;color:var(--ink-3);display:flex;gap:6px;line-height:1.35}
+  .empty{color:var(--ink-3);font-size:13px;font-style:italic;padding:14px 2px}
+  .daywx{margin-left:auto;font-size:11px;color:var(--ink-3);font-weight:600;font-variant-numeric:tabular-nums}
+
+  .wk-day{margin-top:18px}.wk-day:first-child{margin-top:4px}
+  .wk-head{display:flex;align-items:baseline;gap:9px;margin:0 2px 8px}
+  .wk-head .dow{font-family:var(--f-display);font-weight:700;font-size:15px}
+  .wk-head .dt{color:var(--ink-3);font-size:12px}
+  .wk-head .bd{margin-left:auto;font-size:11px;font-weight:700;color:var(--pink);background:var(--pink-soft);border-radius:20px;padding:1px 9px}
+
+  .confirm{display:flex;align-items:center;gap:11px;background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:12px 15px;margin-bottom:8px}
+  .confirm .ok{width:22px;height:22px;border-radius:50%;background:var(--brand-soft);color:var(--brand);display:grid;place-items:center;font-size:12px;flex-shrink:0;font-weight:800}
+  .confirm .txt{min-width:0}.confirm .txt b{font-weight:600;font-size:14px}.confirm .txt small{display:block;color:var(--ink-3);font-size:11.5px;margin-top:1px}
+
+  .todo{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-top:1px solid var(--line-soft)}
+  .todo:first-child{border-top:none}
+  .todo .box{width:21px;height:21px;border-radius:7px;border:2px solid var(--line);background:var(--surface);flex-shrink:0;margin-top:1px;display:grid;place-items:center;color:transparent;font-size:11px;font-weight:800}
+  .todo.done .box{background:var(--brand);border-color:var(--brand);color:#fff}
+  .todo .td-txt{min-width:0}.todo .td-txt b{font-weight:600;font-size:14px}
+  .todo.done .td-txt b{text-decoration:line-through;color:var(--ink-3)}
+  .todo .td-txt small{display:block;color:var(--ink-3);font-size:11.5px;margin-top:1px}
+  .td-src{display:inline-block;font-size:10px;font-weight:700;color:var(--blue);background:var(--blue-soft);border-radius:6px;padding:1px 6px;margin-top:4px}
+
+  .trip{background:var(--surface);border-radius:var(--r);box-shadow:var(--shadow);margin-bottom:12px;overflow:hidden}
+  .trip-head{display:flex;align-items:center;gap:12px;padding:14px 16px;width:100%;border:none;background:none;text-align:left}
+  .trip-head .flag{font-size:22px;flex-shrink:0}
+  .trip-head .th-txt{min-width:0;flex:1}
+  .trip-head .th-txt b{font-family:var(--f-display);font-weight:700;font-size:16px;display:block;letter-spacing:-.01em}
+  .trip-head .th-txt small{color:var(--ink-3);font-size:12px}
+  .trip-head .prog{font-size:11px;font-weight:700;color:var(--brand);background:var(--brand-soft);border-radius:20px;padding:2px 9px;white-space:nowrap}
+  .trip-head .chev{color:var(--ink-3);transition:transform .25s ease;flex-shrink:0}
+  .trip.open .trip-head .chev{transform:rotate(90deg)}
+  .trip-body{max-height:0;overflow:hidden;transition:max-height .3s ease}
+  .trip.open .trip-body{max-height:900px}
+  .trip-body .inner{padding:0 16px 8px}
+  .trip-note{font-size:11.5px;color:var(--ink-3);padding:0 16px 10px;margin-top:-2px}
+
+  .deal{background:var(--surface);border-radius:var(--r);box-shadow:var(--shadow);padding:15px 16px;border:1px solid var(--brand-soft)}
+  .deal .row1{display:flex;align-items:center;gap:9px}
+  .deal .vn{font-family:var(--f-display);font-weight:700;font-size:16px}
+  .deal .badge{margin-left:auto;background:var(--brand);color:#fff;font-size:11px;font-weight:800;border-radius:9px;padding:3px 9px}
+  .deal .offer{color:var(--ink-2);font-size:13.5px;margin-top:6px}
+  .deal .code{display:inline-flex;align-items:center;gap:8px;margin-top:11px;background:var(--brand-soft);border-radius:10px;padding:7px 11px}
+  .deal .code b{font-family:ui-monospace,monospace;font-weight:700;letter-spacing:.04em;color:var(--brand-strong)}
+  .deal .code button{background:none;border:none;color:var(--brand);font-weight:700;font-size:12px}
+  .deal .flag{color:var(--amber);font-size:11.5px;margin-top:9px}
+  .watching{color:var(--ink-3);font-size:12px;margin:12px 2px 0;line-height:1.5}
+
+  .hz{display:flex;align-items:center;gap:12px;padding:12px 0;border-top:1px solid var(--line-soft)}
+  .hz:first-child{border-top:none}.hz .em{font-size:19px;width:24px;text-align:center}
+  .hz .txt{min-width:0}.hz .txt b{font-weight:600;font-size:14.5px}.hz .txt small{display:block;color:var(--ink-3);font-size:12px}
+  .hz .days{margin-left:auto;color:var(--ink-3);font-size:11.5px;font-weight:600;white-space:nowrap}
+
+  .view{display:none}.view.active{display:block;animation:fade .3s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+
+  .tabs{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px));
+        background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line)}
+  .tabsrow{max-width:460px;margin:0 auto;display:flex;gap:2px}
+  .tab{flex:1;border:none;background:none;color:var(--ink-3);display:flex;flex-direction:column;align-items:center;gap:3px;padding:5px 0;font-size:10px;font-weight:700}
+  .tab .ic{font-size:17px;line-height:1}.tab.on{color:var(--brand)}
+  .tab .badge-n{position:relative}
+  .tab .badge-n[data-n]:not([data-n=""])::after{content:attr(data-n);position:absolute;top:-4px;right:-10px;background:var(--warn);color:#fff;font-size:9px;font-weight:800;border-radius:9px;padding:0 5px;line-height:15px}
+
+  .banner{font-size:11.5px;color:var(--ink-3);text-align:center;margin:14px 2px 0;line-height:1.45}
+  .loading{text-align:center;color:var(--ink-3);padding:40px 0;font-size:13px}
+  .concept{text-align:center;color:var(--ink-3);font-size:11px;margin:22px 0 4px}
+  :focus-visible{outline:2px solid var(--brand);outline-offset:2px;border-radius:6px}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brandrow">
+      <div class="logo"><span class="mark">▦</span>calendarjam</div>
+      <div class="spacer"></div>
+      <button class="tbtn" id="themeBtn" aria-label="Toggle light or dark">◐</button>
+    </div>
+    <div class="datewx">
+      <h1 id="hDay">—<small id="hDate"></small></h1>
+      <div class="nx" id="hNext"></div>
+    </div>
+  </header>
+
+  <section class="view active" id="v-today"><div class="loading">Loading your day…</div></section>
+  <section class="view" id="v-week"></section>
+
+  <section class="view" id="v-tasks">
+    <div class="eyebrow"><h2>Trips &amp; prep</h2><span class="preview-tag">PREVIEW · Phase 2</span></div>
+    <div class="trip open" data-trip>
+      <button class="trip-head" data-triphead><span class="flag">🍁</span>
+        <span class="th-txt"><b>Vermont — Thanksgiving</b><small>Nov 25–29 · in ~8 weeks</small></span>
+        <span class="prog" data-prog>1/6</span><span class="chev">›</span></button>
+      <div class="trip-note">Example checklist — the live build will auto-start these from the trip on your calendar.</div>
+      <div class="trip-body"><div class="inner">
+        <div class="todo done" data-todo><div class="box">✓</div><div class="td-txt"><b>Henry — school already out that week</b></div></div>
+        <div class="todo" data-todo><div class="box">✓</div><div class="td-txt"><b>Confirm the house rental</b></div></div>
+        <div class="todo" data-todo><div class="box">✓</div><div class="td-txt"><b>Book Milo's boarding — Giving Tree</b><small>Thanksgiving fills early</small></div></div>
+        <div class="todo" data-todo><div class="box">✓</div><div class="td-txt"><b>Snow layers + boots for Henry</b></div></div>
+        <div class="todo" data-todo><div class="box">✓</div><div class="td-txt"><b>Plan food for the week</b></div></div>
+        <div class="todo" data-todo><div class="box">✓</div><div class="td-txt"><b>Car checked for the drive north</b></div></div>
+      </div></div>
+    </div>
+    <div class="trip" data-trip>
+      <button class="trip-head" data-triphead><span class="flag">✈️</span>
+        <span class="th-txt"><b>Italy — Winter Break</b><small>Dec 20–Jan 4 · in ~11 weeks</small></span>
+        <span class="prog" data-prog>1/9</span><span class="chev">›</span></button>
+      <div class="trip-note">International trip — long-lead items (passports, flights, holiday boarding) front-loaded.</div>
+      <div class="trip-body"><div class="inner">
+        <div class="todo done" data-todo><div class="box">✓</div><div class="td-txt"><b>Henry — notify Swanson, get assignments</b></div></div>
+        <div class="todo" data-todo><div class="box">✓</div><div class="td-txt"><b>Check passports valid ≥6 months past return</b><small>do first — renewals take weeks</small></div></div>
+        <div class="todo" data-todo><div class="box">✓</div><div class="td-txt"><b>Book flights — IAD → Rome</b></div></div>
+        <div class="todo" data-todo><div class="box">✓</div><div class="td-txt"><b>Confirm lodging + rough itinerary</b></div></div>
+        <div class="todo" data-todo><div class="box">✓</div><div class="td-txt"><b>Milo — long-stay boarding (Giving Tree)</b><small>holidays book out</small></div></div>
+        <div class="todo" data-todo><div class="box">✓</div><div class="td-txt"><b>International phone / data plan</b></div></div>
+        <div class="todo" data-todo><div class="box">✓</div><div class="td-txt"><b>Euros + tell the bank you're traveling</b></div></div>
+        <div class="todo" data-todo><div class="box">✓</div><div class="td-txt"><b>Travel insurance</b></div></div>
+        <div class="todo" data-todo><div class="box">✓</div><div class="td-txt"><b>Adapters + packing list</b></div></div>
+      </div></div>
+    </div>
+    <div class="eyebrow"><h2>Follow-ups</h2></div>
+    <div class="card">
+      <div class="todo" data-todo><div class="box">✓</div><div class="td-txt"><b>Reply to The Cover Guy — swim spa quotes</b><small>open thread · ticket 552493</small><span class="td-src">from Gmail</span></div></div>
+      <div class="todo" data-todo><div class="box">✓</div><div class="td-txt"><b>Grab a gift for Kristen</b><small>birthday Saturday</small><span class="td-src">from calendar</span></div></div>
+    </div>
+  </section>
+
+  <section class="view" id="v-deals"><div class="loading">Loading deals…</div></section>
+
+  <p class="banner" id="srcBanner"></p>
+  <p class="concept">calendarjam · redesign preview</p>
+</div>
+
+<nav class="tabs"><div class="tabsrow">
+  <button class="tab on" data-view="v-today"><span class="ic badge-n" id="todayBadge">◉</span>Today</button>
+  <button class="tab" data-view="v-week"><span class="ic">▤</span>Week</button>
+  <button class="tab" data-view="v-tasks"><span class="ic">✓</span>Tasks</button>
+  <button class="tab" data-view="v-deals"><span class="ic">◆</span>Deals</button>
+</div></nav>
+
+<script>
+"use strict";
+var DATA_URL="https://raw.githubusercontent.com/esttt-blip/calendarjam/main/dashboard.json";
+
+// ---- helpers ----
+function el(tag,cls,html){var e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return e;}
+function esc(s){return (s||"").replace(/[&<>]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;"}[c];});}
+function fmtTime(t){ // "7:00 pm" -> "7:00 PM" with styled am/pm
+  if(!t||t==="all day")return {main:"all day",ap:""};
+  var m=t.match(/(\d+:\d+)\s*(am|pm)/i); if(!m)return{main:t,ap:""};
+  return {main:m[1],ap:" "+m[2].toUpperCase()};
+}
+function dotClass(title){
+  var t=(title||"").toLowerCase();
+  if(/golf|⛳/.test(t))return"golf";
+  if(/viva|ignite|soccer|game|practice|spirit|⚽|⚾/.test(t))return"sport";
+  if(/hotel|flight|airport|🏨|✈|drive/.test(t))return"travel";
+  if(/lunch|dinner|brunch|pineapple|🍍|🍽/.test(t))return"food";
+  if(/surgery|ooo|appointment|🏥|edgar|lint|thermostat/.test(t))return"home";
+  return"";
+}
+// Suggested coverage from the practice-rotation rules (Phase 2 will make this real + persistent)
+function coverage(title,dateStr){
+  var t=(title||"").toLowerCase();
+  var isPractice=/practice/.test(t)&&/viva|ignite|⚽|⚾/.test(t);
+  var isGame=/game/.test(t)&&/viva|ignite|⚽|⚾/.test(t);
+  if(!isPractice&&!isGame)return null;
+  var dow=new Date(dateStr+"T12:00:00").getDay(); // 0 Sun .. 6 Sat
+  if(isGame)return {label:"⚠ Who's driving?",cls:"tbd"};
+  if(dow===1||dow===4)return {label:"👤 Carpool",cls:"set"};      // Mon/Thu
+  if(dow===3)return {label:"👤 Esther",cls:"set"};                 // Wed
+  return {label:"⚠ Who's driving?",cls:"tbd"};
+}
+// Weather only when noteworthy
+function wxNote(w){
+  if(!w)return null;
+  var p=w.precip_pct||0, hi=w.high_f||0, lo=w.low_f||0;
+  if(p>=40)return {label:(w.emoji||"🌧")+" "+p+"% rain",cls:"wx",nudge:"Rain likely — layers if you're outside."};
+  if(hi>=90)return {label:"🥵 "+hi+"°",cls:"wx hot",nudge:"Hot — hydrate and find shade."};
+  if(lo<=35)return {label:"🥶 "+lo+"°",cls:"wx",nudge:"Cold start — bundle up."};
+  return null;
+}
+function dayWxBrief(w){ if(!w)return""; return (w.emoji||"")+" "+(w.high_f)+"°/"+(w.low_f)+"°"; }
+
+function eventRow(ev,dateStr){
+  var tm=fmtTime(ev.time);
+  var row=el("div","ev");
+  row.appendChild(el("div","t",esc(tm.main)+'<span class="ap">'+esc(tm.ap)+'</span>'));
+  var body=el("div","body");
+  var isDrive=ev.is_drive;
+  body.appendChild(el("span","dot "+(isDrive?"drive":dotClass(ev.title))));
+  var main=el("div","evmain");
+  main.appendChild(el("div","ttl"+(isDrive?" drive":""),esc(ev.title)));
+  if(ev.location) main.appendChild(el("div","loc",esc(ev.location.split(",").slice(0,2).join(", "))));
+  var chips=el("div","chiprow");
+  var cov=isDrive?null:coverage(ev.title,dateStr);
+  if(cov){var b=el("button","cov "+cov.cls,esc(cov.label));b.dataset.cov=cov.cls;chips.appendChild(b);}
+  if(chips.childNodes.length)main.appendChild(chips);
+  body.appendChild(main);
+  row.appendChild(body);
+  return row;
+}
+
+function render(data){
+  // header
+  var first=data.week&&data.week[0];
+  var dLabel=(first&&first.label)||data.generated_label||"";
+  var parts=dLabel.replace(/^Today\s*·\s*/,"").split(/\s+/); // "Thu Oct 1"
+  document.getElementById("hDay").firstChild.nodeValue=(first?weekdayLong(first.date):"Today");
+  document.getElementById("hDate").textContent=(first?monthDay(first.date):"");
+  // next event today
+  var nextEv=first&&(first.events||[]).find(function(e){return !e.all_day;});
+  document.getElementById("hNext").innerHTML = nextEv
+    ? 'Next: <b>'+esc(stripEmoji(nextEv.title))+' '+esc(nextEv.time.toUpperCase())+'</b>'
+    : '<small>nothing timed today</small>';
+
+  renderToday(data);
+  renderWeek(data);
+  renderDeals(data);
+
+  var when=data.generated_label?(" · synced "+data.generated_label):"";
+  document.getElementById("srcBanner").textContent="Live from your calendar"+when+". Coverage tags are suggestions until the sync writes them (Phase 2).";
+}
+
+function weekdayLong(d){try{return new Date(d+"T12:00:00").toLocaleDateString("en-US",{weekday:"long"});}catch(e){return d;}}
+function weekdayShort(d){try{return new Date(d+"T12:00:00").toLocaleDateString("en-US",{weekday:"long"});}catch(e){return d;}}
+function monthDay(d){try{return new Date(d+"T12:00:00").toLocaleDateString("en-US",{month:"long",day:"numeric"});}catch(e){return d;}}
+function monthDayShort(d){try{return new Date(d+"T12:00:00").toLocaleDateString("en-US",{month:"short",day:"numeric"});}catch(e){return d;}}
+function stripEmoji(s){return (s||"").replace(/[\u{1F000}-\u{1FAFF}☀-➿️]/gu,"").trim();}
+
+function renderToday(data){
+  var v=document.getElementById("v-today");v.innerHTML="";
+  var first=data.week&&data.week[0]; if(!first){v.appendChild(el("p","empty","No data."));return;}
+  // glance
+  var eb=el("div","eyebrow");eb.appendChild(el("h2",null,"Today"));
+  var wn=el("span","when",monthDayShort(first.date));eb.appendChild(wn);v.appendChild(eb);
+  var timed=(first.events||[]).filter(function(e){return !e.all_day;});
+  var drives=timed.filter(function(e){return e.is_drive;});
+  var glance=el("div","card pad");
+  if(timed.length===0){glance.appendChild(gl("good","✓","<b>Nothing on the calendar today.</b> Open day."));}
+  else{
+    var openCov=timed.filter(function(e){return !e.is_drive;}).map(function(e){return coverage(e.title,first.date);}).filter(function(c){return c&&c.cls==="tbd";});
+    if(openCov.length) glance.appendChild(gl("warn","⚠","<b>"+openCov.length+" drive"+(openCov.length>1?"s":"")+" need a driver.</b> Tap the coverage tag to set it."));
+    else glance.appendChild(gl("good","✓","<b>Today's covered.</b> No open drives."));
+  }
+  var wx=wxNote(first.weather);
+  if(wx) glance.appendChild(gl("info",(first.weather.emoji||"🌦"),"<b>"+esc(wx.label.replace(/^\S+\s/,""))+"</b> — "+esc(wx.nudge)));
+  v.appendChild(glance);
+  // schedule
+  var eb2=el("div","eyebrow");eb2.appendChild(el("h2",null,"Today's schedule"));v.appendChild(eb2);
+  var card=el("div","card");
+  if(timed.length===0 && (first.events||[]).length===0) card.appendChild(el("p","empty","Nothing scheduled."));
+  (first.events||[]).forEach(function(e){card.appendChild(eventRow(e,first.date));});
+  v.appendChild(card);
+  // handled this run
+  if(data.added&&data.added.length){
+    var eb3=el("div","eyebrow");eb3.appendChild(el("h2",null,"I handled this run"));eb3.appendChild(el("span","count",String(data.added.length)));v.appendChild(eb3);
+    data.added.forEach(function(a){
+      var c=el("div","confirm");
+      c.appendChild(el("div","ok","✓"));
+      c.appendChild(el("div","txt","<b>"+esc(a.title)+"</b><small>"+esc(a.when||"")+" · mirrored to the shared calendar</small>"));
+      v.appendChild(c);
+    });
+  }
+  // badge: count of open coverage this week
+  var open=weekOpenCoverage(data);
+  var badge=document.getElementById("todayBadge");
+  if(open>0)badge.setAttribute("data-n",String(open));else badge.removeAttribute("data-n");
+}
+function gl(kind,ic,html){var g=el("div","gl "+kind);g.appendChild(el("span","ic",ic));g.appendChild(el("div","g-txt",html));return g;}
+
+function weekOpenCoverage(data){
+  var n=0;(data.week||[]).forEach(function(d){(d.events||[]).forEach(function(e){if(e.all_day||e.is_drive)return;var c=coverage(e.title,d.date);if(c&&c.cls==="tbd")n++;});});return n;
+}
+
+function renderWeek(data){
+  var v=document.getElementById("v-week");v.innerHTML="";
+  var eb=el("div","eyebrow");eb.appendChild(el("h2",null,"The week ahead"));
+  var days=data.week||[];
+  if(days.length>1){var wn=el("span","when",monthDayShort(days[1].date)+" – "+monthDayShort(days[days.length-1].date));eb.appendChild(wn);}
+  v.appendChild(eb);
+  days.slice(1).forEach(function(d){
+    var wd=el("div","wk-day");
+    var head=el("div","wk-head");
+    head.appendChild(el("span","dow",weekdayShort(d.date)));
+    head.appendChild(el("span","dt",monthDayShort(d.date)));
+    var bdays=(d.events||[]).filter(function(e){return /birthday/i.test(e.title);});
+    if(bdays.length)head.appendChild(el("span","bd","🎂 "+esc(stripEmoji(bdays[0].title).replace(/'s Birthday/i,"").replace(/’s Birthday/i,""))));
+    var wb=dayWxBrief(d.weather);if(wb)head.appendChild(el("span","daywx",esc(wb)));
+    wd.appendChild(head);
+    var card=el("div","card");
+    var evs=(d.events||[]);
+    if(evs.length===0)card.appendChild(el("p","empty","Nothing scheduled."));
+    evs.forEach(function(e){
+      var row=eventRow(e,d.date);
+      // attach noteworthy weather to the first outdoor sport/game row
+      card.appendChild(row);
+    });
+    // day-level weather nudge if noteworthy and there's an outdoor event
+    var wx=wxNote(d.weather);
+    var hasOutdoor=evs.some(function(e){return /viva|ignite|game|practice|golf|spirit|park|field|⚽|⚾|⛳/i.test(e.title);});
+    if(wx&&hasOutdoor){var n=el("div","card");n.style.marginTop="8px";n.style.padding="10px 15px";
+      n.innerHTML='<div class="nudge" style="color:var(--warn)">'+esc(wx.label)+' — '+esc(wx.nudge)+'</div>';wd.appendChild(card);wd.appendChild(n);}
+    else wd.appendChild(card);
+    v.appendChild(wd);
+  });
+  // Further out (reference layer — Phase 2 loads the full ICS horizon)
+  var eb2=el("div","eyebrow");eb2.appendChild(el("h2",null,"Further out"));eb2.appendChild(el("span","preview-tag","PREVIEW · Phase 2"));v.appendChild(eb2);
+  v.appendChild(el("p","watching","The live build loads every game, tournament, and school date from the feeds through the season — so before you grab tickets you can see what's already claimed."));
+}
+
+function renderDeals(data){
+  var v=document.getElementById("v-deals");v.innerHTML="";
+  var eb=el("div","eyebrow");eb.appendChild(el("h2",null,"Deals worth a look"));eb.appendChild(el("span","preview-tag","PREVIEW"));v.appendChild(eb);
+  var deal=el("div","deal");
+  deal.innerHTML='<div class="row1"><span class="vn">NOBULL</span><span class="badge">25% OFF</span></div>'
+   +'<div class="offer">25% off + up to 8.5% back on training shoes &amp; apparel.</div>'
+   +'<div class="code"><b id="promo">25OFFMINTY</b><button id="copyBtn">Copy</button></div>'
+   +'<div class="flag">⚠ Via SafeOpt (a retargeting service), not NOBULL direct — sanity-check first.</div>';
+  v.appendChild(deal);
+  v.appendChild(el("p","watching","Quiet this week: Bombas · OOFOS · Cotopaxi · Bad Birdie · G/FORE · Away · P.F. Candle Co."));
+  // horizon (real)
+  var h=data.horizon||{};
+  var items=(h.birthdays||[]).map(function(b){return {em:"🎂",t:b.title,d:b.day,n:b.days_out};})
+    .concat((h.holidays||[]).map(function(x){return {em:"🍁",t:x.title,d:x.day,n:x.days_out};}));
+  if(items.length){
+    var eb2=el("div","eyebrow");eb2.appendChild(el("h2",null,"On the horizon"));eb2.appendChild(el("span","when","next 21 days"));v.appendChild(eb2);
+    var card=el("div","card");
+    items.sort(function(a,b){return (a.n||0)-(b.n||0);}).forEach(function(it){
+      var r=el("div","hz");
+      r.appendChild(el("span","em",it.em));
+      r.appendChild(el("div","txt","<b>"+esc(stripEmoji(it.t))+"</b><small>"+esc(it.d||"")+"</small>"));
+      r.appendChild(el("span","days",(it.n!=null?("in "+it.n+" day"+(it.n===1?"":"s")):"")));
+      card.appendChild(r);
+    });
+    v.appendChild(card);
+  }
+  wireDeal();
+}
+
+// ---- interactions ----
+function wireTabs(){
+  document.querySelectorAll(".tab").forEach(function(t){t.addEventListener("click",function(){
+    document.querySelectorAll(".tab").forEach(function(x){x.classList.remove("on")});t.classList.add("on");
+    document.querySelectorAll(".view").forEach(function(v){v.classList.remove("active")});
+    var v=document.getElementById(t.dataset.view);if(v)v.classList.add("active");
+    try{window.scrollTo({top:0,behavior:"smooth"});}catch(e){window.scrollTo(0,0);}
+  });});
+}
+var COV=[{t:"👤 Esther",c:"set"},{t:"👤 Taylor",c:"set"},{t:"👤 Carpool",c:"set"},{t:"⚠ Who’s driving?",c:"tbd"}];
+function wireCoverage(){
+  document.body.addEventListener("click",function(e){
+    var b=e.target.closest(".cov");if(!b)return;
+    var order=["set","set","set","tbd"]; // find current index by text
+    var i=COV.findIndex(function(o){return o.t===b.textContent;}); i=(i+1)%COV.length;
+    b.textContent=COV[i].t;b.classList.remove("set","tbd");b.classList.add(COV[i].c);b.dataset.cov=COV[i].c;
+  });
+}
+function wireTodos(){
+  document.body.addEventListener("click",function(e){
+    var t=e.target.closest("[data-todo]");if(!t)return;
+    t.classList.toggle("done");
+    var trip=t.closest("[data-trip]");if(trip){var items=trip.querySelectorAll("[data-todo]"),done=trip.querySelectorAll("[data-todo].done").length,p=trip.querySelector("[data-prog]");if(p)p.textContent=done+"/"+items.length;}
+  });
+  document.querySelectorAll("[data-todo]").forEach(function(t){t.style.cursor="pointer";});
+}
+function wireTrips(){
+  document.querySelectorAll("[data-triphead]").forEach(function(h){h.addEventListener("click",function(){h.closest("[data-trip]").classList.toggle("open");});});
+}
+function wireDeal(){
+  var cb=document.getElementById("copyBtn");if(!cb)return;
+  cb.addEventListener("click",function(){var code=(document.getElementById("promo")||{}).textContent||"";
+    try{navigator.clipboard.writeText(code).then(function(){cb.textContent="Copied";setTimeout(function(){cb.textContent="Copy";},1400);},s);}catch(e){s();}
+    function s(){cb.textContent="25OFFMINTY";}
+  });
+}
+function wireTheme(){
+  document.getElementById("themeBtn").addEventListener("click",function(){
+    var root=document.documentElement,cur=root.getAttribute("data-theme");
+    var dark=cur?cur==="dark":window.matchMedia("(prefers-color-scheme:dark)").matches;
+    root.setAttribute("data-theme",dark?"light":"dark");
+  });
+}
+
+// ---- boot ----
+wireTabs();wireCoverage();wireTodos();wireTrips();wireTheme();
+fetch(DATA_URL+"?t="+Date.now()).then(function(r){if(!r.ok)throw new Error(r.status);return r.json();})
+  .then(function(d){render(d);})
+  .catch(function(err){
+    document.getElementById("v-today").innerHTML='<div class="loading">Couldn’t reach your live calendar data ('+esc(String(err.message))+').<br>Check back after the next sync.</div>';
+    document.getElementById("srcBanner").textContent="Offline — could not load dashboard.json.";
+  });
+</script>
+</body>
+</html>
