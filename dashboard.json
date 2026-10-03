@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-10-03T06:00:54.824085-04:00",
-  "generated_label": "Sat Oct 3, 6:00 AM",
-  "weather": null,
+  "generated_at": "2026-10-03T10:20:46.495187-04:00",
+  "generated_label": "Sat Oct 3, 10:20 AM",
+  "weather": {
+    "high_f": 69,
+    "low_f": 58,
+    "precip_pct": 56,
+    "emoji": "\ud83c\udf27",
+    "label": "Rain"
+  },
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -15,11 +21,11 @@
       "label": "Today \u00b7 Sat Oct 3",
       "weather": {
         "high_f": 69,
-        "low_f": 59,
-        "precip_pct": 53,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
+        "low_f": 58,
+        "precip_pct": 56,
+        "weather_code": 63,
+        "emoji": "\ud83c\udf27",
+        "label": "Rain"
       },
       "events": [
         {
@@ -32,6 +38,15 @@
           "link": "https://www.google.com/calendar/event?eid=XzhrcTRjYzlqODRzamNiOXA2NG9rMmI5azhoMms4YmEyOGdwajBiYTQ2ZDIzMmRxMTY4cTQyZGhwNjRfMjAyNjEwMDMgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
+          "time": "11:15 am",
+          "title": "Drive to Old Ebbit",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-03T11:15:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=OXJzdnQxMGQyYWhtOWs1NnNianFmN29rNG8gZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
           "time": "12:00 pm",
           "title": "Lunch with Sophia",
           "location": "",
@@ -39,6 +54,15 @@
           "is_drive": false,
           "sort": "2026-10-03T12:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=Nmg2cm1xMGFncDE1N2YyYWVwdmVuZDViazAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "3:30 pm",
+          "title": "Milo to Daycare",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-03T15:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=djloamxyamc2Z21vaWdtdnFpNWtqajkzcG8gZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "4:00 pm",
@@ -65,12 +89,12 @@
       "date": "2026-10-04",
       "label": "Tomorrow \u00b7 Sun Oct 4",
       "weather": {
-        "high_f": 64,
+        "high_f": 63,
         "low_f": 60,
-        "precip_pct": 35,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
+        "precip_pct": 21,
+        "weather_code": 61,
+        "emoji": "\ud83c\udf27",
+        "label": "Light rain"
       },
       "events": [
         {
@@ -108,7 +132,7 @@
       "label": "Monday \u00b7 Oct 5",
       "weather": {
         "high_f": 74,
-        "low_f": 59,
+        "low_f": 58,
         "precip_pct": 5,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
@@ -140,7 +164,7 @@
       "date": "2026-10-06",
       "label": "Tuesday \u00b7 Oct 6",
       "weather": {
-        "high_f": 66,
+        "high_f": 68,
         "low_f": 50,
         "precip_pct": 0,
         "weather_code": 0,
@@ -164,8 +188,8 @@
       "date": "2026-10-07",
       "label": "Wednesday \u00b7 Oct 7",
       "weather": {
-        "high_f": 72,
-        "low_f": 48,
+        "high_f": 73,
+        "low_f": 49,
         "precip_pct": 0,
         "weather_code": 0,
         "emoji": "\u2600\ufe0f",
@@ -224,12 +248,12 @@
       "date": "2026-10-08",
       "label": "Thursday \u00b7 Oct 8",
       "weather": {
-        "high_f": 80,
-        "low_f": 51,
+        "high_f": 81,
+        "low_f": 53,
         "precip_pct": 0,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
+        "weather_code": 2,
+        "emoji": "\u26c5",
+        "label": "Partly cloudy"
       },
       "events": [
         {
@@ -302,12 +326,12 @@
       "date": "2026-10-09",
       "label": "Friday \u00b7 Oct 9",
       "weather": {
-        "high_f": 77,
-        "low_f": 60,
+        "high_f": 78,
+        "low_f": 61,
         "precip_pct": 1,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
+        "weather_code": 2,
+        "emoji": "\u26c5",
+        "label": "Partly cloudy"
       },
       "events": [
         {
@@ -336,6 +360,15 @@
           "is_drive": false,
           "sort": "2026-10-09T09:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=NzIwNGM1Y2c5bmN1cGpxcDdoNWx0YzE4cXMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "2:18 pm",
+          "title": "Reservation at Jefferson District Golf Course",
+          "location": "Jefferson District Golf Course, Jefferson District Golf Course, 7900 Lee Hwy., Falls Church, VA 22042, USA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-09T14:18:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=bTc1b2ZjdDF1Nm1rOWVmNzJsam1pcjFrdWMgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
