@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-04T06:00:55.361973-04:00",
-  "generated_label": "Sun Oct 4, 6:00 AM",
+  "generated_at": "2026-10-04T11:20:05.141717-04:00",
+  "generated_label": "Sun Oct 4, 11:20 AM",
   "weather": {
-    "high_f": 65,
+    "high_f": 64,
     "low_f": 60,
     "precip_pct": 30,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
+    "emoji": "\ud83c\udf26",
+    "label": "Light drizzle"
   },
   "theme": {
     "emoji": "\u26bd",
@@ -19,7 +19,14 @@
     {
       "date": "2026-10-04",
       "label": "Today \u00b7 Sun Oct 4",
-      "weather": null,
+      "weather": {
+        "high_f": 64,
+        "low_f": 60,
+        "precip_pct": 30,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
       "events": [
         {
           "time": "10:30 am",
@@ -72,7 +79,14 @@
     {
       "date": "2026-10-05",
       "label": "Tomorrow \u00b7 Mon Oct 5",
-      "weather": null,
+      "weather": {
+        "high_f": 68,
+        "low_f": 52,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -98,7 +112,14 @@
     {
       "date": "2026-10-06",
       "label": "Tuesday \u00b7 Oct 6",
-      "weather": null,
+      "weather": {
+        "high_f": 68,
+        "low_f": 46,
+        "precip_pct": 0,
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
+      },
       "events": [
         {
           "time": "all day",
@@ -115,7 +136,14 @@
     {
       "date": "2026-10-07",
       "label": "Wednesday \u00b7 Oct 7",
-      "weather": null,
+      "weather": {
+        "high_f": 76,
+        "low_f": 49,
+        "precip_pct": 0,
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
+      },
       "events": [
         {
           "time": "all day",
@@ -168,7 +196,14 @@
     {
       "date": "2026-10-08",
       "label": "Thursday \u00b7 Oct 8",
-      "weather": null,
+      "weather": {
+        "high_f": 86,
+        "low_f": 56,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -239,7 +274,14 @@
     {
       "date": "2026-10-09",
       "label": "Friday \u00b7 Oct 9",
-      "weather": null,
+      "weather": {
+        "high_f": 73,
+        "low_f": 55,
+        "precip_pct": 1,
+        "weather_code": 2,
+        "emoji": "\u26c5",
+        "label": "Partly cloudy"
+      },
       "events": [
         {
           "time": "all day",
@@ -310,7 +352,14 @@
     {
       "date": "2026-10-10",
       "label": "Saturday \u00b7 Oct 10",
-      "weather": null,
+      "weather": {
+        "high_f": 74,
+        "low_f": 55,
+        "precip_pct": 1,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "1:40 pm",
@@ -373,6 +422,16 @@
       "title": "\ud83d\udc87 Blowout \u2014 Bang Salon (The Yards)",
       "when": "Sat Oct 3 \u00b7 4:30 PM",
       "link": "https://www.google.com/calendar/event?eid=cHNuZzMwaW0xdWVkaGYwczM1azcyczB1djggZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\ude97 Drive to VIVA game (Lake Braddock)",
+      "when": "Sun Oct 18 \u00b7 8:15 AM",
+      "link": "https://www.google.com/calendar/event?eid=Z3ZodjBpNHA1dnBsOWc3NDFwOHI3aGxtcm8gZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\u26bd Henry \u2014 VIVA game vs BAC Ajax",
+      "when": "Sun Oct 18 \u00b7 9:30 AM",
+      "link": "https://www.google.com/calendar/event?eid=ZmNoOW40cGhuMHA0YWFzb3ZnZDBiZjVuaDggZXN0aGVyLmV2ZWx5bkBt"
     },
     {
       "title": "\u26f3 Golf sim \u2014 Golf Galaxy",
