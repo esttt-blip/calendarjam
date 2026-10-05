@@ -1,91 +1,31 @@
 {
-  "generated_at": "2026-10-04T11:20:05.141717-04:00",
-  "generated_label": "Sun Oct 4, 11:20 AM",
+  "generated_at": "2026-10-05T06:00:57.619804-04:00",
+  "generated_label": "Mon Oct 5, 6:00 AM",
   "weather": {
-    "high_f": 64,
-    "low_f": 60,
-    "precip_pct": 30,
-    "emoji": "\ud83c\udf26",
-    "label": "Light drizzle"
+    "high_f": 73,
+    "low_f": 56,
+    "precip_pct": 0,
+    "emoji": "\ud83c\udf2b",
+    "label": "Fog"
   },
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
-    "blurb": "6 games & practices on deck.",
+    "blurb": "4 games & practices on deck.",
     "color1": "#11998e",
     "color2": "#38ef7d"
   },
   "week": [
     {
-      "date": "2026-10-04",
-      "label": "Today \u00b7 Sun Oct 4",
-      "weather": {
-        "high_f": 64,
-        "low_f": 60,
-        "precip_pct": 30,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
-      },
-      "events": [
-        {
-          "time": "10:30 am",
-          "title": "\ud83d\ude97 Drive to VIVA game (Justice HS Stadium)",
-          "location": "Justice High School, 3301 Peace Valley Ln, Falls Church, VA 22044",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-10-04T10:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=cW44c21yMGN1NjZucDdpMHVtdXBscjUyN2cgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "11:30 am",
-          "title": "\u26bd Henry \u2014 VIVA game vs MSI",
-          "location": "Justice High School, 3301 Peace Valley Ln, Falls Church, VA 22044",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-04T11:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=anJkcTV1cGM5dnB1czRkb3Zrc2ZvNGJmZmMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "1:00 pm",
-          "title": "\ud83d\uded2 Walmart delivery",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-04T13:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=aWJyZGJ2aG4xZzRpbDMwMTQ3ODY5NTYwZTQgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "3:00 pm",
-          "title": "\u26f3 Golf sim \u2014 Golf Galaxy",
-          "location": "5821 Crossroads Center Way, Falls Church, VA 22041",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-04T15:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Nm4xcGw2dmthMWJicTlxcW0wY3VibmZwYjggZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "Spirit @ Houston (Victory)",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-04T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=N2ZwODdlZGZrMGJqc2NrYXRtbzFxbXVnbGMgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-10-05",
-      "label": "Tomorrow \u00b7 Mon Oct 5",
+      "label": "Today \u00b7 Mon Oct 5",
       "weather": {
-        "high_f": 68,
-        "low_f": 52,
+        "high_f": 73,
+        "low_f": 56,
         "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "weather_code": 45,
+        "emoji": "\ud83c\udf2b",
+        "label": "Fog"
       },
       "events": [
         {
@@ -111,9 +51,9 @@
     },
     {
       "date": "2026-10-06",
-      "label": "Tuesday \u00b7 Oct 6",
+      "label": "Tomorrow \u00b7 Tue Oct 6",
       "weather": {
-        "high_f": 68,
+        "high_f": 63,
         "low_f": 46,
         "precip_pct": 0,
         "weather_code": 0,
@@ -137,7 +77,7 @@
       "date": "2026-10-07",
       "label": "Wednesday \u00b7 Oct 7",
       "weather": {
-        "high_f": 76,
+        "high_f": 75,
         "low_f": 49,
         "precip_pct": 0,
         "weather_code": 0,
@@ -197,12 +137,12 @@
       "date": "2026-10-08",
       "label": "Thursday \u00b7 Oct 8",
       "weather": {
-        "high_f": 86,
-        "low_f": 56,
+        "high_f": 83,
+        "low_f": 57,
         "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
       },
       "events": [
         {
@@ -275,12 +215,12 @@
       "date": "2026-10-09",
       "label": "Friday \u00b7 Oct 9",
       "weather": {
-        "high_f": 73,
-        "low_f": 55,
-        "precip_pct": 1,
-        "weather_code": 2,
-        "emoji": "\u26c5",
-        "label": "Partly cloudy"
+        "high_f": 74,
+        "low_f": 56,
+        "precip_pct": 2,
+        "weather_code": 1,
+        "emoji": "\ud83c\udf24",
+        "label": "Mostly clear"
       },
       "events": [
         {
@@ -353,9 +293,9 @@
       "date": "2026-10-10",
       "label": "Saturday \u00b7 Oct 10",
       "weather": {
-        "high_f": 74,
+        "high_f": 75,
         "low_f": 55,
-        "precip_pct": 1,
+        "precip_pct": 2,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -390,6 +330,30 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-10-11",
+      "label": "Sunday \u00b7 Oct 11",
+      "weather": {
+        "high_f": 70,
+        "low_f": 59,
+        "precip_pct": 22,
+        "weather_code": 63,
+        "emoji": "\ud83c\udf27",
+        "label": "Rain"
+      },
+      "events": [
+        {
+          "time": "8:00 pm",
+          "title": "Esther - BOS",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-11T20:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZGlpY2NsYjNuN2hkNDNoZW9wZzU2aXE5ZmcgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -398,31 +362,11 @@
       {
         "title": "Columbus Day",
         "day": "Mon Oct 12",
-        "days_out": 8
+        "days_out": 7
       }
     ]
   },
   "added": [
-    {
-      "title": "\ud83d\ude97 Drive to Jefferson District GC",
-      "when": "Fri Oct 9 \u00b7 1:36 PM",
-      "link": "https://www.google.com/calendar/event?eid=MDhuMjk3NjBibGgwMzBubmJhZzJtZzVkcGsgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\ude97 Out of office",
-      "when": "Fri Oct 9 \u00b7 1:36 PM",
-      "link": "https://www.google.com/calendar/event?eid=bmhkcmk1MTBmamdvN2ozbzVnazk0OXI0bHMgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26f3 Golf \u2014 Jefferson District GC",
-      "when": "Fri Oct 9 \u00b7 2:18 PM",
-      "link": "https://www.google.com/calendar/event?eid=czVjaHRqcGg3OGczMHB0ZW04c3V2a2o1bm8gZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\udc87 Blowout \u2014 Bang Salon (The Yards)",
-      "when": "Sat Oct 3 \u00b7 4:30 PM",
-      "link": "https://www.google.com/calendar/event?eid=cHNuZzMwaW0xdWVkaGYwczM1azcyczB1djggZXN0aGVyLmV2ZWx5bkBt"
-    },
     {
       "title": "\ud83d\ude97 Drive to VIVA game (Lake Braddock)",
       "when": "Sun Oct 18 \u00b7 8:15 AM",
@@ -432,11 +376,6 @@
       "title": "\u26bd Henry \u2014 VIVA game vs BAC Ajax",
       "when": "Sun Oct 18 \u00b7 9:30 AM",
       "link": "https://www.google.com/calendar/event?eid=ZmNoOW40cGhuMHA0YWFzb3ZnZDBiZjVuaDggZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26f3 Golf sim \u2014 Golf Galaxy",
-      "when": "Sun Oct 4 \u00b7 3:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=Nm4xcGw2dmthMWJicTlxcW0wY3VibmZwYjggZXN0aGVyLmV2ZWx5bkBt"
     }
   ],
   "feed_changes": []
