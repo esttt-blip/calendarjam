@@ -310,5 +310,17 @@
     "uid": "<20261004170521.51f633cf2bc46da9@prod.walmart.com>",
     "needs_review": true,
     "from": "Walmart.com <help@walmart.com>"
+  },
+  {
+    "id": "7649f3dc5b687a1a16ff64b64c3c7db2",
+    "source": "Gmail",
+    "title": "Reminder: Daycare  |  Troop Play Full Day for Milo",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "img {\r\n\t\t\t\t\tmax-width: 100%;\r\n\t\t\t\t}\r\n\t\t\t\tbody {\r\n\t\t\t\t\t-webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; width: 100% !important; height: 100%; line-height: 1.6em;\r\n\t\t\t\t}\r\n\t\t\t\tbody {\r\n\t\t\t\t\tbackground-color: #f6f6f6;\r\n\t\t\t\t}\r\n\t\t\t\t@media only screen and (max-width: 640px) {\r\n\t\t\t\t  body {\r\n\t\t\t\t    padding: 0 !important;\r\n\t\t\t\t  }\r\n\t\t\t\t  .container {\r\n\t\t\t\t    padding: 0 !important; width: 100% !important;\r\n\t\t\t\t  }\r\n\t\t\t\t  .content {\r\n\t\t\t\t    padding: 0 !important;\r\n\t\t\t\t    background-color: #FFFFFF;\r\n\t\t\t\t  }\r\n\t\t\t\t  .content-wrap {\r\n\t\t\t\t    padding: 10px !important;\r\n\t\t\t\t  }\r\n\t\t\t\t  .invoice {\r\n\t\t\t\t    width: 100% !important;\r\n\t\t\t\t  }\r\n\t\t\t\t}\r\n\t\t\t\r\n\t\t\r\n\r\n\t\t\r\n\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\tDear Esther,This is a friendly reminder that Milo has a reservation for Daycare | Troop Play Full Day from October 6, 2026 at 7:30 am until October 6, 2026 at 5:30 pm.Here are a few important reminders for the upcoming reservation:Food Packing: If you bring your pet's food, please pack each serving in an individual Ziploc bag for easy handling and feeding.Medication: If your pet needs medication, please organize it by date in a medication box or clearly labeled containers to help ensure accurate administration.Vaccination Check: Please make sure your pet's Rabies, Distemper, and Bordetella vaccinations are current and that we have the most recent vaccination records on file.72-Hour ",
+    "uid": "<20261005121257.8e02719c1a61b81f@mailgun.gingrapp.com>",
+    "needs_review": true,
+    "from": "Giving Tree K9 Club <givingtreepetresort@mailgun.gingrapp.com>"
   }
 ]

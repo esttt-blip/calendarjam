@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-05T06:00:57.619804-04:00",
-  "generated_label": "Mon Oct 5, 6:00 AM",
+  "generated_at": "2026-10-05T15:16:53.953536-04:00",
+  "generated_label": "Mon Oct 5, 3:16 PM",
   "weather": {
-    "high_f": 73,
-    "low_f": 56,
+    "high_f": 72,
+    "low_f": 55,
     "precip_pct": 0,
     "emoji": "\ud83c\udf2b",
     "label": "Fog"
@@ -20,8 +20,8 @@
       "date": "2026-10-05",
       "label": "Today \u00b7 Mon Oct 5",
       "weather": {
-        "high_f": 73,
-        "low_f": 56,
+        "high_f": 72,
+        "low_f": 55,
         "precip_pct": 0,
         "weather_code": 45,
         "emoji": "\ud83c\udf2b",
@@ -53,7 +53,7 @@
       "date": "2026-10-06",
       "label": "Tomorrow \u00b7 Tue Oct 6",
       "weather": {
-        "high_f": 63,
+        "high_f": 64,
         "low_f": 46,
         "precip_pct": 0,
         "weather_code": 0,
@@ -78,7 +78,7 @@
       "label": "Wednesday \u00b7 Oct 7",
       "weather": {
         "high_f": 75,
-        "low_f": 49,
+        "low_f": 47,
         "precip_pct": 0,
         "weather_code": 0,
         "emoji": "\u2600\ufe0f",
@@ -106,7 +106,7 @@
         {
           "time": "6:00 am",
           "title": "Surgery @7:30, arrive @ 6:00am",
-          "location": "",
+          "location": "400 Fannon St, Alexandria, VA 22301, USA",
           "all_day": false,
           "is_drive": false,
           "sort": "2026-10-07T06:00:00-04:00",
@@ -140,9 +140,9 @@
         "high_f": 83,
         "low_f": 57,
         "precip_pct": 0,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [
         {
@@ -215,12 +215,12 @@
       "date": "2026-10-09",
       "label": "Friday \u00b7 Oct 9",
       "weather": {
-        "high_f": 74,
+        "high_f": 72,
         "low_f": 56,
         "precip_pct": 2,
-        "weather_code": 1,
-        "emoji": "\ud83c\udf24",
-        "label": "Mostly clear"
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [
         {
@@ -251,6 +251,15 @@
           "link": "https://www.google.com/calendar/event?eid=NzIwNGM1Y2c5bmN1cGpxcDdoNWx0YzE4cXMgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
+          "time": "1:30 pm",
+          "title": "\ud83d\ude97 Out of office",
+          "location": "",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-10-09T13:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=bmhkcmk1MTBmamdvN2ozbzVnazk0OXI0bHMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
           "time": "1:36 pm",
           "title": "\ud83d\ude97 Drive to Jefferson District GC",
           "location": "7900 Lee Hwy, Falls Church, VA 22042",
@@ -258,15 +267,6 @@
           "is_drive": true,
           "sort": "2026-10-09T13:36:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=MDhuMjk3NjBibGgwMzBubmJhZzJtZzVkcGsgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "1:36 pm",
-          "title": "\ud83d\ude97 Out of office",
-          "location": "",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-10-09T13:36:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=bmhkcmk1MTBmamdvN2ozbzVnazk0OXI0bHMgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "2:18 pm",
@@ -293,9 +293,9 @@
       "date": "2026-10-10",
       "label": "Saturday \u00b7 Oct 10",
       "weather": {
-        "high_f": 75,
-        "low_f": 55,
-        "precip_pct": 2,
+        "high_f": 73,
+        "low_f": 56,
+        "precip_pct": 1,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -335,12 +335,12 @@
       "date": "2026-10-11",
       "label": "Sunday \u00b7 Oct 11",
       "weather": {
-        "high_f": 70,
-        "low_f": 59,
-        "precip_pct": 22,
-        "weather_code": 63,
-        "emoji": "\ud83c\udf27",
-        "label": "Rain"
+        "high_f": 65,
+        "low_f": 56,
+        "precip_pct": 23,
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
       },
       "events": [
         {
@@ -366,17 +366,6 @@
       }
     ]
   },
-  "added": [
-    {
-      "title": "\ud83d\ude97 Drive to VIVA game (Lake Braddock)",
-      "when": "Sun Oct 18 \u00b7 8:15 AM",
-      "link": "https://www.google.com/calendar/event?eid=Z3ZodjBpNHA1dnBsOWc3NDFwOHI3aGxtcm8gZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26bd Henry \u2014 VIVA game vs BAC Ajax",
-      "when": "Sun Oct 18 \u00b7 9:30 AM",
-      "link": "https://www.google.com/calendar/event?eid=ZmNoOW40cGhuMHA0YWFzb3ZnZDBiZjVuaDggZXN0aGVyLmV2ZWx5bkBt"
-    }
-  ],
+  "added": [],
   "feed_changes": []
 }
