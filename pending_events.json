@@ -322,5 +322,17 @@
     "uid": "<20261005121257.8e02719c1a61b81f@mailgun.gingrapp.com>",
     "needs_review": true,
     "from": "Giving Tree K9 Club <givingtreepetresort@mailgun.gingrapp.com>"
+  },
+  {
+    "id": "e1c9fb410529db326a1f3f2cd8930272",
+    "source": "Gmail",
+    "title": "New device signed in to your Sangha Studios account",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "A new device just signed in to your Sangha Studios account. If you don\u2019t recognize this device, please check your account for any unauthorized activity, and also make sure that the sign in type used is secure.\r\n\r\nSign in type: OAuth\r\nDevice: Chrome on iOS\r\nLocation: Arlington, United States (173.73.185.184)\r\nTime: October 06, 01:00AM UTC\r\n\r\nTo immediately sign out of this device visit the URL below.\r\nhttps://clerk.sangha.studio/v1/tickets/accept?ticket=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaWQiOiJjbGllbnRfM0tJY0pUaGJGYlU2VnVTUnFHd1RLRDZscUZEIiwiZXhwIjoxNzkzODQwNDU2LCJpaWQiOiJpbnNfM0ZkYXdjNVhReXFVaVkxbWtoVlJoUWdySzBaIiwic2lkIjoic2Vzc18zS0ljS0JIcEdnckg5ZDA4cmxrYTVUNVBidkgiLCJzdCI6InNlc3Npb25fcmV2b2tlIn0.VSibZ7arDqiX_367Cp2WXQ_4aaQnOTjNgVP9sy5IreeA-ETWEAS_Ennp0O8R0vHypNabE8s0caLfx2ieIEw_8O5rGcsR2D6ghyZQIYRmOa746OFQtsmjEZpHgEsfiZZq4_oVHj6b6t_NRVR_RhunBJrpIYFpaFov5h3FCwAuay45NYOK-OSJ3keZ22JKIMNFQoNtRt9kVXYVsxv3qgB_1uB9kk-9XeS6IKyjJEApf2kJggZOZB1R9HgY3tY22ofpOseSG5oW3I-5le-BJTorUBNkhxVLok9RHeF7ShRV1uPiM8BJuLPSo__XBrXzW5RkF-LBaClaYpXDVfuTlVrbxQ",
+    "uid": "<Xho09rIPSM62l6l4Gj_I4A@geopod-ismtpd-71>",
+    "needs_review": true,
+    "from": "Sangha Studios <noreply@sangha.studio>"
   }
 ]
