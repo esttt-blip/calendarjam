@@ -1962,5 +1962,12 @@
     "action": "dismissed",
     "title": "France Interest Meeting Details and Recording",
     "source": "Gmail"
+  },
+  {
+    "ts": "2026-10-07T10:00:54.750985+00:00",
+    "action": "added",
+    "title": "Appointment Reminder",
+    "source": "Gmail invite",
+    "when": "2026-10-08T12:30"
   }
 ]
