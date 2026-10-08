@@ -1,92 +1,19 @@
 {
-  "generated_at": "2026-10-07T13:24:39.977345-04:00",
-  "generated_label": "Wed Oct 7, 1:24 PM",
-  "weather": {
-    "high_f": 71,
-    "low_f": 45,
-    "precip_pct": 0,
-    "emoji": "\u26c5",
-    "label": "Partly cloudy"
-  },
+  "generated_at": "2026-10-08T06:00:56.527868-04:00",
+  "generated_label": "Thu Oct 8, 6:00 AM",
+  "weather": null,
   "theme": {
-    "emoji": "\u26bd",
-    "title": "Game On Week",
-    "blurb": "4 games & practices on deck.",
-    "color1": "#11998e",
-    "color2": "#38ef7d"
+    "emoji": "\ud83c\udf41",
+    "title": "Peak Autumn",
+    "blurb": "Sweaters, leaves, and fast weekends.",
+    "color1": "#c0392b",
+    "color2": "#e67e22"
   },
   "week": [
     {
-      "date": "2026-10-07",
-      "label": "Today \u00b7 Wed Oct 7",
-      "weather": {
-        "high_f": 71,
-        "low_f": 45,
-        "precip_pct": 0,
-        "weather_code": 2,
-        "emoji": "\u26c5",
-        "label": "Partly cloudy"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "Surgery Appointment Reminder",
-          "location": "Inova Oakville Ambulatory Surgery Center",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-10-07T00:00",
-          "link": "https://www.google.com/calendar/event?eid=bXNwcHU2bDczYW4xaXVscGdpMjVlOWZkMDAgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:00 am",
-          "title": "Esther OOO",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-07T06:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=MG5va2xvajdybTNpMmMzN2VwajY5aG41M2cgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:00 am",
-          "title": "Surgery @7:30, arrive @ 6:00am",
-          "location": "400 Fannon St, Alexandria, VA 22301, USA",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-07T06:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=dWpkaTRsOWZoYzhxcmsycmgwNmFmZjVpdGMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:30 pm",
-          "title": "\ud83d\ude97 Drive to VIVA practice (Annandale HS Track)",
-          "location": "Annandale High School Track, 4700 Medford Dr, Annandale, VA 22003",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-10-07T18:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=bnU2amV2a2RxODBxN3QyMWVvdDJlYmpuOW8gZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "\u26bd Henry \u2014 VIVA practice",
-          "location": "Annandale High School Track, 4700 Medford Dr, Annandale, VA 22003",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-07T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=cnB0bzhpMDFuaXB1YmFuYTN1dGRwMjgzdWsgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-10-08",
-      "label": "Tomorrow \u00b7 Thu Oct 8",
-      "weather": {
-        "high_f": 78,
-        "low_f": 52,
-        "precip_pct": 1,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
-      },
+      "label": "Today \u00b7 Thu Oct 8",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -172,15 +99,8 @@
     },
     {
       "date": "2026-10-09",
-      "label": "Friday \u00b7 Oct 9",
-      "weather": {
-        "high_f": 71,
-        "low_f": 52,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Tomorrow \u00b7 Fri Oct 9",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -251,14 +171,7 @@
     {
       "date": "2026-10-10",
       "label": "Saturday \u00b7 Oct 10",
-      "weather": {
-        "high_f": 72,
-        "low_f": 56,
-        "precip_pct": 7,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "1:40 pm",
@@ -293,28 +206,14 @@
     {
       "date": "2026-10-11",
       "label": "Sunday \u00b7 Oct 11",
-      "weather": {
-        "high_f": 65,
-        "low_f": 61,
-        "precip_pct": 76,
-        "weather_code": 63,
-        "emoji": "\ud83c\udf27",
-        "label": "Rain"
-      },
+      "weather": null,
       "events": [],
       "conflicts": []
     },
     {
       "date": "2026-10-12",
       "label": "Monday \u00b7 Oct 12",
-      "weather": {
-        "high_f": 76,
-        "low_f": 62,
-        "precip_pct": 74,
-        "weather_code": 45,
-        "emoji": "\ud83c\udf2b",
-        "label": "Fog"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -367,15 +266,34 @@
     {
       "date": "2026-10-13",
       "label": "Tuesday \u00b7 Oct 13",
-      "weather": {
-        "high_f": 85,
-        "low_f": 62,
-        "precip_pct": 14,
-        "weather_code": 2,
-        "emoji": "\u26c5",
-        "label": "Partly cloudy"
-      },
+      "weather": null,
       "events": [],
+      "conflicts": []
+    },
+    {
+      "date": "2026-10-14",
+      "label": "Wednesday \u00b7 Oct 14",
+      "weather": null,
+      "events": [
+        {
+          "time": "9:00 am",
+          "title": "Taylor dentist appointment",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-14T09:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=dDdwb3ZtcjgwY3VjMTFuam9pMzFkaWxsaDQgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "\u26bd Henry \u2014 VIVA practice",
+          "location": "Justice High School, 3301 Peace Valley Ln, Falls Church, VA 22044",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-14T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=azA2ZXJpbWtzazg1czYzbWxubHMyZm1xcGsgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
       "conflicts": []
     }
   ],
@@ -385,7 +303,7 @@
       {
         "title": "Columbus Day",
         "day": "Mon Oct 12",
-        "days_out": 5
+        "days_out": 4
       }
     ]
   },
