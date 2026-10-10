@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-10T06:01:24.699777-04:00",
-  "generated_label": "Sat Oct 10, 6:01 AM",
+  "generated_at": "2026-10-10T11:52:06.430646-04:00",
+  "generated_label": "Sat Oct 10, 11:52 AM",
   "weather": {
-    "high_f": 72,
+    "high_f": 73,
     "low_f": 52,
-    "precip_pct": 16,
+    "precip_pct": 9,
     "emoji": "\u2601\ufe0f",
     "label": "Overcast"
   },
@@ -19,7 +19,14 @@
     {
       "date": "2026-10-10",
       "label": "Today \u00b7 Sat Oct 10",
-      "weather": null,
+      "weather": {
+        "high_f": 73,
+        "low_f": 52,
+        "precip_pct": 9,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "7:00 am",
@@ -72,7 +79,14 @@
     {
       "date": "2026-10-11",
       "label": "Tomorrow \u00b7 Sun Oct 11",
-      "weather": null,
+      "weather": {
+        "high_f": 70,
+        "low_f": 62,
+        "precip_pct": 90,
+        "weather_code": 65,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy rain"
+      },
       "events": [
         {
           "time": "all day",
@@ -107,7 +121,14 @@
     {
       "date": "2026-10-12",
       "label": "Monday \u00b7 Oct 12",
-      "weather": null,
+      "weather": {
+        "high_f": 70,
+        "low_f": 62,
+        "precip_pct": 82,
+        "weather_code": 55,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy drizzle"
+      },
       "events": [
         {
           "time": "all day",
@@ -160,14 +181,28 @@
     {
       "date": "2026-10-13",
       "label": "Tuesday \u00b7 Oct 13",
-      "weather": null,
+      "weather": {
+        "high_f": 81,
+        "low_f": 59,
+        "precip_pct": 2,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [],
       "conflicts": []
     },
     {
       "date": "2026-10-14",
       "label": "Wednesday \u00b7 Oct 14",
-      "weather": null,
+      "weather": {
+        "high_f": 82,
+        "low_f": 65,
+        "precip_pct": 3,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
       "events": [
         {
           "time": "9:00 am",
@@ -202,7 +237,14 @@
     {
       "date": "2026-10-15",
       "label": "Thursday \u00b7 Oct 15",
-      "weather": null,
+      "weather": {
+        "high_f": 67,
+        "low_f": 55,
+        "precip_pct": 8,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -228,7 +270,14 @@
     {
       "date": "2026-10-16",
       "label": "Friday \u00b7 Oct 16",
-      "weather": null,
+      "weather": {
+        "high_f": 77,
+        "low_f": 55,
+        "precip_pct": 23,
+        "weather_code": 61,
+        "emoji": "\ud83c\udf27",
+        "label": "Light rain"
+      },
       "events": [
         {
           "time": "all day",
