@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-10-10T11:52:06.430646-04:00",
-  "generated_label": "Sat Oct 10, 11:52 AM",
-  "weather": {
-    "high_f": 73,
-    "low_f": 52,
-    "precip_pct": 9,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-10-11T06:01:05.911612-04:00",
+  "generated_label": "Sun Oct 11, 6:01 AM",
+  "weather": null,
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -17,72 +11,12 @@
   },
   "week": [
     {
-      "date": "2026-10-10",
-      "label": "Today \u00b7 Sat Oct 10",
-      "weather": {
-        "high_f": 73,
-        "low_f": 52,
-        "precip_pct": 9,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "7:00 am",
-          "title": "\ud83d\uded2 Walmart delivery",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-10T07:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=cHY4OTBsNzc0dDA5NGNzYWpnZjgyMXZtcmMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "1:40 pm",
-          "title": "\ud83d\ude97 Drive to Audi Field (USWNT v Spain)",
-          "location": "Audi Field, 100 Potomac Ave SW, Washington, DC 20024",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-10-10T13:40:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=MDBtbnVlOXFjOG1hOWhoaWwyMHBka3E5OWsgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "2:30 pm",
-          "title": "U.S. Women's National Team v Spain presented by Purina",
-          "location": "Audi Field, Washington, DC",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-10T14:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=a3VpN2dzMzI5cTd1dXVsdWVqNWhjbW1hdWsgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "2:30 pm",
-          "title": "\u26bd USWNT v Spain",
-          "location": "Audi Field, 100 Potomac Ave SW, Washington, DC 20024",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-10T14:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=cm82bHM0bDVvM2hpaDc0OXRobWRyMGY5ajAgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:30 pm",
-          "title": "Dinner",
-          "location": "Jula's on the Potomac, 44 Canal Center Plaza 4th Floor, Alexandria, VA 22314, USA",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-10T19:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=b3IxaThxbHVzMWQ5MXZqcGNmNmlnbm5mOXMgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-10-11",
-      "label": "Tomorrow \u00b7 Sun Oct 11",
+      "label": "Today \u00b7 Sun Oct 11",
       "weather": {
-        "high_f": 70,
+        "high_f": 68,
         "low_f": 62,
-        "precip_pct": 90,
+        "precip_pct": 92,
         "weather_code": 65,
         "emoji": "\ud83c\udf27",
         "label": "Heavy rain"
@@ -120,14 +54,14 @@
     },
     {
       "date": "2026-10-12",
-      "label": "Monday \u00b7 Oct 12",
+      "label": "Tomorrow \u00b7 Mon Oct 12",
       "weather": {
-        "high_f": 70,
-        "low_f": 62,
-        "precip_pct": 82,
-        "weather_code": 55,
+        "high_f": 72,
+        "low_f": 61,
+        "precip_pct": 62,
+        "weather_code": 63,
         "emoji": "\ud83c\udf27",
-        "label": "Heavy drizzle"
+        "label": "Rain"
       },
       "events": [
         {
@@ -182,9 +116,9 @@
       "date": "2026-10-13",
       "label": "Tuesday \u00b7 Oct 13",
       "weather": {
-        "high_f": 81,
-        "low_f": 59,
-        "precip_pct": 2,
+        "high_f": 80,
+        "low_f": 60,
+        "precip_pct": 1,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -196,12 +130,12 @@
       "date": "2026-10-14",
       "label": "Wednesday \u00b7 Oct 14",
       "weather": {
-        "high_f": 82,
-        "low_f": 65,
-        "precip_pct": 3,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
+        "high_f": 86,
+        "low_f": 63,
+        "precip_pct": 10,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [
         {
@@ -238,12 +172,12 @@
       "date": "2026-10-15",
       "label": "Thursday \u00b7 Oct 15",
       "weather": {
-        "high_f": 67,
-        "low_f": 55,
-        "precip_pct": 8,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "high_f": 70,
+        "low_f": 57,
+        "precip_pct": 13,
+        "weather_code": 55,
+        "emoji": "\ud83c\udf27",
+        "label": "Heavy drizzle"
       },
       "events": [
         {
@@ -271,12 +205,12 @@
       "date": "2026-10-16",
       "label": "Friday \u00b7 Oct 16",
       "weather": {
-        "high_f": 77,
-        "low_f": 55,
-        "precip_pct": 23,
-        "weather_code": 61,
-        "emoji": "\ud83c\udf27",
-        "label": "Light rain"
+        "high_f": 70,
+        "low_f": 54,
+        "precip_pct": 26,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
       },
       "events": [
         {
@@ -308,6 +242,30 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-10-17",
+      "label": "Saturday \u00b7 Oct 17",
+      "weather": {
+        "high_f": 67,
+        "low_f": 46,
+        "precip_pct": 22,
+        "weather_code": 61,
+        "emoji": "\ud83c\udf27",
+        "label": "Light rain"
+      },
+      "events": [
+        {
+          "time": "12:30 pm",
+          "title": "Spirit vs Gotham (CBS)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-17T12:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=N3FrdXBiYTRiaGlpM2FmZGtiZGZvaDM2YTAgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -316,63 +274,15 @@
       {
         "title": "Columbus Day",
         "day": "Mon Oct 12",
-        "days_out": 2
+        "days_out": 1
       },
       {
         "title": "Halloween",
         "day": "Sat Oct 31",
-        "days_out": 21
+        "days_out": 20
       }
     ]
   },
-  "added": [
-    {
-      "title": "\ud83c\udf71 MightyMeals delivery",
-      "when": "Sun Oct 11",
-      "link": "https://www.google.com/calendar/event?eid=NWp2MjdqdWFwZ3NoN2hxamFlZ2dnN252bGcgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\ude97 Drive to VIVA friendly (Justice HS)",
-      "when": "Sun Oct 11 \u00b7 8:15 AM",
-      "link": "https://www.google.com/calendar/event?eid=YzRpZjEyNmw2MmllNjhrZ2c4bzVldnF1bmMgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26bd Henry \u2014 VIVA friendly vs ECNL",
-      "when": "Sun Oct 11 \u00b7 8:30 AM",
-      "link": "https://www.google.com/calendar/event?eid=ZjFncTlrMGhycXJuM3F2am1jOGJtZmZnbnMgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26bd Henry \u2014 VIVA practice",
-      "when": "Thu Oct 22 \u00b7 7:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=NWJncXEwdWhlaDlpcW1xNG9hMnRtZWx1ZmcgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u2708\ufe0f Airport \u2014 UA641 IAD\u2192BOS",
-      "when": "Tue Oct 20 \u00b7 6:50 AM",
-      "link": "https://www.google.com/calendar/event?eid=dHBwbW52dHRubmFsYTdldWpoMTgxY2Z1ZjggZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\ude97 Drive to VIVA practice (Justice HS)",
-      "when": "Wed Oct 14 \u00b7 6:45 PM",
-      "link": "https://www.google.com/calendar/event?eid=dGI2b2VhYWxnaDhjZmpuYTNvZTZoNjhzdjQgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26bd Henry \u2014 VIVA practice",
-      "when": "Wed Oct 21 \u00b7 7:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=Z3NkbXFqaDZrbWhraGhwcDc4a250NDdiYzQgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\ude97 Drive home from IAD (UA3409)",
-      "when": "Wed Oct 21 \u00b7 8:23 PM",
-      "link": "https://www.google.com/calendar/event?eid=MTg5MXU0cWZnN2RmNzUwNWZsaXUwZXNqbmMgZXN0aGVyLmV2ZWx5bkBt"
-    }
-  ],
-  "feed_changes": [
-    {
-      "title": "\u26bd Henry \u2014 VIVA practice",
-      "when": "Mon Oct 12 \u00b7 7:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=c2phOHNtMnFpOW5sYzRvcDBkOGI1dmVvN2sgZXN0aGVyLmV2ZWx5bkBt",
-      "note": "Venue moved to Thomas Jefferson HS (was Pine Ridge Park)"
-    }
-  ]
+  "added": [],
+  "feed_changes": []
 }
