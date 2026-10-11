@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-10-11T06:01:05.911612-04:00",
-  "generated_label": "Sun Oct 11, 6:01 AM",
-  "weather": null,
+  "generated_at": "2026-10-11T12:18:31.298724-04:00",
+  "generated_label": "Sun Oct 11, 12:18 PM",
+  "weather": {
+    "high_f": 67,
+    "low_f": 60,
+    "precip_pct": 92,
+    "emoji": "\ud83c\udf27",
+    "label": "Heavy rain"
+  },
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -14,8 +20,8 @@
       "date": "2026-10-11",
       "label": "Today \u00b7 Sun Oct 11",
       "weather": {
-        "high_f": 68,
-        "low_f": 62,
+        "high_f": 67,
+        "low_f": 60,
         "precip_pct": 92,
         "weather_code": 65,
         "emoji": "\ud83c\udf27",
@@ -48,6 +54,15 @@
           "is_drive": false,
           "sort": "2026-10-11T08:30:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=ZjFncTlrMGhycXJuM3F2am1jOGJtZmZnbnMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "10:00 am",
+          "title": "\ud83d\uded2 Whole Foods pickup",
+          "location": "Whole Foods Market, 103 E Broad St, Falls Church, VA 22046",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-11T10:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=a21maDlhZDZsdnZkNTFhcDZnYnEwZ2VxMWcgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
@@ -58,7 +73,7 @@
       "weather": {
         "high_f": 72,
         "low_f": 61,
-        "precip_pct": 62,
+        "precip_pct": 54,
         "weather_code": 63,
         "emoji": "\ud83c\udf27",
         "label": "Rain"
@@ -117,8 +132,8 @@
       "label": "Tuesday \u00b7 Oct 13",
       "weather": {
         "high_f": 80,
-        "low_f": 60,
-        "precip_pct": 1,
+        "low_f": 58,
+        "precip_pct": 0,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -130,9 +145,9 @@
       "date": "2026-10-14",
       "label": "Wednesday \u00b7 Oct 14",
       "weather": {
-        "high_f": 86,
-        "low_f": 63,
-        "precip_pct": 10,
+        "high_f": 87,
+        "low_f": 64,
+        "precip_pct": 5,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -172,12 +187,12 @@
       "date": "2026-10-15",
       "label": "Thursday \u00b7 Oct 15",
       "weather": {
-        "high_f": 70,
-        "low_f": 57,
-        "precip_pct": 13,
-        "weather_code": 55,
+        "high_f": 73,
+        "low_f": 60,
+        "precip_pct": 10,
+        "weather_code": 63,
         "emoji": "\ud83c\udf27",
-        "label": "Heavy drizzle"
+        "label": "Rain"
       },
       "events": [
         {
@@ -205,12 +220,12 @@
       "date": "2026-10-16",
       "label": "Friday \u00b7 Oct 16",
       "weather": {
-        "high_f": 70,
-        "low_f": 54,
-        "precip_pct": 26,
-        "weather_code": 51,
+        "high_f": 81,
+        "low_f": 58,
+        "precip_pct": 33,
+        "weather_code": 53,
         "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
+        "label": "Drizzle"
       },
       "events": [
         {
@@ -247,12 +262,12 @@
       "date": "2026-10-17",
       "label": "Saturday \u00b7 Oct 17",
       "weather": {
-        "high_f": 67,
-        "low_f": 46,
-        "precip_pct": 22,
-        "weather_code": 61,
-        "emoji": "\ud83c\udf27",
-        "label": "Light rain"
+        "high_f": 59,
+        "low_f": 39,
+        "precip_pct": 17,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [
         {
@@ -283,6 +298,22 @@
       }
     ]
   },
-  "added": [],
+  "added": [
+    {
+      "title": "\ud83d\uded2 Whole Foods pickup",
+      "when": "Sun Oct 11 \u00b7 10:00 AM",
+      "link": "https://www.google.com/calendar/event?eid=a21maDlhZDZsdnZkNTFhcDZnYnEwZ2VxMWcgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\u26bd Henry \u2014 VIVA game vs ALEX",
+      "when": "Sun Oct 25 \u00b7 10:00 AM",
+      "link": "https://www.google.com/calendar/event?eid=dGF0c2JhaWdhdTRmNDV0MTlucTNic2w2NjAgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\ude97 Drive to VIVA game (Justice HS)",
+      "when": "Sun Oct 25 \u00b7 9:00 AM",
+      "link": "https://www.google.com/calendar/event?eid=NzhuZzZlZmRnNzkwYTJhOTNkaTdvMGc1YXMgZXN0aGVyLmV2ZWx5bkBt"
+    }
+  ],
   "feed_changes": []
 }
