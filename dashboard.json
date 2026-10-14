@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-13T13:34:40.976313-04:00",
-  "generated_label": "Tue Oct 13, 1:34 PM",
+  "generated_at": "2026-10-14T06:01:34.276736-04:00",
+  "generated_label": "Wed Oct 14, 6:01 AM",
   "weather": {
-    "high_f": 77,
-    "low_f": 56,
-    "precip_pct": 1,
+    "high_f": 86,
+    "low_f": 64,
+    "precip_pct": 36,
     "emoji": "\u2601\ufe0f",
     "label": "Overcast"
   },
@@ -17,29 +17,15 @@
   },
   "week": [
     {
-      "date": "2026-10-13",
-      "label": "Today \u00b7 Tue Oct 13",
+      "date": "2026-10-14",
+      "label": "Today \u00b7 Wed Oct 14",
       "weather": {
-        "high_f": 77,
-        "low_f": 56,
-        "precip_pct": 1,
+        "high_f": 86,
+        "low_f": 64,
+        "precip_pct": 36,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
-      },
-      "events": [],
-      "conflicts": []
-    },
-    {
-      "date": "2026-10-14",
-      "label": "Tomorrow \u00b7 Wed Oct 14",
-      "weather": {
-        "high_f": 85,
-        "low_f": 63,
-        "precip_pct": 18,
-        "weather_code": 51,
-        "emoji": "\ud83c\udf26",
-        "label": "Light drizzle"
       },
       "events": [
         {
@@ -68,20 +54,29 @@
           "is_drive": false,
           "sort": "2026-10-14T19:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=azA2ZXJpbWtzazg1czYzbWxubHMyZm1xcGsgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:30 pm",
+          "title": "Yin Yoga",
+          "location": "7505p Leesburg Pike, , Falls Church VA, 22043",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-14T19:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Xzc0cWo0YzFpNmtzNDJiYTQ4Y3EzZWI5azhsMjMyYmExOGtwM2FiYTY4OHEzNGdwaDg0cjNnZGk2NnMgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
     },
     {
       "date": "2026-10-15",
-      "label": "Thursday \u00b7 Oct 15",
+      "label": "Tomorrow \u00b7 Thu Oct 15",
       "weather": {
-        "high_f": 71,
-        "low_f": 56,
-        "precip_pct": 60,
-        "weather_code": 53,
-        "emoji": "\ud83c\udf26",
-        "label": "Drizzle"
+        "high_f": 74,
+        "low_f": 57,
+        "precip_pct": 53,
+        "weather_code": 63,
+        "emoji": "\ud83c\udf27",
+        "label": "Rain"
       },
       "events": [
         {
@@ -109,9 +104,9 @@
       "date": "2026-10-16",
       "label": "Friday \u00b7 Oct 16",
       "weather": {
-        "high_f": 84,
-        "low_f": 56,
-        "precip_pct": 58,
+        "high_f": 83,
+        "low_f": 58,
+        "precip_pct": 62,
         "weather_code": 80,
         "emoji": "\ud83c\udf26",
         "label": "Showers"
@@ -160,12 +155,12 @@
       "date": "2026-10-17",
       "label": "Saturday \u00b7 Oct 17",
       "weather": {
-        "high_f": 56,
+        "high_f": 59,
         "low_f": 48,
-        "precip_pct": 9,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "precip_pct": 31,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
       },
       "events": [
         {
@@ -185,8 +180,8 @@
       "label": "Sunday \u00b7 Oct 18",
       "weather": {
         "high_f": 63,
-        "low_f": 43,
-        "precip_pct": 0,
+        "low_f": 44,
+        "precip_pct": 1,
         "weather_code": 0,
         "emoji": "\u2600\ufe0f",
         "label": "Clear"
@@ -226,9 +221,9 @@
       "date": "2026-10-19",
       "label": "Monday \u00b7 Oct 19",
       "weather": {
-        "high_f": 69,
-        "low_f": 45,
-        "precip_pct": 0,
+        "high_f": 68,
+        "low_f": 44,
+        "precip_pct": 1,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -254,6 +249,39 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-10-20",
+      "label": "Tuesday \u00b7 Oct 20",
+      "weather": {
+        "high_f": 68,
+        "low_f": 53,
+        "precip_pct": 1,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
+      "events": [
+        {
+          "time": "6:50 am",
+          "title": "\u2708\ufe0f Airport \u2014 UA641 IAD\u2192BOS",
+          "location": "Washington Dulles International Airport (IAD), 1 Saarinen Cir, Dulles, VA 20166",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-20T06:50:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=dHBwbW52dHRubmFsYTdldWpoMTgxY2Z1ZjggZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "8:50 am",
+          "title": "Flight  UA641 IAD to BOS",
+          "location": "Departing Washington, DC",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-20T08:50:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=XzcxMjNjY2kxNjkxajRiYTI2OTIzMmI5azZoMWowYmEyOGNvNDZiYTQ4cDFqMGMxaTZncDRjZDI1ODggZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -262,7 +290,7 @@
       {
         "title": "Halloween",
         "day": "Sat Oct 31",
-        "days_out": 18
+        "days_out": 17
       }
     ]
   },
