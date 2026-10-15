@@ -1,83 +1,19 @@
 {
-  "generated_at": "2026-10-14T11:05:34.803819-04:00",
-  "generated_label": "Wed Oct 14, 11:05 AM",
-  "weather": {
-    "high_f": 87,
-    "low_f": 63,
-    "precip_pct": 17,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-10-15T06:03:07.286611-04:00",
+  "generated_label": "Thu Oct 15, 6:03 AM",
+  "weather": null,
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
-    "blurb": "6 games & practices on deck.",
+    "blurb": "5 games & practices on deck.",
     "color1": "#11998e",
     "color2": "#38ef7d"
   },
   "week": [
     {
-      "date": "2026-10-14",
-      "label": "Today \u00b7 Wed Oct 14",
-      "weather": {
-        "high_f": 87,
-        "low_f": 63,
-        "precip_pct": 17,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "9:00 am",
-          "title": "Taylor dentist appointment",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-14T09:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=dDdwb3ZtcjgwY3VjMTFuam9pMzFkaWxsaDQgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:45 pm",
-          "title": "\ud83d\ude97 Drive to VIVA practice (Justice HS)",
-          "location": "Justice High School, 3301 Peace Valley Ln, Falls Church, VA 22044",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-10-14T18:45:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=dGI2b2VhYWxnaDhjZmpuYTNvZTZoNjhzdjQgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "\u26bd Henry \u2014 VIVA practice",
-          "location": "Justice High School, 3301 Peace Valley Ln, Falls Church, VA 22044",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-14T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=azA2ZXJpbWtzazg1czYzbWxubHMyZm1xcGsgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:30 pm",
-          "title": "Yin Yoga",
-          "location": "7505p Leesburg Pike, , Falls Church VA, 22043",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-14T19:30:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Xzc0cWo0YzFpNmtzNDJiYTQ4Y3EzZWI5azhsMjMyYmExOGtwM2FiYTY4OHEzNGdwaDg0cjNnZGk2NnMgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-10-15",
-      "label": "Tomorrow \u00b7 Thu Oct 15",
-      "weather": {
-        "high_f": 73,
-        "low_f": 57,
-        "precip_pct": 44,
-        "weather_code": 63,
-        "emoji": "\ud83c\udf27",
-        "label": "Rain"
-      },
+      "label": "Today \u00b7 Thu Oct 15",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -102,15 +38,8 @@
     },
     {
       "date": "2026-10-16",
-      "label": "Friday \u00b7 Oct 16",
-      "weather": {
-        "high_f": 84,
-        "low_f": 59,
-        "precip_pct": 56,
-        "weather_code": 81,
-        "emoji": "\ud83c\udf27",
-        "label": "Showers"
-      },
+      "label": "Tomorrow \u00b7 Fri Oct 16",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -154,14 +83,7 @@
     {
       "date": "2026-10-17",
       "label": "Saturday \u00b7 Oct 17",
-      "weather": {
-        "high_f": 60,
-        "low_f": 47,
-        "precip_pct": 55,
-        "weather_code": 80,
-        "emoji": "\ud83c\udf26",
-        "label": "Showers"
-      },
+      "weather": null,
       "events": [
         {
           "time": "12:30 pm",
@@ -178,14 +100,7 @@
     {
       "date": "2026-10-18",
       "label": "Sunday \u00b7 Oct 18",
-      "weather": {
-        "high_f": 62,
-        "low_f": 44,
-        "precip_pct": 4,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
-      },
+      "weather": null,
       "events": [
         {
           "time": "8:15 am",
@@ -220,14 +135,7 @@
     {
       "date": "2026-10-19",
       "label": "Monday \u00b7 Oct 19",
-      "weather": {
-        "high_f": 68,
-        "low_f": 45,
-        "precip_pct": 4,
-        "weather_code": 2,
-        "emoji": "\u26c5",
-        "label": "Partly cloudy"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -253,14 +161,7 @@
     {
       "date": "2026-10-20",
       "label": "Tuesday \u00b7 Oct 20",
-      "weather": {
-        "high_f": 68,
-        "low_f": 51,
-        "precip_pct": 3,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "6:50 am",
@@ -282,6 +183,50 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-10-21",
+      "label": "Wednesday \u00b7 Oct 21",
+      "weather": null,
+      "events": [
+        {
+          "time": "9:00 am",
+          "title": "Post-Op check up",
+          "location": "Inova General Surgery - Oakville, 400 Fannon St 3rd floor, Alexandria, VA 22301, USA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-21T09:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=NzYzcGRoYTI0ZGIxdmJva29scDduaHJocGcgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "5:49 pm",
+          "title": "Flight  UA3409 BOS to IAD",
+          "location": "Departing Boston, MA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-21T17:49:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Xzg0c2pnZGhqNnAxNGNiOWg2c3I0YWI5azZnc2ppYmEyNjUyajZiOWk4OHJqNGhobDhrcjM2ZHE1ODggZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "\u26bd Henry \u2014 VIVA practice",
+          "location": "Justice High School, 3301 Peace Valley Ln, Falls Church, VA 22044",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-21T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Z3NkbXFqaDZrbWhraGhwcDc4a250NDdiYzQgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "8:23 pm",
+          "title": "\ud83d\ude97 Drive home from IAD (UA3409)",
+          "location": "Washington Dulles International Airport (IAD), 1 Saarinen Cir, Dulles, VA 20166",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-10-21T20:23:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=MTg5MXU0cWZnN2RmNzUwNWZsaXUwZXNqbmMgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -290,7 +235,7 @@
       {
         "title": "Halloween",
         "day": "Sat Oct 31",
-        "days_out": 17
+        "days_out": 16
       }
     ]
   },
