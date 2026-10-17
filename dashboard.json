@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-10-17T06:00:47.146196-04:00",
-  "generated_label": "Sat Oct 17, 6:00 AM",
-  "weather": null,
+  "generated_at": "2026-10-17T09:42:24.802438-04:00",
+  "generated_label": "Sat Oct 17, 9:42 AM",
+  "weather": {
+    "high_f": 62,
+    "low_f": 43,
+    "precip_pct": 72,
+    "emoji": "\ud83c\udf26",
+    "label": "Drizzle"
+  },
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -13,7 +19,14 @@
     {
       "date": "2026-10-17",
       "label": "Today \u00b7 Sat Oct 17",
-      "weather": null,
+      "weather": {
+        "high_f": 62,
+        "low_f": 43,
+        "precip_pct": 72,
+        "weather_code": 53,
+        "emoji": "\ud83c\udf26",
+        "label": "Drizzle"
+      },
       "events": [
         {
           "time": "12:30 pm",
@@ -30,7 +43,14 @@
     {
       "date": "2026-10-18",
       "label": "Tomorrow \u00b7 Sun Oct 18",
-      "weather": null,
+      "weather": {
+        "high_f": 60,
+        "low_f": 38,
+        "precip_pct": 0,
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
+      },
       "events": [
         {
           "time": "8:15 am",
@@ -65,7 +85,14 @@
     {
       "date": "2026-10-19",
       "label": "Monday \u00b7 Oct 19",
-      "weather": null,
+      "weather": {
+        "high_f": 65,
+        "low_f": 46,
+        "precip_pct": 5,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -91,7 +118,14 @@
     {
       "date": "2026-10-20",
       "label": "Tuesday \u00b7 Oct 20",
-      "weather": null,
+      "weather": {
+        "high_f": 68,
+        "low_f": 50,
+        "precip_pct": 6,
+        "weather_code": 2,
+        "emoji": "\u26c5",
+        "label": "Partly cloudy"
+      },
       "events": [
         {
           "time": "6:50 am",
@@ -117,7 +151,14 @@
     {
       "date": "2026-10-21",
       "label": "Wednesday \u00b7 Oct 21",
-      "weather": null,
+      "weather": {
+        "high_f": 66,
+        "low_f": 49,
+        "precip_pct": 8,
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
+      },
       "events": [
         {
           "time": "9:00 am",
@@ -161,7 +202,14 @@
     {
       "date": "2026-10-22",
       "label": "Thursday \u00b7 Oct 22",
-      "weather": null,
+      "weather": {
+        "high_f": 66,
+        "low_f": 46,
+        "precip_pct": 6,
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
+      },
       "events": [
         {
           "time": "7:00 pm",
@@ -178,7 +226,14 @@
     {
       "date": "2026-10-23",
       "label": "Friday \u00b7 Oct 23",
-      "weather": null,
+      "weather": {
+        "high_f": 63,
+        "low_f": 50,
+        "precip_pct": 6,
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
+      },
       "events": [
         {
           "time": "all day",
@@ -226,6 +281,11 @@
       "title": "\u26bd Henry \u2014 VIVA practice",
       "when": "Mon Oct 26 \u00b7 7:00 PM",
       "link": "https://www.google.com/calendar/event?eid=aDMxdGE0OGdyaXI5Zm9rb2doZ2llNWRkNG8gZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\ude97 Drive to VIVA practice (Thomas Jefferson HS)",
+      "when": "Thu Oct 29 \u00b7 6:30 PM",
+      "link": "https://www.google.com/calendar/event?eid=NG5zNmFwYjhiYXJrc3Fhc2w5NTlyY2QxNTggZXN0aGVyLmV2ZWx5bkBt"
     },
     {
       "title": "\u26bd Henry \u2014 VIVA practice",
