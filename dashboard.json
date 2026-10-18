@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-10-18T06:07:51.654693-04:00",
-  "generated_label": "Sun Oct 18, 6:07 AM",
-  "weather": null,
+  "generated_at": "2026-10-18T09:59:11.220412-04:00",
+  "generated_label": "Sun Oct 18, 9:59 AM",
+  "weather": {
+    "high_f": 59,
+    "low_f": 40,
+    "precip_pct": 0,
+    "emoji": "\u2600\ufe0f",
+    "label": "Clear"
+  },
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -15,7 +21,7 @@
       "label": "Today \u00b7 Sun Oct 18",
       "weather": {
         "high_f": 59,
-        "low_f": 39,
+        "low_f": 40,
         "precip_pct": 0,
         "weather_code": 0,
         "emoji": "\u2600\ufe0f",
@@ -48,6 +54,15 @@
           "is_drive": false,
           "sort": "2026-10-18T11:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=dmU2cnYzazEyMGEwZDMwMW51a2kzaGg5bmcgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "6:00 pm",
+          "title": "\ud83d\uded2 Walmart delivery",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-18T18:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=N2owNmczbG5pam0wODJkOXFnZDI5cGx2cXMgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
@@ -56,12 +71,12 @@
       "date": "2026-10-19",
       "label": "Tomorrow \u00b7 Mon Oct 19",
       "weather": {
-        "high_f": 65,
+        "high_f": 63,
         "low_f": 42,
         "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
       },
       "events": [
         {
@@ -90,11 +105,11 @@
       "label": "Tuesday \u00b7 Oct 20",
       "weather": {
         "high_f": 68,
-        "low_f": 50,
+        "low_f": 48,
         "precip_pct": 0,
-        "weather_code": 2,
-        "emoji": "\u26c5",
-        "label": "Partly cloudy"
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
       },
       "events": [
         {
@@ -197,12 +212,12 @@
       "date": "2026-10-23",
       "label": "Friday \u00b7 Oct 23",
       "weather": {
-        "high_f": 66,
-        "low_f": 50,
+        "high_f": 62,
+        "low_f": 49,
         "precip_pct": 2,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "weather_code": 1,
+        "emoji": "\ud83c\udf24",
+        "label": "Mostly clear"
       },
       "events": [
         {
@@ -239,8 +254,8 @@
       "date": "2026-10-24",
       "label": "Saturday \u00b7 Oct 24",
       "weather": {
-        "high_f": 64,
-        "low_f": 48,
+        "high_f": 60,
+        "low_f": 45,
         "precip_pct": 6,
         "weather_code": 1,
         "emoji": "\ud83c\udf24",
