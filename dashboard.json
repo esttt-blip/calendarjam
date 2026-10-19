@@ -1,11 +1,17 @@
 {
-  "generated_at": "2026-10-19T06:00:50.504926-04:00",
-  "generated_label": "Mon Oct 19, 6:00 AM",
-  "weather": null,
+  "generated_at": "2026-10-19T12:58:39.961583-04:00",
+  "generated_label": "Mon Oct 19, 12:58 PM",
+  "weather": {
+    "high_f": 66,
+    "low_f": 40,
+    "precip_pct": 0,
+    "emoji": "\u2600\ufe0f",
+    "label": "Clear"
+  },
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
-    "blurb": "5 games & practices on deck.",
+    "blurb": "6 games & practices on deck.",
     "color1": "#11998e",
     "color2": "#38ef7d"
   },
@@ -14,8 +20,8 @@
       "date": "2026-10-19",
       "label": "Today \u00b7 Mon Oct 19",
       "weather": {
-        "high_f": 64,
-        "low_f": 39,
+        "high_f": 66,
+        "low_f": 40,
         "precip_pct": 0,
         "weather_code": 0,
         "emoji": "\u2600\ufe0f",
@@ -47,8 +53,8 @@
       "date": "2026-10-20",
       "label": "Tomorrow \u00b7 Tue Oct 20",
       "weather": {
-        "high_f": 69,
-        "low_f": 48,
+        "high_f": 70,
+        "low_f": 47,
         "precip_pct": 0,
         "weather_code": 0,
         "emoji": "\u2600\ufe0f",
@@ -72,6 +78,15 @@
           "is_drive": false,
           "sort": "2026-10-20T08:50:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=XzcxMjNjY2kxNjkxajRiYTI2OTIzMmI5azZoMWowYmEyOGNvNDZiYTQ4cDFqMGMxaTZncDRjZDI1ODggZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "Yin - In Studio \ud83d\udd90\ud83c\udfff",
+          "location": "1112 Boylston Street, , Boston MA, 02215",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-20T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=XzZvcTQ0Y3BvNm9vMzJiOXA2MG9qOGI5azZjb2phYmEyOGNvNGFiYTY2b3BqMGRobTg0cmthY2hvOGcgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
@@ -81,7 +96,7 @@
       "label": "Wednesday \u00b7 Oct 21",
       "weather": {
         "high_f": 65,
-        "low_f": 50,
+        "low_f": 48,
         "precip_pct": 0,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
@@ -105,6 +120,15 @@
           "is_drive": false,
           "sort": "2026-10-21T17:49:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=Xzg0c2pnZGhqNnAxNGNiOWg2c3I0YWI5azZnc2ppYmEyNjUyajZiOWk4OHJqNGhobDhrcjM2ZHE1ODggZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "6:45 pm",
+          "title": "\ud83d\ude97 Drive to VIVA practice (Justice HS)",
+          "location": "Justice High School, 3301 Peace Valley Ln, Falls Church, VA 22044",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-10-21T18:45:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=bGg3bzhzazgzcmplZzU0ZzQyam0zNTRnOWcgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "7:00 pm",
@@ -134,9 +158,9 @@
         "high_f": 67,
         "low_f": 48,
         "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
       },
       "events": [
         {
@@ -155,12 +179,12 @@
       "date": "2026-10-23",
       "label": "Friday \u00b7 Oct 23",
       "weather": {
-        "high_f": 65,
-        "low_f": 50,
+        "high_f": 64,
+        "low_f": 49,
         "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
       },
       "events": [
         {
@@ -200,9 +224,9 @@
         "high_f": 61,
         "low_f": 47,
         "precip_pct": 0,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
+        "weather_code": 2,
+        "emoji": "\u26c5",
+        "label": "Partly cloudy"
       },
       "events": [],
       "conflicts": []
@@ -214,9 +238,9 @@
         "high_f": 64,
         "low_f": 46,
         "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "weather_code": 2,
+        "emoji": "\u26c5",
+        "label": "Partly cloudy"
       },
       "events": [
         {
@@ -264,12 +288,32 @@
     {
       "title": "\ud83d\udcda No School \u2014 Grade Prep Day (Swanson)",
       "when": "Fri Jan 29",
+      "link": "https://www.google.com/calendar/event?eid=ZjVtdGJpNDNnY24xanZzMjA2cXVwZjJtYmsgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\udcda No School \u2014 Grade Prep Day (Swanson)",
+      "when": "Fri Jan 29",
       "link": "https://www.google.com/calendar/event?eid=dnY0NTYxaXJwdDAzbHB2NHRhaG1vajJtMW8gZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\udcda School Holiday (MLK Day)",
+      "when": "Mon Jan 18",
+      "link": "https://www.google.com/calendar/event?eid=cHY1OWtzc2Y1b2IxdmQ3aHFtcGFmczNkaW8gZXN0aGVyLmV2ZWx5bkBt"
     },
     {
       "title": "\u26bd Henry \u2014 VIVA practice",
       "when": "Mon Nov 16 \u00b7 7:00 PM",
       "link": "https://www.google.com/calendar/event?eid=OTZvdm5kNGVtMnA0ZmJnYTZwY3BtYjdsbmMgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\ude97 Out of office",
+      "when": "Mon Nov 2 \u00b7 3:15 PM",
+      "link": "https://www.google.com/calendar/event?eid=NmE0MzhxdjVtNWpvY2c0Ymg1OHE4NHEycG8gZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\u2708\ufe0f Airport \u2014 UA688 IAD\u2192BOS",
+      "when": "Mon Nov 2 \u00b7 3:15 PM",
+      "link": "https://www.google.com/calendar/event?eid=Y2o0MTE3aXJyOHRnaGlmcmM4ODdsbXQ1Z28gZXN0aGVyLmV2ZWx5bkBt"
     },
     {
       "title": "\u26bd Henry \u2014 VIVA practice",
@@ -290,6 +334,16 @@
       "title": "\u26bd Henry \u2014 VIVA game vs FCD",
       "when": "Sat Nov 7 \u00b7 1:00 PM",
       "link": "https://www.google.com/calendar/event?eid=amcyb2puMWp2MWtzZzJrZHZkYWphdjk2dWcgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\u2708\ufe0f Airport \u2014 UA884 IAD\u2192FCO (Rome)",
+      "when": "Sun Dec 20 \u00b7 3:40 PM",
+      "link": "https://www.google.com/calendar/event?eid=MmJqaml1bGIxOHFjc2QzY2kzdGg1NzJuZjggZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\ude97 Drive home from IAD (UA109)",
+      "when": "Sun Jan 3 \u00b7 4:05 PM",
+      "link": "https://www.google.com/calendar/event?eid=cmJrdmRqbzlmZW02djU0YWRiZDk1cmNubmsgZXN0aGVyLmV2ZWx5bkBt"
     },
     {
       "title": "\ud83d\ude97 Drive to VIVA game (Nike Park, Great Falls)",
@@ -327,6 +381,11 @@
       "link": "https://www.google.com/calendar/event?eid=OGU5ajV2ZHRzZWdzcW5kZGl2OW5jbXJubWMgZXN0aGVyLmV2ZWx5bkBt"
     },
     {
+      "title": "\ud83d\ude97 Drive home from IAD (UA694)",
+      "when": "Thu Nov 5 \u00b7 9:58 PM",
+      "link": "https://www.google.com/calendar/event?eid=YTRhcDg1Z25zaG4zdXFqaW51bG1zN21tam8gZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
       "title": "\ud83d\ude97 Drive to appointment (Bethesda)",
       "when": "Thu Oct 29 \u00b7 8:25 AM",
       "link": "https://www.google.com/calendar/event?eid=OHNlOGMxbGdkdWpoNWprb2ZsMWN2dW9jNWcgZXN0aGVyLmV2ZWx5bkBt"
@@ -337,19 +396,19 @@
       "link": "https://www.google.com/calendar/event?eid=YW5hNWdtMW50cTZyaDBzNTU4djRoNmxjMTAgZXN0aGVyLmV2ZWx5bkBt"
     },
     {
-      "title": "\u26bd Henry \u2014 VIVA practice",
-      "when": "Wed Nov 11 \u00b7 7:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=Y2tvZmZwMG9la2MzcXN1OGJiOThvZDRwYWMgZXN0aGVyLmV2ZWx5bkBt"
+      "title": "\ud83d\udcda Winter Break (Swanson)",
+      "when": "Wed Dec 23",
+      "link": "https://www.google.com/calendar/event?eid=cTVpNmcyN2l1MjAyYzFxaW1hcTIycGViamMgZXN0aGVyLmV2ZWx5bkBt"
     },
     {
-      "title": "\u26bd Henry \u2014 VIVA practice",
-      "when": "Wed Nov 18 \u00b7 7:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=Ym1ndTFtdWRxdWZuN3F0N2Vsc3FmczNrcWcgZXN0aGVyLmV2ZWx5bkBt"
+      "title": "\ud83d\udcda Early Release (Swanson)",
+      "when": "Wed Feb 10",
+      "link": "https://www.google.com/calendar/event?eid=ajJ0Z2tuMXAwYTlxYTUwbDM2djZubzJuaDAgZXN0aGVyLmV2ZWx5bkBt"
     },
     {
-      "title": "\u26bd Henry \u2014 VIVA practice",
-      "when": "Wed Nov 4 \u00b7 7:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=MjhycG0wbGdmbXVpZjU0MjVkdDNyZnMzdm8gZXN0aGVyLmV2ZWx5bkBt"
+      "title": "\ud83d\udcda Early Release (Swanson)",
+      "when": "Wed Jan 13",
+      "link": "https://www.google.com/calendar/event?eid=aWlodW8zdGhycXRjM2ttcjdndWdoaHJrYmsgZXN0aGVyLmV2ZWx5bkBt"
     }
   ],
   "feed_changes": []
