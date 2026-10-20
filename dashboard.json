@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-10-19T12:58:39.961583-04:00",
-  "generated_label": "Mon Oct 19, 12:58 PM",
-  "weather": {
-    "high_f": 66,
-    "low_f": 40,
-    "precip_pct": 0,
-    "emoji": "\u2600\ufe0f",
-    "label": "Clear"
-  },
+  "generated_at": "2026-10-20T06:01:10.126588-04:00",
+  "generated_label": "Tue Oct 20, 6:01 AM",
+  "weather": null,
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -17,49 +11,9 @@
   },
   "week": [
     {
-      "date": "2026-10-19",
-      "label": "Today \u00b7 Mon Oct 19",
-      "weather": {
-        "high_f": 66,
-        "low_f": 40,
-        "precip_pct": 0,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "EP",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-10-19T00:00",
-          "link": "https://www.google.com/calendar/event?eid=NGlkYWdqazk5aGlvMXBtcmZybmxyb2c1Ym9fMjAyNjEwMTkgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "\u26bd Henry \u2014 VIVA practice",
-          "location": "Pine Ridge Park, 3401 Woodburn Rd, Annandale, VA 22003",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-19T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ZGh0OTc1YzRsYXNyMWFkY2ptbGtpdWtiYzAgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-10-20",
-      "label": "Tomorrow \u00b7 Tue Oct 20",
-      "weather": {
-        "high_f": 70,
-        "low_f": 47,
-        "precip_pct": 0,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
-      },
+      "label": "Today \u00b7 Tue Oct 20",
+      "weather": null,
       "events": [
         {
           "time": "6:50 am",
@@ -93,15 +47,8 @@
     },
     {
       "date": "2026-10-21",
-      "label": "Wednesday \u00b7 Oct 21",
-      "weather": {
-        "high_f": 65,
-        "low_f": 48,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Tomorrow \u00b7 Wed Oct 21",
+      "weather": null,
       "events": [
         {
           "time": "9:00 am",
@@ -154,14 +101,7 @@
     {
       "date": "2026-10-22",
       "label": "Thursday \u00b7 Oct 22",
-      "weather": {
-        "high_f": 67,
-        "low_f": 48,
-        "precip_pct": 0,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
-      },
+      "weather": null,
       "events": [
         {
           "time": "7:00 pm",
@@ -178,14 +118,7 @@
     {
       "date": "2026-10-23",
       "label": "Friday \u00b7 Oct 23",
-      "weather": {
-        "high_f": 64,
-        "low_f": 49,
-        "precip_pct": 0,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -220,28 +153,14 @@
     {
       "date": "2026-10-24",
       "label": "Saturday \u00b7 Oct 24",
-      "weather": {
-        "high_f": 61,
-        "low_f": 47,
-        "precip_pct": 0,
-        "weather_code": 2,
-        "emoji": "\u26c5",
-        "label": "Partly cloudy"
-      },
+      "weather": null,
       "events": [],
       "conflicts": []
     },
     {
       "date": "2026-10-25",
       "label": "Sunday \u00b7 Oct 25",
-      "weather": {
-        "high_f": 64,
-        "low_f": 46,
-        "precip_pct": 0,
-        "weather_code": 2,
-        "emoji": "\u26c5",
-        "label": "Partly cloudy"
-      },
+      "weather": null,
       "events": [
         {
           "time": "9:00 am",
@@ -272,6 +191,32 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-10-26",
+      "label": "Monday \u00b7 Oct 26",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "EP",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-10-26T00:00",
+          "link": "https://www.google.com/calendar/event?eid=NGlkYWdqazk5aGlvMXBtcmZybmxyb2c1Ym9fMjAyNjEwMjYgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "\u26bd Henry \u2014 VIVA practice",
+          "location": "Pine Ridge Park, 3401 Woodburn Rd, Annandale, VA 22003",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-26T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=aDMxdGE0OGdyaXI5Zm9rb2doZ2llNWRkNG8gZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -280,7 +225,7 @@
       {
         "title": "Halloween",
         "day": "Sat Oct 31",
-        "days_out": 12
+        "days_out": 11
       }
     ]
   },
@@ -291,19 +236,14 @@
       "link": "https://www.google.com/calendar/event?eid=ZjVtdGJpNDNnY24xanZzMjA2cXVwZjJtYmsgZXN0aGVyLmV2ZWx5bkBt"
     },
     {
-      "title": "\ud83d\udcda No School \u2014 Grade Prep Day (Swanson)",
-      "when": "Fri Jan 29",
-      "link": "https://www.google.com/calendar/event?eid=dnY0NTYxaXJwdDAzbHB2NHRhaG1vajJtMW8gZXN0aGVyLmV2ZWx5bkBt"
+      "title": "\ud83d\udcda School Holiday (Presidents Day)",
+      "when": "Mon Feb 15",
+      "link": "https://www.google.com/calendar/event?eid=cnZqdWdpdmJjMWk2bm5oMWsyZjAzZG51dmMgZXN0aGVyLmV2ZWx5bkBt"
     },
     {
       "title": "\ud83d\udcda School Holiday (MLK Day)",
       "when": "Mon Jan 18",
       "link": "https://www.google.com/calendar/event?eid=cHY1OWtzc2Y1b2IxdmQ3aHFtcGFmczNkaW8gZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26bd Henry \u2014 VIVA practice",
-      "when": "Mon Nov 16 \u00b7 7:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=OTZvdm5kNGVtMnA0ZmJnYTZwY3BtYjdsbmMgZXN0aGVyLmV2ZWx5bkBt"
     },
     {
       "title": "\ud83d\ude97 Out of office",
@@ -316,26 +256,6 @@
       "link": "https://www.google.com/calendar/event?eid=Y2o0MTE3aXJyOHRnaGlmcmM4ODdsbXQ1Z28gZXN0aGVyLmV2ZWx5bkBt"
     },
     {
-      "title": "\u26bd Henry \u2014 VIVA practice",
-      "when": "Mon Nov 2 \u00b7 7:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=cWJiNWRzYnB0dmxtdTNmdmFxY2R2Zzcxb28gZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26bd Henry \u2014 VIVA practice",
-      "when": "Mon Nov 9 \u00b7 7:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=NTNldmJsazFqcTEzN2tyYzY4b2E0Y25xbWcgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\ude97 Drive to VIVA game (Justice HS)",
-      "when": "Sat Nov 7 \u00b7 12:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=bTEza2s2NDg4bzFmaWdlZW90OTk4NmU2bGsgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26bd Henry \u2014 VIVA game vs FCD",
-      "when": "Sat Nov 7 \u00b7 1:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=amcyb2puMWp2MWtzZzJrZHZkYWphdjk2dWcgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
       "title": "\u2708\ufe0f Airport \u2014 UA884 IAD\u2192FCO (Rome)",
       "when": "Sun Dec 20 \u00b7 3:40 PM",
       "link": "https://www.google.com/calendar/event?eid=MmJqaml1bGIxOHFjc2QzY2kzdGg1NzJuZjggZXN0aGVyLmV2ZWx5bkBt"
@@ -346,54 +266,9 @@
       "link": "https://www.google.com/calendar/event?eid=cmJrdmRqbzlmZW02djU0YWRiZDk1cmNubmsgZXN0aGVyLmV2ZWx5bkBt"
     },
     {
-      "title": "\ud83d\ude97 Drive to VIVA game (Nike Park, Great Falls)",
-      "when": "Sun Nov 1 \u00b7 12:05 PM",
-      "link": "https://www.google.com/calendar/event?eid=aDRvODI5b2lzaDg5YzNrMHEyZWJ2bTcyNzQgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26bd Henry \u2014 VIVA game vs GFR",
-      "when": "Sun Nov 1 \u00b7 1:30 PM",
-      "link": "https://www.google.com/calendar/event?eid=bjcyNDVtcThyMnUwMHFoaThrdnRlbThyaWcgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\ude97 Drive to VIVA game (Winchester)",
-      "when": "Sun Nov 8 \u00b7 10:15 AM",
-      "link": "https://www.google.com/calendar/event?eid=Nm9pdHBpZXJxaW5vdHA2bjVvMG5zZHFsYWcgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26bd Henry \u2014 VIVA game vs BRU (Winchester)",
-      "when": "Sun Nov 8 \u00b7 12:30 PM",
-      "link": "https://www.google.com/calendar/event?eid=ZjR0YzZsaGNxNGE4czhqYXRjNTE2YjY3cWsgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26bd Henry \u2014 VIVA practice",
-      "when": "Thu Nov 12 \u00b7 7:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=b2ViNmF1aDk3dGdkbmRmOWcxZDl0bWExOWsgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26bd Henry \u2014 VIVA practice",
-      "when": "Thu Nov 19 \u00b7 7:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=Z3RlMThjNWZrNG44dHQ4aTQ3MnYzcWQ2YmsgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26bd Henry \u2014 VIVA practice",
-      "when": "Thu Nov 5 \u00b7 7:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=OGU5ajV2ZHRzZWdzcW5kZGl2OW5jbXJubWMgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
       "title": "\ud83d\ude97 Drive home from IAD (UA694)",
       "when": "Thu Nov 5 \u00b7 9:58 PM",
       "link": "https://www.google.com/calendar/event?eid=YTRhcDg1Z25zaG4zdXFqaW51bG1zN21tam8gZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\ude97 Drive to appointment (Bethesda)",
-      "when": "Thu Oct 29 \u00b7 8:25 AM",
-      "link": "https://www.google.com/calendar/event?eid=OHNlOGMxbGdkdWpoNWprb2ZsMWN2dW9jNWcgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\udcda No School \u2014 Grade Prep Day (Swanson)",
-      "when": "Tue Nov 3",
-      "link": "https://www.google.com/calendar/event?eid=YW5hNWdtMW50cTZyaDBzNTU4djRoNmxjMTAgZXN0aGVyLmV2ZWx5bkBt"
     },
     {
       "title": "\ud83d\udcda Winter Break (Swanson)",
@@ -409,6 +284,11 @@
       "title": "\ud83d\udcda Early Release (Swanson)",
       "when": "Wed Jan 13",
       "link": "https://www.google.com/calendar/event?eid=aWlodW8zdGhycXRjM2ttcjdndWdoaHJrYmsgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\ude97 Drive to VIVA practice (Justice HS)",
+      "when": "Wed Oct 21 \u00b7 6:45 PM",
+      "link": "https://www.google.com/calendar/event?eid=bGg3bzhzazgzcmplZzU0ZzQyam0zNTRnOWcgZXN0aGVyLmV2ZWx5bkBt"
     }
   ],
   "feed_changes": []
