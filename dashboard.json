@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-10-20T06:01:10.126588-04:00",
-  "generated_label": "Tue Oct 20, 6:01 AM",
-  "weather": null,
+  "generated_at": "2026-10-20T11:02:21.033134-04:00",
+  "generated_label": "Tue Oct 20, 11:02 AM",
+  "weather": {
+    "high_f": 71,
+    "low_f": 49,
+    "precip_pct": 0,
+    "emoji": "\u2600\ufe0f",
+    "label": "Clear"
+  },
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -13,7 +19,14 @@
     {
       "date": "2026-10-20",
       "label": "Today \u00b7 Tue Oct 20",
-      "weather": null,
+      "weather": {
+        "high_f": 71,
+        "low_f": 49,
+        "precip_pct": 0,
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
+      },
       "events": [
         {
           "time": "6:50 am",
@@ -48,7 +61,14 @@
     {
       "date": "2026-10-21",
       "label": "Tomorrow \u00b7 Wed Oct 21",
-      "weather": null,
+      "weather": {
+        "high_f": 66,
+        "low_f": 46,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "9:00 am",
@@ -101,7 +121,14 @@
     {
       "date": "2026-10-22",
       "label": "Thursday \u00b7 Oct 22",
-      "weather": null,
+      "weather": {
+        "high_f": 67,
+        "low_f": 45,
+        "precip_pct": 0,
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
+      },
       "events": [
         {
           "time": "7:00 pm",
@@ -118,7 +145,14 @@
     {
       "date": "2026-10-23",
       "label": "Friday \u00b7 Oct 23",
-      "weather": null,
+      "weather": {
+        "high_f": 63,
+        "low_f": 48,
+        "precip_pct": 0,
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
+      },
       "events": [
         {
           "time": "all day",
@@ -153,14 +187,38 @@
     {
       "date": "2026-10-24",
       "label": "Saturday \u00b7 Oct 24",
-      "weather": null,
-      "events": [],
+      "weather": {
+        "high_f": 64,
+        "low_f": 45,
+        "precip_pct": 0,
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
+      },
+      "events": [
+        {
+          "time": "3:40 pm",
+          "title": "East Potomac Golf Links - Red",
+          "location": "East Potomac Golf Links - Red, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-24T15:40:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=YXByOG10aTNkcTkwMW4xZzljOGQzM2hsY3MgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
       "conflicts": []
     },
     {
       "date": "2026-10-25",
       "label": "Sunday \u00b7 Oct 25",
-      "weather": null,
+      "weather": {
+        "high_f": 65,
+        "low_f": 45,
+        "precip_pct": 0,
+        "weather_code": 1,
+        "emoji": "\ud83c\udf24",
+        "label": "Mostly clear"
+      },
       "events": [
         {
           "time": "9:00 am",
@@ -195,7 +253,14 @@
     {
       "date": "2026-10-26",
       "label": "Monday \u00b7 Oct 26",
-      "weather": null,
+      "weather": {
+        "high_f": 69,
+        "low_f": 46,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -231,29 +296,9 @@
   },
   "added": [
     {
-      "title": "\ud83d\udcda No School \u2014 Grade Prep Day (Swanson)",
-      "when": "Fri Jan 29",
-      "link": "https://www.google.com/calendar/event?eid=ZjVtdGJpNDNnY24xanZzMjA2cXVwZjJtYmsgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\udcda School Holiday (Presidents Day)",
-      "when": "Mon Feb 15",
-      "link": "https://www.google.com/calendar/event?eid=cnZqdWdpdmJjMWk2bm5oMWsyZjAzZG51dmMgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\udcda School Holiday (MLK Day)",
-      "when": "Mon Jan 18",
-      "link": "https://www.google.com/calendar/event?eid=cHY1OWtzc2Y1b2IxdmQ3aHFtcGFmczNkaW8gZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
       "title": "\ud83d\ude97 Out of office",
       "when": "Mon Nov 2 \u00b7 3:15 PM",
       "link": "https://www.google.com/calendar/event?eid=NmE0MzhxdjVtNWpvY2c0Ymg1OHE4NHEycG8gZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u2708\ufe0f Airport \u2014 UA688 IAD\u2192BOS",
-      "when": "Mon Nov 2 \u00b7 3:15 PM",
-      "link": "https://www.google.com/calendar/event?eid=Y2o0MTE3aXJyOHRnaGlmcmM4ODdsbXQ1Z28gZXN0aGVyLmV2ZWx5bkBt"
     },
     {
       "title": "\u2708\ufe0f Airport \u2014 UA884 IAD\u2192FCO (Rome)",
@@ -264,31 +309,6 @@
       "title": "\ud83d\ude97 Drive home from IAD (UA109)",
       "when": "Sun Jan 3 \u00b7 4:05 PM",
       "link": "https://www.google.com/calendar/event?eid=cmJrdmRqbzlmZW02djU0YWRiZDk1cmNubmsgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\ude97 Drive home from IAD (UA694)",
-      "when": "Thu Nov 5 \u00b7 9:58 PM",
-      "link": "https://www.google.com/calendar/event?eid=YTRhcDg1Z25zaG4zdXFqaW51bG1zN21tam8gZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\udcda Winter Break (Swanson)",
-      "when": "Wed Dec 23",
-      "link": "https://www.google.com/calendar/event?eid=cTVpNmcyN2l1MjAyYzFxaW1hcTIycGViamMgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\udcda Early Release (Swanson)",
-      "when": "Wed Feb 10",
-      "link": "https://www.google.com/calendar/event?eid=ajJ0Z2tuMXAwYTlxYTUwbDM2djZubzJuaDAgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\udcda Early Release (Swanson)",
-      "when": "Wed Jan 13",
-      "link": "https://www.google.com/calendar/event?eid=aWlodW8zdGhycXRjM2ttcjdndWdoaHJrYmsgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\ude97 Drive to VIVA practice (Justice HS)",
-      "when": "Wed Oct 21 \u00b7 6:45 PM",
-      "link": "https://www.google.com/calendar/event?eid=bGg3bzhzazgzcmplZzU0ZzQyam0zNTRnOWcgZXN0aGVyLmV2ZWx5bkBt"
     }
   ],
   "feed_changes": []

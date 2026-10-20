@@ -526,5 +526,29 @@
     "uid": "<41e34c0576541b8aa1483f8cd960221e4c60cd0dfa75a7c7c36ad8406fa5dd8d@walmart.com>",
     "needs_review": true,
     "from": "\"Walmart.com\" <help@walmart.com>"
+  },
+  {
+    "id": "9651d67e717b44eb8062f4877ad3dc5f",
+    "source": "Gmail",
+    "title": "Reservation CONFIRMED",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "96 Confirmation# 431704141 Hi Esther Scott , Thank you for your reservation at East Potomac Golf Links - Red ! Here are your tee time reservation details : East Potomac Golf Links - Red Saturday, October 24, 2026 3:40 pm 1 Player(s) Payment Details Green Fees $9.00 Paid Online $9.00 Questions about your reservation? Call us at (202) 554-7660 . Book Next Round Visit Our Website East Potomac Golf Links - RED Course 972 Ohio Dr SW, Washington, DC 20024, US (202) 554-7660 TM and copyright \u00a9 2026 East Potomac Golf Links - RED Course Please contact East Potomac Golf Links - RED Course for a copy of our privacy policy powered by NBC Sports Next",
+    "uid": "<0A.7B.54847.E7F57DA6@i-0fdace6bdbd88ab9b.mta1vrest.sd.prd.sparkpost>",
+    "needs_review": true,
+    "from": "\"East Potomac Park Golf Course-RED Course\" <course@golffacility.com>"
+  },
+  {
+    "id": "932632bee0e5d05150aabf3462ad0295",
+    "source": "Gmail",
+    "title": "Reservation CONFIRMED",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "96 Confirmation# 431704148 Hi Esther Scott , Thank you for your reservation at East Potomac Golf Links - Red ! Here are your tee time reservation details : East Potomac Golf Links - Red Saturday, October 24, 2026 3:40 pm 3 Player(s) Payment Details Green Fees $60.00 Paid Online $60.00 Questions about your reservation? Call us at (202) 554-7660 . Book Next Round Visit Our Website East Potomac Golf Links - RED Course 972 Ohio Dr SW, Washington, DC 20024, US (202) 554-7660 TM and copyright \u00a9 2026 East Potomac Golf Links - RED Course Please contact East Potomac Golf Links - RED Course for a copy of our privacy policy powered by NBC Sports Next",
+    "uid": "<F8.6D.14592.E7F57DA6@i-0e41312bd8087d0e3.mta1vrest.sd.prd.sparkpost>",
+    "needs_review": true,
+    "from": "\"East Potomac Park Golf Course-RED Course\" <course@golffacility.com>"
   }
 ]
