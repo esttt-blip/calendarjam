@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-20T11:02:21.033134-04:00",
-  "generated_label": "Tue Oct 20, 11:02 AM",
+  "generated_at": "2026-10-21T06:01:20.556559-04:00",
+  "generated_label": "Wed Oct 21, 6:01 AM",
   "weather": {
-    "high_f": 71,
-    "low_f": 49,
+    "high_f": 68,
+    "low_f": 47,
     "precip_pct": 0,
     "emoji": "\u2600\ufe0f",
     "label": "Clear"
@@ -17,58 +17,9 @@
   },
   "week": [
     {
-      "date": "2026-10-20",
-      "label": "Today \u00b7 Tue Oct 20",
-      "weather": {
-        "high_f": 71,
-        "low_f": 49,
-        "precip_pct": 0,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
-      },
-      "events": [
-        {
-          "time": "6:50 am",
-          "title": "\u2708\ufe0f Airport \u2014 UA641 IAD\u2192BOS",
-          "location": "Washington Dulles International Airport (IAD), 1 Saarinen Cir, Dulles, VA 20166",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-20T06:50:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=dHBwbW52dHRubmFsYTdldWpoMTgxY2Z1ZjggZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "8:50 am",
-          "title": "Flight  UA641 IAD to BOS",
-          "location": "Departing Washington, DC",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-20T08:50:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=XzcxMjNjY2kxNjkxajRiYTI2OTIzMmI5azZoMWowYmEyOGNvNDZiYTQ4cDFqMGMxaTZncDRjZDI1ODggZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "Yin - In Studio \ud83d\udd90\ud83c\udfff",
-          "location": "1112 Boylston Street, , Boston MA, 02215",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-20T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=XzZvcTQ0Y3BvNm9vMzJiOXA2MG9qOGI5azZjb2phYmEyOGNvNGFiYTY2b3BqMGRobTg0cmthY2hvOGcgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-10-21",
-      "label": "Tomorrow \u00b7 Wed Oct 21",
-      "weather": {
-        "high_f": 66,
-        "low_f": 46,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Today \u00b7 Wed Oct 21",
+      "weather": null,
       "events": [
         {
           "time": "9:00 am",
@@ -120,15 +71,8 @@
     },
     {
       "date": "2026-10-22",
-      "label": "Thursday \u00b7 Oct 22",
-      "weather": {
-        "high_f": 67,
-        "low_f": 45,
-        "precip_pct": 0,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
-      },
+      "label": "Tomorrow \u00b7 Thu Oct 22",
+      "weather": null,
       "events": [
         {
           "time": "7:00 pm",
@@ -145,14 +89,7 @@
     {
       "date": "2026-10-23",
       "label": "Friday \u00b7 Oct 23",
-      "weather": {
-        "high_f": 63,
-        "low_f": 48,
-        "precip_pct": 0,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -187,14 +124,7 @@
     {
       "date": "2026-10-24",
       "label": "Saturday \u00b7 Oct 24",
-      "weather": {
-        "high_f": 64,
-        "low_f": 45,
-        "precip_pct": 0,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
-      },
+      "weather": null,
       "events": [
         {
           "time": "3:40 pm",
@@ -211,14 +141,7 @@
     {
       "date": "2026-10-25",
       "label": "Sunday \u00b7 Oct 25",
-      "weather": {
-        "high_f": 65,
-        "low_f": 45,
-        "precip_pct": 0,
-        "weather_code": 1,
-        "emoji": "\ud83c\udf24",
-        "label": "Mostly clear"
-      },
+      "weather": null,
       "events": [
         {
           "time": "9:00 am",
@@ -253,14 +176,7 @@
     {
       "date": "2026-10-26",
       "label": "Monday \u00b7 Oct 26",
-      "weather": {
-        "high_f": 69,
-        "low_f": 46,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -282,6 +198,23 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-10-27",
+      "label": "Tuesday \u00b7 Oct 27",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "\ud83d\udcf7 Henry \u2014 Fall Picture Day (Swanson)",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-10-27T00:00",
+          "link": "https://www.google.com/calendar/event?eid=NGYzMXBhdG1ybjNraGZ2dnI5dmJvMWt0OTAgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -290,26 +223,15 @@
       {
         "title": "Halloween",
         "day": "Sat Oct 31",
-        "days_out": 11
+        "days_out": 10
+      },
+      {
+        "title": "Veterans Day",
+        "day": "Wed Nov 11",
+        "days_out": 21
       }
     ]
   },
-  "added": [
-    {
-      "title": "\ud83d\ude97 Out of office",
-      "when": "Mon Nov 2 \u00b7 3:15 PM",
-      "link": "https://www.google.com/calendar/event?eid=NmE0MzhxdjVtNWpvY2c0Ymg1OHE4NHEycG8gZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u2708\ufe0f Airport \u2014 UA884 IAD\u2192FCO (Rome)",
-      "when": "Sun Dec 20 \u00b7 3:40 PM",
-      "link": "https://www.google.com/calendar/event?eid=MmJqaml1bGIxOHFjc2QzY2kzdGg1NzJuZjggZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\ude97 Drive home from IAD (UA109)",
-      "when": "Sun Jan 3 \u00b7 4:05 PM",
-      "link": "https://www.google.com/calendar/event?eid=cmJrdmRqbzlmZW02djU0YWRiZDk1cmNubmsgZXN0aGVyLmV2ZWx5bkBt"
-    }
-  ],
+  "added": [],
   "feed_changes": []
 }
