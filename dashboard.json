@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-22T06:00:52.456021-04:00",
-  "generated_label": "Thu Oct 22, 6:00 AM",
+  "generated_at": "2026-10-22T11:14:02.474459-04:00",
+  "generated_label": "Thu Oct 22, 11:14 AM",
   "weather": {
-    "high_f": 68,
-    "low_f": 44,
+    "high_f": 66,
+    "low_f": 45,
     "precip_pct": 0,
     "emoji": "\u2600\ufe0f",
     "label": "Clear"
@@ -20,8 +20,8 @@
       "date": "2026-10-22",
       "label": "Today \u00b7 Thu Oct 22",
       "weather": {
-        "high_f": 68,
-        "low_f": 44,
+        "high_f": 66,
+        "low_f": 45,
         "precip_pct": 0,
         "weather_code": 0,
         "emoji": "\u2600\ufe0f",
@@ -44,12 +44,12 @@
       "date": "2026-10-23",
       "label": "Tomorrow \u00b7 Fri Oct 23",
       "weather": {
-        "high_f": 60,
+        "high_f": 61,
         "low_f": 46,
         "precip_pct": 0,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [
         {
@@ -87,13 +87,22 @@
       "label": "Saturday \u00b7 Oct 24",
       "weather": {
         "high_f": 64,
-        "low_f": 46,
+        "low_f": 41,
         "precip_pct": 0,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [
+        {
+          "time": "2:50 pm",
+          "title": "\ud83d\ude97 Drive to East Potomac Golf Links",
+          "location": "East Potomac Golf Links, 972 Ohio Dr SW, Washington, DC 20024",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-10-24T14:50:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Y25qMTYxZjdnYmZtczVtZTgzZG1mZnY4MG8gZXN0aGVyLmV2ZWx5bkBt"
+        },
         {
           "time": "3:40 pm",
           "title": "East Potomac Golf Links - Red",
@@ -102,6 +111,15 @@
           "is_drive": false,
           "sort": "2026-10-24T15:40:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=YXByOG10aTNkcTkwMW4xZzljOGQzM2hsY3MgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "3:40 pm",
+          "title": "\u26f3 Golf \u2014 East Potomac (Red)",
+          "location": "East Potomac Golf Links, 972 Ohio Dr SW, Washington, DC 20024",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-24T15:40:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=czc2dHZoa20yaHM5YzAzYm5zOWlnYmFicDQgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
@@ -152,12 +170,12 @@
       "date": "2026-10-26",
       "label": "Monday \u00b7 Oct 26",
       "weather": {
-        "high_f": 70,
+        "high_f": 68,
         "low_f": 47,
         "precip_pct": 0,
-        "weather_code": 1,
-        "emoji": "\ud83c\udf24",
-        "label": "Mostly clear"
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
       },
       "events": [
         {
@@ -185,8 +203,8 @@
       "date": "2026-10-27",
       "label": "Tuesday \u00b7 Oct 27",
       "weather": {
-        "high_f": 67,
-        "low_f": 54,
+        "high_f": 66,
+        "low_f": 53,
         "precip_pct": 0,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
@@ -201,6 +219,24 @@
           "is_drive": false,
           "sort": "2026-10-27T00:00",
           "link": "https://www.google.com/calendar/event?eid=NGYzMXBhdG1ybjNraGZ2dnI5dmJvMWt0OTAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "FW: [EXTERNAL] CWO & Auth0 Virtual Roundtable: Maximize top-of-funnel conversions through seamless user journeys",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-27T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc2Y28zOGhhMzhvczNnZWE0Nm9vazhoMWc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNmtyamdoaGo4b3JrY2RobDZncGpnZTFrNzRzNDZkMWg4a3NqMGU5bjYxMWthZ3BsOGtyZyBlc3RoZXIuZXZlbHluQG0"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "FW: [EXTERNAL] CWO & Auth0 Virtual Roundtable: Maximize top-of-funnel conversions through seamless user journeys",
+          "location": "https://chiefnation.zoom.us/j/85334691782?pwd=iTHqq02IRYtJmxTdJrMbBnkJkNJanQ.1",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-27T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=a2dlbGJtM2V0Nmk3bW4wa25rdmFvOTNibDQgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": []
@@ -209,7 +245,7 @@
       "date": "2026-10-28",
       "label": "Wednesday \u00b7 Oct 28",
       "weather": {
-        "high_f": 68,
+        "high_f": 61,
         "low_f": 52,
         "precip_pct": 1,
         "weather_code": 3,
@@ -245,6 +281,37 @@
       }
     ]
   },
-  "added": [],
+  "added": [
+    {
+      "title": "\ud83d\udcf7 Henry \u2014 Picture Makeup Day (Swanson)",
+      "when": "Fri Dec 4",
+      "link": "https://www.google.com/calendar/event?eid=dXJpZzRxcGo5NTRwOHI2ZDRsNzN2ajhqa28gZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\ude97 Out of office",
+      "when": "Fri Nov 6 \u00b7 9:00 AM",
+      "link": "https://www.google.com/calendar/event?eid=c3NvN3BnN2Foc3EyYnQ3OG1sZW9sNjA3aGcgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\u2708\ufe0f Airport \u2014 UA641 IAD\u2192BOS",
+      "when": "Mon Nov 2 \u00b7 6:40 AM",
+      "link": "https://www.google.com/calendar/event?eid=NWIzYW00anZnaWozOGhqZzlubDYwaTZzamsgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\ude97 Drive to East Potomac Golf Links",
+      "when": "Sat Oct 24 \u00b7 2:50 PM",
+      "link": "https://www.google.com/calendar/event?eid=Y25qMTYxZjdnYmZtczVtZTgzZG1mZnY4MG8gZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\u26f3 Golf \u2014 East Potomac (Red)",
+      "when": "Sat Oct 24 \u00b7 3:40 PM",
+      "link": "https://www.google.com/calendar/event?eid=czc2dHZoa20yaHM5YzAzYm5zOWlnYmFicDQgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\ud83d\ude97 Drive to VIVA practice (Justice HS)",
+      "when": "Wed Nov 4 \u00b7 6:40 PM",
+      "link": "https://www.google.com/calendar/event?eid=am9ucmRncjc5dmJqcWlpYTBjcHRwMmk4b2sgZXN0aGVyLmV2ZWx5bkBt"
+    }
+  ],
   "feed_changes": []
 }
