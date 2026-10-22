@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-21T11:12:09.438478-04:00",
-  "generated_label": "Wed Oct 21, 11:12 AM",
+  "generated_at": "2026-10-22T06:00:52.456021-04:00",
+  "generated_label": "Thu Oct 22, 6:00 AM",
   "weather": {
-    "high_f": 67,
-    "low_f": 48,
+    "high_f": 68,
+    "low_f": 44,
     "precip_pct": 0,
     "emoji": "\u2600\ufe0f",
     "label": "Clear"
@@ -11,74 +11,14 @@
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
-    "blurb": "6 games & practices on deck.",
+    "blurb": "4 games & practices on deck.",
     "color1": "#11998e",
     "color2": "#38ef7d"
   },
   "week": [
     {
-      "date": "2026-10-21",
-      "label": "Today \u00b7 Wed Oct 21",
-      "weather": {
-        "high_f": 67,
-        "low_f": 48,
-        "precip_pct": 0,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
-      },
-      "events": [
-        {
-          "time": "9:00 am",
-          "title": "Post-Op check up",
-          "location": "Inova General Surgery - Oakville, 400 Fannon St 3rd floor, Alexandria, VA 22301, USA",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-21T09:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=NzYzcGRoYTI0ZGIxdmJva29scDduaHJocGcgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "5:49 pm",
-          "title": "Flight  UA3409 BOS to IAD",
-          "location": "Departing Boston, MA",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-21T17:49:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Xzg0c2pnZGhqNnAxNGNiOWg2c3I0YWI5azZnc2ppYmEyNjUyajZiOWk4OHJqNGhobDhrcjM2ZHE1ODggZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "6:45 pm",
-          "title": "\ud83d\ude97 Drive to VIVA practice (Justice HS)",
-          "location": "Justice High School, 3301 Peace Valley Ln, Falls Church, VA 22044",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-10-21T18:45:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=bGg3bzhzazgzcmplZzU0ZzQyam0zNTRnOWcgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "\u26bd Henry \u2014 VIVA practice",
-          "location": "Justice High School, 3301 Peace Valley Ln, Falls Church, VA 22044",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-21T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Z3NkbXFqaDZrbWhraGhwcDc4a250NDdiYzQgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "8:23 pm",
-          "title": "\ud83d\ude97 Drive home from IAD (UA3409)",
-          "location": "Washington Dulles International Airport (IAD), 1 Saarinen Cir, Dulles, VA 20166",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-10-21T20:23:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=MTg5MXU0cWZnN2RmNzUwNWZsaXUwZXNqbmMgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-10-22",
-      "label": "Tomorrow \u00b7 Thu Oct 22",
+      "label": "Today \u00b7 Thu Oct 22",
       "weather": {
         "high_f": 68,
         "low_f": 44,
@@ -102,14 +42,14 @@
     },
     {
       "date": "2026-10-23",
-      "label": "Friday \u00b7 Oct 23",
+      "label": "Tomorrow \u00b7 Fri Oct 23",
       "weather": {
-        "high_f": 62,
-        "low_f": 48,
+        "high_f": 60,
+        "low_f": 46,
         "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
       },
       "events": [
         {
@@ -146,12 +86,12 @@
       "date": "2026-10-24",
       "label": "Saturday \u00b7 Oct 24",
       "weather": {
-        "high_f": 63,
-        "low_f": 47,
+        "high_f": 64,
+        "low_f": 46,
         "precip_pct": 0,
-        "weather_code": 1,
-        "emoji": "\ud83c\udf24",
-        "label": "Mostly clear"
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
       },
       "events": [
         {
@@ -170,8 +110,8 @@
       "date": "2026-10-25",
       "label": "Sunday \u00b7 Oct 25",
       "weather": {
-        "high_f": 66,
-        "low_f": 48,
+        "high_f": 65,
+        "low_f": 47,
         "precip_pct": 0,
         "weather_code": 0,
         "emoji": "\u2600\ufe0f",
@@ -212,7 +152,7 @@
       "date": "2026-10-26",
       "label": "Monday \u00b7 Oct 26",
       "weather": {
-        "high_f": 69,
+        "high_f": 70,
         "low_f": 47,
         "precip_pct": 0,
         "weather_code": 1,
@@ -245,8 +185,8 @@
       "date": "2026-10-27",
       "label": "Tuesday \u00b7 Oct 27",
       "weather": {
-        "high_f": 64,
-        "low_f": 52,
+        "high_f": 67,
+        "low_f": 54,
         "precip_pct": 0,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
@@ -264,6 +204,30 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-10-28",
+      "label": "Wednesday \u00b7 Oct 28",
+      "weather": {
+        "high_f": 68,
+        "low_f": 52,
+        "precip_pct": 1,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
+      "events": [
+        {
+          "time": "9:00 am",
+          "title": "\ud83d\udcda Early Release",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-28T09:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZDQzZ2xicGViZHJ1NDlvazFvdTdxNG8ybm8gZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -272,12 +236,12 @@
       {
         "title": "Halloween",
         "day": "Sat Oct 31",
-        "days_out": 10
+        "days_out": 9
       },
       {
         "title": "Veterans Day",
         "day": "Wed Nov 11",
-        "days_out": 21
+        "days_out": 20
       }
     ]
   },
