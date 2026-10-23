@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-10-22T11:14:02.474459-04:00",
-  "generated_label": "Thu Oct 22, 11:14 AM",
-  "weather": {
-    "high_f": 66,
-    "low_f": 45,
-    "precip_pct": 0,
-    "emoji": "\u2600\ufe0f",
-    "label": "Clear"
-  },
+  "generated_at": "2026-10-23T06:00:56.430004-04:00",
+  "generated_label": "Fri Oct 23, 6:00 AM",
+  "weather": null,
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -17,40 +11,9 @@
   },
   "week": [
     {
-      "date": "2026-10-22",
-      "label": "Today \u00b7 Thu Oct 22",
-      "weather": {
-        "high_f": 66,
-        "low_f": 45,
-        "precip_pct": 0,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
-      },
-      "events": [
-        {
-          "time": "7:00 pm",
-          "title": "\u26bd Henry \u2014 VIVA practice",
-          "location": "Thomas Jefferson High School for Science and Technology, 6560 Braddock Rd, Alexandria, VA 22312",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-22T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=NWJncXEwdWhlaDlpcW1xNG9hMnRtZWx1ZmcgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-10-23",
-      "label": "Tomorrow \u00b7 Fri Oct 23",
-      "weather": {
-        "high_f": 61,
-        "low_f": 46,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Today \u00b7 Fri Oct 23",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -84,15 +47,8 @@
     },
     {
       "date": "2026-10-24",
-      "label": "Saturday \u00b7 Oct 24",
-      "weather": {
-        "high_f": 64,
-        "low_f": 41,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Tomorrow \u00b7 Sat Oct 24",
+      "weather": null,
       "events": [
         {
           "time": "2:50 pm",
@@ -127,14 +83,7 @@
     {
       "date": "2026-10-25",
       "label": "Sunday \u00b7 Oct 25",
-      "weather": {
-        "high_f": 65,
-        "low_f": 47,
-        "precip_pct": 0,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
-      },
+      "weather": null,
       "events": [
         {
           "time": "9:00 am",
@@ -169,14 +118,7 @@
     {
       "date": "2026-10-26",
       "label": "Monday \u00b7 Oct 26",
-      "weather": {
-        "high_f": 68,
-        "low_f": 47,
-        "precip_pct": 0,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -202,14 +144,7 @@
     {
       "date": "2026-10-27",
       "label": "Tuesday \u00b7 Oct 27",
-      "weather": {
-        "high_f": 66,
-        "low_f": 53,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -244,14 +179,7 @@
     {
       "date": "2026-10-28",
       "label": "Wednesday \u00b7 Oct 28",
-      "weather": {
-        "high_f": 61,
-        "low_f": 52,
-        "precip_pct": 1,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "9:00 am",
@@ -264,6 +192,41 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-10-29",
+      "label": "Thursday \u00b7 Oct 29",
+      "weather": null,
+      "events": [
+        {
+          "time": "8:25 am",
+          "title": "\ud83d\ude97 Drive to appointment (Bethesda)",
+          "location": "Bethesda, MD",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-10-29T08:25:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=OHNlOGMxbGdkdWpoNWprb2ZsMWN2dW9jNWcgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "9:00 am",
+          "title": "Esther doctor",
+          "location": "Bethesda, MD, USA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-29T09:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=bTJxcGc1NXIzNGpjcTQycGlndmRzMG5tdjQgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "\u26bd Henry \u2014 VIVA practice",
+          "location": "Thomas Jefferson High School for Science and Technology, 6560 Braddock Rd, Alexandria, VA 22312",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-29T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=YTJzcDczanJ2a2pzc2k0Ymxrc2hsbzZjbDQgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -272,12 +235,12 @@
       {
         "title": "Halloween",
         "day": "Sat Oct 31",
-        "days_out": 9
+        "days_out": 8
       },
       {
         "title": "Veterans Day",
         "day": "Wed Nov 11",
-        "days_out": 20
+        "days_out": 19
       }
     ]
   },
