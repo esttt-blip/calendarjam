@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-10-23T06:00:56.430004-04:00",
-  "generated_label": "Fri Oct 23, 6:00 AM",
-  "weather": null,
+  "generated_at": "2026-10-23T11:01:09.161462-04:00",
+  "generated_label": "Fri Oct 23, 11:01 AM",
+  "weather": {
+    "high_f": 63,
+    "low_f": 47,
+    "precip_pct": 0,
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
+  },
   "theme": {
     "emoji": "\u26bd",
     "title": "Game On Week",
@@ -13,7 +19,14 @@
     {
       "date": "2026-10-23",
       "label": "Today \u00b7 Fri Oct 23",
-      "weather": null,
+      "weather": {
+        "high_f": 63,
+        "low_f": 47,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -48,7 +61,14 @@
     {
       "date": "2026-10-24",
       "label": "Tomorrow \u00b7 Sat Oct 24",
-      "weather": null,
+      "weather": {
+        "high_f": 62,
+        "low_f": 41,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "2:50 pm",
@@ -83,7 +103,14 @@
     {
       "date": "2026-10-25",
       "label": "Sunday \u00b7 Oct 25",
-      "weather": null,
+      "weather": {
+        "high_f": 66,
+        "low_f": 44,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "9:00 am",
@@ -104,6 +131,15 @@
           "link": "https://www.google.com/calendar/event?eid=dGF0c2JhaWdhdTRmNDV0MTlucTNic2w2NjAgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
+          "time": "3:15 pm",
+          "title": "\ud83c\udf5d BULK COOK 1: Sunday sauce + meatballs + week prep (start now)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-25T15:15:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=bnFoOGQ1czY3b28wNm44Y2FobXR1cjZjYzQgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
           "time": "5:00 pm",
           "title": "Spirit @ Current (ESPN)",
           "location": "",
@@ -113,12 +149,26 @@
           "link": "https://www.google.com/calendar/event?eid=OGVtODFia3VnZWRyMG42MmhuZmNvY2IxNDAgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
-      "conflicts": []
+      "conflicts": [
+        {
+          "a": "\ud83c\udf5d BULK COOK 1: Sunday sauce + meatballs + week prep (start now)",
+          "a_time": "3:15 pm",
+          "b": "Spirit @ Current (ESPN)",
+          "b_time": "5:00 pm"
+        }
+      ]
     },
     {
       "date": "2026-10-26",
       "label": "Monday \u00b7 Oct 26",
-      "weather": null,
+      "weather": {
+        "high_f": 68,
+        "low_f": 48,
+        "precip_pct": 0,
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
+      },
       "events": [
         {
           "time": "all day",
@@ -128,6 +178,15 @@
           "is_drive": false,
           "sort": "2026-10-26T00:00",
           "link": "https://www.google.com/calendar/event?eid=NGlkYWdqazk5aGlvMXBtcmZybmxyb2c1Ym9fMjAyNjEwMjYgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "5:00 pm",
+          "title": "\ud83c\udf57 Dinner: Crispy herb chicken cutlets + rosemary potatoes + green beans (reheat)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-26T17:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZWRpZzZkcWFoZ3BiM200bWdrODlidGZqazggZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "7:00 pm",
@@ -144,7 +203,14 @@
     {
       "date": "2026-10-27",
       "label": "Tuesday \u00b7 Oct 27",
-      "weather": null,
+      "weather": {
+        "high_f": 71,
+        "low_f": 53,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -154,6 +220,15 @@
           "is_drive": false,
           "sort": "2026-10-27T00:00",
           "link": "https://www.google.com/calendar/event?eid=NGYzMXBhdG1ybjNraGZ2dnI5dmJvMWt0OTAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "5:00 pm",
+          "title": "\ud83c\udf72 Dinner: Meatball minestrone + garlic toast (reheat, eat 5:45)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-27T17:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=b284MHRkZWlqZm5rZXJsMDFpbTdvaTk3MmMgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "7:00 pm",
@@ -179,8 +254,24 @@
     {
       "date": "2026-10-28",
       "label": "Wednesday \u00b7 Oct 28",
-      "weather": null,
+      "weather": {
+        "high_f": 62,
+        "low_f": 54,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
+        {
+          "time": "7:00 am",
+          "title": "\u23f0 7 AM DO AHEAD: marinate chicken for tonight's chicken parm (5 min)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-28T07:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=bXU3a3ZzNGZua2dwbjJoM3Rxcm0xYXE2MTQgZXN0aGVyLmV2ZWx5bkBt"
+        },
         {
           "time": "9:00 am",
           "title": "\ud83d\udcda Early Release",
@@ -189,14 +280,37 @@
           "is_drive": false,
           "sort": "2026-10-28T09:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=ZDQzZ2xicGViZHJ1NDlvazFvdTdxNG8ybm8gZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "4:00 pm",
+          "title": "\ud83c\udf5d BULK COOK 2: Chicken parm + spaghetti + broccoli, and build Thursday's ziti (start 4:00)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-28T16:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=bmIzYjloMG5vdWx2YmJodTF0ZmlscjBxdWMgZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
-      "conflicts": []
+      "conflicts": [
+        {
+          "a": "\ud83d\udcda Early Release",
+          "a_time": "9:00 am",
+          "b": "\ud83c\udf5d BULK COOK 2: Chicken parm + spaghetti + broccoli, and build Thursday's ziti (start 4:00)",
+          "b_time": "4:00 pm"
+        }
+      ]
     },
     {
       "date": "2026-10-29",
       "label": "Thursday \u00b7 Oct 29",
-      "weather": null,
+      "weather": {
+        "high_f": 68,
+        "low_f": 55,
+        "precip_pct": 2,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "8:25 am",
@@ -215,6 +329,15 @@
           "is_drive": false,
           "sort": "2026-10-29T09:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=bTJxcGc1NXIzNGpjcTQycGlndmRzMG5tdjQgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "5:00 pm",
+          "title": "\ud83c\udf5d Dinner: Baked ziti + kale salad + garlic bread (reheat)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-29T17:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=OHM2cTVyNW05cm0zOGg3M2k0ZmJxcW0xdGMgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
           "time": "7:00 pm",
@@ -244,37 +367,13 @@
       }
     ]
   },
-  "added": [
+  "added": [],
+  "feed_changes": [
     {
-      "title": "\ud83d\udcf7 Henry \u2014 Picture Makeup Day (Swanson)",
-      "when": "Fri Dec 4",
-      "link": "https://www.google.com/calendar/event?eid=dXJpZzRxcGo5NTRwOHI2ZDRsNzN2ajhqa28gZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\ude97 Out of office",
-      "when": "Fri Nov 6 \u00b7 9:00 AM",
-      "link": "https://www.google.com/calendar/event?eid=c3NvN3BnN2Foc3EyYnQ3OG1sZW9sNjA3aGcgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u2708\ufe0f Airport \u2014 UA641 IAD\u2192BOS",
-      "when": "Mon Nov 2 \u00b7 6:40 AM",
-      "link": "https://www.google.com/calendar/event?eid=NWIzYW00anZnaWozOGhqZzlubDYwaTZzamsgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\ude97 Drive to East Potomac Golf Links",
-      "when": "Sat Oct 24 \u00b7 2:50 PM",
-      "link": "https://www.google.com/calendar/event?eid=Y25qMTYxZjdnYmZtczVtZTgzZG1mZnY4MG8gZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26f3 Golf \u2014 East Potomac (Red)",
-      "when": "Sat Oct 24 \u00b7 3:40 PM",
-      "link": "https://www.google.com/calendar/event?eid=czc2dHZoa20yaHM5YzAzYm5zOWlnYmFicDQgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\ud83d\ude97 Drive to VIVA practice (Justice HS)",
-      "when": "Wed Nov 4 \u00b7 6:40 PM",
-      "link": "https://www.google.com/calendar/event?eid=am9ucmRncjc5dmJqcWlpYTBjcHRwMmk4b2sgZXN0aGVyLmV2ZWx5bkBt"
+      "title": "\ud83d\ude86 Train \u2014 DC \u2192 New York",
+      "when": "Fri Nov 6 \u00b7 7:45 AM",
+      "link": "https://www.google.com/calendar/event?eid=c3NvN3BnN2Foc3EyYnQ3OG1sZW9sNjA3aGcgZXN0aGVyLmV2ZWx5bkBt",
+      "note": "edited"
     }
-  ],
-  "feed_changes": []
+  ]
 }
