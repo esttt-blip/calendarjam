@@ -1,74 +1,19 @@
 {
-  "generated_at": "2026-10-23T11:01:09.161462-04:00",
-  "generated_label": "Fri Oct 23, 11:01 AM",
-  "weather": {
-    "high_f": 63,
-    "low_f": 47,
-    "precip_pct": 0,
-    "emoji": "\u2601\ufe0f",
-    "label": "Overcast"
-  },
+  "generated_at": "2026-10-24T06:00:54.512214-04:00",
+  "generated_label": "Sat Oct 24, 6:00 AM",
+  "weather": null,
   "theme": {
-    "emoji": "\u26bd",
-    "title": "Game On Week",
-    "blurb": "4 games & practices on deck.",
-    "color1": "#11998e",
-    "color2": "#38ef7d"
+    "emoji": "\ud83c\udf83",
+    "title": "Spooky Season",
+    "blurb": "Costumes, candy, and a little mischief.",
+    "color1": "#f0930b",
+    "color2": "#6a0dad"
   },
   "week": [
     {
-      "date": "2026-10-23",
-      "label": "Today \u00b7 Fri Oct 23",
-      "weather": {
-        "high_f": 63,
-        "low_f": 47,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "EP",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-10-23T00:00",
-          "link": "https://www.google.com/calendar/event?eid=NGlkYWdqazk5aGlvMXBtcmZybmxyb2c1Ym9fMjAyNjEwMjMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "8:00 pm",
-          "title": "Atsuko Okatsuka: The Big Bowl Tour",
-          "location": "Warner Theatre, Washington, District of Columbia",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-23T20:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=N2VqbXJqbzY1anZpdmQ2bGo1YmJlajQydDMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "8:00 pm",
-          "title": "Atsuko Okatsuka: The Big Bowl Tour",
-          "location": "Warner Theatre, Washington, DC",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-23T20:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=anIzdWJnNGZmdXZsNzJuanQ1b3RzamNraDggZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-10-24",
-      "label": "Tomorrow \u00b7 Sat Oct 24",
-      "weather": {
-        "high_f": 62,
-        "low_f": 41,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Today \u00b7 Sat Oct 24",
+      "weather": null,
       "events": [
         {
           "time": "2:50 pm",
@@ -81,8 +26,8 @@
         },
         {
           "time": "3:40 pm",
-          "title": "East Potomac Golf Links - Red",
-          "location": "East Potomac Golf Links - Red, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
+          "title": "Reservation at East Potomac Golf Links - RED Course",
+          "location": "East Potomac Golf Links - RED Course, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
           "all_day": false,
           "is_drive": false,
           "sort": "2026-10-24T15:40:00-04:00",
@@ -102,15 +47,8 @@
     },
     {
       "date": "2026-10-25",
-      "label": "Sunday \u00b7 Oct 25",
-      "weather": {
-        "high_f": 66,
-        "low_f": 44,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Tomorrow \u00b7 Sun Oct 25",
+      "weather": null,
       "events": [
         {
           "time": "9:00 am",
@@ -161,14 +99,7 @@
     {
       "date": "2026-10-26",
       "label": "Monday \u00b7 Oct 26",
-      "weather": {
-        "high_f": 68,
-        "low_f": 48,
-        "precip_pct": 0,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -203,14 +134,7 @@
     {
       "date": "2026-10-27",
       "label": "Tuesday \u00b7 Oct 27",
-      "weather": {
-        "high_f": 71,
-        "low_f": 53,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -254,14 +178,7 @@
     {
       "date": "2026-10-28",
       "label": "Wednesday \u00b7 Oct 28",
-      "weather": {
-        "high_f": 62,
-        "low_f": 54,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "7:00 am",
@@ -303,14 +220,7 @@
     {
       "date": "2026-10-29",
       "label": "Thursday \u00b7 Oct 29",
-      "weather": {
-        "high_f": 68,
-        "low_f": 55,
-        "precip_pct": 2,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "8:25 am",
@@ -350,6 +260,32 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-10-30",
+      "label": "Friday \u00b7 Oct 30",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "EP",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-10-30T00:00",
+          "link": "https://www.google.com/calendar/event?eid=NGlkYWdqazk5aGlvMXBtcmZybmxyb2c1Ym9fMjAyNjEwMzAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "5:15 pm",
+          "title": "USA vs England Rugby",
+          "location": "Paramount+",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-30T17:15:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Z3JtOWplYzUxbWxlYWEwdGNyNGg3YWZxcDQgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -358,12 +294,12 @@
       {
         "title": "Halloween",
         "day": "Sat Oct 31",
-        "days_out": 8
+        "days_out": 7
       },
       {
         "title": "Veterans Day",
         "day": "Wed Nov 11",
-        "days_out": 19
+        "days_out": 18
       }
     ]
   },
