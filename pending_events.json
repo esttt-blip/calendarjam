@@ -646,5 +646,17 @@
     "uid": "<a90eeda04f7dd86c69f045e05dead798b90b8c27f3d98c713dc9ee0a71038e3e@walmart.com>",
     "needs_review": true,
     "from": "\"Walmart.com\" <help@walmart.com>"
+  },
+  {
+    "id": "73535a0acefae2067a979e837d2d70bc",
+    "source": "Gmail",
+    "title": "Select substitution preferences for your upcoming order \ud83d\udd00",
+    "start": null,
+    "end": null,
+    "location": "",
+    "description": "96 Some items may be low in stock \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c Order date: Sat, Oct 24, 2026 Order number: 2000150-83015961 Pick your substitution preferences, Esther! Review your substitution preferences for all the items in your upcoming order in case any become low in stock. You can make changes until 11:00am on Sun, Oct 25 . Edit substitution preferences 1 item may be low in stock Perdue Harvestland, Organic, Fresh Boneless Chicken Breast, 0.8-2.3 lb. Tray $6.74/LB Qty: 2 Final cost by weight $19.28 $9.64 ea If unavailable, replace with: Perdue Harvestland, Free Range, Fresh Boneless Chicken Breasts, 0.8-2.9 lb. Tray Shop anywhere with the Walmart app Questions? Visit our Help Center Walmart protects your security and privacy. We will never ask for personal information (such as passwords or credit card numbers) in an email. If you receive such a request, please do not respond. Learn more about online safety and see our Privacy Policy . Manage which messages you receive in your communication preferences . Please do not reply to this email. This mailbox is not monitored. \u00a9 2026 Walmart. All rights reserved.",
+    "uid": "<20261025120016.b9eb1b29569bee96@prod.walmart.com>",
+    "needs_review": true,
+    "from": "Walmart.com <help@walmart.com>"
   }
 ]

@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-25T06:00:51.820205-04:00",
-  "generated_label": "Sun Oct 25, 6:00 AM",
+  "generated_at": "2026-10-25T10:21:34.104255-04:00",
+  "generated_label": "Sun Oct 25, 10:21 AM",
   "weather": {
     "high_f": 65,
     "low_f": 41,
     "precip_pct": 0,
-    "emoji": "\u2600\ufe0f",
-    "label": "Clear"
+    "emoji": "\ud83c\udf24",
+    "label": "Mostly clear"
   },
   "theme": {
     "emoji": "\ud83c\udf83",
@@ -23,9 +23,9 @@
         "high_f": 65,
         "low_f": 41,
         "precip_pct": 0,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
+        "weather_code": 1,
+        "emoji": "\ud83c\udf24",
+        "label": "Mostly clear"
       },
       "events": [
         {
@@ -89,7 +89,7 @@
       "weather": {
         "high_f": 70,
         "low_f": 42,
-        "precip_pct": 0,
+        "precip_pct": 1,
         "weather_code": 0,
         "emoji": "\u2600\ufe0f",
         "label": "Clear"
@@ -130,7 +130,7 @@
       "label": "Tuesday \u00b7 Oct 27",
       "weather": {
         "high_f": 68,
-        "low_f": 53,
+        "low_f": 50,
         "precip_pct": 0,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
@@ -180,7 +180,7 @@
       "date": "2026-10-28",
       "label": "Wednesday \u00b7 Oct 28",
       "weather": {
-        "high_f": 65,
+        "high_f": 64,
         "low_f": 51,
         "precip_pct": 0,
         "weather_code": 3,
@@ -257,7 +257,7 @@
       "label": "Thursday \u00b7 Oct 29",
       "weather": {
         "high_f": 69,
-        "low_f": 50,
+        "low_f": 51,
         "precip_pct": 0,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
@@ -307,8 +307,8 @@
       "date": "2026-10-30",
       "label": "Friday \u00b7 Oct 30",
       "weather": {
-        "high_f": 76,
-        "low_f": 54,
+        "high_f": 75,
+        "low_f": 53,
         "precip_pct": 0,
         "weather_code": 0,
         "emoji": "\u2600\ufe0f",
@@ -341,7 +341,7 @@
       "label": "Saturday \u00b7 Oct 31",
       "weather": {
         "high_f": 74,
-        "low_f": 59,
+        "low_f": 57,
         "precip_pct": 0,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
