@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-24T09:59:24.197641-04:00",
-  "generated_label": "Sat Oct 24, 9:59 AM",
+  "generated_at": "2026-10-25T06:00:51.820205-04:00",
+  "generated_label": "Sun Oct 25, 6:00 AM",
   "weather": {
-    "high_f": 62,
-    "low_f": 40,
+    "high_f": 65,
+    "low_f": 41,
     "precip_pct": 0,
-    "emoji": "\ud83c\udf24",
-    "label": "Mostly clear"
+    "emoji": "\u2600\ufe0f",
+    "label": "Clear"
   },
   "theme": {
     "emoji": "\ud83c\udf83",
@@ -17,57 +17,15 @@
   },
   "week": [
     {
-      "date": "2026-10-24",
-      "label": "Today \u00b7 Sat Oct 24",
-      "weather": {
-        "high_f": 62,
-        "low_f": 40,
-        "precip_pct": 0,
-        "weather_code": 1,
-        "emoji": "\ud83c\udf24",
-        "label": "Mostly clear"
-      },
-      "events": [
-        {
-          "time": "2:50 pm",
-          "title": "\ud83d\ude97 Drive to East Potomac Golf Links",
-          "location": "East Potomac Golf Links, 972 Ohio Dr SW, Washington, DC 20024",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-10-24T14:50:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=Y25qMTYxZjdnYmZtczVtZTgzZG1mZnY4MG8gZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "3:40 pm",
-          "title": "Reservation at East Potomac Golf Links - RED Course",
-          "location": "East Potomac Golf Links - RED Course, East Potomac Golf Links - RED Course, 972 Ohio Dr SW, Washington, DC 20024, US",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-24T15:40:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=YXByOG10aTNkcTkwMW4xZzljOGQzM2hsY3MgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "3:40 pm",
-          "title": "\u26f3 Golf \u2014 East Potomac (Red)",
-          "location": "East Potomac Golf Links, 972 Ohio Dr SW, Washington, DC 20024",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-24T15:40:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=czc2dHZoa20yaHM5YzAzYm5zOWlnYmFicDQgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-10-25",
-      "label": "Tomorrow \u00b7 Sun Oct 25",
+      "label": "Today \u00b7 Sun Oct 25",
       "weather": {
         "high_f": 65,
-        "low_f": 42,
+        "low_f": 41,
         "precip_pct": 0,
-        "weather_code": 1,
-        "emoji": "\ud83c\udf24",
-        "label": "Mostly clear"
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
       },
       "events": [
         {
@@ -89,8 +47,17 @@
           "link": "https://www.google.com/calendar/event?eid=dGF0c2JhaWdhdTRmNDV0MTlucTNic2w2NjAgZXN0aGVyLmV2ZWx5bkBt"
         },
         {
+          "time": "1:00 pm",
+          "title": "\ud83d\uded2 Walmart delivery",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-25T13:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=bzBzcms0bXAwZWVpM3BwOWxkbTQ2Z2RmdWsgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
           "time": "3:15 pm",
-          "title": "\ud83c\udf5d BULK COOK 1: Sunday sauce + meatballs + week prep (start now)",
+          "title": "\ud83c\udf5d BULK COOK 1: Sunday sauce + meatballs + penne + week prep (start now)",
           "location": "",
           "all_day": false,
           "is_drive": false,
@@ -109,7 +76,7 @@
       ],
       "conflicts": [
         {
-          "a": "\ud83c\udf5d BULK COOK 1: Sunday sauce + meatballs + week prep (start now)",
+          "a": "\ud83c\udf5d BULK COOK 1: Sunday sauce + meatballs + penne + week prep (start now)",
           "a_time": "3:15 pm",
           "b": "Spirit @ Current (ESPN)",
           "b_time": "5:00 pm"
@@ -118,10 +85,10 @@
     },
     {
       "date": "2026-10-26",
-      "label": "Monday \u00b7 Oct 26",
+      "label": "Tomorrow \u00b7 Mon Oct 26",
       "weather": {
-        "high_f": 69,
-        "low_f": 44,
+        "high_f": 70,
+        "low_f": 42,
         "precip_pct": 0,
         "weather_code": 0,
         "emoji": "\u2600\ufe0f",
@@ -165,9 +132,9 @@
         "high_f": 68,
         "low_f": 53,
         "precip_pct": 0,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [
         {
@@ -213,7 +180,7 @@
       "date": "2026-10-28",
       "label": "Wednesday \u00b7 Oct 28",
       "weather": {
-        "high_f": 64,
+        "high_f": 65,
         "low_f": 51,
         "precip_pct": 0,
         "weather_code": 3,
@@ -256,6 +223,24 @@
           "is_drive": false,
           "sort": "2026-10-28T16:00:00-04:00",
           "link": "https://www.google.com/calendar/event?eid=bmIzYjloMG5vdWx2YmJodTF0ZmlscjBxdWMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "6:30 pm",
+          "title": "\ud83d\ude97 Drive to VIVA practice (Annandale HS)",
+          "location": "Annandale High School, 4700 Medford Dr, Annandale, VA 22003",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-10-28T18:30:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=aDFrY2prZGRpY2M3dDljM2FvOTkybWM2M3MgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "\u26bd Henry \u2014 VIVA practice",
+          "location": "Annandale High School, 4700 Medford Dr, Annandale, VA 22003",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-28T19:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ODBuM2Y0bjZvOHNoc2w4NHZqb3Mxa211ZDggZXN0aGVyLmV2ZWx5bkBt"
         }
       ],
       "conflicts": [
@@ -271,9 +256,9 @@
       "date": "2026-10-29",
       "label": "Thursday \u00b7 Oct 29",
       "weather": {
-        "high_f": 67,
+        "high_f": 69,
         "low_f": 50,
-        "precip_pct": 1,
+        "precip_pct": 0,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -322,9 +307,9 @@
       "date": "2026-10-30",
       "label": "Friday \u00b7 Oct 30",
       "weather": {
-        "high_f": 74,
-        "low_f": 51,
-        "precip_pct": 1,
+        "high_f": 76,
+        "low_f": 54,
+        "precip_pct": 0,
         "weather_code": 0,
         "emoji": "\u2600\ufe0f",
         "label": "Clear"
@@ -350,23 +335,64 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-10-31",
+      "label": "Saturday \u00b7 Oct 31",
+      "weather": {
+        "high_f": 74,
+        "low_f": 59,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
+      "events": [
+        {
+          "time": "11:00 am",
+          "title": "Reservation at East Potomac Golf Links - White",
+          "location": "East Potomac Golf Links - White, East Potomac Golf Links - WHITE Course, 972 Ohio Dr SW, Washington, DC 20024, US",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-31T11:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=ZnA1bDNhbzFxcHNsZHRpNDltMTRnMWdxNW8gZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
-    "birthdays": [],
+    "birthdays": [
+      {
+        "title": "Adam's Birthday",
+        "day": "Sun Nov 15",
+        "days_out": 21
+      }
+    ],
     "holidays": [
       {
         "title": "Halloween",
         "day": "Sat Oct 31",
-        "days_out": 7
+        "days_out": 6
       },
       {
         "title": "Veterans Day",
         "day": "Wed Nov 11",
-        "days_out": 18
+        "days_out": 17
       }
     ]
   },
-  "added": [],
+  "added": [
+    {
+      "title": "\ud83d\ude97 Drive to VIVA practice (Annandale HS)",
+      "when": "Wed Oct 28 \u00b7 6:30 PM",
+      "link": "https://www.google.com/calendar/event?eid=aDFrY2prZGRpY2M3dDljM2FvOTkybWM2M3MgZXN0aGVyLmV2ZWx5bkBt"
+    },
+    {
+      "title": "\u26bd Henry \u2014 VIVA practice",
+      "when": "Wed Oct 28 \u00b7 7:00 PM",
+      "link": "https://www.google.com/calendar/event?eid=ODBuM2Y0bjZvOHNoc2w4NHZqb3Mxa211ZDggZXN0aGVyLmV2ZWx5bkBt"
+    }
+  ],
   "feed_changes": []
 }
