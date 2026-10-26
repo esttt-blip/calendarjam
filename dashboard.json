@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-26T06:00:52.100099-04:00",
-  "generated_label": "Mon Oct 26, 6:00 AM",
+  "generated_at": "2026-10-26T12:47:37.387527-04:00",
+  "generated_label": "Mon Oct 26, 12:47 PM",
   "weather": {
     "high_f": 70,
-    "low_f": 39,
+    "low_f": 42,
     "precip_pct": 0,
     "emoji": "\ud83c\udf24",
     "label": "Mostly clear"
@@ -21,7 +21,7 @@
       "label": "Today \u00b7 Mon Oct 26",
       "weather": {
         "high_f": 70,
-        "low_f": 39,
+        "low_f": 42,
         "precip_pct": 0,
         "weather_code": 1,
         "emoji": "\ud83c\udf24",
@@ -62,8 +62,8 @@
       "date": "2026-10-27",
       "label": "Tomorrow \u00b7 Tue Oct 27",
       "weather": {
-        "high_f": 66,
-        "low_f": 49,
+        "high_f": 68,
+        "low_f": 50,
         "precip_pct": 3,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
@@ -113,8 +113,8 @@
       "date": "2026-10-28",
       "label": "Wednesday \u00b7 Oct 28",
       "weather": {
-        "high_f": 66,
-        "low_f": 52,
+        "high_f": 67,
+        "low_f": 46,
         "precip_pct": 0,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
@@ -189,8 +189,8 @@
       "date": "2026-10-29",
       "label": "Thursday \u00b7 Oct 29",
       "weather": {
-        "high_f": 71,
-        "low_f": 51,
+        "high_f": 72,
+        "low_f": 52,
         "precip_pct": 0,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
@@ -240,12 +240,12 @@
       "date": "2026-10-30",
       "label": "Friday \u00b7 Oct 30",
       "weather": {
-        "high_f": 77,
+        "high_f": 76,
         "low_f": 55,
         "precip_pct": 0,
-        "weather_code": 2,
-        "emoji": "\u26c5",
-        "label": "Partly cloudy"
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
       },
       "events": [
         {
@@ -274,8 +274,8 @@
       "label": "Saturday \u00b7 Oct 31",
       "weather": {
         "high_f": 66,
-        "low_f": 57,
-        "precip_pct": 2,
+        "low_f": 54,
+        "precip_pct": 1,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -315,9 +315,9 @@
       "date": "2026-11-01",
       "label": "Sunday \u00b7 Nov 1",
       "weather": {
-        "high_f": 60,
-        "low_f": 56,
-        "precip_pct": 19,
+        "high_f": 66,
+        "low_f": 53,
+        "precip_pct": 20,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
