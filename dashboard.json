@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-25T10:21:34.104255-04:00",
-  "generated_label": "Sun Oct 25, 10:21 AM",
+  "generated_at": "2026-10-26T06:00:52.100099-04:00",
+  "generated_label": "Mon Oct 26, 6:00 AM",
   "weather": {
-    "high_f": 65,
-    "low_f": 41,
+    "high_f": 70,
+    "low_f": 39,
     "precip_pct": 0,
     "emoji": "\ud83c\udf24",
     "label": "Mostly clear"
@@ -17,82 +17,15 @@
   },
   "week": [
     {
-      "date": "2026-10-25",
-      "label": "Today \u00b7 Sun Oct 25",
+      "date": "2026-10-26",
+      "label": "Today \u00b7 Mon Oct 26",
       "weather": {
-        "high_f": 65,
-        "low_f": 41,
+        "high_f": 70,
+        "low_f": 39,
         "precip_pct": 0,
         "weather_code": 1,
         "emoji": "\ud83c\udf24",
         "label": "Mostly clear"
-      },
-      "events": [
-        {
-          "time": "9:00 am",
-          "title": "\ud83d\ude97 Drive to VIVA game (Justice HS)",
-          "location": "Justice High School, 3301 Peace Valley Ln, Falls Church, VA 22044",
-          "all_day": false,
-          "is_drive": true,
-          "sort": "2026-10-25T09:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=NzhuZzZlZmRnNzkwYTJhOTNkaTdvMGc1YXMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "10:00 am",
-          "title": "\u26bd Henry \u2014 VIVA game vs ALEX",
-          "location": "Justice High School, 3301 Peace Valley Ln, Falls Church, VA 22044",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-25T10:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=dGF0c2JhaWdhdTRmNDV0MTlucTNic2w2NjAgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "1:00 pm",
-          "title": "\ud83d\uded2 Walmart delivery",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-25T13:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=bzBzcms0bXAwZWVpM3BwOWxkbTQ2Z2RmdWsgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "3:15 pm",
-          "title": "\ud83c\udf5d BULK COOK 1: Sunday sauce + meatballs + penne + week prep (start now)",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-25T15:15:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=bnFoOGQ1czY3b28wNm44Y2FobXR1cjZjYzQgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "5:00 pm",
-          "title": "Spirit @ Current (ESPN)",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-25T17:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=OGVtODFia3VnZWRyMG42MmhuZmNvY2IxNDAgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": [
-        {
-          "a": "\ud83c\udf5d BULK COOK 1: Sunday sauce + meatballs + penne + week prep (start now)",
-          "a_time": "3:15 pm",
-          "b": "Spirit @ Current (ESPN)",
-          "b_time": "5:00 pm"
-        }
-      ]
-    },
-    {
-      "date": "2026-10-26",
-      "label": "Tomorrow \u00b7 Mon Oct 26",
-      "weather": {
-        "high_f": 70,
-        "low_f": 42,
-        "precip_pct": 1,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
       },
       "events": [
         {
@@ -127,11 +60,11 @@
     },
     {
       "date": "2026-10-27",
-      "label": "Tuesday \u00b7 Oct 27",
+      "label": "Tomorrow \u00b7 Tue Oct 27",
       "weather": {
-        "high_f": 68,
-        "low_f": 50,
-        "precip_pct": 0,
+        "high_f": 66,
+        "low_f": 49,
+        "precip_pct": 3,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
@@ -180,8 +113,8 @@
       "date": "2026-10-28",
       "label": "Wednesday \u00b7 Oct 28",
       "weather": {
-        "high_f": 64,
-        "low_f": 51,
+        "high_f": 66,
+        "low_f": 52,
         "precip_pct": 0,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
@@ -256,7 +189,7 @@
       "date": "2026-10-29",
       "label": "Thursday \u00b7 Oct 29",
       "weather": {
-        "high_f": 69,
+        "high_f": 71,
         "low_f": 51,
         "precip_pct": 0,
         "weather_code": 3,
@@ -307,12 +240,12 @@
       "date": "2026-10-30",
       "label": "Friday \u00b7 Oct 30",
       "weather": {
-        "high_f": 75,
-        "low_f": 53,
+        "high_f": 77,
+        "low_f": 55,
         "precip_pct": 0,
-        "weather_code": 0,
-        "emoji": "\u2600\ufe0f",
-        "label": "Clear"
+        "weather_code": 2,
+        "emoji": "\u26c5",
+        "label": "Partly cloudy"
       },
       "events": [
         {
@@ -340,14 +273,32 @@
       "date": "2026-10-31",
       "label": "Saturday \u00b7 Oct 31",
       "weather": {
-        "high_f": 74,
+        "high_f": 66,
         "low_f": 57,
-        "precip_pct": 0,
+        "precip_pct": 2,
         "weather_code": 3,
         "emoji": "\u2601\ufe0f",
         "label": "Overcast"
       },
       "events": [
+        {
+          "time": "10:10 am",
+          "title": "\ud83d\ude97 Drive to East Potomac Golf Links",
+          "location": "East Potomac Golf Links, 972 Ohio Dr SW, Washington, DC 20024",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-10-31T10:10:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=dHU1cWdnZTJpc2QwMXZncTgyYjNta2RnZnMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "11:00 am",
+          "title": "\u26f3 Golf \u2014 East Potomac (White)",
+          "location": "East Potomac Golf Links, 972 Ohio Dr SW, Washington, DC 20024",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-31T11:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Y3E2MWZpZjhvYmpiMWZibTNuZ205aTdtczQgZXN0aGVyLmV2ZWx5bkBt"
+        },
         {
           "time": "11:00 am",
           "title": "Reservation at East Potomac Golf Links - White",
@@ -359,6 +310,48 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-11-01",
+      "label": "Sunday \u00b7 Nov 1",
+      "weather": {
+        "high_f": 60,
+        "low_f": 56,
+        "precip_pct": 19,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
+      "events": [
+        {
+          "time": "12:05 pm",
+          "title": "\ud83d\ude97 Drive to VIVA game (Nike Park, Great Falls)",
+          "location": "Nike Park, 1111 Utterback Store Rd, Great Falls, VA 22066",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-11-01T12:05:00-05:00",
+          "link": "https://www.google.com/calendar/event?eid=aDRvODI5b2lzaDg5YzNrMHEyZWJ2bTcyNzQgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "1:30 pm",
+          "title": "\u26bd Henry \u2014 VIVA game vs GFR",
+          "location": "Nike Park, 1111 Utterback Store Rd, Great Falls, VA 22066",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-11-01T13:30:00-05:00",
+          "link": "https://www.google.com/calendar/event?eid=bjcyNDVtcThyMnUwMHFoaThrdnRlbThyaWcgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "5:00 pm",
+          "title": "Spirit vs Stars (ESPN)",
+          "location": "",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-11-01T17:00:00-05:00",
+          "link": "https://www.google.com/calendar/event?eid=cWVjZWwxZGZlN3NxYWltaWg0ZWpzczNsMGsgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -366,32 +359,32 @@
       {
         "title": "Adam's Birthday",
         "day": "Sun Nov 15",
-        "days_out": 21
+        "days_out": 20
       }
     ],
     "holidays": [
       {
         "title": "Halloween",
         "day": "Sat Oct 31",
-        "days_out": 6
+        "days_out": 5
       },
       {
         "title": "Veterans Day",
         "day": "Wed Nov 11",
-        "days_out": 17
+        "days_out": 16
       }
     ]
   },
   "added": [
     {
-      "title": "\ud83d\ude97 Drive to VIVA practice (Annandale HS)",
-      "when": "Wed Oct 28 \u00b7 6:30 PM",
-      "link": "https://www.google.com/calendar/event?eid=aDFrY2prZGRpY2M3dDljM2FvOTkybWM2M3MgZXN0aGVyLmV2ZWx5bkBt"
+      "title": "\ud83d\ude97 Drive to East Potomac Golf Links",
+      "when": "Sat Oct 31 \u00b7 10:10 AM",
+      "link": "https://www.google.com/calendar/event?eid=dHU1cWdnZTJpc2QwMXZncTgyYjNta2RnZnMgZXN0aGVyLmV2ZWx5bkBt"
     },
     {
-      "title": "\u26bd Henry \u2014 VIVA practice",
-      "when": "Wed Oct 28 \u00b7 7:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=ODBuM2Y0bjZvOHNoc2w4NHZqb3Mxa211ZDggZXN0aGVyLmV2ZWx5bkBt"
+      "title": "\u26f3 Golf \u2014 East Potomac (White)",
+      "when": "Sat Oct 31 \u00b7 11:00 AM",
+      "link": "https://www.google.com/calendar/event?eid=Y3E2MWZpZjhvYmpiMWZibTNuZ205aTdtczQgZXN0aGVyLmV2ZWx5bkBt"
     }
   ],
   "feed_changes": []
