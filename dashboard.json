@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-10-26T12:47:37.387527-04:00",
-  "generated_label": "Mon Oct 26, 12:47 PM",
-  "weather": {
-    "high_f": 70,
-    "low_f": 42,
-    "precip_pct": 0,
-    "emoji": "\ud83c\udf24",
-    "label": "Mostly clear"
-  },
+  "generated_at": "2026-10-27T06:00:52.553773-04:00",
+  "generated_label": "Tue Oct 27, 6:00 AM",
+  "weather": null,
   "theme": {
     "emoji": "\ud83c\udf83",
     "title": "Spooky Season",
@@ -17,58 +11,9 @@
   },
   "week": [
     {
-      "date": "2026-10-26",
-      "label": "Today \u00b7 Mon Oct 26",
-      "weather": {
-        "high_f": 70,
-        "low_f": 42,
-        "precip_pct": 0,
-        "weather_code": 1,
-        "emoji": "\ud83c\udf24",
-        "label": "Mostly clear"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "EP",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-10-26T00:00",
-          "link": "https://www.google.com/calendar/event?eid=NGlkYWdqazk5aGlvMXBtcmZybmxyb2c1Ym9fMjAyNjEwMjYgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "5:00 pm",
-          "title": "\ud83c\udf57 Dinner: Crispy herb chicken cutlets + rosemary potatoes + green beans (reheat)",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-26T17:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ZWRpZzZkcWFoZ3BiM200bWdrODlidGZqazggZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "\u26bd Henry \u2014 VIVA practice",
-          "location": "Pine Ridge Park, 3401 Woodburn Rd, Annandale, VA 22003",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-26T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=aDMxdGE0OGdyaXI5Zm9rb2doZ2llNWRkNG8gZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": []
-    },
-    {
       "date": "2026-10-27",
-      "label": "Tomorrow \u00b7 Tue Oct 27",
-      "weather": {
-        "high_f": 68,
-        "low_f": 50,
-        "precip_pct": 3,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Today \u00b7 Tue Oct 27",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -111,15 +56,8 @@
     },
     {
       "date": "2026-10-28",
-      "label": "Wednesday \u00b7 Oct 28",
-      "weather": {
-        "high_f": 67,
-        "low_f": 46,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "label": "Tomorrow \u00b7 Wed Oct 28",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -188,14 +126,7 @@
     {
       "date": "2026-10-29",
       "label": "Thursday \u00b7 Oct 29",
-      "weather": {
-        "high_f": 72,
-        "low_f": 52,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "8:25 am",
@@ -239,14 +170,7 @@
     {
       "date": "2026-10-30",
       "label": "Friday \u00b7 Oct 30",
-      "weather": {
-        "high_f": 76,
-        "low_f": 55,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -272,14 +196,7 @@
     {
       "date": "2026-10-31",
       "label": "Saturday \u00b7 Oct 31",
-      "weather": {
-        "high_f": 66,
-        "low_f": 54,
-        "precip_pct": 1,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "10:10 am",
@@ -314,14 +231,7 @@
     {
       "date": "2026-11-01",
       "label": "Sunday \u00b7 Nov 1",
-      "weather": {
-        "high_f": 66,
-        "low_f": 53,
-        "precip_pct": 20,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "12:05 pm",
@@ -352,6 +262,59 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-11-02",
+      "label": "Monday \u00b7 Nov 2",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "EP",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-11-02T00:00",
+          "link": "https://www.google.com/calendar/event?eid=NGlkYWdqazk5aGlvMXBtcmZybmxyb2c1Ym9fMjAyNjExMDIgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "all day",
+          "title": "Stay at Guest Relations at The Westin Copley Place, Boston",
+          "location": "10 Huntington Avenue, Boston, Massachusetts, USA",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-11-02T00:00",
+          "link": "https://www.google.com/calendar/event?eid=NXVnYmYyMWk5YjM1ZTNrYTdtNDBydjZrbTAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "6:40 am",
+          "title": "\u2708\ufe0f Airport \u2014 UA641 IAD\u2192BOS",
+          "location": "Washington Dulles International Airport (IAD), 1 Saarinen Cir, Dulles, VA 20166",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-11-02T06:40:00-05:00",
+          "link": "https://www.google.com/calendar/event?eid=NWIzYW00anZnaWozOGhqZzlubDYwaTZzamsgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "8:40 am",
+          "title": "Flight  UA641 IAD to BOS",
+          "location": "Departing Washington, DC",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-11-02T08:40:00-05:00",
+          "link": "https://www.google.com/calendar/event?eid=Xzg4c2oyZWEyNzRvazJiOWw4OHNqOGI5azg1Mmo0YmExNzRzMzBiOWs2Z29qZ2NobDhncTM2aDI0NjQgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "7:00 pm",
+          "title": "\u26bd Henry \u2014 VIVA practice",
+          "location": "Pine Ridge Park, 3401 Woodburn Rd, Annandale, VA 22003",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-11-02T19:00:00-05:00",
+          "link": "https://www.google.com/calendar/event?eid=cWJiNWRzYnB0dmxtdTNmdmFxY2R2Zzcxb28gZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -359,33 +322,27 @@
       {
         "title": "Adam's Birthday",
         "day": "Sun Nov 15",
-        "days_out": 20
+        "days_out": 19
+      },
+      {
+        "title": "Taylor's Birthday",
+        "day": "Tue Nov 17",
+        "days_out": 21
       }
     ],
     "holidays": [
       {
         "title": "Halloween",
         "day": "Sat Oct 31",
-        "days_out": 5
+        "days_out": 4
       },
       {
         "title": "Veterans Day",
         "day": "Wed Nov 11",
-        "days_out": 16
+        "days_out": 15
       }
     ]
   },
-  "added": [
-    {
-      "title": "\ud83d\ude97 Drive to East Potomac Golf Links",
-      "when": "Sat Oct 31 \u00b7 10:10 AM",
-      "link": "https://www.google.com/calendar/event?eid=dHU1cWdnZTJpc2QwMXZncTgyYjNta2RnZnMgZXN0aGVyLmV2ZWx5bkBt"
-    },
-    {
-      "title": "\u26f3 Golf \u2014 East Potomac (White)",
-      "when": "Sat Oct 31 \u00b7 11:00 AM",
-      "link": "https://www.google.com/calendar/event?eid=Y3E2MWZpZjhvYmpiMWZibTNuZ205aTdtczQgZXN0aGVyLmV2ZWx5bkBt"
-    }
-  ],
+  "added": [],
   "feed_changes": []
 }
