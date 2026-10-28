@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-27T11:51:23.221692-04:00",
-  "generated_label": "Tue Oct 27, 11:51 AM",
+  "generated_at": "2026-10-28T06:01:24.242044-04:00",
+  "generated_label": "Wed Oct 28, 6:01 AM",
   "weather": {
-    "high_f": 71,
-    "low_f": 49,
-    "precip_pct": 1,
-    "emoji": "\ud83c\udf24",
-    "label": "Mostly clear"
+    "high_f": 66,
+    "low_f": 48,
+    "precip_pct": 0,
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
   },
   "theme": {
     "emoji": "\ud83c\udf83",
@@ -17,83 +17,9 @@
   },
   "week": [
     {
-      "date": "2026-10-27",
-      "label": "Today \u00b7 Tue Oct 27",
-      "weather": {
-        "high_f": 71,
-        "low_f": 49,
-        "precip_pct": 1,
-        "weather_code": 1,
-        "emoji": "\ud83c\udf24",
-        "label": "Mostly clear"
-      },
-      "events": [
-        {
-          "time": "all day",
-          "title": "\ud83d\udcf7 Henry \u2014 Fall Picture Day (Swanson)",
-          "location": "",
-          "all_day": true,
-          "is_drive": false,
-          "sort": "2026-10-27T00:00",
-          "link": "https://www.google.com/calendar/event?eid=NGYzMXBhdG1ybjNraGZ2dnI5dmJvMWt0OTAgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "5:00 pm",
-          "title": "\ud83c\udf72 Dinner: Meatball minestrone + garlic toast (reheat, eat 5:45)",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-27T17:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=b284MHRkZWlqZm5rZXJsMDFpbTdvaTk3MmMgZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "5:15 pm",
-          "title": "Vaccine appt @ Langston CVS",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-27T17:15:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=ajRmcTRvamcyN2dyam1xYnJrMGN2dTVpbG8gZXN0aGVyLmV2ZWx5bkBt"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "FW: [EXTERNAL] CWO & Auth0 Virtual Roundtable: Maximize top-of-funnel conversions through seamless user journeys",
-          "location": "",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-27T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc2Y28zOGhhMzhvczNnZWE0Nm9vazhoMWc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNmtyamdoaGo4b3JrY2RobDZncGpnZTFrNzRzNDZkMWg4a3NqMGU5bjYxMWthZ3BsOGtyZyBlc3RoZXIuZXZlbHluQG0"
-        },
-        {
-          "time": "7:00 pm",
-          "title": "FW: [EXTERNAL] CWO & Auth0 Virtual Roundtable: Maximize top-of-funnel conversions through seamless user journeys",
-          "location": "https://chiefnation.zoom.us/j/85334691782?pwd=iTHqq02IRYtJmxTdJrMbBnkJkNJanQ.1",
-          "all_day": false,
-          "is_drive": false,
-          "sort": "2026-10-27T19:00:00-04:00",
-          "link": "https://www.google.com/calendar/event?eid=a2dlbGJtM2V0Nmk3bW4wa25rdmFvOTNibDQgZXN0aGVyLmV2ZWx5bkBt"
-        }
-      ],
-      "conflicts": [
-        {
-          "a": "\ud83c\udf72 Dinner: Meatball minestrone + garlic toast (reheat, eat 5:45)",
-          "a_time": "5:00 pm",
-          "b": "Vaccine appt @ Langston CVS",
-          "b_time": "5:15 pm"
-        }
-      ]
-    },
-    {
       "date": "2026-10-28",
-      "label": "Tomorrow \u00b7 Wed Oct 28",
-      "weather": {
-        "high_f": 67,
-        "low_f": 50,
-        "precip_pct": 2,
-        "weather_code": 45,
-        "emoji": "\ud83c\udf2b",
-        "label": "Fog"
-      },
+      "label": "Today \u00b7 Wed Oct 28",
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -161,15 +87,8 @@
     },
     {
       "date": "2026-10-29",
-      "label": "Thursday \u00b7 Oct 29",
-      "weather": {
-        "high_f": 72,
-        "low_f": 49,
-        "precip_pct": 2,
-        "weather_code": 45,
-        "emoji": "\ud83c\udf2b",
-        "label": "Fog"
-      },
+      "label": "Tomorrow \u00b7 Thu Oct 29",
+      "weather": null,
       "events": [
         {
           "time": "8:25 am",
@@ -213,14 +132,7 @@
     {
       "date": "2026-10-30",
       "label": "Friday \u00b7 Oct 30",
-      "weather": {
-        "high_f": 75,
-        "low_f": 57,
-        "precip_pct": 0,
-        "weather_code": 2,
-        "emoji": "\u26c5",
-        "label": "Partly cloudy"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -246,14 +158,7 @@
     {
       "date": "2026-10-31",
       "label": "Saturday \u00b7 Oct 31",
-      "weather": {
-        "high_f": 65,
-        "low_f": 53,
-        "precip_pct": 0,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "10:10 am",
@@ -288,14 +193,7 @@
     {
       "date": "2026-11-01",
       "label": "Sunday \u00b7 Nov 1",
-      "weather": {
-        "high_f": 66,
-        "low_f": 48,
-        "precip_pct": 28,
-        "weather_code": 3,
-        "emoji": "\u2601\ufe0f",
-        "label": "Overcast"
-      },
+      "weather": null,
       "events": [
         {
           "time": "12:05 pm",
@@ -330,14 +228,7 @@
     {
       "date": "2026-11-02",
       "label": "Monday \u00b7 Nov 2",
-      "weather": {
-        "high_f": 63,
-        "low_f": 58,
-        "precip_pct": 35,
-        "weather_code": 63,
-        "emoji": "\ud83c\udf27",
-        "label": "Rain"
-      },
+      "weather": null,
       "events": [
         {
           "time": "all day",
@@ -386,6 +277,50 @@
         }
       ],
       "conflicts": []
+    },
+    {
+      "date": "2026-11-03",
+      "label": "Tuesday \u00b7 Nov 3",
+      "weather": null,
+      "events": [
+        {
+          "time": "all day",
+          "title": "Edgar!",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-11-03T00:00",
+          "link": "https://www.google.com/calendar/event?eid=ODdwZGNzNHF2cXJxYmNlMzU5Nms5NnUydmlfMjAyNjExMDMgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "all day",
+          "title": "\ud83d\udcda No School \u2014 Grade Prep Day (Swanson)",
+          "location": "",
+          "all_day": true,
+          "is_drive": false,
+          "sort": "2026-11-03T00:00",
+          "link": "https://www.google.com/calendar/event?eid=YW5hNWdtMW50cTZyaDBzNTU4djRoNmxjMTAgZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "11:00 am",
+          "title": "Henry passport appt @ 11:15",
+          "location": "United States Postal Service, 3118 Washington Blvd, Arlington, VA 22201, USA",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-11-03T11:00:00-05:00",
+          "link": "https://www.google.com/calendar/event?eid=YjNrZGNocTZyZHJpNDNiYjNvOGM2OWhjdW8gZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "3:40 pm",
+          "title": "Henry Dentist",
+          "location": "Growing Smiles of Northern Virginia, 105 E Annandale Rd, Falls Church, VA 22046",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-11-03T15:40:00-05:00",
+          "link": "https://www.google.com/calendar/event?eid=MmJ2ZGFidGszN21udmdvZ3JuY2dwZnM2dHMgZXN0aGVyLmV2ZWx5bkBt"
+        }
+      ],
+      "conflicts": []
     }
   ],
   "horizon": {
@@ -393,24 +328,24 @@
       {
         "title": "Adam's Birthday",
         "day": "Sun Nov 15",
-        "days_out": 19
+        "days_out": 18
       },
       {
         "title": "Taylor's Birthday",
         "day": "Tue Nov 17",
-        "days_out": 21
+        "days_out": 20
       }
     ],
     "holidays": [
       {
         "title": "Halloween",
         "day": "Sat Oct 31",
-        "days_out": 4
+        "days_out": 3
       },
       {
         "title": "Veterans Day",
         "day": "Wed Nov 11",
-        "days_out": 15
+        "days_out": 14
       }
     ]
   },
