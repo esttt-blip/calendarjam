@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-28T06:01:24.242044-04:00",
-  "generated_label": "Wed Oct 28, 6:01 AM",
+  "generated_at": "2026-10-28T12:35:38.859963-04:00",
+  "generated_label": "Wed Oct 28, 12:35 PM",
   "weather": {
-    "high_f": 66,
-    "low_f": 48,
+    "high_f": 68,
+    "low_f": 50,
     "precip_pct": 0,
     "emoji": "\u2601\ufe0f",
     "label": "Overcast"
@@ -19,7 +19,14 @@
     {
       "date": "2026-10-28",
       "label": "Today \u00b7 Wed Oct 28",
-      "weather": null,
+      "weather": {
+        "high_f": 68,
+        "low_f": 50,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -88,7 +95,14 @@
     {
       "date": "2026-10-29",
       "label": "Tomorrow \u00b7 Thu Oct 29",
-      "weather": null,
+      "weather": {
+        "high_f": 70,
+        "low_f": 48,
+        "precip_pct": 1,
+        "weather_code": 45,
+        "emoji": "\ud83c\udf2b",
+        "label": "Fog"
+      },
       "events": [
         {
           "time": "8:25 am",
@@ -132,7 +146,14 @@
     {
       "date": "2026-10-30",
       "label": "Friday \u00b7 Oct 30",
-      "weather": null,
+      "weather": {
+        "high_f": 75,
+        "low_f": 50,
+        "precip_pct": 0,
+        "weather_code": 0,
+        "emoji": "\u2600\ufe0f",
+        "label": "Clear"
+      },
       "events": [
         {
           "time": "all day",
@@ -158,7 +179,14 @@
     {
       "date": "2026-10-31",
       "label": "Saturday \u00b7 Oct 31",
-      "weather": null,
+      "weather": {
+        "high_f": 64,
+        "low_f": 52,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "10:10 am",
@@ -193,7 +221,14 @@
     {
       "date": "2026-11-01",
       "label": "Sunday \u00b7 Nov 1",
-      "weather": null,
+      "weather": {
+        "high_f": 66,
+        "low_f": 49,
+        "precip_pct": 2,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "12:05 pm",
@@ -228,7 +263,14 @@
     {
       "date": "2026-11-02",
       "label": "Monday \u00b7 Nov 2",
-      "weather": null,
+      "weather": {
+        "high_f": 61,
+        "low_f": 55,
+        "precip_pct": 11,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -281,7 +323,14 @@
     {
       "date": "2026-11-03",
       "label": "Tuesday \u00b7 Nov 3",
-      "weather": null,
+      "weather": {
+        "high_f": 59,
+        "low_f": 55,
+        "precip_pct": 17,
+        "weather_code": 51,
+        "emoji": "\ud83c\udf26",
+        "label": "Light drizzle"
+      },
       "events": [
         {
           "time": "all day",
@@ -349,6 +398,25 @@
       }
     ]
   },
-  "added": [],
-  "feed_changes": []
+  "added": [
+    {
+      "title": "\ud83d\ude97 Drive to VIVA practice (Justice HS)",
+      "when": "Wed Nov 11 \u00b7 6:40 PM",
+      "link": "https://www.google.com/calendar/event?eid=bmNqc3BqcTluZ3AzOHY5NnZmbmtlaGI3ZGsgZXN0aGVyLmV2ZWx5bkBt"
+    }
+  ],
+  "feed_changes": [
+    {
+      "title": "\u26bd Henry \u2014 VIVA practice",
+      "when": "Thu Nov 5 \u00b7 7:00 PM",
+      "link": "https://www.google.com/calendar/event?eid=OGU5ajV2ZHRzZWdzcW5kZGl2OW5jbXJubWMgZXN0aGVyLmV2ZWx5bkBt",
+      "note": "changed to 7:00\u20138:15 PM (was 7:00\u20138:30 PM)"
+    },
+    {
+      "title": "\u26bd Henry \u2014 VIVA practice",
+      "when": "Thu Oct 29 \u00b7 7:00 PM",
+      "link": "https://www.google.com/calendar/event?eid=YTJzcDczanJ2a2pzc2k0Ymxrc2hsbzZjbDQgZXN0aGVyLmV2ZWx5bkBt",
+      "note": "changed to 7:00\u20138:15 PM (was 7:00\u20138:30 PM)"
+    }
+  ]
 }
