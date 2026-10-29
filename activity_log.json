@@ -2011,5 +2011,61 @@
     "title": "\ud83d\uded2 Walmart delivery",
     "source": "Delivery",
     "when": "2026-10-25T13:00:00"
+  },
+  {
+    "ts": "2026-10-29T10:00:51.690921+00:00",
+    "action": "added",
+    "title": "\ud83d\udcda School Holiday (SOL Testing - Math)",
+    "source": "Swanson \ud83d\udcda",
+    "when": "2027-05-27T09:00"
+  },
+  {
+    "ts": "2026-10-29T10:00:52.270194+00:00",
+    "action": "added",
+    "title": "\ud83d\udcda School Holiday (SOL Testing - Science and Civics)",
+    "source": "Swanson \ud83d\udcda",
+    "when": "2027-05-28T09:00"
+  },
+  {
+    "ts": "2026-10-29T10:00:52.812883+00:00",
+    "action": "added",
+    "title": "\ud83d\udcda School Holiday (SOL Makeups - Math, Science, and Civics)",
+    "source": "Swanson \ud83d\udcda",
+    "when": "2027-06-01T09:00"
+  },
+  {
+    "ts": "2026-10-29T10:00:53.338285+00:00",
+    "action": "added",
+    "title": "\ud83d\udcda School Holiday (SOL Testing - Reading)",
+    "source": "Swanson \ud83d\udcda",
+    "when": "2027-06-02T09:00"
+  },
+  {
+    "ts": "2026-10-29T10:00:53.947627+00:00",
+    "action": "added",
+    "title": "\ud83d\udcda School Holiday (SOL Makeups - All)",
+    "source": "Swanson \ud83d\udcda",
+    "when": "2027-06-03T09:00"
+  },
+  {
+    "ts": "2026-10-29T10:00:54.537573+00:00",
+    "action": "added",
+    "title": "\ud83d\udcda School Holiday (SOL Expedited Retakes - Science and Civics)",
+    "source": "Swanson \ud83d\udcda",
+    "when": "2027-06-08T09:00"
+  },
+  {
+    "ts": "2026-10-29T10:00:55.105990+00:00",
+    "action": "added",
+    "title": "\ud83d\udcda School Holiday (SOL Expedited Retakes - Math)",
+    "source": "Swanson \ud83d\udcda",
+    "when": "2027-06-09T09:00"
+  },
+  {
+    "ts": "2026-10-29T10:00:55.685462+00:00",
+    "action": "added",
+    "title": "\ud83d\udcda School Holiday (SOL Expedited Retakes - Reading)",
+    "source": "Swanson \ud83d\udcda",
+    "when": "2027-06-10T09:00"
   }
 ]
