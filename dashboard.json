@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-10-29T06:02:05.405280-04:00",
-  "generated_label": "Thu Oct 29, 6:02 AM",
-  "weather": null,
+  "generated_at": "2026-10-29T12:53:56.572093-04:00",
+  "generated_label": "Thu Oct 29, 12:53 PM",
+  "weather": {
+    "high_f": 72,
+    "low_f": 51,
+    "precip_pct": 0,
+    "emoji": "\u2601\ufe0f",
+    "label": "Overcast"
+  },
   "theme": {
     "emoji": "\ud83c\udf83",
     "title": "Spooky Season",
@@ -13,8 +19,33 @@
     {
       "date": "2026-10-29",
       "label": "Today \u00b7 Thu Oct 29",
-      "weather": null,
+      "weather": {
+        "high_f": 72,
+        "low_f": 51,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
+        {
+          "time": "7:48 am",
+          "title": "\ud83d\ude97 Drive to Giving Tree (Milo drop-off)",
+          "location": "Giving Tree K9 Club, 130 W Jefferson St, Falls Church, VA 22046",
+          "all_day": false,
+          "is_drive": true,
+          "sort": "2026-10-29T07:48:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=aW10bzM5c3YyOWNvaGRlMmo1N3E4MmZxZW8gZXN0aGVyLmV2ZWx5bkBt"
+        },
+        {
+          "time": "8:00 am",
+          "title": "\ud83d\udc36 Milo \u2014 daycare (Giving Tree)",
+          "location": "Giving Tree K9 Club, 130 W Jefferson St, Falls Church, VA 22046",
+          "all_day": false,
+          "is_drive": false,
+          "sort": "2026-10-29T08:00:00-04:00",
+          "link": "https://www.google.com/calendar/event?eid=Y25uMnM2ZWoyM2lmaTFvcG83MHRocTN0YTggZXN0aGVyLmV2ZWx5bkBt"
+        },
         {
           "time": "8:25 am",
           "title": "\ud83d\ude97 Drive to appointment (Bethesda)",
@@ -57,7 +88,14 @@
     {
       "date": "2026-10-30",
       "label": "Tomorrow \u00b7 Fri Oct 30",
-      "weather": null,
+      "weather": {
+        "high_f": 73,
+        "low_f": 51,
+        "precip_pct": 3,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -83,7 +121,14 @@
     {
       "date": "2026-10-31",
       "label": "Saturday \u00b7 Oct 31",
-      "weather": null,
+      "weather": {
+        "high_f": 61,
+        "low_f": 46,
+        "precip_pct": 0,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "10:10 am",
@@ -118,7 +163,14 @@
     {
       "date": "2026-11-01",
       "label": "Sunday \u00b7 Nov 1",
-      "weather": null,
+      "weather": {
+        "high_f": 64,
+        "low_f": 50,
+        "precip_pct": 1,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "12:05 pm",
@@ -153,7 +205,14 @@
     {
       "date": "2026-11-02",
       "label": "Monday \u00b7 Nov 2",
-      "weather": null,
+      "weather": {
+        "high_f": 60,
+        "low_f": 48,
+        "precip_pct": 3,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -206,7 +265,14 @@
     {
       "date": "2026-11-03",
       "label": "Tuesday \u00b7 Nov 3",
-      "weather": null,
+      "weather": {
+        "high_f": 70,
+        "low_f": 54,
+        "precip_pct": 6,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "all day",
@@ -250,7 +316,14 @@
     {
       "date": "2026-11-04",
       "label": "Wednesday \u00b7 Nov 4",
-      "weather": null,
+      "weather": {
+        "high_f": 70,
+        "low_f": 54,
+        "precip_pct": 23,
+        "weather_code": 3,
+        "emoji": "\u2601\ufe0f",
+        "label": "Overcast"
+      },
       "events": [
         {
           "time": "6:40 pm",
@@ -302,23 +375,15 @@
   },
   "added": [
     {
-      "title": "\ud83d\ude97 Drive to VIVA practice (Justice HS)",
-      "when": "Wed Nov 11 \u00b7 6:40 PM",
-      "link": "https://www.google.com/calendar/event?eid=bmNqc3BqcTluZ3AzOHY5NnZmbmtlaGI3ZGsgZXN0aGVyLmV2ZWx5bkBt"
-    }
-  ],
-  "feed_changes": [
-    {
-      "title": "\u26bd Henry \u2014 VIVA practice",
-      "when": "Thu Nov 5 \u00b7 7:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=OGU5ajV2ZHRzZWdzcW5kZGl2OW5jbXJubWMgZXN0aGVyLmV2ZWx5bkBt",
-      "note": "changed to 7:00\u20138:15 PM (was 7:00\u20138:30 PM)"
+      "title": "\ud83d\ude97 Drive to Giving Tree (Milo drop-off)",
+      "when": "Thu Oct 29 \u00b7 7:48 AM",
+      "link": "https://www.google.com/calendar/event?eid=aW10bzM5c3YyOWNvaGRlMmo1N3E4MmZxZW8gZXN0aGVyLmV2ZWx5bkBt"
     },
     {
-      "title": "\u26bd Henry \u2014 VIVA practice",
-      "when": "Thu Oct 29 \u00b7 7:00 PM",
-      "link": "https://www.google.com/calendar/event?eid=YTJzcDczanJ2a2pzc2k0Ymxrc2hsbzZjbDQgZXN0aGVyLmV2ZWx5bkBt",
-      "note": "changed to 7:00\u20138:15 PM (was 7:00\u20138:30 PM)"
+      "title": "\ud83d\udc36 Milo \u2014 daycare (Giving Tree)",
+      "when": "Thu Oct 29 \u00b7 8:00 AM",
+      "link": "https://www.google.com/calendar/event?eid=Y25uMnM2ZWoyM2lmaTFvcG83MHRocTN0YTggZXN0aGVyLmV2ZWx5bkBt"
     }
-  ]
+  ],
+  "feed_changes": []
 }

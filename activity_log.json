@@ -2067,5 +2067,12 @@
     "title": "\ud83d\udcda School Holiday (SOL Expedited Retakes - Reading)",
     "source": "Swanson \ud83d\udcda",
     "when": "2027-06-10T09:00"
+  },
+  {
+    "ts": "2026-10-29T16:53:56.566355+00:00",
+    "action": "added",
+    "title": "Appointment with Rachel Rubin MD PLLC",
+    "source": "Gmail invite",
+    "when": "2027-04-30T13:00"
   }
 ]
